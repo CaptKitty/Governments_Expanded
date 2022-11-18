@@ -1,0 +1,38 @@
+german_kaiserreich = {
+	icon = "prussian_monarchy"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			tag = GER
+			has_reform = german_kaiserreich
+			have_had_reform = german_kaiserreich
+		}
+	}
+	trigger = {
+		OR = {
+			tag = GER
+			has_reform = german_kaiserreich
+			have_had_reform = german_kaiserreich
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 100
+
+	modifiers = {
+		war_exhaustion = -0.02
+		global_unrest = -2
+		global_autonomy = -0.075
+		monarch_military_power = 2
+		nobles_loyalty_modifier = 0.1
+		governing_capacity_modifier = -0.25
+	}
+
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		militarised_society = yes
+	}
+	conditional = {
+		allow = { has_dlc = "Common Sense" }
+		has_parliament = yes
+	}
+}
