@@ -5640,13 +5640,9 @@ country_event = {
 		has_government_attribute = enables_no_crown
 		OR = {
 			AND = {
-				calc_true_if = {
-					all_ally = {
-						NOT = {
-							government = monarchy
-						}
-					}
-					amount = 2
+				num_of_allies = 2
+				NOT = {
+					any_ally = { government = monarchy }
 				}
 				NOT = { has_country_modifier = Recognize_No_Crown }
 			}
@@ -5666,26 +5662,14 @@ country_event = {
 	immediate = {
 		if = {
 			limit = {
-				calc_true_if = {
-					all_ally = {
-						NOT = {
-							government = monarchy
-						}
-					}
-					amount = 2
+				num_of_allies = 2
+				NOT = {
+					any_ally = { government = monarchy }
 				}
 			}
-			add_country_modifier = {
-				name = "Recognize_No_Crown"
-				duration = -1
-			}
+			add_country_modifier = { name = "Recognize_No_Crown" duration = -1 }
 		}
-		if = {
-			limit = {
-				any_ally = {
-					government = monarchy
-				}
-			}
+		else = {
 			remove_country_modifier = Recognize_No_Crown
 		}
 	}
