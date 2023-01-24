@@ -5043,7 +5043,7 @@ country_event = {
 	option = {
 		name = reform_me_events.79.a
 		
-		add_government_reform = enlightened_despotism_reform
+		add_government_reform = iberian_enlightened_despotism_reform
 	}
 }
 

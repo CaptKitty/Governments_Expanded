@@ -92,7 +92,7 @@ monarchy = {
 				kingdom_of_castille_and_leon
 				crown_of_castille
 				hispanic_kingdom
-				enlightened_despotism_reform
+				iberian_enlightened_despotism_reform
 				margrave_reform
 				consulate_of_the_sea
 				crown_of_saint_wenceslaus
