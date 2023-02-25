@@ -63,16 +63,38 @@ monarchy = {
 				polish_autocratic_monarchy
 				lithuanian_grand_kingdom
 				lithuanian_grand_empire
-				#Special
-				polynesian_kingdom
 				#####EndOfVanillaReforms#####
 				#####BeginMEReforms#####
 				crusader_kingdom
 				khaganate
 				athenian_monarchy
 				german_kaiserreich
-				caliphate_reform_sunni
+				ME_caliphate_reform_sunni 
+				ME_caliphate_reform_sunni_andalusia 
+				ME_caliphate_reform_sunni_arabian 
+				ME_caliphate_reform_shia_ibadi
 				west_slavic_monarchy
+				austria_hungary_reform
+				enlightened_despotism_reform 
+				me_baroque_monarchy_reform
+				me_nordmark
+				ME_tribal_federation_monarchy
+				ME_ibadi_community
+				ME_ottoman_government
+				#FU Reforms
+				fu_janissary_autocracy
+				fu_ottoman_government
+				fu_sultanate_of_rum_and_cairo
+				fu_indian_sultanate_reform
+				ada_adalan_empire
+				# end FU reforms
+				timurid_empire
+				timurid_governor
+				timurid_prince
+				me_mughal_empire
+				timurid_semi_horde
+				timurid_empire_upgraded
+				timurid_governor_upgraded
 				#####EndOfMEReforms#####
 				#GE
 				#Generics
@@ -160,8 +182,17 @@ monarchy = {
 				grant_nobles_electorate_reform
 				blackmail_nobility_reform
 				grant_military_command_reform
-				#ME
+				# ME Reforms:
+				incan_society_reform
+				aztec_society_reform
+				maya_society_reform
 				sharia_reform
+				mil_secret_council
+				mughal_government_me_modifier_buff
+				mughal_government_me
+				ME_caliphate_feudal_theocracy
+				ME_caliphate_iqta
+				SOS_advanced_tactics
 				#GE
 				#Religous
 				papal_embassy_GE_reform
@@ -252,9 +283,13 @@ monarchy = {
 				limit_imperial_court_reform
 				regional_council_reform
 				representation_of_the_crown_reform
-				#ME
-				#tur_reform_beylerbeys
-				#tur_reform_eyalets
+				# ME Reforms:
+				tur_reform_beylerbeys
+				tur_reform_eyalets
+				#FU Reforms
+				tur_organized_pashas_reform
+				ara_consell_de_cent
+				mil_sforza_administration
 				#GE
 				#Generics
 				# regional_forts_reform
@@ -423,6 +458,9 @@ monarchy = {
 				restoration_of_clergy_reform
 				cult_of_reason_reform
 				secularization_of_the_state_reform
+				#ME Reforms
+				ME_enlist_the_help_of_sufi_orders
+				ME_enlist_the_help_of_sufi_orders_ADU
 			}
 		}
 		growth_of_administration = {
@@ -439,7 +477,12 @@ monarchy = {
 				imperial_principle_reform
 				sakdina_system_reform
 				allotment_system
-				#ME
+				# ME Reforms:
+				incan_administration_reform
+				me_hofkammer_reform
+				#FU Reforms 
+				tur_custodian_holy_city_reform
+				ara_consulate_of_the_sea
 				#GE
 				integrate_moneyloaners_reform
 				advanced_bookkeeping_reform
@@ -508,6 +551,8 @@ monarchy = {
 				become_a_republic_reform
 				install_theocratic_government_reform
 				become_rev_republic_reform
+				#ME Reforms:
+				me_hindu_administration
 				#GE
 				haudenosaunee_reform
 				parliamentary_order_reform
@@ -723,6 +768,13 @@ monarchy = {
 		empire_of_japan_reform
 	}
 
+	exclusive_reforms = {
+		ME_enlist_the_help_of_sufi_orders
+		ME_ottoman_government
+		ottoman_government
+		ME_enlist_the_help_of_sufi_orders_ADU
+	}
+
 	#Flavor
 	exclusive_reforms = {
 		daimyo
@@ -830,7 +882,12 @@ republic = {
 				kongsi_federation
 				millenarian_theocracy_reform
 				# ME Reforms:
-				caliphate_reform_sunni
+				greek_league_reform
+				athenian_republic
+				timurid_stratocracy
+				fu_fleet_with_a_state_reform
+				nov_commercial_law
+				SOS_advanced_tactics
 				#GE
 				florentine_republic
 				#american_government
@@ -998,6 +1055,9 @@ republic = {
 				confederate_nations_reform
 				penal_colonies_reform
 				cultural_administration_reform
+				#FU Reforms
+				fu_canton_administration
+				mil_sforza_administration
 				#GE
 				advanced_bookkeeping_reform_republic
 				advanced_bookkeeping_reform_republic_venice
@@ -1028,8 +1088,9 @@ republic = {
 				seize_executive_power_reform
 				proclaim_divine_guidance_reform
 				become_rev_empire_reform
-				
 				# ME Reforms:
+				federalism_reform
+				supremacy_constitution_reform
 				#GE
 				stadholder_reform
 				andrea_doria_constitution_reform
@@ -1091,6 +1152,8 @@ republic = {
 				revolutionary_principle_reform
 				equality_principle_reform
 				imperial_principle_reform
+				#FU Reforms
+				mil_secret_council
 				#GE
 				national_principle_reform
 				liberal_principle_reform
@@ -1127,6 +1190,8 @@ republic = {
 				bureaucratic_aparatus_reform
 				universal_suffrage_reform
 				pirate_representation_reform
+				#FU Reforms 
+				nov_republican_guard_reform
 				#GE
 				cultural_judges_reform
 				raadspensionaris_reform
@@ -1230,6 +1295,11 @@ tribal = {
 				matrilineal_system
 				feudal_tribe
 				great_man
+				# ME Reforms:
+				incan_society_reform
+				aztec_society_reform
+				maya_society_reform
+				ME_tribal_federation_steppe_horde
 				# GE Reforms:
 				eghaevbo_administration_reform
 				siberian_tribal_confederation_reform
@@ -1391,6 +1461,12 @@ theocracy = {
 				militarized_crusader_order_reform
 				merchant_theocracy_reform
 				reformer_state_reform
+				#Missions Expanded Reforms
+				ME_sufi_order_reform
+				ME_bektashi_order_reform
+				#Flavor Universalis Reforms
+				fu_order_of_saint_joan_reform
+				aju_hydraulic_empire
 				#GE
 				ajuraan_theocracy_reform
 				dynastic_theocracy_reform
@@ -1407,6 +1483,9 @@ theocracy = {
 				commercial_mission_reform
 				mission_to_protect_reform
 				#yak_provvision_reform
+				# ME Reforms:
+				sharia_reform
+				SOS_advanced_tactics
 			}
 		}
 		education_of_the_state = {

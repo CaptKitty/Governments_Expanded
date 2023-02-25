@@ -8650,7 +8650,7 @@ estate_burghers_prussian_confederation = {
 	loyalty = 0.1
 	is_valid = {
 		tag = TEU
-		has_country_flag = pru_confederation_flag
+		has_disaster = prussian_confederation_disaster
 	}
 	on_granted = {
 		custom_tooltip = prussian_confederation_privilege_tt
@@ -9415,7 +9415,6 @@ estate_church_one_faith_one_culture = {
 	is_valid = {
 	}
 	can_select = {
-		
 	}
 	on_granted = {
 		custom_tooltip = estate_church_one_faith_one_culture_gta
@@ -9514,6 +9513,12 @@ estate_church_one_faith_one_culture = {
 	}
 	benefits = {
 		global_missionary_strength = 0.01
+	}
+	conditional_modifier = {
+		trigger = { has_government_attribute = free_religious_culture }
+		modifier = {
+			church_influence_modifier = -0.2
+		}
 	}
 	cooldown_years = 15
 	ai_will_do = {
