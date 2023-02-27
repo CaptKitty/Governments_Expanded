@@ -201,7 +201,6 @@ country_event = {
 		trigger = {
 			ruler_has_personality = intricate_web_weaver_personality
 		}
-		required_personality = intricate_web_weaver_personality
 		every_owned_province = {
 			add_local_autonomy = -5
 		}
@@ -263,7 +262,6 @@ country_event = {
 		trigger = {
 			ruler_has_personality = greedy_personality
 		}
-		required_personality = greedy_personality
 		add_estate_loyalty = {
 			estate = estate_nobles
 			loyalty = -10
@@ -316,10 +314,9 @@ country_event = {
 		
 		highlight = yes
 		trigger = {
-			ruler_has_personality = naive_enthusiast_personality
+			ruler_has_personality = naive_personality
 		}
-		required_personality = naive_enthusiast_personality
-		remove_ruler_personality = naive_enthusiast_personality
+		remove_ruler_personality = naive_personality
 		add_ruler_personality = careful_personality
 		
 	}
@@ -366,7 +363,6 @@ country_event = {
 		trigger = {
 			ruler_has_personality = well_advised_personality
 		}
-		required_personality = well_advised_personality
 		add_army_professionalism = 0.02
 		
 	}
@@ -419,7 +415,6 @@ country_event = {
 		trigger = {
 			ruler_has_personality = sinner_personality
 		}
-		required_personality = sinner_personality
 		remove_ruler_personality = sinner_personality
 		add_ruler_personality = calm_personality
 		
@@ -667,9 +662,6 @@ country_event = {
 				ruler_has_personality = architectural_visionary_personality
 			}
 		}
-		required_personality = free_thinker_personality
-		required_personality = scholar_personality
-		required_personality = architectural_visionary_personality
 		
 		add_mil_power = 100
 	}
@@ -827,7 +819,6 @@ country_event = {
 		trigger = {
 			ruler_has_personality = fierce_negotiator_personality
 		}
-		required_personality = fierce_negotiator_personality
 		add_prestige = 20
 		add_army_tradition = 10
 		define_advisor = {
