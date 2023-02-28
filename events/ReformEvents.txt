@@ -9206,13 +9206,13 @@ country_event = {
 				any_owned_province = {
 					OR = {
 						AND = {
-							center_of_trade = 1
+							province_has_center_of_trade_of_level = 1
 							fort_level = 2
 							NOT = { has_province_modifier = GE_Caravanserai }
 						}
 						AND = {
 							NOT = { 
-								center_of_trade = 1
+								province_has_center_of_trade_of_level = 1
 								fort_level = 2 
 							}
 							has_province_modifier = GE_Caravanserai
@@ -16821,9 +16821,9 @@ country_event = {
 }
 
 country_event = {
-	id = reform_me_events.236
-	title = reform_me_events.236.t
-	desc = reform_me_events.236.d
+	id = reform_me_events.2360
+	title = reform_me_events.2360.t
+	desc = reform_me_events.2360.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
 	
@@ -16837,7 +16837,7 @@ country_event = {
 						any_owned_province = {
 							OR = {
 								region = baltic_region
-								region = scandinavia
+								region = scandinavia_region
 							}
 						}
 						OR = {
@@ -16853,7 +16853,7 @@ country_event = {
 							any_owned_province = {
 								OR = {
 									region = baltic_region
-									region = scandinavia
+									region = scandinavia_region
 								}
 							}
 							OR = {
@@ -16872,7 +16872,7 @@ country_event = {
 						any_owned_province = {
 							OR = {
 								region = baltic_region
-								region = scandinavia
+								region = scandinavia_region
 							}
 						}
 						OR = {
@@ -16888,7 +16888,7 @@ country_event = {
 							any_owned_province = {
 								OR = {
 									region = baltic_region
-									region = scandinavia
+									region = scandinavia_region
 								}
 							}
 							OR = {
@@ -16907,7 +16907,7 @@ country_event = {
 						any_owned_province = {
 							OR = {
 								region = baltic_region
-								region = scandinavia
+								region = scandinavia_region
 							}
 						}
 						OR = {
@@ -16923,7 +16923,7 @@ country_event = {
 							any_owned_province = {
 								OR = {
 									region = baltic_region
-									region = scandinavia
+									region = scandinavia_region
 								}
 							}
 							OR = {
@@ -16942,7 +16942,7 @@ country_event = {
 						any_owned_province = {
 							OR = {
 								region = baltic_region
-								region = scandinavia
+								region = scandinavia_region
 							}
 						}
 						OR = {
@@ -16970,7 +16970,7 @@ country_event = {
 							any_owned_province = {
 								OR = {
 									region = baltic_region
-									region = scandinavia
+									region = scandinavia_region
 								}
 							}
 							OR = {
@@ -16986,7 +16986,7 @@ country_event = {
 								any_owned_province = {
 									OR = {
 										region = baltic_region
-										region = scandinavia
+										region = scandinavia_region
 									}
 								}
 								OR = {
@@ -17016,7 +17016,7 @@ country_event = {
 							any_owned_province = {
 								OR = {
 									region = baltic_region
-									region = scandinavia
+									region = scandinavia_region
 								}
 							}
 							OR = {
@@ -17032,7 +17032,7 @@ country_event = {
 								any_owned_province = {
 									OR = {
 										region = baltic_region
-										region = scandinavia
+										region = scandinavia_region
 									}
 								}
 								OR = {
@@ -17062,7 +17062,7 @@ country_event = {
 							any_owned_province = {
 								OR = {
 									region = baltic_region
-									region = scandinavia
+									region = scandinavia_region
 								}
 							}
 							OR = {
@@ -17078,7 +17078,7 @@ country_event = {
 								any_owned_province = {
 									OR = {
 										region = baltic_region
-										region = scandinavia
+										region = scandinavia_region
 									}
 								}
 								OR = {
@@ -17108,7 +17108,7 @@ country_event = {
 							any_owned_province = {
 								OR = {
 									region = baltic_region
-									region = scandinavia
+									region = scandinavia_region
 								}
 							}
 							OR = {
@@ -17132,7 +17132,7 @@ country_event = {
 	}
 	
 	option = {
-		name = reform_me_events.236.a
+		name = reform_me_events.2360.a
 		
 	}
 }

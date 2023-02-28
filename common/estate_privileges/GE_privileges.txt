@@ -1,11 +1,10 @@
-estate_peasants_land_rights = {
+﻿estate_peasants_land_rights = {
 	icon = privilege_grant_autonomy
 	land_share = 5
 	max_absolutism = -5
 	loyalty = 0.05
 	influence = 0.10
 	can_select = {
-		
 	}
 	on_granted = {
 	}
@@ -425,7 +424,6 @@ estate_nobles_magnate_law_privilege = {
 	}
 	can_select = {
 		has_government_attribute = enables_magnate_law
-		 = yes
 	}
 	on_granted = {
 	}
@@ -464,7 +462,6 @@ estate_nobles_timariot_privilege = {
 	}
 	can_select = {
 		has_government_attribute = enables_timariots
-		 = yes
 	}
 	on_granted = {
 		change_estate_land_share = {
@@ -522,20 +519,10 @@ estate_nobles_noble_officer_privilege = {
 	}
 	can_select = {
 		has_government_attribute = enables_veteran_general
-		 = yes
 	}
 	on_granted = {
 		custom_tooltip = noble_officer_privilege_tooltip
 		if = {
-			limit = {
-				estate_territory = {
-					estate = estate_nobles
-					territory = 50
-				}
-			}
-			create_general = { tradition = 120 }
-		}
-		else_if = {
 			limit = {
 				estate_territory = {
 					estate = estate_nobles
@@ -604,7 +591,6 @@ estate_nobles_grand_captain_privilege = {
 	}
 	can_select = {
 		has_government_attribute = enables_grand_captain
-		 = yes
 	}
 	on_granted = {
 		custom_tooltip = "GE_Grand_Captains_tt"
@@ -646,7 +632,6 @@ estate_nobles_call_cortez = {
 	}
 	can_select = {
 		has_government_attribute = enables_cortes
-		 = yes
 	}
 	on_granted = {
 		country_event = { id = reform_me_events.1 }
@@ -680,7 +665,6 @@ estate_nobles_white_knights = {
 	}
 	can_select = {
 		has_government_attribute = enables_white_knights
-		 = yes
 	}
 	on_granted = {
 		custom_tooltip = GE_white_knights
@@ -734,7 +718,6 @@ estate_nobles_imperial_court = {
 			has_country_flag = GE_HRE_Imperial_Court
 			tag = ANS
 		}
-		 = yes
 	}
 	on_granted = {
 		custom_tooltip = GE_HRE_Imperial_Court_Tooltip
@@ -781,7 +764,6 @@ estate_nobles_imperial_marshall = {
 			has_country_flag = GE_HRE_Imperial_Marshall
 			tag = ANS
 		}
-		 = yes
 	}
 	on_granted = {
 		custom_tooltip = GE_HRE_Imperial_Marshal_Tooltip
@@ -826,7 +808,6 @@ estate_nobles_kreditwerk_appointment = {
 	}
 	can_select = {
 		has_government_attribute = enables_kreditwerk_appointments
-		 = yes
 	}
 	on_granted = {
 	}
@@ -868,7 +849,6 @@ estate_nobles_blood_tax = {
 	}
 	can_select = {
 		has_government_attribute = enables_blood_tax
-		 = yes
 	}
 	on_granted = {
 		custom_tooltip = GE_blood_tax
@@ -1032,7 +1012,6 @@ estate_nobles_anatolian_theme = {
 	}
 	can_select = {
 		has_country_flag = GE_restore_the_themes
-		 = yes
 	}
 	on_granted = {
 		custom_tooltip = GE_anatolian_theme
@@ -1121,7 +1100,6 @@ estate_nobles_establish_serfdom = {
 	}
 	can_select = {
 		has_government_attribute = enables_serfdom
-		 = yes
 	}
 	on_granted = {
 	}
@@ -1157,7 +1135,6 @@ estate_nobles_berber_guides = {
 	}
 	can_select = {
 		has_government_attribute = enables_berber_guides
-		 = yes
 	}
 	on_granted = {
 		custom_tooltip = GE_Berber_Guides
@@ -1238,7 +1215,7 @@ estate_nobles_baksariyas = { #USED IN MISSIONS EXPANDED - GINGER_SOD
 	max_absolutism = -10
 	loyalty = 0.05
 	influence = 0.10
-	land_share = = 5
+	land_share = 5
 	can_select = {
 		
 	}
@@ -1607,34 +1584,40 @@ estate_jews_jewish_quarters = {
 		custom_tooltip = estate_jews_jewish_quarters_effect_tooltip
 	}
 	on_granted_province = {
-		limit = {
-			OR = {
-				development = 20
-				is_capital = yes
+		if = {
+			limit = {
+				OR = {
+					development = 20
+					is_capital = yes
+				}
 			}
-		}
-		add_base_tax = 1
-		add_province_modifier = {
-			name = GE_jewish_quarter #+2.5 Base Trade Power, 
-			duration = -1
+			add_base_tax = 1
+			add_province_modifier = {
+				name = GE_jewish_quarter #+2.5 Base Trade Power, 
+				duration = -1
+			}
 		}
 	}
 	on_revoked = {
 		custom_tooltip = estate_jews_jewish_quarters_revoke_tooltip
 	}
 	on_revoked_province= {
-		limit = {
-			has_province_modifier = GE_jewish_quarter
+		if = {
+			limit = {
+				has_province_modifier = GE_jewish_quarter
+			}
+			add_base_tax = -1
+			remove_province_modifier = GE_jewish_quarter
 		}
-		add_base_tax = -1
-		remove_province_modifier = GE_jewish_quarter
 	}
 	on_invalid_province = {
-		limit = {
-			has_province_modifier = GE_jewish_quarter
+		if = {
+			limit = {
+				has_province_modifier = GE_jewish_quarter
+			}
+			add_base_tax = -1
+			remove_province_modifier = GE_jewish_quarter
 		}
-		add_base_tax = -1
-		remove_province_modifier = GE_jewish_quarter
 	}
 	penalties = {
 	}

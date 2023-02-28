@@ -485,7 +485,6 @@ country_event = {
 		define_ruler = {
 			culture = ROOT
 			religion = ROOT
-			hidden = yes
 			age = 35
 			claim = 75
 		}

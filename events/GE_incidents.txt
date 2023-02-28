@@ -108,7 +108,7 @@ country_event = {
 				id = GE_incidents.5
 			}
 		}
-		add_years_of_manpower = 1
+		add_yearly_manpower = 1
 		add_army_tradition = 10
 		ai_chance = {
 			factor = 1 
@@ -138,7 +138,7 @@ country_event = {
 			cede_province = FROM
 		}
 		FROM = {
-			every_neighbour_country = {
+			every_neighbor_country = {
 				add_opinion = {
 					who = FROM
 					modifier = GE_seized_unlawful_land
