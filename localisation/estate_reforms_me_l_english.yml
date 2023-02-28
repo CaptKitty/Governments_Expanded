@@ -1272,7 +1272,7 @@ the_holy_office_reform: "The Holy Office"
  mechanic_enables_foreign_experts_yes: "Foreign Experts: §G+2%§! Mercenary Discipline for each alliance with a different culture group, up to a maximum of 5 foreign allies.\nOffers occasional mercenary captains from those lands to train your troops." #
  mechanic_enables_iberian_harem_yes: "Iberian Harem: Elect a suitable heir from among your sons."
  mechanic_enables_influencial_ties_yes: "Influencial Ties: §G+0.5§! Diplomatic Reputation for each Great Power, Emperor or Pope you're allied with, up to a maximum of five allies"
- #mechanic_enables_kreditwerk_appointments_yes: "Kreditwerk Appointments: Unlocks the 'Kreditwerk Appointments' Privilege for the Nobility, which allows us to increase tax efficiency."
+ mechanic_enables_kreditwerk_appointment_deals_yes: "Kreditwerk Appointments: Unlocks the 'Kreditwerk Appointments' Privilege for the Nobility, which allows us to increase tax efficiency."
  
  #GE 1.15
  mechanic_enables_burgher_autonomy_yes: "Burgher Autonomy: Unlocks the §YBurgher Autonomy§! Privilege, granting §G+1§! base production and §R+25%§! Minimum Autonomy for §Y25 years§! in each province with an urban trade good. \nThis privilege can be reused every §Y25 years§!."
@@ -1298,7 +1298,7 @@ the_holy_office_reform: "The Holy Office"
  #GE 1.17
  mechanic_enables_expansion_of_junker_privileges_yes: "Expansion of Junker Privileges: Increased Levies gives §G+5%§! National Manpower Modifier for every §Y20%§! crownland they posses."
  mechanic_enables_expansion_of_noble_privileges_yes: "Expansion of Noble Privileges: Increased Levies give an additional §G+10%§! National Manpower Modifier and an additional §R-10%§! National Tax Modifier."
- mechanic_enables_kreditwerk_appointments_yes: "Kreditwerk Appointments: §G+20%§! Tax in provinces with 10 or more Base Tax."
+ mechanic_enables_kreditwerk_appointments_yes: "Kreditwerk Benefits: §G+20%§! Tax in provinces with 10 or more Base Tax."
  mechanic_enables_immigrant_settlements_yes: "Immigrant Settlements: §G-10%§! Local Development Cost in Provinces with Rural Goods."
  mechanic_enables_nations_of_the_republic_yes: "Nations of the Republic: §G-10%§! Governing Cost and §G-15%§! Tax in Provinces with Accepted Cultures."
 

@@ -5976,7 +5976,7 @@
 		potential = {}
 		modifiers = {
 			tolerance_heathen = 1
-			tolerance_of_heathen_capacity = 1
+			tolerance_of_heathens_capacity = 1
 			tolerance_heretic = 1
 			tolerance_of_heretics_capacity = 1
 		}

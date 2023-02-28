@@ -209,6 +209,7 @@ kreditwerk_reform = {
 	}
 	custom_attributes = {
 		enables_kreditwerk_appointments = yes
+		enables_kreditwerk_appointment_deals = yes
 	}
 	ai = {
 		factor = 100
