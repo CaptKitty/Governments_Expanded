@@ -301,12 +301,10 @@ tanzimat_reforms_reform = {
 		}
 	}
 	modifiers = {
-		global_unrest = -2
-		max_absolutism = -5
 		global_institution_spread = 0.25
-	}
-	custom_attributes = {
-		enables_patriotism = yes #+25% Manpower in Own Culture Provinces.
+		global_unrest = -2
+		manpower_in_own_culture_provinces = 0.25
+		max_absolutism = -5
 	}
 	ai = {
 		factor = 100

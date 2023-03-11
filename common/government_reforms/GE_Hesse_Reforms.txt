@@ -16,13 +16,11 @@ hessian_militarized_monarchy_reform = {
 		}
 	}
 	modifiers = {
-		yearly_army_professionalism = 0.0025
-		discipline = 0.025 
-		mercenary_discipline = -0.05
+		discipline = 0.025
 		governing_capacity_modifier = -0.1
-	}
-	custom_attributes = {
-		enables_patriotism = yes
+		manpower_in_own_culture_provinces = 0.25
+		mercenary_discipline = -0.05
+		yearly_army_professionalism = 0.0025
 	}
 	ai = {
 		factor = 100
@@ -44,14 +42,12 @@ hessian_modern_militarized_monarchy_reform = {
 		absolutism = 50
 	}
 	modifiers = {
-		yearly_army_professionalism = 0.0025
 		discipline = 0.05
+		governing_capacity_modifier = -0.25
+		manpower_in_own_culture_provinces = 0.25
 		mercenary_discipline = -0.10
 		monarch_military_power = 1
-		governing_capacity_modifier = -0.25
-	}
-	custom_attributes = {
-		enables_patriotism = yes
+		yearly_army_professionalism = 0.0025
 	}
 	ai = {
 		factor = 100
