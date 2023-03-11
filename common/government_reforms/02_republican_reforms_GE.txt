@@ -748,10 +748,7 @@ national_guard_reform_republic = {
 	}
 	modifiers = {
 		land_morale = 0.05
-		# army_tradition_decay = 0.01
-	}
-	custom_attributes = {
-		enables_patriotism = yes #+25% Manpower in primary culture provinces
+		manpower_in_own_culture_provinces = 0.25
 	}
 	ai = {
 		factor = 1

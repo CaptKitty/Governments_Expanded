@@ -190,8 +190,8 @@
 					improve_relation_modifier = 0.1
 					land_morale = 0.05
 				}
-
-				Ultraquists = {
+				
+				Utraquists = {
 					global_unrest = -1
 					tolerance_heretic = 1
 				}
@@ -424,7 +424,7 @@
 				}
 				has_reform = emirate_of_andalusia_reform
 				OR = {
-					development = 300
+					total_development = 300
 					tag = ADU
 				}
 			}
@@ -458,14 +458,14 @@
 		potential = {
 			OR = {
 				AND = {
-					religion_group = zoroastrian
+					religion_group = zoroastrian_group
 					culture_group = iranian
 				}
 			}
 		}
 		trigger = {
 			AND = {
-				religion_group = zoroastrian
+				religion_group = zoroastrian_group
 				culture_group = iranian	
 			}
 		}
@@ -1474,7 +1474,6 @@
 				primary_culture = flemish
 				has_reform = guild_dominance_reform
 			}
-			NOT = { mission_completed = ME_HOL_Mother_Of_All_Trade }
 		}
 		trigger = {
 			OR = {
@@ -1510,7 +1509,10 @@
 			}
 		}
 		potential = {
-			mission_completed = ME_HOL_Mother_Of_All_Trade
+			check_variable = {
+				which = Burgher_Influence
+				value = 2
+			}
 		}
 		trigger = {
 			OR = {
@@ -2041,7 +2043,7 @@
 		potential = {
 			OR = {
 				has_reform = hispanic_kingdom
-				has_reform = iberian_iberian_enlightened_despotism_reform
+				has_reform = iberian_enlightened_despotism_reform
 			}
 		}
 		trigger = {
@@ -3546,14 +3548,14 @@
 		potential = {
 			OR = {
 				AND = {
-					religion_group = zoroastrian
+					religion_group = zoroastrian_group
 					culture_group = iranian	
 				}
 			}
 		}
 		trigger = {
 			AND = {
-				religion_group = zoroastrian
+				religion_group = zoroastrian_group
 				culture_group = iranian	
 			}
 		}
@@ -3991,7 +3993,13 @@
 			global_autonomy = -0.025
 			global_prov_trade_power_modifier = 0.10
 		}
-		can_use_trade_post = yes
+		conditional = {
+			allow = {
+				has_dlc = "Res Publica"
+				has_dlc = "Mare Nostrum"
+			}
+			can_use_trade_post = yes
+		}
 		ai = {
 			factor = 101
 		}
@@ -4737,14 +4745,14 @@
 		potential = {
 			OR = {
 				AND = {
-					religion_group = zoroastrian
+					religion_group = zoroastrian_group
 					culture_group = iranian	
 				}
 			}
 		}
 		trigger = {
 			AND = {
-				religion_group = zoroastrian
+				religion_group = zoroastrian_group
 				culture_group = iranian	
 			}
 		}
@@ -5607,14 +5615,14 @@
 		potential = {
 			OR = {
 				AND = {
-					religion_group = zoroastrian
+					religion_group = zoroastrian_group
 					culture_group = iranian	
 				}
 			}
 		}
 		trigger = {
 			AND = {
-				religion_group = zoroastrian
+				religion_group = zoroastrian_group
 				culture_group = iranian	
 			}
 		}
@@ -5630,7 +5638,10 @@
 	freie_landtage_reform = {
 		icon = king
 		allow_normal_conversion = yes
-		has_parliament = yes
+		conditional = {
+			allow = { has_dlc = "Common Sense" }
+			has_parliament = yes
+		}
 		effect = {
 			change_variable = {
 				which = Burgher_Influence
@@ -5706,7 +5717,10 @@
 	parliamental_electors_reform = {
 		icon = judge
 		allow_normal_conversion = yes
-		has_parliament = yes
+		conditional = {
+			allow = { has_dlc = "Common Sense" }
+			has_parliament = yes
+		}
 		potential = {
 			has_reform = elective_monarchy_reform 
 		}
@@ -6305,9 +6319,7 @@
 		modifiers = {
 			land_morale = 0.05
 			army_tradition_decay = 0.003
-		}
-		custom_attributes = {
-			enables_patriotism = yes #+25% Manpower in primary culture provinces
+			manpower_in_own_culture_provinces = 0.25
 		}
 		ai = {
 			factor = 1
@@ -6788,9 +6800,7 @@
 			infantry_fire = 0.25
 			infantry_power = 0.05
 			years_of_nationalism = 5
-		}
-		custom_attributes = {
-			enables_patriotism = yes
+			manpower_in_own_culture_provinces = 0.25
 		}
 		ai = {
 			factor = 100
@@ -6987,14 +6997,14 @@
 		potential = {
 			OR = {
 				AND = {
-					religion_group = zoroastrian
+					religion_group = zoroastrian_group
 					culture_group = iranian	
 				}
 			}
 		}
 		trigger = {
 			AND = {
-				religion_group = zoroastrian
+				religion_group = zoroastrian_group
 				culture_group = iranian	
 			}
 		}
@@ -7311,11 +7321,9 @@
 			primary_culture = hessian
 		}
 		modifiers = {
-			land_forcelimit_modifier = 0.10
 			defensiveness = 0.10
-		}
-		custom_attributes = {
-			enables_patriotism = yes #+25% Manpower in primary culture provinces
+			land_forcelimit_modifier = 0.10
+			manpower_in_own_culture_provinces = 0.25
 		}
 		ai = {
 			factor = 1
@@ -7389,7 +7397,13 @@
 			merchants = 1
 			trade_deals_slots = 0.02
 		}
-		can_use_trade_post = yes
+		conditional = {
+			allow = {
+				has_dlc = "Res Publica"
+				has_dlc = "Mare Nostrum"
+			}
+			can_use_trade_post = yes
+		}
 		ai = {
 			factor = 1
 		}
@@ -7628,7 +7642,13 @@
 		custom_attributes = {
 			enables_saharan_outposts = yes #privilege that gives +1 merchant and +50% scaling trade steering
 		}
-		can_use_trade_post = yes
+		conditional = {
+			allow = {
+				has_dlc = "Res Publica"
+				has_dlc = "Mare Nostrum"
+			}
+			can_use_trade_post = yes
+		}
 		ai = {
 			factor = 10
 		}

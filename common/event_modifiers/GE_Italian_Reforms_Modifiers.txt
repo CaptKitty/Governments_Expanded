@@ -1,21 +1,23 @@
-#Mantua House of Gonzaga reform modifier
-GE_Mantua_Marriage_Policies_1 = {
-	improve_relation_modifier = 0.05
-}
-GE_Mantua_Marriage_Policies_2 = {
-	improve_relation_modifier = 0.10
-}
-GE_Mantua_Marriage_Policies_3 = {
-	improve_relation_modifier = 0.15
-}
-GE_Mantua_Marriage_Policies_4 = {
-	improve_relation_modifier = 0.20
-}
-GE_Mantua_Marriage_Policies_5 = {
-	improve_relation_modifier = 0.25
+GE_Customs_House = {
+	trade_goods_size_modifier = 0.25
 }
 
-#Mantua Knightly Orders reform modifier
+GE_Genoese_Merchants_Explorers_1 = {
+	global_colonial_growth = 10
+}
+GE_Genoese_Merchants_Explorers_2 = {
+	global_colonial_growth = 20
+}
+GE_Genoese_Merchants_Explorers_3 = {
+	global_colonial_growth = 30
+}
+GE_Genoese_Merchants_Explorers_4 = {
+	global_colonial_growth = 40
+}
+GE_Genoese_Merchants_Explorers_5 = {
+	global_colonial_growth = 50
+}
+
 GE_Mantua_Knightly_Orders_1 = {
 	cavalry_power = 0.05
 	papal_influence = 1.0
@@ -33,22 +35,31 @@ GE_Mantua_Knightly_Orders_4 = {
 	papal_influence = 4.0
 }
 
-GE_Naples_Liber_Augustalis = {
-	all_estate_loyalty_equilibrium = 0.05
+GE_Mantua_Marriage_Policies_1 = {
+	improve_relation_modifier = 0.05
+}
+GE_Mantua_Marriage_Policies_2 = {
+	improve_relation_modifier = 0.10
+}
+GE_Mantua_Marriage_Policies_3 = {
+	improve_relation_modifier = 0.15
+}
+GE_Mantua_Marriage_Policies_4 = {
+	improve_relation_modifier = 0.20
+}
+GE_Mantua_Marriage_Policies_5 = {
+	improve_relation_modifier = 0.25
 }
 
-GE_Genoese_Merchants_Explorers_1 = {
-	global_colonial_growth = 10
+GE_Mary_Of_The_Purity_1 = {
+	yearly_corruption = -0.025
 }
-GE_Genoese_Merchants_Explorers_2 = {
-	global_colonial_growth = 20
+GE_Mary_Of_The_Purity_2 = {
+	yearly_corruption = -0.05
 }
-GE_Genoese_Merchants_Explorers_3 = {
-	global_colonial_growth = 30
+GE_Mary_Of_The_Purity_3 = {
+	yearly_corruption = -0.075
 }
-GE_Genoese_Merchants_Explorers_4 = {
-	global_colonial_growth = 40
-}
-GE_Genoese_Merchants_Explorers_5 = {
-	global_colonial_growth = 50
+GE_Mary_Of_The_Purity_4 = {
+	yearly_corruption = -0.10
 }
