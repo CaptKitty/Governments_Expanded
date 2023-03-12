@@ -132,7 +132,7 @@ italian_republic = {
 		tag = ITA
 	}
 	modifiers = {
-		republican_tradition = 0.5
+		republican_tradition = 0.3
 		primary_development_cost = 0.10
 		governing_capacity = 150
 	}
