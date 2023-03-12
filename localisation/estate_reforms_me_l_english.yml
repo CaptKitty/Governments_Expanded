@@ -1394,7 +1394,7 @@
  ghulams_influence_modifier: "Ghulam Influence"
  estate_ghulams_ownership: "Ghulams Land Ownership"
  vassal_tax_modifier: "Vassal Tax Income"
- primary_development_Cost: "Primary Culture Development Cost Reduction"
+ primary_development_cost: "Primary Culture Development Cost Reduction"
  noble_privilege_slots: "[Country.GetNobilityName] Privilege Slots"
  burgher_privilege_slots: "[Country.GetBurghersName] Privilege Slots"
  church_privilege_slots: "[Country.GetClergyName] Privilege Slots"
