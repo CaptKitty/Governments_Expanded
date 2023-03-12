@@ -160,6 +160,8 @@ monarchy = {
 				#1.18
 				klever_union_reform
 				life_on_the_plateau_reform
+				#1.19
+				italian_monarchy
 			}
 		}
 		hereditary_vs_nobility = {
@@ -430,6 +432,8 @@ monarchy = {
 				#1.18
 				wacht_am_rhein_reform
 				monastic_temples_reform
+				#1.19
+				alpini_reform
 			}
 		}
 		state_and_religion = {
@@ -897,6 +901,8 @@ republic = {
 				caucasian_republic
 				common_republic_reform
 				constitutional_republic_reform
+				#1.19
+				italian_republic
 			}
 		}
 		republican_virtues = {
@@ -1013,6 +1019,8 @@ republic = {
 				crusading_tradition_reform
 				citizen_soldiers_reform
 				institutionalized_repbulican_army_reform
+				#1.19
+				alpini_reform
 			}
 		}
 		republic_and_religion = {

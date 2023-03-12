@@ -63,3 +63,7 @@ GE_Mary_Of_The_Purity_3 = {
 GE_Mary_Of_The_Purity_4 = {
 	yearly_corruption = -0.10
 }
+
+GE_Mountain_Warfare = {
+	local_defender_dice_roll_bonus = 1
+}

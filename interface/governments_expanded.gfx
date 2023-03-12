@@ -8,14 +8,6 @@ spriteTypes = {
 		texturefile = "gfx//interface//government_reform_icons//ancien_regime.dds"
 	}
 	spriteType = {
-		name = "government_reform_florentine_republic"
-		texturefile = "gfx//interface//government_reform_icons//florentine_republic.dds"
-	}
-	spriteType = {
-		name = "government_reform_de_medici"
-		texturefile = "gfx//interface//government_reform_icons//de_medici.dds"
-	}
-	spriteType = {
 		name = "government_reform_dutch_guilds"
 		texturefile = "gfx//interface//government_reform_icons//dutch_guilds.dds"
 	}
@@ -42,10 +34,6 @@ spriteTypes = {
 	spriteType = {
 		name = "government_reform_colonial_rule"
 		texturefile = "gfx//interface//government_reform_icons//colonial_rule.dds"
-	}
-	spriteType = {
-		name = "government_reform_italian_mercenary"
-		texturefile = "gfx//interface//government_reform_icons//italian_mercenary.dds"
 	}
 	spriteType = {
 		name = "government_reform_landsknecht"
@@ -348,14 +336,6 @@ spriteTypes = {
 		texturefile = "gfx//interface//government_reform_icons//colonial_church.dds"
 	}
 	spriteType = {
-		name = "government_reform_genoa"
-		texturefile = "gfx//interface//government_reform_icons//genoa.dds"
-	}
-	spriteType = {
-		name = "government_reform_andrea_doria"
-		texturefile = "gfx//interface//government_reform_icons//andrea_doria.dds"
-	}
-	spriteType = {
 		name = "government_reform_archduchy"
 		texturefile = "gfx//interface//government_reform_icons//archduchy.dds"
 	}
@@ -557,14 +537,6 @@ spriteTypes = {
 		texturefile = "gfx//interface//government_reform_icons//england_redcoat.dds"
 	}
 	spriteType = {
-		name = "government_reform_italy_guelph"
-		texturefile = "gfx//interface//government_reform_icons//italy_guelph.dds"
-	}
-	spriteType = {
-		name = "government_reform_italy_ghibbelline"
-		texturefile = "gfx//interface//government_reform_icons//italy_ghibbelline.dds"
-	}
-	spriteType = {
 		name = "government_reform_castille_leon"
 		texturefile = "gfx//interface//government_reform_icons//castille_leon.dds"
 	}
@@ -749,36 +721,8 @@ spriteTypes = {
 		texturefile = "gfx//interface//government_reform_icons//hungarian_tripartum.dds"
 	}
 	spriteType = {
-		name = "government_reform_sicily_kingdom_of_sicily"
-		texturefile = "gfx//interface//government_reform_icons//sicily_kingdom_of_sicily.dds"
-	}
-	spriteType = {
-		name = "government_reform_sicily_parliament_of_sicily"
-		texturefile = "gfx//interface//government_reform_icons//sicily_parliament_of_sicily.dds"
-	}
-	spriteType = {
 		name = "government_reform_GE_sheep_1"
 		texturefile = "gfx//interface//government_reform_icons//GE_sheep_1.dds"
-	}
-	spriteType = {
-		name = "government_reform_GE_sheep_2"
-		texturefile = "gfx//interface//government_reform_icons//GE_sheep_2.dds"
-	}
-	spriteType = {
-		name = "government_reform_latin_militia"
-		texturefile = "gfx//interface//government_reform_icons//latin_militia.dds"
-	}
-	spriteType = {
-		name = "government_reform_catalan_company"
-		texturefile = "gfx//interface//government_reform_icons//catalan_company.dds"
-	}
-	spriteType = {
-		name = "government_reform_theatines"
-		texturefile = "gfx//interface//government_reform_icons//theatines.dds"
-	}
-	spriteType = {
-		name = "government_reform_sicily_melfi"
-		texturefile = "gfx//interface//government_reform_icons//sicily_melfi.dds"
 	}
 	spriteType = {
 		name = "government_reform_HRE"
