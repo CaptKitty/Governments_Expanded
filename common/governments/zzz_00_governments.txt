@@ -959,19 +959,19 @@ republic = {
 		}
 		military_organisation = {
 			reforms = {
-				feudal_levies_reform_republic
-				national_guard_reform_republic
+				feudal_levies_reform
+				national_guard_reform
 				milizia_nationale_reform
-				mercenary_corps_reform_republic
-				professional_army_reform_republic
+				mercenary_corps_reform
+				professional_army_reform
 				italian_mercenaries_reform
 				imperial_circles_reform
 				expanded_devshirme_reform
 				tatar_mercenaries_reform
 				south_east_asian_elephants_reform
 				portugese_marines_reform
-				permanent_marathas_council_reform_republic
-				governmental_purbias_register_reform_republic
+				permanent_marathas_council_reform
+				governmental_purbias_register_reform
 				foreign_formation_regiments_reform
 				general_war_commissariat_reform
 				gustavan_artillery_reform

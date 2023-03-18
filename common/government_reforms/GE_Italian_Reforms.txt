@@ -289,9 +289,7 @@ support_ghibbelline_reform = {
 	allow_normal_conversion = yes
 	effect = {
 		if = {
-			limit = {
-				uses_republican_tradition = yes
-			}
+			limit = { uses_republican_tradition = yes }
 			change_variable = {
 				which = Oliarch_Influence
 				value = 1
@@ -363,9 +361,7 @@ support_ghibbelline_reform = {
 	}
 	removed_effect = {
 		if = {
-			limit = {
-				uses_republican_tradition = yes
-			}
+			limit = { uses_republican_tradition = yes }
 			change_variable = {
 				which = Oliarch_Influence
 				value = -1
@@ -465,9 +461,7 @@ support_guelphs_reform = {
 	allow_normal_conversion = yes
 	effect = {
 		if = {
-			limit = {
-				uses_republican_tradition = yes
-			}
+			limit = { uses_republican_tradition = yes }
 			change_variable = {
 				which = Plutocrat_Influence
 				value = 1
@@ -538,9 +532,7 @@ support_guelphs_reform = {
 	}
 	removed_effect = {
 		if = {
-			limit = {
-				uses_republican_tradition = yes
-			}
+			limit = { uses_republican_tradition = yes }
 			change_variable = {
 				which = Plutocrat_Influence
 				value = -1
@@ -924,9 +916,7 @@ italian_mercenaries_reform = {
 	allow_normal_conversion = yes
 	effect = {
 		if = {
-			limit = {
-				uses_republican_tradition = yes
-			}
+			limit = { uses_republican_tradition = yes }
 			change_variable = {
 				which = Plutocrat_Influence
 				value = 1
@@ -944,9 +934,7 @@ italian_mercenaries_reform = {
 	}
 	removed_effect = {
 		if = {
-			limit = {
-				uses_republican_tradition = yes
-			}
+			limit = { uses_republican_tradition = yes }
 			change_variable = {
 				which = Plutocrat_Influence
 				value = -1
@@ -992,9 +980,7 @@ milizia_nationale_reform = {
 	allow_normal_conversion = yes
 	effect = {
 		if = {
-			limit = {
-				uses_republican_tradition = yes
-			}
+			limit = { uses_republican_tradition = yes }
 			change_variable = {
 				which = Royal_Influence
 				value = 1
@@ -1009,9 +995,7 @@ milizia_nationale_reform = {
 	}
 	removed_effect = {
 		if = {
-			limit = {
-				uses_republican_tradition = yes
-			}
+			limit = { uses_republican_tradition = yes }
 			change_variable = {
 				which = Royal_Influence
 				value = -1
@@ -1211,9 +1195,7 @@ advanced_bookkeeping_reform = {
 	allow_normal_conversion = yes
 	effect = {
 		if = {
-			limit = {
-				uses_republican_tradition = yes
-			}
+			limit = { uses_republican_tradition = yes }
 			change_variable = {
 				which = Plutocrat_Influence
 				value = 1
@@ -1228,9 +1210,7 @@ advanced_bookkeeping_reform = {
 	}
 	removed_effect = {
 		if = {
-			limit = {
-				uses_republican_tradition = yes
-			}
+			limit = { uses_republican_tradition = yes }
 			change_variable = {
 				which = Plutocrat_Influence
 				value = -1

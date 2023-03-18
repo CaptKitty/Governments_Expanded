@@ -261,9 +261,18 @@ professional_army_reform = {
 	icon = "soldiers"
 	allow_normal_conversion = yes
 	effect = {
-		change_variable = {
-			which = Royal_Influence
-			value = 1
+		if = {
+			limit = { uses_republican_tradition = yes }
+			change_variable = {
+				which = Oliarch_Influence
+				value = 1
+			}
+		}
+		else = {
+			change_variable = {
+				which = Royal_Influence
+				value = 1
+			}
 		}
 		if = {
 			limit = {
@@ -273,12 +282,21 @@ professional_army_reform = {
 		}
 	}
 	removed_effect = {
-		change_variable = {
-			which = Royal_Influence
-			value = -1
+		if = {
+			limit = { uses_republican_tradition = yes }
+			change_variable = {
+				which = Oliarch_Influence
+				value = -1
+			}
+		}
+		else = {
+			change_variable = {
+				which = Royal_Influence
+				value = -1
+			}
 		}
 	}
-	potential = {}
+	potential = { }
 	modifiers = {
 		drill_gain_modifier = 0.25
 		yearly_army_professionalism = 0.001
