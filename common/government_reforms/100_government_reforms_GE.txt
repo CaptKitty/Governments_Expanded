@@ -7683,3 +7683,120 @@
 	}
 #}
 
+the_holy_office_reform = {
+	icon = judge
+	allow_normal_conversion = yes
+	potential = {
+		tag = PAP
+	}
+	modifiers = {
+		yearly_corruption = -0.05
+		institution_spread_from_true_faith = 0.5
+		adm_advisor_cost = -0.1
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+colonial_mission_reform = {
+	icon = "colonial_church"
+	allow_normal_conversion = yes
+	potential = {
+		num_of_ports = 1
+	}
+	modifiers = {
+		range = 0.25
+		colonist_placement_chance = 0.10
+	}
+	ai = {
+		factor = 0
+	}
+}
+
+ajuraan_theocracy_reform = {
+	icon = muslim_highlighted
+	allow_normal_conversion = yes
+	
+	queen = yes
+	heir = yes
+	royal_marriage = yes
+	
+	potential = {
+		primary_culture = somali
+	}
+	modifiers = {
+		global_trade_power = 0.10
+		trade_range_modifier = 0.25
+	}
+	custom_attributes = {
+		enables_hereditary_theocracy = yes
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+dynastic_theocracy_reform = {
+	allow_normal_conversion = yes
+	icon = "feudal_theocracy"
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	queen = yes
+	heir = yes
+	royal_marriage = yes
+	maintain_dynasty = yes
+	effect = {
+		hidden_effect = {
+			country_event = {
+				id = reform_me_events.83
+			}
+		}
+	}
+	modifiers = {
+		devotion = 0.25
+	}
+	custom_attributes = {
+		enables_hereditary_theocracy = yes
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+fighting_for_israel_reform = {
+	icon = landscape
+	allow_normal_conversion = yes
+	potential = {
+		religion = jewish
+	}
+	trigger = {
+		religion = jewish
+	}
+	modifiers = {
+		land_morale = 0.15
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+restore_the_davidic_line_reform = {
+	icon = crown
+	allow_normal_conversion = yes
+	potential = {
+		religion = jewish
+	}
+	trigger = {
+		religion = jewish
+	}
+	modifiers = {
+		max_absolutism = 25
+	}
+	custom_attributes = {
+		enables_davidic_line = yes
+	}
+	ai = {
+		factor = 100
+	}
+}
