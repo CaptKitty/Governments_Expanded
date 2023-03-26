@@ -1,5 +1,7 @@
 ﻿l_english:
 # Tier 1
+ duchi_montefeltro: "Duchi da Montefeltro"
+ duchi_montefeltro_desc: "As mercenary captains, the Dukes of Urbino were feared and respected across the land. They rode forth with their armies, clad in shining armor and bearing lances and swords, ready to defend their territories and those of their allies with fierce determination. Yet despite their martial might, the Dukes of Urbino were also renowned as patrons of the arts. They were great collectors of paintings, sculptures, and other treasures of beauty, which they acquired from across the land and beyond."
  florentine_republic: "The Florentine Republic"
  florentine_republic_desc: "We normally think of a Republic as a government where everyone votes for representatives who will represent their interests to the government (think of the United States pledge of allegiance: "and to the republic for which it stands..."). However, Florence was a Republic in the sense that there was a constitution which limited the power of the nobility (as well as laborers) and ensured that no one person or group could have complete political control (so it was far from our ideal of everyone voting, in fact a very small percentage of the population had the vote). Political power resided in the hands of middle-class merchants, a few wealthy families (such as the Medici, important art patrons who would later rule Florence) and the powerful guilds."
  genoan_republic_reform: "Genoese Republic"
@@ -14,6 +16,8 @@
  kingdom_of_sicily_reform_desc: "The Traditions and Laws of the Normans were used as the foundation of the Kingdom of Sicily, further formalized under the German Hohenstaufen dynasty into a highly centralized and absolute monarchy. Upon supporting Antipope Anacletus ll against Pope Innocentus ll, Ruggeru ll was crowned king the new Kingdom of Sicily."
  mantua_house_of_gonzaga_reform: "House of Gonzaga"
  mantua_house_of_gonzaga_reform_desc: "Thanks to family wealth but also an intelligent marriage policy, the Gonzagas managed to strengthen relations with the Empire (Hohenzollern), Spain (D'Avalos), the South of Italy (Carafa, Caracciolo, Pignatelli) and with most prominent families of the time (Borromeo, Gambara, Malaspina, Este, Bentivoglio, Malatesta, Ordelaffi, Orsini, Colonna, Medici, da Montefeltro, Paleologo). \nThe lords of Mantua were at the helm of a complex of small regional states that extended from Northern Italy to France and southern Italy."
+ signoria_baglioni: "Signoria dei Baglioni"
+ signoria_baglioni_desc: "Braccio I Baglioni, taking advantage of his position as captain of the militia of the Holy See, as he was also the nephew of Braccio da Montone, the previous Lord of the City, exerted an influence on Perugia that soon established its supremacy. In those years, the Umbrian town experienced a period of flourishing growth, as the Baglioni family implemented a policy of expansion and embellishment of the city, having new roads and palaces built."
 
 # Tier 2
  growth_signoria_reform: "The Signoria"
@@ -119,11 +123,12 @@
  mechanic_enables_customs_house_yes: "Customs House: §G+25%§! Goods Produced in Cloth, Livestock or Wool provinces."
  mechanic_enables_demedici_yes: "De'Medici Influence: Always be able to elect a De'Medici Scion."
  mechanic_enables_deposition_yes: "Enables Depositions; Frequent armed insurrections demanding a new election or for their leader to be enthroned."
- mechanic_enables_dibattito_italiano_yes: "Enables Dibattito Italiano Mechanic Ability"
  mechanic_enables_disables_deposition_yes: "Disables Depositions."
  mechanic_enables_fury_of_the_reconquista_yes: "Fury of the Reconquista: §G+2.5%§! Mercenary Discipline and §G+5%§! Morale of Armies while at war with Heretics or Heathens."
  mechanic_enables_ianuensis_ergo_mercator_yes: "Explorer and Merchants: §G+10§! Global Settler for every §M10%§! of Trade Efficiency above §Y30§!, up to §G70§!"
  mechanic_enables_influencial_ties_yes: "Influencial Ties: §G+0.5§! Diplomatic Reputation for each Great Power, Emperor or Pope you're allied with, up to a maximum of five allies"
+ mechanic_enables_italian_dibattito_italiano_yes: "Enables Dibattito Italiano Mechanic"
+ mechanic_enables_italian_monarchici_vs_repubblicani_yes: "Enables Monarchici vs Repubblicani Mechanic"
  mechanic_enables_liber_augustalis_yes: "Liber Augustalis: Increase each estate's Loyalty Equilibrium by §Y5%§! while your legitimacy is over §Y90%§!."
  mechanic_enables_marriage_policies_yes: "Marriage Policies: §G+5%§! §YImprove Relations§! for every 1 point of positive diplomatic reputation, up to §G25%§!"
  mechanic_enables_mary_of_the_purity_yes: "Mary of the Purity: §G-0.025§! yearly corruption per Tolerance of the True Faith over 5 up to a maximum of §G-0.10§!."
@@ -133,7 +138,7 @@
  mechanic_enables_support_ghuelps_yes: "In support of the Pope and Defence against the Empire; §R-50§! opinion with Ghibellines, §G+25§! opinion with fellow Guelphs."
 
 # Tooltips
- GE_FORMED_LVN_WITHOUT_FE: "Has United the Lombard and Venetians under a common flag"
+ mechanic_enables_mercenary_militarization_mechanic_yes: "Enables Mercenary Militarization Mechanic."
 
 # Modifiers
  GE_Customs_House: "Customs House"

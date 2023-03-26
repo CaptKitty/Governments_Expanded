@@ -1,6 +1,10 @@
 spriteTypes = {
 # Tier 1
 	spriteType = {
+		name = "government_reform_urbino_duchi_montefeltro"
+		texturefile = "gfx//interface//government_reform_icons//urbino_duchi_montefeltro.dds"
+	}
+	spriteType = {
 		name = "government_reform_florentine_republic"
 		texturefile = "gfx//interface//government_reform_icons//florentine_republic.dds"
 	}
@@ -27,6 +31,10 @@ spriteTypes = {
 	spriteType = {
 		name = "government_reform_sicily_kingdom_of_sicily"
 		texturefile = "gfx//interface//government_reform_icons//sicily_kingdom_of_sicily.dds"
+	}
+	spriteType = {
+		name = "government_reform_perugia_signoria_baglioni"
+		texturefile = "gfx//interface//government_reform_icons//perugia_signoria_baglioni.dds"
 	}
 # Tier 2
 	spriteType = {

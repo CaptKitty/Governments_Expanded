@@ -161,6 +161,7 @@ monarchy = {
 				klever_union_reform
 				life_on_the_plateau_reform
 				#1.19
+				duchi_montefeltro
 				italian_monarchy
 			}
 		}
@@ -903,6 +904,7 @@ republic = {
 				constitutional_republic_reform
 				#1.19
 				italian_republic
+				signoria_baglioni
 			}
 		}
 		republican_virtues = {

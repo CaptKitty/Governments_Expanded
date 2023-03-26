@@ -1,4 +1,24 @@
 #Tier 1
+duchi_montefeltro = {
+	icon = urbino_duchi_montefeltro
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			have_had_reform = duchi_montefeltro
+			tag = URB
+			was_tag = URB
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+	modifiers = {
+		idea_cost = -0.05
+		mercenary_cost = -0.15
+	}
+	custom_attributes = {
+		enables_mercenary_militarization_mechanic = yes
+	}
+}
 florentine_republic = {
 	icon = florentine_republic
 	allow_normal_conversion = yes
@@ -117,11 +137,11 @@ italian_monarchy = {
 	}
 	modifiers = {
 		legitimacy = 1
-		core_creation = -0.10
 		governing_capacity = 150
 	}
 	custom_attributes = {
-		enables_dibattito_italiano = yes
+		enables_italian_dibattito_italiano = yes
+		enables_italian_monarchici_vs_repubblicani = yes
 	}
 }
 italian_republic = {
@@ -133,12 +153,12 @@ italian_republic = {
 	}
 	modifiers = {
 		republican_tradition = 0.3
-		primary_development_cost = 0.10
 		governing_capacity = 150
 	}
 	duration = 5
 	custom_attributes = {
-		enables_dibattito_italiano = yes
+		enables_italian_dibattito_italiano = yes
+		enables_italian_monarchici_vs_repubblicani = yes
 	}
 	conditional = {
 		allow = { has_dlc = "Common Sense" }
@@ -227,6 +247,34 @@ mantua_house_of_gonzaga_reform = {
 	}
 	ai = {
 		factor = 100
+	}
+}
+signoria_baglioni = {
+	icon = perugia_signoria_baglioni
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	nation_designer_trigger = {
+		culture_group = latin
+	}
+	potential = {
+		OR = {
+			have_had_reform = signoria_baglioni
+			tag = PGA
+			was_tag = PGA
+		}
+	}
+	duration = 12
+	royal_marriage = yes
+	modifiers = {
+		reform_progress_growth = 0.15
+		mercenary_cost = -0.15
+	}
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+		enables_nepotism = yes
+		enables_mercenary_militarization_mechanic = yes
 	}
 }
 
