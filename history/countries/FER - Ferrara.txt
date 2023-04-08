@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = house_of_este
+add_government_reform = house_of_este_reform
 government_rank = 1
 technology_group = western
 religion = catholic

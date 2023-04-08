@@ -67,3 +67,9 @@ GE_Mary_Of_The_Purity_4 = {
 GE_Mountain_Warfare = {
 	local_defender_dice_roll_bonus = 1
 }
+
+GE_Fanti_Da_Mar = {
+	is_marine_modifier = yes
+	shock_damage = 0.05
+	shock_damage_received = -0.10
+}

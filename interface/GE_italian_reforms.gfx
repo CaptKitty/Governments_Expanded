@@ -5,6 +5,10 @@ spriteTypes = {
 		texturefile = "gfx//interface//government_reform_icons//urbino_duchi_montefeltro.dds"
 	}
 	spriteType = {
+		name = "government_reform_ferrara_house_of_este"
+		texturefile = "gfx//interface//government_reform_icons//ferrara_house_of_este.dds"
+	}
+	spriteType = {
 		name = "government_reform_florentine_republic"
 		texturefile = "gfx//interface//government_reform_icons//florentine_republic.dds"
 	}
@@ -27,6 +31,18 @@ spriteTypes = {
 	spriteType = {
 		name = "government_reform_mantua_house_of_gonzaga"
 		texturefile = "gfx//interface//government_reform_icons//mantua_house_of_gonzaga.dds"
+	}
+	spriteType = {
+		name = "government_reform_montferrat_palaiologos_montferrat"
+		texturefile = "gfx//interface//government_reform_icons//montferrat_palaiologos_montferrat.dds"
+	}
+	spriteType = {
+		name = "government_reform_sardinia_giudicati_sardi"
+		texturefile = "gfx//interface//government_reform_icons//sardinia_giudicati_sardi.dds"
+	}
+	spriteType = {
+		name = "government_reform_savoy_savoia"
+		texturefile = "gfx//interface//government_reform_icons//savoy_savoia.dds"
 	}
 	spriteType = {
 		name = "government_reform_sicily_kingdom_of_sicily"

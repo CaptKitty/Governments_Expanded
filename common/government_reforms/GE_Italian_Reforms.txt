@@ -1,17 +1,17 @@
 #Tier 1
-duchi_montefeltro = {
+duchi_montefeltro_reform = {
 	icon = urbino_duchi_montefeltro
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			have_had_reform = duchi_montefeltro
+			have_had_reform = duchi_montefeltro_reform
 			tag = URB
 			was_tag = URB
 		}
 	}
 	trigger = {
 		OR = {
-			have_had_reform = duchi_montefeltro
+			have_had_reform = duchi_montefeltro_reform
 			tag = URB
 			was_tag = URB
 		}
@@ -135,19 +135,19 @@ genoese_republic = {
 		is_merchant_republic = yes
 	}
 }
-giudicati_sardi = {
+giudicati_sardi_reform = {
 	icon = sardinia_giudicati_sardi
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			have_had_reform = giudicati_sardi
+			have_had_reform = giudicati_sardi_reform
 			tag = SAR
 			was_tag = SAR
 		}
 	}
 	trigger = {
 		OR = {
-			have_had_reform = giudicati_sardi
+			have_had_reform = giudicati_sardi_reform
 			tag = SAR
 			was_tag = SAR
 		}
@@ -159,19 +159,19 @@ giudicati_sardi = {
 		state_maintenance_modifier = -0.15
 	}
 }
-house_of_este = {
+house_of_este_reform = {
 	icon = ferrara_house_of_este
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			have_had_reform = house_of_este
+			have_had_reform = house_of_este_reform
 			tag = FER
 			was_tag = FER
 		}
 	}
 	trigger = {
 		OR = {
-			have_had_reform = house_of_este
+			have_had_reform = house_of_este_reform
 			tag = FER
 			was_tag = FER
 		}
@@ -183,7 +183,7 @@ house_of_este = {
 		same_culture_advisor_cost = -0.10
 	}
 }
-house_of_gonzaga = {
+house_of_gonzaga_reform = {
 	icon = mantua_house_of_gonzaga
 	allow_normal_conversion = yes
 	valid_for_nation_designer = no
@@ -191,14 +191,14 @@ house_of_gonzaga = {
 		OR = {
 			tag = MAN
 			was_tag = MAN
-			has_reform = house_of_gonzaga
+			has_reform = house_of_gonzaga_reform
 		}
 	}
 	trigger = {
 		OR = {
 			tag = MAN
 			was_tag = MAN
-			has_reform = house_of_gonzaga
+			has_reform = house_of_gonzaga_reform
 		}
 	}
 	modifiers = {
@@ -212,8 +212,8 @@ house_of_gonzaga = {
 		factor = 100
 	}
 }
-italian_monarchy = {
-	icon = italian_monarchy
+italian_monarchy_reform = {
+	icon = italian_monarchy_reform
 	allow_normal_conversion = yes
 	valid_for_nation_designer = no
 	potential = {
@@ -241,8 +241,8 @@ italian_monarchy = {
 	# 	}
 	# }
 }
-italian_republic = {
-	icon = italian_republic
+italian_republic_reform = {
+	icon = italian_republic_reform
 	allow_normal_conversion = yes
 	valid_for_nation_designer = no
 	potential = {
@@ -330,7 +330,7 @@ kingdom_of_sicily_reform = {
 		factor = 100
 	}
 }
-palaiologos_montferrat = {
+palaiologos_montferrat_reform = {
 	icon = montferrat_palaiologos_montferrat
 	allow_normal_conversion = yes
 	valid_for_nation_designer = no
@@ -338,14 +338,14 @@ palaiologos_montferrat = {
 		OR = {
 			tag = MFA
 			was_tag = MFA
-			has_reform = palaiologos_montferrat
+			has_reform = palaiologos_montferrat_reform
 		}
 	}
 	trigger = {
 		OR = {
 			tag = MFA
 			was_tag = MFA
-			has_reform = palaiologos_montferrat
+			has_reform = palaiologos_montferrat_reform
 		}
 	}
 	modifiers = {
@@ -382,7 +382,7 @@ savoia_reform = {
 		factor = 100
 	}
 }
-signoria_baglioni = {
+signoria_baglioni_reform = {
 	icon = perugia_signoria_baglioni
 	allow_normal_conversion = yes
 	valid_for_nation_designer = yes
@@ -392,14 +392,14 @@ signoria_baglioni = {
 	}
 	potential = {
 		OR = {
-			have_had_reform = signoria_baglioni
+			have_had_reform = signoria_baglioni_reform
 			tag = PGA
 			was_tag = PGA
 		}
 	}
 	trigger = {
 		OR = {
-			have_had_reform = signoria_baglioni
+			have_had_reform = signoria_baglioni_reform
 			tag = PGA
 			was_tag = PGA
 		}
@@ -1328,8 +1328,46 @@ alpini_reform = {
 		factor = 100
 	}
 }
+berberi_mantovani_reform = {
+	icon = mantua_knightly_orders
+	allow_normal_conversion = yes
+	valid_for_nation_designer = no
+	potential = {
+		OR = {
+			tag = MAN
+			was_tag = MAN
+			AND = {
+				culture_group = latin
+				owns_core_province = 109
+			}
+			have_had_reform = berberi_mantovani_reform
+		}
+	}
+	trigger = {
+		religion = catholic
+		OR = {
+			tag = MAN
+			was_tag = MAN
+			AND = {
+				culture_group = latin
+				owns_core_province = 109
+			}
+			have_had_reform = berberi_mantovani_reform
+		}
+	}
+	modifiers = {
+		cav_to_inf_ratio = 0.15
+		cavalry_flanking = 0.35
+	}
+	custom_attributes = {
+		enables_ordine_cordone_giallo = yes #+5% CCA and 1 PI for each 2 ToTf over 4
+	}
+	ai = {
+		factor = 100
+	}
+}
 crusading_tradition_reform = {
-	icon = admiralty_reform
+	icon = brothers_in_arms
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -1360,39 +1398,59 @@ crusading_tradition_reform = {
 		factor = 100
 	}
 }
-berberi_mantovani_reform = {
-	icon = mantua_knightly_orders
+fanti_da_mar_reform = {
+	icon = pirate_king
 	allow_normal_conversion = yes
-	valid_for_nation_designer = no
 	potential = {
 		OR = {
-			tag = MAN
-			was_tag = MAN
-			AND = {
-				tag = ITA
-				owns_core_province = 109
+			culture_group = latin
+			num_of_owned_provinces_with = {
+				value = 1
+				has_port = yes
 			}
-			have_had_reform = berberi_mantovani_reform
-		}
-	}
-	trigger = {
-		religion = catholic
-		OR = {
-			tag = MAN
-			was_tag = MAN
-			AND = {
-				tag = ITA
-				owns_core_province = 109
-			}
-			have_had_reform = berberi_mantovani_reform
+			have_had_reform = fanti_da_mar_reform
 		}
 	}
 	modifiers = {
-		cav_to_inf_ratio = 0.15
-		cavalry_flanking = 0.35
+		allowed_marine_fraction = 0.15
+		global_sailors_modifier = 0.15
+		sailors_recovery_speed = 0.25
 	}
-	custom_attributes = {
-		enables_ordine_cordone_giallo = yes #+5% CCA and 1 PI for each 2 ToTf over 4
+	ai = {
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = { num_of_marines = 1 }
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = GE_Fanti_Da_Mar
+			duration = -1
+		}
+	}
+	removed_effect = {
+		remove_country_modifier = GE_Fanti_Da_Mar
+	}
+}
+fonderie_ferraresi_reform = {
+	icon = gustavan_artillery
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = FER
+			was_tag = FER
+			AND = {
+				culture_group = latin
+				owns_core_province = 113
+			}
+			have_had_reform = fonderie_ferraresi_reform
+		}
+	}
+	modifiers = {
+		artillery_cost = -0.10
+		leader_siege = 1
+		monarch_military_power = 1
 	}
 	ai = {
 		factor = 100
@@ -1419,6 +1477,10 @@ nunziatella_reform = {
 			primary_culture = neapolitan
 			primary_culture = sicilian
 			has_reform = nunziatella_reform
+			AND = {
+				culture_group = latin
+				owns_core_province = 121
+			}
 		}
 	}
 	trigger = {
@@ -1430,6 +1492,10 @@ nunziatella_reform = {
 					primary_culture = sicilian
 				}
 				absolutism = 50
+			}
+			AND = {
+				culture_group = latin
+				owns_core_province = 121
 			}
 			has_reform = nunziatella_reform
 		}
