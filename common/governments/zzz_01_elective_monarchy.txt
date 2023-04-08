@@ -260,7 +260,7 @@ elective_monarchy = {
 				army_of_flanders_reform
 				#1.15
 				jayish_al_malik_reform
-				mantua_knightly_orders_reform
+				berberi_mantovani_reform
 				bedouin_reserves_reform
 				#1.16
 				slave_soldiers_reform

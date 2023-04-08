@@ -152,7 +152,7 @@ monarchy = {
 				duchy_of_luxembourg_reform
 				emirate_of_andalusia_reform
 				#1.15
-				mantua_house_of_gonzaga_reform
+				house_of_gonzaga_reform
 				tanistry_reform
 				#1.16
 				kingdom_of_gao_reform
@@ -161,8 +161,12 @@ monarchy = {
 				klever_union_reform
 				life_on_the_plateau_reform
 				#1.19
-				duchi_montefeltro
-				italian_monarchy
+				duchi_montefeltro_reform
+				giudicati_sardi_reform
+				house_of_este_reform
+				italian_monarchy_reform
+				palaiologos_montferrat_reform
+				savoia_reform
 			}
 		}
 		hereditary_vs_nobility = {
@@ -425,7 +429,7 @@ monarchy = {
 				army_of_flanders_reform
 				#1.15
 				jayish_al_malik_reform
-				mantua_knightly_orders_reform
+				berberi_mantovani_reform
 				bedouin_reserves_reform
 				#1.16
 				slave_soldiers_reform
@@ -435,6 +439,8 @@ monarchy = {
 				monastic_temples_reform
 				#1.19
 				alpini_reform
+				fonderie_ferraresi_reform
+				fanti_da_mar_reform
 			}
 		}
 		state_and_religion = {
@@ -896,15 +902,15 @@ republic = {
 				#GE
 				florentine_republic
 				#american_government
-				genoan_republic_reform
+				genoese_republic
 				old_swiss_confederation_reform
 				russian_republic_republic
 				caucasian_republic
 				common_republic_reform
 				constitutional_republic_reform
 				#1.19
-				italian_republic
-				signoria_baglioni
+				italian_republic_reform
+				signoria_baglioni_reform
 			}
 		}
 		republican_virtues = {
@@ -1023,6 +1029,9 @@ republic = {
 				institutionalized_repbulican_army_reform
 				#1.19
 				alpini_reform
+				berberi_mantovani_reform
+				fonderie_ferraresi_reform
+				fanti_da_mar_reform
 			}
 		}
 		republic_and_religion = {
