@@ -933,8 +933,8 @@ republic = {
 				mixed_republic_reform
 				independence_reform
 				sovereignity_reform
-				support_ghibbelline_republic_reform
-				support_guelphs_republic_reform
+				support_ghibbelline_reform
+				support_guelphs_reform
 				legacy_of_st_ambrose_reform
 				hanseatic_ties_reform
 				archdiocese_of_pisa_reform
@@ -967,19 +967,19 @@ republic = {
 		}
 		military_organisation = {
 			reforms = {
-				feudal_levies_reform_republic
-				national_guard_reform_republic
-				milizia_nationale_reform_republic
-				mercenary_corps_reform_republic
-				professional_army_reform_republic
-				italian_mercenaries_reform_republic
+				feudal_levies_reform
+				national_guard_reform
+				milizia_nationale_reform
+				mercenary_corps_reform
+				professional_army_reform
+				italian_mercenaries_reform
 				imperial_circles_reform
 				expanded_devshirme_reform
 				tatar_mercenaries_reform
 				south_east_asian_elephants_reform
 				portugese_marines_reform
-				permanent_marathas_council_reform_republic
-				governmental_purbias_register_reform_republic
+				permanent_marathas_council_reform
+				governmental_purbias_register_reform
 				foreign_formation_regiments_reform
 				general_war_commissariat_reform
 				gustavan_artillery_reform
@@ -1069,7 +1069,7 @@ republic = {
 				fu_canton_administration
 				mil_sforza_administration
 				#GE
-				advanced_bookkeeping_reform_republic
+				advanced_bookkeeping_reform
 				advanced_bookkeeping_reform_republic_venice
 				communal_territories_reform
 				united_indian_companies_reform
