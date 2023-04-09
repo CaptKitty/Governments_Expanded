@@ -1449,7 +1449,6 @@ fonderie_ferraresi_reform = {
 	}
 	modifiers = {
 		artillery_cost = -0.10
-		leader_siege = 1
 		monarch_military_power = 1
 	}
 	ai = {
