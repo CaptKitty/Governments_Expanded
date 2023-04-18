@@ -5,7 +5,10 @@ if = {
 	}
 	add_government_reform = feudal_france_reform
 }
-else = {
+if = {
+	limit = {
+		NOT = { has_dlc = "Domination" }
+	}
 	add_government_reform = french_feudalism
 }
 primary_culture = cosmopolitan_french

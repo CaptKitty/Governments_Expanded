@@ -5,14 +5,17 @@ if = {
 	}
 	add_government_reform = margraviate_reform
 }
-else = {
+if = {
+	limit = {
+		NOT = { has_dlc = "Domination" }
+	}
 	add_government_reform = margrave_reform
 }
 government_rank = 1
 primary_culture = swabian
 religion = catholic
 technology_group = western
-capital = 4714	# Durlach	
+capital = 4714	# Durlach
 
 
 1372.1.1 = {
@@ -22,7 +25,7 @@ capital = 4714	# Durlach
 		adm = 3
 		dip = 2
 		mil = 1
-		dynasty = "von Zähringen"		
+		dynasty = "von Zähringen"
 	}
 }
 
@@ -36,7 +39,7 @@ capital = 4714	# Durlach
 		adm = 1
 		dip = 2
 		mil = 3
-		dynasty = "von Zähringen"		
+		dynasty = "von Zähringen"
 	}
 }
 
@@ -64,10 +67,10 @@ capital = 4714	# Durlach
 		adm = 1
 		dip = 1
 		mil = 1
-		dynasty = "von Zähringen"		
+		dynasty = "von Zähringen"
 	}
 }
-		
+
 1453.10.14 = {
 	monarch = {
 		name = "Bernhard II"
@@ -75,7 +78,7 @@ capital = 4714	# Durlach
 		adm = 1
 		dip = 1
 		mil = 1
-		dynasty = "von Zähringen"		
+		dynasty = "von Zähringen"
 	}
 }
 
@@ -117,7 +120,7 @@ capital = 4714	# Durlach
 		dynasty = "von Zähringen"
 	}
 }
-		
+
 1475.2.23 = {
 	monarch = {
 		name = "Christoph I"
@@ -142,7 +145,7 @@ capital = 4714	# Durlach
 		dynasty = "von Zähringen"
 	}
 }
-		
+
 1515.4.20 = {
 	monarch = {
 		name = "Bernhard III"
@@ -327,8 +330,8 @@ capital = 4714	# Durlach
 		adm = 2
 		dip = 4
 		mil = 4
-		dynasty = "von Zähringen"		
-		leader = { 
+		dynasty = "von Zähringen"
+		leader = {
 			name = "Ludwig-Wilhelm I"
 			type = general
 			fire = 2
