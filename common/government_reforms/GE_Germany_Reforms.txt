@@ -1,5 +1,5 @@
 german_kaiserreich = {
-	icon = "prussian_monarchy"
+	icon = "german_kaiserreich"
 	allow_normal_conversion = no
 	potential = {
 		OR = {

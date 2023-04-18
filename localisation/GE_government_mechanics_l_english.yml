@@ -48,7 +48,6 @@
 
  ## Tooltips:
  crusade_power_at_100_tt: "The monthly decay is negated until our §YCrusade Power§! falls under §Y100.0§!."
- mission_to_crusade_reform_tt: "Does NOT have Term Elections"
 
  ## Customizable Localization:
  string_crusade_power_gain_from_winning_war_against_crusade_target: "\n   - Win a War against the Crusade Target: §G+35.0§!"

@@ -138,7 +138,7 @@ monarchy = {
 				habsburg_monarchy_reform
 				austrian_empire_reform
 				polish_constitutionalism_reform
-				granadan_iqta_reform 
+				granadan_iqta_reform
 				#achaemenid_empire_reform
 				hessian_militarized_monarchy_reform
 				hessian_modern_militarized_monarchy_reform
@@ -146,7 +146,7 @@ monarchy = {
 				gorkha_kingdom_reform
 				maharajadhiraja_reform
 				empire_of_japan_reform
-				kingdom_of_jerusalem_reform 
+				kingdom_of_jerusalem_reform
 				despotate_of_caucasia_reform
 				sharifate_reform
 				rum_eagle_reform
@@ -173,13 +173,13 @@ monarchy = {
 				khaganate
 				athenian_monarchy
 				german_kaiserreich
-				ME_caliphate_reform_sunni 
-				ME_caliphate_reform_sunni_andalusia 
-				ME_caliphate_reform_sunni_arabian 
+				ME_caliphate_reform_sunni
+				ME_caliphate_reform_sunni_andalusia
+				ME_caliphate_reform_sunni_arabian
 				ME_caliphate_reform_shia_ibadi
 				west_slavic_monarchy
 				austria_hungary_reform
-				enlightened_despotism_reform 
+				enlightened_despotism_reform
 				me_baroque_monarchy_reform
 				me_nordmark
 				ME_tribal_federation_monarchy
@@ -272,7 +272,7 @@ monarchy = {
 				szlachta_authority_reform
 				every_man_a_noble_reform
 				curia_regis_reform
-				taha_divisions_reform 
+				taha_divisions_reform
 				unite_the_royal_houses_reform
 				#words_of_cyrus_reform
 				support_ghibbelline_reform
@@ -339,7 +339,7 @@ monarchy = {
 				### GE ###
 				# regional_forts_reform
 				theocratic_bureacrats_reform
-				ulema_guidance_reform 
+				ulema_guidance_reform
 				state_temple_harmonization_reform
 				enlightened_ethical_teachings_reform
 				guidance_of_the_dalai_llama_reform
@@ -368,7 +368,7 @@ monarchy = {
 				revoke_magnate_estates_reform
 				integrate_tatars_reform
 				abolish_bastard_feudalism_reform
-				taifa_governors_reform 
+				taifa_governors_reform
 				union_of_italian_states_reform
 				#persian_satrapies_reform
 				imperial_circles_administration_reform
@@ -489,7 +489,7 @@ monarchy = {
 				condottieri_contracts_reform
 				compagnie_dordonnance_reform
 				musketeers_reform
-				gendarmes_reform 
+				gendarmes_reform
 				general_war_commissariat_reform
 				swiss_mercenary_reform
 				allotment_system
@@ -605,10 +605,10 @@ monarchy = {
 				weak_burghers_reform
 				society_of_agriculture_reform
 				bourgeoisie_aristocracy_reform
-				noble_electors_reform 
-				royal_electors_reform 
-				parliamental_electors_reform 
-				papal_electors_reform 
+				noble_electors_reform
+				royal_electors_reform
+				parliamental_electors_reform
+				papal_electors_reform
 				union_of_crowns_reform
 				declaration_of_breda_reform
 				royal_society_reform
@@ -681,7 +681,7 @@ monarchy = {
 				boyar_scions_reform
 				turkicized_elite_reform
 				supreme_govenor_reform
-				cultural_investment_reform 
+				cultural_investment_reform
 				empowered_of_noble_bearing_reform
 				empowered_clergy_in_administration_reform
 				adoption_of_christianity_reform
@@ -711,7 +711,7 @@ monarchy = {
 				incan_administration_reform
 				me_hofkammer_reform
 				ME_reform_chaghatai_literature
-				#FU Reforms 
+				#FU Reforms
 				tur_custodian_holy_city_reform
 				ara_consulate_of_the_sea
 			}
@@ -896,7 +896,7 @@ monarchy = {
 		courts_of_navarra
 		livonian_diplomatic_monarchy
 	}
-	
+
 	# Dictatorships etc
 	exclusive_reforms = {
 		military_dictatorship_reform
@@ -960,13 +960,13 @@ monarchy = {
 		doppelsoldner_reform
 		swiss_mercenary_reform
 	}
-	
+
 	exclusive_reforms = {
 		professional_army_reform
 		hessian_militarized_monarchy_reform
 		hessian_modern_militarized_monarchy_reform
 	}
-	
+
 	exclusive_reforms = {
 		empowered_expand_corvee_reform
 		quash_noble_power_reform
@@ -1223,7 +1223,7 @@ republic = {
 				condottieri_contracts_reform
 				compagnie_dordonnance_reform
 				musketeers_reform
-				gendarmes_reform 
+				gendarmes_reform
 				general_war_commissariat_reform
 				swiss_mercenary_reform
 				allotment_system
@@ -1463,7 +1463,7 @@ republic = {
 				#EE reforms
 				electoral_college_reform
 				direct_majority_rule_reform
-				#FU Reforms 
+				#FU Reforms
 				nov_republican_guard_reform
 			}
 		}
@@ -1541,7 +1541,7 @@ republic = {
 		prussian_republic_reform
 		military_dictatorship_reform
 	}
-	exclusive_reforms = { 
+	exclusive_reforms = {
 		dutch_republic
 		force_reelection_reform
 	}
@@ -1667,7 +1667,7 @@ tribal = {
 				condottieri_contracts_reform
 				compagnie_dordonnance_reform
 				musketeers_reform
-				gendarmes_reform 
+				gendarmes_reform
 				general_war_commissariat_reform
 				swiss_mercenary_reform
 				allotment_system
@@ -1685,15 +1685,15 @@ tribal = {
 				tercios_reform
 				### GE ###
 				gunpowder_weapons_reform
-				gunpowder_weapons_african_reform 
+				gunpowder_weapons_african_reform
 				traditionalist_reform
-				traditionalist_african_reform 
+				traditionalist_african_reform
 				turkoman_gunners_reform
 				mongol_ties_reform
 				subotai_lessons_reform
 				tatar_raiders_reform
-				african_jungle_warrior_reform 
-				elephant_riders_reform 
+				african_jungle_warrior_reform
+				elephant_riders_reform
 				warrior_kings_reform
 			}
 		}
@@ -1932,7 +1932,7 @@ theocracy = {
 				condottieri_contracts_reform
 				compagnie_dordonnance_reform
 				musketeers_reform
-				gendarmes_reform 
+				gendarmes_reform
 				general_war_commissariat_reform
 				swiss_mercenary_reform
 				allotment_system
@@ -1968,7 +1968,7 @@ theocracy = {
 				inquisition_reform
 				religious_pragmatism_reform
 				papal_curia_reform
-				ulema_guidance_reform 
+				ulema_guidance_reform
 			}
 		}
 		secularization = {
@@ -2030,6 +2030,7 @@ theocracy = {
 				the_holy_office_reform
 				fighting_for_israel_reform
 				monastic_temples_reform
+				mission_to_crusade_reform
 			}
 		}
 		separation_of_power_theocracy = {
