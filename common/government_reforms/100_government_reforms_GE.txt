@@ -3225,7 +3225,7 @@
 
 	
 
-	oprichnina_reform = {
+	oprichnina_reform_GE = {
 		icon = oprichnina
 		allow_normal_conversion = yes
 		effect = {
