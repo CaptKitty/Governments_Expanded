@@ -363,7 +363,6 @@ country_event = {
 				mil = 1
 				adm = 4
 				dip = 1
-				fixed = yes
 				random_gender = yes # Allows random gender for republics
 			}
 		}
@@ -372,7 +371,6 @@ country_event = {
 				mil = 1
 				adm = 4
 				dip = 1					
-				fixed = yes
 			}
 		}
 		if = {
@@ -465,7 +463,6 @@ country_event = {
 				dip = 4
 				adm = 1
 				mil = 1					
-				fixed = yes
 				random_gender = yes # Allows random gender for republics
 			}
 		}
@@ -474,7 +471,6 @@ country_event = {
 				dip = 4
 				adm = 1
 				mil = 1					
-				fixed = yes
 			}
 		}
 		if = {
@@ -562,7 +558,6 @@ country_event = {
 				mil = 4
 				adm = 1
 				dip = 1					
-				fixed = yes
 				random_gender = yes # Allows random gender for republics
 			}
 		}
@@ -571,7 +566,6 @@ country_event = {
 				mil = 4
 				adm = 1
 				dip = 1					
-				fixed = yes
 			}
 		}
 		if = {
@@ -868,7 +862,6 @@ country_event = {
 			ADM = 3
 			DIP = 3
 			MIL = 3
-			fixed = yes
 			culture = georgian
 		}
 		add_ruler_modifier = {
@@ -900,7 +893,6 @@ country_event = {
 			ADM = 2
 			DIP = 5
 			MIL = 2
-			fixed = yes
 			culture = circassian
 		}
 		add_ruler_modifier = {
@@ -944,7 +936,6 @@ country_event = {
 			ADM = 2
 			DIP = 2
 			MIL = 5
-			fixed = yes
 			culture = dagestani
 		}
 		add_ruler_modifier = {
@@ -988,7 +979,6 @@ country_event = {
 			ADM = 5
 			DIP = 2
 			MIL = 2
-			fixed = yes
 			culture = armenian
 		}
 		if = {
@@ -1150,7 +1140,6 @@ country_event = {
 				mil = 1
 				adm = 4
 				dip = 1					
-				fixed = yes
 				random_gender = yes # Allows random gender for republics
 			}
 		}
@@ -1159,7 +1148,6 @@ country_event = {
 				mil = 1
 				adm = 4
 				dip = 1					
-				fixed = yes
 			}
 		}
 		if = {
@@ -1239,7 +1227,6 @@ country_event = {
 				dip = 4
 				adm = 1
 				mil = 1					
-				fixed = yes
 				random_gender = yes # Allows random gender for republics
 			}
 		}
@@ -1248,7 +1235,6 @@ country_event = {
 				dip = 4
 				adm = 1
 				mil = 1					
-				fixed = yes
 			}
 		}
 		if = {
@@ -1330,7 +1316,6 @@ country_event = {
 				mil = 4
 				adm = 1
 				dip = 1					
-				fixed = yes
 				random_gender = yes # Allows random gender for republics
 			}
 		}
@@ -1339,7 +1324,6 @@ country_event = {
 				mil = 4
 				adm = 1
 				dip = 1					
-				fixed = yes
 			}
 		}
 		if = {
@@ -1602,7 +1586,6 @@ country_event = {
 			ADM = 3
 			DIP = 3
 			MIL = 3
-			fixed = yes
 			culture = georgian
 		}
 		add_ruler_modifier = {
@@ -1634,7 +1617,6 @@ country_event = {
 			ADM = 2
 			DIP = 5
 			MIL = 2
-			fixed = yes
 			culture = circassian
 		}
 		add_ruler_modifier = {
@@ -1678,7 +1660,6 @@ country_event = {
 			ADM = 2
 			DIP = 2
 			MIL = 5
-			fixed = yes
 			culture = dagestani
 		}
 		add_ruler_modifier = {
@@ -1722,7 +1703,6 @@ country_event = {
 			ADM = 5
 			DIP = 2
 			MIL = 2
-			fixed = yes
 			culture = armenian
 		}
 		if = {
@@ -1816,7 +1796,6 @@ country_event = {
 				adm = 4
 				mil = 2
 				dip = 2
-				fixed = yes
 			}
 			set_ruler_flag = appointed_by_overlord
 		}
@@ -1829,7 +1808,6 @@ country_event = {
 				adm = 2
 				dip = 4
 				mil = 2
-				fixed = yes
 			}
 			set_ruler_flag = appointed_by_overlord
 		}
@@ -1842,7 +1820,6 @@ country_event = {
 				adm = 2
 				dip = 2
 				mil = 4
-				fixed = yes
 			}	
 			set_ruler_flag = appointed_by_overlord
 		}
