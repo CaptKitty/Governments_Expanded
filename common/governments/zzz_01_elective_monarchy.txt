@@ -34,8 +34,6 @@ elective_monarchy = {
 				grant_nobles_electorate_reform
 				blackmail_nobility_reform
 				grant_military_command_reform
-				#ME
-				sharia_reform
 				#GE
 				#Religous
 				papal_embassy_GE_reform
@@ -125,9 +123,6 @@ elective_monarchy = {
 				limit_imperial_court_reform
 				regional_council_reform
 				representation_of_the_crown_reform
-				#ME
-				#tur_reform_beylerbeys
-				#tur_reform_eyalets
 				#GE
 				#Generics
 				regional_forts_reform
@@ -143,7 +138,7 @@ elective_monarchy = {
 				kyoho_reforms_reform
 				casa_de_contraction_reform
 				casa_de_india_reform
-				oprichnina_reform
+				# oprichnina_reform
 				constitutio_joachimica_reform
 				millet_reform
 				kaza_system_reform
@@ -312,7 +307,6 @@ elective_monarchy = {
 				imperial_principle_reform
 				sakdina_system_reform
 				allotment_system
-				#ME
 				#GE
 				integrate_moneyloaners_reform
 				advanced_bookkeeping_reform
@@ -483,7 +477,6 @@ elective_monarchy = {
 				consulate_reform
 				military_electorate_reform
 				revolutionary_council_reform
-				#ME
 				#GE
 				freedom_of_religion_reform
 				constitutional_equality_reform

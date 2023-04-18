@@ -46,30 +46,6 @@ estate_peasants = {
 		}
 	}
 	modifier_definition = {
-		key = primary_development_cost
-		trigger = {
-			always = yes
-		}
-	}
-	modifier_definition = {
-		key = noble_privilege_slots
-		trigger = {
-			always = yes
-		}
-	}
-	modifier_definition = {
-		key = burgher_privilege_slots
-		trigger = {
-			always = yes
-		}
-	}
-	modifier_definition = {
-		key = church_privilege_slots
-		trigger = {
-			always = yes
-		}
-	}
-	modifier_definition = {
 		key = trade_deals_slots
 		trigger = {
 			always = yes
