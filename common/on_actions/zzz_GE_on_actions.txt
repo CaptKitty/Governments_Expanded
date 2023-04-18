@@ -27,7 +27,7 @@ on_bi_yearly_pulse_3 = {
 on_five_year_pulse_4 = {
 	random_events = {
 		2000 = 0
-		
+
 		200 = peasants_estate_events.1 #Swedish Peasant Estate
 		300 = peasants_estate_events.2
 		200 = peasants_estate_events.3
@@ -37,9 +37,9 @@ on_five_year_pulse_4 = {
 	}
 	random_events = {
 		1000 = 0
-			
+
 		#Monarchy
-		
+
 		#T2
 		100 = GE_reform_cycle.1 #metropolian_bishop_reform
 		100 = GE_reform_cycle.2
@@ -99,13 +99,13 @@ on_five_year_pulse_4 = {
 		100 = GE_reform_cycle.37 #administrative_civilians
 		100 = GE_reform_cycle.38
 		100 = GE_reform_cycle.39 #integrate_bankers
-		100 = GE_reform_cycle.40 
+		100 = GE_reform_cycle.40
 		100 = GE_reform_cycle.41 #colonial_gov
 		100 = GE_reform_cycle.42
 		100 = GE_reform_cycle.43 #fredrickan_reforms
 		100 = GE_reform_cycle.44
 		100 = GE_reform_cycle.45 #academy_of_science
-		100 = GE_reform_cycle.46 
+		100 = GE_reform_cycle.46
 		#T5
 		100 = GE_reform_cycle.47 #royal_decree
 		100 = GE_reform_cycle.48
@@ -115,11 +115,11 @@ on_five_year_pulse_4 = {
 		100 = GE_reform_cycle.52
 		#T6
 		100 = GE_reform_cycle.53 #Letat
-		100 = GE_reform_cycle.54 
+		100 = GE_reform_cycle.54
 		100 = GE_reform_cycle.55 #Regional_representation
-		100 = GE_reform_cycle.56 
+		100 = GE_reform_cycle.56
 		100 = GE_reform_cycle.57 #Freedom_of_religion
-		100 = GE_reform_cycle.58 
+		100 = GE_reform_cycle.58
 		100 = GE_reform_cycle.59 #Constitution
 		100 = GE_reform_cycle.60
 		100 = GE_reform_cycle.61 #Nueva_planta
@@ -138,9 +138,9 @@ on_five_year_pulse_4 = {
 		100 = GE_reform_cycle_monarchy.3501
 		200 = GE_reform_cycle_monarchy.3502
 		#T7
-		
+
 		#Theocracies
-		
+
 		#T1
 		100 = GE_reform_cycle.70 #Leading_Clergy
 		100 = GE_reform_cycle.71
@@ -181,17 +181,17 @@ on_five_year_pulse_4 = {
 		#100 = GE_reform_cycle.100
 		#100 = GE_reform_cycle.101 # Bishops_Law
 		#100 = GE_reform_cycle.102
-		
+
 		#7
 		#111-118
-		
+
 		#T8
 		#119-126
-		
+
 		###Republics###
-		
+
 		##T2##
-		
+
 		#Authoritarianism#
 		#100 = GE_reform_cycle_republic.201
 		#100 = GE_reform_cycle_republic.202
@@ -205,7 +205,7 @@ on_five_year_pulse_4 = {
 		#50 = GE_reform_cycle_republic.207 #Julius Caesar Event
 		#150 = GE_reform_cycle_republic.208
 		##T4##
-		
+
 		#Administrative Divisions#
 		#100 = GE_reform_cycle_republic.401
 		#100 = GE_reform_cycle_republic.402
@@ -342,7 +342,7 @@ on_monarch_death = {
 		limit = { tag = TOG }
 		country_event = { id = polynesian.36 }
 	}
-	if = {	# Ascension of Trailokanat	
+	if = {	# Ascension of Trailokanat
 		limit = { tag = AYU }
 		country_event = { id = flavor_suk.1 }
 	}
@@ -368,7 +368,7 @@ on_monarch_death = {
 		majapahit.8 # Majapahit pretenders
 		flavor_mal.11 # Mali pretenders
 		flavor_mal.47 # Pilgrimage ends prematurely
-		
+
 		#ME
 		ME_Spain_Events.8
 		ME_Reform_Events.1
@@ -413,6 +413,101 @@ on_monarch_death = {
 		random_owned_province = {
 			province_event = {
 				id = ME_Beylik_Events.14
+			}
+		}
+	}
+}
+
+# country
+# root = winning country, from = loser country
+on_main_war_won = {
+	on_main_war_won_effect = yes
+	events = {
+		native_americans.7
+		flavor_kor.15
+	}
+
+	if = {
+		limit = {
+			has_government_mechanic = crusade_power_mechanic
+		}
+		if = {
+			limit = {
+				religion = catholic
+				FROM = {
+					is_crusade_target = yes
+				}
+			}
+			add_government_power = {
+				mechanic_type = crusade_power_mechanic
+				power_type = crusade_power
+				value = 35
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { religion_group = FROM }
+			}
+			add_government_power = {
+				mechanic_type = crusade_power_mechanic
+				power_type = crusade_power
+				value = 25
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { religion = FROM }
+			}
+			add_government_power = {
+				mechanic_type = crusade_power_mechanic
+				power_type = crusade_power
+				value = 20
+			}
+		}
+	}
+	if = {
+		limit = {
+			FROM = {
+				has_government_mechanic = crusade_power_mechanic
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					religion = catholic
+				}
+				is_crusade_target = yes
+			}
+			FROM = {
+				add_government_power = {
+					mechanic_type = crusade_power_mechanic
+					power_type = crusade_power
+					value = -50
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { religion_group = FROM }
+			}
+			FROM = {
+				add_government_power = {
+					mechanic_type = crusade_power_mechanic
+					power_type = crusade_power
+					value = -35
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { religion = FROM }
+			}
+			FROM = {
+				add_government_power = {
+					mechanic_type = crusade_power_mechanic
+					power_type = crusade_power
+					value = -25
+				}
 			}
 		}
 	}
