@@ -1,7 +1,7 @@
 american_government = {
 	icon = "parliament"
 	allow_normal_conversion = yes
-	potential = { 
+	potential = {
 		OR = {
 			have_had_reform = american_government
 			tag = USA
@@ -194,7 +194,7 @@ common_republic_reform = {
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
-	modifiers = { 
+	modifiers = {
 		max_absolutism = -40
 		reelection_cost = 0.15
 	}
@@ -276,9 +276,9 @@ hanseatic_ties_reform = {
 	icon = merchant
 	allow_normal_conversion = yes
 	potential = {
-		OR = {	
+		OR = {
 			has_reform = hanseatic_ties_reform
-			culture_group = east_slavic 
+			culture_group = east_slavic
 		}
 		NOT = { has_reform = pirate_republic_reform }
 	}
@@ -316,20 +316,19 @@ mixed_republic_reform = {
 			which = Plutocrat_Influence
 			value = 1
 		}
-		GE_remove_liberalism = yes
-		GE_set_liberalism = yes
 	}
 	removed_effect = {
 		change_variable = {
 			which = Plutocrat_Influence
 			value = -1
 		}
-		GE_remove_liberalism = yes
-		GE_set_liberalism = yes
 	}
 	modifiers = {
 		reform_progress_growth = 0.30
-		total_liberalism_modifier = 0.10
+		monthly_liberalism = 0.1
+	}
+	government_abilities = {
+		liberalism_mechanic
 	}
 	ai = {
 		factor = 1
@@ -439,7 +438,7 @@ factional_elections_reform = {
 	icon = "paper_with_seal_3"
 	allow_normal_conversion = yes
 	potential = { }
-	trigger = { 
+	trigger = {
 		NOT = {
 			OR = {
 				has_reform = dutch_republic
@@ -1034,19 +1033,14 @@ supreme_court_reform = {
 	potential = {
 		always = yes
 	}
-	effect = {
-		GE_remove_liberalism = yes
-		GE_set_liberalism = yes
-	}
-	removed_effect = {
-		GE_remove_liberalism = yes
-		GE_set_liberalism = yes
-	}
 	modifiers = {
 		country_admin_power = 1
 		max_absolutism = -10
-		total_liberalism_modifier = 0.10
+		monthly_liberalism = 0.1
 		advisor_pool = 1
+	}
+	government_abilities = {
+		liberalism_mechanic
 	}
 	ai = {
 		factor = 1
@@ -1082,19 +1076,14 @@ confederation_of_states_reform = {
 			has_reform = confederation_of_states_reform
 		}
 	}
-	effect = {
-		GE_remove_liberalism = yes
-		GE_set_liberalism = yes
-	}
-	removed_effect = {
-		GE_remove_liberalism = yes
-		GE_set_liberalism = yes
-	}
 	modifiers = {
 		diplomatic_upkeep = 1
 		improve_relation_modifier = 0.15
 		max_absolutism = -10
-		total_liberalism_modifier = 0.10
+		monthly_liberalism = 0.1
+	}
+	government_abilities = {
+		liberalism_mechanic
 	}
 	ai = {
 		factor = 100
@@ -1123,15 +1112,15 @@ hansa_domination_reform = {
 empowered_aristocratic_courts_reform = {
 	icon = judge
 	allow_normal_conversion = yes
-	potential = { 
+	potential = {
 		check_variable = {
-			which = Oliarch_Influence			
+			which = Oliarch_Influence
 			value = 3
 		}
 	}
 	trigger = {
 		check_variable = {
-			which = Oliarch_Influence			
+			which = Oliarch_Influence
 			value = 3
 		}
 	}
@@ -1152,25 +1141,17 @@ empowered_aristocratic_courts_reform = {
 empowered_sovereign_trade_companies_reform = {
 	icon = colonial_rule
 	allow_normal_conversion = yes
-	potential = { 
+	potential = {
 		check_variable = {
-			which = Plutocrat_Influence			
+			which = Plutocrat_Influence
 			value = 3
 		}
 	}
 	trigger = {
 		check_variable = {
-			which = Plutocrat_Influence			
+			which = Plutocrat_Influence
 			value = 3
 		}
-	}
-	effect = {
-		GE_remove_liberalism = yes
-		GE_set_liberalism = yes
-	}
-	removed_effect = {
-		GE_remove_liberalism = yes
-		GE_set_liberalism = yes
 	}
 	modifiers = {
 		max_absolutism = -5
@@ -1188,15 +1169,15 @@ empowered_sovereign_trade_companies_reform = {
 empowered_consolidation_of_power_reform = {
 	icon = imperial_inquisition
 	allow_normal_conversion = yes
-	potential = { 
+	potential = {
 		check_variable = {
-			which = Populist_Influence			
+			which = Populist_Influence
 			value = 3
 		}
 	}
 	trigger = {
 		check_variable = {
-			which = Populist_Influence			
+			which = Populist_Influence
 			value = 3
 		}
 	}
@@ -1214,31 +1195,26 @@ empowered_consolidation_of_power_reform = {
 empowered_senate_reform = {
 	icon = judge
 	allow_normal_conversion = yes
-	potential = { 
+	potential = {
 		check_variable = {
-			which = Populist_Influence			
+			which = Populist_Influence
 			value = 3
 		}
 	}
 	trigger = {
 		check_variable = {
-			which = Populist_Influence			
+			which = Populist_Influence
 			value = 3
 		}
-	}
-	effect = {
-		GE_remove_liberalism = yes
-		GE_set_liberalism = yes
-	}
-	removed_effect = {
-		GE_remove_liberalism = yes
-		GE_set_liberalism = yes
 	}
 	modifiers = {
 		max_absolutism = -10
 		free_dip_policy = 1
 		yearly_corruption = -0.10
-		total_liberalism_modifier = 0.10
+		monthly_liberalism = 0.1
+	}
+	government_abilities = {
+		liberalism_mechanic
 	}
 	ai = {
 		factor = 1
@@ -1268,16 +1244,11 @@ liberal_principle_reform = {
 	potential = {
 		always = yes
 	}
-	effect = {
-		GE_remove_liberalism = yes
-		GE_set_liberalism = yes
-	}
-	removed_effect = {
-		GE_remove_liberalism = yes
-		GE_set_liberalism = yes
-	}
 	modifiers = {
-		total_liberalism_modifier = 0.20
+		monthly_liberalism = 0.2
+	}
+	government_abilities = {
+		liberalism_mechanic
 	}
 	custom_attributes = {
 		enables_capitalism = yes #+25% goods produced and -100% tax income if you have over 75% liberalism
@@ -1332,13 +1303,13 @@ empowered_principle_of_heritage_reform = {
 	potential = {
 		has_estate = estate_nobles
 		check_variable = {
-			which = Oliarch_Influence			
+			which = Oliarch_Influence
 			value = 3
 		}
 	}
 	trigger = {
 		check_variable = {
-			which = Oliarch_Influence			
+			which = Oliarch_Influence
 			value = 3
 		}
 	}
@@ -1356,15 +1327,15 @@ empowered_principle_of_heritage_reform = {
 empowered_principle_of_profit_reform = {
 	icon = economy_trade
 	allow_normal_conversion = yes
-	potential = { 
+	potential = {
 		check_variable = {
-			which = Plutocrat_Influence			
+			which = Plutocrat_Influence
 			value = 3
 		}
 	}
 	trigger = {
 		check_variable = {
-			which = Plutocrat_Influence			
+			which = Plutocrat_Influence
 			value = 3
 		}
 	}
@@ -1383,15 +1354,15 @@ empowered_principle_of_profit_reform = {
 empowered_principle_of_power_reform = {
 	icon = french_louis
 	allow_normal_conversion = yes
-	potential = { 
+	potential = {
 		check_variable = {
-			which = Populist_Influence			
+			which = Populist_Influence
 			value = 3
 		}
 	}
 	trigger = {
 		check_variable = {
-			which = Populist_Influence			
+			which = Populist_Influence
 			value = 3
 		}
 	}
@@ -1485,7 +1456,7 @@ raadspensionaris_reform = {
 	}
 	ai = {
 		factor = 100
-	}	
+	}
 }
 
 hansa_universities_reform = {

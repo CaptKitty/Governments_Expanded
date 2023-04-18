@@ -230,7 +230,7 @@ armenian_silk_traders_reform = {
 	modifiers = {
 		build_cost = -0.15
 		caravan_power = 0.25
-		trade_deals_slots = 0.01
+		trade_deals_slots = 1
 	}
 	custom_attributes = {
 		enables_silk_traders = yes #15% trade efficiency if trading in silk

@@ -16,19 +16,19 @@ tribal_tribute_reform = {
 	}
 	potential = {
 		OR = {
-			primary_culture = tunisian 
+			primary_culture = tunisian
 			has_reform = tribal_tribute_reform
 		}
 	}
 	trigger = {
 		OR = {
-			primary_culture = tunisian 
+			primary_culture = tunisian
 			has_reform = tribal_tribute_reform
 		}
 	}
 	modifiers = {
 		global_unrest = -1
-		reduced_liberty_desire = 10			
+		reduced_liberty_desire = 10
 	}
 	ai = {
 		factor = 101
@@ -99,7 +99,7 @@ italian_merchants_reform = {
 		}
 	}
 	modifiers = {
-		trade_deals_slots = 0.01
+		trade_deals_slots = 1
 	}
 	custom_attributes = {
 		enables_italian_grain_treaties = yes #+10% Trade efficiency if you got an italian trade partner.

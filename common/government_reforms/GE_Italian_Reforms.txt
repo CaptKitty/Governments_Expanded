@@ -11,10 +11,10 @@ florentine_republic = {
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 20
-	modifiers = { 
+	modifiers = {
 		trade_efficiency = 0.1
 		max_absolutism = -30
-		trade_deals_slots = 0.01
+		trade_deals_slots = 1
 	}
 	boost_income = yes
 	duration = 6
@@ -60,7 +60,7 @@ genoan_republic_reform = {
 		max_absolutism = -50
 		global_trade_goods_size_modifier = 0.10
 		merchants = 1
-		trade_deals_slots = 0.03
+		trade_deals_slots = 3
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 50
@@ -143,14 +143,14 @@ kingdom_of_sicily_reform = {
 	potential = {
 		OR = {
 			primary_culture = neapolitan
-			primary_culture = sicilian 
+			primary_culture = sicilian
 			has_reform = kingdom_of_sicily_reform
 		}
 	}
 	trigger = {
 		OR = {
 			primary_culture = neapolitan
-			primary_culture = sicilian 
+			primary_culture = sicilian
 			has_reform = kingdom_of_sicily_reform
 		}
 	}
@@ -607,7 +607,7 @@ support_guelphs_reform = {
 			}
 		}
 	}
-	
+
 	potential = {
 		culture_group = latin
 		NOT = { is_year = 1490 }
@@ -647,14 +647,14 @@ angevin_nobles_reform = {
 	potential = {
 		OR = {
 			primary_culture = neapolitan
-			primary_culture = sicilian 
+			primary_culture = sicilian
 			has_reform = angevin_nobles_reform
 		}
 	}
 	trigger = {
 		OR = {
 			primary_culture = neapolitan
-			primary_culture = sicilian 
+			primary_culture = sicilian
 			has_reform = angevin_nobles_reform
 		}
 	}
@@ -708,14 +708,14 @@ demedici_dynasty_reform = {
 	icon = de_medici
 	allow_normal_conversion = yes
 	potential = {
-		OR = {	
+		OR = {
 			has_reform = demedici_dynasty_reform
 			tag = LAN
 		}
 		NOT = { has_reform = pirate_republic_reform }
 	}
 	trigger = {
-		OR = {	
+		OR = {
 			has_reform = demedici_dynasty_reform
 			tag = LAN
 		}
@@ -798,14 +798,14 @@ parliament_of_sicily_reform = {
 	potential = {
 		OR = {
 			primary_culture = neapolitan
-			primary_culture = sicilian 
+			primary_culture = sicilian
 			has_reform = parliament_of_sicily_reform
 		}
 	}
 	trigger = {
 		OR = {
 			primary_culture = neapolitan
-			primary_culture = sicilian 
+			primary_culture = sicilian
 			has_reform = parliament_of_sicily_reform
 		}
 	}
@@ -886,14 +886,14 @@ customs_house_of_apena_sheep_reform = {
 	potential = {
 		OR = {
 			primary_culture = neapolitan
-			primary_culture = sicilian 
+			primary_culture = sicilian
 			has_reform = customs_house_of_apena_sheep_reform
 		}
 	}
 	trigger = {
 		OR = {
 			primary_culture = neapolitan
-			primary_culture = sicilian 
+			primary_culture = sicilian
 			has_reform = customs_house_of_apena_sheep_reform
 		}
 	}
@@ -1094,7 +1094,7 @@ crusading_tradition_reform = {
 	}
 	modifiers = {
 		manpower_recovery_speed = 0.10
-		siege_blockade_progress = 1	
+		siege_blockade_progress = 1
 	}
 	custom_attributes = {
 		enables_fury_of_the_reconquista = yes #2.5% mercenary discipline and +5% Morale while at war with heathens
@@ -1380,14 +1380,14 @@ neapolitan_renaissance_reform = {
 	potential = {
 		OR = {
 			primary_culture = neapolitan
-			primary_culture = sicilian 
+			primary_culture = sicilian
 			has_reform = neapolitan_renaissance_reform
 		}
 	}
 	trigger = {
 		OR = {
 			primary_culture = neapolitan
-			primary_culture = sicilian 
+			primary_culture = sicilian
 			has_reform = neapolitan_renaissance_reform
 		}
 	}
@@ -1447,7 +1447,7 @@ legacy_of_constitutionalism_reform = {
 			culture_group = latin
 			has_reform = legacy_of_constitutionalism_reform
 		}
-	}	
+	}
 	modifiers = {
 		max_absolutism = 5
 		yearly_absolutism = 0.50
@@ -1549,14 +1549,14 @@ theatines_reform = {
 	potential = {
 		OR = {
 			primary_culture = neapolitan
-			primary_culture = sicilian 
+			primary_culture = sicilian
 			has_reform = theatines_reform
 		}
 	}
 	trigger = {
 		OR = {
 			primary_culture = neapolitan
-			primary_culture = sicilian 
+			primary_culture = sicilian
 			has_reform = theatines_reform
 		}
 	}
@@ -1594,14 +1594,14 @@ constitution_of_melfi_reform = {
 	potential = {
 		OR = {
 			primary_culture = neapolitan
-			primary_culture = sicilian 
+			primary_culture = sicilian
 			has_reform = constitution_of_melfi_reform
 		}
 	}
 	trigger = {
 		OR = {
 			primary_culture = neapolitan
-			primary_culture = sicilian 
+			primary_culture = sicilian
 			has_reform = constitution_of_melfi_reform
 		}
 	}

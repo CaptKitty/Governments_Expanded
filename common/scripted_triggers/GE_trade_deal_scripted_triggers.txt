@@ -6,7 +6,7 @@ Trade_Deals_Allowed = {
 			AND = {
 				has_global_modifier_value = {
 					which = trade_deals_slots
-					value = 0.01
+					value = 1
 				}
 				NOT = {
 					check_variable = {
@@ -18,7 +18,7 @@ Trade_Deals_Allowed = {
 			AND = {
 				has_global_modifier_value = {
 					which = trade_deals_slots
-					value = 0.02
+					value = 2
 				}
 				NOT = {
 					check_variable = {
@@ -30,7 +30,7 @@ Trade_Deals_Allowed = {
 			AND = {
 				has_global_modifier_value = {
 					which = trade_deals_slots
-					value = 0.03
+					value = 3
 				}
 				NOT = {
 					check_variable = {
@@ -42,7 +42,7 @@ Trade_Deals_Allowed = {
 			AND = {
 				has_global_modifier_value = {
 					which = trade_deals_slots
-					value = 0.04
+					value = 4
 				}
 				NOT = {
 					check_variable = {
@@ -54,7 +54,7 @@ Trade_Deals_Allowed = {
 			AND = {
 				has_global_modifier_value = {
 					which = trade_deals_slots
-					value = 0.05
+					value = 5
 				}
 				NOT = {
 					check_variable = {
@@ -66,19 +66,7 @@ Trade_Deals_Allowed = {
 			AND = {
 				has_global_modifier_value = {
 					which = trade_deals_slots
-					value = 0.05
-				}
-				NOT = {
-					check_variable = {
-						which = GE_num_of_total_trade
-						value = 5
-					}
-				}
-			}
-			AND = {
-				has_global_modifier_value = {
-					which = trade_deals_slots
-					value = 0.06
+					value = 6
 				}
 				NOT = {
 					check_variable = {
@@ -90,7 +78,7 @@ Trade_Deals_Allowed = {
 			AND = {
 				has_global_modifier_value = {
 					which = trade_deals_slots
-					value = 0.07
+					value = 7
 				}
 				NOT = {
 					check_variable = {
@@ -102,7 +90,7 @@ Trade_Deals_Allowed = {
 			AND = {
 				has_global_modifier_value = {
 					which = trade_deals_slots
-					value = 0.08
+					value = 8
 				}
 				NOT = {
 					check_variable = {
@@ -114,7 +102,7 @@ Trade_Deals_Allowed = {
 			AND = {
 				has_global_modifier_value = {
 					which = trade_deals_slots
-					value = 0.09
+					value = 9
 				}
 				NOT = {
 					check_variable = {
@@ -126,7 +114,7 @@ Trade_Deals_Allowed = {
 			AND = {
 				has_global_modifier_value = {
 					which = trade_deals_slots
-					value = 0.10
+					value = 10
 				}
 				NOT = {
 					check_variable = {

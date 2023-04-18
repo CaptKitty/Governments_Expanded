@@ -27,7 +27,7 @@ ancien_regime_reform = {
 	lock_level_when_selected = no
 	valid_for_nation_designer = yes
 	nation_designer_cost = 10
-	potential = { 
+	potential = {
 		OR = {
 			culture_group = french
 			has_reform = french_absolutism
@@ -36,7 +36,7 @@ ancien_regime_reform = {
 	trigger = {
 		has_reform = ancien_regime_reform
 	}
-	
+
 	modifiers = {
 		global_autonomy = -0.025
 		governing_capacity = 150
@@ -62,7 +62,7 @@ french_absolutism = {
 		has_reform = french_absolutism
 	}
 	custom_attributes = {
-		enables_royal_council = yes 
+		enables_royal_council = yes
 	}
 	modifiers = {
 		governing_capacity = 250
@@ -202,7 +202,7 @@ independent_vassals_reform = {
 			value = -1
 		}
 	}
-	potential = { 
+	potential = {
 		OR = {
 			primary_culture = cosmopolitan_french
 			has_reform = independent_vassals_reform
@@ -236,7 +236,7 @@ generalites_reform = {
 			value = -1
 		}
 	}
-	potential = { 
+	potential = {
 		OR = {
 			primary_culture = cosmopolitan_french
 			has_reform = generalites_reform
@@ -268,7 +268,7 @@ abolish_local_parliaments_reform = {
 			value = -1
 		}
 	}
-	potential = { 
+	potential = {
 		OR = {
 			primary_culture = cosmopolitan_french
 			has_reform = abolish_local_parliaments_reform
@@ -447,7 +447,7 @@ corps_diplomatique_reform = {
 			value = -1
 		}
 	}
-	potential = { 
+	potential = {
 		OR = {
 			primary_culture = cosmopolitan_french
 			has_reform = corps_diplomatique_reform
@@ -474,7 +474,7 @@ corps_diplomatique_reform = {
 weak_burghers_reform = {
 	icon = france_weak_burghers
 	allow_normal_conversion = yes
-	potential = { 
+	potential = {
 		OR = {
 			primary_culture = cosmopolitan_french
 			has_reform = weak_burghers_reform
@@ -493,7 +493,7 @@ weak_burghers_reform = {
 bourgeoisie_aristocracy_reform = {
 	icon = regents
 	allow_normal_conversion = yes
-	potential = { 
+	potential = {
 		OR = {
 			primary_culture = cosmopolitan_french
 			has_reform = bourgeoisie_aristocracy_reform
@@ -513,7 +513,7 @@ bourgeoisie_aristocracy_reform = {
 society_of_agriculture_reform = {
 	icon = french_grain
 	allow_normal_conversion = yes
-	potential = { 
+	potential = {
 		OR = {
 			primary_culture = cosmopolitan_french
 			has_reform = society_of_agriculture_reform
@@ -546,7 +546,7 @@ conseil_souverain_reform = {
 	modifiers = {
 		global_tariffs = 0.20
 		global_foreign_trade_power = 0.15
-		trade_steering = 0.20	
+		trade_steering = 0.20
 	}
 	custom_attributes = {
 		enables_french_ordonannce = yes #10% Goods Produced in Colonies
@@ -568,7 +568,7 @@ continental_system_reform = {
 	modifiers = {
 		embargo_efficiency = 0.25
 		global_prov_trade_power_modifier = 0.15
-		trade_deals_slots = 0.01
+		trade_deals_slots = 1
 	}
 	custom_attributes = {
 		enables_economic_block = yes #2.5% Trade efficiency per ally

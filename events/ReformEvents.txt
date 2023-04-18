@@ -5,9 +5,9 @@ country_event = {
 	title = reform_me_events.1.t
 	desc = reform_me_events.1.d
 	picture = LIBERIUM_VETO_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	immediate = {
 		hidden_effect = {
 			random_list = {
@@ -27,10 +27,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.1.a
-		
+
 		trigger_switch = {
 			on_trigger = has_country_flag
 			Cortes_Navy = {
@@ -72,10 +72,10 @@ country_event = {
 		clr_country_flag = Cortes_Pope
 		clr_country_flag = Cortes_Gold
 	}
-	
+
 	option = {
 		name = reform_me_events.1.b
-		
+
 		trigger_switch = {
 			on_trigger = has_country_flag
 			Cortes_Manpower = {
@@ -117,10 +117,10 @@ country_event = {
 		clr_country_flag = Cortes_Pope
 		clr_country_flag = Cortes_Gold
 	}
-	
+
 	option = {
 		name = reform_me_events.1.c
-		
+
 		trigger_switch = {
 			on_trigger = has_country_flag
 			Cortes_Piety = {
@@ -163,21 +163,21 @@ country_event = {
 	title = reform_me_events.2.t
 	desc = reform_me_events.2.d
 	picture = WESTERNISATION_eventPicture
-	
+
 	fire_only_once = yes
 
 	trigger = {
 		tag = POR
 		is_year = 1481
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	option = {
 		name = reform_me_events.2.a
-		
+
 		add_navy_tradition = 40
 		add_government_reform = kingdom_of_portugal_and_azures
 	}
@@ -189,7 +189,7 @@ country_event = {
 	desc = reform_me_events.3.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_reform = unrestricted_diplomacy_reform
@@ -202,11 +202,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_country = {
 			limit = {
@@ -220,10 +220,10 @@ country_event = {
 			add_opinion = { who = ROOT modifier = opinion_unrestricted_diplomacy }
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.3.a
-		
+
 	}
 }
 
@@ -233,7 +233,7 @@ country_event = {
 	desc = reform_me_events.300.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		NOT = { has_reform = unrestricted_diplomacy_reform }
@@ -244,11 +244,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_country = {
 			limit = {
@@ -260,10 +260,10 @@ country_event = {
 			remove_opinion = { who = ROOT modifier = opinion_unrestricted_diplomacy }
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.300.a
-		
+
 	}
 }
 
@@ -273,17 +273,17 @@ country_event = {
 # 	desc = reform_me_events.4.d
 # 	picture = WESTERNISATION_eventPicture
 # 	hidden = yes
-	
+
 
 # 	trigger = {
 # 		has_reform = ajuraan_theocracy_reform
 # 		has_heir = no
 # 	}
-	
+
 # 	mean_time_to_happen = {
 # 		days = 1825
 # 	}
-	
+
 # 	immediate = {
 # 		define_heir = {
 #             dynasty = "Garen"
@@ -294,10 +294,10 @@ country_event = {
 #             culture = ROOT
 #         }
 # 	}
-	
+
 # 	option = {
 # 		name = reform_me_events.4.a
-		
+
 # 	}
 # }
 
@@ -307,17 +307,17 @@ country_event = {
 	desc = reform_me_events.5.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_reform = restore_the_davidic_line_reform
 		has_heir = no
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1825
 	}
-	
+
 	immediate = {
 		define_heir = {
 			dynasty = "Ben-David"
@@ -331,10 +331,10 @@ country_event = {
 			culture = hebrew
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.5.a
-		
+
 	}
 }
 
@@ -344,17 +344,17 @@ country_event = {
 	desc = reform_me_events.6.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_reform = dynastic_theocracy_reform
 		has_heir = no
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1825
 	}
-	
+
 	immediate = {
 		define_heir = {
 			dynasty = ROOT
@@ -365,10 +365,10 @@ country_event = {
 			culture = ROOT
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.6.a
-		
+
 	}
 }
 
@@ -382,24 +382,24 @@ country_event = {
 		has_reform = rule_by_consent_reform
 		NOT = { has_reform = andrea_doria_constitution_reform }
 	}
-	
+
 	mean_time_to_happen = {
 		days = 10950
 	}
-	
+
 	option = {
 		name = reform_me_events.7.a
-		
+
 		define_ruler = {
 			hide_skills = yes
 			change_dip = 1
 		}
 		ai_chance = { factor = 100 }
 	}
-	
+
 	option = {
 		name = reform_me_events.7.b
-		
+
 		capital_scope = {
 			spawn_rebels = {
 				type = pretender_rebels
@@ -420,25 +420,25 @@ country_event = {
 		has_reform = rule_by_consent_reform
 		NOT = { has_reform = andrea_doria_constitution_reform }
 	}
-	
+
 	mean_time_to_happen = {
 		days = 10950
 	}
-	
+
 	option = {
 		name = reform_me_events.8.a
-		
+
 		kill_ruler = yes
 		add_republican_tradition = 3
 		ai_chance = { factor = 100 }
 	}
-	
+
 	option = {
 		name = reform_me_events.8.b
-		
+
 		capital_scope = {
 			spawn_rebels = {
-				type = anti_tax_rebels 
+				type = anti_tax_rebels
 				size = 3
 				win = yes
 			}
@@ -451,19 +451,19 @@ country_event = {
 	title = reform_me_events.9.t
 	desc = reform_me_events.9.d
 	picture = NOBLE_ESTATE_TAKE_OVER_eventPicture
-	
+
 	trigger = {
 		has_reform = rule_by_consent_reform
 		NOT = { has_reform = andrea_doria_constitution_reform }
 	}
-	
+
 	mean_time_to_happen = {
 		days = 10950
 	}
-	
+
 	option = {
 		name = reform_me_events.9.a
-		
+
 		define_ruler = {
 			hide_skills = yes
 			change_mil = 1
@@ -471,10 +471,10 @@ country_event = {
 		add_republican_tradition = -3
 		ai_chance = { factor = 100 }
 	}
-	
+
 	option = {
 		name = reform_me_events.9.b
-		
+
 		capital_scope = {
 			spawn_rebels = {
 				type = noble_rebels
@@ -491,7 +491,7 @@ country_event = {
 	desc = reform_me_events.10.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_reform = regents_reform
@@ -504,11 +504,11 @@ country_event = {
 			NOT = {	has_province_modifier = Regent_Investments }
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_owned_province = {
 			limit = {
@@ -525,10 +525,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.10.a
-		
+
 	}
 }
 
@@ -541,7 +541,7 @@ country_event = {
 	# desc = reform_me_events.14.d
 	# picture = WESTERNISATION_eventPicture
 	# hidden = yes
-	
+
 
 	# trigger = {
 		# has_government_attribute = enables_blood_tax
@@ -608,11 +608,11 @@ country_event = {
 			# }
 		# }
 	# }
-	
+
 	# mean_time_to_happen = {
 		# days = 30
 	# }
-	
+
 	# immediate = {
 		# if = {
 			# limit = {
@@ -657,7 +657,7 @@ country_event = {
 					# }
 					# amount = 2
 				# }
-				# NOT = { 				
+				# NOT = {
 					# calc_true_if = {
 						# all_subject_country = {
 							# NOT = {
@@ -689,7 +689,7 @@ country_event = {
 					# }
 					# amount = 3
 				# }
-				# NOT = { 				
+				# NOT = {
 					# calc_true_if = {
 						# all_subject_country = {
 							# NOT = {
@@ -721,7 +721,7 @@ country_event = {
 					# }
 					# amount = 4
 				# }
-				# NOT = { 				
+				# NOT = {
 					# calc_true_if = {
 						# all_subject_country = {
 							# NOT = {
@@ -764,10 +764,10 @@ country_event = {
 			# remove_country_modifier = Blood_Tax_4
 		# }
 	# }
-	
+
 	# option = {
 		# name = reform_me_events.14.a
-		
+
 	# }
 # }
 
@@ -777,7 +777,7 @@ country_event = {
 	# desc = reform_me_events.15.d
 	# picture = WESTERNISATION_eventPicture
 	# hidden = yes
-	
+
 
 	# trigger = {
 		# NOT = { has_government_attribute = enables_blood_tax }
@@ -789,11 +789,11 @@ country_event = {
 			# has_country_modifier = Blood_Tax_5
 		# }
 	# }
-	
+
 	# mean_time_to_happen = {
 		# days = 30
 	# }
-	
+
 	# immediate = {
 		# remove_country_modifier = Blood_Tax_1
 		# remove_country_modifier = Blood_Tax_2
@@ -801,10 +801,10 @@ country_event = {
 		# remove_country_modifier = Blood_Tax_4
 		# remove_country_modifier = Blood_Tax_5
 	# }
-	
+
 	# option = {
 		# name = reform_me_events.15.a
-		
+
 	# }
 # }
 
@@ -814,7 +814,7 @@ country_event = {
 	desc = reform_me_events.16.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_reform = habsburg_monarchy_reform
@@ -831,11 +831,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_subject_country = {
 			limit = {
@@ -855,10 +855,10 @@ country_event = {
 			remove_country_modifier = Religious_Domination
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.16.a
-		
+
 	}
 }
 
@@ -868,18 +868,18 @@ country_event = {
 	desc = reform_me_events.17.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		NOT = { has_reform = habsburg_monarchy_reform }
 		has_country_modifier = Religious_Domination
 		is_subject = no
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_subject_country = {
 			limit = {
@@ -899,10 +899,10 @@ country_event = {
 			remove_country_modifier = Religious_Domination
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.17.a
-		
+
 	}
 }
 
@@ -918,10 +918,10 @@ country_event = {
 			has_reform = austrian_empire_reform
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 7300
-			
+
 		modifier = {
 			factor = 1.25
 			has_reform = decentralize_reform
@@ -950,7 +950,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	immediate = {
 		hidden_effect = {
 			random_owned_province = {
@@ -962,10 +962,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.18.a
-		
+
 	}
 }
 
@@ -991,11 +991,11 @@ country_event = {
 			# }
 		# }
 	# }
-	
+
 	# mean_time_to_happen = {
 		# days = 30
 	# }
-	
+
 	# immediate = {
 		# every_owned_province = {
 			# limit = {
@@ -1016,10 +1016,10 @@ country_event = {
 		# #	remove_province_modifier = Magnate_Law
 		# #}
 	# }
-	
+
 	# option = {
 		# name = reform_me_events.19.a
-		
+
 	# }
 # }
 
@@ -1029,7 +1029,7 @@ country_event = {
 	# desc = reform_me_events.20.d
 	# picture = WESTERNISATION_eventPicture
 	# hidden = yes
-	
+
 
 	# trigger = {
 		# NOT = { has_government_attribute = enables_magnate_law }
@@ -1037,11 +1037,11 @@ country_event = {
 			# has_province_modifier = Magnate_Law
 		# }
 	# }
-	
+
 	# mean_time_to_happen = {
 		# days = 30
 	# }
-	
+
 	# immediate = {
 		# every_owned_province = {
 			# limit = {
@@ -1050,10 +1050,10 @@ country_event = {
 			# remove_province_modifier = Magnate_Law
 		# }
 	# }
-	
+
 	# option = {
 		# name = reform_me_events.20.a
-		
+
 	# }
 # }
 
@@ -1063,7 +1063,7 @@ country_event = {
 	desc = reform_me_events.21.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_mountain_towns
@@ -1075,11 +1075,11 @@ country_event = {
 			NOT = { has_province_modifier = Mountain_Towns }
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_owned_province = {
 			limit = {
@@ -1096,10 +1096,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.21.a
-		
+
 	}
 }
 
@@ -1109,7 +1109,7 @@ country_event = {
 	desc = reform_me_events.22.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_arabian_horses
@@ -1201,11 +1201,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -1265,7 +1265,7 @@ country_event = {
 					}
 					amount = 2
 				}
-				NOT = { 				
+				NOT = {
 					calc_true_if = {
 						all_subject_country = {
 							OR = {
@@ -1307,7 +1307,7 @@ country_event = {
 					}
 					amount = 3
 				}
-				NOT = { 				
+				NOT = {
 					calc_true_if = {
 						all_subject_country = {
 							OR = {
@@ -1349,7 +1349,7 @@ country_event = {
 					}
 					amount = 4
 				}
-				NOT = { 				
+				NOT = {
 					calc_true_if = {
 						all_subject_country = {
 							OR = {
@@ -1402,10 +1402,10 @@ country_event = {
 			remove_country_modifier = Arabian_Horses_4
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.22.a
-		
+
 	}
 }
 
@@ -1415,7 +1415,7 @@ country_event = {
 	desc = reform_me_events.23.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_mercenary_markets
@@ -1471,11 +1471,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -1667,10 +1667,10 @@ country_event = {
 			remove_country_modifier = Mercenary_Markets_9
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.23.a
-		
+
 	}
 }
 
@@ -1680,7 +1680,7 @@ country_event = {
 	desc = reform_me_events.24.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_national_strenghtening_project
@@ -1689,11 +1689,11 @@ country_event = {
 			NOT = { has_province_modifier = National_Strenghtening_Project }
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_owned_province = {
 			limit = {
@@ -1714,10 +1714,10 @@ country_event = {
 			remove_province_modifier = National_Strenghtening_Project
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.24.a
-		
+
 	}
 }
 
@@ -1727,10 +1727,10 @@ country_event = {
 	# desc = reform_me_events.27.d
 	# picture = WESTERNISATION_eventPicture
 	# hidden = yes
-	
+
 
 	# trigger = {
-		# has_government_attribute = enables_town_rights 
+		# has_government_attribute = enables_town_rights
 		# any_owned_province = {
 			# OR = {
 				# AND = {
@@ -1744,11 +1744,11 @@ country_event = {
 			# }
 		# }
 	# }
-	
+
 	# mean_time_to_happen = {
 		# days = 30
 	# }
-	
+
 	# immediate = {
 		# every_owned_province = {
 			# limit = {
@@ -1768,10 +1768,10 @@ country_event = {
 			# remove_province_modifier = Town_Rights
 		# }
 	# }
-	
+
 	# option = {
 		# name = reform_me_events.27.a
-		
+
 	# }
 # }
 
@@ -1781,7 +1781,7 @@ country_event = {
 	# desc = reform_me_events.28.d
 	# picture = WESTERNISATION_eventPicture
 	# hidden = yes
-	
+
 
 	# trigger = {
 		# NOT = { has_government_attribute = enables_town_rights }
@@ -1789,11 +1789,11 @@ country_event = {
 			# has_province_modifier = Town_Rights
 		# }
 	# }
-	
+
 	# mean_time_to_happen = {
 		# days = 30
 	# }
-	
+
 	# immediate = {
 		# every_owned_province = {
 			# limit = {
@@ -1802,10 +1802,10 @@ country_event = {
 			# remove_province_modifier = Town_Rights
 		# }
 	# }
-	
+
 	# option = {
 		# name = reform_me_events.28.a
-		
+
 	# }
 # }
 
@@ -1815,10 +1815,10 @@ country_event = {
 	desc = reform_me_events.29.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
 
-	trigger = { 
-		has_government_attribute = enables_administrative_forts 
+
+	trigger = {
+		has_government_attribute = enables_administrative_forts
 		any_owned_province = {
 			OR = {
 				AND = {
@@ -1838,11 +1838,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_owned_province = {
 			limit = {
@@ -1869,10 +1869,10 @@ country_event = {
 			remove_province_modifier = Administrative_Forts
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.29.a
-		
+
 	}
 }
 
@@ -1882,7 +1882,7 @@ country_event = {
 	desc = reform_me_events.30.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		NOT = { has_government_attribute = enables_administrative_forts }
@@ -1890,11 +1890,11 @@ country_event = {
 			has_province_modifier = Administrative_Forts
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_owned_province = {
 			limit = {
@@ -1903,10 +1903,10 @@ country_event = {
 			remove_province_modifier = Administrative_Forts
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.30.a
-		
+
 	}
 }
 
@@ -1918,7 +1918,7 @@ country_event = {
 	desc = reform_me_events.33.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_holy_tithe
@@ -1984,11 +1984,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -2004,13 +2004,13 @@ country_event = {
 				}
 			}
 			add_country_modifier = {
-				name = Holy_Tithe_1 
+				name = Holy_Tithe_1
 				duration = -1
 			}
-			remove_country_modifier = Holy_Tithe_2 
-			remove_country_modifier = Holy_Tithe_3 
-			remove_country_modifier = Holy_Tithe_4 
-			remove_country_modifier = Holy_Tithe_5 
+			remove_country_modifier = Holy_Tithe_2
+			remove_country_modifier = Holy_Tithe_3
+			remove_country_modifier = Holy_Tithe_4
+			remove_country_modifier = Holy_Tithe_5
 		}
 		if = {
 			limit = {
@@ -2018,7 +2018,7 @@ country_event = {
 					which = tolerance_own
 					value = 6
 				}
-				NOT = { 				
+				NOT = {
 					has_global_modifier_value = {
 						which = tolerance_own
 						value = 7
@@ -2030,9 +2030,9 @@ country_event = {
 				duration = -1
 			}
 			remove_country_modifier = Holy_Tithe_1
-			remove_country_modifier = Holy_Tithe_3 
-			remove_country_modifier = Holy_Tithe_4 
-			remove_country_modifier = Holy_Tithe_5 
+			remove_country_modifier = Holy_Tithe_3
+			remove_country_modifier = Holy_Tithe_4
+			remove_country_modifier = Holy_Tithe_5
 		}
 		if = {
 			limit = {
@@ -2040,7 +2040,7 @@ country_event = {
 					which = tolerance_own
 					value = 7
 				}
-				NOT = { 				
+				NOT = {
 					has_global_modifier_value = {
 						which = tolerance_own
 						value = 8
@@ -2051,10 +2051,10 @@ country_event = {
 				name = Holy_Tithe_3
 				duration = -1
 			}
-			remove_country_modifier = Holy_Tithe_1 
-			remove_country_modifier = Holy_Tithe_2 
-			remove_country_modifier = Holy_Tithe_4 
-			remove_country_modifier = Holy_Tithe_5 
+			remove_country_modifier = Holy_Tithe_1
+			remove_country_modifier = Holy_Tithe_2
+			remove_country_modifier = Holy_Tithe_4
+			remove_country_modifier = Holy_Tithe_5
 		}
 		if = {
 			limit = {
@@ -2062,7 +2062,7 @@ country_event = {
 					which = tolerance_own
 					value = 8
 				}
-				NOT = { 				
+				NOT = {
 					has_global_modifier_value = {
 						which = tolerance_own
 						value = 9
@@ -2074,9 +2074,9 @@ country_event = {
 				duration = -1
 			}
 			remove_country_modifier = Holy_Tithe_1
-			remove_country_modifier = Holy_Tithe_2 
-			remove_country_modifier = Holy_Tithe_3 
-			remove_country_modifier = Holy_Tithe_5 
+			remove_country_modifier = Holy_Tithe_2
+			remove_country_modifier = Holy_Tithe_3
+			remove_country_modifier = Holy_Tithe_5
 		}
 		if = {
 			limit = {
@@ -2089,16 +2089,16 @@ country_event = {
 				name = Holy_Tithe_5
 				duration = -1
 			}
-			remove_country_modifier = Holy_Tithe_1 
-			remove_country_modifier = Holy_Tithe_2 
-			remove_country_modifier = Holy_Tithe_3 
+			remove_country_modifier = Holy_Tithe_1
+			remove_country_modifier = Holy_Tithe_2
+			remove_country_modifier = Holy_Tithe_3
 			remove_country_modifier = Holy_Tithe_4
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.33.a
-		
+
 	}
 }
 
@@ -2108,7 +2108,7 @@ country_event = {
 	desc = reform_me_events.34.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		NOT = { has_government_attribute = enables_holy_tithe }
@@ -2120,22 +2120,22 @@ country_event = {
 			has_country_modifier = Holy_Tithe_5
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 			remove_country_modifier = Holy_Tithe_1
-			remove_country_modifier = Holy_Tithe_2 
-			remove_country_modifier = Holy_Tithe_3 
-			remove_country_modifier = Holy_Tithe_4 
-			remove_country_modifier = Holy_Tithe_5 
+			remove_country_modifier = Holy_Tithe_2
+			remove_country_modifier = Holy_Tithe_3
+			remove_country_modifier = Holy_Tithe_4
+			remove_country_modifier = Holy_Tithe_5
 	}
-	
+
 	option = {
 		name = reform_me_events.34.a
-		
+
 	}
 }
 
@@ -2145,7 +2145,7 @@ country_event = {
 	desc = reform_me_events.35.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_general_connections
@@ -2176,11 +2176,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -2188,13 +2188,13 @@ country_event = {
 				NOT = { num_of_generals = 2 }
 			}
 			add_country_modifier = {
-				name = "General_Connections_1" 
+				name = "General_Connections_1"
 				duration = -1
 			}
-			remove_country_modifier = General_Connections_2 
-			remove_country_modifier = General_Connections_3 
-			remove_country_modifier = General_Connections_4 
-			remove_country_modifier = General_Connections_5 
+			remove_country_modifier = General_Connections_2
+			remove_country_modifier = General_Connections_3
+			remove_country_modifier = General_Connections_4
+			remove_country_modifier = General_Connections_5
 		}
 		if = {
 			limit = {
@@ -2205,10 +2205,10 @@ country_event = {
 				name = "General_Connections_2"
 				duration = -1
 			}
-			remove_country_modifier = General_Connections_1 
-			remove_country_modifier = General_Connections_3 
-			remove_country_modifier = General_Connections_4 
-			remove_country_modifier = General_Connections_5  
+			remove_country_modifier = General_Connections_1
+			remove_country_modifier = General_Connections_3
+			remove_country_modifier = General_Connections_4
+			remove_country_modifier = General_Connections_5
 		}
 		if = {
 			limit = {
@@ -2219,10 +2219,10 @@ country_event = {
 				name = "General_Connections_3"
 				duration = -1
 			}
-			remove_country_modifier = General_Connections_1 
-			remove_country_modifier = General_Connections_2 
-			remove_country_modifier = General_Connections_4 
-			remove_country_modifier = General_Connections_5 
+			remove_country_modifier = General_Connections_1
+			remove_country_modifier = General_Connections_2
+			remove_country_modifier = General_Connections_4
+			remove_country_modifier = General_Connections_5
 		}
 		if = {
 			limit = {
@@ -2233,10 +2233,10 @@ country_event = {
 				name = "General_Connections_4"
 				duration = -1
 			}
-			remove_country_modifier = General_Connections_1 
-			remove_country_modifier = General_Connections_2 
-			remove_country_modifier = General_Connections_3 
-			remove_country_modifier = General_Connections_5 
+			remove_country_modifier = General_Connections_1
+			remove_country_modifier = General_Connections_2
+			remove_country_modifier = General_Connections_3
+			remove_country_modifier = General_Connections_5
 		}
 		if = {
 			limit = {
@@ -2247,15 +2247,15 @@ country_event = {
 				duration = -1
 			}
 			remove_country_modifier = General_Connections_1
-			remove_country_modifier = General_Connections_2 
-			remove_country_modifier = General_Connections_3 
-			remove_country_modifier = General_Connections_4 
+			remove_country_modifier = General_Connections_2
+			remove_country_modifier = General_Connections_3
+			remove_country_modifier = General_Connections_4
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.35.a
-		
+
 	}
 }
 
@@ -2265,7 +2265,7 @@ country_event = {
 	desc = reform_me_events.36.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		NOT = { has_government_attribute = enables_general_connections }
@@ -2277,22 +2277,22 @@ country_event = {
 			has_country_modifier = General_Connections_5
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
-			remove_country_modifier = General_Connections_1 
-			remove_country_modifier = General_Connections_2 
-			remove_country_modifier = General_Connections_3 
-			remove_country_modifier = General_Connections_4 
-			remove_country_modifier = General_Connections_5 
+			remove_country_modifier = General_Connections_1
+			remove_country_modifier = General_Connections_2
+			remove_country_modifier = General_Connections_3
+			remove_country_modifier = General_Connections_4
+			remove_country_modifier = General_Connections_5
 	}
-	
+
 	option = {
 		name = reform_me_events.36.a
-		
+
 	}
 }
 
@@ -2302,7 +2302,7 @@ country_event = {
 	desc = reform_me_events.37.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_general_connections
@@ -2333,11 +2333,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -2345,13 +2345,13 @@ country_event = {
 				NOT = { num_of_admirals = 2 }
 			}
 			add_country_modifier = {
-				name = "General_Connections_6" 
+				name = "General_Connections_6"
 				duration = -1
 			}
-			remove_country_modifier = General_Connections_7 
-			remove_country_modifier = General_Connections_8 
-			remove_country_modifier = General_Connections_9 
-			remove_country_modifier = General_Connections_10 
+			remove_country_modifier = General_Connections_7
+			remove_country_modifier = General_Connections_8
+			remove_country_modifier = General_Connections_9
+			remove_country_modifier = General_Connections_10
 		}
 		if = {
 			limit = {
@@ -2362,10 +2362,10 @@ country_event = {
 				name = "General_Connections_7"
 				duration = -1
 			}
-			remove_country_modifier = General_Connections_6 
-			remove_country_modifier = General_Connections_8 
-			remove_country_modifier = General_Connections_9 
-			remove_country_modifier = General_Connections_10  
+			remove_country_modifier = General_Connections_6
+			remove_country_modifier = General_Connections_8
+			remove_country_modifier = General_Connections_9
+			remove_country_modifier = General_Connections_10
 		}
 		if = {
 			limit = {
@@ -2376,10 +2376,10 @@ country_event = {
 				name = "General_Connections_8"
 				duration = -1
 			}
-			remove_country_modifier = General_Connections_6 
-			remove_country_modifier = General_Connections_7  
-			remove_country_modifier = General_Connections_9 
-			remove_country_modifier = General_Connections_10 
+			remove_country_modifier = General_Connections_6
+			remove_country_modifier = General_Connections_7
+			remove_country_modifier = General_Connections_9
+			remove_country_modifier = General_Connections_10
 		}
 		if = {
 			limit = {
@@ -2390,10 +2390,10 @@ country_event = {
 				name = "General_Connections_9"
 				duration = -1
 			}
-			remove_country_modifier = General_Connections_6 
-			remove_country_modifier = General_Connections_7 
-			remove_country_modifier = General_Connections_8 
-			remove_country_modifier = General_Connections_10 
+			remove_country_modifier = General_Connections_6
+			remove_country_modifier = General_Connections_7
+			remove_country_modifier = General_Connections_8
+			remove_country_modifier = General_Connections_10
 		}
 		if = {
 			limit = {
@@ -2403,16 +2403,16 @@ country_event = {
 				name = "General_Connections_10"
 				duration = -1
 			}
-			remove_country_modifier = General_Connections_6 
-			remove_country_modifier = General_Connections_7 
-			remove_country_modifier = General_Connections_8 
-			remove_country_modifier = General_Connections_9 
+			remove_country_modifier = General_Connections_6
+			remove_country_modifier = General_Connections_7
+			remove_country_modifier = General_Connections_8
+			remove_country_modifier = General_Connections_9
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.37.a
-		
+
 	}
 }
 
@@ -2422,7 +2422,7 @@ country_event = {
 	desc = reform_me_events.38.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		NOT = { has_government_attribute = enables_general_connections }
@@ -2434,22 +2434,22 @@ country_event = {
 			has_country_modifier = General_Connections_10
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
-			remove_country_modifier = General_Connections_6 
-			remove_country_modifier = General_Connections_7 
-			remove_country_modifier = General_Connections_8 
-			remove_country_modifier = General_Connections_9 
-			remove_country_modifier = General_Connections_10 
+			remove_country_modifier = General_Connections_6
+			remove_country_modifier = General_Connections_7
+			remove_country_modifier = General_Connections_8
+			remove_country_modifier = General_Connections_9
+			remove_country_modifier = General_Connections_10
 	}
-	
+
 	option = {
 		name = reform_me_events.38.a
-		
+
 	}
 }
 
@@ -2459,10 +2459,10 @@ country_event = {
 	desc = reform_me_events.39.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
 
-	trigger = { 
-		has_government_attribute = enables_bureacratic_apparatus 
+
+	trigger = {
+		has_government_attribute = enables_bureacratic_apparatus
 		any_owned_province = {
 			OR = {
 				AND = {
@@ -2482,11 +2482,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_owned_province = {
 			limit = {
@@ -2513,10 +2513,10 @@ country_event = {
 			remove_province_modifier = Bureacratic_Apparatus
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.39.a
-		
+
 	}
 }
 
@@ -2526,7 +2526,7 @@ country_event = {
 	desc = reform_me_events.40.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		NOT = { has_government_attribute = enables_bureacratic_apparatus }
@@ -2534,11 +2534,11 @@ country_event = {
 			has_province_modifier = Bureacratic_Apparatus
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_owned_province = {
 			limit = {
@@ -2547,10 +2547,10 @@ country_event = {
 			remove_province_modifier = Bureacratic_Apparatus
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.30.a
-		
+
 	}
 }
 
@@ -2565,25 +2565,25 @@ country_event = {
 		NOT = { has_government_attribute = enables_royal_electors }
 		NOT = { has_ruler_flag = GE_Elective_1 }
 	}
-	
+
 	mean_time_to_happen = {
 		days = 14600
 	}
-	
+
 	immediate = {
 		set_ruler_flag = GE_Elective_1
 	}
-	
+
 	option = {
 		name = reform_me_events.41.a
-		
+
 		add_heir_claim = -10
 		ai_chance = { factor = 100 }
 	}
-	
+
 	option = {
 		name = reform_me_events.41.b
-		
+
 		add_estate_loyalty = {
 			estate = estate_nobles
 			loyalty = -5
@@ -2602,28 +2602,28 @@ country_event = {
 		NOT = { has_government_attribute = enables_royal_electors }
 		NOT = { has_ruler_flag = GE_Elective_2 }
 	}
-	
+
 	mean_time_to_happen = {
 		days = 14600
 	}
-	
+
 	immediate = {
 		set_ruler_flag = GE_Elective_2
 	}
-	
+
 	option = {
 		name = reform_me_events.42.a
-		
+
 		random_list = {
 			10 = { add_heir_claim = -10 }
 			10 = { }
 		}
 		ai_chance = { factor = 100 }
 	}
-	
+
 	option = {
 		name = reform_me_events.42.b
-		
+
 		add_years_of_income = -0.25
 		add_corruption = 0.10
 		add_heir_claim = 5
@@ -2641,25 +2641,25 @@ country_event = {
 		NOT = { has_government_attribute = enables_royal_electors }
 		NOT = { has_ruler_flag = GE_Elective_3 }
 	}
-	
+
 	mean_time_to_happen = {
 		days = 14600
 	}
-	
+
 	immediate = {
 		set_ruler_flag = GE_Elective_3
 	}
-	
+
 	option = {
 		name = reform_me_events.43.a
-		
+
 		add_heir_claim = -10
 		ai_chance = { factor = 100 }
 	}
-	
+
 	option = {
 		name = reform_me_events.43.b
-		
+
 		add_prestige = -10
 	}
 }
@@ -2670,7 +2670,7 @@ country_event = {
 	desc = reform_me_events.44.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_pride_of_the_navy
@@ -2702,11 +2702,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -2716,12 +2716,12 @@ country_event = {
 				}
 			}
 			add_country_modifier = {
-				name = Pride_of_the_Navy_1 
+				name = Pride_of_the_Navy_1
 				duration = -1
 			}
-			remove_country_modifier = Pride_of_the_Navy_2 
-			remove_country_modifier = Pride_of_the_Navy_3 
-			remove_country_modifier = Pride_of_the_Navy_4 
+			remove_country_modifier = Pride_of_the_Navy_2
+			remove_country_modifier = Pride_of_the_Navy_3
+			remove_country_modifier = Pride_of_the_Navy_4
 		}
 		if = {
 			limit = {
@@ -2731,12 +2731,12 @@ country_event = {
 				}
 			}
 			add_country_modifier = {
-				name = Pride_of_the_Navy_2 
+				name = Pride_of_the_Navy_2
 				duration = -1
 			}
 			remove_country_modifier = Pride_of_the_Navy_1
-			remove_country_modifier = Pride_of_the_Navy_3 
-			remove_country_modifier = Pride_of_the_Navy_4 
+			remove_country_modifier = Pride_of_the_Navy_3
+			remove_country_modifier = Pride_of_the_Navy_4
 		}
 		if = {
 			limit = {
@@ -2746,12 +2746,12 @@ country_event = {
 				}
 			}
 			add_country_modifier = {
-				name = Pride_of_the_Navy_3 
+				name = Pride_of_the_Navy_3
 				duration = -1
 			}
-			remove_country_modifier = Pride_of_the_Navy_1 
-			remove_country_modifier = Pride_of_the_Navy_2 
-			remove_country_modifier = Pride_of_the_Navy_4 
+			remove_country_modifier = Pride_of_the_Navy_1
+			remove_country_modifier = Pride_of_the_Navy_2
+			remove_country_modifier = Pride_of_the_Navy_4
 		}
 		if = {
 			limit = {
@@ -2761,15 +2761,15 @@ country_event = {
 				name = Pride_of_the_Navy_4
 				duration = -1
 			}
-			remove_country_modifier = Pride_of_the_Navy_1 
-			remove_country_modifier = Pride_of_the_Navy_2 
-			remove_country_modifier = Pride_of_the_Navy_3 
+			remove_country_modifier = Pride_of_the_Navy_1
+			remove_country_modifier = Pride_of_the_Navy_2
+			remove_country_modifier = Pride_of_the_Navy_3
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.44.a
-		
+
 	}
 }
 
@@ -2779,7 +2779,7 @@ country_event = {
 	desc = reform_me_events.45.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		NOT = { has_government_attribute = enables_pride_of_the_navy }
@@ -2790,21 +2790,21 @@ country_event = {
 			has_country_modifier = Pride_of_the_Navy_4
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
-			remove_country_modifier = Pride_of_the_Navy_1 
-			remove_country_modifier = Pride_of_the_Navy_2 
-			remove_country_modifier = Pride_of_the_Navy_3 
+			remove_country_modifier = Pride_of_the_Navy_1
+			remove_country_modifier = Pride_of_the_Navy_2
+			remove_country_modifier = Pride_of_the_Navy_3
 			remove_country_modifier = Pride_of_the_Navy_4
 	}
-	
+
 	option = {
 		name = reform_me_events.45.a
-		
+
 	}
 }
 
@@ -2814,7 +2814,7 @@ country_event = {
 	desc = reform_me_events.46.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_such_waste_of_life
@@ -2825,11 +2825,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_subject_country = {
 			limit = {
@@ -2842,10 +2842,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.46.a
-		
+
 	}
 }
 
@@ -2855,25 +2855,25 @@ country_event = {
 	desc = reform_me_events.47.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_country_modifier = Colonial_Militias
 		is_subject = no
 		is_at_war = no
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		remove_country_modifier = Colonial_Militias
 	}
-	
+
 	option = {
 		name = reform_me_events.47.a
-		
+
 	}
 }
 
@@ -2883,10 +2883,10 @@ country_event = {
 	desc = reform_me_events.48.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
-		has_government_attribute = enables_device_forts 
+		has_government_attribute = enables_device_forts
 		any_owned_province = {
 			OR = {
 				AND = {
@@ -2900,11 +2900,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_owned_province = {
 			limit = {
@@ -2925,10 +2925,10 @@ country_event = {
 			remove_province_modifier = Device_Forts
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.48.a
-		
+
 	}
 }
 
@@ -2938,7 +2938,7 @@ country_event = {
 	desc = reform_me_events.49.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		NOT = { has_government_attribute = enables_device_forts }
@@ -2946,11 +2946,11 @@ country_event = {
 			has_province_modifier = Device_Forts
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_owned_province = {
 			limit = {
@@ -2959,10 +2959,10 @@ country_event = {
 			remove_province_modifier = Device_Forts
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.49.a
-		
+
 	}
 }
 
@@ -2972,7 +2972,7 @@ country_event = {
 	desc = reform_me_events.50.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_longbow_training
@@ -2982,11 +2982,11 @@ country_event = {
 			NOT = { has_province_modifier = Longbow_Training }
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_owned_province = {
 			limit = {
@@ -3001,10 +3001,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.50.a
-		
+
 	}
 }
 
@@ -3014,7 +3014,7 @@ country_event = {
 	desc = reform_me_events.51.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		NOT = { has_government_attribute = enables_longbow_training }
@@ -3022,11 +3022,11 @@ country_event = {
 			has_province_modifier = Longbow_Training
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_owned_province = {
 			limit = {
@@ -3035,10 +3035,10 @@ country_event = {
 			remove_province_modifier = Longbow_Training
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.51.a
-		
+
 	}
 }
 
@@ -3047,18 +3047,18 @@ country_event = {
 	title = reform_me_events.52.t
 	desc = reform_me_events.52.d
 	picture = LIBERIUM_VETO_eventPicture
-	
+
 	trigger = {
 		has_government_attribute = enables_royal_council
 		NOT = {	has_ruler_flag = council_picked }
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
-		set_ruler_flag = council_picked	
+		set_ruler_flag = council_picked
 		hidden_effect = {
 			if = {
 				limit = {
@@ -3143,10 +3143,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.52.a
-		
+
 		trigger_switch = {
 			on_trigger = has_country_flag
 			Bad_Admin = {
@@ -3190,10 +3190,10 @@ country_event = {
 		clr_country_flag = Decent_Mil
 		clr_country_flag = Good_Mil
 	}
-	
+
 	option = {
 		name = reform_me_events.52.b
-		
+
 		trigger_switch = {
 			on_trigger = has_country_flag
 			Bad_Diplo = {
@@ -3238,10 +3238,10 @@ country_event = {
 		clr_country_flag = Decent_Mil
 		clr_country_flag = Good_Mil
 	}
-	
+
 	option = {
 		name = reform_me_events.52.c
-		
+
 		trigger_switch = {
 			on_trigger = has_country_flag
 			Bad_Mil = {
@@ -3293,7 +3293,7 @@ country_event = {
 	desc = reform_me_events.53.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_morisca_band
@@ -3317,16 +3317,16 @@ country_event = {
 							}
 						}
 					}
-					has_province_modifier = Morisca_Band 
+					has_province_modifier = Morisca_Band
 				}
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_owned_province = {
 			limit = {
@@ -3354,15 +3354,15 @@ country_event = {
 						}
 					}
 				}
-				has_province_modifier = Morisca_Band 
+				has_province_modifier = Morisca_Band
 			}
-			remove_province_modifier = Morisca_Band 
+			remove_province_modifier = Morisca_Band
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.53.a
-		
+
 	}
 }
 
@@ -3372,31 +3372,31 @@ country_event = {
 	desc = reform_me_events.54.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		NOT = { has_government_attribute = enables_morisca_band}
 		any_owned_province = {
-			has_province_modifier = Morisca_Band 
+			has_province_modifier = Morisca_Band
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_owned_province = {
 			limit = {
-				has_province_modifier = Morisca_Band 
+				has_province_modifier = Morisca_Band
             }
-			remove_province_modifier = Morisca_Band 
+			remove_province_modifier = Morisca_Band
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.54.a
-		
+
 	}
 }
 
@@ -3406,7 +3406,7 @@ country_event = {
 	desc = reform_me_events.55.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_legacy_of_independence
@@ -3417,11 +3417,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_subject_country = {
 			limit = {
@@ -3434,10 +3434,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.55.a
-		
+
 	}
 }
 
@@ -3447,25 +3447,25 @@ country_event = {
 	desc = reform_me_events.56.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
-		has_country_modifier = Taifa_Spirit 
+		has_country_modifier = Taifa_Spirit
 		is_subject = no
 		is_at_war = no
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
-		remove_country_modifier = Taifa_Spirit 
+		remove_country_modifier = Taifa_Spirit
 	}
-	
+
 	option = {
 		name = reform_me_events.56.a
-		
+
 	}
 }
 
@@ -3475,31 +3475,31 @@ country_event = {
 	desc = reform_me_events.57.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_grazing_herds
 		any_owned_province = {
 			OR = {
-				has_terrain = drylands 
-				has_terrain = hills 
+				has_terrain = drylands
+				has_terrain = hills
 				has_terrain = highlands
 			}
 			region = iberia_region
 			NOT = { has_province_modifier = Berber_Herders }
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_owned_province = {
 			limit = {
 				OR = {
-					has_terrain = drylands 
-					has_terrain = hills 
+					has_terrain = drylands
+					has_terrain = hills
 					has_terrain = highlands
 				}
 				region = iberia_region
@@ -3512,10 +3512,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.57.a
-		
+
 	}
 }
 
@@ -3525,31 +3525,31 @@ country_event = {
 	desc = reform_me_events.58.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		NOT = { has_government_attribute = enables_grazing_herds }
 		any_owned_province = {
-			has_province_modifier = Berber_Herders 
+			has_province_modifier = Berber_Herders
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_owned_province = {
 			limit = {
-				has_province_modifier = Berber_Herders 
+				has_province_modifier = Berber_Herders
             }
-			remove_province_modifier = Berber_Herders 
+			remove_province_modifier = Berber_Herders
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.58.a
-		
+
 	}
 }
 
@@ -3559,7 +3559,7 @@ country_event = {
 	desc = reform_me_events.59.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_foreign_artists
@@ -3615,11 +3615,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -3811,10 +3811,10 @@ country_event = {
 			remove_country_modifier = Foreign_Artists_9
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.59.a
-		
+
 	}
 }
 
@@ -3824,7 +3824,7 @@ country_event = {
 	desc = reform_me_events.60.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_kingdom_of_brazil
@@ -3837,11 +3837,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_subject_country = {
 			limit = {
@@ -3854,10 +3854,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.60.a
-		
+
 	}
 }
 
@@ -3867,25 +3867,25 @@ country_event = {
 	desc = reform_me_events.61.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_country_modifier = Kingdom_Of_Brazil
 		is_subject = no
 		is_at_war = no
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		remove_country_modifier = Kingdom_Of_Brazil
 	}
-	
+
 	option = {
 		name = reform_me_events.61.a
-		
+
 	}
 }
 
@@ -3895,7 +3895,7 @@ country_event = {
 	desc = reform_me_events.62.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_trade_princes
@@ -3904,8 +3904,8 @@ country_event = {
 				calc_true_if = {
 					any_subject_country = {
 						OR = {
-							primary_culture = aragonese 
-							primary_culture = catalan 
+							primary_culture = aragonese
+							primary_culture = catalan
 						}
 					}
 					amount = 1
@@ -3916,8 +3916,8 @@ country_event = {
 				calc_true_if = {
 					any_subject_country = {
 						OR = {
-							primary_culture = aragonese 
-							primary_culture = catalan 
+							primary_culture = aragonese
+							primary_culture = catalan
 						}
 					}
 				amount = 1
@@ -3926,19 +3926,19 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
 				calc_true_if = {
 					any_subject_country = {
 						OR = {
-							primary_culture = aragonese 
-							primary_culture = catalan 
+							primary_culture = aragonese
+							primary_culture = catalan
 						}
 					}
 					amount = 1
@@ -3952,12 +3952,12 @@ country_event = {
 		}
 		if = {
 			limit = {
-				NOT = { 				
+				NOT = {
 					calc_true_if = {
 						all_subject_country = {
 							OR = {
-								primary_culture = aragonese 
-								primary_culture = catalan 
+								primary_culture = aragonese
+								primary_culture = catalan
 							}
 						}
 						amount = 1
@@ -3967,10 +3967,10 @@ country_event = {
 			remove_country_modifier = Trade_Princes
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.62.a
-		
+
 	}
 }
 
@@ -3980,24 +3980,24 @@ country_event = {
 	desc = reform_me_events.63.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		NOT = { has_government_attribute = enables_trade_princes }
 		has_country_modifier = Trade_Princes
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		remove_country_modifier = Trade_Princes
 	}
-	
+
 	option = {
 		name = reform_me_events.63.a
-		
+
 	}
 }
 
@@ -4007,7 +4007,7 @@ country_event = {
 # 	desc = reform_me_events.64.d
 # 	picture = WESTERNISATION_eventPicture
 # 	hidden = yes
-	
+
 
 # 	trigger = {
 # 		AND = {
@@ -4016,21 +4016,21 @@ country_event = {
 # 			NOT = { has_country_modifier = Militant_Orders }
 # 		}
 # 	}
-	
+
 # 	mean_time_to_happen = {
 # 		days = 30
 # 	}
-	
+
 # 	immediate = {
 # 		add_country_modifier = {
 # 			name = "Militant_Orders"
 # 			duration = -1
 # 		}
 # 	}
-	
+
 # 	option = {
 # 		name = reform_me_events.64.a
-		
+
 # 	}
 # }
 
@@ -4040,7 +4040,7 @@ country_event = {
 	desc = reform_me_events.65.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		OR = {
@@ -4054,18 +4054,18 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		remove_country_modifier = Militant_Orders
 	}
-	
+
 	option = {
 		name = reform_me_events.65.a
-		
+
 	}
 }
 
@@ -4074,7 +4074,7 @@ country_event = {
 	title = reform_me_events.66.t
 	desc = reform_me_events.66.d
 	picture = WESTERNISATION_eventPicture
-	
+
 	fire_only_once = yes
 
 	trigger = {
@@ -4082,14 +4082,14 @@ country_event = {
 		senior_union_with = ARA
 		NOT = { exists = GRA }
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	option = {
 		name = reform_me_events.66.a
-		
+
 		add_government_reform = crown_of_castille
 	}
 }
@@ -4100,7 +4100,7 @@ country_event = {
 	desc = reform_me_events.67.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_crusader_order
@@ -4231,11 +4231,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -4251,10 +4251,10 @@ country_event = {
 				}
 			}
 			add_country_modifier = {
-				name = Crusader_Order_1 
+				name = Crusader_Order_1
 				duration = -1
 			}
-			remove_country_modifier = Crusader_Order_2 
+			remove_country_modifier = Crusader_Order_2
 			remove_country_modifier = Crusader_Order_3
 			remove_country_modifier = Crusader_Order_4
 			remove_country_modifier = Crusader_Order_5
@@ -4278,7 +4278,7 @@ country_event = {
 				}
 			}
 			add_country_modifier = {
-				name = Crusader_Order_2 
+				name = Crusader_Order_2
 				duration = -1
 			}
 			remove_country_modifier = Crusader_Order_1
@@ -4305,11 +4305,11 @@ country_event = {
 				}
 			}
 			add_country_modifier = {
-				name = Crusader_Order_3 
+				name = Crusader_Order_3
 				duration = -1
 			}
 			remove_country_modifier = Crusader_Order_1
-			remove_country_modifier = Crusader_Order_2 
+			remove_country_modifier = Crusader_Order_2
 			remove_country_modifier = Crusader_Order_4
 			remove_country_modifier = Crusader_Order_5
 			remove_country_modifier = Crusader_Order_6
@@ -4336,7 +4336,7 @@ country_event = {
 				duration = -1
 			}
 			remove_country_modifier = Crusader_Order_1
-			remove_country_modifier = Crusader_Order_2 
+			remove_country_modifier = Crusader_Order_2
 			remove_country_modifier = Crusader_Order_3
 			remove_country_modifier = Crusader_Order_5
 			remove_country_modifier = Crusader_Order_6
@@ -4363,7 +4363,7 @@ country_event = {
 				duration = -1
 			}
 			remove_country_modifier = Crusader_Order_1
-			remove_country_modifier = Crusader_Order_2 
+			remove_country_modifier = Crusader_Order_2
 			remove_country_modifier = Crusader_Order_3
 			remove_country_modifier = Crusader_Order_4
 			remove_country_modifier = Crusader_Order_6
@@ -4390,7 +4390,7 @@ country_event = {
 				duration = -1
 			}
 			remove_country_modifier = Crusader_Order_1
-			remove_country_modifier = Crusader_Order_2 
+			remove_country_modifier = Crusader_Order_2
 			remove_country_modifier = Crusader_Order_3
 			remove_country_modifier = Crusader_Order_4
 			remove_country_modifier = Crusader_Order_5
@@ -4417,7 +4417,7 @@ country_event = {
 				duration = -1
 			}
 			remove_country_modifier = Crusader_Order_1
-			remove_country_modifier = Crusader_Order_2 
+			remove_country_modifier = Crusader_Order_2
 			remove_country_modifier = Crusader_Order_3
 			remove_country_modifier = Crusader_Order_4
 			remove_country_modifier = Crusader_Order_5
@@ -4444,7 +4444,7 @@ country_event = {
 				duration = -1
 			}
 			remove_country_modifier = Crusader_Order_1
-			remove_country_modifier = Crusader_Order_2 
+			remove_country_modifier = Crusader_Order_2
 			remove_country_modifier = Crusader_Order_3
 			remove_country_modifier = Crusader_Order_4
 			remove_country_modifier = Crusader_Order_5
@@ -4471,7 +4471,7 @@ country_event = {
 				duration = -1
 			}
 			remove_country_modifier = Crusader_Order_1
-			remove_country_modifier = Crusader_Order_2 
+			remove_country_modifier = Crusader_Order_2
 			remove_country_modifier = Crusader_Order_3
 			remove_country_modifier = Crusader_Order_4
 			remove_country_modifier = Crusader_Order_5
@@ -4492,7 +4492,7 @@ country_event = {
 				duration = -1
 			}
 			remove_country_modifier = Crusader_Order_1
-			remove_country_modifier = Crusader_Order_2 
+			remove_country_modifier = Crusader_Order_2
 			remove_country_modifier = Crusader_Order_3
 			remove_country_modifier = Crusader_Order_4
 			remove_country_modifier = Crusader_Order_5
@@ -4502,10 +4502,10 @@ country_event = {
 			remove_country_modifier = Crusader_Order_9
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.67.a
-		
+
 	}
 }
 
@@ -4515,7 +4515,7 @@ country_event = {
 	desc = reform_me_events.68.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		NOT = { has_government_attribute = enables_crusader_order }
@@ -4532,14 +4532,14 @@ country_event = {
 			has_country_modifier = Crusader_Order_10
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 			remove_country_modifier = Crusader_Order_1
-			remove_country_modifier = Crusader_Order_2 
+			remove_country_modifier = Crusader_Order_2
 			remove_country_modifier = Crusader_Order_3
 			remove_country_modifier = Crusader_Order_4
 			remove_country_modifier = Crusader_Order_5
@@ -4549,10 +4549,10 @@ country_event = {
 			remove_country_modifier = Crusader_Order_9
 			remove_country_modifier = Crusader_Order_10
 	}
-	
+
 	option = {
 		name = reform_me_events.69.a
-		
+
 	}
 }
 
@@ -4568,17 +4568,17 @@ country_event = {
 			has_government_attribute = enables_religious_supremacy
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 7300
-			
+
 		modifier = {
 			factor = 2
 			NOT = {
 				has_global_modifier_value = {
 					which = tolerance_heathen
 					value = 1
-				} 
+				}
 			}
 		}
 		modifier = {
@@ -4604,7 +4604,7 @@ country_event = {
 			full_idea_group = humanist_ideas
 		}
 	}
-	
+
 	immediate = {
 		hidden_effect = {
 			random_owned_province = {
@@ -4618,10 +4618,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.70.a
-		
+
 	}
 }
 
@@ -4630,12 +4630,12 @@ country_event = {
 	title = reform_me_events.71.t
 	desc = reform_me_events.71.d
 	picture = ACCUSATION_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = reform_me_events.71.a
-		
+
 		define_ruler = {
 			dynasty = "Achaemenid"
 			culture = ROOT
@@ -4648,10 +4648,10 @@ country_event = {
 			kill_heir = yes
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.71.b
-		
+
 		add_prestige = 10
 		add_legitimacy = 15
 	}
@@ -4663,7 +4663,7 @@ country_event = {
 	desc = reform_me_events.72.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_satrapies
@@ -4673,11 +4673,11 @@ country_event = {
 			NOT = { has_province_modifier = Satrapy }
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_owned_province = {
 			limit = {
@@ -4691,10 +4691,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.72.a
-		
+
 	}
 }
 
@@ -4704,7 +4704,7 @@ country_event = {
 	desc = reform_me_events.73.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		NOT = { has_government_attribute = enables_satrapies }
@@ -4712,11 +4712,11 @@ country_event = {
 			has_province_modifier = Satrapy
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_owned_province = {
 			limit = {
@@ -4725,10 +4725,10 @@ country_event = {
 			remove_province_modifier = Satrapy
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.73.a
-		
+
 	}
 }
 
@@ -4738,7 +4738,7 @@ country_event = {
 	desc = reform_me_events.74.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_church_poorhouses
@@ -4749,7 +4749,7 @@ country_event = {
 					NOT = { has_province_modifier = Church_Poorhouses }
 				}
 				AND = {
-					NOT = { 
+					NOT = {
 						has_tax_building_trigger = yes
 					}
 					has_province_modifier = Church_Poorhouses
@@ -4757,11 +4757,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_owned_province = {
 			limit = {
@@ -4775,18 +4775,18 @@ country_event = {
 		}
 		every_owned_province = {
 			limit = {
-				NOT = { 
-					has_tax_building_trigger = yes 
+				NOT = {
+					has_tax_building_trigger = yes
 				}
 				has_province_modifier = Church_Poorhouses
             }
 			remove_province_modifier = Church_Poorhouses
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.74.a
-		
+
 	}
 }
 
@@ -4796,7 +4796,7 @@ country_event = {
 	desc = reform_me_events.75.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		NOT = { has_government_attribute = enables_church_poorhouses }
@@ -4804,11 +4804,11 @@ country_event = {
 			has_province_modifier = Church_Poorhouses
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_owned_province = {
 			limit = {
@@ -4817,10 +4817,10 @@ country_event = {
 			remove_province_modifier = Church_Poorhouses
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.75.a
-		
+
 	}
 }
 
@@ -4830,7 +4830,7 @@ country_event = {
 	desc = reform_me_events.76.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_crown_of_aragon
@@ -4847,11 +4847,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_owned_province = {
 			limit = {
@@ -4872,10 +4872,10 @@ country_event = {
 			remove_province_modifier = Crown_Of_Aragon
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.76.a
-		
+
 	}
 }
 
@@ -4885,7 +4885,7 @@ country_event = {
 	desc = reform_me_events.77.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		NOT = { has_government_attribute = enables_crown_of_aragon }
@@ -4893,11 +4893,11 @@ country_event = {
 			has_province_modifier = Crown_Of_Aragon
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_owned_province = {
 			limit = {
@@ -4906,10 +4906,10 @@ country_event = {
 			remove_province_modifier = Crown_Of_Aragon
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.77.a
-		
+
 	}
 }
 
@@ -4918,20 +4918,20 @@ country_event = {
 	title = reform_me_events.78.t
 	desc = reform_me_events.78.d
 	picture = WESTERNISATION_eventPicture
-	
+
 	fire_only_once = yes
 
 	trigger = {
 		tag = SPA
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	option = {
 		name = reform_me_events.78.a
-		
+
 		add_government_reform = hispanic_kingdom
 	}
 }
@@ -4941,21 +4941,21 @@ country_event = {
 	title = reform_me_events.79.t
 	desc = reform_me_events.79.d
 	picture = WESTERNISATION_eventPicture
-	
+
 	fire_only_once = yes
 
 	trigger = {
 		tag = SPA
 		absolutism = 50
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	option = {
 		name = reform_me_events.79.a
-		
+
 		add_government_reform = iberian_enlightened_despotism_reform
 	}
 }
@@ -4966,17 +4966,17 @@ country_event = {
 	desc = reform_me_events.80.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 	fire_only_once = yes
 
 	trigger = {
 		has_reform = crown_of_aragon
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		hidden_effect = {
 			aragon_area = {
@@ -5002,11 +5002,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.80.a
-		
-		
+
+
 	}
 }
 country_event = {
@@ -5015,7 +5015,7 @@ country_event = {
 	desc = reform_me_events.8001.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 	fire_only_once = yes
 
 	trigger = {
@@ -5024,11 +5024,11 @@ country_event = {
 			owned_by = ROOT
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		hidden_effect = {
 			#Removed for BT since Sicily is part of Naples
@@ -5048,11 +5048,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.80.a
-		
-		
+
+
 	}
 }
 
@@ -5062,7 +5062,7 @@ country_event = {
 	desc = reform_me_events.80000.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 	fire_only_once = yes
 
 	trigger = {
@@ -5071,11 +5071,11 @@ country_event = {
 			has_province_modifier = Kingdom_of_Aragon
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_owned_province = {
 			limit = {
@@ -5102,10 +5102,10 @@ country_event = {
 			remove_province_modifier = Kingdom_Of_Sicily
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.80000.a
-		
+
 		add_stability = 1
 	}
 }
@@ -5115,24 +5115,24 @@ country_event = {
 	title = reform_me_events.81.t
 	desc = reform_me_events.81.d
 	picture = WESTERNISATION_eventPicture
-	
+
 
 	trigger = {
 		has_reform = integrate_tatars_reform
 		NOT = { has_country_flag = tatars_integrated }
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		set_country_flag = tatars_integrated
 	}
-	
+
 	option = {
 		name = reform_me_events.81.a
-		
+
 		random_owned_province = {
 			limit = {
 				culture_group = tartar
@@ -5181,18 +5181,18 @@ country_event = {
 		}
 		is_year = 1490
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
-		
+
 	}
-	
+
 	option = {
 		name = reform_me_events.82.a
-		
+
 		if = {
 			limit = {
 				OR = {
@@ -5206,7 +5206,7 @@ country_event = {
 				change_government_reform_progress = 100
 			}
 		}
-	
+
 	}
 }
 
@@ -5216,17 +5216,17 @@ country_event = {
 	desc = reform_me_events.8200.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_divine_blood
 		has_heir = no
 	}
-	
+
 	mean_time_to_happen = {
 		days = 365
 	}
-	
+
 	immediate = {
 		random_list = {
 			33 = {	define_heir = {
@@ -5255,10 +5255,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.8200.a
-		
+
 	}
 }
 
@@ -5268,18 +5268,18 @@ country_event = {
 	desc = reform_me_events.83.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 	is_triggered_only = yes
-	fire_only_once = yes 
+	fire_only_once = yes
 
 	trigger = {
 		has_reform = dynastic_theocracy_reform
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		define_ruler = {
 			change_adm = 2
@@ -5289,10 +5289,10 @@ country_event = {
 			male = yes
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.83.a
-		
+
 	}
 }
 
@@ -5302,7 +5302,7 @@ country_event = {
 	desc = reform_me_events.84.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_papal_delegation
@@ -5315,20 +5315,20 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		PAP = {
 			add_opinion = { who = ROOT modifier = opinion_papal_delegation }
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.84.a
-		
+
 	}
 }
 
@@ -5338,7 +5338,7 @@ country_event = {
 	desc = reform_me_events.85.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		NOT = { has_government_attribute = enables_papal_delegation }
@@ -5349,20 +5349,20 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		PAP = {
 			remove_opinion = { who = ROOT modifier = opinion_papal_delegation }
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.85.a
-		
+
 	}
 }
 
@@ -5373,7 +5373,7 @@ country_event = {
 	title = reform_me_events.88.t
 	desc = reform_me_events.88.d
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
+
 	trigger = {
 		has_government_attribute = enables_burgher_council
 		NOT = {
@@ -5384,7 +5384,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
@@ -5399,7 +5399,7 @@ country_event = {
 	}
 	option = {
 		name = reform_me_events.88.b	#"A Balanced Policy."
-		
+
 		add_estate_loyalty = {
 			estate = estate_burghers
 			loyalty = 10
@@ -5411,7 +5411,7 @@ country_event = {
 	}
 	option = {
 		name = reform_me_events.88.c	# "Open doors for everyone and everything."
-		
+
 		add_ruler_modifier = {
 			name = "Open_Doors"
 			duration = -1
@@ -5426,7 +5426,7 @@ country_event = {
 	desc = reform_me_events.91.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_peasant_council
@@ -5459,11 +5459,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -5506,10 +5506,10 @@ country_event = {
 			remove_country_modifier = Peasant_Council
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.91.a
-		
+
 	}
 }
 
@@ -5519,24 +5519,24 @@ country_event = {
 	desc = reform_me_events.92.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		NOT = { has_government_attribute = enables_peasant_council }
 		has_country_modifier = Peasant_Council
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		remove_country_modifier = Peasant_Council
 	}
-	
+
 	option = {
 		name = reform_me_events.92.a
-		
+
 	}
 }
 
@@ -5547,7 +5547,7 @@ country_event = {
 	desc = reform_me_events.9100.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_no_crown
@@ -5567,11 +5567,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -5586,10 +5586,10 @@ country_event = {
 			remove_country_modifier = Recognize_No_Crown
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.9100.a
-		
+
 	}
 }
 
@@ -5599,24 +5599,24 @@ country_event = {
 	desc = reform_me_events.9200.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		NOT = { has_government_attribute = enables_no_crown }
 		has_country_modifier = Recognize_No_Crown
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		remove_country_modifier = Recognize_No_Crown
 	}
-	
+
 	option = {
 		name = reform_me_events.9200.a
-		
+
 	}
 }
 
@@ -5627,10 +5627,10 @@ country_event = {
 	desc = reform_me_events.94.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
-		has_government_attribute = enables_return_to_sender 
+		has_government_attribute = enables_return_to_sender
 		any_owned_province = {
 			OR = {
 				AND = {
@@ -5640,11 +5640,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_owned_province = {
 			limit = {
@@ -5658,10 +5658,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.94.a
-		
+
 	}
 }
 
@@ -5671,7 +5671,7 @@ country_event = {
 	desc = reform_me_events.95.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		NOT = { has_government_attribute = enables_return_to_sender }
@@ -5679,11 +5679,11 @@ country_event = {
 			has_province_modifier = Return_To_Sender
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_owned_province = {
 			limit = {
@@ -5692,10 +5692,10 @@ country_event = {
 			remove_province_modifier = Return_To_Sender
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.95.a
-		
+
 	}
 }
 
@@ -5707,7 +5707,7 @@ country_event = {
 	desc = reform_me_events.100.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_attracting_academics
@@ -5739,11 +5739,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -5753,12 +5753,12 @@ country_event = {
 				}
 			}
 			add_country_modifier = {
-				name = Hansa_Academics_1 
+				name = Hansa_Academics_1
 				duration = -1
 			}
-			remove_country_modifier = Hansa_Academics_2 
-			remove_country_modifier = Hansa_Academics_3 
-			remove_country_modifier = Hansa_Academics_4 
+			remove_country_modifier = Hansa_Academics_2
+			remove_country_modifier = Hansa_Academics_3
+			remove_country_modifier = Hansa_Academics_4
 		}
 		if = {
 			limit = {
@@ -5768,12 +5768,12 @@ country_event = {
 				}
 			}
 			add_country_modifier = {
-				name = Hansa_Academics_2 
+				name = Hansa_Academics_2
 				duration = -1
 			}
 			remove_country_modifier = Hansa_Academics_1
-			remove_country_modifier = Hansa_Academics_3 
-			remove_country_modifier = Hansa_Academics_4 
+			remove_country_modifier = Hansa_Academics_3
+			remove_country_modifier = Hansa_Academics_4
 		}
 		if = {
 			limit = {
@@ -5783,12 +5783,12 @@ country_event = {
 				}
 			}
 			add_country_modifier = {
-				name = Hansa_Academics_3 
+				name = Hansa_Academics_3
 				duration = -1
 			}
-			remove_country_modifier = Hansa_Academics_1 
-			remove_country_modifier = Hansa_Academics_2 
-			remove_country_modifier = Hansa_Academics_4 
+			remove_country_modifier = Hansa_Academics_1
+			remove_country_modifier = Hansa_Academics_2
+			remove_country_modifier = Hansa_Academics_4
 		}
 		if = {
 			limit = {
@@ -5798,15 +5798,15 @@ country_event = {
 				name = Hansa_Academics_4
 				duration = -1
 			}
-			remove_country_modifier = Hansa_Academics_1 
-			remove_country_modifier = Hansa_Academics_2 
-			remove_country_modifier = Hansa_Academics_3 
+			remove_country_modifier = Hansa_Academics_1
+			remove_country_modifier = Hansa_Academics_2
+			remove_country_modifier = Hansa_Academics_3
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.44.a
-		
+
 	}
 }
 
@@ -5816,7 +5816,7 @@ country_event = {
 	desc = reform_me_events.101.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		NOT = { has_government_attribute = enables_attracting_academics }
@@ -5827,21 +5827,21 @@ country_event = {
 			has_country_modifier = Hansa_Academics_4
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
-			remove_country_modifier = Hansa_Academics_1 
-			remove_country_modifier = Hansa_Academics_2 
-			remove_country_modifier = Hansa_Academics_3 
+			remove_country_modifier = Hansa_Academics_1
+			remove_country_modifier = Hansa_Academics_2
+			remove_country_modifier = Hansa_Academics_3
 			remove_country_modifier = Hansa_Academics_4
 	}
-	
+
 	option = {
 		name = reform_me_events.101.a
-		
+
 	}
 }
 
@@ -5851,7 +5851,7 @@ country_event = {
 	desc = reform_me_events.102.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_military_exports
@@ -5907,11 +5907,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -6104,10 +6104,10 @@ country_event = {
 			remove_country_modifier = Military_Industry_9
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.102.a
-		
+
 	}
 }
 
@@ -6117,7 +6117,7 @@ country_event = {
 	desc = reform_me_events.105.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_feudal_receipts
@@ -6129,11 +6129,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_subject_country = {
 			limit = {
@@ -6146,10 +6146,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.105.a
-		
+
 	}
 }
 
@@ -6159,25 +6159,25 @@ country_event = {
 	desc = reform_me_events.106.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
-		has_country_modifier = Feudal_Receipts 
+		has_country_modifier = Feudal_Receipts
 		is_subject = no
 		is_at_war = no
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
-		remove_country_modifier = Feudal_Receipts 
+		remove_country_modifier = Feudal_Receipts
 	}
-	
+
 	option = {
 		name = reform_me_events.106.a
-		
+
 	}
 }
 
@@ -6187,7 +6187,7 @@ country_event = {
 	desc = reform_me_events.107.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_regulated_leave
@@ -6202,11 +6202,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -6221,10 +6221,10 @@ country_event = {
 			remove_country_modifier = Regulated_Leave
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.107.a
-		
+
 	}
 }
 
@@ -6234,24 +6234,24 @@ country_event = {
 	desc = reform_me_events.108.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		NOT = { has_government_attribute = enables_regulated_leave }
 		has_country_modifier = Regulated_Leave
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		remove_country_modifier = Regulated_Leave
 	}
-	
+
 	option = {
 		name = reform_me_events.108.a
-		
+
 	}
 }
 
@@ -6261,7 +6261,7 @@ country_event = {
 	desc = reform_me_events.109.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_french_court
@@ -6282,7 +6282,7 @@ country_event = {
 				NOT = { has_country_modifier = French_Court }
 			}
 			AND = {
-				NOT = { 
+				NOT = {
 					employed_advisor = {
 					culture = ROOT
 					category = ADM
@@ -6300,11 +6300,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -6330,10 +6330,10 @@ country_event = {
 			remove_country_modifier = French_Court
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.109.a
-		
+
 	}
 }
 
@@ -6343,24 +6343,24 @@ country_event = {
 	desc = reform_me_events.110.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		NOT = { has_government_attribute = enables_french_court }
 		has_country_modifier = French_Court
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		remove_country_modifier = French_Court
 	}
-	
+
 	option = {
 		name = reform_me_events.110.a
-		
+
 	}
 }
 
@@ -6370,10 +6370,10 @@ country_event = {
 	desc = reform_me_events.111.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
-		has_government_attribute = enables_officers_of_the_sword 
+		has_government_attribute = enables_officers_of_the_sword
 		OR = {
 			AND = {
 				army_tradition = 50
@@ -6385,11 +6385,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -6409,10 +6409,10 @@ country_event = {
 			remove_country_modifier = Officers_Of_The_Sword
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.111.a
-		
+
 	}
 }
 
@@ -6422,24 +6422,24 @@ country_event = {
 	desc = reform_me_events.112.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		NOT = { has_government_attribute = enables_officers_of_the_sword }
 		has_country_modifier = Officers_Of_The_Sword
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		remove_country_modifier = Officers_Of_The_Sword
 	}
-	
+
 	option = {
 		name = reform_me_events.112.a
-		
+
 	}
 }
 
@@ -6450,7 +6450,7 @@ country_event = {
 	desc = reform_me_events.115.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_lingua_franca
@@ -6483,11 +6483,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_country = {
 			limit = {
@@ -6522,10 +6522,10 @@ country_event = {
 			remove_opinion = { who = ROOT modifier = opinion_lingua_franca }
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.115.a
-		
+
 	}
 }
 
@@ -6535,7 +6535,7 @@ country_event = {
 	desc = reform_me_events.116.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		NOT = { has_government_attribute = enables_lingua_franca }
@@ -6546,11 +6546,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_country = {
 			limit = {
@@ -6562,10 +6562,10 @@ country_event = {
 			remove_opinion = { who = ROOT modifier = opinion_lingua_franca }
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.116.a
-		
+
 	}
 }
 
@@ -6575,10 +6575,10 @@ country_event = {
 	desc = reform_me_events.117.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
-		has_government_attribute = enables_industrialism 
+		has_government_attribute = enables_industrialism
 		any_owned_province = {
 			OR = {
 				AND = {
@@ -6589,7 +6589,7 @@ country_event = {
 				}
 				AND = {
 					OR = {
-						has_building = counting_house 
+						has_building = counting_house
 						has_building = steam_factory
 					}
 					NOT = { has_province_modifier = Promoted_Industry_v2 }
@@ -6597,16 +6597,16 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_owned_province = {
 			limit = {
 				OR = {
-					has_building = workshop 
+					has_building = workshop
 				}
 				NOT = {	has_province_modifier = Promoted_Industry }
             }
@@ -6619,7 +6619,7 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				OR = {
-					has_building = counting_house 
+					has_building = counting_house
 					has_building = steam_factory
 				}
 				NOT = {	has_province_modifier = Promoted_Industry_v2 }
@@ -6632,10 +6632,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.117.a
-		
+
 	}
 }
 
@@ -6645,7 +6645,7 @@ country_event = {
 	desc = reform_me_events.118.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_home_market
@@ -6701,11 +6701,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -6897,10 +6897,10 @@ country_event = {
 			remove_country_modifier = Home_Market_9
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.118.a
-		
+
 	}
 }
 
@@ -6910,10 +6910,10 @@ country_event = {
 	desc = reform_me_events.119.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
-		has_government_attribute = enables_french_ordonannce 
+		has_government_attribute = enables_french_ordonannce
 		any_subject_country = {
 			AND = {
 				is_overseas_subject = yes
@@ -6921,11 +6921,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_subject_country = {
 			limit = {
@@ -6938,10 +6938,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.119.a
-		
+
 	}
 }
 
@@ -6951,25 +6951,25 @@ country_event = {
 	desc = reform_me_events.120.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
-		has_country_modifier = French_Ordonnance 
+		has_country_modifier = French_Ordonnance
 		is_subject = no
 		is_at_war = no
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		remove_country_modifier = French_Ordonnance
 	}
-	
+
 	option = {
 		name = reform_me_events.120.a
-		
+
 	}
 }
 
@@ -6979,10 +6979,10 @@ country_event = {
 	desc = reform_me_events.121.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
-		has_government_attribute = enables_economic_block 
+		has_government_attribute = enables_economic_block
 		OR = {
 			AND = {
 				num_of_allies = 1
@@ -7015,11 +7015,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -7123,10 +7123,10 @@ country_event = {
 			remove_country_modifier = Home_Market_5
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.121.a
-		
+
 	}
 }
 
@@ -7136,10 +7136,10 @@ country_event = {
 	desc = reform_me_events.122.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
-		has_government_attribute = enables_foreign_worship 
+		has_government_attribute = enables_foreign_worship
 		OR = {
 			AND = {
 				num_of_mercenaries = 10
@@ -7151,11 +7151,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -7175,10 +7175,10 @@ country_event = {
 			remove_country_modifier = Foreign_Regiments
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.122.a
-		
+
 	}
 }
 
@@ -7188,24 +7188,24 @@ country_event = {
 	desc = reform_me_events.123.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		NOT = { has_government_attribute = enables_foreign_worship }
 		has_country_modifier = Foreign_Regiments
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		remove_country_modifier = Foreign_Regiments
 	}
-	
+
 	option = {
 		name = reform_me_events.123.a
-		
+
 	}
 }
 
@@ -7215,10 +7215,10 @@ country_event = {
 	desc = reform_me_events.124.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
-		has_government_attribute = enables_swiss_guard 
+		has_government_attribute = enables_swiss_guard
 		OR = {
 			AND = {
 				OR = {
@@ -7232,7 +7232,7 @@ country_event = {
 				NOT = { has_country_modifier = GE_Swiss_Guard }
 			}
 			AND = {
-				NOT = { 
+				NOT = {
 					OR = {
 						any_ally = {
 							primary_culture = swiss
@@ -7240,17 +7240,17 @@ country_event = {
 						any_subject_country = {
 							primary_culture = swiss
 						}
-					} 
+					}
 				}
 				has_country_modifier = GE_Swiss_Guard
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -7271,7 +7271,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				NOT = { 
+				NOT = {
 					OR = {
 						any_ally = {
 							primary_culture = swiss
@@ -7279,17 +7279,17 @@ country_event = {
 						any_subject_country = {
 							primary_culture = swiss
 						}
-					} 
+					}
 				}
 				has_country_modifier = GE_Swiss_Guard
             }
 			remove_country_modifier = GE_Swiss_Guard
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.124.a
-		
+
 	}
 }
 
@@ -7299,24 +7299,24 @@ country_event = {
 	desc = reform_me_events.125.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		NOT = { has_government_attribute = enables_swiss_guard }
 		has_country_modifier = GE_Swiss_Guard
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		remove_country_modifier = GE_Swiss_Guard
 	}
-	
+
 	option = {
 		name = reform_me_events.125.a
-		
+
 	}
 }
 
@@ -7328,7 +7328,7 @@ country_event = {
 	desc = reform_me_events.1260.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_society_of_agriculture
@@ -7344,11 +7344,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_owned_province = {
 			limit = {
@@ -7367,10 +7367,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.126.a
-		
+
 	}
 }
 
@@ -7380,7 +7380,7 @@ country_event = {
 	desc = reform_me_events.1270.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		NOT = { has_government_attribute = enables_society_of_agriculture }
@@ -7388,11 +7388,11 @@ country_event = {
 			has_province_modifier = Society_Of_Agriculture
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_owned_province = {
 			limit = {
@@ -7401,10 +7401,10 @@ country_event = {
 			remove_province_modifier = Society_Of_Agriculture
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.1270.a
-		
+
 	}
 }
 
@@ -7414,7 +7414,7 @@ country_event = {
 	title = reform_me_events.134.t
 	desc = reform_me_events.134.d
 	picture = SHOGUNATE_AUTHORITY_INCIDENT_eventPicture
-	
+
 	fire_only_once = yes
 
 	trigger = {
@@ -7422,19 +7422,19 @@ country_event = {
 		NOT = { has_reform = empire_of_japan_reform }
 		government = monarchy
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	option = {
 		name = reform_me_events.134.a
 		add_government_reform = empire_of_japan_reform
 	}
-	
+
 	option = {
 		name = reform_me_events.134.b
-		
+
 	}
 }
 
@@ -7444,7 +7444,7 @@ country_event = {
 	desc = reform_me_events.135.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_hansa_ties
@@ -7516,11 +7516,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -7568,7 +7568,7 @@ country_event = {
 					}
 					amount = 2
 				}
-				NOT = { 				
+				NOT = {
 					calc_true_if = {
 						all_country = {
 							government = republic
@@ -7602,7 +7602,7 @@ country_event = {
 					}
 					amount = 3
 				}
-				NOT = { 				
+				NOT = {
 					calc_true_if = {
 						all_country = {
 							government = republic
@@ -7636,7 +7636,7 @@ country_event = {
 					}
 					amount = 4
 				}
-				NOT = { 				
+				NOT = {
 					calc_true_if = {
 						all_country = {
 							government = republic
@@ -7681,10 +7681,10 @@ country_event = {
 			remove_country_modifier = Hansa_Ties_4
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.135.a
-		
+
 	}
 }
 
@@ -7694,7 +7694,7 @@ country_event = {
 	desc = reform_me_events.136.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		NOT = { has_government_attribute = enables_hansa_ties }
@@ -7706,11 +7706,11 @@ country_event = {
 			has_country_modifier = Hansa_Ties_5
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		remove_country_modifier = Hansa_Ties_1
 		remove_country_modifier = Hansa_Ties_2
@@ -7718,10 +7718,10 @@ country_event = {
 		remove_country_modifier = Hansa_Ties_4
 		remove_country_modifier = Hansa_Ties_5
 	}
-	
+
 	option = {
 		name = reform_me_events.136.a
-		
+
 	}
 }
 
@@ -7732,7 +7732,7 @@ country_event = {
 	desc = reform_me_events.143.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_voc_mentality
@@ -7749,11 +7749,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_owned_province = {
 			limit = {
@@ -7774,10 +7774,10 @@ country_event = {
 			remove_province_modifier = Soverein_Trade_Company
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.143.a
-		
+
 	}
 }
 
@@ -7787,7 +7787,7 @@ country_event = {
 	desc = reform_me_events.144.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		NOT = { has_government_attribute = enables_voc_mentality }
@@ -7795,11 +7795,11 @@ country_event = {
 			has_province_modifier = Soverein_Trade_Company
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_owned_province = {
 			limit = {
@@ -7808,10 +7808,10 @@ country_event = {
 			remove_province_modifier = Soverein_Trade_Company
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.144.a
-		
+
 	}
 }
 
@@ -7821,28 +7821,28 @@ country_event = {
 	desc = reform_me_events.1430.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_noble_knights
 		has_idea_group = aristocracy_ideas
 		NOT = { has_country_modifier = GE_noble_knights }
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		add_country_modifier = {
 			name = "GE_noble_knights"
 			duration = -1
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.1430.a
-		
+
 	}
 }
 
@@ -7852,7 +7852,7 @@ country_event = {
 	desc = reform_me_events.1440.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		OR = {
@@ -7861,18 +7861,18 @@ country_event = {
 		}
 		has_country_modifier = GE_noble_knights
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		remove_country_modifier = GE_noble_knights
 	}
-	
+
 	option = {
 		name = reform_me_events.1440.a
-		
+
 	}
 }
 
@@ -7882,27 +7882,27 @@ country_event = {
 	desc = reform_me_events.145.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_long_reign
 		months_of_ruling = 120
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		add_ruler_modifier = {
 			name = "Long_Reign"
 			duration = -1
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.145.a
-		
+
 	}
 }
 
@@ -7911,21 +7911,21 @@ country_event = {
 	title = reform_me_events.146.t
 	desc = reform_me_events.146.d
 	picture = WESTERNISATION_eventPicture
-	
+
 	fire_only_once = yes
 
 	trigger = {
 		tag = POR
 		absolutism = 50
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	option = {
 		name = reform_me_events.146.a
-		
+
 		add_government_reform = portuguese_empire_reform
 	}
 }
@@ -7964,14 +7964,14 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	option = {
 		name = reform_me_events.147.a
-		
+
 		if = {
 			limit = {
 				has_government_attribute = enables_silk_traders
@@ -8012,7 +8012,7 @@ country_event = {
 	title = reform_me_events.148.t
 	desc = reform_me_events.148.d
 	picture = WESTERNISATION_eventPicture
-	
+
 
 	trigger = {
 		has_government_attribute = enables_eastern_courts
@@ -8023,15 +8023,15 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
-		
+
 	}
-	
+
 	option = {
 		name = reform_me_events.148.a
 		add_ruler_modifier = {
@@ -8039,7 +8039,7 @@ country_event = {
 			duration = -1
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.148.b
 		add_ruler_modifier = {
@@ -8054,7 +8054,7 @@ country_event = {
 	title = reform_me_events.149.t
 	desc = reform_me_events.149.d
 	picture = WESTERNISATION_eventPicture
-	
+
 
 	trigger = {
 		has_government_attribute = enables_qing_court
@@ -8066,15 +8066,15 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
-		
+
 	}
-	
+
 	option = {
 		name = reform_me_events.149.a
 		add_ruler_modifier = {
@@ -8082,7 +8082,7 @@ country_event = {
 			duration = -1
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.149.b
 		add_ruler_modifier = {
@@ -8091,7 +8091,7 @@ country_event = {
 		}
 		add_years_of_income = -1
 	}
-	
+
 	option = {
 		name = reform_me_events.149.c
 		add_ruler_modifier = {
@@ -8120,9 +8120,9 @@ country_event = {
 						NOT = { has_country_modifier = GE_Good_Custodian }
 					}
 					AND = {
-						NOT = { 
+						NOT = {
 							owns = 384
-							owns = 385 
+							owns = 385
 						}
 						NOT = { has_country_modifier = GE_Bad_Custodian }
 					}
@@ -8137,14 +8137,14 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	option = {
 		name = reform_me_events.150.a
-		
+
 		if = {
 			limit = {
 				owns = 384
@@ -8159,9 +8159,9 @@ country_event = {
 		}
 		if = {
 			limit = {
-				NOT = { 
+				NOT = {
 					owns = 384
-					owns = 385 
+					owns = 385
 				}
 				NOT = { has_country_modifier = GE_Bad_Custodian }
 			}
@@ -8218,14 +8218,14 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	option = {
 		name = reform_me_events.152.a
-		
+
 		every_owned_province = {
 			limit = {
 				has_owner_religion = yes
@@ -8291,14 +8291,14 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	option = {
 		name = reform_me_events.15200.a
-		
+
 		every_owned_province = {
 			limit = {
 				OR = {
@@ -8336,7 +8336,7 @@ country_event = {
 	desc = reform_me_events.153.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		OR = {
@@ -8344,11 +8344,11 @@ country_event = {
 				has_government_attribute = enables_kaza_system
 				OR = {
 					AND = {
-						NOT = { 
+						NOT = {
 							num_of_religion = {
 								religion = sunni
 								value = 0.1
-							} 
+							}
 						}
 						NOT = { has_country_modifier = GE_Kaza_System_0 }
 					}
@@ -8357,11 +8357,11 @@ country_event = {
 							religion = sunni
 							value = 0.1
 						}
-						NOT = { 
+						NOT = {
 							num_of_religion = {
 								religion = sunni
 								value = 0.2
-							} 
+							}
 						}
 						NOT = { has_country_modifier = GE_Kaza_System_1 }
 					}
@@ -8370,11 +8370,11 @@ country_event = {
 							religion = sunni
 							value = 0.2
 						}
-						NOT = { 
+						NOT = {
 							num_of_religion = {
 								religion = sunni
 								value = 0.3
-							} 
+							}
 						}
 						NOT = { has_country_modifier = GE_Kaza_System_2 }
 					}
@@ -8383,11 +8383,11 @@ country_event = {
 							religion = sunni
 							value = 0.3
 						}
-						NOT = { 
+						NOT = {
 							num_of_religion = {
 								religion = sunni
 								value = 0.4
-							} 
+							}
 						}
 						NOT = { has_country_modifier = GE_Kaza_System_3 }
 					}
@@ -8396,11 +8396,11 @@ country_event = {
 							religion = sunni
 							value = 0.4
 						}
-						NOT = { 
+						NOT = {
 							num_of_religion = {
 								religion = sunni
 								value = 0.5
-							} 
+							}
 						}
 						NOT = { has_country_modifier = GE_Kaza_System_4 }
 					}
@@ -8409,11 +8409,11 @@ country_event = {
 							religion = sunni
 							value = 0.5
 						}
-						NOT = { 
+						NOT = {
 							num_of_religion = {
 								religion = sunni
 								value = 0.6
-							} 
+							}
 						}
 						NOT = { has_country_modifier = GE_Kaza_System_5 }
 					}
@@ -8422,11 +8422,11 @@ country_event = {
 							religion = sunni
 							value = 0.6
 						}
-						NOT = { 
+						NOT = {
 							num_of_religion = {
 								religion = sunni
 								value = 0.7
-							} 
+							}
 						}
 						NOT = { has_country_modifier = GE_Kaza_System_6 }
 					}
@@ -8435,11 +8435,11 @@ country_event = {
 							religion = sunni
 							value = 0.7
 						}
-						NOT = { 
+						NOT = {
 							num_of_religion = {
 								religion = sunni
 								value = 0.8
-							} 
+							}
 						}
 						NOT = { has_country_modifier = GE_Kaza_System_7 }
 					}
@@ -8448,11 +8448,11 @@ country_event = {
 							religion = sunni
 							value = 0.8
 						}
-						NOT = { 
+						NOT = {
 							num_of_religion = {
 								religion = sunni
 								value = 0.9
-							} 
+							}
 						}
 						NOT = { has_country_modifier = GE_Kaza_System_8 }
 					}
@@ -8482,11 +8482,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -8494,7 +8494,7 @@ country_event = {
 					num_of_religion = {
 						religion = sunni
 						value = 0.10
-					} 
+					}
 				}
 				NOT = { has_country_modifier = GE_Kaza_System_0 }
 			}
@@ -8519,11 +8519,11 @@ country_event = {
 						religion = sunni
 						value = 0.10
 					}
-					NOT = { 
+					NOT = {
 						num_of_religion = {
 							religion = sunni
 							value = 0.20
-						} 
+						}
 					}
 					NOT = { has_country_modifier = GE_Kaza_System_1 }
 				}
@@ -8550,11 +8550,11 @@ country_event = {
 						religion = sunni
 						value = 0.20
 					}
-					NOT = { 
+					NOT = {
 						num_of_religion = {
 							religion = sunni
 							value = 0.30
-						} 
+						}
 					}
 					NOT = { has_country_modifier = GE_Kaza_System_2 }
 				}
@@ -8580,11 +8580,11 @@ country_event = {
 						religion = sunni
 						value = 0.30
 					}
-					NOT = { 
+					NOT = {
 						num_of_religion = {
 							religion = sunni
 							value = 0.40
-						} 
+						}
 					}
 					NOT = { has_country_modifier = GE_Kaza_System_3 }
 				}
@@ -8610,11 +8610,11 @@ country_event = {
 						religion = sunni
 						value = 0.40
 					}
-					NOT = { 
+					NOT = {
 						num_of_religion = {
 							religion = sunni
 							value = 0.50
-						} 
+						}
 					}
 					NOT = { has_country_modifier = GE_Kaza_System_4 }
 				}
@@ -8640,11 +8640,11 @@ country_event = {
 						religion = sunni
 						value = 0.50
 					}
-					NOT = { 
+					NOT = {
 						num_of_religion = {
 							religion = sunni
 							value = 0.60
-						} 
+						}
 					}
 					NOT = { has_country_modifier = GE_Kaza_System_5 }
 				}
@@ -8670,11 +8670,11 @@ country_event = {
 						religion = sunni
 						value = 0.60
 					}
-					NOT = { 
+					NOT = {
 						num_of_religion = {
 							religion = sunni
 							value = 0.70
-						} 
+						}
 					}
 					NOT = { has_country_modifier = GE_Kaza_System_6 }
 				}
@@ -8700,11 +8700,11 @@ country_event = {
 						religion = sunni
 						value = 0.70
 					}
-					NOT = { 
+					NOT = {
 						num_of_religion = {
 							religion = sunni
 							value = 0.80
-						} 
+						}
 					}
 					NOT = { has_country_modifier = GE_Kaza_System_7 }
 				}
@@ -8730,11 +8730,11 @@ country_event = {
 						religion = sunni
 						value = 0.80
 					}
-					NOT = { 
+					NOT = {
 						num_of_religion = {
 							religion = sunni
 							value = 0.90
-						} 
+						}
 					}
 					NOT = { has_country_modifier = GE_Kaza_System_8 }
 				}
@@ -8760,11 +8760,11 @@ country_event = {
 						religion = sunni
 						value = 1.00
 					}
-					NOT = { 
+					NOT = {
 						num_of_religion = {
 							religion = sunni
 							value = 1.10
-						} 
+						}
 					}
 					NOT = { has_country_modifier = GE_Kaza_System_9 }
 				}
@@ -8799,10 +8799,10 @@ country_event = {
 			remove_country_modifier = GE_Kaza_System_9
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.153.a
-		
+
 	}
 }
 
@@ -8838,14 +8838,14 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	option = {
 		name = reform_me_events.154.a
-		
+
 		every_owned_province = {
 			limit = {
 				religion = orthodox
@@ -8903,14 +8903,14 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	option = {
 		name = reform_me_events.155.a
-		
+
 		if = {
 			limit = {
 				NOT = { janissary_percentage = 0.2 }
@@ -8953,11 +8953,11 @@ country_event = {
 			NOT = { has_country_flag = GE_Koprulu_Dynasty_Flag }
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		hidden_effect = {
 			clr_country_flag = GE_Koprulu_Dynasty_Flag
@@ -8968,10 +8968,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.156.a
-		
+
 		custom_tooltip = GE_Koprulu_Defence_Event
 		hidden_effect = {
 			every_owned_province = {
@@ -8989,10 +8989,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.156.b
-		
+
 		custom_tooltip = GE_Koprulu_Economy_Event
 		hidden_effect = {
 			every_owned_province = {
@@ -9009,10 +9009,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.156.c
-		
+
 		add_country_modifier = {
 			name = GE_Koprulu_Court #-0.05 Corruption
 			duration = 9125
@@ -9041,7 +9041,7 @@ country_event = {
 							NOT = { has_province_modifier = GE_Public_Works }
 						}
 						AND = {
-							NOT = { 
+							NOT = {
 								OR = {
 									has_building = courthouse
 									has_building = town_hall
@@ -9060,14 +9060,14 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	option = {
 		name = reform_me_events.157.a
-		
+
 		every_owned_province = {
 			limit = {
 				OR = {
@@ -9084,7 +9084,7 @@ country_event = {
 		}
 		every_owned_province = {
 			limit = {
-				NOT = { 
+				NOT = {
 					OR = {
 						has_building = courthouse
 						has_building = town_hall
@@ -9124,9 +9124,9 @@ country_event = {
 							NOT = { has_province_modifier = GE_Caravanserai }
 						}
 						AND = {
-							NOT = { 
+							NOT = {
 								province_has_center_of_trade_of_level = 1
-								fort_level = 2 
+								fort_level = 2
 							}
 							has_province_modifier = GE_Caravanserai
 						}
@@ -9141,14 +9141,14 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	option = {
 		name = reform_me_events.158.a
-		
+
 		every_owned_province = {
 			limit = {
 				province_has_center_of_trade_of_level = 1
@@ -9163,7 +9163,7 @@ country_event = {
 		}
 		every_owned_province = {
 			limit = {
-				NOT = { 
+				NOT = {
 					province_has_center_of_trade_of_level = 1
 					fort_level = 2
 				}
@@ -9188,7 +9188,7 @@ country_event = {
 	desc = reform_me_events.159.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_kiwi_support
@@ -9244,11 +9244,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -9440,10 +9440,10 @@ country_event = {
 			remove_country_modifier = Kiwi_Rights_9
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.159.a
-		
+
 	}
 }
 
@@ -9456,7 +9456,7 @@ country_event = {
 	desc = reform_me_events.162.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_marcher_lords
@@ -9467,11 +9467,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_subject_country = {
 			limit = {
@@ -9484,10 +9484,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.162.a
-		
+
 	}
 }
 
@@ -9497,25 +9497,25 @@ country_event = {
 	desc = reform_me_events.163.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
-		has_country_modifier = GE_Marcher_Lords 
+		has_country_modifier = GE_Marcher_Lords
 		is_subject = no
 		is_at_war = no
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
-		remove_country_modifier = GE_Marcher_Lords 
+		remove_country_modifier = GE_Marcher_Lords
 	}
-	
+
 	option = {
 		name = reform_me_events.163.a
-		
+
 	}
 }
 
@@ -9527,97 +9527,97 @@ country_event = {
 	desc = reform_me_events.164.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_unite_the_malay
 		OR = {
 			AND = {
 				calc_true_if = {
-						accepted_culture = polynesian 
-						accepted_culture = cham 
-						accepted_culture = malayan 
-						accepted_culture = sumatran 
-						accepted_culture = javanese 
-						accepted_culture = filipino 
-						accepted_culture = bornean 
-						accepted_culture = madagascan 
-						accepted_culture = sulawesi 
+						accepted_culture = polynesian
+						accepted_culture = cham
+						accepted_culture = malayan
+						accepted_culture = sumatran
+						accepted_culture = javanese
+						accepted_culture = filipino
+						accepted_culture = bornean
+						accepted_culture = madagascan
+						accepted_culture = sulawesi
 					amount = 1
 				}
 				NOT = { has_country_modifier = Malay_Sailors_1 }
 			}
 			AND = {
 				calc_true_if = {
-						accepted_culture = polynesian 
-						accepted_culture = cham 
-						accepted_culture = malayan 
-						accepted_culture = sumatran 
-						accepted_culture = javanese 
-						accepted_culture = filipino 
-						accepted_culture = bornean 
-						accepted_culture = madagascan 
-						accepted_culture = sulawesi 
+						accepted_culture = polynesian
+						accepted_culture = cham
+						accepted_culture = malayan
+						accepted_culture = sumatran
+						accepted_culture = javanese
+						accepted_culture = filipino
+						accepted_culture = bornean
+						accepted_culture = madagascan
+						accepted_culture = sulawesi
 					amount = 2
 				}
 				NOT = { has_country_modifier = Malay_Sailors_2 }
 			}
 			AND = {
 				calc_true_if = {
-						accepted_culture = polynesian 
-						accepted_culture = cham 
-						accepted_culture = malayan 
-						accepted_culture = sumatran 
-						accepted_culture = javanese 
-						accepted_culture = filipino 
-						accepted_culture = bornean 
-						accepted_culture = madagascan 
-						accepted_culture = sulawesi 
+						accepted_culture = polynesian
+						accepted_culture = cham
+						accepted_culture = malayan
+						accepted_culture = sumatran
+						accepted_culture = javanese
+						accepted_culture = filipino
+						accepted_culture = bornean
+						accepted_culture = madagascan
+						accepted_culture = sulawesi
 					amount = 3
 				}
 				NOT = { has_country_modifier = Malay_Sailors_3 }
 			}
 			AND = {
 				calc_true_if = {
-						accepted_culture = polynesian 
-						accepted_culture = cham 
-						accepted_culture = malayan 
-						accepted_culture = sumatran 
-						accepted_culture = javanese 
-						accepted_culture = filipino 
-						accepted_culture = bornean 
-						accepted_culture = madagascan 
-						accepted_culture = sulawesi 
+						accepted_culture = polynesian
+						accepted_culture = cham
+						accepted_culture = malayan
+						accepted_culture = sumatran
+						accepted_culture = javanese
+						accepted_culture = filipino
+						accepted_culture = bornean
+						accepted_culture = madagascan
+						accepted_culture = sulawesi
 					amount = 4
 				}
 				NOT = { has_country_modifier = Malay_Sailors_4 }
 			}
 			AND = {
 				calc_true_if = {
-						accepted_culture = polynesian 
-						accepted_culture = cham 
-						accepted_culture = malayan 
-						accepted_culture = sumatran 
-						accepted_culture = javanese 
-						accepted_culture = filipino 
-						accepted_culture = bornean 
-						accepted_culture = madagascan 
-						accepted_culture = sulawesi 
+						accepted_culture = polynesian
+						accepted_culture = cham
+						accepted_culture = malayan
+						accepted_culture = sumatran
+						accepted_culture = javanese
+						accepted_culture = filipino
+						accepted_culture = bornean
+						accepted_culture = madagascan
+						accepted_culture = sulawesi
 					amount = 5
 				}
 				NOT = { has_country_modifier = Malay_Sailors_5 }
 			}
 			AND = {
 				calc_true_if = {
-						accepted_culture = polynesian 
-						accepted_culture = cham 
-						accepted_culture = malayan 
-						accepted_culture = sumatran 
-						accepted_culture = javanese 
-						accepted_culture = filipino 
-						accepted_culture = bornean 
-						accepted_culture = madagascan 
-						accepted_culture = sulawesi 
+						accepted_culture = polynesian
+						accepted_culture = cham
+						accepted_culture = malayan
+						accepted_culture = sumatran
+						accepted_culture = javanese
+						accepted_culture = filipino
+						accepted_culture = bornean
+						accepted_culture = madagascan
+						accepted_culture = sulawesi
 					amount = 6
 				}
 				NOT = { has_country_modifier = Malay_Sailors_6 }
@@ -9625,15 +9625,15 @@ country_event = {
 			AND = {
 				OR = {
 					calc_true_if = {
-						accepted_culture = polynesian 
-						accepted_culture = cham 
-						accepted_culture = malayan 
-						accepted_culture = sumatran 
-						accepted_culture = javanese 
-						accepted_culture = filipino 
-						accepted_culture = bornean 
-						accepted_culture = madagascan 
-						accepted_culture = sulawesi 
+						accepted_culture = polynesian
+						accepted_culture = cham
+						accepted_culture = malayan
+						accepted_culture = sumatran
+						accepted_culture = javanese
+						accepted_culture = filipino
+						accepted_culture = bornean
+						accepted_culture = madagascan
+						accepted_culture = sulawesi
 						amount = 7
 					}
 					AND = {
@@ -9645,36 +9645,36 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
 				calc_true_if = {
-						accepted_culture = polynesian 
-						accepted_culture = cham 
-						accepted_culture = malayan 
-						accepted_culture = sumatran 
-						accepted_culture = javanese 
-						accepted_culture = filipino 
-						accepted_culture = bornean 
-						accepted_culture = madagascan 
-						accepted_culture = sulawesi 
+						accepted_culture = polynesian
+						accepted_culture = cham
+						accepted_culture = malayan
+						accepted_culture = sumatran
+						accepted_culture = javanese
+						accepted_culture = filipino
+						accepted_culture = bornean
+						accepted_culture = madagascan
+						accepted_culture = sulawesi
 				}
 				NOT = {
 					calc_true_if = {
-							accepted_culture = polynesian 
-							accepted_culture = cham 
-							accepted_culture = malayan 
-							accepted_culture = sumatran 
-							accepted_culture = javanese 
-							accepted_culture = filipino 
-							accepted_culture = bornean 
-							accepted_culture = madagascan 
-							accepted_culture = sulawesi 
+							accepted_culture = polynesian
+							accepted_culture = cham
+							accepted_culture = malayan
+							accepted_culture = sumatran
+							accepted_culture = javanese
+							accepted_culture = filipino
+							accepted_culture = bornean
+							accepted_culture = madagascan
+							accepted_culture = sulawesi
 						amount = 2
 					}
 				}
@@ -9693,28 +9693,28 @@ country_event = {
 		if = {
 			limit = {
 				calc_true_if = {
-						accepted_culture = polynesian 
-						accepted_culture = cham 
-						accepted_culture = malayan 
-						accepted_culture = sumatran 
-						accepted_culture = javanese 
-						accepted_culture = filipino 
-						accepted_culture = bornean 
-						accepted_culture = madagascan 
-						accepted_culture = sulawesi 
+						accepted_culture = polynesian
+						accepted_culture = cham
+						accepted_culture = malayan
+						accepted_culture = sumatran
+						accepted_culture = javanese
+						accepted_culture = filipino
+						accepted_culture = bornean
+						accepted_culture = madagascan
+						accepted_culture = sulawesi
 					amount = 2
 				}
-				NOT = { 				
+				NOT = {
 					calc_true_if = {
-							accepted_culture = polynesian 
-							accepted_culture = cham 
-							accepted_culture = malayan 
-							accepted_culture = sumatran 
-							accepted_culture = javanese 
-							accepted_culture = filipino 
-							accepted_culture = bornean 
-							accepted_culture = madagascan 
-							accepted_culture = sulawesi 
+							accepted_culture = polynesian
+							accepted_culture = cham
+							accepted_culture = malayan
+							accepted_culture = sumatran
+							accepted_culture = javanese
+							accepted_culture = filipino
+							accepted_culture = bornean
+							accepted_culture = madagascan
+							accepted_culture = sulawesi
 						amount = 3
 					}
 				}
@@ -9733,28 +9733,28 @@ country_event = {
 		if = {
 			limit = {
 				calc_true_if = {
-						accepted_culture = polynesian 
-						accepted_culture = cham 
-						accepted_culture = malayan 
-						accepted_culture = sumatran 
-						accepted_culture = javanese 
-						accepted_culture = filipino 
-						accepted_culture = bornean 
-						accepted_culture = madagascan 
-						accepted_culture = sulawesi 
+						accepted_culture = polynesian
+						accepted_culture = cham
+						accepted_culture = malayan
+						accepted_culture = sumatran
+						accepted_culture = javanese
+						accepted_culture = filipino
+						accepted_culture = bornean
+						accepted_culture = madagascan
+						accepted_culture = sulawesi
 					amount = 3
 				}
-				NOT = { 				
+				NOT = {
 					calc_true_if = {
-							accepted_culture = polynesian 
-							accepted_culture = cham 
-							accepted_culture = malayan 
-							accepted_culture = sumatran 
-							accepted_culture = javanese 
-							accepted_culture = filipino 
-							accepted_culture = bornean 
-							accepted_culture = madagascan 
-							accepted_culture = sulawesi 
+							accepted_culture = polynesian
+							accepted_culture = cham
+							accepted_culture = malayan
+							accepted_culture = sumatran
+							accepted_culture = javanese
+							accepted_culture = filipino
+							accepted_culture = bornean
+							accepted_culture = madagascan
+							accepted_culture = sulawesi
 						amount = 4
 					}
 				}
@@ -9773,28 +9773,28 @@ country_event = {
 		if = {
 			limit = {
 				calc_true_if = {
-						accepted_culture = polynesian 
-						accepted_culture = cham 
-						accepted_culture = malayan 
-						accepted_culture = sumatran 
-						accepted_culture = javanese 
-						accepted_culture = filipino 
-						accepted_culture = bornean 
-						accepted_culture = madagascan 
-						accepted_culture = sulawesi 
+						accepted_culture = polynesian
+						accepted_culture = cham
+						accepted_culture = malayan
+						accepted_culture = sumatran
+						accepted_culture = javanese
+						accepted_culture = filipino
+						accepted_culture = bornean
+						accepted_culture = madagascan
+						accepted_culture = sulawesi
 					amount = 4
 				}
-				NOT = { 				
+				NOT = {
 					calc_true_if = {
-							accepted_culture = polynesian 
-							accepted_culture = cham 
-							accepted_culture = malayan 
-							accepted_culture = sumatran 
-							accepted_culture = javanese 
-							accepted_culture = filipino 
-							accepted_culture = bornean 
-							accepted_culture = madagascan 
-							accepted_culture = sulawesi 
+							accepted_culture = polynesian
+							accepted_culture = cham
+							accepted_culture = malayan
+							accepted_culture = sumatran
+							accepted_culture = javanese
+							accepted_culture = filipino
+							accepted_culture = bornean
+							accepted_culture = madagascan
+							accepted_culture = sulawesi
 						amount = 5
 					}
 				}
@@ -9813,28 +9813,28 @@ country_event = {
 		if = {
 			limit = {
 				calc_true_if = {
-						accepted_culture = polynesian 
-						accepted_culture = cham 
-						accepted_culture = malayan 
-						accepted_culture = sumatran 
-						accepted_culture = javanese 
-						accepted_culture = filipino 
-						accepted_culture = bornean 
-						accepted_culture = madagascan 
-						accepted_culture = sulawesi 
+						accepted_culture = polynesian
+						accepted_culture = cham
+						accepted_culture = malayan
+						accepted_culture = sumatran
+						accepted_culture = javanese
+						accepted_culture = filipino
+						accepted_culture = bornean
+						accepted_culture = madagascan
+						accepted_culture = sulawesi
 					amount = 5
 				}
-				NOT = { 				
+				NOT = {
 					calc_true_if = {
-							accepted_culture = polynesian 
-							accepted_culture = cham 
-							accepted_culture = malayan 
-							accepted_culture = sumatran 
-							accepted_culture = javanese 
-							accepted_culture = filipino 
-							accepted_culture = bornean 
-							accepted_culture = madagascan 
-							accepted_culture = sulawesi 
+							accepted_culture = polynesian
+							accepted_culture = cham
+							accepted_culture = malayan
+							accepted_culture = sumatran
+							accepted_culture = javanese
+							accepted_culture = filipino
+							accepted_culture = bornean
+							accepted_culture = madagascan
+							accepted_culture = sulawesi
 						amount = 6
 					}
 				}
@@ -9853,28 +9853,28 @@ country_event = {
 		if = {
 			limit = {
 				calc_true_if = {
-						accepted_culture = polynesian 
-						accepted_culture = cham 
-						accepted_culture = malayan 
-						accepted_culture = sumatran 
-						accepted_culture = javanese 
-						accepted_culture = filipino 
-						accepted_culture = bornean 
-						accepted_culture = madagascan 
-						accepted_culture = sulawesi 
+						accepted_culture = polynesian
+						accepted_culture = cham
+						accepted_culture = malayan
+						accepted_culture = sumatran
+						accepted_culture = javanese
+						accepted_culture = filipino
+						accepted_culture = bornean
+						accepted_culture = madagascan
+						accepted_culture = sulawesi
 					amount = 6
 				}
-				NOT = { 				
+				NOT = {
 					calc_true_if = {
-							accepted_culture = polynesian 
-							accepted_culture = cham 
-							accepted_culture = malayan 
-							accepted_culture = sumatran 
-							accepted_culture = javanese 
-							accepted_culture = filipino 
-							accepted_culture = bornean 
-							accepted_culture = madagascan 
-							accepted_culture = sulawesi 
+							accepted_culture = polynesian
+							accepted_culture = cham
+							accepted_culture = malayan
+							accepted_culture = sumatran
+							accepted_culture = javanese
+							accepted_culture = filipino
+							accepted_culture = bornean
+							accepted_culture = madagascan
+							accepted_culture = sulawesi
 						amount = 7
 					}
 				}
@@ -9894,15 +9894,15 @@ country_event = {
 			limit = {
 				OR = {
 					calc_true_if = {
-							accepted_culture = polynesian 
-							accepted_culture = cham 
-							accepted_culture = malayan 
-							accepted_culture = sumatran 
-							accepted_culture = javanese 
-							accepted_culture = filipino 
-							accepted_culture = bornean 
-							accepted_culture = madagascan 
-							accepted_culture = sulawesi 
+							accepted_culture = polynesian
+							accepted_culture = cham
+							accepted_culture = malayan
+							accepted_culture = sumatran
+							accepted_culture = javanese
+							accepted_culture = filipino
+							accepted_culture = bornean
+							accepted_culture = madagascan
+							accepted_culture = sulawesi
 						amount = 7
 					}
 					AND = {
@@ -9923,10 +9923,10 @@ country_event = {
 			remove_country_modifier = Malay_Sailors_6
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.164.a
-		
+
 	}
 }
 
@@ -9946,18 +9946,18 @@ country_event = {
 			NOT = { has_country_flag = GE_Roman_Empire_Flag }
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		hidden_effect = {
 			clr_country_flag = GE_Roman_Empire_Flag
 			set_country_flag = GE_Roman_Empire_Flag
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.165.a
 		add_country_modifier = {
@@ -9969,7 +9969,7 @@ country_event = {
 			influence = 25
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.165.b
 		add_country_modifier = {
@@ -9981,7 +9981,7 @@ country_event = {
 			influence = 25
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.165.c
 		add_country_modifier = {
@@ -10002,10 +10002,10 @@ country_event = {
 	desc = reform_me_events.166.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
 
-	trigger = { 
-		has_government_attribute = enables_fortified_settlements 
+
+	trigger = {
+		has_government_attribute = enables_fortified_settlements
 		any_owned_province = {
 			OR = {
 				AND = {
@@ -10025,11 +10025,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_owned_province = {
 			limit = {
@@ -10055,10 +10055,10 @@ country_event = {
 			remove_province_modifier = GE_Fortified_Settlement
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.166.a
-		
+
 	}
 }
 
@@ -10068,7 +10068,7 @@ country_event = {
 	desc = reform_me_events.167.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		NOT = { has_government_attribute = enables_fortified_settlements }
@@ -10076,11 +10076,11 @@ country_event = {
 			has_province_modifier = GE_Fortified_Settlement
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_owned_province = {
 			limit = {
@@ -10089,10 +10089,10 @@ country_event = {
 			remove_province_modifier = GE_Fortified_Settlement
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.167.a
-		
+
 	}
 }
 
@@ -10102,7 +10102,7 @@ country_event = {
 	desc = reform_me_events.168.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_jurisprudence
@@ -10158,11 +10158,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -10354,10 +10354,10 @@ country_event = {
 			remove_country_modifier = Jurisprudence_9
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.168.a
-		
+
 	}
 }
 
@@ -10367,7 +10367,7 @@ country_event = {
 	desc = reform_me_events.1680.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		NOT = { has_government_attribute = enables_jurisprudence }
@@ -10406,15 +10406,15 @@ country_event = {
 	desc = reform_me_events.169.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
-		has_government_attribute = enables_varangian_guard 
+		has_government_attribute = enables_varangian_guard
 		OR = {
 			AND = {
 				OR = {
 					any_ally = {
-						culture_group = scandinavian 
+						culture_group = scandinavian
 					}
 					any_subject_country = {
 						culture_group = scandinavian
@@ -10423,7 +10423,7 @@ country_event = {
 				NOT = { has_country_modifier = GE_Varangian_Guard }
 			}
 			AND = {
-				NOT = { 
+				NOT = {
 					OR = {
 						any_ally = {
 							culture_group = scandinavian
@@ -10431,17 +10431,17 @@ country_event = {
 						any_subject_country = {
 							culture_group = scandinavian
 						}
-					} 
+					}
 				}
 				has_country_modifier = GE_Varangian_Guard
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -10462,7 +10462,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				NOT = { 
+				NOT = {
 					OR = {
 						any_ally = {
 							culture_group = scandinavian
@@ -10470,17 +10470,17 @@ country_event = {
 						any_subject_country = {
 							culture_group = scandinavian
 						}
-					} 
+					}
 				}
 				has_country_modifier = GE_Varangian_Guard
             }
 			remove_country_modifier = GE_Varangian_Guard
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.169.a
-		
+
 	}
 }
 
@@ -10490,24 +10490,24 @@ country_event = {
 	desc = reform_me_events.170.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		NOT = { has_government_attribute = enables_varangian_guard }
 		has_country_modifier = GE_Varangian_Guard
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		remove_country_modifier = GE_Varangian_Guard
 	}
-	
+
 	option = {
 		name = reform_me_events.170.a
-		
+
 	}
 }
 
@@ -10534,11 +10534,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_owned_province = {
 			limit = {
@@ -10559,10 +10559,10 @@ country_event = {
 			remove_province_modifier = GE_Codified_Law
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.171.a
-		
+
 	}
 }
 
@@ -10572,7 +10572,7 @@ country_event = {
 	desc = reform_me_events.172.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		NOT = { has_government_attribute = enables_codified_law }
@@ -10580,11 +10580,11 @@ country_event = {
 			has_province_modifier = GE_Codified_Law
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_owned_province = {
 			limit = {
@@ -10593,10 +10593,10 @@ country_event = {
 			remove_province_modifier = GE_Codified_Law
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.172.a
-		
+
 	}
 }
 country_event = {
@@ -10605,10 +10605,10 @@ country_event = {
 	desc = reform_me_events.168.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
-		has_government_attribute = enables_peace_development_reduction 
+		has_government_attribute = enables_peace_development_reduction
 		OR = {
 			AND = {
 				OR = {
@@ -10637,11 +10637,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		remove_country_modifier = Hermit_five
 		remove_country_modifier = Hermit_ten
@@ -10682,10 +10682,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.168.a
-		
+
 	}
 }
 country_event = {
@@ -10694,7 +10694,7 @@ country_event = {
 	desc = reform_me_events.167.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		NOT = { has_government_attribute = enables_peace_development_reduction }
@@ -10704,20 +10704,20 @@ country_event = {
 			has_country_modifier = Hermit_fifteen
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		remove_country_modifier = Hermit_five
 		remove_country_modifier = Hermit_ten
 		remove_country_modifier = Hermit_fifteen
 	}
-	
+
 	option = {
 		name = reform_me_events.167.a
-		
+
 	}
 }
 country_event = {
@@ -10726,7 +10726,7 @@ country_event = {
 	desc = reform_me_events.167.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = reinforce_the_hwangog_reform
@@ -10735,11 +10735,11 @@ country_event = {
 			NOT = { has_province_modifier = GE_hwangog }
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_owned_province = {
 			limit = {
@@ -10752,10 +10752,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.167.a
-		
+
 	}
 }
 country_event = {
@@ -10765,20 +10765,20 @@ country_event = {
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
 	fire_only_once = yes
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		hidden_effect = {
 			set_global_flag = governments_expanded_mod_active
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.137.c
-		
+
 	}
 }
 
@@ -10788,7 +10788,7 @@ country_event = {
 	desc = reform_me_events.177.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		OR = {
@@ -10804,11 +10804,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -10834,12 +10834,12 @@ country_event = {
 				hidden = yes
 			}
 		}
-		
+
 	}
-	
+
 	option = {
 		name = reform_me_events.177.a
-		
+
 	}
 }
 
@@ -10849,7 +10849,7 @@ country_event = {
 	desc = reform_me_events.178.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		OR = {
@@ -10868,11 +10868,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -10901,12 +10901,12 @@ country_event = {
 				hidden = yes
 			}
 		}
-		
+
 	}
-	
+
 	option = {
 		name = reform_me_events.178.a
-		
+
 	}
 }
 
@@ -10918,7 +10918,7 @@ country_event = {
 	desc = reform_me_events.179.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		OR = {
@@ -10938,11 +10938,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -10961,12 +10961,12 @@ country_event = {
 				}
 			}
 			remove_country_modifier = Masked_Monarch
-		}		
+		}
 	}
-	
+
 	option = {
 		name = reform_me_events.179.a
-		
+
 	}
 }
 
@@ -10978,7 +10978,7 @@ country_event = {
 	desc = reform_me_events.180.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		OR = {
@@ -11004,11 +11004,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -11033,12 +11033,12 @@ country_event = {
 				}
 			}
 			remove_country_modifier = Noble_Service
-		}		
+		}
 	}
-	
+
 	option = {
 		name = reform_me_events.180.a
-		
+
 	}
 }
 
@@ -11048,7 +11048,7 @@ country_event = {
 	desc = reform_me_events.181.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		OR = {
@@ -11079,11 +11079,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_owned_province = {
 			limit = {
@@ -11108,10 +11108,10 @@ country_event = {
 			remove_province_modifier = GE_Religious_Adherence
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.181.a
-		
+
 	}
 }
 
@@ -11121,7 +11121,7 @@ country_event = {
 	desc = reform_me_events.182.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		OR = {
@@ -11151,11 +11151,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_owned_province = {
 			limit = {
@@ -11177,10 +11177,10 @@ country_event = {
 			remove_province_modifier = GE_Religious_Adherence
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.182.a
-		
+
 	}
 }
 
@@ -11255,11 +11255,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -11275,13 +11275,13 @@ country_event = {
 				}
 			}
 			add_country_modifier = {
-				name = GE_Elephant_Cavalry_1 
+				name = GE_Elephant_Cavalry_1
 				duration = -1
 			}
-			remove_country_modifier = GE_Elephant_Cavalry_2 
-			remove_country_modifier = GE_Elephant_Cavalry_3 
-			remove_country_modifier = GE_Elephant_Cavalry_4 
-			remove_country_modifier = GE_Elephant_Cavalry_5 
+			remove_country_modifier = GE_Elephant_Cavalry_2
+			remove_country_modifier = GE_Elephant_Cavalry_3
+			remove_country_modifier = GE_Elephant_Cavalry_4
+			remove_country_modifier = GE_Elephant_Cavalry_5
 		}
 		if = {
 			limit = {
@@ -11301,9 +11301,9 @@ country_event = {
 				duration = -1
 			}
 			remove_country_modifier = GE_Elephant_Cavalry_1
-			remove_country_modifier = GE_Elephant_Cavalry_3 
-			remove_country_modifier = GE_Elephant_Cavalry_4 
-			remove_country_modifier = GE_Elephant_Cavalry_5 
+			remove_country_modifier = GE_Elephant_Cavalry_3
+			remove_country_modifier = GE_Elephant_Cavalry_4
+			remove_country_modifier = GE_Elephant_Cavalry_5
 		}
 		if = {
 			limit = {
@@ -11322,10 +11322,10 @@ country_event = {
 				name = GE_Elephant_Cavalry_3
 				duration = -1
 			}
-			remove_country_modifier = GE_Elephant_Cavalry_1 
-			remove_country_modifier = GE_Elephant_Cavalry_2 
-			remove_country_modifier = GE_Elephant_Cavalry_4 
-			remove_country_modifier = GE_Elephant_Cavalry_5 
+			remove_country_modifier = GE_Elephant_Cavalry_1
+			remove_country_modifier = GE_Elephant_Cavalry_2
+			remove_country_modifier = GE_Elephant_Cavalry_4
+			remove_country_modifier = GE_Elephant_Cavalry_5
 		}
 		if = {
 			limit = {
@@ -11345,9 +11345,9 @@ country_event = {
 				duration = -1
 			}
 			remove_country_modifier = GE_Elephant_Cavalry_1
-			remove_country_modifier = GE_Elephant_Cavalry_2 
-			remove_country_modifier = GE_Elephant_Cavalry_3 
-			remove_country_modifier = GE_Elephant_Cavalry_5 
+			remove_country_modifier = GE_Elephant_Cavalry_2
+			remove_country_modifier = GE_Elephant_Cavalry_3
+			remove_country_modifier = GE_Elephant_Cavalry_5
 		}
 		if = {
 			limit = {
@@ -11360,16 +11360,16 @@ country_event = {
 				name = GE_Elephant_Cavalry_5
 				duration = -1
 			}
-			remove_country_modifier = GE_Elephant_Cavalry_1 
-			remove_country_modifier = GE_Elephant_Cavalry_2 
-			remove_country_modifier = GE_Elephant_Cavalry_3 
+			remove_country_modifier = GE_Elephant_Cavalry_1
+			remove_country_modifier = GE_Elephant_Cavalry_2
+			remove_country_modifier = GE_Elephant_Cavalry_3
 			remove_country_modifier = GE_Elephant_Cavalry_4
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.183.a
-		
+
 	}
 }
 
@@ -11412,11 +11412,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -11424,7 +11424,7 @@ country_event = {
 				NOT = { has_country_modifier = siamese_national_pride }
 			}
 			add_country_modifier = {
-				name = siamese_national_pride 
+				name = siamese_national_pride
 				duration = -1
 			}
 		}
@@ -11433,7 +11433,7 @@ country_event = {
 				NOT = { legitimacy = 75 }
 				has_country_modifier = siamese_national_pride
 			}
-			remove_country_modifier = siamese_national_pride 
+			remove_country_modifier = siamese_national_pride
 		}
 		if = {
 			limit = {
@@ -11450,7 +11450,7 @@ country_event = {
 				legitimacy = 50
 				has_country_modifier = siamese_national_shame
 			}
-			remove_country_modifier = siamese_national_shame 
+			remove_country_modifier = siamese_national_shame
 		}
 		if = {
 			limit = {
@@ -11459,10 +11459,10 @@ country_event = {
 			remove_country_modifier = siamese_national_pride
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.184.a
-		
+
 	}
 }
 
@@ -11496,11 +11496,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -11508,7 +11508,7 @@ country_event = {
 				NOT = { has_country_modifier = GE_Religious_Fervor }
 			}
 			add_country_modifier = {
-				name = GE_Religious_Fervor 
+				name = GE_Religious_Fervor
 				duration = -1
 			}
 		}
@@ -11517,7 +11517,7 @@ country_event = {
 				NOT = { religious_unity = 0.90 }
 				has_country_modifier = GE_Religious_Fervor
 			}
-			remove_country_modifier = GE_Religious_Fervor 
+			remove_country_modifier = GE_Religious_Fervor
 		}
 		if = {
 			limit = {
@@ -11526,10 +11526,10 @@ country_event = {
 			remove_country_modifier = GE_Religious_Fervor
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.185.a
-		
+
 	}
 }
 
@@ -11549,11 +11549,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_subject_country = {
 			limit = {
@@ -11566,10 +11566,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.186.a
-		
+
 	}
 }
 
@@ -11579,25 +11579,25 @@ country_event = {
 	desc = reform_me_events.187.d
 	picture = WESTERNISATION_eventPicture
 	 hidden = yes
-	
+
 
 	trigger = {
-		has_country_modifier = GE_Mandala_Periphery 
+		has_country_modifier = GE_Mandala_Periphery
 		is_subject = no
 		is_at_war = no
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
-		remove_country_modifier = GE_Mandala_Periphery 
+		remove_country_modifier = GE_Mandala_Periphery
 	}
-	
+
 	option = {
 		name = reform_me_events.187.a
-		
+
 	}
 }
 
@@ -11617,11 +11617,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_subject_country = {
 			limit = {
@@ -11634,10 +11634,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.188.a
-		
+
 	}
 }
 
@@ -11647,25 +11647,25 @@ country_event = {
 	desc = reform_me_events.189.d
 	picture = WESTERNISATION_eventPicture
 	 hidden = yes
-	
+
 
 	trigger = {
-		has_country_modifier = GE_Solar_Periphery 
+		has_country_modifier = GE_Solar_Periphery
 		is_subject = no
 		is_at_war = no
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
-		remove_country_modifier = GE_Solar_Periphery 
+		remove_country_modifier = GE_Solar_Periphery
 	}
-	
+
 	option = {
 		name = reform_me_events.189.a
-		
+
 	}
 }
 
@@ -11675,7 +11675,7 @@ country_event = {
 	desc = reform_me_events.190.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_byzantine_administration
@@ -11684,21 +11684,21 @@ country_event = {
 			has_country_modifier = GE_byzantine_administration
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		add_country_modifier = {
 			name = GE_byzantine_administration
 			duration = 3650
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.190.a
-		
+
 	}
 }
 
@@ -11708,7 +11708,7 @@ country_event = {
 	desc = reform_me_events.191.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_royal_mining_monopoly
@@ -11720,16 +11720,16 @@ country_event = {
 				trade_goods = coal
 				trade_goods = salt
 			}
-			NOT = { 
+			NOT = {
 				has_province_modifier = GE_Mining_Monopoly
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_owned_province = {
 			limit = {
@@ -11740,7 +11740,7 @@ country_event = {
 					trade_goods = coal
 					trade_goods = salt
 				}
-				NOT = { 
+				NOT = {
 					has_province_modifier = GE_Mining_Monopoly
 				}
 			}
@@ -11750,10 +11750,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.191.a
-		
+
 	}
 }
 
@@ -11763,27 +11763,27 @@ country_event = {
 	desc = reform_me_events.192.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_military_governors
 		any_owned_province = {
 			fort_level = 2
-			NOT = { 
+			NOT = {
 				has_province_modifier = GE_military_governors
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_owned_province = {
 			limit = {
 				fort_level = 2
-				NOT = { 
+				NOT = {
 					has_province_modifier = GE_military_governors
 				}
 			}
@@ -11793,10 +11793,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.192.a
-		
+
 	}
 }
 
@@ -11805,7 +11805,7 @@ country_event = {
 	title = reform_me_events.193.t
 	desc = reform_me_events.193.d
 	picture = WESTERNISATION_eventPicture
-	
+
 
 	trigger = {
 		has_government_attribute = enables_church_policy
@@ -11813,15 +11813,15 @@ country_event = {
 			has_ruler_flag = GE_church_policy_set
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		set_ruler_flag = GE_church_policy_set
 	}
-	
+
 	option = {
 		name = reform_me_events.193.a
 		add_patriarch_authority = 0.05
@@ -11854,7 +11854,7 @@ country_event = {
 	desc = reform_me_events.200.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_imperial_circle
@@ -11926,11 +11926,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -11979,7 +11979,7 @@ country_event = {
 					}
 					amount = 2
 				}
-				NOT = { 				
+				NOT = {
 					calc_true_if = {
 						all_subject_country = {
 							NOT = {
@@ -12014,7 +12014,7 @@ country_event = {
 					}
 					amount = 3
 				}
-				NOT = { 				
+				NOT = {
 					calc_true_if = {
 						all_subject_country = {
 							NOT = {
@@ -12049,7 +12049,7 @@ country_event = {
 					}
 					amount = 4
 				}
-				NOT = { 				
+				NOT = {
 					calc_true_if = {
 						all_subject_country = {
 							NOT = {
@@ -12096,10 +12096,10 @@ country_event = {
 			remove_country_modifier = GE_Imperial_Circle_4
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.200.a
-		
+
 	}
 }
 
@@ -12109,7 +12109,7 @@ country_event = {
 	desc = reform_me_events.201.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		OR = {
@@ -12127,11 +12127,11 @@ country_event = {
 			has_country_modifier = GE_Imperial_Circle_5
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		remove_country_modifier = GE_Imperial_Circle_1
 		remove_country_modifier = GE_Imperial_Circle_2
@@ -12139,10 +12139,10 @@ country_event = {
 		remove_country_modifier = GE_Imperial_Circle_4
 		remove_country_modifier = GE_Imperial_Circle_5
 	}
-	
+
 	option = {
 		name = reform_me_events.201.a
-		
+
 	}
 }
 
@@ -12152,7 +12152,7 @@ country_event = {
 	desc = reform_me_events.202.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_republican_guard
@@ -12183,11 +12183,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -12269,10 +12269,10 @@ country_event = {
 			remove_country_modifier = GE_Republican_Guard_4
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.202.a
-		
+
 	}
 }
 
@@ -12282,7 +12282,7 @@ country_event = {
 	desc = reform_me_events.203.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		OR = {
@@ -12300,11 +12300,11 @@ country_event = {
 			has_country_modifier = GE_Republican_Guard_5
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		remove_country_modifier = GE_Republican_Guard_1
 		remove_country_modifier = GE_Republican_Guard_2
@@ -12312,10 +12312,10 @@ country_event = {
 		remove_country_modifier = GE_Republican_Guard_4
 		remove_country_modifier = GE_Republican_Guard_5
 	}
-	
+
 	option = {
 		name = reform_me_events.203.a
-		
+
 	}
 }
 
@@ -12325,10 +12325,10 @@ country_event = {
 	desc = reform_me_events.204.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
-		has_government_attribute = enables_presidental_authority 
+		has_government_attribute = enables_presidental_authority
 		OR = {
 			OR = {
 				adm = 4
@@ -12344,11 +12344,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -12381,10 +12381,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.204.a
-		
+
 	}
 }
 
@@ -12426,14 +12426,14 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	option = {
 		name = reform_me_events.205.a
-		
+
 		every_owned_province = {
 			limit = {
 				OR = {
@@ -12471,7 +12471,7 @@ country_event = {
 	desc = reform_me_events.206.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_unified_drills
@@ -12543,11 +12543,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -12596,7 +12596,7 @@ country_event = {
 					}
 					amount = 2
 				}
-				NOT = { 				
+				NOT = {
 					calc_true_if = {
 						all_subject_country = {
 							NOT = {
@@ -12631,7 +12631,7 @@ country_event = {
 					}
 					amount = 3
 				}
-				NOT = { 				
+				NOT = {
 					calc_true_if = {
 						all_subject_country = {
 							NOT = {
@@ -12666,7 +12666,7 @@ country_event = {
 					}
 					amount = 4
 				}
-				NOT = { 				
+				NOT = {
 					calc_true_if = {
 						all_subject_country = {
 							NOT = {
@@ -12713,10 +12713,10 @@ country_event = {
 			remove_country_modifier = GE_Shared_Drills_4
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.206.a
-		
+
 	}
 }
 
@@ -12726,7 +12726,7 @@ country_event = {
 	desc = reform_me_events.207.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		OR = {
@@ -12744,11 +12744,11 @@ country_event = {
 			has_country_modifier = GE_Shared_Drills_5
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		remove_country_modifier = GE_Shared_Drills_1
 		remove_country_modifier = GE_Shared_Drills_2
@@ -12756,10 +12756,10 @@ country_event = {
 		remove_country_modifier = GE_Shared_Drills_4
 		remove_country_modifier = GE_Shared_Drills_5
 	}
-	
+
 	option = {
 		name = reform_me_events.207.a
-		
+
 	}
 }
 
@@ -12769,7 +12769,7 @@ country_event = {
 	desc = reform_me_events.210.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_union_of_arras
@@ -12790,7 +12790,7 @@ country_event = {
 				NOT = { has_country_modifier = GE_Union_of_Arras }
 			}
 			AND = {
-				NOT = { 
+				NOT = {
 					employed_advisor = {
 						religion = catholic
 						category = ADM
@@ -12808,11 +12808,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -12838,10 +12838,10 @@ country_event = {
 			remove_country_modifier = GE_Union_of_Arras
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.210.a
-		
+
 	}
 }
 
@@ -12851,24 +12851,24 @@ country_event = {
 	desc = reform_me_events.211.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		NOT = { has_government_attribute = enables_union_of_arras }
 		has_country_modifier = GE_Union_of_Arras
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		remove_country_modifier = GE_Union_of_Arras
 	}
-	
+
 	option = {
 		name = reform_me_events.211.a
-		
+
 	}
 }
 
@@ -12878,7 +12878,7 @@ country_event = {
 	desc = reform_me_events.212.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_cultural_inspiration
@@ -12917,11 +12917,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -13016,10 +13016,10 @@ country_event = {
 			remove_country_modifier = GE_Cultural_Inspiration_4
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.212.a
-		
+
 	}
 }
 
@@ -13029,7 +13029,7 @@ country_event = {
 	desc = reform_me_events.213.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		NOT = { has_government_attribute = enables_cultural_inspiration }
@@ -13041,11 +13041,11 @@ country_event = {
 			has_country_modifier = GE_Cultural_Inspiration_5
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		remove_country_modifier = GE_Cultural_Inspiration_1
 		remove_country_modifier = GE_Cultural_Inspiration_2
@@ -13053,10 +13053,10 @@ country_event = {
 		remove_country_modifier = GE_Cultural_Inspiration_4
 		remove_country_modifier = GE_Cultural_Inspiration_5
 	}
-	
+
 	option = {
 		name = reform_me_events.213.a
-		
+
 	}
 }
 
@@ -13066,7 +13066,7 @@ country_event = {
 	desc = reform_me_events.214.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_coin_over_crown
@@ -13083,18 +13083,18 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
 				num_of_loans = 1
 			}
 			remove_country_modifier = GE_Coin_over_Crown
-			
+
 		}
 		else = {
 			add_country_modifier = {
@@ -13103,10 +13103,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.214.a
-		
+
 	}
 }
 
@@ -13116,24 +13116,24 @@ country_event = {
 	desc = reform_me_events.215.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		NOT = { has_government_attribute = enables_coin_over_crown }
 		has_country_modifier = GE_Coin_over_Crown
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	immediate = {
 		remove_country_modifier = GE_Coin_over_Crown
 	}
-	
+
 	option = {
 		name = reform_me_events.215.a
-		
+
 	}
 }
 
@@ -13143,7 +13143,7 @@ country_event = {
 	desc = reform_me_events.216.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		OR = {
@@ -13199,7 +13199,7 @@ country_event = {
 				}
 			}
 			AND = {
-				OR = { 
+				OR = {
 					has_country_modifier = GE_Grand_Leader_0
 					has_country_modifier = GE_Grand_Leader_1
 					has_country_modifier = GE_Grand_Leader_2
@@ -13212,11 +13212,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -13358,7 +13358,7 @@ country_event = {
 			remove_country_modifier = GE_Grand_Leader_6
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.216.a
 	}
@@ -13370,7 +13370,7 @@ country_event = {
 	desc = reform_me_events.217.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 	trigger = {
 		OR = {
 			AND = {
@@ -13481,17 +13481,17 @@ country_event = {
 					has_country_modifier = GE_Foreign_Experts_4
 					has_country_modifier = GE_Foreign_Experts_5
 				}
-				NOT = { 
+				NOT = {
 					has_government_attribute = enables_foreign_experts
 				}
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -13517,7 +13517,7 @@ country_event = {
 			add_country_modifier = {
 				name = GE_Foreign_Experts_1
 				duration = -1
- 
+
 			}
 			remove_country_modifier = GE_Foreign_Experts_2
 			remove_country_modifier = GE_Foreign_Experts_3
@@ -13548,7 +13548,7 @@ country_event = {
 			add_country_modifier = {
 				name = GE_Foreign_Experts_2
 				duration = -1
- 
+
 			}
 			remove_country_modifier = GE_Foreign_Experts_1
 			remove_country_modifier = GE_Foreign_Experts_3
@@ -13579,7 +13579,7 @@ country_event = {
 			add_country_modifier = {
 				name = GE_Foreign_Experts_3
 				duration = -1
- 
+
 			}
 			remove_country_modifier = GE_Foreign_Experts_1
 			remove_country_modifier = GE_Foreign_Experts_2
@@ -13610,7 +13610,7 @@ country_event = {
 			add_country_modifier = {
 				name = GE_Foreign_Experts_4
 				duration = -1
- 
+
 			}
 			remove_country_modifier = GE_Foreign_Experts_1
 			remove_country_modifier = GE_Foreign_Experts_2
@@ -13631,7 +13631,7 @@ country_event = {
 			add_country_modifier = {
 				name = GE_Foreign_Experts_5
 				duration = -1
- 
+
 			}
 			remove_country_modifier = GE_Foreign_Experts_1
 			remove_country_modifier = GE_Foreign_Experts_2
@@ -13646,10 +13646,10 @@ country_event = {
 			remove_country_modifier = GE_Foreign_Experts_5
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.217.a
-		
+
 	}
 }
 
@@ -13658,7 +13658,7 @@ country_event = {
 	title = reform_me_events.218.t
 	desc = reform_me_events.218.d
 	picture = WESTERNISATION_eventPicture
-	
+
 
 	trigger = {
 		has_government_attribute = enables_foreign_experts
@@ -13670,7 +13670,7 @@ country_event = {
 			any_ally = {
 				culture_group = germanic
 			}
-			any_subject_country = { 
+			any_subject_country = {
 				culture_group = germanic
 			}
 		}
@@ -13683,7 +13683,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 300
 		modifier = {
@@ -13697,13 +13697,13 @@ country_event = {
 			factor = 4
 			has_country_flag = GE_Foreign_Experts_Denied
 		}
-		
+
 	}
-	
+
 	immediate = {
 		clr_country_flag = GE_Foreign_Experts_Denied
 	}
-	
+
 	option = {
 		name = reform_me_events.218.a
 		add_years_of_income = -1
@@ -13723,7 +13723,7 @@ country_event = {
 	title = reform_me_events.218.t
 	desc = reform_me_events.218.Catalan
 	picture = WESTERNISATION_eventPicture
-	
+
 
 	trigger = {
 		has_government_attribute = enables_foreign_experts
@@ -13734,8 +13734,8 @@ country_event = {
 		OR = {
 			any_ally = {
 				culture_group = iberian
-			}	
-			any_subject_country = { 
+			}
+			any_subject_country = {
 				culture_group = iberian
 			}
 		}
@@ -13748,7 +13748,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 300
 		modifier = {
@@ -13762,13 +13762,13 @@ country_event = {
 			factor = 5
 			has_country_flag = GE_Foreign_Experts_Denied
 		}
-		
+
 	}
-	
+
 	immediate = {
 		clr_country_flag = GE_Foreign_Experts_Denied
 	}
-	
+
 	option = {
 		name = reform_me_events.218.a
 		add_years_of_income = -1
@@ -13788,7 +13788,7 @@ country_event = {
 	title = reform_me_events.218.t
 	desc = reform_me_events.218.Italian
 	picture = WESTERNISATION_eventPicture
-	
+
 
 	trigger = {
 		has_government_attribute = enables_foreign_experts
@@ -13799,8 +13799,8 @@ country_event = {
 		OR = {
 			any_ally = {
 				culture_group = latin
-			}	
-			any_subject_country = { 
+			}
+			any_subject_country = {
 				culture_group = latin
 			}
 		}
@@ -13813,7 +13813,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 300
 		modifier = {
@@ -13827,20 +13827,20 @@ country_event = {
 			factor = 5
 			has_country_flag = GE_Foreign_Experts_Denied
 		}
-		
+
 	}
-	
+
 	immediate = {
 		clr_country_flag = GE_Foreign_Experts_Denied
 	}
-	
+
 	option = {
 		name = reform_me_events.218.a
 		add_years_of_income = -1
 		add_country_modifier = {
 			name = GE_Foreign_Experts_Italian
 			duration = 9125
-		} 
+		}
 	}
 	option = {
 		name = reform_me_events.218.b
@@ -13853,7 +13853,7 @@ country_event = {
 	title = reform_me_events.218.t
 	desc = reform_me_events.218.Serbian
 	picture = WESTERNISATION_eventPicture
-	
+
 
 	trigger = {
 		has_government_attribute = enables_foreign_experts
@@ -13864,8 +13864,8 @@ country_event = {
 		OR = {
 			any_ally = {
 				culture_group = south_slavic
-			}	
-			any_subject_country = { 
+			}
+			any_subject_country = {
 				culture_group = south_slavic
 			}
 		}
@@ -13878,7 +13878,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 300
 		modifier = {
@@ -13892,20 +13892,20 @@ country_event = {
 			factor = 5
 			has_country_flag = GE_Foreign_Experts_Denied
 		}
-		
+
 	}
-	
+
 	immediate = {
 		clr_country_flag = GE_Foreign_Experts_Denied
 	}
-	
+
 	option = {
 		name = reform_me_events.218.a
 		add_years_of_income = -1
 		add_country_modifier = {
 			name = GE_Foreign_Experts_Serbian
 			duration = 9125
-		} 
+		}
 	}
 	option = {
 		name = reform_me_events.218.b
@@ -13929,15 +13929,15 @@ country_event = {
 		}
 		ruler_age = 30
 	}
-	
+
 	mean_time_to_happen = {
 		months = 30
 	}
-	
+
 	immediate = {
 		set_country_flag = GE_Iberian_Harem_Flag
 	}
-	
+
 	option = {
 		name = reform_me_events.222.a
 		define_heir = {
@@ -13986,7 +13986,7 @@ country_event = {
 		set_heir_flag = GE_Iberian_Harem_Catalan
 		custom_tooltip = GE_Iberian_Harem_Catalan_TT
 	}
-	
+
 	after = {
 		clr_country_flag = GE_Iberian_Harem_Flag
 	}
@@ -14027,11 +14027,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	option = {
 		name = reform_me_events.223.a
 		trigger = {
@@ -14080,7 +14080,7 @@ country_event = {
 	desc = reform_me_events.224.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_influencial_ties
@@ -14200,11 +14200,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -14378,10 +14378,10 @@ country_event = {
 			remove_country_modifier = GE_Influencial_Ties_4
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.224.a
-		
+
 	}
 }
 
@@ -14391,7 +14391,7 @@ country_event = {
 	desc = reform_me_events.225.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		NOT = { has_government_attribute = enables_influencial_ties }
@@ -14403,11 +14403,11 @@ country_event = {
 			has_country_modifier = GE_Influencial_Ties_5
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		remove_country_modifier = GE_Influencial_Ties_1
 		remove_country_modifier = GE_Influencial_Ties_2
@@ -14415,10 +14415,10 @@ country_event = {
 		remove_country_modifier = GE_Influencial_Ties_4
 		remove_country_modifier = GE_Influencial_Ties_5
 	}
-	
+
 	option = {
 		name = reform_me_events.225.a
-		
+
 	}
 }
 
@@ -14427,14 +14427,14 @@ country_event = {
 	title = reform_me_events.226.t
 	desc = reform_me_events.226.d
 	picture = WESTERNISATION_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = reform_me_events.226.a
 		set_country_flag = GE_burgher_autonomy_AI
 		if = {
-			limit = { 
+			limit = {
 				calc_true_if = {
 					all_owned_province = {
 						#is_state = yes
@@ -14525,7 +14525,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
@@ -14561,7 +14561,7 @@ country_event = {
 	trigger = {
 		has_government_attribute = GE_minority_exploitation
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
@@ -14713,10 +14713,10 @@ country_event = {
 	desc = reform_me_events.229.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
-		has_government_attribute = enables_landsknecht_sergeants 
+		has_government_attribute = enables_landsknecht_sergeants
 		OR = {
 			AND = {
 				num_of_mercenaries = 1
@@ -14728,11 +14728,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -14752,10 +14752,10 @@ country_event = {
 			remove_country_modifier = GE_Landsknecht_Sergeants
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.229.a
-		
+
 	}
 }
 
@@ -14765,24 +14765,24 @@ country_event = {
 	desc = reform_me_events.230.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		NOT = { has_government_attribute = enables_landsknecht_sergeants }
 		has_country_modifier = GE_Landsknecht_Sergeants
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		remove_country_modifier = GE_Landsknecht_Sergeants
 	}
-	
+
 	option = {
 		name = reform_me_events.230.a
-		
+
 	}
 }
 
@@ -14792,7 +14792,7 @@ country_event = {
 	desc = reform_me_events.231.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 	trigger = {
 		OR = {
 			AND = {
@@ -14802,7 +14802,7 @@ country_event = {
 						calc_true_if = {
 							all_ally = {
 								OR = {
-									total_development = ROOT 
+									total_development = ROOT
 									tech_difference = 1
 								}
 							}
@@ -14813,7 +14813,7 @@ country_event = {
 								amount = 2
 								all_ally = {
 									OR = {
-										total_development = ROOT 
+										total_development = ROOT
 										tech_difference = 1
 									}
 								}
@@ -14825,7 +14825,7 @@ country_event = {
 						calc_true_if = {
 							all_ally = {
 								OR = {
-									total_development = ROOT 
+									total_development = ROOT
 									tech_difference = 1
 								}
 							}
@@ -14835,7 +14835,7 @@ country_event = {
 							calc_true_if = {
 								all_ally = {
 									OR = {
-										total_development = ROOT 
+										total_development = ROOT
 										tech_difference = 1
 									}
 								}
@@ -14848,7 +14848,7 @@ country_event = {
 						calc_true_if = {
 							all_ally = {
 								OR = {
-									total_development = ROOT 
+									total_development = ROOT
 									tech_difference = 1
 								}
 							}
@@ -14858,7 +14858,7 @@ country_event = {
 							calc_true_if = {
 								all_ally = {
 									OR = {
-										total_development = ROOT 
+										total_development = ROOT
 										tech_difference = 1
 									}
 								}
@@ -14871,7 +14871,7 @@ country_event = {
 						calc_true_if = {
 							all_ally = {
 								OR = {
-									total_development = ROOT 
+									total_development = ROOT
 									tech_difference = 1
 								}
 							}
@@ -14881,7 +14881,7 @@ country_event = {
 							calc_true_if = {
 								all_ally = {
 									OR = {
-										total_development = ROOT 
+										total_development = ROOT
 										tech_difference = 1
 									}
 								}
@@ -14894,7 +14894,7 @@ country_event = {
 						calc_true_if = {
 							all_ally = {
 								OR = {
-									total_development = ROOT 
+									total_development = ROOT
 									tech_difference = 1
 								}
 							}
@@ -14912,24 +14912,24 @@ country_event = {
 					has_country_modifier = GE_Foreign_Drill_Masters_4
 					has_country_modifier = GE_Foreign_Drill_Masters_5
 				}
-				NOT = { 
+				NOT = {
 					has_government_attribute = enables_foreign_drill_masters
 				}
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
 				calc_true_if = {
 					all_ally = {
 						OR = {
-							total_development = ROOT 
+							total_development = ROOT
 							tech_difference = 1
 						}
 					}
@@ -14939,7 +14939,7 @@ country_event = {
 					calc_true_if = {
 						all_ally = {
 							OR = {
-								total_development = ROOT 
+								total_development = ROOT
 								tech_difference = 1
 							}
 						}
@@ -14950,7 +14950,7 @@ country_event = {
 			add_country_modifier = {
 				name = GE_Foreign_Drill_Masters_1
 				duration = -1
- 
+
 			}
 			remove_country_modifier = GE_Foreign_Drill_Masters_2
 			remove_country_modifier = GE_Foreign_Drill_Masters_3
@@ -14962,7 +14962,7 @@ country_event = {
 				calc_true_if = {
 					all_ally = {
 						OR = {
-							total_development = ROOT 
+							total_development = ROOT
 							tech_difference = 1
 						}
 					}
@@ -14972,7 +14972,7 @@ country_event = {
 					calc_true_if = {
 						all_ally = {
 							OR = {
-								total_development = ROOT 
+								total_development = ROOT
 								tech_difference = 1
 							}
 						}
@@ -14983,7 +14983,7 @@ country_event = {
 			add_country_modifier = {
 				name = GE_Foreign_Drill_Masters_2
 				duration = -1
- 
+
 			}
 			remove_country_modifier = GE_Foreign_Drill_Masters_1
 			remove_country_modifier = GE_Foreign_Drill_Masters_3
@@ -14995,7 +14995,7 @@ country_event = {
 				calc_true_if = {
 					all_ally = {
 						OR = {
-							total_development = ROOT 
+							total_development = ROOT
 							tech_difference = 1
 						}
 					}
@@ -15005,7 +15005,7 @@ country_event = {
 					calc_true_if = {
 						all_ally = {
 							OR = {
-								total_development = ROOT 
+								total_development = ROOT
 								tech_difference = 1
 							}
 						}
@@ -15016,7 +15016,7 @@ country_event = {
 			add_country_modifier = {
 				name = GE_Foreign_Drill_Masters_3
 				duration = -1
- 
+
 			}
 			remove_country_modifier = GE_Foreign_Drill_Masters_1
 			remove_country_modifier = GE_Foreign_Drill_Masters_2
@@ -15028,7 +15028,7 @@ country_event = {
 				calc_true_if = {
 					all_ally = {
 						OR = {
-							total_development = ROOT 
+							total_development = ROOT
 							tech_difference = 1
 						}
 					}
@@ -15038,7 +15038,7 @@ country_event = {
 					calc_true_if = {
 						all_ally = {
 							OR = {
-								total_development = ROOT 
+								total_development = ROOT
 								tech_difference = 1
 							}
 						}
@@ -15049,7 +15049,7 @@ country_event = {
 			add_country_modifier = {
 				name = GE_Foreign_Drill_Masters_4
 				duration = -1
- 
+
 			}
 			remove_country_modifier = GE_Foreign_Drill_Masters_1
 			remove_country_modifier = GE_Foreign_Drill_Masters_2
@@ -15061,7 +15061,7 @@ country_event = {
 				calc_true_if = {
 					all_ally = {
 						OR = {
-							total_development = ROOT 
+							total_development = ROOT
 							tech_difference = 1
 						}
 					}
@@ -15071,7 +15071,7 @@ country_event = {
 			add_country_modifier = {
 				name = GE_Foreign_Drill_Masters_5
 				duration = -1
- 
+
 			}
 			remove_country_modifier = GE_Foreign_Drill_Masters_1
 			remove_country_modifier = GE_Foreign_Drill_Masters_2
@@ -15086,10 +15086,10 @@ country_event = {
 			remove_country_modifier = GE_Foreign_Drill_Masters_5
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.217.a
-		
+
 	}
 }
 
@@ -15106,7 +15106,7 @@ country_event = {
 		has_regency = yes
 		heir_age = 12
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
@@ -15114,7 +15114,7 @@ country_event = {
 	option = {
 		name = reform_me_events.232.a
 		random_list = {
-			50 = { 
+			50 = {
 				define_ruler = {
 					culture = berber
 					dynasty = "Wattasid"
@@ -15163,7 +15163,7 @@ country_event = {
 		}
 		ai = yes
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
@@ -15172,7 +15172,7 @@ country_event = {
 		name = reform_me_events.233.a
 		set_country_flag = GE_burgher_autonomy_AI
 		if = {
-			limit = { 
+			limit = {
 				calc_true_if = {
 					all_owned_province = {
 						#is_state = yes
@@ -15240,7 +15240,7 @@ country_event = {
 			has_country_flag = GE_TE_fired
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
@@ -15293,7 +15293,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
@@ -15336,7 +15336,7 @@ country_event = {
 
 	option = {
 		name = reform_me_events.235.a
-		
+
 	}
 }
 
@@ -15353,7 +15353,7 @@ country_event = {
 			value = 1
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 3650
 	}
@@ -16028,7 +16028,7 @@ country_event = {
 					which = GE_num_of_incoming_Mining_trade
 					value = -1
 				}
-				
+
 				add_import_effect = yes
 			}
 		#}
@@ -16253,7 +16253,7 @@ country_event = {
 					which = GE_num_of_incoming_Plantation_trade
 					value = -1
 				}
-				
+
 				add_import_effect = yes
 			}
 		#}
@@ -16261,7 +16261,7 @@ country_event = {
 
 	option = {
 		name = reform_me_events.236.a
-		
+
 	}
 	after = {
 		random_country = {
@@ -16301,7 +16301,7 @@ country_event = {
 						value = -1
 					}
 				}
-				
+
 			}
 			clr_country_flag = GE_Rural_Trade_Deal_With_@Root
 			clr_country_flag = GE_Rural_Trade_Deal_From_@Root
@@ -16333,7 +16333,7 @@ country_event = {
 	desc = reform_me_events.2360.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_baltic_sea_trade
@@ -16463,11 +16463,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -16637,10 +16637,10 @@ country_event = {
 			remove_country_modifier = GE_baltic_sea_trade_3
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.2360.a
-		
+
 	}
 }
 
@@ -16650,7 +16650,7 @@ country_event = {
 	desc = reform_me_events.237.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		NOT = { has_government_attribute = enables_baltic_sea_trade }
@@ -16661,21 +16661,21 @@ country_event = {
 			has_country_modifier = GE_baltic_sea_trade_4
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		remove_country_modifier = GE_baltic_sea_trade_1
 		remove_country_modifier = GE_baltic_sea_trade_2
 		remove_country_modifier = GE_baltic_sea_trade_3
 		remove_country_modifier = GE_baltic_sea_trade_4
 	}
-	
+
 	option = {
 		name = reform_me_events.237.a
-		
+
 	}
 }
 
@@ -16685,7 +16685,7 @@ country_event = {
 	desc = reform_me_events.238.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_foreign_students
@@ -16724,11 +16724,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -16823,10 +16823,10 @@ country_event = {
 			remove_country_modifier = GE_Foreign_Students_4
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.238.a
-		
+
 	}
 }
 
@@ -16836,7 +16836,7 @@ country_event = {
 	desc = reform_me_events.239.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		NOT = { has_government_attribute = enables_foreign_students }
@@ -16848,11 +16848,11 @@ country_event = {
 			has_country_modifier = GE_Foreign_Students_5
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		remove_country_modifier = GE_Foreign_Students_1
 		remove_country_modifier = GE_Foreign_Students_2
@@ -16860,10 +16860,10 @@ country_event = {
 		remove_country_modifier = GE_Foreign_Students_4
 		remove_country_modifier = GE_Foreign_Students_5
 	}
-	
+
 	option = {
 		name = reform_me_events.239.a
-		
+
 	}
 }
 
@@ -16879,7 +16879,7 @@ country_event = {
 	trigger = {
 		has_government_attribute = enables_disputed_succession
 	}
-	
+
 	immediate = {
 		random_owned_province = {
 			spawn_rebels = {
@@ -16899,10 +16899,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.239.a
-		
+
 	}
 }
 
@@ -16912,7 +16912,7 @@ country_event = {
 	desc = reform_me_events.240.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_cultural_supremacy
@@ -16927,11 +16927,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_owned_province = {
 			limit = {
@@ -16952,10 +16952,10 @@ country_event = {
 			remove_province_modifier = GE_cultural_supremacy
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.240.a
-		
+
 	}
 }
 
@@ -16965,7 +16965,7 @@ country_event = {
 	desc = reform_me_events.241.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		NOT = { has_government_attribute = enables_cultural_supremacy }
@@ -16973,11 +16973,11 @@ country_event = {
 			has_province_modifier = GE_cultural_supremacy
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_owned_province = {
 			limit = {
@@ -16986,10 +16986,10 @@ country_event = {
 			remove_province_modifier = GE_cultural_supremacy
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.241.a
-		
+
 	}
 }
 country_event = {
@@ -16998,20 +16998,20 @@ country_event = {
 	desc = reform_me_events.242.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		has_government_attribute = enables_kreditwerk_appointments
 		any_owned_province = {
-			NOT = { has_province_modifier = GE_Kreditwork } 
+			NOT = { has_province_modifier = GE_Kreditwork }
 			base_tax = 10
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		every_owned_province = {
 			limit = {
@@ -17024,10 +17024,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.242.a
-		
+
 	}
 }
 country_event = {
@@ -17036,14 +17036,14 @@ country_event = {
 	desc = reform_me_events.243.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		OR = {
 			AND = {
 				has_government_attribute = enables_immigrant_settlements
 				any_owned_province = {
-					NOT = { has_province_modifier = GE_immigrant_settlements } 
+					NOT = { has_province_modifier = GE_immigrant_settlements }
 					has_rural_goods = yes
 				}
 			}
@@ -17057,11 +17057,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -17083,10 +17083,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.243.a
-		
+
 	}
 }
 country_event = {
@@ -17095,14 +17095,14 @@ country_event = {
 	desc = reform_me_events.244.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		OR = {
 			AND = {
 				has_government_attribute = enables_nations_of_the_republic
 				any_owned_province = {
-					NOT = { has_province_modifier = GE_nations_of_the_republic } 
+					NOT = { has_province_modifier = GE_nations_of_the_republic }
 					has_owner_accepted_culture = yes
 				}
 			}
@@ -17123,11 +17123,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -17155,10 +17155,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.243.a
-		
+
 	}
 }
 
@@ -17168,7 +17168,7 @@ country_event = {
 	desc = reform_me_events.245.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
-	
+
 
 	trigger = {
 		OR = {
@@ -17179,7 +17179,7 @@ country_event = {
 						has_terrain = glacier
 						has_climate = arctic
 					}
-					NOT = { has_province_modifier = GE_Siberian_Tribe } 
+					NOT = { has_province_modifier = GE_Siberian_Tribe }
 				}
 			}
 			AND = {
@@ -17192,11 +17192,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -17221,244 +17221,9 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = reform_me_events.245.a
-		
-	}
-}
 
-country_event = {
-	id = reform_me_events.246
-	title = reform_me_events.246.t
-	desc = reform_me_events.246.d
-	picture = WESTERNISATION_eventPicture
-	hidden = yes
-	
-
-	trigger = {
-		OR = {
-			has_government_attribute = enables_capitalism
-			has_country_flag = GE_capitalism_check_flag
-		}
-	}
-	
-	mean_time_to_happen = {
-		days = 30
-		modifier = {
-			factor = 0
-			NOT = {
-				had_country_flag = {
-					flag = GE_capitalism_check_flag
-					days = 365
-				}
-			}
-		}
-	}
-	
-	immediate = {
-		clr_country_flag = GE_capitalism_check_flag
-		set_country_flag = GE_capitalism_check_flag
-		hidden_effect = {
-			remove_country_modifier = GE_capitalism_10
-			remove_country_modifier = GE_capitalism_20
-			remove_country_modifier = GE_capitalism_30
-			remove_country_modifier = GE_capitalism_40
-			remove_country_modifier = GE_capitalism_50
-			remove_country_modifier = GE_capitalism_60
-			remove_country_modifier = GE_capitalism_70
-			remove_country_modifier = GE_capitalism_80
-			remove_country_modifier = GE_capitalism_90
-			remove_country_modifier = GE_capitalism_100
-			if = {
-				limit = {
-					NOT = {
-						has_global_modifier_value = {
-							which = total_liberalism_modifier
-							value = 0.09
-						}
-					}
-				}
-			}
-			if = {
-				limit = {
-					has_global_modifier_value = {
-						which = total_liberalism_modifier
-						value = 0.10
-					}
-					NOT = {
-						has_global_modifier_value = {
-							which = total_liberalism_modifier
-							value = 0.20
-						}
-					}
-				}
-				add_country_modifier = {
-					name = GE_capitalism_10
-					duration = -1
-				}
-			}
-			if = {
-				limit = {
-					has_global_modifier_value = {
-						which = total_liberalism_modifier
-						value = 0.20
-					}
-					NOT = {
-						has_global_modifier_value = {
-							which = total_liberalism_modifier
-							value = 0.30
-						}
-					}
-				}
-				add_country_modifier = {
-					name = GE_capitalism_20
-					duration = -1
-				}
-			}
-			if = {
-				limit = {
-					has_global_modifier_value = {
-						which = total_liberalism_modifier
-						value = 0.30
-					}
-					NOT = {
-						has_global_modifier_value = {
-							which = total_liberalism_modifier
-							value = 0.40
-						}
-					}
-				}
-				add_country_modifier = {
-					name = GE_capitalism_30
-					duration = -1
-				}
-			}
-			if = {
-				limit = {
-					has_global_modifier_value = {
-						which = total_liberalism_modifier
-						value = 0.40
-					}
-					NOT = {
-						has_global_modifier_value = {
-							which = total_liberalism_modifier
-							value = 0.50
-						}
-					}
-				}
-				add_country_modifier = {
-					name = GE_capitalism_40
-					duration = -1
-				}
-			}
-			else_if = {
-				limit = {
-					has_global_modifier_value = {
-						which = total_liberalism_modifier
-						value = 0.50
-					}
-					NOT = {
-						has_global_modifier_value = {
-							which = total_liberalism_modifier
-							value = 0.60
-						}
-					}
-				}
-				add_country_modifier = {
-					name = GE_capitalism_50
-					duration = -1
-				}
-			}
-			else_if = {
-				limit = {
-					has_global_modifier_value = {
-						which = total_liberalism_modifier
-						value = 0.60
-					}
-					NOT = {
-						has_global_modifier_value = {
-							which = total_liberalism_modifier
-							value = 0.70
-						}
-					}
-				}
-				add_country_modifier = {
-					name = GE_capitalism_60
-					duration = -1
-				}
-			}
-			else_if = {
-				limit = {
-					has_global_modifier_value = {
-						which = total_liberalism_modifier
-						value = 0.70
-					}
-					NOT = {
-						has_global_modifier_value = {
-							which = total_liberalism_modifier
-							value = 0.80
-						}
-					}
-				}
-				add_country_modifier = {
-					name = GE_capitalism_70
-					duration = -1
-				}
-			}
-			else_if = {
-				limit = {
-					has_global_modifier_value = {
-						which = total_liberalism_modifier
-						value = 0.80
-					}
-					NOT = {
-						has_global_modifier_value = {
-							which = total_liberalism_modifier
-							value = 0.90
-						}
-					}
-				}
-				add_country_modifier = {
-					name = GE_capitalism_80
-					duration = -1
-				}
-			}
-			else_if = {
-				limit = {
-					has_global_modifier_value = {
-						which = total_liberalism_modifier
-						value = 0.90
-					}
-					NOT = {
-						has_global_modifier_value = {
-							which = total_liberalism_modifier
-							value = 1
-						}
-					}
-				}
-				add_country_modifier = {
-					name = GE_capitalism_90
-					duration = -1
-				}
-			}
-			else_if = {
-				limit = {
-					has_global_modifier_value = {
-						which = total_liberalism_modifier
-						value = 1
-					}
-				}
-				add_country_modifier = {
-					name = GE_capitalism_100
-					duration = -1
-				}
-			}
-		}
-	}
-	
-	option = {
-		name = reform_me_events.246.a
-		
 	}
 }

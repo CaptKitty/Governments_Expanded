@@ -7,7 +7,7 @@
  Cortes_Morale: "Hightened Spritis"
  Cortes_Discipline: "Tougher Drills"
  Cortes_Piety: "Special Ceremonies"
- 
+
  Adm_Stabcost: "Stable Election"
  Adm_Advisor: "Friends in high places"
  Dip_Trade: "Trader Privileges"
@@ -21,7 +21,7 @@
  Mil_2_Train: "Veteran Trainers"
  Mil_2_Leader: "Noble Cadets"
  Mil_2_Main: "Extra Supplies"
- 
+
  #Veche Parties
  VP_Tax: "Expand Taxation"
  VP_Pious: "Sunday Service"
@@ -39,9 +39,9 @@
  VP_Warscore: "Boyar Ambitions"
  VP_YOS: "Abolish Serfdom"
  VP_AE: "Justify Conflict"
- 
+
  Sforza_Lifetime: "A Lifetime Appointment"
- 
+
  #Japan
  Council_of_Kyoto: "Council of Kyoto"
  Shogun_Drill: "Professional Training"
@@ -52,20 +52,20 @@
  Imperial_Incorruptibility: "Loyal Bureaucrats"
  Imperial_Stability: "Trust of the People"
  Imperial_Modernization: "Modernization of Japan"
- 
+
  #Rome
  Coalition_Popular: "Popular Election"
  Coalition_Trade: "Cunning Tradesman"
  Coalition_Piety: "Zealous Patriarch"
  Coalition_Veteran: "Army Veteran"
- 
+
  #Caucasus
  Georgian_Ruler: "Georgian Heritage"
  Circassian_Ruler: "Circassian Heritage"
  Dagestani_Ruler: "Dagestani Heritage"
  Armenian_Zealous_Ruler: "Armenian Heritage"
  Armenian_Tolerant_Ruler: "Armenian Heritage"
- 
+
  Bad_Admin: "Mediocre Administrative Council"
  Decent_Admin: "Decent Administrative Council"
  Good_Admin: "Superb Administrative Council"
@@ -75,12 +75,12 @@
  Bad_Mil: "Mediocre Military Council"
  Decent_Mil: "Decent Military Council"
  Good_Mil: "Superb Military Council"
- 
+
  Autarky: "Autarky"
  Balanced_Policy: "Balanced Policy"
  Open_Doors: "Open Doors"
- 
- 
+
+
  tax_peasants: "Peasant Tax§!"
  tax_peasants_desc: "Levy an additional tax upon the peasantry."
  register_peasants: "Peasant Register§!"
@@ -430,7 +430,7 @@
  GE_vassal_tax_script_18: "Vassal Tax Income"
  GE_vassal_tax_script_19: "Vassal Tax Income"
  GE_vassal_tax_script_20: "Vassal Tax Income"
- 
+
  rural_goods_produced_modifier: "Rural Goods Produced Modifier"
  rural_goods_produced_1: "Rural Goods Produced"
  rural_goods_produced_2: "Rural Goods Produced"
@@ -462,7 +462,7 @@
  rural_goods_produced_008: "Rural Goods Produced"
  rural_goods_produced_009: "Rural Goods Produced"
  rural_goods_produced_010: "Rural Goods Produced"
- 
+
  urban_goods_produced_modifier: "Urban Goods Produced Modifier"
  urban_goods_produced_1: "Urban Goods Produced"
  urban_goods_produced_2: "Urban Goods Produced"
@@ -494,7 +494,7 @@
  Urban_goods_produced_008: "Urban Goods Produced"
  Urban_goods_produced_009: "Urban Goods Produced"
  Urban_goods_produced_010: "Urban Goods Produced"
- 
+
  mining_goods_produced_modifier: "Mining Goods Produced"
  mining_goods_produced_1: "Mining Goods Produced"
  mining_goods_produced_2: "Mining Goods Produced"
@@ -526,7 +526,7 @@
  mining_goods_produced_008: "mining Goods Produced"
  mining_goods_produced_009: "mining Goods Produced"
  mining_goods_produced_010: "mining Goods Produced"
- 
+
  plantage_goods_produced_modifier: "Plantation Goods Produced"
  plantage_goods_produced_1: "Plantation Goods Produced"
  plantage_goods_produced_2: "Plantation Goods Produced"
@@ -569,7 +569,7 @@
  GE_trade_deal_imports_8: "Trade Deal Imports"
  GE_trade_deal_imports_9: "Trade Deal Imports"
  GE_trade_deal_imports_10: "Trade Deal Imports"
- 
+
  GE_rural_trade_deal_exports_1: "Rural Trade Deal Exports"
  GE_rural_trade_deal_exports_2: "Rural Trade Deal Exports"
  GE_rural_trade_deal_exports_3: "Rural Trade Deal Exports"
@@ -617,30 +617,7 @@
  GE_plantation_trade_deal_imports_3: "Plantation Trade Deal Imports"
  GE_plantation_trade_deal_imports_4: "Plantation Trade Deal Imports"
  GE_plantation_trade_deal_imports_5: "Plantation Trade Deal Imports"
-  
- GE_capitalism_10: "Capitalism"
- GE_capitalism_20: "Capitalism"
- GE_capitalism_30: "Capitalism"
- GE_capitalism_40: "Capitalism"
- GE_capitalism_50: "Capitalism"
- GE_capitalism_60: "Capitalism"
- GE_capitalism_70: "Capitalism"
- GE_capitalism_80: "Capitalism"
- GE_capitalism_90: "Capitalism"
- GE_capitalism_100: "Capitalism"
- 
- GE_liberalism_10: "Liberalism"
- GE_liberalism_20: "Liberalism"
- GE_liberalism_30: "Liberalism"
- GE_liberalism_40: "Liberalism"
- GE_liberalism_50: "Liberalism"
- GE_liberalism_60: "Liberalism"
- GE_liberalism_70: "Liberalism"
- GE_liberalism_80: "Liberalism"
- GE_liberalism_90: "Liberalism"
- GE_liberalism_10: "Liberalism"
- GE_liberalism_100_desc: "Freedom go brrr"
- 
+
  Russian_Manorialism: "Manorial Maintenance"
  Stop_Centralization: "Halted Centralization"
  Beneficial_Self_Rule: "Beneficial Self Rule"
@@ -732,14 +709,14 @@
  Cultural_Acceptance: "Cultural Acceptance"
  GE_Unified_Army: "Unified Army"
  GE_Corrupted_Merchants: "Corrupt Merchants"
- 
- 
- 
- 
- 
- 
- 
- 
+
+
+
+
+
+
+
+
  EST_VAL_BURGHERS_ADVANCES:0 "Burghers Advance: §Y$VAL$%§!"
  EST_VAL_ANCIEN_REGIME_REFORM:0 "Ancien Regime: §Y$VAL$%§!"
  EST_VAL_REGIONAL_FORTS_REFORM:0 "Regional Forts: §Y$VAL$%§!"
@@ -778,7 +755,7 @@
  EST_VAL_ABBAS_REFORM:0 "Abbas's Reforms: §Y$VAL$§!"
  EST_VAL_SAYYID_PRIVILEGES_REFORM:0 "Sayyid Privileges: §Y$VAL$§!"
  EST_VAL_QADI_AUTHORITY_REFORM:0 "Qadi Privileges: §Y$VAL$§!"
- 
+
  EST_VAL_REGISTER_PEASANTS:0 "Register Peasants: §Y$VAL$§!"
  EST_VAL_TAX_PEASANTS:0 "Tax Peasants: §Y$VAL$§!"
  EST_VAL_LEVIED_TROOPS:0 "Levied Troops: §Y$VAL$§!"
@@ -788,7 +765,7 @@
  EST_VAL_BUY_GHULAMS: "Bought Additional Ghulams: §Y$VAL$§!"
  EST_VAL_REPLACE_GOVERNORS: "Replaced Governors: §Y$VAL$§!"
  EST_VAL_GHULAM_ADVISOR: "Promoted Ghulams: §Y$VAL$§!"
- 
+
  EST_VAL_ORDER_OF_SWAN_LOY:0 "Order of the Swan: §G$VAL$§!"
  EST_VAL_FRENCH_ABSOLUTISM_LOY:0 "French Absolutism: §G$VAL$§!"
  EST_VAL_DHIMMI_NOBLES_REFORM_LOY:0 "Dhimmi Nobles: §G$VAL$§!"
@@ -813,7 +790,7 @@
  EST_VAL_ABBAS_REFORM_LOY:0 "Abbas's Reforms: §Y$VAL$§!"
  #unsorted
  has_adm_advisor_with_skill: "Has Adm Advisor with skill of at least $skill$"
- 
+
  #####Estate Agendas
  GE_Peasant_Estate_Growth: "Increased Farming Output"
  GE_Peasant_Estate_Peace: "Recovering from War"
@@ -823,7 +800,7 @@
  GE_Peasant_Estate_Construct_Workshop: "Supportive Townspeople"
  GE_Peasant_Estate_Stabilization: "Stabilization"
  GE_Peasant_Estate_Stabilized: "Stabilized"
- 
+
  GE_Ghulams_Estate_Brought_Justice: "Brought Justice"
  GE_Ghulams_Estate_Ghulam_Advisors: "Ghulam Advisors"
  GE_Ghulams_Estate_New_Cannons: "New Cannons"

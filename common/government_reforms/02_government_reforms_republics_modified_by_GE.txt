@@ -4,16 +4,8 @@ merchants_reform = {
 	modifiers = {
 		max_absolutism = -10
 		merchants = 1
-		trade_deals_slots = 0.01
-		total_liberalism_modifier = 0.20
-	}
-	effect = {
-		GE_remove_liberalism = yes
-		GE_set_liberalism = yes
-	}
-	removed_effect = {
-		GE_remove_liberalism = yes
-		GE_set_liberalism = yes
+		trade_deals_slots = 1
+		monthly_liberalism = 0.2
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
@@ -72,26 +64,29 @@ merchants_reform = {
 		is_merchant_republic = yes
 		elections_increase_factions_influence = yes
 	}
+	government_abilities = {
+		liberalism_mechanic
+	}
 	ai = {
 		factor = 0.75 #generic
-		
+
 		modifier = {
 			factor = 0
 			num_of_cities = 11
 		}
-		
+
 		modifier = {
 			factor = 0
 			capital_scope = { has_port = no }
 		}
-		
+
 		modifier = {
 			factor = 0
 			NOT = {
 				capital_scope = { province_has_center_of_trade_of_level = 1 }
 			}
 		}
-		
+
 		modifier = {
 			factor = 0
 			is_subject = yes
@@ -107,16 +102,11 @@ venice_merchants_reform = {
 		merchants = 1
 		yearly_corruption = -0.1
 		monarch_lifespan = 0.25
-		trade_deals_slots = 0.02
-		total_liberalism_modifier = 0.20
+		trade_deals_slots = 2
+		monthly_liberalism = 0.2
 	}
-	effect = {
-		GE_remove_liberalism = yes
-		GE_set_liberalism = yes
-	}
-	removed_effect = {
-		GE_remove_liberalism = yes
-		GE_set_liberalism = yes
+	government_abilities = {
+		liberalism_mechanic
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
@@ -191,7 +181,10 @@ peasants_republic = {
 		production_efficiency = 0.1
 		land_morale = 0.05
 		max_absolutism = -10
-		total_liberalism_modifier = 0.20
+		monthly_liberalism = 0.2
+	}
+	government_abilities = {
+		liberalism_mechanic
 	}
 	effect = {
 		hidden_effect = {
@@ -208,12 +201,6 @@ peasants_republic = {
 				}
 			}
 		}
-		GE_remove_liberalism = yes
-		GE_set_liberalism = yes
-	}
-	removed_effect = {
-		GE_remove_liberalism = yes
-		GE_set_liberalism = yes
 	}
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes
@@ -239,19 +226,14 @@ kongsi_federation = {
 		primary_culture = hakka
 		technology_group = chinese
 	}
-	effect = {
-		GE_remove_liberalism = yes
-		GE_set_liberalism = yes
-	}
-	removed_effect = {
-		GE_remove_liberalism = yes
-		GE_set_liberalism = yes
-	}
 	modifiers = {
 		production_efficiency = 0.1
 		republican_tradition = 0.5
 		max_absolutism = -10
-		total_liberalism_modifier = 0.20
+		monthly_liberalism = 0.2
+	}
+	government_abilities = {
+		liberalism_mechanic
 	}
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes
@@ -283,7 +265,7 @@ free_city = {
 		development_cost = -0.2
 		diplomatic_upkeep = 1
 		burghers_influence_modifier = 0.1
-		trade_deals_slots = 0.01
+		trade_deals_slots = 1
 	}
 	fixed_rank = 1
 
@@ -314,15 +296,10 @@ trading_city = {
 	modifiers = {
 		global_trade_power = 0.1
 		max_absolutism = 20
-		total_liberalism_modifier = 0.10
+		monthly_liberalism = 0.1
 	}
-	effect = {
-		GE_remove_liberalism = yes
-		GE_set_liberalism = yes
-	}
-	removed_effect = {
-		GE_remove_liberalism = yes
-		GE_set_liberalism = yes
+	government_abilities = {
+		liberalism_mechanic
 	}
 
 	custom_attributes = {
@@ -376,15 +353,10 @@ ambrosian_republic = {
 		land_morale = 0.05
 		governing_capacity = 50
 		max_absolutism = 10
-		total_liberalism_modifier = 0.10
+		monthly_liberalism = 0.1
 	}
-	effect = {
-		GE_remove_liberalism = yes
-		GE_set_liberalism = yes
-	}
-	removed_effect = {
-		GE_remove_liberalism = yes
-		GE_set_liberalism = yes
+	government_abilities = {
+		liberalism_mechanic
 	}
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes
@@ -421,16 +393,11 @@ veche_republic = {
 		max_absolutism = 10
 		has_streltsy = yes
 		allowed_streltsy_fraction = 0.1
-		trade_deals_slots = 0.01
-		total_liberalism_modifier = 0.20
+		trade_deals_slots = 1
+		monthly_liberalism = 0.2
 	}
-	effect = {
-		GE_remove_liberalism = yes
-		GE_set_liberalism = yes
-	}
-	removed_effect = {
-		GE_remove_liberalism = yes
-		GE_set_liberalism = yes
+	government_abilities = {
+		liberalism_mechanic
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
@@ -490,9 +457,9 @@ veche_republic = {
 		can_use_trade_post = yes
 	}
 	conditional = {
-		allow = { 
+		allow = {
 			OR = {
-				has_dlc = "Third Rome" 
+				has_dlc = "Third Rome"
 				has_dlc = "Domination"
 			}
 		}
@@ -549,16 +516,11 @@ great_veche_republic = {
 		governing_capacity = 350
 		has_streltsy = yes
 		allowed_streltsy_fraction = 0.2
-		trade_deals_slots = 0.01
-		total_liberalism_modifier = 0.20
+		trade_deals_slots = 1
+		monthly_liberalism = 0.2
 	}
-	effect = {
-		GE_remove_liberalism = yes
-		GE_set_liberalism = yes
-	}
-	removed_effect = {
-		GE_remove_liberalism = yes
-		GE_set_liberalism = yes
+	government_abilities = {
+		liberalism_mechanic
 	}
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes
@@ -578,8 +540,8 @@ great_veche_republic = {
 		trade_city_reform = trading_city
 	}
 	conditional = {
-		allow = { 
-			has_dlc = "Third Rome" 
+		allow = {
+			has_dlc = "Third Rome"
 			NOT = { has_dlc = "Domination" }
 		}
 		government_abilities = {
@@ -621,16 +583,11 @@ great_russian_republic_reform = {
 		global_autonomy = -0.05
 		embracement_cost = -0.5
 		max_absolutism = 50
-		trade_deals_slots = 0.01
-		total_liberalism_modifier = 0.20
+		trade_deals_slots = 1
+		monthly_liberalism = 0.2
 	}
-	effect = {
-		GE_remove_liberalism = yes
-		GE_set_liberalism = yes
-	}
-	removed_effect = {
-		GE_remove_liberalism = yes
-		GE_set_liberalism = yes
+	government_abilities = {
+		liberalism_mechanic
 	}
 
 	custom_attributes = {
@@ -693,15 +650,10 @@ american_republic = {
 		war_exhaustion = -0.04
 		stability_cost_modifier = -0.1
 		max_absolutism = 20
-		total_liberalism_modifier = 0.30
+		monthly_liberalism = 0.3
 	}
-	effect = {
-		GE_remove_liberalism = yes
-		GE_set_liberalism = yes
-	}
-	removed_effect = {
-		GE_remove_liberalism = yes
-		GE_set_liberalism = yes
+	government_abilities = {
+		liberalism_mechanic
 	}
 
 	custom_attributes = {
@@ -750,15 +702,10 @@ federal_republic = {
 		diplomatic_reputation = 1
 		global_spy_defence = 0.1
 		max_absolutism = 10
-		total_liberalism_modifier = 0.30
+		monthly_liberalism = 0.3
 	}
-	effect = {
-		GE_remove_liberalism = yes
-		GE_set_liberalism = yes
-	}
-	removed_effect = {
-		GE_remove_liberalism = yes
-		GE_set_liberalism = yes
+	government_abilities = {
+		liberalism_mechanic
 	}
 
 	custom_attributes = {
@@ -812,17 +759,14 @@ dutch_republic = {
 		max_absolutism = 10
 		has_voc_indiamen = yes
 		allowed_voc_indiamen_fraction = 0.2
-		trade_deals_slots = 0.01
-		total_liberalism_modifier = 0.20
+		trade_deals_slots = 1
+		monthly_liberalism = 0.2
 	}
-	effect = {
-		GE_remove_liberalism = yes
-		GE_set_liberalism = yes
+	government_abilities = {
+		liberalism_mechanic
 	}
 
 	removed_effect = {
-		GE_remove_liberalism = yes
-		GE_set_liberalism = yes
 		if = {
 			# Monarchs seize power
 			limit = { government = monarchy }
@@ -881,7 +825,7 @@ cossacks_reform = {
 			have_had_reform = cossacks_reform
 		}
 	}
-	
+
 	raze_province = yes
 	government_abilities = {
 		cossacks_mechanic
@@ -907,13 +851,8 @@ cossacks_reform = {
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 60
-	effect = {
-		GE_remove_liberalism = yes
-		GE_set_liberalism = yes
-	}
-	removed_effect = {
-		GE_remove_liberalism = yes
-		GE_set_liberalism = yes
+	government_abilities = {
+		liberalism_mechanic
 	}
 	modifiers = {
 		cavalry_power = 0.2
@@ -921,7 +860,7 @@ cossacks_reform = {
 		cav_to_inf_ratio = 0.25
 		governing_capacity = 50
 		special_unit_forcelimit = 0.25
-		total_liberalism_modifier = 0.20
+		monthly_liberalism = 0.2
 	}
 
 	conditional = {
@@ -989,9 +928,9 @@ nepotism_reform = {
 		}
 	}
 	trigger = {
-		NOT = { 
+		NOT = {
 			OR = {
-				has_reform = venice_merchants_reform 
+				has_reform = venice_merchants_reform
 				has_government_attribute = has_dutch_election
 				has_reform = presidential_despot_reform
 				has_reform = military_dictatorship_reform
@@ -1225,12 +1164,8 @@ frequent_elections_reform = {
 			which = Populist_Influence
 			value = 1
 		}
-		GE_remove_liberalism = yes
-		GE_set_liberalism = yes
 	}
 	removed_effect = {
-		GE_remove_liberalism = yes
-		GE_set_liberalism = yes
 		change_variable = {
 			which = Populist_Influence
 			value = -1
@@ -1238,8 +1173,11 @@ frequent_elections_reform = {
 	}
 	modifiers = {
 		max_absolutism = -10
-		total_liberalism_modifier = 0.10
+		monthly_liberalism = 0.1
 		election_cycle = -1
+	}
+	government_abilities = {
+		liberalism_mechanic
 	}
 	ai = {
 		factor = 1
@@ -1274,7 +1212,7 @@ consolidation_of_power_reform = {
 	}
 	effect = {
 		hidden_effect = {
-			
+
 		}
 	}
 	custom_attributes = {
@@ -1294,9 +1232,9 @@ lottery_reform = {
 		NOT = { has_government_attribute = is_pirate_republic_reform }
 	}
 	trigger = {
-		NOT = { 
+		NOT = {
 			OR = {
-				has_reform = venice_merchants_reform 
+				has_reform = venice_merchants_reform
 				has_government_attribute = has_dutch_election
 				has_reform = presidential_despot_reform
 				has_reform = military_dictatorship_reform
@@ -1543,7 +1481,7 @@ union_of_states_reform = {
 	}
 	modifiers = {
 		global_trade_power = 0.1
-		trade_deals_slots = 0.01
+		trade_deals_slots = 1
 	}
 	conditional = {
 		allow = {

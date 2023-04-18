@@ -21,7 +21,7 @@
  kingdom_of_portugal_and_azures_desc: "John 2 'The Perfect' restored the policies of Atlantic exploration, reviving the work of his great-uncle, Henry the Navigator. The Portuguese explorations were his main priority in government, pushing south the known coast of Africa with the purpose of discovering the maritime route to India and breaking into the spice trade."
  american_government: "American Government"
  american_government_desc: "USA USA USA USA USA"
- 
+
  ulema_guidance_reform: "Ulema Guidance"
  ulema_guidance_reform_desc: "But those of them who are firmly rooted in knowledge, the believers, believe in what has been sent down to you and what has been sent down to those before you: those who perform prayer and give the charity, believe in Allah and the Last Day. We will give such people an immense reward."
  lithuania_law_reform: "Casimir's Code"
@@ -88,7 +88,7 @@ the_holy_office_reform: "The Holy Office"
  slave_raids_reform_desc: "Hard work is they key to a prosperous society, however, why put blood and sweat in building up your own lands when you can make your neighbours do it for you?"
  iranian_bureacracy_reform: "Iranian Bureacracy"
  iranian_bureacracy_reform_desc: "Our domination of the persian peoples and their native administration is highly efficient, we should expand their system and adopt it as our own."
- 
+
  casa_de_contraction_reform: "Casa de Contratación"
  casa_de_contraction_reform_desc: "By establishing the House of Trade and the Indies we can organize everything that comes in or out of the country in a single place, allowing us to better tax our traders, and provide more support to our subjects that are looking for a better life in the colonies."
  casa_de_india_reform: "Casa da India"
@@ -155,7 +155,7 @@ the_holy_office_reform: "The Holy Office"
  conseil_du_roi_reform_desc: "One of the key parts of the french monarchy is the king's royal council, and their approval is a requirement to provide additional legitimacy to the king's decrees. By maintaining and reviving this principle we will have extra control over our country as well as a proper justification for why we should have this additional control."
  fredrickan_reforms_reform: "Frederick's Reforms"
  fredrickan_reforms_reform_desc: "Frederick the Great reorganized the Prussian economy, by establishing additionl protection for religious minorities, a national bank, tax reforms and industrial investments. As a direct result from these policies and reforms, Many immigrants came into the less developed parts of the nation, and both the industrial output and the state solvency soared."
- 
+
  office_of_lord_regent_reform: "Office of Lord Regent"
  office_of_lord_regent_reform_desc: "The Lord Regent was a position held to the head governor of the highly autonomous Kingdom of Sweden. Danish Kings often tried to abolish or weaken this position, only to be met with fierce resistance or independence wars to restore Swedish Autonomy."
  house_of_knights_reform: "House of Knights"
@@ -184,8 +184,8 @@ the_holy_office_reform: "The Holy Office"
  abolish_the_haandfaestning_reform_desc: "For centuries the Danish kings have had to accept limits to their power, and had to struggle over each and every issue with the nobility. My hands shall no longer be bound by such a agreement. My rule is my own, and any noble or clergical influence shall no longer be accepted. My reign and my heirs are no longer submit to signing this humiliating document."
  the_black_guard_reform: "The Black Guard"
  the_black_guard_reform_desc: "Formerly a Habsburg unit raised to defend the low countries, The Black Guard Landsknechten served the danish kings in fighting noble and swedish revolts until their demise in the battle of hemingstead."
- 
- 
+
+
 
  feudal_levies_reform: "Feudal Levies"
  feudal_levies_reform_desc: "Our military should rely on our feudal subject's contributions. In addition to strengthening our subject's loyalty, we need to increase their military cooperation with their overlord. This will give us a wider selection of recruits."
@@ -197,8 +197,8 @@ the_holy_office_reform: "The Holy Office"
  italian_mercenaries_reform_desc: "Well paid mercenaries perform as well as any national army. Relying on them (and lining their pockets with a bit of extra coin) will give us the edge over nations that must rely on their subjects to fight for them."
  turkish_iqta_reform: "Turkish Ikta"
  turkish_iqta_reform_desc: "The Ikta system allowed the empire to maintain a cavalry army with little Cost to the state, And allows us to hold a relatively large force in semi-mobilized state."
- imperial_circles_reform: "Lead the Imperial Circle" 
- imperial_circles_reform_desc: "We can trust in our imperial kinfolk to bolster our national armies. Strong integration with our Circle will allow us to field more troops for less coin by means of a common defensive structure." 
+ imperial_circles_reform: "Lead the Imperial Circle"
+ imperial_circles_reform_desc: "We can trust in our imperial kinfolk to bolster our national armies. Strong integration with our Circle will allow us to field more troops for less coin by means of a common defensive structure."
  tatar_mercenaries_reform: "Tatar Mercenaries"
  tatar_mercenaries_reform_desc: "By setting up turkic mercenary captains, we can use them to attract strong and loyal mercenaries in times of war."
  south_east_asian_elephants_reform: "Elephant Cavalry"
@@ -217,8 +217,8 @@ the_holy_office_reform: "The Holy Office"
  restore_the_davidic_line_reform_desc: "The Sanhedrin has met and accepted the lineage of the Nassi.  The House of David is restored to Power once Again!"
  dynastic_theocracy_reform: "Dynastic Theocracies"
  dynastic_theocracy_reform_desc: "A form of government where the dynasty is the representative of God, and the protector of the people."
- 
- 
+
+
  #Theocracies T4.5
  religious_enforcement: "Religious Enforcement"
  holy_orthodoxy_reform: "Holy Orthodoxy"
@@ -229,7 +229,7 @@ the_holy_office_reform: "The Holy Office"
  religious_pragmatism_reform_desc: "Just because the unbelievers don't follow the Lord, that should not disqualify them from serving him and his flock."
  papal_curia_reform: "Papal Curia"
  papal_curia_reform_desc: "Where there is human intervention, there is error and misjudgment; where there is divine intervention, there is truth and righteousness. Such is the nature of laws that from the flow from the Papal Curia in the Holy See, that they are rightly guided by God's intermediaries and founded in doctrines of piety as opposed to the fallibility of those outside the Holy See."
- 
+
  #Theocracies T6
  judiciary: "Judiciary"
  secular_law_reform: "Secular Law"
@@ -250,7 +250,7 @@ the_holy_office_reform: "The Holy Office"
  papal_law_reform_desc: "By the order of the most divine in our land, the Pontifex Maximus, the Bishop of Rome, our words will be heard in all realms across the regions of Europe and beyond. Faithful Catholics will know that their is truth and authenticity in the orders that flow from the Holy See and with each succeeding Pope, the good relations with Catholics will only compound further."
  tradition_of_masada_and_bar_kochba_reform: "Tradition of Masada and Bar Kochba"
  tradition_of_masada_and_bar_kochba_reform_desc: "The land is ours.  We will not surrender."
- 
+
  #Theocracies T7
  diplomacy: "Diplomacy"
  unrestricted_diplomacy_reform: "Unrestricted Diplomacy"
@@ -263,7 +263,7 @@ the_holy_office_reform: "The Holy Office"
  the_bishops_diplomacy_reform_desc: "Let us place our faith in the Bishop, for he is guided by the lord, and shall bring us allies and peace."
  yeshiva_scholarship_reform: "Yeshiva Scholarship"
  yeshiva_scholarship_reform_desc: "We will fund houses of learning across the land."
- 
+
  #Theocracies T8
  mobilize_the_faithful: "Mobilize the Faithful"
  holy_war_reform: "Holy War"
@@ -274,7 +274,7 @@ the_holy_office_reform: "The Holy Office"
  brothers_in_arms_reform_desc: "When the need arrives, the Lord's faithful will rally to our banners, ready to defend the Lord's flock."
  the_bishops_army_reform: "Bishop's Military"
  the_bishops_army_reform_desc: "Let us place our faith in the Bishop, for he is guided by the lord, and shall bring strength to our men under arms."
- 
+
  genoan_republic_reform: "Genoese Republic"
  genoan_republic_reform_desc: "The Merchantile Republic of Genoa has been a powerful force in the Mediterranean, born during the 11th century amidst crusades and as a communal republic for self-defence and self-determination. Our merchants and fleets go wherever there is profit to be made, setting up trade posts from north africa to the black sea, bringing wealth and prosperity to all. Wars and Disease have hurt our state, leading to a decline and a reduction in our might, being dominated by the italian and francien powers. With our silk weavers, bankers and daring merchants. The Republic that recognizes no superior!"
  rule_by_consent_reform: "Rule by Consent"
@@ -323,7 +323,7 @@ the_holy_office_reform: "The Holy Office"
  declario_ferdinandei_reform_desc: "The principle known as Declaratio Ferdinandei (Ferdinand's Declaration), exempted knights and some of the cities from the requirement of religious uniformity, if the reformed religion had been practised there since the mid-1520s, allowing for a few mixed cities and towns where Catholics and Lutherans had lived together. It also protected the authority of the princely families, the knights and some of the cities to determine what religious uniformity meant in their territories. Ferdinand inserted this at the last minute, on his own authority."
  diverse_estates_reform: "Diverse Estates"
  diverse_estates_reform_desc: "Having to keep the Hungarian, German and Bohemian estates all loyal to the Australian cause is a challenge, Our experience in juggling them, and placating them with gold, words and threats has left us with a rather experienced diplomatic corps."
- 
+
  magnate_law_reform: "Magnate Law"
  magnate_law_reform_desc: "By granting the magnates privileges for their domains, we can convince them to support the national interests."
  magnate_govenors_reform: "Magnate Govenors"
@@ -418,7 +418,7 @@ the_holy_office_reform: "The Holy Office"
  cultural_investment_reform_desc: "Andalusian Caliphates would invite poets, artists, and literary figures from across the world to their courts, for the greatest honor of intellect lies solely in the deserving hands of the Andalusian people. Far and wide, as if moths to a flame, the greatest minds flock to our grand palaces to find their fame and fortune, for they know there cannot be a greater opportunity than serving our great Emir."
  berber_cavalry_reform: "Berber Cavalry"
  berber_cavalry_reform_desc: "Our fellow believers conquered these lands centuries ago, and every time we are in need, they send a great mounted host across the straits. Strengthening our ties with our Northern African brethren may have allowed us to subsist thus far, but we cannot continue to tread this path quite so lightly. Let us create a continuous flow of Berber tribesmen to settle in our lands and ensure this land of sheep and goats is to remain ours."
- 
+
  #1.7
  empowered_of_noble_bearing_reform:0 "Empowered Nobles of the Robe"
  empowered_of_noble_bearing_reform_desc:0 "The Nobility has traditionally not been as much a part of our administration as they are unruly tributary vassals. Their relative power and granted privileges has allowed them to fight full wars inside our nations borders. On the bright side, it means our generals are much more experienced thanks to a lifetime of war. By integrating their sons and other lesser nobility into our administration, its a lot easier to recruit the best and brightest amonst them to our armies"
@@ -442,7 +442,7 @@ the_holy_office_reform: "The Holy Office"
  empowered_monastic_militarism_reform_desc: "By binding them tightly together, we have ensured that the nobility and the church both serve the same power, whether by the symbol or by the sword. Where once this was not understood, and these arms of the divine stood divided, we now unite together, indivisible. When the nobility beckons their church brothers to serve by the sword, the church serves gladly."
  empowered_church_councils_reform: "Empowered Church Councils"
  empowered_church_councils_reform_desc: "The clergical dominance over our government has led to an increase in their demands. They wish to reduce poverty and use the church funds to feed the poor and grant them a place to go at night. In addition to setting up workhouses and letting the poor earn a living and hopefully escape poverty as changed people, virtuous and ready to spread the word and the way of the Lord."
- 
+
  traditionalist_reform: "Traditionalism"
  traditionalist_reform_desc: "Let us hold on to our traditions and reform them into new and powerful shock attacks."
  gunpowder_weapons_reform: "Gunpowder Weapons"
@@ -480,7 +480,7 @@ the_holy_office_reform: "The Holy Office"
  traditionalist_african_reform: "Traditionalism"
  traditionalist_african_reform_desc: "In the face of an ever changing world where gunpowder is ever spreading, let us revive the ancient traditions of our people. that kept us safe for generations."
  gunpowder_weapons_african_reform: "Modern Firearms"
- gunpowder_weapons_african_reform_desc: "Embrace the modern combat of the time, even though it crushes the old traditions. For we can not lag behind and be crushed by the wheel of time."	
+ gunpowder_weapons_african_reform_desc: "Embrace the modern combat of the time, even though it crushes the old traditions. For we can not lag behind and be crushed by the wheel of time."
  elephant_riders_reform: "Indian Elephant Riders"
  elephant_riders_reform_desc: "The mighty elephants are hard to train and ride into battle, but once unleashed are hard to stop and tend to cause massive casualties amongst our enemies."
  achaemenid_empire_reform: "Achaemenid Empire"
@@ -495,8 +495,8 @@ the_holy_office_reform: "The Holy Office"
  justice_and_truth_reform_desc: "None are free from Justice, not even the Shahanshah. By extension, none may bar another from Freedom, not even those who would call themselves Just. Let it be known, all who seek to corrupt the world shall be purged, and all who seek to enslave their brothers shall be put into chains of their own making."
  preeminent_padishah_reform: "Preeminent Padishah"
  preeminent_padishah_reform_desc: "It is through me that the state has power, and it is through the state that I wield this power. As the lord of The Empire it is my will that dictates the freedoms and justice of the land. Thus, it is, with my hand, that that justice be swift, and fair to all under me. For I am not just a ruler, but Father to all within my borders."
- 
- 
+
+
  support_ghibbelline_reform: "Support Ghibbellines"
  support_ghibbelline_reform_desc: "Italy is a chaotic and disunified region, and we weep seeing the constant bloodshed between squabbling city-states. We must aid the Holy Roman Emperor in reining in, and ultimately bringing peace to Italy. Let us join the Ghibelline faction and help bring order and peace to Italy."
  support_guelphs_reform: "Support Guelphs"
@@ -509,9 +509,9 @@ the_holy_office_reform: "The Holy Office"
  council_of_petitions_reform_desc: "A form of plebejan tribune where the non-aristocrats can make their voices heard and let people know that the government is serving their interests and heard their pleas."
  legacy_of_constitutionalism_reform: "Legacy of Constitutionalism"
  legacy_of_constitutionalism_reform_desc: "We used to have a constitution, but now the authoritarian monarchs have torn it down so much that they effectively hold absolute power. This desecration is causing the legitimacy of the monarch fade away from the eyes of the countries people."
- 
- 
- 
+
+
+
  portuguese_empire_reform: "Portuguese Empire"
  portuguese_empire_reform_desc: "A strong monarch rules this Empire with the support of it's subjects. The nobility,clergy and the commoners all bend their knee to the King. In return the King chooses what is best for our nation and it's people.  We are situated in every continet of the world. All the way from Rio de Janeiro to Macau. Every corner of the Empire is considered an integral part of our borders and territory and it's citizens are all Portuguese, wether they speak another language or have different customs, we are all Portuguese under this banner. We shall lead the civilizing mission in our territory and encompass pro-miscegenation towards our subject unlike certain Empires that rely on racial segragation to properly function. Such has been noted in Brazil with our rapid expansion in the South American colony and it's rapid Development making it our most important colony, we must tread carefully for it's loss can cause a devastating blow on our national integrity and economy. Our colonies provide the raw materials needed to further develop our trade and economy. As such we shall expand our hold in Africa and expand into the deepest lands of Brazil. These characteristics are the bases of the Portugues Empire which shall show the world our glory and pride."
  kingdom_of_castille_and_leon: "Kingdom of Castille and Leon"
@@ -535,7 +535,7 @@ the_holy_office_reform: "The Holy Office"
  crown_of_aragon: "Crown of Aragon"
  crown_of_aragon_desc: "The Crown of Aragon was a composite monarchy of nearly a dozen kingdoms; The Kingdom of Aragon, The Principality of Catalonia, The City of Valencia, The Kingdom of Majorca, The Kingdom of Sardinia, the Kingdom of Sicily, The Kingdom of Naples, the Duchy of Athens, the Duchy of Neopatria, the County of Gevaudan, the County of Provence and the principality of Andorra. This extreme fragmentary state of feudalism is both hard to manage for a ruler, leaving its many subject states relatively free and prosperous, as well as rather happy about the lack of noble or royal control."
 
- 
+
  #1.8
  #Dithmarschen
  sovereignity_reform: "Sovereignty without a Sovereign"
@@ -567,7 +567,7 @@ the_holy_office_reform: "The Holy Office"
  hessian_elite_jaegers_reform_desc: "The Hessian Jäger (Sharpshooter) is armed with three things: ruthlessness, discipline, and his büchse. This ruthlessness is beneficial to the soldier, but not always to the Hessian state. Their equipment is expensive, and their tendency to decimate the enemy —even after the battle is won— hasn't done our diplomacy any favours."
  found_the_rothschilds_reform: "Found the Rothschild Dynasty"
  found_the_rothschilds_reform_desc: "Our Hoffaktor (court Jew) is a talented man, and his abilities would be wasted with the limitations of a lowborn. Let us raise him to nobility, and empower his family so that they can help us even further. Perhaps they will make a real name of themselves someday."
- 
+
  #Krautistan
  franconian_salic_law_reform: "Franconian Salic Law"
  franconian_salic_law_reform_desc: "The Duchy of Franconia has been destroyed by the Salian Law, where brothers fought over inheritances and the royal power got divided into nothingness. Yet the nobility prospered, and can provide us a great source of manpower and strenght, should we be able to keep them under controll unlike our successors."
@@ -581,7 +581,7 @@ the_holy_office_reform: "The Holy Office"
  freie_landtage_reform_desc: "The increased expenditures of the elector for equipment and preservation of the army supply or also for the own yard state could not be contested any more by the own dominions. The solution was to levy new tax types. For this, however, it also required the consent of the stands. The gathering of the estates in 1438, organized under Frederick II, is considered the first state parliament of Saxony . Saxony's estates were granted the right to join forces in tax matters without convocation by the ruler. As a result, more and more Landtage took place, thus forming the Wettin sovereign state."
  ottonian_handfeste_reform: "Ottonian Handfeste"
  ottonian_handfeste_reform_desc: "In the Ottonian Handfeste of June 5, 1311 granted Duke Otto III. from Lower Bavaria the Lower Bavarian estates privileges and rights. Against the performance of a one-off tax, Duke Otto confessed to the Lower Bavarian estates ( nobility , clergy , cities ) the lower justice for their possessions. The tax privileges of the estates , which were also guaranteed in the Ottonian Handfeste , together with the Schnaitbacher deed of 1302 marked the beginning of parliamentarianism in Bavaria."
- 
+
  #France
  independent_vassals_reform: "Independent Vassals"
  independent_vassals_reform_desc: "Our initial attempts at levying taxes in our vassals has been twarted by local lords and their privileges. By letting the local lords levy our taxes themselves and then passing it along to us we guarentee their rights and loyalty, in addition to recieving the taxes we so desperately need."
@@ -591,7 +591,7 @@ the_holy_office_reform: "The Holy Office"
  parisian_court_reform_desc: "Let us fill our court with the best france has to offer. proper Parisians, and let the rural farmers and backwards lords stay home in their dwellings. Its a matter of prestige to have everyone at court observe the proper manners and speak in a flawless accent."
  weak_burghers_reform: "Subservient Bourgeois"
  weak_burghers_reform_desc: "The constant state of warfare in the kingdom during its earlier days led to many a city, caravan or field being plundered and ravaged. We can use the threat of reduced security to convince the burghers additional taxes are neccesary."
- 
+
  noblesse_d_epee_reform: "Noblesse d'epee"
  noblesse_d_epee_reform_desc: "As with officer of the sword, the expression "noble of the sword" derives from the right of such noblemen to bear a sword, which reflected their duty of knightly service to their feudal overlord. In later centuries, a nobleman of the sword was not recognized as such unless his family had held this status for at least four generations. The Nobles of the Sword also provided non-military services to the king, holding positions in all branches of government."
  generalites_reform: "Generalites"
@@ -602,7 +602,7 @@ the_holy_office_reform: "The Holy Office"
  corps_diplomatique_reform_desc: "There is no language for more noble and cultured than French. This is why ambassadors, heralds, and diplomats all around Europe don’t use their own language to communicate, but ours instead. Let us establish a Diplomatic Corps that can capitalize on the lingua franca , and send skilled diplomats to every court that seeks our attention."
  bourgeoisie_aristocracy_reform: "Bourgeoisie Aristocracy"
  bourgeoisie_aristocracy_reform_desc: "In the wake of the Hundred Years War and the great plague that followed, many noble estates fell into decline or died out, many others were pawned or sold to the rising bourgeoisie aristocracy, who are eager to expand their influence with noble titles rather then just with personal fortunes."
- 
+
  noble_court_attendance_reform: "Noble Court Attendance"
  noble_court_attendance_reform_desc: "By forcing the nobility to attent our flamboyant court they have to choose between losing face and failing to meet the extravagant lifestyle expected by our royal society or face bankruptcy and lower personal funds to start plots and rebellions."
  abolish_local_parliaments_reform: "Abolish Local Parliaments"
@@ -613,8 +613,8 @@ the_holy_office_reform: "The Holy Office"
  society_of_agriculture_reform_desc: "Louis's controller of finances, Henri Bertin, created a new Society of Agriculture and an Agricultural Committee within the government, comparable to those existing to support commerce. In May 1763, Bertin issued a decree permitting the tax-free circulation of grain without taxes. In August 1764, Bertin permitted the export of grain from twenty-seven French ports, later expanded to thirty-six. At the same time he established a large zone around Paris, where grain was reserved exclusively for feeding the Parisians, and established a cap on the grain price, which, if it was passed, would cause the exports to cease. The policy of freeing grain prices was effective in good years, and resulted in increased trade and lower prices."
  droit_divine_reform: "Droit Divin"
  droit_divine_reform_desc: "We have had our right to rule determined through salic law and justified through the clerical declarations, this will no longer do, our right to rule comes not from the church, but from God Himself."
- 
- 
+
+
  #Newtier
  strenghten_industry_reform: "Strengthen the Industrial Sector"
  strenghten_industry_reform_desc: "With state subsidies and employing the right people, we can efficiently industrialise our state to unheard levels."
@@ -626,9 +626,9 @@ the_holy_office_reform: "The Holy Office"
  conseil_souverain_reform_desc: "Let us focus on trading and supplying the natives in the regions, why bother setting up expensive plantations with the immorality of slavery while we can just trade with the natives in order to aquire all the exotic goods we need."
  continental_system_reform: "Continental System"
  continental_system_reform_desc: "In order to centralize the economic power of the continent, we need to unite and stop our rival's hold on his trade and through a continent wide system of embargos bleed it dry."
- 
- 
- 
+
+
+
  #Ribbitsquad
  eghaevbo_administration_reform: "Eghaevbo Administration"
  eghaevbo_administration_reform_desc: "With the institution of the Eghaevbo n’Ogbe and Eghaevbo n’Ore the further seperation of the royal power and the chiefs was cemented, lowering the influence of the Uzama and increasing the authority of the monarch."
@@ -646,7 +646,7 @@ the_holy_office_reform: "The Holy Office"
  chhetri_clans_reform_desc: "The Khas Rajput nobility of the Gorkha kingdom are invaluable in the adminstartion of our military and conquered regions ensuring our rule for years to come."
  newar_and_gorkhali_reform: "Newar and Gorkhali"
  newar_and_gorkhali_reform_desc: "The dynamic between the savage and powerful Gorkhali and the pacific and industrious Newar made controlling the newly conquered Newar people to ensure peace for the Kingdom of Gorkha."
- 
+
  #1.9
  empowered_free_trade_reform: "Empowered Free Trade"
  empowered_free_trade_reform_desc: "Let us open our markets and remove as many tarifs and barriers as we can, our advisors guarentee its the best way forward."
@@ -663,7 +663,7 @@ the_holy_office_reform: "The Holy Office"
  empowered_royal_guard_reform: "Royal Army"
  empowered_royal_guard_reform_desc: "By Centralizing the army upon our monarch we ensure a strong and loyal force, however by cutting out the middle man we're severely weaking the military infrastructure preventing us from fielding as large an army as our rivals."
 
- 
+
  captain_and_defender_reform: "Captain And Defender of Liberty"
  captain_and_defender_reform_desc: "Let us elect a council of captains and defenders of liberty to rule us and guarentee the maintainance of the republic. Also ensure the possibility to invite famous generals to our cause by offering them the head of the council and offering them power in trade for their support and leadership."
  legacy_of_st_ambrose_reform: "Legacy of Saint Ambrose"
@@ -688,24 +688,24 @@ the_holy_office_reform: "The Holy Office"
  metsuke_system_reform: "Metsuke System"
  metsuke_system_reform_desc: "The power the shogun wields always hangs on a delicate balance, and to maintain it we have to look far and act closely on our fellow countrymen, lest they try to pull something unspeakable to us. We must uphold a system of constant surveillance and intelligence gathering, to always act before the strikes."
  recruit_ronin_reform: "Recruit Ronin"
- recruit_ronin_reform_desc: "A samurai who lost his lord learns to serve not people, but money. As long as they live, these hardened fighters will never swear loyalty to any other ruler, choosing instead to risk their lives for survival and a chance to redeem themselves through battle—and to meet their masters with honor.  Let us recruit these brave wanderers into our ranks and give them the fight they deserve." 
+ recruit_ronin_reform_desc: "A samurai who lost his lord learns to serve not people, but money. As long as they live, these hardened fighters will never swear loyalty to any other ruler, choosing instead to risk their lives for survival and a chance to redeem themselves through battle—and to meet their masters with honor.  Let us recruit these brave wanderers into our ranks and give them the fight they deserve."
  ashigaru_generals_reform: "Ashigaru Generals"
  ashigaru_generals_reform_desc: "After many decades of war, the might of one skilled samurai lord, while formidable, paled in comparison in the face of organized armies with matchlock firearms—tanegashimas. Their efficiency lied on their strict formation and ability to stand still in enemy fire range while delivering shots themselves. By accepting these people into our higher ranks, we can bolster the might of our army several times over."
  reestablish_the_kuge_reform: "Re-establish the Kuge"
  reestablish_the_kuge_reform_desc: "With the rise of the buke, or warriors who swore loyalty to the shogunate, the kuge were thrown into the shadows. This class of court officials, art patrons and dexterous commoners is especially adept in the know-how of ruling a country. The way of the warrior may be honourable, but a country that knows only war will end in war. Let us reestablish these officers into the Court."
- 
+
  elevated_landed_gentry_reform: "Elevated Landed Gentry"
  elevated_landed_gentry_reform_desc: "The Superior Man is aware of Righteousness, the Inferior Man is aware of profit. Our empire spans six-thousand li, and it stretches far much more than what the sharpest eyes can see. We require something essential: wisdom and knowledge from every subject to rule effectively. We shall let our Xiangshen, our erudite rural gentry, who are proficient in Confucius’ teaching to enlighten our and care for our countryside."
  imperial_examination_reform: "Imperial Examination"
  imperial_examination_reform_desc: "To find talent, one must be prepared to search for it. A national examination can maximize our chances of finding any genius that resides in our court and bring him over. The topics of these exams shall conform to our doctrines and thoughts, so an intellectual spend his entire life serving our monarch is less likely to have dissident thoughts."
  wei_suo_reform: "Wei-Suo System"
  wei_suo_reform_desc: "To guarantee proper manpower for its wars, previous dynasties relied on a system where one family member per household was chosen for battles, if that person died, another one would take its place. This came at the Cost of low discipline for their troops, but in return, much needed replaceability. When Zhu Yuanzhang formed Ming, he designed a society that everyone could stay in their ancestral careers. This was in hope of a low-Cost army of many men who could also fulfill their agricultural duties."
- 
+
  snaphaner_reform: "Employ the Snaphaener"
  snaphaner_reform_desc: "Snaphanerne (The Quickshots) were the Scanians who refused integration into Sweden when conquered from Denmark. With the noble power broken in this region, let us hire these excellent riflemen and use their fiery spirit of independence for our own Kingdom."
  kingdom_of_jerusalem_reform: "Kingdom of Jerusalem"
  kingdom_of_jerusalem_reform_desc: "The Kingdom of Jerusalem was first established in 1099. Being the most prestigious of the Crusader Bastions, it enjoys the divine favor of the Holy Father as well as inspires the crusaders to go above and beyond in the battlefield. A Bastion of Christianity in the Middle East, the Kingdom often struggled with local neighbors however it often persevered through sheer strength of faith."
- 
+
  #1.10
  caucasian_republic: "Caucasian Federation"
  caucasian_republic_desc: "After decades of warfare and strife, the ancient lands of Caucasia are united, finally free of political query and combat. The time is nigh to proclaim ourselves as the legitimate rulers of all of Caucasia. We shall form a federation of Caucasian states, allowing regional representation to all subjects."
@@ -723,9 +723,9 @@ the_holy_office_reform: "The Holy Office"
  empowered_principle_of_profit_reform_desc: "The merchants are what funds and sustains our republic, we should let them dominate our economic policy so that we enjoy the ease of loans and let the trade flow into our coffers."
  empowered_principle_of_power_reform: "Empowered Principle of Power"
  empowered_principle_of_power_reform_desc: "Let us increase the reign of our rulers and smooth over the re-election process. it might cause some unrest among the more republican types among us, but its for the good of stability of the republic."
- 
+
  #^^^^^Remember to Spoil these guys^^^^^#
- 
+
  turkic_qasilbash_heirs_reform: "Turkic Qasilbash Heirs"
  turkic_qasilbash_heirs_reform_desc: "The heirs of the Turkoman Qasilbash military forces are excellent stock for the noble positions of power in our lands. Their military background and fanatic devotion to the Shi'ite cause is sure to serve us well."
  tajik_administration_reform: "Tajik Administration"
@@ -740,7 +740,7 @@ the_holy_office_reform: "The Holy Office"
  armenian_silk_traders_reform_desc: "By resettling many of the trade centers on the silk road with captive Armenians Abbas secured both the pacification of the region, as well as the repopulation and prosperity of the silk road, because as we all know, the silk must flow."
  principle_of_fiqh_reform: "Principle of Fiqh"
  principle_of_fiqh_reform_desc: "By dividing the powers of civil and criminal justice we can ensure that civil matters are handled by the imams and judges of law, following the Islamic Sharia Law. While the Criminal Law is executed by our local governors in the name of the Shah, granting the people the freedom to be judged under the true faith, but making sure that criminal justice remains a powerful tool in the hands of the Shah to maintain order and secure his power."
- 
+
  grand_council_reform: "Grand Council"
  grand_council_reform_desc: "The Grand Secretariat of the Ming is no longer useful for us. Military decisions require quick, precise thinking, and the system at hand provides neither. Let us make an Inner Council in the Forbidden City to safeguard our secret military meetings and come to a quick resolution."
  grand_secretariat_reform: "Grand Secretariat"
@@ -753,7 +753,7 @@ the_holy_office_reform: "The Holy Office"
  absolutist_administration_reform_desc: "When the Hongwu Emperor was alive, he hoped to create a stable society with submissive subjects. Such an Empire needs to be led by a strong and benevolent son, not a group of literati."
  permanent_regency_reform: "Permanent Regency"
  permanent_regency_reform_desc: "Taoism believes that a great monarch rules well by doing nothing. To do so, he must retreat behind the scenes and hand over political affairs to the First and Second cabinets, as well as civil literary scholars who are not only capable in confucian classic, but also ambitious."
- 
+
  sharifate_reform: "Sharifate"
  sharifate_reform_desc: "Akin to European feudal nobility, Ashraf were essentially wealthy, hereditary landowners, but differed in their methods of rule. Sharifates were highly centralized around religious centers such as Mecca or Medina, and thus ruled with a heavy dependency on theological principles, with heavy emphasis on Islamic law and punishment."
  sayyid_privileges_reform: "Sayyid Privileges"
@@ -764,7 +764,7 @@ the_holy_office_reform: "The Holy Office"
  sherifan_levies_reform_desc: "Ashraf, wealthy landowners that they are, have access to swathes of peasants, though until recent years these peasants have been more than occupied tilling the dry, cracked earth to grow whatever meager crops could manage. Agricultural technology has lifted much of the burden off of the peasantry, allowing Ashraf to draw upon them for our army."
  highborn_ministers_reform: "Highborn Ministers"
  highborn_ministers_reform_desc: ""Sharifan administrators are in high demand, but very few are available to alleviate the burdens of governance. By opening up governing positions to all descendants of Muhammad, we would effectively increase the labor available for our efforts."
- 
+
  timariot_domains_reform: "Timariot Domains"
  timariot_domains_reform_desc: "The Timariot was a warrior elite that composed the aristocracy of conquered Ottoman lands. They were akin to European nobility in the fact that they were expected to maintain the land they were given in times of peace, and contribute soldiers and rations to the government in times of war. However, they did not legally own this land, instead deriving their legitimacy completely from the Padishah."
  qadi_authority_reform: "Qadi Authority"
@@ -779,10 +779,10 @@ the_holy_office_reform: "The Holy Office"
  caravanserai_reform_desc: "Though we inherited the Caravanserai system from the Seljuks, the system has fallen into decay at the hands of revolt destroying infrastructure. As the Silk Road decays in favor of the Indian Ocean Route, so too do the Caravanserai. We must invest in this dwindling industry and revive it."
  tanzimat_reforms_reform: "Tanzimat Reforms"
  tanzimat_reforms_reform_desc: "The Tanzimat Reforms focused on a progressive, western view on governance. Spearheaded by the Young Turks, it never truly took hold until the late 1800s. Whilst in effect, the constitution slowly centralized power, despite limiting some governmental processes. It truly appeased both the people and government officials. Guarenteeing civil rights and liberties for everyone, allowing non-muslims into the military and bringing education and modernization into the traditionalist Ottoman lands."
- 
+
  rum_eagle_reform: "Rumi Government"
  rum_eagle_reform_desc: "Decades of administering vast lands under Egyptian and Mamluk governors have certainly opened our horizons in matters of administration. Exposure to the Mamlukean bureaucracy has given the edge to our Pashas and Sultan in order to reform the entire beaurocratic body, thus paving the way for a new form of government."
- 
+
  #1.11
  hermit_kingdom_reform: "Hermit Kingdom"
  hermit_kingdom_reform_desc: "During the rule of Joseon dynasty, Korea wasn't an expansionist state. In the five centuries of its rule, Korea has only expanded up to the Changbai §YMountains§! and conducted no other major expansionist operations that resulted in significant territorial gains."
@@ -804,7 +804,7 @@ the_holy_office_reform: "The Holy Office"
  five_military_force_reform_desc: "With growth of Joseon, and the states around it, the former defense system is not going to provide enough safety. This is why, Five Military Force is to be established, and with it, a Drilled Standing Force armed with matchlocks would replace the cavalry-focused army. These regiments would later become famous for their elite skills."
  korean_bureaucracy_reform: "Korean Bureaucracy"
  korean_bureaucracy_reform_desc: "The Joseon State has always been a bureaucratic state. The government is highly centralized and is enrooted deeply in bureaucratic absolutism. This government type allowed the dynasty to flourish, and it should not be abandoned."
- 
+
  kiwi_support_reform: "Kiwi Support"
  kiwi_support_reform_desc: "The Kiwi's were traveling merchants in the malay region, sending goods across the sultanates through limited partnerships and hiring capacity from captains. By encouraging these practices and enforcing the 'Undang Undang Laut Melaka' we can increase the amount of trade in our empire and the amount of goods that reach our markets!"
  consulate_of_the_malay: "Undang Undang Melaka"
@@ -813,12 +813,12 @@ the_holy_office_reform: "The Holy Office"
  restore_the_komnenoid_army_reform_desc: "Alexios I Komnenos' military reforms saved the empire from onslaught of Normans and Turks. Under Komnenoi Emperors, the Empire saw increasing professionalization and an influx of foreign mercenaries ranging from nomadic warriors and Anglo-Saxon infantry. A professional army allowed the empire to compete with the enemies that outnumbered it, and the mercenaries who had no interest in local politics, took direct orders from the Emperor and no one else, thus giving the emperor a large advantage in quelling internal conflicts. The army also became adaptive to facing different type of foes, such as arming Imperial Cataphracts with long lances to counter Turkish cavalry and Norman knights."
  roman_senate_reform: "Roman Court"
  roman_senate_reform_desc: "The Roman Senate was the most enduring institution in Roman History. It was established during the first days of city of Rome and it survived the overthrow of the kings, the fall of the Roman Republic, the division of the Roman Empire, the fall of the Western Roman Empire, and later incursions into eastern Empire and Constantinople, which became the home of senate after fall of Rome, established by Constantine I in 4th century. The Senate survived until the disgraceful fourth crusade, even though its powers were waning before that. It’s time revive the senate and modernize it, so that it can serve our empire like it always has."
- 
+
  junker_class_reform: "Junker Class"
  junker_class_reform_desc: "Let us empower the junker class to support our reign. This class of lower nobility is strong enough to form a powerfull base against the magnates, burghers and clergy. And from this base we shall dominate our enemies foreign and domestic."
  mint_towns_reform: "Mint Towns"
  mint_towns_reform_desc: "Mint Towns were considered the backbone of the economy of the Bengal Sultanate. These towns were usually important centers of trade or provincial capitals at which Taka coins were produced, hence the name Mint Towns. These coins depicted the status of the Bengali economy, the urban and administrative centers of the country, and were generally used as a form of currency. These towns were scattered all across the Bengali realm and played a pivotal role in its production of Taka coins and in administrating the growing kingdom."
- 
+
  order_of_the_dragon_reform: "Order of the Dragon"
  order_of_the_dragon_reform_desc: "The Order of the Dragon was established by Sigismund of Luxembourg, King of Hungary in 1408, and was a highly prestigious knightly order which sought to fight the enemies of Christianity, and specifically to drive the ottoman turks from the Balkans and Asia Minor. As patron of this order, our rallying cry can raise armies, even crusades to crush the enemies of Christ!"
  levy_the_thirthieth_reform: "Levy the Thirthieth"
@@ -827,7 +827,7 @@ the_holy_office_reform: "The Holy Office"
  decretum_maius_reform_desc: "By weakening the noble privileges and strenghtening the royal magistrates, we can reduce the amount of local leeway and immunities locals have, and bring it in line with our national laws and privileges! The Decretium Maius provides our magistrates with the authority to bring such misdeeds to light and with protection from vengeful nobles angered by this uncovering of abuse and unjust privileges. It is rumored our monarch even takes this job upon himself, disguising himself as a magistrate to root our corruption himself."
  tripartum_reform: "Tripartum"
  tripartum_reform_desc: "The Tripartum was a core part of the legal corpus of hungary after the Diet of 1514, where the nobles, disgruntled after a series of strong and domineering kings seized power and created a government where the executive power was split equally between the Nobles and the King. In Addition, the nobles did not need to serve in the kings armies unless the kingdom came under attack from a foreign nation. As well as granting them grant legal privileges for their own domains."
- 
+
  state_temple_harmonization_reform: "State Temple Harmonization"
  state_temple_harmonization_reform_desc: "The grand temples of our nation have been brougth into harmony with the crown. A more crass King would look only to their wealth, while we see the possibilities for administering an ever more expanding empire."
  enlightened_ethical_teachings_reform: "Enlightened Ethical Teachings"
@@ -850,7 +850,7 @@ the_holy_office_reform: "The Holy Office"
  basic_reformed_mandala_reform_desc: "We learned the lessons of our fallen predecessors.  We now station garrisions throughout our empire, create stronger ties between our governors and the capital.  We often host the children and relatives of important Suzerain and governors at the Royal palace."
  solar_kingdom_reform: "Reformed Solar Kingdom"
  solar_kingdom_reform_desc: "The crown completely replaced the hereditary chieftainships with appointed governorships in the entire Irrawaddy valley, and greatly reduced the hereditary rights of Shan chiefs. It also reined in the continuous growth of monastic wealth and autonomy, giving a greater tax base. Its trade and secular administrative reforms built a prosperous economy for the future."
- 
+
  despotate_of_serbia_reform: "Despotate of Serbia"
  despotate_of_serbia_reform_desc: "After the fall of the Serbian Empire the despotate of Serbia rose from the ashes to unite and defend as much of their formerly held lands from the Ottoman Turk menace. While nominally a Byzantine subject, in practice this was primarily used as a governmental basis and a source of legitimacy. This didn't stop them from aligning with, and militarily supporting, the Ottomans or the Hungarians depending on what was advantageous."
  serbian_empire_reform: "Serbian Empire"
@@ -861,11 +861,11 @@ the_holy_office_reform: "The Holy Office"
  form_the_vojstatic_reform_desc: "Following the collapse of the Serbian Empire, the Despotate in its rough lands had a much reduced pool of wealth and manpower, to maintain combat effectiveness against the Turks and Hungarians we will create the Vojstatic. This modern, cannon equipped standing army raised from our own citizens shall defend our castles and cities from any invaders. Further strenghtened by numerous mercenary companies."
  grand_logothete_reform: "Grand Logothete"
  grand_logothete_reform_desc: "Originally a position adopted from the Byzantine Empire, the Grand Logothete held a dualist position as both the chief chancellor of the Serbian Empire and the Serbian Despotate, as well as the second highest authority of matters of the Serbian Orthodox Church."
- 
+
  #1.13
  empowered_imperial_circles_political_reform: "Empowered Imperial Circles"
  empowered_imperial_circles_political_reform_desc: "The Imperial Circles were originally military organizations to form the divisions of the imperial armies. Later they became tools for efficient taxation and division, now let us complete the unification by politically uniting our Imperial Circle!"
- 
+
  kingdom_of_sicily_reform: "Kingdom of Sicily"
  kingdom_of_sicily_reform_desc: "The Traditions and Laws of the Normans were used as the foundation of the Kingdom of Sicily, further formalized under the German Hohenstaufen dynasty into a highly centralized and absolute monarchy. Upon supporting Antipope Anacletus ll against Pope Innocentus ll, Ruggeru ll was crowned king the new Kingdom of Sicily."
  angevin_nobles_reform: "Confirm Angevin Nobles"
@@ -884,7 +884,7 @@ the_holy_office_reform: "The Holy Office"
  almogavars_reform_desc: "The heirs of the bloody reconquista are ready to pick up their arms to join yet another bloody struggle against the heretics, heathens or the enemies of any that pay them. Following the end of the peninsular reconquista they spread out over the Mediterranean in search of loot and stable employment, let us hire these ruthless veterans and fortune seekers for our wars."
  milizia_nationale_reform: "Milizia Nationale"
  milizia_nationale_reform_desc: "Who fights better?, a soldier fighting for his pockets, or a soldier fighting for his prince, land and family!. Let us rely on the strenght of our own arms, our own sons and our own banners instead!."
- 
+
  feudal_levies_reform_republic: "Feudal Levies"
  feudal_levies_reform_republic_desc: "Our military should rely on our feudal subject's contributions. In addition to strengthening our subject's loyalty, we need to increase their military cooperation with their overlord. This will give us a wider selection of recruits."
  mercenary_corps_reform_republic: "Mercenary Corps"
@@ -917,10 +917,10 @@ the_holy_office_reform: "The Holy Office"
  krums_code_reform_desc: ""While we admire our Christian and Slavic culture, the history of Bulgaria is much more confusing than that, we were once ruled by Khans, one particular Khan, Krum, created the first Bulgarian Written Law,  abiding by his code, we would give subsidies to beggars and state protection to the poor, while severely punishing the criminals of Bulgaria""
  drastic_control_of_the_boyars_reform: "Drastic Control of the Boyars"
  drastic_control_of_the_boyars_reform_desc: "The Boyars have been an integral part of our country's history for a long time, sadly as the years pass , it has become more and more evident that reforms are necessary. It is not uncommon, that boyars think about revolting against the rightful ruler of Bulgaria, blinded by greed and power. We will take control of some of their land and repurpose it for the benefit of Bulgaria!"
- 
+
  united_holy_roman_empire_reform: "Sacrum Imperium Romanum"
  united_holy_roman_empire_reform_desc: "Not Holy, Not Roman, But one HELL of an empire."
- 
+
  vladislavs_provincial_establishment_reform: "Vladislav's Provincial Establishment"
  vladislavs_provincial_establishment_reform_desc: "Written during the Bohemian wars, this code of laws was the first to codify the Bohemian state law, it determined that royal cities are direct subjects to the king. And placed the nobles above cities in legal matters. Most of the 554 articles of the code pertained to the privileges of the nobility, which severely limited the monarchs influence and jurisdiction."
  german_aristocracy_reform: "German Aristocracy"
@@ -929,7 +929,7 @@ the_holy_office_reform: "The Holy Office"
  restored_land_establishment_reform_desc: "Following the end of the civil war over the Czech rebels on White Mountain, the King of Bohemia and Margrave of Moravia Ferdinant the second issues the decree to restore law and order, as well as the supremacy of the crown over the lands of the Bohemian Crown. Furthermore the legal status of the nobility was depricated to it being secondary to the clergy in the state assembly."
  hussite_reform: "Codify Hussite Doctrine"
  hussite_reform_desc: "'The Four Articles of Prague' were the core tenents of the ultraquist beliefs, and were summarized the following way: \n 'Freedom to preach the word of god' Allowing non-clergy to debate theology without fear of being branded a heretic. \n 'Communion under both kinds', Communion with both bread and wine, so everyone is treated with the same spiritual doctrine as the clergy. \n 'Poverty of the Clergy', That the Clergy is not supposed to hold significant worldly possessions. \n 'Punishment for mortal sins regardless of statue', Your title and possessions will not protect you from earthly or divine justice."
- 
+
  strenghten_the_haeren_reform: "Strenghten the Hæren"
  strenghten_the_haeren_reform_desc: "The Hæren, also known as Royal Danish Army, was founded in 1614, in the wake of the Kalmar War. It was designed to maintain Denmark's sovereignty, prevent conflicts and boost Denmark's position as a great power and protect her interests. By extending drafting to all of our subjects, and not just Danes, we can encourage all of them to join ranks in defense of Denmark, because they would be defending their interests as well as Denmark's."
  danske_besiddelser_reform: "Danske Besiddelser"
@@ -953,7 +953,7 @@ the_holy_office_reform: "The Holy Office"
  inti_huaca_regionalism_reform_desc: "The regional shrines and traditions must be respected and integrated into our wider pantheon, for while we know the truth of the Sun God, we can not risk the wrath of minor gods by destroying their places of worship. By adding them to our national system of altar maintenances and tributes we can ensure their maintenance and skim off the top."
  nunziatella_reform: "La Nunziatella"
  nunziatella_reform_desc: "the 'Reale Accademia Miliare', or Royal Military Academy of the Kingdom of the Two Sicilies is an educational institute with an exceptional track record. Its scions and students make up the bulk of our kingdom's command staff. Granted the nickname of 'La Nunziatella' following the movement of the Academy to an ancient jesuit college, incorporating the baroque 'Church of the Nunziatella'."
- 
+
  #1.14
  duchy_of_luxembourg_reform: "Duchy of Lëtzebuerg"
  duchy_of_luxembourg_reform_desc: "Created by the Holy Roman Emperor in 1354, the county of Letzebuerg was elevated to the status of a duchy, empowering Wenceslaus of Luxembourg by absorbing neighbouring margraviates and counties, growing in both size and prestige. The new duchy would later give rise to multiple emperors!"
@@ -965,7 +965,7 @@ the_holy_office_reform: "The Holy Office"
  hof_van_brabant_reform_desc: "The 'Hof van Brabant' was the name given to the Southern Netherlands following the secession of the 'Unie van Utrecht' whereby the Northern protestant provinces became independent. Its courts became overwhelmingly Catholic and filled with artists and writers."
  army_of_flanders_reform: "Army of Flanders"
  army_of_flanders_reform_desc: "The Army of Flanders is a mercenary army comprised of Italian condotierre, Spanish criminals, German princely forces and Walloon levies. This army is infamous for its size, plundering and for its loyalty to be completely dependent on whether or not the months pay arrived on time."
- 
+
  common_republic_reform: "Common Republic"
  common_republic_reform_desc: "After a great lot of struggle and effort these courageous peasants have gained a bit of Influence after fighting their oppression, it is now up to our Ruler to decide how to continue. But we must be careful lest they take an entire hand when we offer a finger.."
  representative_electors_reform: "Representative Electors"
@@ -974,7 +974,7 @@ the_holy_office_reform: "The Holy Office"
  emirate_of_andalusia_reform_desc: "The Emirate of Andalucia was the state that ruled Al-Andalus, and was a cultural and religious empire established during the initial expansion of the caliphate, before becoming independent under its own rival caliph. It was famed for its wealth, tolerance and religious significance, with jews, christians and muslims co-existing and flourishing!"
  kreditwerk_reform: "Reformed Kreditwerk"
  kreditwerk_reform_desc: "In the mid-16th century, the margraves of Brandenburg had become highly dependent on the estates (counts, lords, knights and towns).The margraviate's liabilities and tax income as well as the margrave's finances were controlled by the Kreditwerk, an institution not controlled by the elector, and the Großer Ausschuß 'Great Committee' of the estates."
- 
+
  #1.15
  city_privileges_reform: "City Privileges"
  city_privileges_reform_desc: "Let us improve the position of the cities by allowing them to develop themselves and become major centers of commerce!"
@@ -992,19 +992,19 @@ the_holy_office_reform: "The Holy Office"
  expand_the_trans_saharan_trade_reform_desc: "To maintain our trade balance with the european powers we should increase the flow of gold that comes north across the Sahara. through the establishment of outposts along the way, merchant privileges across the Sahara and by aligning the local tribes we can stabilize and expand these trade routes!."
  nomad_councils_reform: "Noble Councils"
  nomad_councils_reform_desc: "With the continued interference of the Berber and Bedouin tribes into the political and social life of our nation, we are forced to bring them to the councils and try to integrate them into our government in order to disarm them."
- 
+
  tribal_tribute_reform: "Tribal Tribute"
  tribal_tribute_reform_desc: "In order to pacify the inland Berber and Bedouin tribes and prevent them from destabilizing our realm, we will shower them with gifts and titles! This way any insurgency will get stopped by those that gain more from our continued patronage and will not risk their comfortable positions."
  exiled_qaids_reform: "Exiled Qaids"
  exiled_qaids_reform_desc: "By granting exiled European Christians the position of qaid, or governor, we can ensure they remain loyal to us, for we guarentee their position. And distrust of the Europeans will ensure they will not be able to form permanent bonds."
  italian_merchants_reform: "Italian Merchants"
  italian_merchants_reform_desc: "Piracy and hostility will only weaken our state and relations, By inviting Italian merchants to our court and through granting them right of free passage and export rights we can send our plentyfull grain across the mediterean and bring fortune and prestige to our bountifull nation."
- 
+
  office_of_kanzler_reform: "Office of Kanzler"
  office_of_kanzler_reform_desc: "Centuries ago, monks used to work in the Wurttemberger court. They handled the documents, legal obligations and preside over local affairs or disputes. By re-establishing this position of the so called 'Kanzler' or Chancellor we can use the best and brightest of our realm to help us bring prosperity and justice to our people."
  bedouin_reserves_reform: "Bedouin Reserves"
  bedouin_reserves_reform_desc: "The Bedouin tribes have long since been our allies and reserves, even when our armies have been crushed and our cities taken. We have been able to rely on them to supply us with the manpower needed to rally new armies and retake our lands or hold out in the vast deserts depending on how the war goes."
- 
+
  kingdom_of_cities_reform: "Kingdom of Cities"
  kingdom_of_cities_reform_desc: "With Arabia being so short on towns and farms, the city of Hormuz conquered many of the Arabian coastal cities and islands to create a wide web of small territories spread over a large area. This caused the administrative centers to be very easy to identify and control."
  diamond_of_the_earth_reform: "Diamond of the Earth"
@@ -1037,7 +1037,7 @@ the_holy_office_reform: "The Holy Office"
  farari_commanders_reform_desc: "Farari, or brave men, were cavalry captains that led a company of cavalry and directed several companies of infantrymen during campaigns and battles. These infantrymen, led by a 'Kele-koun', or war-heads, were freemen equipped by their local custom or by their commander in case of poverty."
  gbara_reform: "Gbara"
  gbara_reform_desc: "The 'Gbara', or Great Assembly, functioned as the deliberative body following the foundation of the Mali empire by Sundiata Keita. With 32 seats for representatives from 29 clans, and spread over four factions. It was a highly diverse and capable advisatory organ."
- 
+
  national_principle_reform: "Nationalist Principle"
  national_principle_reform_desc: "The guiding principle of our nation should be the preservation of our people and securing a future for our culture in these tumultuous times. A strong army is neccesary to guarentee this!"
  one_man_one_vote_reform: "One Man One Vote"
@@ -1046,7 +1046,7 @@ the_holy_office_reform: "The Holy Office"
  supreme_court_reform_desc: "By establishing a supreme court to oversee our government and hold them to the laws of our nation, we can ensure that the government never becomes tyranical, and that the laws of our nation are upheld. Even in the face of disaster, upheaval or despair."
  cultural_judges_reform: "Cultural Judges"
  cultural_judges_reform_desc: "By granting judistical powers to the judges from our capital to spread our law to the borderlands we can ensure that our traditional laws will be accepted across the lands."
- 
+
  generic_nobles_priests_reform: "Enshrine Clerical Influence"
  generic_nobles_priests_reform_desc: "Through the enshrinement of clerical powers in our state we can ensure the support of the clergy where we need it. Furthermore it creates a bond between the royal goal of teaching the peasants to respect us, and the clerical goal of teaching them to respect the divine. This symbiosis will prove to be a fertile soil for the stability and prestige of our realm."
  inca_mountain_farms: "Terrace Farms"
@@ -1145,7 +1145,7 @@ the_holy_office_reform: "The Holy Office"
  mechanic_enables_return_to_sender_yes: "Return to Sender: §G+25%§! Trade Value in coastal Burgher Estate provinces."
  mechanic_enables_attracting_academics_yes: "Hansa Academics: §G+12.5%§! Innovativeness Gain for every 20 prestige. Up to a maximum of §G50%§! Innovativeness Gain."
  mechanic_enables_military_exports_yes: "Military-Industrial Complex: §G2%§! Goods Produced per 10% Army Professionalism.  Up to a maximum of §G20%§! Goods Produced."
- 
+
  mechanic_enables_officers_of_the_sword_yes: "Officers of the Sword: §G+1§! Prestige if you have over 50 Army Tradition."
  mechanic_enables_feudal_receipts_yes: "Feudal Receipts: §G+25%§! Tax in your vassals."
  mechanic_enables_abolish_noble_exception_yes: "Abolish Noble Exception: Remove the Tax Penalty in Noble Provinces."
@@ -1159,7 +1159,7 @@ the_holy_office_reform: "The Holy Office"
  mechanic_enables_swiss_guard_yes: "Swiss Guards: §G+5%§! Infantry Combat Ability if you have a Swiss ally or subject."
  mechanic_enables_royal_nobles_yes: "Royal Court: 'Call Diet' gives §G+10§! Legitimacy and §G+5§! Absolutism."
  mechanic_enables_society_of_agriculture_yes: "Society of Agriculture: §G+10%§! Production Efficiency and §G+10%§! Trade Value in Stated Provinces with Basic Goods."
- 
+
  mechanic_enables_industrialism_yes: "Fires Of Industry: §G+0.2§! Goods produced in provinces with Workshops. §G+0.4§! Goods produced in provinces with Counting Houses."
  mechanic_enables_home_market_yes: "Home Market: §G+1.5%§! Trade Efficiency for every 10% Merchantilism.  Up to a maximum of §G15%§! Trade Efficiency."
  mechanic_enables_rural_Development_yes: "Rural Development: §G+500§! Base Manpower in Noble Estate Provinces under §Y10§! Development."
@@ -1168,12 +1168,12 @@ the_holy_office_reform: "The Holy Office"
  mechanic_enables_royal_domain_yes: "Royal Domain: §G+10%§! Tax and §G+10%§! Manpower in Non-Estate State provinces."
  mechanic_enables_corvee_yes: "Corvee: §G+10%§! Production Efficiency and §G+10%§! Manpower in Clergy and Noble Estates."
  mechanic_enables_royal_army_garrisons_yes: "Royal Army Garrisons: §G+100§! Base Manpower in every Non-Estate State province."
- 
+
  mechanic_enables_sforza_yes: "Captain and Defender: Allows us to elect a condottieri general as Captain and Defender for a lifetime."
  mechanic_enables_veche_parties_yes: "Veche Parties: Enables bribes during Elections and guarentees powerful leaders."
  mechanic_enables_hansa_ties_yes: "Republican Inspiration: §G+0.1§! Republican Tradition for every ally or subject republic you have. Up to a maximum of §G0.5§! Yearly Republican Tradition."
  mechanic_enables_princes_of_novogorod_yes: "Princes of Novogorod: "Invite a Prince to lead the republican forces."
- 
+
  mechanic_enables_roman_empire_yes: "Co-Emperorship: Elect a Co-Emperor to assist your rule."
  mechanic_enables_noble_knights_yes: "§GIF:§! you have §YAristocratic Ideas§!: Gain §G5%§! Shock Damage."
  mechanic_enables_caucasus_candidates_yes: "Caucasus Republic: Elect a suitable ruler from among the Caucasus peoples."
@@ -1181,7 +1181,7 @@ the_holy_office_reform: "The Holy Office"
  mechanic_enables_absolute_reelection_yes: "Absolute Mandate: §G+2§! Absolutism when you Re-elect a ruler."
  mechanic_enables_knightly_privileges_yes: "Knightly Privileges: Unlocks 'grant Knightly Privileges' Noble Estate Interaction."
  mechanic_enables_long_reign_yes: "Powerful Reign: After 10 years of ruling, your ruler gains §G-1§! Unrest and §G-25%§! Stability Cost modifier until the end of his reign."
- 
+
  mechanic_enables_eastern_courts_yes: "Heavenly Court: choose between loyalists and incorruptible courtiers upon ruler ascention."
  mechanic_enables_qing_court_yes: "Qing Council : choose the size of your council upon ruler ascention."
  mechanic_enables_custodian_of_cities_yes: "Custodian of the Cities: §G+1§! Prestige if you control both Mecca and Medina, lose §R-2§! prestige and §R-1§! legitimacy if you do not."
@@ -1193,9 +1193,9 @@ the_holy_office_reform: "The Holy Office"
  mechanic_enables_koprulu_dynasty_yes: "Koprulu Viziers: Allows your vizier to focus on an area every 25 years."
  mechanic_enables_public_works_yes: "Public Works: §G-10%§! Local Development Cost and §G-2§! Unrest in provinces with a Courthouse."
  mechanic_enables_caravanserai_yes: "Fortified Trade Posts: §G+5§! Trade power in Centers of Trade with Forts."
- 
+
  #GE 1.12
- 
+
  mechanic_enables_kiwi_support_yes: "Kiwi Support: §G+5%§! Ship Trade Power for each merchant you have. Up to a maximum of §G50%§! Ship Trade Power."
  mechanic_enables_rajput_law_yes: "Rajput Law: §G-2§! Unrest and §G+10%§! Manpower in every province owned by the Rajput Estate."
  mechanic_enables_marcher_lords_yes: "Marcher Lord Privileges: Your non-colonial subjects get §G+25%§! Land Force Limit Modifier and §G+25%§! National Manpower Modifier."
@@ -1214,11 +1214,11 @@ the_holy_office_reform: "The Holy Office"
 
  #GE 1.13
  mechanic_enables_mint_towns_yes: "Mint Towns: §G-25.0%§! state maintenance Cost in 20+ Development provinces."
- 
+
  mechanic_enables_salt_monopoly_yes: "Salt Monopoly: §G+25%§! Goods Produced and Trade Value in salt and naval supplies provinces."
  mechanic_enables_masked_monarch_yes: "Masked Monarch: §G-0.10§! Corruption during peacetime."
  mechanic_enables_noble_service_yes: "Noble Service: §G+33%§! Manpower and §G+10%§! Morale while in a defensive war."
- 
+
  mechanic_enables_religious_adherence_yes: "Religious Adherence: §G+250§! Base Manpower in provices of your religion with temples."
  mechanic_enables_holy_lhasa_yes: "Holy Lhase: §R+2§! Unrest if Lhasa is not vajrana."
  mechanic_enables_people_under_tengri_yes: "People Under Tengri: §G+500§! manpower and §R-2§! Unrest in Tengri Steppe provinces."
@@ -1244,16 +1244,16 @@ the_holy_office_reform: "The Holy Office"
  mechanic_enables_veteran_general_yes: "Veteran Generals: Unlock the 'Noble Officers' Privilege for the nobility, Giving excellent generals every 20 years."
  mechanic_enables_veteran_general: "Veteran Generals"
  mechanic_enables_bear_arms_yes: "Bear Arms: Unlocks the 'Right to Bear Arms' Privilege for the peasants, Giving higher combat efficiency but more dangerous revolts."
- mechanic_enables_imperial_circle_yes: "Representative of the Circle: §G+0.5§! Diplomatic Reputation for each HRE prince under your control, up to a maximum of §G2.5§!." 
+ mechanic_enables_imperial_circle_yes: "Representative of the Circle: §G+0.5§! Diplomatic Reputation for each HRE prince under your control, up to a maximum of §G2.5§!."
  mechanic_enables_fire_ghulams_yes: "Expand the Ghulam Corps: Unlocks the 'Expand the Ghulam Corps' Privilege for the Ghulams for additional land fire damage."
  mechanic_enables_ghulam_governors_yes: "Ghulam Governors: Unlocks the 'Ghulam Governors' Privilege for the Ghulams for reduced autonomy."
  mechanic_enables_silk_traders_yes: "Armenian Silk Traders: get a §G+15%§! Trade Efficiency bonus if you are trading in silk."
- 
+
  mechanic_enables_liber_augustalis_yes: "Liber Augustalis: Increase each estate's Loyalty Equilibrium by §Y5%§! while your legitimacy is over §Y90%§!."
  mechanic_enables_customs_house_yes: "Customs House: §G+25%§! Goods Produced in Wool and Cloth provinces."
  mechanic_enables_mary_of_the_purity_yes: "Mary of the Purity: §G-0.025§! yearly corruption per Tolerance of the True Faith over 5 up to a maximum of §G-0.10§!."
  mechanic_enables_fury_of_the_reconquista_yes: "Fury of the Reconquista: §G+2.5%§! Mercenary Discipline and §G+5%§! Morale of Armies while at war with Heretics or Heathens."
- 
+
  mechanic_enables_republican_guard_yes: "Guardians of the Republic: §G+3%§! Infantry Combat Ability and §G+4%§! Manpower Recovery Speed for every §Y10§! Republican Tradition over §Y50§!."
  mechanic_enables_four_articles_yes: "Four Articles of Prague: Unlocks the 'Four Articles of Prague' Privilege for the Clergy, which modifies tolerance."
  mechanic_enables_white_knights_yes: "Noble Knights: Unlocks the 'Noble Knights' Privilege for the Nobility, which increases cavalry effectiveness."
@@ -1263,7 +1263,7 @@ the_holy_office_reform: "The Holy Office"
  mechanic_enables_huaca_cults_yes: "Huaca Cults: §G+10%§! Tax in provinces that do not follow the true faith."
  mechanic_enables_unified_drills_yes: "Unified Drills: §G+4%§! Manpower Recovery Speed and §G-2%§! Regiment Cost per HRE subject, up to a maximum of five subjects."
  mechanic_enables_artillery_academia_yes: "Academy of Artillery: §G+1§! Land Leader Siege while you have 75 or more Army Tradition."
- 
+
  #GE 1.14
  mechanic_enables_cultural_inspiration_yes: "Cultural Inspiration: §G+5%§! Production Efficiency and §G-2%§! Technology Cost per accepted culture, up to a maximum of five accepted cultures."
  mechanic_enables_coin_over_crown_yes: "Coin over Crown: §G+5%§! Mercenary Discipline while you do not have loans."
@@ -1273,7 +1273,7 @@ the_holy_office_reform: "The Holy Office"
  mechanic_enables_iberian_harem_yes: "Iberian Harem: Elect a suitable heir from among your sons."
  mechanic_enables_influencial_ties_yes: "Influencial Ties: §G+0.5§! Diplomatic Reputation for each Great Power, Emperor or Pope you're allied with, up to a maximum of five allies"
  mechanic_enables_kreditwerk_appointment_deals_yes: "Kreditwerk Appointments: Unlocks the 'Kreditwerk Appointments' Privilege for the Nobility, which allows us to increase tax efficiency."
- 
+
  #GE 1.15
  mechanic_enables_burgher_autonomy_yes: "Burgher Autonomy: Unlocks the §YBurgher Autonomy§! Privilege, granting §G+1§! base production and §R+25%§! Minimum Autonomy for §Y25 years§! in each province with an urban trade good. \nThis privilege can be reused every §Y25 years§!."
  mechanic_enables_serfdom_yes: "Serfdom: Unlocks the §YSerfdom§! Privilege, Which decreases Rural Goods Produced by §R10%§! and increases governmental capacity by §G+15%§!."
@@ -1286,7 +1286,7 @@ the_holy_office_reform: "The Holy Office"
  mechanic_enables_office_of_chancellor_yes: "Office of Chancellor: Enables you to appoint a chancellor from among the Burgher Estate, granting you §G+1§! monthly monarch power while the Burghers have over §G60%§! Loyalty."
  mechanic_enables_tanistry_yes: "Tanistry Elective: Enables you to elect an heir from amongst your extended family."
  mechanic_enables_disputed_heir_yes: "Disputed Succession: Causes your heir to face challenges while being groomed for the throne."
- mechanic_enables_elite_regiments_yes: "Elite Guards: Unlocks the 'Elite Guards' Privilege, granting access to §YElite Regiments§!, which have more discipline." 
+ mechanic_enables_elite_regiments_yes: "Elite Guards: Unlocks the 'Elite Guards' Privilege, granting access to §YElite Regiments§!, which have more discipline."
  mechanic_enables_baltic_sea_trade_yes: "Baltic Sea Trade: Gain §G+0.25§! Naval Tradition for each trade deal with a nation within the Baltic trade Node, up to a maximum of 4 trade deals."
  #GE 1.16
  mechanic_enables_foreign_students_yes: "Foreign Students: Gain §G-5%§! Administrative Advisor Cost for each accepted culture, up to a maximum of 5 cultures."
@@ -1309,19 +1309,19 @@ the_holy_office_reform: "The Holy Office"
  #Edicts
  edict_expanded_theme_system: "Expanded Theme System"
  edict_expanded_theme_system_desc: "Our Expanded Theme system will increase the reach of our recruitment drives."
- 
+
  #Estates
  mechanic_enables_peasant_estate_yes:0 "Enables the Peasant Estate."
  mechanic_enables_junker_estate_yes: "Enables the Junker Estate."
  mechanic_enables_noble_estate_yes: "Noble Subjects: Enables the Noble Estate."
  mechanic_enables_cossack_estate_yes: "Cossack Influence: Enables the Cossack Estate."
  mechanic_enables_ghulams_estate_yes: "Ghulams Estate: Enables the Ghulam Estate."
- 
+
  military_organisation: "Military Organisation"
  economic_policy: "Economic Policy"
 
  candidates_for_election: "Candidates"
- 
+
  opinion_diplomatic_positions:0 "Succesfull Noble Diplomats"
  opinion_diplomatic_positions_negative:0 "Failed Noble Diplomats"
  opinion_order_of_the_swan:0 "Order of the Swan Membership"
@@ -1332,18 +1332,18 @@ the_holy_office_reform: "The Holy Office"
  opinion_opposite_ghuelpsghibbellines_timed: "Foes in the Ghuelp/Ghibbeline struggle"
  opinion_same_ghuelpsghibbellines: "Comrades in the Ghuelp/Ghibbeline struggle"
  opinion_same_ghuelpsghibbellines_timed: "Comrades in the Ghuelp/Ghibbeline struggle"
- 
+
  elections.721.dc: "<ruler name>'s reign has come to an end, serving his nation with great deeds. A new question now arises, who will be the next ruler of Bohemia? On the left hand there are the traditionalist Hussites, seeking to strengthen the ideas of Jan Hus. On the other hand there are the Catholic Canidates, men ready to cooperate with the church in Rome. The fate of Bohemia is in your hands."
  elections.720.e: "A Catholic Noble."
  elections.720.d: "A Hussite Noble."
- 
+
  #Privileges
  estate_peasants_land_rights: "Peasants Land Rights"
  estate_peasants_land_rights_desc: "The Peasantry, backbone of the country, deserves some self-governance."
  estate_peasants_guild_assembly: "Peasant Guilds Representation"
  estate_peasants_guild_assembly_desc: "The Peasant-Guild deserves the right to organize in formal guilds with full recognition of the state."
  estate_peasants_manpower_drive: "Peasant Manpower Drive"
- estate_peasants_manpower_drive_desc: "The Peasantry can serve in our armies, no matter how rough the nobility might think it is." 
+ estate_peasants_manpower_drive_desc: "The Peasantry can serve in our armies, no matter how rough the nobility might think it is."
  estate_peasants_voting_rights: "Peasant Voting Rights"
  estate_peasants_voting_rights_desc: "Peasant having a say in the republic is sure to increase the fervor of republicanism and spread political discourse over the country."
  estate_peasants_conscription: "Peasant Conscription"
@@ -1352,7 +1352,7 @@ the_holy_office_reform: "The Holy Office"
  estate_peasants_fight_the_elite_desc: "fear the peasantry who in their righteous fury will overthrow the oppressive noble classes."
  estate_peasants_bear_arms: "Right to Bear Arms"
  estate_peasants_bear_arms_desc: "Where on earth will we find enough bears to give bear arms to all our people?"
- 
+
  estate_ghulams_land_rights: "Ghulam Land Rights"
  estate_ghulams_land_rights_desc: "Imported or captured from the caucasus, granting these men lands and rights will ensure their investment in the country."
  estate_ghulams_loyalty_privilege: "Ghulam Palace Guards"
@@ -1365,7 +1365,7 @@ the_holy_office_reform: "The Holy Office"
  estate_ghulams_trade_privileges_desc: "Having loyal traders that serve the monarch rather then themselves is an excellent way of ensuring the royal treasury doesn't run out of funds."
  estate_ghulams_councilor: "Ghulam Council"
  estate_ghulams_councilor_desc: "Allowing Ghulams to join us on the council is a excellent way we can play them against the other estate's councilors, and we are guarenteed no excesses of any faction escapes notice."
- 
+
  estate_nobles_diplomatic_privilege: "Noble Diplomats"
  estate_nobles_diplomatic_privilege_desc: "By sending the most noble of nobles to work as our diplomats to our neighbours we can ensure there will be plenty of friends and prestigious meetings to impart our best wishes on them."
  estate_nobles_magnate_law_privilege: "Magnate Law"
@@ -1411,7 +1411,7 @@ the_holy_office_reform: "The Holy Office"
 
  estate_church_four_articles_of_prague: "Four Articles of Prague"
  estate_church_four_articles_of_prague_desc: "Enforce the Four Articles of Prague on the people regardless of creed."
- 
+
  estate_church_land_privileges:  "Guaranteed Church Independence"
  estate_church_land_privileges_desc: "Guarantee the integrity of the lands held by the church."
  estate_noble_land_privileges: "Guaranteed Noble Independence"
@@ -1430,12 +1430,12 @@ the_holy_office_reform: "The Holy Office"
  estate_vaisyas_land_privileges_desc: "Guarantee the integrity of the lands held by the vaisyas."
  estate_peasants_land_privileges: "Guaranteed Peasant Independence"
  estate_peasants_land_privileges_desc: "Guarentee the integrity of the lands held by the peasants"
- 
+
  #Mercenaries
  merc_local_imperial_knights_company: "Imperial Knights"
  merc_local_imperial_knights_company_desc: "Better Imperial Knights then Imperial Walkers."
  merc_local_qizilbash_company: "Qizilbash"
- 
+
  #misc
  EVTOPTF700:1 "Let us elect a scion of the de'Medici family."
  EVTOPTF700:1 "Let us elect a scion of the de'Medici family."
@@ -1453,12 +1453,12 @@ the_holy_office_reform: "The Holy Office"
  REGISTER_PEASANTS: "Increase Recruitment"
  estate_junkers: "Junkers"
  estate_junkers_desc: "The Junker Estate represents the German lower nobility."
- 
+
  RECRUIT_JUNKERS: "Recruit Junkers"
  PLACATE_JUNKERS: "Placate the Junkers"
  PROMOTE_JUNKERS: "Promote Estates"
  JUNKER_ADVISOR: "Recruit Commandant"
- 
+
  estate_ghulams: "Ghulams"
  estate_ghulams_desc: "Ghulams were the class of foreign slave administrators/soldiers imported from the Caucasus to serve as a third faction in Persia; loyal only to the shah."
  KNIGHTY_PRIVILEGES: "Privilege Knights"
@@ -1466,7 +1466,7 @@ the_holy_office_reform: "The Holy Office"
  EXPAND_GHULAM_CORPS: "Expand the Ghulam Corps"
  REPLACE_GOVERNORS: "Replace Governors"
  GHULAM_ADVISOR: "Promote Talented Ghulams"
- 
+
  Noble_Influence: "§MNoble Court Influence§!"
  Clergy_Influence: "§MClergy Court Influence§!"
  Burgher_Influence: "§MBurgher Court Influence§!"
@@ -1476,17 +1476,19 @@ the_holy_office_reform: "The Holy Office"
  Oliarch_Influence: "§MOligarch Court Influence§!"
  peasants_loyalty_modifier: "Peasants Loyalty"
  peasants_influence_modifier: "Peasants Influence"
+ peasants_privileges_modifier: "Peasants Max Privileges"
  estate_peasants_ownership: "Peasants Land Ownership"
  ghulams_loyalty_modifier: "Ghulam Loyalty"
  ghulams_influence_modifier: "Ghulam Influence"
+ ghulams_privileges_modifier: "Ghulam Max Privileges"
  estate_ghulams_ownership: "Ghulams Land Ownership"
  vassal_tax_modifier: "Vassal Tax Income"
  primary_Development_Cost: "Primary Culture Development Cost Reduction"
  noble_privilege_slots: "[Country.GetNobilityName] Privilege Slots"
  burgher_privilege_slots: "[Country.GetBurghersName] Privilege Slots"
  church_privilege_slots: "[Country.GetClergyName] Privilege Slots"
- 
- 
+
+
  estate_diplomat.tooltip:1 "Recruit Noble Diplomats, granting §G10%§! Improve Relations for 15 years"
  tax_peasants_tooltip:1 "Get §G0.5§! yearly tax and §G10%§! tax efficiency in each province owned by the Peasant Estate."
  register_peasants_tooltip:1 "Get §G100§! max manpower and §G10%§! Manpower in each province owned by the Peasant Estate."
@@ -1520,8 +1522,8 @@ the_holy_office_reform: "The Holy Office"
  GE_Killing_the_Wattasids_tooltip:1 "Permanently Removes the §YWattasid Viziers§! reform."
  GE_Killed_The_Wattasids_Tooltip:1 "Not available if you executed the Wattasid Dynasty."
  GE_office_of_chancellor_tooltip:1 "§G+1§! Monthly Admin Power while you have over §G60%§! Burgher Loyalty."
- 
- 
+
+
  elections.EVTNAME7001:1 "American Elections"
  elections.EVTDESCA7001:1 "The term is up, Time for another election."
  elections.EVTDESCB7001:1 "The second term is up, time to elect a new $MONARCHTITLE$."
@@ -1531,7 +1533,7 @@ the_holy_office_reform: "The Holy Office"
  estate_privileges_and_agendas_events.3.GE: "The Proposal of the Peasants."
  estate_privileges_and_agendas_events.3.GEE: "The Proposal of the Ghulams."
 
- estate_peasants_develop_grain: "Increase Grain Production in [agenda_province.GetName]." 
+ estate_peasants_develop_grain: "Increase Grain Production in [agenda_province.GetName]."
  estate_peasants_develop_grain_desc: "The Peasantry asks us to clear some land for extra farming lands on the outskirts of [agenda_province.GetName]."
  estate_peasants_harvest_time: "Desire for peace"
  estate_peasants_harvest_time_desc: "The people have lost fathers, sons and brothers and are tired of war, allow the common people some respite."
@@ -1546,7 +1548,7 @@ the_holy_office_reform: "The Holy Office"
  estate_peasants_build_wood_workshop_desc: "The Peasantry of [agenda_province.GetName] would like to build a workshop in their city, they already cleared out some land and are willing to reward you handsomely!."
  estate_peasants_inspire_peasants: "Stabilize the Republic"
  estate_peasants_inspire_peasants_desc: "Let us work to stabilize the republic and increase the political engagement of the peasantry."
- 
+
  estate_ghulams_develop_x: "Increase Tax Efficiency in [agenda_province.GetName]."
  estate_ghulams_develop_x_desc: "We, the Ghulams, kindly request you invest in the province of [agenda_province.GetName], as we think there is much tax revenue to be gained there."
  estate_ghulams_reduce_autonomy: "Protect Ghulams"
@@ -1561,9 +1563,9 @@ the_holy_office_reform: "The Holy Office"
  estate_ghulams_expand_artillery_desc: "Allow us to expand the royal artillery corps by adding new regiments and re-equipping several existing regiments to match the latest advancements in cannonsmithing."
  estate_ghulams_restore_order: "Restore Order"
  estate_ghulams_restore_order_desc: "My Liege, we are losing control and respect because of our instable rule and roving bands of bandits and rebels, we must put these down to restore order and your legitimacy."
- 
- 
- 
+
+
+
  GE_federalists: "Federalists"
  GE_federalists_influence: "Federalist Influence"
  GE_federalists_FACTION_DESC: "We waz kangs."
@@ -1579,7 +1581,7 @@ the_holy_office_reform: "The Holy Office"
  GE_sunni: "Islamic"
  GE_sunni_influence: "Islamic Influence"
  GE_sunni_FACTION_DESC: "The Islamic Religion is a powerful force that seeks to expand its power through earning the acceptance of the people."
- 
+
  GE_Senate: "Senate"
  GE_Senate_influence: "Senatorial Influence"
  GE_Senate_MECHANIC_TOOLTIP:0 "Senate"
@@ -1592,12 +1594,12 @@ the_holy_office_reform: "The Holy Office"
  GE_Army_influence: "Army Influence"
  GE_Army_MECHANIC_TOOLTIP:0 "Army"
  GE_Army_FACTION_DESC: "The Army has always been an important aspect of the empire, not just militarily, but also politically. The army firmly believes that might makes right, and that the empire needs to be the mightiest."
- 
+
  Catholics_MECHANIC_TOOLTIP:0 "Catholics"
  Ultraquists_MECHANIC_TOOLTIP:0 "Ultraquists"
  Factions_MECHANIC_TOOLTIP:0 "Factions"
  Imperial_MECHANIC_TOOLTIP:0 "Imperials"
- 
+
  GE_ultraquists: "Ultraquists"
  GE_ultraquists_influence: "Ultraquist Influence"
  GE_ultraquists_FACTION_DESC: "The Ultraquists are hardline followers of the teachings of Jan Hus, a Catholic Czech Theologian who preached against the decadence of the church. But got betrayed and executed."
@@ -1612,7 +1614,7 @@ the_holy_office_reform: "The Holy Office"
  GE_shogun_influence: "Shogun Influence"
  GE_shogun_MECHANIC_TOOLTIP:0 "Shogun"
  GE_shogun_FACTION_DESC: "FOR THE WARMASTER"
- 
+
  orthodox_influence_1: "Orthodox State Religion"
  orthodox_influence_2: "Orthodox Majority"
  orthodox_influence_3: "Orthodox Supremacy"
@@ -1642,7 +1644,7 @@ the_holy_office_reform: "The Holy Office"
  korean_bureaucracy_advisor_4: "Korean Bureaucracy: Advisor Level 4"
  korean_bureaucracy_advisor_5: "Korean Bureaucracy: Advisor Level 5"
  GE_monastic_militarism: "Monastic Militarism"
- 
+
  check_empowered_requirements_again_title:1 "Empowered Requirements"
  check_empowered_requirements_again_desc:1 "Did you forget what the Empowered Reforms were?, here is a little refresher!"
  reforms_GE_papal_curia_reform_title:1 "Papal Curia"
@@ -1682,7 +1684,7 @@ the_holy_office_reform: "The Holy Office"
  GE_time_to_pray_desc: "To the nation in prayer is sure to bring people away from the darkness and back into Gods light!"
  GE_emergency_powers_title: "Enact Emergency Powers"
  GE_emergency_powers_desc: "Let us empower our leader with temporary powers so that he may solve the crisis at hand!"
- 
+
  offer_trade_deal_tunisian_italian: "Offer Trade Deal"
  offer_trade_deal_tunisian_italian_title: "Offer Trade Deal"
  offer_trade_deal_tunisian_italian_desc: "We can offer [From.GetName] a trade deal to increase our rural goods produced modifier by §G20%§! and increase their trade efficiency by §G10%§!."
@@ -1775,14 +1777,12 @@ the_holy_office_reform: "The Holy Office"
  EST_VAL_BURGHERS_ADVANCE: "The Burghers Advance"
  EST_VAL_CLERGY_ADVANCES: "The Clergy Advances"
 
- total_liberalism_modifier: "Total Liberalism"
- 
  AVAILABLE_BECAUSE_OF_CLERGY_LOYALTY: "Available due to high §YClergy§! influence and loyalty ."
  AVAILABLE_BECAUSE_OF_BURGHER_LOYALTY: "Available due to high §YBurgher§1 influence and loyalty ."
  AVAILABLE_BECAUSE_OF_NOBLES_LOYALTY: "Available due to high §YNoble§! influence and loyalty ."
  AVAILABLE_BECAUSE_OF_DHIMMI_LOYALTY: "Available due to high §YDhimmi§! Loyalty ."
  AVAILABLE_BECAUSE_OF_NOBLE_WEAKNESS: "Available due to low §YNoble§! influence ."
- 
+
  AVAILABLE_BECAUSE_OF_INNOVATIVENESS: "Available due to more then §Y50§! Innovativeness ."
  AVAILABLE_BECAUSE_OF_PRESTIGE: "Available due to more then §Y50§! Prestige ."
  AVAILABLE_BECAUSE_OF_TOLERANCE: "Available due to §Y5+ Tolerance§! ."
@@ -1790,7 +1790,7 @@ the_holy_office_reform: "The Holy Office"
  AVAILABLE_BECAUSE_OF_REFORM_CLERGY_AND_BISHOP: "Available due to §YMetropolian Bishops§!  and §YAdministrative Clergy§! ."
  AVAILABLE_BECAUSE_OF_REFORM_CLERGY_AND_STATE: "Available due to §YState Church§!  and §YAdministrative Clergy§! ."
  AVAILABLE_BECAUSE_OF_REFORM_CLERGY_AND_POPE: "Available due to §YPapal Embassy§!  and §YAdministrative Clergy§! ."
- 
+
  AVAILABLE_BECAUSE_OF_REFORM_OF_NOBLE_BEARING: "Available due to §YNobles of the Robe§! ."
  AVAILABLE_BECAUSE_OF_REFORM_KOPRULU_DYNASTY: "Available due to the §YKoprulu Dynasty§! ."
  AVAILABLE_BECAUSE_OF_REFORM_THEOCRATIC_BUREACRATS: "Available due to §YTheocratic Bureaucrats§! ."
@@ -1819,18 +1819,18 @@ the_holy_office_reform: "The Holy Office"
  AVAILABLE_BECAUSE_OF_REFORM_MONEYLOANERS: "Available due to §YIntegrated Bankers§! ."
  AVAILABLE_BECAUSE_OF_REFORM_CENTRALIZING: "Available due to §YCentralizing Reforms§! ."
  AVAILABLE_BECAUSE_OF_REFORM_NOBLE_ADMINISTRATORS: "Available due to §YNobles in the Administration§! ."
- 
+
  AVAILABLE_BECAUSE_OF_REFORM_INTERNAL_MISSION: "Available due to §YInternal Mission§ ."
  AVAILABLE_BECAUSE_OF_REFORM_EXTERNAL_MISSION: "Available due to §YExternal Mission§ ."
  AVAILABLE_BECAUSE_OF_REFORM_SAFEGUARD_HOLY_SITES: "Available due to §YSafeguard Holy Sites§ ."
  AVAILABLE_BECAUSE_OF_REFORM_EXPELL_HEATHENS: "Available due to §YExpell Heathens§ ."
  AVAILABLE_BECAUSE_OF_REFORM_COMBAT_HERESY: "Available due to §YCombat Heresy§ ."
- 
+
  AVAILABLE_BECAUSE_OF_REFORM_FREQUENT_ELECTIONS: "Available due to §YFrequent Elections§ ."
  AVAILABLE_BECAUSE_OF_REFORM_DEVOLUTION_OF_POWERS: "Available due to §YDevolution of Powers§ ."
- 
- 
- 
+
+
+
  AVAILABLE_BECAUSE_OF_TAG_NED: "Available due to being the §YNetherlands§ ."
 
  RAJPUT_REGIMENT:0 "Elite Regiment\n$EFFECT$"

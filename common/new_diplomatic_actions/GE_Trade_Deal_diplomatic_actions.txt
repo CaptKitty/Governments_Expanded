@@ -4,7 +4,7 @@
 
 	# 	alert_index = 27 #34             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
 	# 	alert_tooltip = ICON_GE_TD         # The localisation key to display in the alert tooltip. Optional.
-		
+
 	# 	require_acceptance = yes
 
 	# 	is_visible = {
@@ -52,7 +52,7 @@
 	# 		ai_value = 1
 	# 		# add_entry = {
 	# 		# 	name = GE_diplomatic_reputation    # The localisation key to display for this factor
-				
+
 	# 		# 	# ai_value MUST always be created within an entry first.
 	# 		# 	export_to_variable = {
 	# 		# 		variable_name = ai_value
@@ -156,13 +156,13 @@ offer_trade_deal_rural_exports = {
 
     alert_index = 34 #27             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
 	alert_tooltip = ICON_GE_TD         # The localisation key to display in the alert tooltip. Optional.
-	
+
 	require_acceptance = yes
 
 	is_visible = {
 		has_global_modifier_value = {
 			which = trade_deals_slots
-			value = 0.01
+			value = 1
 		}
 		NOT = {
 			OR = {
@@ -266,7 +266,7 @@ offer_trade_deal_rural_exports = {
 		ai_value = 1
 		add_entry = {#+3*DipRep
 			name = GE_diplomatic_reputation    # The localisation key to display for this factor
-			
+
 			# ai_value MUST always be created within an entry first.
 			export_to_variable = {
 				variable_name = ai_value
@@ -285,8 +285,8 @@ offer_trade_deal_rural_exports = {
 			export_to_variable = {
 				variable_name = ai_value
 				value = opinion
-				who = FROM 
-				with = ROOT  
+				who = FROM
+				with = ROOT
 			}
 			multiply_variable = {
 				which = ai_value
@@ -442,13 +442,13 @@ offer_trade_deal_rural_imports = {
 
     alert_index = 34 #27             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
 	alert_tooltip = ICON_GE_TD         # The localisation key to display in the alert tooltip. Optional.
-	
+
 	require_acceptance = yes
 
 	is_visible = {
 		has_global_modifier_value = {
 			which = trade_deals_slots
-			value = 0.01
+			value = 1
 		}
 		NOT = {
 			OR = {
@@ -528,7 +528,7 @@ offer_trade_deal_rural_imports = {
 				which = GE_num_of_outgoing_rural_trade
 				value = 1
 			}
-			add_export_effect = yes	
+			add_export_effect = yes
 		}
 		ROOT = {
 			set_country_flag = GE_Trade_Deal_With_@From
@@ -552,7 +552,7 @@ offer_trade_deal_rural_imports = {
 		ai_value = 1
 		add_entry = {#+3*DipRep
 			name = GE_diplomatic_reputation    # The localisation key to display for this factor
-			
+
 			# ai_value MUST always be created within an entry first.
 			export_to_variable = {
 				variable_name = ai_value
@@ -571,8 +571,8 @@ offer_trade_deal_rural_imports = {
 			export_to_variable = {
 				variable_name = ai_value
 				value = opinion
-				who = FROM 
-				with = ROOT  
+				who = FROM
+				with = ROOT
 			}
 			multiply_variable = {
 				which = ai_value
@@ -728,13 +728,13 @@ offer_trade_deal_urban_exports = {
 
     alert_index = 34 #27             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
 	alert_tooltip = ICON_GE_TD         # The localisation key to display in the alert tooltip. Optional.
-	
+
 	require_acceptance = yes
 
 	is_visible = {
 		has_global_modifier_value = {
 			which = trade_deals_slots
-			value = 0.01
+			value = 1
 		}
 		NOT = {
 			OR = {
@@ -838,7 +838,7 @@ offer_trade_deal_urban_exports = {
 		ai_value = 1
 		add_entry = {#+3*DipRep
 			name = GE_diplomatic_reputation    # The localisation key to display for this factor
-			
+
 			# ai_value MUST always be created within an entry first.
 			export_to_variable = {
 				variable_name = ai_value
@@ -857,8 +857,8 @@ offer_trade_deal_urban_exports = {
 			export_to_variable = {
 				variable_name = ai_value
 				value = opinion
-				who = FROM 
-				with = ROOT  
+				who = FROM
+				with = ROOT
 			}
 			multiply_variable = {
 				which = ai_value
@@ -1014,13 +1014,13 @@ offer_trade_deal_urban_imports = {
 
     alert_index = 34 #27             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
 	alert_tooltip = ICON_GE_TD         # The localisation key to display in the alert tooltip. Optional.
-	
+
 	require_acceptance = yes
 
 	is_visible = {
 		has_global_modifier_value = {
 			which = trade_deals_slots
-			value = 0.01
+			value = 1
 		}
 		NOT = {
 			OR = {
@@ -1100,7 +1100,7 @@ offer_trade_deal_urban_imports = {
 				which = GE_num_of_outgoing_urban_trade
 				value = 1
 			}
-			add_export_effect = yes	
+			add_export_effect = yes
 		}
 		ROOT = {
 			set_country_flag = GE_Trade_Deal_With_@From
@@ -1124,7 +1124,7 @@ offer_trade_deal_urban_imports = {
 		ai_value = 1
 		add_entry = {#+3*DipRep
 			name = GE_diplomatic_reputation    # The localisation key to display for this factor
-			
+
 			# ai_value MUST always be created within an entry first.
 			export_to_variable = {
 				variable_name = ai_value
@@ -1143,8 +1143,8 @@ offer_trade_deal_urban_imports = {
 			export_to_variable = {
 				variable_name = ai_value
 				value = opinion
-				who = FROM 
-				with = ROOT  
+				who = FROM
+				with = ROOT
 			}
 			multiply_variable = {
 				which = ai_value
@@ -1300,13 +1300,13 @@ offer_trade_deal_mining_exports = {
 
     alert_index = 34 #27             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
 	alert_tooltip = ICON_GE_TD         # The localisation key to display in the alert tooltip. Optional.
-	
+
 	require_acceptance = yes
 
 	is_visible = {
 		has_global_modifier_value = {
 			which = trade_deals_slots
-			value = 0.01
+			value = 1
 		}
 		NOT = {
 			OR = {
@@ -1410,7 +1410,7 @@ offer_trade_deal_mining_exports = {
 		ai_value = 1
 		add_entry = {#+3*DipRep
 			name = GE_diplomatic_reputation    # The localisation key to display for this factor
-			
+
 			# ai_value MUST always be created within an entry first.
 			export_to_variable = {
 				variable_name = ai_value
@@ -1429,8 +1429,8 @@ offer_trade_deal_mining_exports = {
 			export_to_variable = {
 				variable_name = ai_value
 				value = opinion
-				who = FROM 
-				with = ROOT  
+				who = FROM
+				with = ROOT
 			}
 			multiply_variable = {
 				which = ai_value
@@ -1586,13 +1586,13 @@ offer_trade_deal_mining_imports = {
 
     alert_index = 34 #27             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
 	alert_tooltip = ICON_GE_TD         # The localisation key to display in the alert tooltip. Optional.
-	
+
 	require_acceptance = yes
 
 	is_visible = {
 		has_global_modifier_value = {
 			which = trade_deals_slots
-			value = 0.01
+			value = 1
 		}
 		NOT = {
 			OR = {
@@ -1657,7 +1657,7 @@ offer_trade_deal_mining_imports = {
 				which = GE_num_of_outgoing_mining_trade
 				value = 1
 			}
-			add_export_effect = yes	
+			add_export_effect = yes
 		}
 		ROOT = {
 			set_country_flag = GE_Trade_Deal_With_@From
@@ -1681,7 +1681,7 @@ offer_trade_deal_mining_imports = {
 		ai_value = 1
 		add_entry = {#+3*DipRep
 			name = GE_diplomatic_reputation    # The localisation key to display for this factor
-			
+
 			# ai_value MUST always be created within an entry first.
 			export_to_variable = {
 				variable_name = ai_value
@@ -1700,8 +1700,8 @@ offer_trade_deal_mining_imports = {
 			export_to_variable = {
 				variable_name = ai_value
 				value = opinion
-				who = FROM 
-				with = ROOT  
+				who = FROM
+				with = ROOT
 			}
 			multiply_variable = {
 				which = ai_value
@@ -1857,13 +1857,13 @@ offer_trade_deal_plantation_exports = {
 
     alert_index = 34 #27             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
 	alert_tooltip = ICON_GE_TD         # The localisation key to display in the alert tooltip. Optional.
-	
+
 	require_acceptance = yes
 
 	is_visible = {
 		has_global_modifier_value = {
 			which = trade_deals_slots
-			value = 0.01
+			value = 1
 		}
 		NOT = {
 			OR = {
@@ -1952,7 +1952,7 @@ offer_trade_deal_plantation_exports = {
 		ai_value = 1
 		add_entry = {#+3*DipRep
 			name = GE_diplomatic_reputation    # The localisation key to display for this factor
-			
+
 			# ai_value MUST always be created within an entry first.
 			export_to_variable = {
 				variable_name = ai_value
@@ -1971,8 +1971,8 @@ offer_trade_deal_plantation_exports = {
 			export_to_variable = {
 				variable_name = ai_value
 				value = opinion
-				who = FROM 
-				with = ROOT  
+				who = FROM
+				with = ROOT
 			}
 			multiply_variable = {
 				which = ai_value
@@ -2128,13 +2128,13 @@ offer_trade_deal_plantation_imports = {
 
     alert_index = 34 #27             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
 	alert_tooltip = ICON_GE_TD         # The localisation key to display in the alert tooltip. Optional.
-	
+
 	require_acceptance = yes
 
 	is_visible = {
 		has_global_modifier_value = {
 			which = trade_deals_slots
-			value = 0.01
+			value = 1
 		}
 		NOT = {
 			OR = {
@@ -2198,7 +2198,7 @@ offer_trade_deal_plantation_imports = {
 			change_variable = {
 				which = GE_num_of_outgoing_plantation_trade
 			}
-			add_export_effect = yes	
+			add_export_effect = yes
 		}
 		ROOT = {
 			set_country_flag = GE_Trade_Deal_With_@From
@@ -2222,7 +2222,7 @@ offer_trade_deal_plantation_imports = {
 		ai_value = 1
 		add_entry = {#+3*DipRep
 			name = GE_diplomatic_reputation    # The localisation key to display for this factor
-			
+
 			# ai_value MUST always be created within an entry first.
 			export_to_variable = {
 				variable_name = ai_value
@@ -2241,8 +2241,8 @@ offer_trade_deal_plantation_imports = {
 			export_to_variable = {
 				variable_name = ai_value
 				value = opinion
-				who = FROM 
-				with = ROOT  
+				who = FROM
+				with = ROOT
 			}
 			multiply_variable = {
 				which = ai_value
@@ -2462,7 +2462,7 @@ cancel_trade_deal_generic = {
 				}
 				add_export_effect = yes
 				clr_country_flag = GE_Trade_Deal_From_@Root
-			}	
+			}
 			if = {
 				limit = {
 					has_country_flag = GE_Initiated_Trade_Deal_With_@Root
@@ -2734,8 +2734,8 @@ cancel_trade_deal_generic = {
 		# 	export_to_variable = {
 		# 		variable_name = GE_Cancel_Trade_Deal_Opinion
 		# 		value = opinion
-		# 		who = FROM 
-		# 		with = ROOT  
+		# 		who = FROM
+		# 		with = ROOT
 		# 	}
 		# 	multiply_variable = {
 		# 		which = GE_Cancel_Trade_Deal_DipRep

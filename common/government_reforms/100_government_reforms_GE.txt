@@ -50,7 +50,7 @@
 				tag = LIT
 			}
 		}
-		trigger = {	
+		trigger = {
 			has_reform = lithuania_warlord_duke
 		}
 		valid_for_nation_designer = yes
@@ -218,7 +218,7 @@
 		}
 	}
 
-	
+
 
 	arch_king_reform = {
 		icon = crown_highlighted
@@ -359,7 +359,7 @@
 		}
 	}
 
-	
+
 	granadan_iqta_reform = {
 		icon = granada_iqta
 		allow_normal_conversion = yes
@@ -370,7 +370,7 @@
 			OR = {
 				AND = {
 					religion_group = muslim
-					culture_group = iberian	
+					culture_group = iberian
 				}
 				has_reform = granadan_iqta_reform
 			}
@@ -379,7 +379,7 @@
 			OR = {
 				AND = {
 					religion_group = muslim
-					culture_group = iberian	
+					culture_group = iberian
 				}
 				has_reform = granadan_iqta_reform
 			}
@@ -387,7 +387,7 @@
 		modifiers = {
 			trade_efficiency = 0.10
 			global_trade_goods_size_modifier = 0.05
-			trade_deals_slots = 0.01
+			trade_deals_slots = 1
 		}
 		custom_attributes = {
 			enables_religious_supremacy = yes
@@ -412,7 +412,7 @@
 			OR = {
 				AND = {
 					religion_group = muslim
-					culture_group = iberian	
+					culture_group = iberian
 				}
 			}
 		}
@@ -420,7 +420,7 @@
 			OR = {
 				AND = {
 					religion_group = muslim
-					culture_group = iberian	
+					culture_group = iberian
 				}
 				has_reform = emirate_of_andalusia_reform
 				OR = {
@@ -448,7 +448,7 @@
 		}
 	}
 
-	
+
 
 	achaemenid_empire_reform = {
 		icon = king
@@ -466,7 +466,7 @@
 		trigger = {
 			AND = {
 				religion_group = zoroastrian
-				culture_group = iranian	
+				culture_group = iranian
 			}
 		}
 		modifiers = {
@@ -668,7 +668,7 @@
 					army_tradition_decay = -0.005
 					legitimacy = -1
 				}
-				
+
 				GE_imperials = {
 					yearly_absolutism = 0.1
 					global_autonomy = -0.05
@@ -750,7 +750,7 @@
 			OR = {
 				AND = {
 					religion_group = muslim
-					primary_culture = hejazi_culture	
+					primary_culture = hejazi_culture
 				}
 				has_reform = sharifate_reform
 			}
@@ -759,7 +759,7 @@
 			OR = {
 				AND = {
 					religion_group = muslim
-					primary_culture = hejazi_culture	
+					primary_culture = hejazi_culture
 				}
 				has_reform = sharifate_reform
 			}
@@ -801,7 +801,7 @@
 			diplomatic_upkeep = 1
 		}
 		custom_attributes = {
-			
+
 		}
 		conditional = {
 			allow = { has_dlc = "Cradle of Civilization" }
@@ -856,9 +856,9 @@
 			tolerance_own = 1
 			naval_morale = 0.1
 			merchants = 1
-			trade_deals_slots = 0.01
+			trade_deals_slots = 1
 		}
-		custom_attributes = { 
+		custom_attributes = {
 			enables_unite_the_malay = yes #5% Naval Force Limit and Sailors for each Accepted Malay Culture.
 		}
 		ai = {
@@ -883,7 +883,7 @@
 					technology_group = chinese
 				}
 				has_reform = basic_reformed_mandala_reform
-			}	
+			}
 		}
 		valid_for_nation_designer = yes
 		nation_designer_cost = 10
@@ -933,9 +933,9 @@
 			has_reform = solar_kingdom_reform
 		}
 		modifiers = {
-			vassal_forcelimit_bonus = 2 
+			vassal_forcelimit_bonus = 2
 			governing_capacity = 150
-			diplomatic_upkeep = 1 
+			diplomatic_upkeep = 1
 		}
 		custom_attributes = {
 			enables_blood_tax = yes #5% Manpower Per vassal up to 25% Manpower
@@ -947,7 +947,7 @@
 		}
 	}
 
-	
+
 
 	tsardom_of_bulgaria_reform = {
 		icon = russian_principality
@@ -996,7 +996,7 @@
 			governing_capacity = 250
 			accept_vassalization_reasons = 50
 			max_absolutism = 10
-			
+
 		}
 		custom_attributes = {
 			enables_royal_council = yes
@@ -1012,13 +1012,13 @@
 		valid_for_nation_designer = no
 		potential = {
 			OR = {
-				primary_culture = wallonian 
+				primary_culture = wallonian
 				has_reform = duchy_of_luxembourg_reform
 			}
 		}
 		trigger = {
 			OR = {
-				primary_culture = wallonian 
+				primary_culture = wallonian
 				has_reform = duchy_of_luxembourg_reform
 			}
 		}
@@ -1036,13 +1036,13 @@
 		valid_for_nation_designer = no
 		potential = {
 			OR = {
-				primary_culture = irish 
+				primary_culture = irish
 				has_reform = tanistry_reform
 			}
 		}
 		trigger = {
 			OR = {
-				primary_culture = irish 
+				primary_culture = irish
 				has_reform = tanistry_reform
 			}
 		}
@@ -1084,7 +1084,7 @@
 	#}
 	#############################
 	#######Tier2/Religious#######
-	############################# 
+	#############################
 
 	generic_nobles_priests_reform = {
 		icon = church
@@ -1104,7 +1104,7 @@
 			}
 		}
 		trigger = {
-			
+
 		}
 		modifiers = {
 			church_influence_modifier = 0.05
@@ -1346,7 +1346,7 @@
 #}
 #############################
 ###########Tier2#############
-############################# 
+#############################
 #Tier 2 {
 	city_privileges_reform = {
 		icon = free_city
@@ -1389,7 +1389,7 @@
 	diplomatic_positions_reform = {
 		icon = noble_diplomat
 		allow_normal_conversion = yes
-		
+
 		effect = {
 			change_variable = {
 				which = Noble_Influence
@@ -1432,13 +1432,13 @@
 			}
 		}
 		potential = {
-			OR = {	
+			OR = {
 				has_reform = lithuania_law_reform
 				tag = LIT
 			}
 		}
 		trigger = {
-			OR = {	
+			OR = {
 				has_reform = lithuania_law_reform
 				tag = LIT
 			}
@@ -1487,7 +1487,7 @@
 			global_prov_trade_power_modifier = 0.2
 			#navy_tradition = 0.5
 			burghers_influence_modifier = 0.10
-			trade_deals_slots = 0.01
+			trade_deals_slots = 1
 		}
 		ai = {
 			factor = 100
@@ -1522,7 +1522,7 @@
 		modifiers = {
 			global_prov_trade_power_modifier = 0.2
 			burghers_influence_modifier = 0.10
-			trade_deals_slots = 0.01
+			trade_deals_slots = 1
 		}
 		custom_attributes = {
 			enables_baltic_sea_trade = yes
@@ -1548,13 +1548,13 @@
 			}
 		}
 		potential = {
-			OR = {	
+			OR = {
 				has_reform = akritai_privileges_reform
 				culture_group = byzantine
 			}
 		}
 		trigger = {
-			OR = {	
+			OR = {
 				has_reform = akritai_privileges_reform
 				culture_group = byzantine
 			}
@@ -1590,7 +1590,7 @@
 			religion_group = muslim
 			OR = {
 				culture_group = maghrebi
-				has_reform = council_of_sheikhs_reform 
+				has_reform = council_of_sheikhs_reform
 				accepted_culture = moroccan
 				accepted_culture = tunisian
 				accepted_culture = algerian
@@ -1601,7 +1601,7 @@
 			religion_group = muslim
 			OR = {
 				culture_group = maghrebi
-				has_reform = council_of_sheikhs_reform 
+				has_reform = council_of_sheikhs_reform
 				accepted_culture = moroccan
 				accepted_culture = tunisian
 				accepted_culture = algerian
@@ -1658,9 +1658,9 @@
 		}
 	}
 
-	
 
-	
+
+
 
 	constitutio_valdemariana_reform = {
 		icon = nobleman
@@ -1861,7 +1861,7 @@
 		potential = {
 			OR = {
 				has_reform = mamluk_privileges_reform
-				primary_culture = al_misr_arabic 
+				primary_culture = al_misr_arabic
 				AND = {
 					accepted_culture = al_misr_arabic
 					num_of_owned_provinces_with = {
@@ -1874,7 +1874,7 @@
 		trigger = {
 			OR = {
 				has_reform = mamluk_privileges_reform
-				primary_culture = al_misr_arabic 
+				primary_culture = al_misr_arabic
 				AND = {
 					accepted_culture = al_misr_arabic
 					num_of_owned_provinces_with = {
@@ -1887,16 +1887,16 @@
 		modifiers = {
 			global_unrest = -1
 			production_efficiency = 0.10
-			trade_deals_slots = 0.01
+			trade_deals_slots = 1
 		}
 		ai = {
 			factor = 10
 		}
 	}
 
-	
 
-	
+
+
 
 	taha_divisions_reform = {
 		icon = granada_taha
@@ -1917,18 +1917,18 @@
 			OR = {
 				AND = {
 					religion_group = muslim
-					culture_group = iberian	
+					culture_group = iberian
 				}
-				has_reform = taha_divisions_reform 
+				has_reform = taha_divisions_reform
 			}
 		}
 		trigger = {
 			OR = {
 				AND = {
 					religion_group = muslim
-					culture_group = iberian	
+					culture_group = iberian
 				}
-				has_reform = taha_divisions_reform 
+				has_reform = taha_divisions_reform
 			}
 		}
 		modifiers = {
@@ -1962,14 +1962,14 @@
 			OR = {
 				AND = {
 					religion_group = zoroastrian_group
-					culture_group = iranian	
+					culture_group = iranian
 				}
 			}
 		}
 		trigger = {
 			AND = {
 				religion_group = zoroastrian_group
-				culture_group = iranian	
+				culture_group = iranian
 			}
 		}
 		modifiers = {
@@ -1978,7 +1978,7 @@
 			tolerance_heretic = 1
 			global_unrest = 1
 			female_advisor_chance = 0.25
-			
+
 		}
 		ai = {
 			factor = 100
@@ -2226,7 +2226,7 @@
 		}
 	}
 
-	
+
 
 	sayyid_privileges_reform = {
 		icon = hejaz_sayyid
@@ -2278,7 +2278,7 @@
 		}
 	}
 
-	
+
 
 	clans_of_ireland_reform = {
 		icon = clans_of_ireland
@@ -2392,7 +2392,7 @@
 			prestige = 0.5
 		}
 		custom_attributes = {
-			enables_militant_orders = yes 
+			enables_militant_orders = yes
 		}
 		ai = {
 			factor = 100
@@ -2504,13 +2504,13 @@
 		}
 		potential = {
 			OR = {
-				primary_culture = wallonian 
+				primary_culture = wallonian
 				has_reform = gibraltar_of_the_north_reform
 			}
 		}
 		trigger = {
 			OR = {
-				primary_culture = wallonian 
+				primary_culture = wallonian
 				has_reform = gibraltar_of_the_north_reform
 			}
 		}
@@ -2543,13 +2543,13 @@
 		}
 		potential = {
 			OR = {
-				primary_culture = moroccan 
+				primary_culture = moroccan
 				has_reform = wattasid_viziers_reform
 			}
 		}
 		trigger = {
 			OR = {
-				primary_culture = moroccan 
+				primary_culture = moroccan
 				has_reform = wattasid_viziers_reform
 			}
 			custom_trigger_tooltip = {
@@ -2567,11 +2567,11 @@
 			factor = 101
 		}
 	}
-	
+
 #}
 #############################
 ###########Tier3#############
-############################# 
+#############################
 #Tier 3 {
 	regional_forts_reform = {
 		icon = fort
@@ -2655,7 +2655,7 @@
 			factor = 10
 		}
 	}
-		
+
 	magnate_govenors_reform = {
 		icon = magnates_2
 		allow_normal_conversion = yes
@@ -2694,7 +2694,7 @@
 			factor = 10
 		}
 	}
-		
+
 	theocratic_bureacrats_reform = {
 		icon = bishop
 		allow_normal_conversion = yes
@@ -2780,14 +2780,14 @@
 				religion = shamanism
 				religion = totemism
 			}
-			
+
 		}
 		trigger = {
 			OR = {
 				religion = shamanism
 				religion = totemism
 			}
-			
+
 		}
 		modifiers = {
 			tolerance_own = 1
@@ -2821,7 +2821,7 @@
 			OR = {
 				religion = tengri_pagan_reformed
 			}
-			
+
 		}
 		modifiers = {
 			global_missionary_strength = 0.01
@@ -2857,7 +2857,7 @@
 			OR = {
 				religion = hinduism
 			}
-			
+
 		}
 		modifiers = {
 			global_missionary_strength = 0.01
@@ -2891,7 +2891,7 @@
 				religion = sikhism
 				has_reform = teaching_of_guru_Sahib_reform
 			}
-			
+
 		}
 		modifiers = {
 			global_missionary_strength = 0.01
@@ -2934,7 +2934,7 @@
 			church_influence_modifier = 0.10
 		}
 		custom_attributes = {
-			enables_holy_lhasa = yes #Provide a malus that if Lhasa province is not Vajrayana, gain +2 unrest 
+			enables_holy_lhasa = yes #Provide a malus that if Lhasa province is not Vajrayana, gain +2 unrest
 		}
 		ai = {
 			factor = 1
@@ -2971,7 +2971,7 @@
 			OR = {
 				religion = confucianism
 			}
-			
+
 		}
 		modifiers = {
 			yearly_harmony = 0.15
@@ -3009,7 +3009,7 @@
 				religion = buddhism
 				religion = mahayana
 			}
-			
+
 		}
 		modifiers = {
 			global_missionary_strength = 0.01
@@ -3167,7 +3167,7 @@
 				has_reform = diocletian_reforms_reform
 			}
 		}
-		modifiers = { 
+		modifiers = {
 			legitimacy = 0.25
 		}
 		custom_attributes = {
@@ -3211,7 +3211,7 @@
 				has_reform = kyoho_reforms_reform
 			}
 		}
-		modifiers = { 
+		modifiers = {
 			global_tax_modifier = 0.10
 			trade_efficiency = 0.05
 			burghers_influence_modifier = 0.05
@@ -3221,9 +3221,9 @@
 		}
 	}
 
-	
 
-	
+
+
 
 	oprichnina_reform_GE = {
 		icon = oprichnina
@@ -3261,11 +3261,11 @@
 		}
 	}
 
-	
 
-	
 
-	
+
+
+
 
 	commoner_officials_reform = {
 		icon = peasants
@@ -3364,7 +3364,7 @@
 				primary_culture = al_misr_arabic
 			}
 		}
-		trigger = { 
+		trigger = {
 			OR = {
 				has_reform = revive_the_hisbah_reform
 				primary_culture = al_misr_arabic
@@ -3432,7 +3432,7 @@
 		}
 	}
 
-	
+
 
 	integrate_tatars_reform = {
 		icon = Tatar_raid
@@ -3501,18 +3501,18 @@
 			OR = {
 				AND = {
 					religion_group = muslim
-					culture_group = iberian	
+					culture_group = iberian
 				}
-				has_reform = taha_divisions_reform 
+				has_reform = taha_divisions_reform
 			}
 		}
 		trigger = {
 			OR = {
 				AND = {
 					religion_group = muslim
-					culture_group = iberian	
+					culture_group = iberian
 				}
-				has_reform = taha_divisions_reform 
+				has_reform = taha_divisions_reform
 			}
 		}
 		modifiers = {
@@ -3547,14 +3547,14 @@
 			OR = {
 				AND = {
 					religion_group = zoroastrian
-					culture_group = iranian	
+					culture_group = iranian
 				}
 			}
 		}
 		trigger = {
 			AND = {
 				religion_group = zoroastrian
-				culture_group = iranian	
+				culture_group = iranian
 			}
 		}
 		modifiers = {
@@ -3675,7 +3675,7 @@
 			}
 		}
 		modifiers = {
-			harsh_treatment_cost = -0.33	
+			harsh_treatment_cost = -0.33
 		}
 		custom_attributes = {
 			enables_mountain_towns = yes #-25% Development cost in hills and mountains
@@ -3934,13 +3934,13 @@
 		allow_normal_conversion = yes
 		potential = {
 			OR = {
-				primary_culture = wallonian 
+				primary_culture = wallonian
 				has_reform = crossroads_of_cultures_reform
 			}
 		}
 		trigger = {
 			OR = {
-				primary_culture = wallonian 
+				primary_culture = wallonian
 				has_reform = crossroads_of_cultures_reform
 			}
 		}
@@ -3955,7 +3955,7 @@
 			factor = 101
 		}
 	}
-	
+
 	kingdom_of_cities_reform = {
 		icon = arabic_scripture
 		allow_normal_conversion = yes
@@ -4074,7 +4074,7 @@
 #}
 #############################
 ###########Tier4#############
-############################# 
+#############################
 #Tier 4 {
 	#######
 	#Ottoman Reforms By Clavin, NOT PROPERTY OF GE
@@ -4107,7 +4107,7 @@
 		}
 		potential = {
 			tag = TUR
-			mission_completed = TUR_eyalets 
+			mission_completed = TUR_eyalets
 		}
 	}
 	#######
@@ -4134,9 +4134,9 @@
 		modifiers = {
 			interest = -0.5
 			inflation_reduction = 0.05
-			trade_deals_slots = 0.01
+			trade_deals_slots = 1
 		}
-		# custom_attributes = { 	
+		# custom_attributes = {
 			# enables_merchant_privileges = yes #+1 merchantilism when you ask for contribution from the burghers.
 		# }
 		ai = {
@@ -4262,7 +4262,7 @@
 			prestige = 0.5
 			nobles_influence_modifier = 0.05
 		}
-		custom_attributes = { 
+		custom_attributes = {
 			enables_veteran_general = yes
 		}
 		ai = {
@@ -4301,7 +4301,7 @@
 			stability_cost_modifier = -0.15
 			nobles_influence_modifier = 0.05
 		}
-		custom_attributes = { 
+		custom_attributes = {
 			enables_veteran_general = yes
 		}
 		ai = {
@@ -4347,7 +4347,7 @@
 			factor = 10
 		}
 	}
-		
+
 	colonial_govenors_reform = {
 		icon = colonial_rule
 		allow_normal_conversion = yes
@@ -4414,7 +4414,7 @@
 		modifiers = {
 			advisor_cost = -0.20
 			advisor_pool = 1
-			trade_deals_slots = 0.01
+			trade_deals_slots = 1
 		}
 		ai = {
 			factor = 100
@@ -4463,9 +4463,9 @@
 		}
 	}
 
-	
 
-	
+
+
 
 	table_of_ranks_reform = {
 		icon = table_of_ranks
@@ -4508,7 +4508,7 @@
 		}
 	}
 
-	
+
 
 	christian_four_merchantile_reform = {
 		icon = merchant_ship
@@ -4603,13 +4603,13 @@
 		potential = {
 			OR = {
 				has_reform = turkicized_elite_reform
-				primary_culture = al_misr_arabic 
+				primary_culture = al_misr_arabic
 			}
 		}
-		trigger = { 
+		trigger = {
 			OR = {
 				has_reform = turkicized_elite_reform
-				primary_culture = al_misr_arabic 
+				primary_culture = al_misr_arabic
 			}
 		}
 		modifiers = {
@@ -4621,7 +4621,7 @@
 		}
 	}
 
-	
+
 
 	cultural_investment_reform = {
 		icon = granada_trader
@@ -4642,26 +4642,26 @@
 			OR = {
 				AND = {
 					religion_group = muslim
-					culture_group = iberian	
+					culture_group = iberian
 				}
-				has_reform = cultural_investment_reform 
+				has_reform = cultural_investment_reform
 			}
 		}
 		trigger = {
 			OR = {
 				AND = {
 					religion_group = muslim
-					culture_group = iberian	
+					culture_group = iberian
 				}
-				has_reform = cultural_investment_reform 
+				has_reform = cultural_investment_reform
 			}
 		}
 		modifiers = {
 			global_trade_power = 0.10
-			trade_deals_slots = 0.01
+			trade_deals_slots = 1
 		}
 		custom_attributes = {
-			enables_foreign_artists = yes #0.1 Prestige per Merchant. 
+			enables_foreign_artists = yes #0.1 Prestige per Merchant.
 		}
 		ai = {
 			factor = 100
@@ -4738,14 +4738,14 @@
 			OR = {
 				AND = {
 					religion_group = zoroastrian
-					culture_group = iranian	
+					culture_group = iranian
 				}
 			}
 		}
 		trigger = {
 			AND = {
 				religion_group = zoroastrian
-				culture_group = iranian	
+				culture_group = iranian
 			}
 		}
 		modifiers = {
@@ -4841,7 +4841,7 @@
 		}
 	}
 
-	
+
 
 	eunich_administration_reform = {
 		icon = "asian_scripture"
@@ -4918,7 +4918,7 @@
 			OR = {
 				AND = {
 					religion_group = muslim
-					primary_culture = hejazi_culture	
+					primary_culture = hejazi_culture
 				}
 				has_reform = highborn_ministers_reform
 			}
@@ -4927,7 +4927,7 @@
 			OR = {
 				AND = {
 					religion_group = muslim
-					primary_culture = hejazi_culture	
+					primary_culture = hejazi_culture
 				}
 				has_reform = highborn_ministers_reform
 			}
@@ -4971,7 +4971,7 @@
 		}
 		modifiers = {
 			global_trade_power = 0.10
-			trade_deals_slots = 0.01
+			trade_deals_slots = 1
 		}
 		custom_attributes = {
 			enables_kiwi_support = yes #5% ship trade power per merchant.
@@ -5061,7 +5061,7 @@
 		}
 	}
 
-	
+
 
 	drastic_control_of_the_boyars_reform = {
 		icon = szlachta_noble_2
@@ -5142,13 +5142,13 @@
 		allow_normal_conversion = yes
 		potential = {
 			OR = {
-				primary_culture = wallonian 
+				primary_culture = wallonian
 				has_reform = hof_van_brabant_reform
 			}
 		}
 		trigger = {
 			OR = {
-				primary_culture = wallonian 
+				primary_culture = wallonian
 				has_reform = hof_van_brabant_reform
 			}
 		}
@@ -5197,7 +5197,7 @@
 			factor = 100
 		}
 	}
-	
+
 	via_media_reform = {
 		icon = crown
 		allow_normal_conversion = yes
@@ -5236,7 +5236,7 @@
 #}
 #############################
 ###########Tier5#############
-############################# 
+#############################
 #Tier 5 {
 	empowered_royal_decree_reform = {
 		icon = "austrian_empire"
@@ -5460,7 +5460,7 @@
 			global_missionary_strength = 0.02
 		}
 		custom_attributes = {
-			enables_church_poorhouses = yes 
+			enables_church_poorhouses = yes
 		}
 		ai = {
 			factor = 1
@@ -5494,7 +5494,7 @@
 		}
 	}
 
-	
+
 
 	king_and_duke_reform = {
 		icon = assembly_hall
@@ -5579,7 +5579,7 @@
 		}
 		modifiers = {
 			merchants = 1
-			trade_deals_slots = 0.01
+			trade_deals_slots = 1
 		}
 		custom_attributes = {
 			enables_mercenary_markets = yes #-1% Infantry Cost and 2% Manpower Recovery per merchant
@@ -5608,14 +5608,14 @@
 			OR = {
 				AND = {
 					religion_group = zoroastrian
-					culture_group = iranian	
+					culture_group = iranian
 				}
 			}
 		}
 		trigger = {
 			AND = {
 				religion_group = zoroastrian
-				culture_group = iranian	
+				culture_group = iranian
 			}
 		}
 		modifiers = {
@@ -5672,7 +5672,7 @@
 		icon = man_on_podium
 		allow_normal_conversion = yes
 		potential = {
-			has_reform = elective_monarchy_reform 
+			has_reform = elective_monarchy_reform
 		}
 		modifiers = {
 			monarch_military_power = 1
@@ -5690,7 +5690,7 @@
 		icon = king
 		allow_normal_conversion = yes
 		potential = {
-			has_reform = elective_monarchy_reform 
+			has_reform = elective_monarchy_reform
 		}
 		modifiers = {
 			max_absolutism = 10
@@ -5708,7 +5708,7 @@
 		allow_normal_conversion = yes
 		has_parliament = yes
 		potential = {
-			has_reform = elective_monarchy_reform 
+			has_reform = elective_monarchy_reform
 		}
 		modifiers = {
 			legitimacy = 0.5
@@ -5743,7 +5743,7 @@
 		icon = peasants
 		allow_normal_conversion = yes
 		potential = {
-			has_reform = elective_monarchy_reform 
+			has_reform = elective_monarchy_reform
 		}
 		modifiers = {
 			global_unrest = -1
@@ -5756,7 +5756,7 @@
 		}
 	}
 
-	
+
 
 	grand_secretariat_reform = {
 		icon = "asian_scripture"
@@ -5806,7 +5806,7 @@
 		}
 	}
 
-	
+
 
 	tripartum_reform = {
 		icon = hungarian_tripartum
@@ -5958,17 +5958,17 @@
 			merchants = 1
 		}
 		custom_attributes = {
-			enables_foreign_artists = yes #0.1 Prestige per Merchant. 
+			enables_foreign_artists = yes #0.1 Prestige per Merchant.
 		}
 		ai = {
 			factor = 101
 		}
 	}
-	
+
 
 	#############################
 	###########Tier6#############
-	############################# 
+	#############################
 
 	freedom_of_religion_reform = {
 		icon = freedom_of_religion
@@ -6022,13 +6022,13 @@
 		icon = nueva_planta
 		allow_normal_conversion = yes
 		potential = {
-			OR = { 
+			OR = {
 				tag = SPA
 				has_reform = nueva_planta_decrees_reform
 			}
 		}
 		trigger = {
-			OR = { 
+			OR = {
 				tag = SPA
 				has_reform = nueva_planta_decrees_reform
 			}
@@ -6046,7 +6046,7 @@
 	toleration_of_all_faiths_edict_reform = {
 		icon = toleration_edict
 		allow_normal_conversion = yes
-		potential = { 
+		potential = {
 			OR = {
 				tag = RUS
 				primary_culture = russian
@@ -6096,9 +6096,9 @@
 		}
 	}
 
-	
 
-	
+
+
 
 	absolutist_administration_reform = {
 		icon = "asian_scripture"
@@ -6146,11 +6146,11 @@
 		}
 	}
 
-	
+
 #}
 #############################
 ###########Tier7#############
-############################# 
+#############################
 #Tier 7 {
 	abolish_clergy_privileges_reform = {
 		icon = bourbon_reform
@@ -6204,11 +6204,11 @@
 		}
 	}
 
-	
+
 #}
 #############################
 ###########Tier3.5###########
-############################# 
+#############################
 #Tier 3.5 {
 	feudal_levies_reform = {
 		icon = "soldiers_2"
@@ -6225,7 +6225,7 @@
 				value = -1
 			}
 		}
-		potential = { 
+		potential = {
 		}
 		trigger = {
 		}
@@ -6259,15 +6259,15 @@
 				value = -1
 			}
 		}
-		potential = { 
+		potential = {
 			check_variable = {
-				which = Noble_Influence			
+				which = Noble_Influence
 				value = 2
 			}
 		}
 		trigger = {
 			check_variable = {
-				which = Noble_Influence			
+				which = Noble_Influence
 				value = 2
 			}
 		}
@@ -6299,7 +6299,7 @@
 				value = -1
 			}
 		}
-		potential = { 
+		potential = {
 			NOT = { culture_group = latin }
 		}
 		modifiers = {
@@ -6406,20 +6406,20 @@
 				value = -1
 			}
 		}
-		potential = { 
+		potential = {
 			check_variable = {
-				which = Clergy_Influence			
+				which = Clergy_Influence
 				value = 2
 			}
 		}
 		trigger = {
 			check_variable = {
-				which = Clergy_Influence			
+				which = Clergy_Influence
 				value = 2
 			}
 		}
 		modifiers = {
-			land_attrition = -0.1	
+			land_attrition = -0.1
 			reinforce_speed = 0.25
 			merc_maintenance_modifier = -0.25
 		}
@@ -6431,7 +6431,7 @@
 		}
 	}
 
-	
+
 
 	empowered_royal_guard_reform = {
 		icon = "hesse_jaegers"
@@ -6448,15 +6448,15 @@
 				value = -1
 			}
 		}
-		potential = { 
+		potential = {
 			check_variable = {
-				which = Royal_Influence			
+				which = Royal_Influence
 				value = 2
 			}
 		}
 		trigger = {
 			check_variable = {
-				which = Royal_Influence			
+				which = Royal_Influence
 				value = 2
 			}
 		}
@@ -6473,7 +6473,7 @@
 		}
 	}
 
-	
+
 
 	imperial_circles_reform = {
 		icon = "imperial_army"
@@ -6531,13 +6531,13 @@
 		potential = {
 			any_neighbor_country = {
 				has_reform = steppe_horde
-				culture_group = tartar	
+				culture_group = tartar
 			}
 		}
 		trigger = {
 			any_neighbor_country = {
 				has_reform = steppe_horde
-				culture_group = tartar	
+				culture_group = tartar
 			}
 		}
 		modifiers = {
@@ -6618,7 +6618,7 @@
 				primary_culture = central_thai
 				primary_culture = northern_thai
 				has_reform = honor_of_thai_kingdoms_reform
-			}	
+			}
 		}
 		modifiers = {
 			legitimacy = 1
@@ -6632,7 +6632,7 @@
 		}
 	}
 
-	
+
 
 	abolish_manrent_reform = {
 		icon = manrent
@@ -6738,14 +6738,14 @@
 		}
 		potential = {
 			OR = {
-				primary_culture = danish 
-				has_reform = the_black_guard_reform 
+				primary_culture = danish
+				has_reform = the_black_guard_reform
 			}
 		}
 		trigger = {
 			OR = {
-				primary_culture = danish 
-				has_reform = the_black_guard_reform 
+				primary_culture = danish
+				has_reform = the_black_guard_reform
 			}
 		}
 		modifiers = {
@@ -6774,14 +6774,14 @@
 		}
 		potential = {
 			OR = {
-				primary_culture = danish 
-				has_reform = snaphaner_reform 
+				primary_culture = danish
+				has_reform = snaphaner_reform
 			}
 		}
 		trigger = {
 			OR = {
-				primary_culture = danish 
-				has_reform = snaphaner_reform 
+				primary_culture = danish
+				has_reform = snaphaner_reform
 			}
 		}
 		modifiers = {
@@ -6814,14 +6814,14 @@
 		}
 		potential = {
 			OR = {
-				primary_culture = danish 
-				has_reform = strenghten_the_haeren_reform 
+				primary_culture = danish
+				has_reform = strenghten_the_haeren_reform
 			}
 		}
 		trigger = {
 			OR = {
-				primary_culture = danish 
-				has_reform = strenghten_the_haeren_reform 
+				primary_culture = danish
+				has_reform = strenghten_the_haeren_reform
 			}
 		}
 		modifiers = {
@@ -6851,13 +6851,13 @@
 		}
 		potential = {
 			OR = {
-				primary_culture = austrian 
+				primary_culture = austrian
 				has_reform = reorganize_the_imperial_army
 			}
 		}
 		trigger = {
 			OR = {
-				primary_culture = austrian 
+				primary_culture = austrian
 				has_reform = reorganize_the_imperial_army
 			}
 		}
@@ -6887,7 +6887,7 @@
 		}
 		potential = {
 			OR = {
-				primary_culture = al_misr_arabic			
+				primary_culture = al_misr_arabic
 				has_reform = arabian_horses_reform
 				AND = {
 					accepted_culture = al_misr_arabic
@@ -6900,7 +6900,7 @@
 		}
 		trigger = {
 			OR = {
-				primary_culture = al_misr_arabic			
+				primary_culture = al_misr_arabic
 				has_reform = arabian_horses_reform
 				AND = {
 					accepted_culture = al_misr_arabic
@@ -6942,18 +6942,18 @@
 			OR = {
 				AND = {
 					religion_group = muslim
-					culture_group = iberian	
+					culture_group = iberian
 				}
-				has_reform = berber_cavalry_reform 
+				has_reform = berber_cavalry_reform
 			}
 		}
 		trigger = {
 			OR = {
 				AND = {
 					religion_group = muslim
-					culture_group = iberian	
+					culture_group = iberian
 				}
-				has_reform = berber_cavalry_reform 
+				has_reform = berber_cavalry_reform
 			}
 		}
 		modifiers = {
@@ -6988,14 +6988,14 @@
 			OR = {
 				AND = {
 					religion_group = zoroastrian
-					culture_group = iranian	
+					culture_group = iranian
 				}
 			}
 		}
 		trigger = {
 			AND = {
 				religion_group = zoroastrian
-				culture_group = iranian	
+				culture_group = iranian
 			}
 		}
 		modifiers = {
@@ -7078,7 +7078,7 @@
 			mercenary_discipline = 0.05
 			merc_maintenance_modifier = -0.10
 			mercenary_manpower = 0.25
-			
+
 		}
 		ai = {
 			factor = 10
@@ -7122,7 +7122,7 @@
 		}
 	}
 
-	
+
 
 	sherifan_levies_reform = {
 		icon = hejaz_cavalry
@@ -7143,7 +7143,7 @@
 			OR = {
 				AND = {
 					religion_group = muslim
-					primary_culture = hejazi_culture	
+					primary_culture = hejazi_culture
 				}
 				has_reform = sherifan_levies_reform
 			}
@@ -7152,7 +7152,7 @@
 			OR = {
 				AND = {
 					religion_group = muslim
-					primary_culture = hejazi_culture	
+					primary_culture = hejazi_culture
 				}
 				has_reform = sherifan_levies_reform
 			}
@@ -7229,13 +7229,13 @@
 		}
 		potential = {
 			OR = {
-				primary_culture = wallonian 
+				primary_culture = wallonian
 				has_reform = army_of_flanders_reform
 			}
 		}
 		trigger = {
 			OR = {
-				primary_culture = wallonian 
+				primary_culture = wallonian
 				has_reform = army_of_flanders_reform
 			}
 		}
@@ -7267,13 +7267,13 @@
 		}
 		potential = {
 			OR = {
-				primary_culture = moroccan 
+				primary_culture = moroccan
 				has_reform = jayish_al_malik_reform
 			}
 		}
 		trigger = {
 			OR = {
-				primary_culture = moroccan 
+				primary_culture = moroccan
 				has_reform = jayish_al_malik_reform
 			}
 		}
@@ -7288,7 +7288,7 @@
 			factor = 101
 		}
 	}
-	
+
 	wacht_am_rhein_reform = {
 		icon = national_guard
 		allow_normal_conversion = yes
@@ -7304,10 +7304,10 @@
 				value = -1
 			}
 		}
-		potential = { 
+		potential = {
 			primary_culture = hessian
 		}
-		trigger = { 
+		trigger = {
 			primary_culture = hessian
 		}
 		modifiers = {
@@ -7324,7 +7324,7 @@
 #}
 #############################
 ###########Tier5.5###########
-############################# 
+#############################
 #Tier 5.5 {
 	strenghten_industry_reform = {
 		icon = economy_industry
@@ -7355,7 +7355,7 @@
 		modifiers = {
 			# global_prov_trade_power_modifier = 0.10
 			merchants = 1
-			trade_deals_slots = 0.01
+			trade_deals_slots = 1
 		}
 		custom_attributes = {
 			enables_home_market = yes #1.5% Trade Efficiency per 10% Mercantilism
@@ -7371,15 +7371,15 @@
 		effect = {
 			add_mercantilism = -10
 		}
-		potential = { 
+		potential = {
 			check_variable = {
-				which = Burgher_Influence			
+				which = Burgher_Influence
 				value = 3
 			}
 		}
 		trigger = {
 			check_variable = {
-				which = Burgher_Influence			
+				which = Burgher_Influence
 				value = 3
 			}
 		}
@@ -7387,7 +7387,7 @@
 			global_trade_power = -0.10
 			global_trade_goods_size_modifier = 0.15
 			merchants = 1
-			trade_deals_slots = 0.02
+			trade_deals_slots = 2
 		}
 		can_use_trade_post = yes
 		ai = {
@@ -7413,23 +7413,23 @@
 	empowered_aristocratic_estates_reform = {
 		icon = empowered_aristocrat_estate
 		allow_normal_conversion = yes
-		potential = { 
+		potential = {
 			check_variable = {
-				which = Burgher_Influence			
+				which = Burgher_Influence
 				value = 1
 			}
 			check_variable = {
-				which = Noble_Influence			
+				which = Noble_Influence
 				value = 2
 			}
 		}
 		trigger = {
 			check_variable = {
-				which = Burgher_Influence			
+				which = Burgher_Influence
 				value = 1
 			}
 			check_variable = {
-				which = Noble_Influence			
+				which = Noble_Influence
 				value = 2
 			}
 		}
@@ -7448,30 +7448,30 @@
 	empowered_monastic_centres_reform = {
 		icon = empowered_monastery
 		allow_normal_conversion = yes
-		potential = { 
+		potential = {
 			check_variable = {
-				which = Burgher_Influence			
+				which = Burgher_Influence
 				value = 1
 			}
 			check_variable = {
-				which = Clergy_Influence		
+				which = Clergy_Influence
 				value = 2
 			}
 		}
 		trigger = {
 			check_variable = {
-				which = Burgher_Influence			
+				which = Burgher_Influence
 				value = 1
 			}
 			check_variable = {
-				which = Clergy_Influence			
+				which = Clergy_Influence
 				value = 2
 			}
 		}
 		modifiers = {
 			global_tax_modifier = 0.10
 			global_trade_power = 0.10
-			trade_deals_slots = 0.01
+			trade_deals_slots = 1
 		}
 		# custom_attributes = {
 			# enables_monastic_trade = yes
@@ -7484,23 +7484,23 @@
 	empowered_expand_corvee_reform = {
 		icon = empowered_corvee
 		allow_normal_conversion = yes
-		potential = { 
+		potential = {
 			check_variable = {
-				which = Noble_Influence			
+				which = Noble_Influence
 				value = 2
 			}
 			check_variable = {
-				which = Clergy_Influence		
+				which = Clergy_Influence
 				value = 1
 			}
 		}
 		trigger = {
 			check_variable = {
-				which = Noble_Influence			
+				which = Noble_Influence
 				value = 2
 			}
 			check_variable = {
-				which = Clergy_Influence		
+				which = Clergy_Influence
 				value = 1
 			}
 		}
@@ -7521,15 +7521,15 @@
 	empowered_enlarge_royal_estate_reform = {
 		icon = empowered_royal_estate
 		allow_normal_conversion = yes
-		potential = { 
+		potential = {
 			check_variable = {
-				which = Royal_Influence			
+				which = Royal_Influence
 				value = 2
 			}
 		}
 		trigger = {
 			check_variable = {
-				which = Royal_Influence			
+				which = Royal_Influence
 				value = 2
 			}
 		}
@@ -7573,7 +7573,7 @@
 		modifiers = {
 			trade_efficiency = 0.10
 			trade_company_investment_cost = -0.25
-			trade_deals_slots = 0.01
+			trade_deals_slots = 1
 		}
 		ai = {
 			factor = 10
@@ -7621,7 +7621,7 @@
 		}
 		modifiers = {
 			placed_merchant_power = 10
-			trade_deals_slots = 0.01
+			trade_deals_slots = 1
 			#trade_efficiency = 0.10
 			#merchants = 1 #temp
 		}

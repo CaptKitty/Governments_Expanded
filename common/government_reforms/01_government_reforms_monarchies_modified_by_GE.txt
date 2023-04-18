@@ -46,7 +46,7 @@ plutocratic_reform = {
 		nobles_influence_modifier = -0.05
 		burghers_influence_modifier = 0.05
 		vaisyas_influence_modifier = 0.05
-		trade_deals_slots = 0.01
+		trade_deals_slots = 1
 	}
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes
@@ -178,7 +178,7 @@ quash_noble_power_reform = {
 	potential = {
 		is_revolutionary = no
 		NOT = { tag = KOR }
-	}	
+	}
 	effect = {
 		change_variable = {
 			which = Royal_Influence
@@ -415,7 +415,7 @@ enforce_trader_privileges_reform = {
 	modifiers = {
 		trade_range_modifier = 0.3
 		trade_efficiency = 0.05
-		trade_deals_slots = 0.01
+		trade_deals_slots = 1
 	}
 	ai = {
 		factor = 2
@@ -455,7 +455,7 @@ bengali_reform = {
 	modifiers = {
 		merchants = 1
 		trade_efficiency = 0.1
-		trade_deals_slots = 0.01
+		trade_deals_slots = 1
 	}
 	ai = {
 		factor = 5
@@ -1097,7 +1097,7 @@ clergy_in_administration_reform = {
 	modifiers = {
 		free_adm_policy = 1
 		tolerance_own = 1
-		
+
 		brahmins_hindu_influence_modifier = 0.1
 		brahmins_hindu_loyalty_modifier = 0.05
 
@@ -1168,7 +1168,7 @@ of_noble_bearing_reform = {
 			}
 			has_reform = of_noble_bearing_reform
 		}
-		NOT = { 
+		NOT = {
 			OR = {
 				culture_group = east_slavic
 				culture_group = carpathian
@@ -1386,7 +1386,7 @@ royal_decree_reform = {
 	potential = {
 		is_revolutionary = no
 		OR = {
-			NOT = { 		
+			NOT = {
 				check_variable = {
 						which = Royal_Influence
 						value = 3
@@ -1487,7 +1487,7 @@ general_estates_reform = {
 		OR = {
 			NOT = {
 				check_variable = {
-					which = Burgher_Influence 
+					which = Burgher_Influence
 					value = 3
 				}
 			}
