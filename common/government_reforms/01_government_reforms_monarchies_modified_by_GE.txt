@@ -1,25 +1,5 @@
 #Feudalism vs Autocracy:
 
-feudalism_reform = {
-	icon = "castle"
-	allow_normal_conversion = yes
-	legacy_equivalent = feudal_monarchy
-	valid_for_nation_designer = yes
-	nation_designer_cost = 0
-	modifiers = {
-		vassal_income = 0.25
-		nobles_influence_modifier = 0.05
-		maratha_exclusive_influence_modifier = 0.05
-		rajput_exclusive_influence_modifier = 0.05
-	}
-	effect = {
-		change_government = monarchy
-	}
-	ai = {
-		factor = 0.5 #generic
-	}
-}
-
 autocracy_reform = {
 	icon = "crown"
 	allow_normal_conversion = yes
@@ -28,6 +8,8 @@ autocracy_reform = {
 	nation_designer_cost = 0
 	modifiers = {
 		unjustified_demands = -0.1
+		harsh_treatment_cost = -0.1
+		global_rebel_suppression_efficiency = 0.1
 	}
 	custom_attributes = {
 		enables_royal_council = yes
@@ -154,172 +136,6 @@ grant_noble_castle_rights_reform = {
 	}
 }
 
-maintain_nobles_status_quo_reform = {
-	icon = "conciliarism_reform"
-	allow_normal_conversion = yes
-	potential = {
-		is_revolutionary = no
-	}
-	modifiers = {
-		stability_cost_modifier = -0.1
-	}
-	custom_attributes = {
-		free_noble_levies = yes
-	}
-	effect = {
-		change_variable = {
-			which = Noble_Influence
-			value = 1
-		}
-	}
-	removed_effect = {
-		change_variable = {
-			which = Noble_Influence
-			value = -1
-		}
-	}
-	ai = {
-		factor = 1
-	}
-}
-
-grant_military_command_reform = {
-	icon = "soldiers"
-	allow_normal_conversion = yes
-	potential = {
-		is_revolutionary = no
-	}
-	modifiers = {
-		army_tradition = 0.25
-		yearly_army_professionalism = 0.002
-		nobles_influence_modifier = 0.05
-		maratha_exclusive_influence_modifier = 0.05
-		rajput_exclusive_influence_modifier = 0.05
-	}
-	custom_attributes = {
-		recruiting_generals_increases_nobles_loyalty = yes
-	}
-	effect = {
-		change_variable = {
-			which = Noble_Influence
-			value = 1
-		}
-	}
-	removed_effect = {
-		change_variable = {
-			which = Noble_Influence
-			value = -1
-		}
-	}
-	ai = {
-		factor = 1
-	}
-}
-
-grant_nobles_electorate_reform = {
-	icon = "ballot_box"
-	allow_normal_conversion = yes
-	potential = {
-		is_revolutionary = no
-		has_idea_group = aristocracy_ideas
-	}
-	trigger = {
-		has_idea_group = aristocracy_ideas
-		NOT = { has_reform = celestial_empire }
-	}
-	modifiers = {
-		nobles_loyalty_modifier = 0.1
-		maratha_loyalty_modifier = 0.1
-		rajput_loyalty_modifier = 0.1
-		nobles_influence_modifier = 0.1
-		maratha_exclusive_influence_modifier = 0.1
-		rajput_exclusive_influence_modifier = 0.1
-		no_stability_loss_on_monarch_death = yes
-	}
-	effect = {
-		hidden_effect = {
-			if = {
-				limit = {
-					OR = {
-						has_estate_led_regency = {
-							estate = estate_nobles
-						}
-						has_estate_led_regency = {
-							estate = estate_maratha
-						}
-						has_estate_led_regency = {
-							estate = estate_rajput
-						}
-					}
-				}
-				add_ruler_modifier = {
-					name = empowered_regency_modifier
-					duration = -1
-				}
-			}
-		}
-		change_variable = {
-			which = Noble_Influence
-			value = -1
-		}
-	}
-	removed_effect = {
-		hidden_effect = {
-			remove_country_modifier = empowered_regency_modifier
-		}
-		change_variable = {
-			which = Noble_Influence
-			value = -1
-		}
-	}
-	custom_attributes = {
-		improved_nobles_regency = yes
-	}
-	ai = {
-		factor = 1
-	}
-}
-
-blackmail_nobility_reform = {
-	icon = "blackmailing"
-	allow_normal_conversion = yes
-	potential = {
-		is_revolutionary = no
-		has_idea_group = spy_ideas
-		NOT = { has_estate_privilege = estate_nobles_golden_liberty }
-	}
-	trigger = {
-		full_idea_group = spy_ideas
-	}
-	modifiers = {
-		nobles_influence_modifier = -0.15
-		maratha_exclusive_influence_modifier = -0.15
-		rajput_exclusive_influence_modifier = -0.15
-		nobles_loyalty_modifier = -0.05
-		maratha_loyalty_modifier = -0.05
-		rajput_loyalty_modifier = -0.05
-		allow_free_estate_privilege_revocation = yes
-	}
-	custom_attributes = {
-		seizing_land_no_rebels_from_estate_nobles = yes
-	}
-	effect = {
-		change_variable = {
-			which = Royal_Influence
-			value = 1
-		}
-	}
-	removed_effect = {
-		change_variable = {
-			which = Royal_Influence
-			value = -1
-		}
-	}
-	ai = {
-		factor = 0
-	}
-}
-
 enforce_privileges_reform = {
 	icon = "people_walking"
 	allow_normal_conversion = yes
@@ -336,7 +152,7 @@ enforce_privileges_reform = {
 		}
 	}
 	modifiers = {
-		global_manpower_modifier = 0.15
+		global_manpower_modifier = 0.1
 		nobles_influence_modifier = 0.1
 		maratha_exclusive_influence_modifier = 0.1
 		rajput_exclusive_influence_modifier = 0.1
@@ -387,6 +203,185 @@ quash_noble_power_reform = {
 			factor = 1.5
 			is_in_deficit = yes
 		}
+	}
+}
+
+maintain_nobles_status_quo_reform = {
+	icon = "conciliarism_reform"
+	allow_normal_conversion = yes
+	potential = {
+		is_revolutionary = no
+	}
+	modifiers = {
+		legitimacy = 0.5
+		meritocracy = 0.5
+		stability_cost_modifier = -0.15
+	}
+	custom_attributes = {
+		free_noble_levies = yes
+	}
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 0
+			crown_land_share = 50
+		}
+	}
+}
+
+grant_military_command_reform = {
+	icon = "soldiers"
+	allow_normal_conversion = yes
+	potential = {
+		is_revolutionary = no
+	}
+	modifiers = {
+		army_tradition = 0.25
+		cavalry_cost = -0.1
+		nobles_influence_modifier = 0.05
+		maratha_exclusive_influence_modifier = 0.05
+		rajput_exclusive_influence_modifier = 0.05
+	}
+	custom_attributes = {
+		recruiting_generals_increases_nobles_loyalty = yes
+	}
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+grant_nobles_electorate_reform = {
+	icon = "ballot_box"
+	allow_normal_conversion = yes
+	potential = {
+		is_revolutionary = no
+	}
+	trigger = {
+		has_idea_group = aristocracy_ideas
+		NOT = { has_reform = celestial_empire }
+	}
+	modifiers = {
+		nobles_loyalty_modifier = 0.1
+		maratha_loyalty_modifier = 0.1
+		rajput_loyalty_modifier = 0.1
+		no_stability_loss_on_monarch_death = yes
+	}
+	effect = {
+		hidden_effect = {
+			if = {
+				limit = {
+					OR = {
+						has_estate_led_regency = {
+							estate = estate_nobles
+						}
+						has_estate_led_regency = {
+							estate = estate_maratha
+						}
+						has_estate_led_regency = {
+							estate = estate_rajput
+						}
+					}
+				}
+				add_ruler_modifier = {
+					name = empowered_regency_modifier
+					duration = -1
+				}
+			}
+		}
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			remove_country_modifier = empowered_regency_modifier
+		}
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
+	custom_attributes = {
+		improved_nobles_regency = yes
+	}
+	conditional = {
+		allow = { has_dlc = "Domination" }
+		custom_attributes = {
+			has_improved_ruler_election = yes
+		}
+	}
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 100
+			has_government_attribute = has_ruler_election
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_government_attribute = has_ruler_election }
+		}
+	}
+}
+
+blackmail_nobility_reform = {
+	icon = "blackmailing"
+	allow_normal_conversion = yes
+	potential = {
+		is_revolutionary = no
+		has_idea_group = spy_ideas
+		NOT = { has_estate_privilege = estate_nobles_golden_liberty }
+	}
+	trigger = {
+		full_idea_group = spy_ideas
+	}
+	modifiers = {
+		nobles_influence_modifier = -0.1
+		maratha_exclusive_influence_modifier = -0.1
+		rajput_exclusive_influence_modifier = -0.1
+		allow_free_estate_privilege_revocation = yes
+	}
+	custom_attributes = {
+		seizing_land_no_rebels_from_estate_nobles = yes
+	}
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
+	ai = {
+		factor = 0
 	}
 }
 
@@ -746,7 +741,8 @@ centralize_reform = {
 			has_dlc = "Leviathan"
 		}
 		custom_attributes = {
-			centralize_state_no_reform_cost = yes
+			centralize_state_half_refund = yes
+			#centralize_state_no_reform_cost = yes
 			#centralize_state_development = yes
 		}
 	}
@@ -866,7 +862,8 @@ centralize_empire_reform = {
 			has_dlc = "Leviathan"
 		}
 		custom_attributes = {
-			centralize_state_no_reform_cost = yes
+			centralize_state_half_refund = yes
+			#centralize_state_no_reform_cost = yes
 			#centralize_state_development = yes
 		}
 	}
@@ -881,6 +878,37 @@ centralize_empire_reform = {
 			which = Royal_Influence
 			value = -1
 		}
+	}
+}
+
+decentralize_reform = {
+	icon = "map"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			is_revolutionary = no
+			NOT = { has_dlc = "Emperor" }
+		}
+	}
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	modifiers = {
+		min_autonomy_in_territories = -0.05
+		num_accepted_cultures = 2
+		all_estate_loyalty_equilibrium = 0.05
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
+	ai = {
+		factor = 1
 	}
 }
 
@@ -913,7 +941,7 @@ expand_imperial_court_reform = {
 }
 
 limit_imperial_court_reform = {
-	icon = "paper_with_seal_3"
+	icon = "politician"
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -988,6 +1016,7 @@ representation_of_the_crown_reform = {
 	modifiers = {
 		diplomatic_upkeep = 1
 		vassal_forcelimit_bonus = 0.25
+		monarch_power_tribute = 1
 	}
 	custom_attributes = {
 		subject_tax_modifier_25 = yes
@@ -1002,46 +1031,6 @@ representation_of_the_crown_reform = {
 		change_variable = {
 			which = Noble_Influence
 			value = -1
-		}
-	}
-}
-
-decentralize_reform = {
-	icon = "map"
-	allow_normal_conversion = yes
-	potential = {
-		OR = {
-			is_revolutionary = no
-			NOT = { has_dlc = "Emperor" }
-		}
-	}
-	effect = {
-		change_variable = {
-			which = Noble_Influence
-			value = 1
-		}
-	}
-	modifiers = {
-		min_autonomy_in_territories = -0.05
-		num_accepted_cultures = 2
-		all_estate_loyalty_equilibrium = 0.05
-	}
-	removed_effect = {
-		change_variable = {
-			which = Noble_Influence
-			value = -1
-		}
-	}
-	ai = {
-		factor = 1
-		modifier = {
-			factor = 0.25
-			NOT = {
-				any_owned_province = {
-					has_owner_accepted_culture = no
-					has_owner_culture = no
-				}
-			}
 		}
 	}
 }
@@ -1079,35 +1068,6 @@ sidhi_recruitment = {
 	}
 }
 
-mansabdari_reform = {
-	icon = "noble_muslim"
-	allow_normal_conversion = yes
-	effect = {
-		change_variable = {
-			which = Noble_Influence
-			value = 1
-		}
-	}
-	removed_effect = {
-		change_variable = {
-			which = Noble_Influence
-			value = -1
-		}
-	}
-	potential = {
-		tag = MUG
-		NOT = { map_setup = map_setup_random }
-		has_dlc = "Dharma"
-	}
-	modifiers = {
-		army_tradition_decay = -0.003
-		governing_capacity = 150
-	}
-	ai = {
-		factor = 10
-	}
-}
-
 #Growth of Administration
 
 clergy_in_administration_reform = {
@@ -1136,6 +1096,7 @@ clergy_in_administration_reform = {
 	}
 	modifiers = {
 		free_adm_policy = 1
+		tolerance_own = 1
 		
 		brahmins_hindu_influence_modifier = 0.1
 		brahmins_hindu_loyalty_modifier = 0.05
@@ -1261,7 +1222,7 @@ of_noble_bearing_reform = {
 }
 
 meritocratic_focus_reform = {
-	icon = "merchant"
+	icon = "politician"
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -1276,6 +1237,7 @@ meritocratic_focus_reform = {
 		}
 	}
 	modifiers = {
+		yearly_corruption = -0.1
 		advisor_cost = -0.1
 		maratha_muslim_influence_modifier = 0.1
 		rajput_muslim_influence_modifier = 0.1
@@ -1320,38 +1282,6 @@ meritocratic_focus_reform = {
 				}
 			}
 		}
-	}
-}
-
-dyanstic_administration_reform = {
-	icon = "crown"
-	allow_normal_conversion = yes
-	potential = {
-		OR = {
-			is_revolutionary = no
-			NOT = { has_dlc = "Emperor" }
-		}
-	}
-	modifiers = {
-		yearly_corruption = 0.2
-		all_estate_influence_modifier = -0.1
-		monarch_admin_power = 1
-		advisor_pool = 1
-	}
-	effect = {
-		change_variable = {
-			which = Royal_Influence
-			value = 1
-		}
-	}
-	removed_effect = {
-		change_variable = {
-			which = Royal_Influence
-			value = -1
-		}
-	}
-	ai = {
-		factor = 1
 	}
 }
 
@@ -1414,6 +1344,38 @@ zabt_reform = {
 	}
 }
 
+dyanstic_administration_reform = {
+	icon = "royal_favoritism"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			is_revolutionary = no
+			NOT = { has_dlc = "Emperor" }
+		}
+	}
+	modifiers = {
+		yearly_corruption = 0.15
+		all_estate_influence_modifier = -0.1
+		monarch_admin_power = 1
+		advisor_pool = 1
+	}
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
+	ai = {
+		factor = 1
+	}
+}
+
 #deliberative_assembly
 
 # parliamentary_reform defined in common file
@@ -1461,7 +1423,8 @@ aristocratic_court_reform = {
 	}
 	modifiers = {
 		diplomatic_reputation = 1
-		army_tradition_decay = -0.003
+		monthly_favor_modifier = 0.25
+		improve_relation_modifier = 0.15
 	}
 	ai = {
 		factor = 1
@@ -1541,9 +1504,5 @@ general_estates_reform = {
 	}
 	ai = {
 		factor = 1
-		modifier = {
-			factor = 1.2
-			production_income_percentage = 0.25
-		}
 	}
 }

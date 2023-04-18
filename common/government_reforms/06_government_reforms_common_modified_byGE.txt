@@ -3,6 +3,7 @@ parliamentary_reform = {
 	potential = {
 		is_revolutionary = no
 		NOT = { has_government_attribute = is_pirate_republic_reform }
+		NOT = { has_government_attribute = english_parliament }
 		NOT = { has_reform = elective_monarchy_reform }
 	}
 	modifiers = {
@@ -38,6 +39,7 @@ parliamentary_reform = {
 			limit = { has_dlc = "Lions of the North" }
 			NOT = { has_reform = polish_elective_monarchy }
 		}
+		NOT = { has_reform = polish_great_sejm }
 		if = {
 			limit = { NOT = { has_dlc = "Mandate of Heaven" } }
 			NOT = { has_reform = celestial_empire }
@@ -46,7 +48,12 @@ parliamentary_reform = {
 	}
 
 	conditional = {
-		allow = { has_dlc = "Common Sense" }
+		allow = {
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+		}
 		has_parliament = yes
 		custom_attributes = {
 			disables_estate_nobles = yes
@@ -259,8 +266,9 @@ council_of_the_indies_reform = {
 		}
 	}
 	modifiers = {
-		global_tariffs = 0.2
-		treasure_fleet_income = 0.2
+		reduced_liberty_desire_on_other_continent = 5
+		treasure_fleet_income = 0.25
+		global_trade_power = 0.05
 	}
 	ai = {
 		factor = 2
@@ -268,7 +276,7 @@ council_of_the_indies_reform = {
 }
 
 penal_colonies_reform = {
-	icon = "merchant_ship"
+	icon = "colonial_companies"
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
