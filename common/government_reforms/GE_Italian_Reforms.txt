@@ -130,7 +130,7 @@ kingdom_of_sardinia_reform = {
 	modifiers = {
 		max_absolutism = 5
 		state_maintenance_modifier = -0.10
-		primary_development_cost = 0.10
+		development_cost_in_primary_culture = -0.10
 	}
 	ai = {
 		factor = 100
@@ -157,7 +157,7 @@ kingdom_of_sicily_reform = {
 	modifiers = {
 		max_absolutism = 5
 		global_autonomy = -0.025
-		primary_development_cost = 0.10
+		development_cost_in_primary_culture = -0.10
 	}
 	ai = {
 		factor = 100

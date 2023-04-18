@@ -1,5 +1,4 @@
-estate_peasants =
-{
+estate_peasants = {
 	icon = 12
 
 	trigger = {

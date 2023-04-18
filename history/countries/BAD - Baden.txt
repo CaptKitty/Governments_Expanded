@@ -1,5 +1,13 @@
 government = monarchy
-add_government_reform = margrave_reform
+if = {
+	limit = {
+		has_dlc = "Domination"
+	}
+	add_government_reform = margraviate_reform
+}
+else = {
+	add_government_reform = margrave_reform
+}
 government_rank = 1
 primary_culture = swabian
 religion = catholic
@@ -322,7 +330,7 @@ capital = 4714	# Durlach
 		dynasty = "von Zähringen"		
 		leader = { 
 			name = "Ludwig-Wilhelm I"
-			type = general
+			type = general
 			fire = 2
 			shock = 3
 			manuever = 2

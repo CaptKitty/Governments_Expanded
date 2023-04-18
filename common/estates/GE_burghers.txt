@@ -1,0 +1,6 @@
+estate_burghers = {
+	agendas = {
+		### GE ###
+		estate_burghers_workshops_investments
+	}
+}
