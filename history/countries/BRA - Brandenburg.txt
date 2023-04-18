@@ -5,7 +5,10 @@ if = {
 	}
 	add_government_reform = margraviate_reform
 }
-else = {
+if = {
+	limit = {
+		NOT = { has_dlc = "Domination" }
+	}
 	add_government_reform = margrave_reform
 }
 government_rank = 1
@@ -25,7 +28,7 @@ change_estate_land_share = {
 }
 
 
-1378.12.9 = { 
+1378.12.9 = {
 	monarch = {
 		name = "Siegmund I"
 		dynasty = "von Luxemburg"
@@ -380,7 +383,7 @@ change_estate_land_share = {
 		mil = 1
 	}
 }
-	
+
 1608.5.14 = {
 	join_league = protestant
 }

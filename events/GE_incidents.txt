@@ -11,7 +11,7 @@ country_event = {
 
 	immediate = {
 	}
-	
+
 	option = {
 		name = GE_incidents.1.a
 		set_country_flag = GE_incidents_1_stole_wife
@@ -37,7 +37,7 @@ country_event = {
 
 	immediate = {
 	}
-	
+
 	option = {
 		name = GE_incidents.2.a
 		add_years_of_income = -1
@@ -65,7 +65,7 @@ country_event = {
 
 	immediate = {
 	}
-	
+
 	option = {
 		name = GE_incidents.3.a #occupy it
 		event_target:agenda_province_owner = {
@@ -100,7 +100,7 @@ country_event = {
 
 	immediate = {
 	}
-	
+
 	option = {
 		name = GE_incidents.4.a #mobilize the troops
 		FROM = {
@@ -111,7 +111,7 @@ country_event = {
 		add_yearly_manpower = 1
 		add_army_tradition = 10
 		ai_chance = {
-			factor = 1 
+			factor = 1
 			modifier = {
 				factor = 0.5
 				FROM = {
@@ -181,7 +181,7 @@ country_event = {
 
 	immediate = {
 	}
-	
+
 	option = {
 		name = GE_incidents.5.a #to war!
 		event_target:agenda_province = {
@@ -193,7 +193,7 @@ country_event = {
 			war_goal_province = event_target:agenda_province
 		}
 		ai_chance = {
-			factor = 1 
+			factor = 1
 			modifier = {
 				factor = 0.5
 				FROM = {
@@ -252,7 +252,7 @@ country_event = {
 
 	immediate = {
 	}
-	
+
 	option = {
 		name = GE_incidents.6.a #Sell the province
 		FROM = {
@@ -297,7 +297,7 @@ country_event = {
 				random_owned_province = {
 					limit = {
 						any_neighbor_province = {
-							id = event_target:agenda_province
+							province_id = event_target:agenda_province
 						}
 					}
 					add_base_tax = 1
@@ -322,7 +322,7 @@ country_event = {
 
 	immediate = {
 	}
-	
+
 	option = {
 		name = GE_incidents.7.a #Sell the province
 		FROM = {
@@ -359,7 +359,7 @@ country_event = {
 
 	immediate = {
 	}
-	
+
 	option = {
 		name = GE_incidents.8.a #Sell the fief
 		FROM = {
@@ -374,7 +374,7 @@ country_event = {
 			random_owned_province = {
 				limit = {
 					any_neighbor_province = {
-						id = event_target:agenda_province
+						province_id = event_target:agenda_province
 					}
 				}
 				add_base_tax = 1

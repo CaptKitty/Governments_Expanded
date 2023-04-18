@@ -5,7 +5,10 @@ if = {
 	}
 	add_government_reform = margraviate_reform
 }
-else = {
+if = {
+	limit = {
+		NOT = { has_dlc = "Domination" }
+	}
 	add_government_reform = margrave_reform
 }
 government_rank = 1

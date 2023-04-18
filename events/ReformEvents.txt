@@ -4645,7 +4645,7 @@ country_event = {
 			change_mil = 2
 		}
 		hidden_effect = {
-			kill_heir = yes
+			kill_heir = {}
 		}
 	}
 
@@ -15126,7 +15126,7 @@ country_event = {
 					claim = 50
 					hide_skills = yes
 				}
-				kill_heir = yes
+				kill_heir = {}
 			}
 			50 = {
 				add_reform_progress_small_effect = yes
