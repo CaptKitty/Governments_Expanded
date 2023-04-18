@@ -1,7 +1,7 @@
 ﻿l_english:
  # File includes localisation for government mechanics and connected modifiers, events, tooltips, etc
 
- # Bureaucracy vs Military Mechanic:
+# Bureaucracy vs Military Mechanic:
  ## Mechanics:
  ability_bureaucracy_vs_military_mechanic: "Bureaucracy vs Military"
  bureaucracy_vs_military_power: "Bureaucracy vs Military Balance"
@@ -26,7 +26,7 @@
  ## Customizable Localization:
  string_bureaucracy_vs_military_power_max_effects: "\n\nBalance fully towards §YMilitary§! has the following effects: \n[army_tradition]: §G+1.00§! \n[discipline]: §G+5.0%§! \n[drill_gain_modifier]: §G+20.0%§! \n[manpower_in_own_culture_provinces]: §G+15.0%§!"
 
- # Liberalism Mechanic:
+# Liberalism Mechanic:
  ## Mechanics:
  ability_liberalism_mechanic: "Liberalism"
  liberalism: "Liberalism"
@@ -36,7 +36,7 @@
  monthly_liberalism: "Monthly Liberalism Gain"
  liberalism_gain_modifier: "Liberalism Gain Modifier"
 
- # Crusade Mechanic:
+# Crusade Mechanic:
  ## Mechanics:
  ability_crusade_power_mechanic: "Crusade Power"
  crusade_power: "Crusade Power"
@@ -53,7 +53,7 @@
  string_crusade_power_gain_from_winning_war_against_crusade_target: "\n   - Win a War against the Crusade Target: §G+35.0§!"
  string_crusade_power_gain_from_losing_war_against_crusade_target: "\n   - Lose a War against the Crusade Target: §R-50.0§!"
 
- # Political Focus Mechanic:
+# Political Focus Mechanic:
  ## Mechanics:
  ability_political_focus_mechanic: "Political Focus"
  political_focus_power: "Political Power"
@@ -102,7 +102,7 @@
  political_focus_mechanic_modifier_current_effects_tt: "\nCurrent effects of this focus:"
  political_focus_mechanic_modifiers_duration: "until you reach §Y0§! Political Power or deactivate the focus"
 
- # Corruption Mechanic:
+# Corruption Mechanic:
  ## Mechanics:
  ability_corruption_mechanic: "Corruption Acceptance"
  corruption_mechanic_power: "Corruption Acceptance"
@@ -138,3 +138,17 @@
  corruption_mechanic_events1.EVTOPT1: "Grant an Administrative Favor."
  corruption_mechanic_events1.EVTOPT2: "Grant a Diplomatic Favor."
  corruption_mechanic_events1.EVTOPT3: "Grant a Military Favor."
+
+## Venetian Government Mechanic
+ ## Mechanics:
+ stato_da_mar: "Stato Da Mar"
+ stato_da_mar_desc: ""
+ carnevale_venezia: "Carnevale Di Venezia"
+ carnevale_venezia_desc: ""
+ stato_da_tera: "Stato da Tera"
+ stato_da_tera_desc: ""
+
+ ## Modifiers
+  venetian_government_stato_mar_modifier: "Stato da Mar"
+  venetian_government_carnevale_venezia_modifier: "Carneval di Venezia"
+  venetian_government_stato_tera_modifier: "Stato de Tera"

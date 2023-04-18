@@ -1,0 +1,88 @@
+venetian_government_mechanic = {
+	alert_icon_gfx = GFX_alerticons_government_mechanics
+	alert_icon_index = 8
+	available = {
+		always = yes
+	}
+	
+	interactions = {
+		stato_da_mar = {
+			icon = GFX_stato_da_mar_button
+			trigger = {
+				NOT = { has_country_modifier = venetian_government_stato_mar_modifier }
+				NOT = { has_country_modifier = venetian_government_carnevale_venezia_modifier }
+				NOT = { has_country_modifier = venetian_government_stato_tera_modifier }
+			}
+			effect = {
+				hidden_effect = {
+					remove_country_modifier = venetian_government_stato_mar_modifier
+					remove_country_modifier = venetian_government_carnevale_venezia_modifier
+					remove_country_modifier = venetian_government_stato_tera_modifier
+				}
+				add_ruler_modifier = {
+					name = venetian_government_stato_mar_modifier
+					duration = -1
+					desc = until_different_focus_tt
+				}
+			}
+			cooldown_years = 20
+			cooldown_token = perfectionism_mechanic
+			cooldown_desc = PERFECTIONISM_POLICY
+			ai_chance = {
+				factor = 20
+			}
+		}
+		carnevale_venezia = {
+			icon = GFX_carnevale_venezia_button
+			trigger = {
+				NOT = { has_country_modifier = venetian_government_stato_mar_modifier }
+				NOT = { has_country_modifier = venetian_government_carnevale_venezia_modifier }
+				NOT = { has_country_modifier = venetian_government_stato_tera_modifier }
+			}
+			effect = { 
+				hidden_effect = {
+					remove_country_modifier = venetian_government_stato_mar_modifier
+					remove_country_modifier = venetian_government_carnevale_venezia_modifier
+					remove_country_modifier = venetian_government_stato_tera_modifier
+				}
+				add_ruler_modifier = {
+					name = venetian_government_carnevale_venezia_modifier
+					duration = -1
+					desc = until_different_focus_tt
+				}
+			}
+			cooldown_years = 20
+			cooldown_token = perfectionism_mechanic
+			cooldown_desc = PERFECTIONISM_POLICY
+			ai_chance = {
+				factor = 20
+			}
+		}
+		stato_da_tera = {
+			icon = GFX_stato_da_tera_button
+			trigger = {
+				NOT = { has_country_modifier = venetian_government_stato_mar_modifier }
+				NOT = { has_country_modifier = venetian_government_carnevale_venezia_modifier }
+				NOT = { has_country_modifier = venetian_government_stato_tera_modifier }
+			}
+			effect = { 
+				hidden_effect = {
+					remove_country_modifier = venetian_government_stato_mar_modifier
+					remove_country_modifier = venetian_government_carnevale_venezia_modifier
+					remove_country_modifier = venetian_government_stato_tera_modifier
+				}
+				add_ruler_modifier = {
+					name = venetian_government_stato_tera_modifier
+					duration = -1
+					desc = until_different_focus_tt
+				}
+			}
+			cooldown_years = 20
+			cooldown_token = perfectionism_mechanic
+			cooldown_desc = PERFECTIONISM_POLICY
+			ai_chance = {
+				factor = 10
+			}
+		}
+	}
+}

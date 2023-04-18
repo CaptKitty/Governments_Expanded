@@ -108,6 +108,9 @@ venice_merchants_reform = {
 	government_abilities = {
 		liberalism_mechanic
 	}
+	government_abilities = {
+		venetian_government_mechanic
+	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
 	legacy_equivalent = venetian_merchant_republic

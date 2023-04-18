@@ -223,23 +223,9 @@ italian_monarchy_reform = {
 		legitimacy = 1
 		governing_capacity = 150
 	}
-	custom_attributes = {
-		enables_italian_dibattito_italiano = yes
-		enables_italian_monarchici_vs_repubblicani = yes
+	government_abilities = {
+		republican_vs_monarchist_mechanic
 	}
-	# conditional = {
-	# 	allow = { has_dlc = "Res Publica" }
-	# 	states_general_mechanic = {
-	# 		monarchists = {
-	# 			core_creation = -0.10
-	# 			manpower_in_culture_group_provinces = 0.15
-	# 		}
-	# 		statists = {
-	# 			all_power_cost = -0.05
-	# 			reform_progress_growth = 0.20
-	# 		}
-	# 	}
-	# }
 }
 italian_republic_reform = {
 	icon = italian_republic_reform
@@ -253,27 +239,13 @@ italian_republic_reform = {
 		governing_capacity = 150
 	}
 	duration = 5
-	custom_attributes = {
-		enables_italian_dibattito_italiano = yes
-		enables_italian_monarchici_vs_repubblicani = yes
+	government_abilities = {
+		republican_vs_monarchist_mechanic
 	}
 	conditional = {
 		allow = { has_dlc = "Common Sense" }
 		has_parliament = yes
 	}
-	# conditional = {
-	# 	allow = { has_dlc = "Res Publica" }
-	# 	states_general_mechanic = {
-	# 		monarchists = {
-	# 			core_creation = -0.10
-	# 			manpower_in_culture_group_provinces = 0.15
-	# 		}
-	# 		statists = {
-	# 			all_power_cost = -0.05
-	# 			reform_progress_growth = 0.20
-	# 		}
-	# 	}
-	# }
 }
 kingdom_of_sardinia_reform = {
 	icon = kingdom_of_sardinia
