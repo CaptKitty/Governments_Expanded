@@ -45,11 +45,11 @@ colonial_mission_reform = {
 ajuraan_theocracy_reform = {
 	icon = muslim_highlighted
 	allow_normal_conversion = yes
-	
+
 	queen = yes
 	heir = yes
 	royal_marriage = yes
-	
+
 	potential = {
 		primary_culture = somali
 	}
@@ -224,10 +224,10 @@ militarized_monasteries_reform = {
 brothers_in_arms_reform = {
 	icon = "brothers_in_arms"
 	allow_normal_conversion = yes
-	
+
 	rulers_can_be_generals = yes
 	heirs_can_be_generals = yes
-	
+
 	modifiers = {
 		mercenary_discipline = 0.025
 		mercenary_manpower = 0.25
@@ -241,7 +241,7 @@ mamluk_soldiers_reform = {
 	icon = feudal_theocracy
 	allow_normal_conversion = yes
 	potential = {
-		culture_group = cushitic 
+		culture_group = cushitic
 	}
 	trigger = {
 		primary_culture = somali
@@ -518,7 +518,7 @@ siberian_tribal_confederation_reform = {
 		OR = {
 			primary_culture = evenk
 			primary_culture = buryat
-			primary_culture = yukagyr 
+			primary_culture = yukagyr
 			primary_culture = kamchatkan
 		}
 		NOT = { primary_culture = manchu}
@@ -527,7 +527,7 @@ siberian_tribal_confederation_reform = {
 		OR = {
 			primary_culture = evenk
 			primary_culture = buryat
-			primary_culture = yukagyr 
+			primary_culture = yukagyr
 			primary_culture = kamchatkan
 		}
 		NOT = { primary_culture = manchu}
@@ -649,7 +649,7 @@ three_jurchen_tribes_reform = {
 		OR = {
 			culture_group = evenks
 			primary_culture = manchu_new
-		} 
+		}
 	}
 	trigger = {
 		OR = {
@@ -674,7 +674,7 @@ snow_life_reform = {
 		OR = {
 			primary_culture = evenk
 			primary_culture = buryat
-			primary_culture = yukagyr 
+			primary_culture = yukagyr
 			primary_culture = kamchatkan
 		}
 		NOT = { primary_culture = manchu}
@@ -683,7 +683,7 @@ snow_life_reform = {
 		OR = {
 			primary_culture = evenk
 			primary_culture = buryat
-			primary_culture = yukagyr 
+			primary_culture = yukagyr
 			primary_culture = kamchatkan
 		}
 		NOT = { primary_culture = manchu}
@@ -837,7 +837,7 @@ one_on_high_reform = {
 		OR = {
 			primary_culture = evenk
 			primary_culture = buryat
-			primary_culture = yukagyr 
+			primary_culture = yukagyr
 			primary_culture = kamchatkan
 		}
 		NOT = { primary_culture = manchu}
@@ -850,7 +850,7 @@ one_on_high_reform = {
 		OR = {
 			primary_culture = evenk
 			primary_culture = buryat
-			primary_culture = yukagyr 
+			primary_culture = yukagyr
 			primary_culture = kamchatkan
 		}
 		NOT = { primary_culture = manchu}
@@ -892,8 +892,8 @@ gunpowder_weapons_reform = {
 	potential = {
 		NOT = {
 			OR = {
-				technology_group = south_african
-				technology_group = west_african
+				technology_group = sub_saharan
+				technology_group = central_african
 				technology_group = east_african
 			}
 		}
@@ -914,15 +914,15 @@ traditionalist_african_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			technology_group = south_african
-			technology_group = west_african
+			technology_group = sub_saharan
+			technology_group = central_african
 			technology_group = east_african
 		}
 	}
 	modifiers = {
 		infantry_power = 0.10
 	}
-	
+
 	#+10% Noble Loyalty
 	ai = {
 		factor = 1
@@ -934,8 +934,8 @@ gunpowder_weapons_african_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			technology_group = south_african
-			technology_group = west_african
+			technology_group = sub_saharan
+			technology_group = central_african
 			technology_group = east_african
 		}
 	}
@@ -954,15 +954,15 @@ african_jungle_warrior_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			technology_group = south_african
-			technology_group = west_african
+			technology_group = sub_saharan
+			technology_group = central_african
 			technology_group = east_african
 		}
 	}
 	trigger = {
 		OR = {
-			technology_group = south_african
-			technology_group = west_african
+			technology_group = sub_saharan
+			technology_group = central_african
 			technology_group = east_african
 		}
 	}
@@ -976,7 +976,7 @@ african_jungle_warrior_reform = {
 	}
 }
 
-elephant_riders_reform = { 
+elephant_riders_reform = {
 	icon = noble_indian
 	allow_normal_conversion = yes
 	potential = {
@@ -1070,12 +1070,12 @@ subotai_lessons_reform = {
 	}
 	potential = {
 		OR = {
-			culture_group = altaic 
+			culture_group = altaic
 		}
 	}
 	trigger = {
 		OR = {
-			culture_group = altaic 
+			culture_group = altaic
 		}
 	}
 	modifiers = {
