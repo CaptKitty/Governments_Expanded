@@ -327,10 +327,6 @@ country_event = {
 		#NOT = { has_country_flag = royal_diet }
 	}
 
-	mean_time_to_happen = {
-		days = 30
-	}
-
 	immediate = {
 		hidden_effect = {
 			#set_country_flag = royal_diet

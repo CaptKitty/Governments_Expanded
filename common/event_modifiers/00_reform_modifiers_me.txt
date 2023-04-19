@@ -467,19 +467,19 @@ Expanded_Corvee = {
 	local_production_efficiency = 0.10
 	local_manpower_modifier = 0.10
 }
-Hansa_Ties_1 = { 
+Hansa_Ties_1 = {
 	republican_tradition = 0.1
 }
-Hansa_Ties_2 = { 
+Hansa_Ties_2 = {
 	republican_tradition = 0.2
 }
 Hansa_Ties_3 = {
-	republican_tradition = 0.3 
+	republican_tradition = 0.3
 }
-Hansa_Ties_4 = { 
+Hansa_Ties_4 = {
 	republican_tradition = 0.4
 }
-Hansa_Ties_5 = { 
+Hansa_Ties_5 = {
 	republican_tradition = 0.5
 }
 Royal_Army_Garrison = {
@@ -779,9 +779,21 @@ GE_Cultural_Inspiration_4 = {
 	production_efficiency = 0.20
 	technology_cost = -0.08
 }
-GE_Cultural_Inspiration_1 = {
+GE_Cultural_Inspiration_5 = {
 	production_efficiency = 0.25
 	technology_cost = -0.10
+}
+GE_baltic_sea_trade_1 = {
+	navy_tradition = 0.25
+}
+GE_baltic_sea_trade_2 = {
+	navy_tradition = 0.5
+}
+GE_baltic_sea_trade_3 = {
+	navy_tradition = 0.75
+}
+GE_baltic_sea_trade_4 = {
+	navy_tradition = 1
 }
 GE_Coin_over_Crown = {
 	mercenary_discipline = 0.05
@@ -947,7 +959,7 @@ GE_Siberian_Tribe = {
 }
 
 
-	
+
 #Cortez
 Cortes_Piety = {
 	tolerance_own = 1
@@ -1344,8 +1356,8 @@ GE_Unified_Army = {
 GE_Corrupted_Merchants = {
 	yearly_corruption = 0.02
 }
-	
-	
+
+
 #####Estate Agendas
 GE_Peasant_Estate_Growth = {
 	trade_goods_size_modifier = 0.25
@@ -1405,8 +1417,3 @@ GE_guards_regiments = {
 	discipline = 0.05
 	is_rajput_modifier = yes
 }
-
-
-
-
-
