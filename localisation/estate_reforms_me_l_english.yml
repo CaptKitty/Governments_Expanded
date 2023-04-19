@@ -1304,7 +1304,7 @@ the_holy_office_reform: "The Holy Office"
 
  #GE Don't Know
  mechanic_enables_siberian_tribe_yes: "Siberian Tribe: §G-25%§! Development Cost in §YGlacial§! or §YArctic§! owned provinces"
- mechanic_enables_capitalism_yes: "Laissez Faire Capitalism: §G+2.5%§! Goods Produced Modifier for each §Y10%§! Total Liberalism up to §Y100%§! Total Liberalism"
+ mechanic_enables_capitalism_yes: "Laissez Faire Capitalism: Adds §G+25.0%§! Goods Produced to the §YLiberalism§! Ability"
 
  #Edicts
  edict_expanded_theme_system: "Expanded Theme System"
