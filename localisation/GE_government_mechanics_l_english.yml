@@ -139,16 +139,17 @@
  corruption_mechanic_events1.EVTOPT2: "Grant a Diplomatic Favor."
  corruption_mechanic_events1.EVTOPT3: "Grant a Military Favor."
 
-## Venetian Government Mechanic
+# Venetian Government Mechanic
  ## Mechanics:
- stato_da_mar: "Stato Da Mar"
- stato_da_mar_desc: ""
- carnevale_venezia: "Carnevale Di Venezia"
- carnevale_venezia_desc: ""
- stato_da_tera: "Stato da Tera"
- stato_da_tera_desc: ""
+ ability_venetian_government_mechanic: "Venetian Ruler Focus"
+ venetian_government_mechanic_stato_da_mar: "Stato Da Mar"
+ venetian_government_mechanic_stato_da_mar_desc: "You can only pick one of the focuses at the same time and the picked focus will last til the death of your ruler. \n--------------\n"
+ venetian_government_mechanic_carnevale_venezia: "Carnevale Di Venezia"
+ venetian_government_mechanic_carnevale_venezia_desc: "You can only pick one of the focuses at the same time and the picked focus will last til the death of your ruler. \n--------------\n"
+ venetian_government_mechanic_stato_da_tera: "Stato da Tera"
+ venetian_government_mechanic_stato_da_tera_desc: "You can only pick one of the focuses at the same time and the picked focus will last til the death of your ruler. \n--------------\n"
 
  ## Modifiers
-  venetian_government_stato_mar_modifier: "Stato da Mar"
-  venetian_government_carnevale_venezia_modifier: "Carneval di Venezia"
-  venetian_government_stato_tera_modifier: "Stato de Tera"
+ venetian_government_stato_mar_modifier: "Stato da Mar"
+ venetian_government_carnevale_venezia_modifier: "Carneval di Venezia"
+ venetian_government_stato_tera_modifier: "Stato de Tera"

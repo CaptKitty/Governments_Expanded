@@ -23,8 +23,8 @@ republican_vs_monarchist_mechanic = {
 					}
 				}
 				modifier = {
-					core_creation = -0.10
-					manpower_in_own_culture_provinces = 0.15
+					core_creation = 0.10
+					manpower_in_own_culture_provinces = -0.15
 				}
 			}
 			scaled_modifier = {
