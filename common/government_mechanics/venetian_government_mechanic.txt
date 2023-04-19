@@ -15,6 +15,9 @@ venetian_government_mechanic = {
 				NOT = { has_ruler_modifier = venetian_government_stato_tera_modifier }
 			}
 			effect = {
+				create_admiral = {
+					tradition = 50
+				}
 				add_ruler_modifier = {
 					name = venetian_government_stato_mar_modifier
 					duration = -1
@@ -33,6 +36,7 @@ venetian_government_mechanic = {
 				NOT = { has_ruler_modifier = venetian_government_stato_tera_modifier }
 			}
 			effect = {
+				add_reform_progress_medium_effect = yes
 				add_ruler_modifier = {
 					name = venetian_government_carnevale_venezia_modifier
 					duration = -1
@@ -51,6 +55,9 @@ venetian_government_mechanic = {
 				NOT = { has_ruler_modifier = venetian_government_stato_tera_modifier }
 			}
 			effect = {
+				create_general = {
+					tradition = 50
+				}
 				add_ruler_modifier = {
 					name = venetian_government_stato_tera_modifier
 					duration = -1

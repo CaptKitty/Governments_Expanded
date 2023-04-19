@@ -17,11 +17,11 @@ spriteTypes = {
 		texturefile = "gfx//interface//government_reform_icons//genoa.dds"
 	}
 	spriteType = {
-		name = "government_reform_italian_monarchy"
+		name = "government_reform_italian_monarchy_reform"
 		texturefile = "gfx//interface//government_reform_icons//italian_monarchy.dds"
 	}
 	spriteType = {
-		name = "government_reform_italian_republic"
+		name = "government_reform_italian_republic_reform"
 		texturefile = "gfx//interface//government_reform_icons//italian_republic.dds"
 	}
 	spriteType = {

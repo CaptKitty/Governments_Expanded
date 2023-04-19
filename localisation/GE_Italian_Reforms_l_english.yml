@@ -112,7 +112,8 @@
   theatines_reform_desc: "In a reaction of the Catholic refoms of the 16th century, the Theatines founded communities all over the italian peninsula, especially in the more traditional south. These communities would, upon taking vows to poverty, obedience and chastity be granted papal blessings and come to fill a influencial and governmental position within the state."
 
 # Tier 8
-
+ maritime_republic_reform: "Maritime Republic"
+ maritime_republic_reform_desc: "The economic recovery that took place in Europe starting from the ninth century, combined with the insecurity of land communication routes, meant that the main trade routes developed along the coasts of the Mediterranean Sea: in this context, and given the crisis of power central, some port cities were able to acquire ever greater autonomy, to the point of playing a leading role in the European scenario."
 # Tier 9
 
 # Tier 10
@@ -199,3 +200,9 @@
  desc_GE_Fury_Of_The_Reconquista: ""
  GE_Liber_Augustalis: "Liber Augustalis"
  desc_GE_Liber_Augustalis: ""
+ GE_maritime_republic_triggered_modifier: "Maritime Republic"
+ desc_GE_maritime_republic_triggered_modifier: ""
+ GE_new_world: "New World"
+ desc_GE_new_world: "The influx of the newly opened trade routes from the New World has diminished the importance of the Mediterranean sea."
+ GE_global_trade: "Global Trade"
+ desc_GE_global_trade: "With the discovery of the Americas, sea routes around Africa and the crossing of the Pacific Ocean, local trade networks are being connected into one world-spanning interconnected web, once more the Mediterranean sea has become just another sea in the vastness of this world."

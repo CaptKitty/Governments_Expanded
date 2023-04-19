@@ -34,3 +34,22 @@ GE_Liber_Augustalis = {
 
 	all_estate_loyalty_equilibrium = 0.05
 }
+
+GE_new_world = {
+	potential = {
+		has_government_mechanic = maritime_republic_mechanic
+	}
+	trigger = {
+		is_institution_enabled = new_world_i
+	}
+	monthly_maritime_republic = -0.33
+}
+GE_global_trade = {
+	potential = {
+		has_government_mechanic = maritime_republic_mechanic
+	}
+	trigger = {
+		is_institution_enabled = global_trade
+	}
+	monthly_maritime_republic = -0.33
+}

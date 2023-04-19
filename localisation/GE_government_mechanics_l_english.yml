@@ -151,5 +151,17 @@
 
  ## Modifiers
  venetian_government_stato_mar_modifier: "Stato da Mar"
+ desc_venetian_government_stato_mar_modifier: ""
  venetian_government_carnevale_venezia_modifier: "Carneval di Venezia"
+ desc_venetian_government_carnevale_venezia_modifier: ""
  venetian_government_stato_tera_modifier: "Stato de Tera"
+ desc_venetian_government_stato_tera_modifier: ""
+
+# Maritime Republic Mechanic
+ ## Mechanics:
+ ability_maritime_republic_mechanic: "Maritime Republic"
+ maritime_republic: "Maritime Republic"
+ maritime_republic_desc: ""
+
+ monthly_maritime_republic: "Monthly Maritime Republic Gain"
+ maritime_republic_gain_modifier: "Maritime Republic Gain Modifier"
