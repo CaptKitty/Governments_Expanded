@@ -114,6 +114,11 @@
 # Tier 8
  maritime_republic_reform: "Maritime Republic"
  maritime_republic_reform_desc: "The economic recovery that took place in Europe starting from the ninth century, combined with the insecurity of land communication routes, meant that the main trade routes developed along the coasts of the Mediterranean Sea: in this context, and given the crisis of power central, some port cities were able to acquire ever greater autonomy, to the point of playing a leading role in the European scenario."
+
+  # Specific
+  banco_dei_medici_reform: "Banco dei Medici"
+  banco_dei_medici_reform_desc: ""
+
 # Tier 9
 
 # Tier 10

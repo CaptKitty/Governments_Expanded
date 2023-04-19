@@ -1396,6 +1396,7 @@ republic = {
 				commercial_trade_empire_reform
 				## GE
 				maritime_republic_reform
+				banco_dei_medici_reform
 			}
 		}
 		consolidation_of_power_category = {

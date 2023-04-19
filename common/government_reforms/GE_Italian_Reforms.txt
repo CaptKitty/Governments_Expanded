@@ -1904,6 +1904,37 @@ theatines_reform = {
 		factor = 100
 	}
 }
+
+banco_dei_medici_reform = {
+	icon = paper_money_map
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			was_tag = LAN
+			tag = LAN
+			has_reform = banco_dei_medici_reform
+			have_had_reform = banco_dei_medici_reform
+		}
+	}
+	trigger = {
+		OR = {
+			was_tag = LAN
+			tag = LAN
+			has_reform = banco_dei_medici_reform
+			have_had_reform = banco_dei_medici_reform
+		}
+	}
+	modifiers = {
+		inflation_reduction = 0.1
+		inflation_action_cost = -0.25
+	}
+	government_abilities = {
+		corruption_mechanic
+	}
+	ai = {
+		factor = 0
+	}
+}
 #Tier 9
 
 #Tier 10
