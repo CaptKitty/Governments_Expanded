@@ -1374,12 +1374,9 @@ fanti_da_mar_reform = {
 	icon = pirate_king
 	allow_normal_conversion = yes
 	potential = {
+		num_of_total_ports = 1
 		OR = {
 			culture_group = latin
-			num_of_owned_provinces_with = {
-				value = 1
-				has_port = yes
-			}
 			have_had_reform = fanti_da_mar_reform
 		}
 	}
