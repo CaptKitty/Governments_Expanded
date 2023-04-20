@@ -2,23 +2,24 @@ null_modifier = {
 }
 
 rajput_regiment = {
-
 }
-
 
 ruler_adm = {
 	monthly_council_consensus = 0.1
+	# GE:
 	monthly_bureaucracy_vs_military_power = -0.05
 	monthly_political_focus_power = 0.084
 }
 
 ruler_dip = {
 	monthly_council_consensus = 0.1
+	# GE:
 	monthly_political_focus_power = 0.084
 }
 
 ruler_mil = {
 	monthly_council_consensus = 0.1
+	# GE:
 	monthly_bureaucracy_vs_military_power = 0.05
 	monthly_political_focus_power = 0.084
 }
@@ -26,6 +27,7 @@ ruler_mil = {
 war = {
 	monthly_militarized_society = 0.1
 	rr_girondists_influence = 0.15
+	# GE:
 	monthly_bureaucracy_vs_military_power = 0.05
 }
 
@@ -40,6 +42,7 @@ over_extension = {
 	mr_guilds_influence = 0.5
 	yearly_corruption = 0.5
 	ottoman_decadence_gain_modifier = 0.25
+	# GE:
 	monthly_bureaucracy_vs_military_power = -0.1
 }
 
@@ -68,10 +71,12 @@ corruption = {
 	monthly_heir_claim_increase = 0.025
 	monthly_russian_modernization = -1
 	monthly_ottoman_decadence = 10
+	# GE:
 	monthly_corruption_mechanic_power = 1
 }
 
 root_out_corruption = {
 	yearly_corruption = -1.0
+	# GE:
 	monthly_corruption_mechanic_power = -0.08
 }
