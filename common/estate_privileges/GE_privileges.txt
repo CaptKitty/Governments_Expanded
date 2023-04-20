@@ -31,6 +31,9 @@ estate_peasants_guild_assembly = {
 	modifier_by_land_ownership = {
 		global_trade_goods_size_modifier = 0.20
 	}
+	mechanics = {
+		exempt_from_seize_land
+	}
 	penalties = {
 	}
 	benefits = {
@@ -51,6 +54,9 @@ estate_peasants_manpower_drive = {
 	}
 	modifier_by_land_ownership = {
 		global_manpower_modifier = 0.25
+	}
+	mechanics = {
+		exempt_from_seize_land
 	}
 	penalties = {
 		nobles_loyalty_modifier = -0.1
@@ -166,6 +172,9 @@ estate_peasants_bear_arms = {
 		infantry_cost = -0.35
 		infantry_power = 0.15
 	}
+	mechanics = {
+		exempt_from_seize_land
+	}
 	conditional_modifier = {
 		trigger = {
 			NOT = {
@@ -269,6 +278,7 @@ estate_ghulams_military_corps = {
 		special_unit_forcelimit = 0.5
 	}
 	mechanics = {
+		exempt_from_seize_land
 		enables_rajput_regiments
 	}
 	ai_will_do = {
@@ -298,6 +308,9 @@ estate_ghulams_governor_positions = {
 	modifier_by_land_ownership = {
 		governing_capacity_modifier = 0.25
 	}
+	mechanics = {
+		exempt_from_seize_land
+	}
 	ai_will_do = {
 		factor = 10
 		modifier = {
@@ -326,6 +339,9 @@ estate_ghulams_trade_privileges = {
 	}
 	modifier_by_land_ownership = {
 		trade_efficiency = 0.20
+	}
+	mechanics = {
+		exempt_from_seize_land
 	}
 	ai_will_do = {
 		factor = 10
@@ -442,6 +458,9 @@ estate_nobles_magnate_law_privilege = {
 	}
 	modifier_by_land_ownership = {
 		global_unrest = -2.5
+	}
+	mechanics = {
+		exempt_from_seize_land
 	}
 	penalties = {
 	}
@@ -694,6 +713,9 @@ estate_nobles_white_knights = {
 	modifier_by_land_ownership = {
 		cavalry_cost = -0.25
 	}
+	mechanics = {
+		exempt_from_seize_land
+	}
 	penalties = {
 	}
 	benefits = {
@@ -835,6 +857,9 @@ estate_nobles_kreditwerk_appointment = {
 	}
 	modifier_by_land_ownership = {
 		global_tax_modifier = 0.40
+	}
+	mechanics = {
+		exempt_from_seize_land
 	}
 	penalties = {
 		global_autonomy = 0.05
@@ -1150,6 +1175,9 @@ estate_burghers_town_rights = {
 	modifier_by_land_ownership = {
 		development_cost = -0.25
 	}
+	mechanics = {
+		exempt_from_seize_land
+	}
 	on_granted = {
 	}
 	on_invalid = {
@@ -1222,6 +1250,9 @@ estate_burghers_saharan_outposts = {
 	}
 	modifier_by_land_ownership = {
 		trade_steering = 0.5
+	}
+	mechanics = {
+		exempt_from_seize_land
 	}
 	on_granted = {
 	}
@@ -1298,6 +1329,9 @@ estate_church_four_articles_of_prague = {
 	modifier_by_land_ownership = {
 		tolerance_own = 2.5
 		tolerance_heretic = -1.5
+	}
+	mechanics = {
+		exempt_from_seize_land
 	}
 	benefits = {
 	}
