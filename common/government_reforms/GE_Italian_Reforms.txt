@@ -223,9 +223,9 @@ italian_monarchy_reform = {
 		legitimacy = 1
 		governing_capacity = 150
 	}
-	government_abilities = {
-		republican_vs_monarchist_mechanic
-	}
+#	government_abilities = {
+#		republican_vs_monarchist_mechanic
+#	}
 }
 italian_republic_reform = {
 	icon = italian_republic_reform
@@ -239,9 +239,9 @@ italian_republic_reform = {
 		governing_capacity = 150
 	}
 	duration = 5
-	government_abilities = {
-		republican_vs_monarchist_mechanic
-	}
+#	government_abilities = {
+#		republican_vs_monarchist_mechanic
+#	}
 	conditional = {
 		allow = { has_dlc = "Common Sense" }
 		has_parliament = yes
