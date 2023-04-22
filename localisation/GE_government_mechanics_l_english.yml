@@ -40,18 +40,18 @@
  ## Mechanics:
  ability_crusade_power_mechanic: "Crusade Power"
  crusade_power: "Crusade Power"
- crusade_power_desc: "Crusade Power is a measure of how efficient and effective our fight against heretics and infidels is going. \n\nCrusade Power is gained by the following actions: \n   - Win a War against a Heretic: §G+20.0§! \n   - Win a War against a Heathen: §G+25.0§! [Root.crusade_power_mechanic_gain_from_winning_war_against_crusade_target] \n   - Force Convert a Country by War: §G+20.0§! \n   - Force Convert your Subject: §G+5.0§! \n\nCrusade Power is lost by the following actions: \n   - Lose a War against a Heretic: §R-25.0§! \n   - Lose a War against a Heathen: §R-35.0§! [Root.crusade_power_mechanic_gain_from_losing_war_against_crusade_target] \n   - Be Force Converted by War: §R-25.0§! \n\nThis is not affected by separate peaces, only when you as the war leader make peace with another war leader. Force converting a country will replace the gain from winning a war against them, you will not gain both.\n\n"
+ crusade_power_desc: "Crusade Power is a measure of how efficient and effective our fight against heretics and infidels is going. \n\nCrusade Power is gained by the following actions: \n   - Win a War against a Heretic: §G+20.00§! \n   - Win a War against a Heathen: §G+25.00§! [Root.crusade_power_mechanic_gain_from_winning_war_against_crusade_target] \n   - Force Convert a Country by War: §G+20.00§! \n   - Force Convert your Subject: §G+5.00§! \n\nCrusade Power is lost by the following actions: \n   - Lose a War against a Heretic: §R-25.00§! \n   - Lose a War against a Heathen: §R-35.00§! [Root.crusade_power_mechanic_gain_from_losing_war_against_crusade_target] \n   - Be Force Converted by War: §R-25.00§! \n\nThis is not affected by separate peaces, only when you as the war leader make peace with another war leader. Force converting a country will replace the gain from winning a war against them, you will not gain both.\n\n"
 
  ## Power Modifiers:
  monthly_crusade_power: "Monthly Crusade Power Gain"
  crusade_power_gain_modifier: "Crusade Power Gain Modifier"
 
  ## Tooltips:
- crusade_power_at_100_tt: "The monthly decay is negated until our §YCrusade Power§! falls under §Y100.0§!."
+ crusade_power_at_100_tt: "The monthly decay is negated until our §YCrusade Power§! falls under §Y100.00§!."
 
  ## Customizable Localization:
- string_crusade_power_gain_from_winning_war_against_crusade_target: "\n   - Win a War against the Crusade Target: §G+35.0§!"
- string_crusade_power_gain_from_losing_war_against_crusade_target: "\n   - Lose a War against the Crusade Target: §R-50.0§!"
+ string_crusade_power_gain_from_winning_war_against_crusade_target: "\n   - Win a War against the Crusade Target: §G+35.00§!"
+ string_crusade_power_gain_from_losing_war_against_crusade_target: "\n   - Lose a War against the Crusade Target: §R-50.00§!"
 
 # Political Focus Mechanic:
  ## Mechanics:
