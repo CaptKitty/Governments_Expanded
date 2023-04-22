@@ -40,7 +40,7 @@
  ## Mechanics:
  ability_crusade_power_mechanic: "Crusade Power"
  crusade_power: "Crusade Power"
- crusade_power_desc: "Crusade Power is a measure of how efficient and effective our fight against heretics and infidels is going. \n\nCrusade Power is gained by the following actions: \n   - Win a War against a Heretic: §G+20.0§! \n   - Win a War against a Heathen: §G+25.0§! [Root.crusade_power_mechanic_gain_from_winning_war_against_crusade_target] \n\nCrusade Power is lost by the following actions: \n   - Lose a War against a Heretic: §R-25.0§! \n   - Lose a War against a Heathen: §R-35.0§! [Root.crusade_power_mechanic_gain_from_losing_war_against_crusade_target] \n\nThis is not affected by separate peaces, only when you as the war leader make peace with another war leader. \n\n"
+ crusade_power_desc: "Crusade Power is a measure of how efficient and effective our fight against heretics and infidels is going. \n\nCrusade Power is gained by the following actions: \n   - Win a War against a Heretic: §G+20.0§! \n   - Win a War against a Heathen: §G+25.0§! [Root.crusade_power_mechanic_gain_from_winning_war_against_crusade_target] \n   - Force Convert a Country by War: §G+20.0§! \n   - Force Convert your Subject: §G+5.0§! \n\nCrusade Power is lost by the following actions: \n   - Lose a War against a Heretic: §R-25.0§! \n   - Lose a War against a Heathen: §R-35.0§! [Root.crusade_power_mechanic_gain_from_losing_war_against_crusade_target] \n   - Be Force Converted by War: §R-25.0§! \n\nThis is not affected by separate peaces, only when you as the war leader make peace with another war leader. Force converting a country will replace the gain from winning a war against them, you will not gain both.\n\n"
 
  ## Power Modifiers:
  monthly_crusade_power: "Monthly Crusade Power Gain"
@@ -158,7 +158,18 @@
  ## Mechanics:
  ability_maritime_republic_mechanic: "Maritime Republicanism"
  maritime_republic: "Maritime Republicanism"
- maritime_republic_desc: ""
+ maritime_republic_desc: "Maritime Republicanism is gained by owning and improving the following provinces (detailed requirements can be viewed in the province modifier tooltip): \n   - [101.GetName]: §G+0.25§! \n   - [112.GetName]: §G+0.25§! \n   - [115.GetName]: §G+0.25§! \n   - [2983.GetName]: §G+0.25§! \n\nMaritime Republicanism is lost by the following: \n   - Institution §YColonialism§! exists: §R-0.33§! \n   - Institution §YGlobal Trade§! exists: §R-0.33§! \n\n"
 
  monthly_maritime_republic: "Monthly Maritime Republicanism Gain"
  maritime_republic_gain_modifier: "Maritime Republicanism Gain Modifier"
+
+ ## Triggered Modifiers:
+ ### Province:
+ GE_maritime_republic_triggered_modifier: "Local Maritime Republicanism"
+ desc_GE_maritime_republic_triggered_modifier: ""
+
+ ### Country:
+ GE_maritime_republic_triggered_modifier_new_world: "New World"
+ desc_GE_maritime_republic_triggered_modifier_new_world: "The influx of the newly opened trade routes from the New World has diminished the importance of the Mediterranean sea."
+ GE_maritime_republic_triggered_modifier_global_trade: "Global Trade"
+ desc_GE_maritime_republic_triggered_modifier_global_trade: "With the discovery of the Americas, sea routes around Africa and the crossing of the Pacific Ocean, local trade networks are being connected into one world-spanning interconnected web, once more the Mediterranean sea has become just another sea in the vastness of this world."

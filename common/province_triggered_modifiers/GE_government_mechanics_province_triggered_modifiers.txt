@@ -1,3 +1,4 @@
+# Maritime Republic Mechanic
 GE_maritime_republic_triggered_modifier = {
 	potential = {
 		owner = {
@@ -8,6 +9,7 @@ GE_maritime_republic_triggered_modifier = {
 		owner = {
 			has_reform = maritime_republic_reform
 		}
+		controlled_by = owner
 		base_production = 10
 		has_trade_building_trigger = yes
 		OR = {
