@@ -24,3 +24,74 @@ GE_maritime_republic_triggered_modifier_global_trade = {
 
 	picture = "monthly_maritime_republic_opposite"
 }
+
+# Imperial Grace Mechanic
+imperial_grace_mechanic_triggered_modifier_at_war = {
+	potential = {
+		has_government_mechanic = imperial_grace_mechanic
+	}
+	trigger = {
+		is_at_war = yes
+		custom_trigger_tooltip = {
+			tooltip = imperial_grace_mechanic_triggered_modifier_at_war_tt
+			OR = {
+				AND = {
+					is_in_war = {
+						attacker_leader = ROOT
+					}
+					NOT = {
+						is_in_war = {
+							attacker_leader = ROOT
+							war_score = 50
+						}
+					}
+				}
+				AND = {
+					is_in_war = {
+						defender_leader = ROOT
+					}
+					NOT = {
+						is_in_war = {
+							defender_leader = ROOT
+							war_score = 50
+						}
+					}
+				}
+			}
+		}
+	}
+	monthly_imperial_grace_power = -0.25
+}
+
+imperial_grace_mechanic_triggered_modifier_winning_war = {
+	potential = {
+		has_government_mechanic = imperial_grace_mechanic
+	}
+	trigger = {
+		is_at_war = yes
+		custom_trigger_tooltip = {
+			tooltip = imperial_grace_mechanic_triggered_modifier_winning_war_tt
+			OR = {
+				AND = {
+					is_in_war = {
+						attacker_leader = ROOT
+					}
+					is_in_war = {
+						attacker_leader = ROOT
+						war_score = 50
+					}
+				}
+				AND = {
+					is_in_war = {
+						defender_leader = ROOT
+					}
+					is_in_war = {
+						defender_leader = ROOT
+						war_score = 50
+					}
+				}
+			}
+		}
+	}
+	monthly_imperial_grace_power = 0.1
+}

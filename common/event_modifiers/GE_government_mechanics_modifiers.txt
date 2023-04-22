@@ -160,3 +160,46 @@ venetian_government_stato_tera_modifier = {
 	global_unrest = 2
 	development_cost = 0.10
 }
+
+# Imperial Grace Mechanic
+imperial_grace_mechanic_interaction_construct_barays_modifier = {
+	development_cost_in_primary_culture = -0.1
+}
+
+imperial_grace_mechanic_interaction_construct_barays_province_modifier = {
+	local_development_cost = -0.1
+}
+
+imperial_grace_mechanic_interaction_sanction_temple_cities_modifier = {
+	global_prov_trade_power_modifier = 0.2
+	build_cost = -0.1
+	great_project_upgrade_cost = -0.1
+}
+
+imperial_grace_mechanic_interaction_reward_military_command_modifier = {
+	attack_bonus_in_capital_terrain = 1
+	manpower_in_own_culture_provinces = 0.25
+}
+
+imperial_grace_mechanic_interaction_issue_royal_decree_prosperity_modifier = {
+	all_power_cost = -0.15
+}
+
+imperial_grace_mechanic_interaction_issue_royal_decree_festivals_modifier = {
+	global_unrest = -4
+	production_efficiency = 0.2
+}
+
+imperial_grace_mechanic_interaction_issue_royal_decree_veterans_modifier = {
+	global_regiment_cost = -0.15
+	global_tax_modifier = 0.2
+}
+
+imperial_grace_mechanic_interaction_issue_royal_decree_merchant_vessels_modifier = {
+	global_ship_trade_power = 0.25
+	reinforce_speed = 0.25
+}
+
+imperial_grace_mechanic_tributary_modifier = {
+	monthly_imperial_grace_power = 0.05
+}

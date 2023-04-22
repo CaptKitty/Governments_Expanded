@@ -173,3 +173,46 @@
  desc_GE_maritime_republic_triggered_modifier_new_world: "The influx of the newly opened trade routes from the New World has diminished the importance of the Mediterranean sea."
  GE_maritime_republic_triggered_modifier_global_trade: "Global Trade"
  desc_GE_maritime_republic_triggered_modifier_global_trade: "With the discovery of the Americas, sea routes around Africa and the crossing of the Pacific Ocean, local trade networks are being connected into one world-spanning interconnected web, once more the Mediterranean sea has become just another sea in the vastness of this world."
+
+# Imperial Grace Mechanic
+ ## Mechanics:
+ ability_imperial_grace_mechanic: "Imperial Grace"
+ imperial_grace_power: "Imperial Grace"
+ imperial_grace_power_desc: ""
+ imperial_grace_mechanic_interaction_construct_barays: "Construct Barays"
+ imperial_grace_mechanic_interaction_construct_barays_desc: ""
+ imperial_grace_mechanic_interaction_sanction_temple_cities: "Sanction Temple Cities"
+ imperial_grace_mechanic_interaction_sanction_temple_cities_desc: ""
+ imperial_grace_mechanic_interaction_reward_military_command: "Reward Military Comand"
+ imperial_grace_mechanic_interaction_reward_military_command_desc: ""
+ imperial_grace_mechanic_interaction_issue_royal_decree: "Issue Royal Decree"
+ imperial_grace_mechanic_interaction_issue_royal_decree_desc: ""
+
+ ## Power Modifiers:
+ monthly_imperial_grace_power: "Monthly Imperial Grace Gain"
+ imperial_grace_power_gain_modifier: "Imperial Grace Gain Modifier"
+
+ ## Modifiers:
+ imperial_grace_mechanic_interaction_construct_barays_modifier: "Constructed Barays"
+ imperial_grace_mechanic_interaction_construct_barays_province_modifier: "Constructed Barays"
+ imperial_grace_mechanic_interaction_sanction_temple_cities_modifier: "Sanctioned Temple Cities"
+ imperial_grace_mechanic_interaction_reward_military_command_modifier: "Rewarded Military Command"
+ imperial_grace_mechanic_interaction_issue_royal_decree_prosperity_modifier: "The Prosperity Decree"
+ imperial_grace_mechanic_interaction_issue_royal_decree_festivals_modifier: "The Festivals Decree"
+ imperial_grace_mechanic_interaction_issue_royal_decree_veterans_modifier: "The Land Grants for Veterans Decree"
+ imperial_grace_mechanic_interaction_issue_royal_decree_merchant_vessels_modifier: "The Diplomatic Attachments for Merchant Vessels Decree"
+ imperial_grace_mechanic_tributary_modifier: "From Tributaries"
+
+ ## Triggered Modifiers:
+ imperial_grace_mechanic_triggered_modifier_at_war: "Fighting a War"
+ imperial_grace_mechanic_triggered_modifier_winning_war: "Winning a War"
+
+ ## Tooltips:
+ imperial_grace_mechanic_interaction_issue_royal_decree_trigger_tt: "Has NOT issued a §YRoyal Decree§! during the reign of §Y[Root.Monarch.GetName]§!"
+ imperial_grace_mechanic_interaction_issue_royal_decree_tt: "§Y[Root.GetName]§! will gain a modifier depending on which modifiers from the other interactions are active."
+ imperial_grace_mechanic_interaction_issue_royal_decree_tt_1: "\nIf §Y[Root.GetName]§! has the following modifiers (§YConstructed Barays§!, §YSanctioned Temple Cities§! and §YRewarded Military Command§!):"
+ imperial_grace_mechanic_interaction_issue_royal_decree_tt_2: "Else if §Y[Root.GetName]§! has the following modifiers (§YConstructed Barays§! and §YSanctioned Temple Cities§!):"
+ imperial_grace_mechanic_interaction_issue_royal_decree_tt_3: "Else if §Y[Root.GetName]§! has the following modifiers (§YConstructed Barays§! and §YRewarded Military Command§!):"
+ imperial_grace_mechanic_interaction_issue_royal_decree_tt_4: "Else if §Y[Root.GetName]§! has the following modifiers (§YSanctioned Temple Cities§! and §YRewarded Military Command§!):"
+ imperial_grace_mechanic_triggered_modifier_at_war_tt: "Is the §YWar Leader§! in a war with less than §Y50%§! war score in §Y[This.GetName]'s§! favor"
+ imperial_grace_mechanic_triggered_modifier_winning_war_tt: "Is the §YWar Leader§! in a war with at least §Y50%§! war score in §Y[This.GetName]'s§! favor"

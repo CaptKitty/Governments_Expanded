@@ -1,0 +1,210 @@
+imperial_grace_mechanic = {
+	alert_icon_gfx = GFX_alerticons_government_mechanics
+	alert_icon_index = 17
+	available = {
+		always = yes
+	}
+
+	powers = {
+		imperial_grace_power = {
+			min = -100
+			max = 100
+			default = 0
+			reset_on_new_ruler = yes
+			scaled_modifier = {
+				trigger = {
+					NOT = {
+						has_government_power = {
+							mechanic_type = imperial_grace_mechanic
+							power_type = imperial_grace_power
+							value = 0
+						}
+					}
+				}
+				modifier = {
+					global_unrest = -5
+					legitimacy = 1.5
+					stability_cost_modifier = -0.25
+				}
+			}
+			scaled_modifier = {
+				trigger = {
+					has_government_power = {
+						mechanic_type = imperial_grace_mechanic
+						power_type = imperial_grace_power
+						value = 0
+					}
+				}
+				modifier = {
+					global_trade_goods_size_modifier = 0.2
+					land_morale = 0.2
+				}
+			}
+		}
+	}
+
+	interactions = {
+		imperial_grace_mechanic_interaction_construct_barays = {
+			#icon =
+			cost_type = imperial_grace_power
+			cost = 30
+			cooldown_years = 20
+			trigger = {
+				adm_power_cost = 100
+				NOT = { has_country_modifier = imperial_grace_mechanic_interaction_construct_barays_modifier }
+			}
+			effect = {
+				adm_power_cost = -100
+				add_country_modifier = {
+					name = imperial_grace_mechanic_interaction_construct_barays_modifier
+					duration = 7300
+				}
+				capital_scope = {
+					add_province_modifier = {
+						name = imperial_grace_mechanic_interaction_construct_barays_province_modifier
+						duration = 7300
+					}
+				}
+			}
+			ai_chance = {
+				factor = 0
+			}
+		}
+		imperial_grace_mechanic_interaction_sanction_temple_cities = {
+			#icon =
+			cost_type = imperial_grace_power
+			cost = 30
+			cooldown_years = 20
+			trigger = {
+				dip_power_cost = 100
+				NOT = { has_country_modifier = imperial_grace_mechanic_interaction_sanction_temple_cities_modifier }
+			}
+			effect = {
+				dip_power_cost = -100
+				add_country_modifier = {
+					name = imperial_grace_mechanic_interaction_sanction_temple_cities_modifier
+					duration = 7300
+				}
+			}
+			ai_chance = {
+				factor = 0
+			}
+		}
+		imperial_grace_mechanic_interaction_reward_military_command = {
+			#icon =
+			cost_type = imperial_grace_power
+			cost = 30
+			cooldown_years = 20
+			trigger = {
+				mil_power_cost = 100
+				NOT = { has_country_modifier = imperial_grace_mechanic_interaction_reward_military_command_modifier }
+			}
+			effect = {
+				mil_power_cost = -100
+				add_country_modifier = {
+					name = imperial_grace_mechanic_interaction_reward_military_command_modifier
+					duration = 7300
+				}
+			}
+			ai_chance = {
+				factor = 0
+			}
+		}
+		imperial_grace_mechanic_interaction_issue_royal_decree = {
+			#icon =
+			cost_type = imperial_grace_power
+			cost = 20
+			cooldown_years = 20
+			trigger = {
+				calc_true_if = {
+					amount = 2
+					has_country_modifier = imperial_grace_mechanic_interaction_construct_barays_modifier
+					has_country_modifier = imperial_grace_mechanic_interaction_sanction_temple_cities_modifier
+					has_country_modifier = imperial_grace_mechanic_interaction_reward_military_command_modifier
+				}
+				custom_trigger_tooltip = {
+					tooltip = imperial_grace_mechanic_interaction_issue_royal_decree_trigger_tt
+					NOT = { has_ruler_flag = imperial_grace_mechanic_interaction_issue_royal_decree_flag }
+				}
+			}
+			effect = {
+				set_ruler_flag = imperial_grace_mechanic_interaction_issue_royal_decree_flag
+				if = {
+					limit = {
+						has_country_modifier = imperial_grace_mechanic_interaction_construct_barays_modifier
+						has_country_modifier = imperial_grace_mechanic_interaction_sanction_temple_cities_modifier
+						has_country_modifier = imperial_grace_mechanic_interaction_reward_military_command_modifier
+					}
+					add_ruler_modifier = {
+						name = imperial_grace_mechanic_interaction_issue_royal_decree_prosperity_modifier
+						duration = -1
+					}
+				}
+				else_if = {
+					limit = {
+						has_country_modifier = imperial_grace_mechanic_interaction_construct_barays_modifier
+						has_country_modifier = imperial_grace_mechanic_interaction_sanction_temple_cities_modifier
+					}
+					add_ruler_modifier = {
+						name = imperial_grace_mechanic_interaction_issue_royal_decree_festivals_modifier
+						duration = -1
+					}
+				}
+				else_if = {
+					limit = {
+						has_country_modifier = imperial_grace_mechanic_interaction_construct_barays_modifier
+						has_country_modifier = imperial_grace_mechanic_interaction_reward_military_command_modifier
+					}
+					add_ruler_modifier = {
+						name = imperial_grace_mechanic_interaction_issue_royal_decree_veterans_modifier
+						duration = -1
+					}
+				}
+				else_if = {
+					limit = {
+						has_country_modifier = imperial_grace_mechanic_interaction_sanction_temple_cities_modifier
+						has_country_modifier = imperial_grace_mechanic_interaction_reward_military_command_modifier
+					}
+					add_ruler_modifier = {
+						name = imperial_grace_mechanic_interaction_issue_royal_decree_merchant_vessels_modifier
+						duration = -1
+					}
+				}
+				else = {
+					custom_tooltip = imperial_grace_mechanic_interaction_issue_royal_decree_tt
+					custom_tooltip = imperial_grace_mechanic_interaction_issue_royal_decree_tt_1
+					tooltip = {
+						add_ruler_modifier = {
+							name = imperial_grace_mechanic_interaction_issue_royal_decree_prosperity_modifier
+							duration = -1
+						}
+					}
+					custom_tooltip = imperial_grace_mechanic_interaction_issue_royal_decree_tt_2
+					tooltip = {
+						add_ruler_modifier = {
+							name = imperial_grace_mechanic_interaction_issue_royal_decree_festivals_modifier
+							duration = -1
+						}
+					}
+					custom_tooltip = imperial_grace_mechanic_interaction_issue_royal_decree_tt_3
+					tooltip = {
+						add_ruler_modifier = {
+							name = imperial_grace_mechanic_interaction_issue_royal_decree_veterans_modifier
+							duration = -1
+						}
+					}
+					custom_tooltip = imperial_grace_mechanic_interaction_issue_royal_decree_tt_4
+					tooltip = {
+						add_ruler_modifier = {
+							name = imperial_grace_mechanic_interaction_issue_royal_decree_merchant_vessels_modifier
+							duration = -1
+						}
+					}
+				}
+			}
+			ai_chance = {
+				factor = 0
+			}
+		}
+	}
+}

@@ -1,0 +1,11 @@
+tributary_state = {
+	# additional modifiers
+	modifier_overlord = {
+		trigger = {
+			FROM = {
+				has_government_mechanic = imperial_grace_mechanic
+			}
+		}
+		modifier = imperial_grace_mechanic_tributary_modifier
+	}
+}
