@@ -23,8 +23,8 @@ republican_vs_monarchist_mechanic = {
 					}
 				}
 				modifier = {
-					core_creation = 0.10
-					manpower_in_own_culture_provinces = -0.15
+					core_creation = -0.10
+					manpower_in_own_culture_provinces = 0.15
 				}
 			}
 			scaled_modifier = {
@@ -37,19 +37,19 @@ republican_vs_monarchist_mechanic = {
 				}
 				modifier = {
 					all_power_cost = -0.05
-					reform_progress_growth = 0.20
+					global_unrest = -2
 				}
 			}
 		}
 	}
 
 	interactions = {
-		republican_vs_monarchist_bureaucratic_focus = {
+		republican_vs_monarchist_mare_nostrum_focus = {
 			gui = republican_vs_monarchist_mechanic_interaction
 			cooldown_years = 20
 			cooldown_desc = republican_vs_monarchist_mechanic_cooldown_desc
 			cooldown_token = republican_vs_monarchist_mechanic
-			icon = GFX_republican_vs_monarchist_mechanic_bureaucratic_focus_button
+			icon = GFX_republican_vs_monarchist_mare_nostrum_focus
 			trigger = {
 				NOT = { has_country_modifier = republican_vs_monarchist_mare_nostrum_focus_modifier }
 			}
@@ -61,20 +61,54 @@ republican_vs_monarchist_mechanic = {
 				}
 				add_country_modifier = {
 					name = republican_vs_monarchist_mare_nostrum_focus_modifier
-					duration = -1
+					duration = 5475
 					desc = republican_vs_monarchist_mechanic_interaction_duration
+				}
+				random_owned_province = {
+					limit = {
+						NOT = { has_province_flag = mare_nostrum_focus_province }
+						OR = {
+							province_id = 101
+							province_id = 112
+							province_id = 121
+							province_id = 115
+						}
+					}
+					add_base_production = 1
+					set_province_flag = mare_nostrum_focus_province
+					add_province_modifier = {
+						name = republican_vs_monarchist_mare_nostrum_focus_modifier_province
+						duration = 5475
+					}
+				}
+				hidden_effect = {
+					if = {
+						limit = {
+							calc_true_if = {
+								amount = 3
+								101 = { has_province_flag = mare_nostrum_focus_province }
+								112 = { has_province_flag = mare_nostrum_focus_province }
+								121 = { has_province_flag = mare_nostrum_focus_province }
+								125 = { has_province_flag = mare_nostrum_focus_province }
+							}
+						}
+						101 = { clr_province_flag = mare_nostrum_focus_province }
+						112 = { clr_province_flag = mare_nostrum_focus_province }
+						121 = { clr_province_flag = mare_nostrum_focus_province }
+						125 = { clr_province_flag = mare_nostrum_focus_province }
+					}
 				}
 			}
 			ai_chance = {
 				factor = 1
 			}
 		}
-		republican_vs_monarchist_tall_focus = {
+		republican_vs_monarchist_culla_rinascimento_focus = {
 			gui = republican_vs_monarchist_mechanic_interaction
 			cooldown_years = 20
 			cooldown_desc = republican_vs_monarchist_mechanic_cooldown_desc
 			cooldown_token = republican_vs_monarchist_mechanic
-			icon = GFX_republican_vs_monarchist_mechanic_bureaucratic_focus_button
+			icon = GFX_republican_vs_monarchist_culla_rinascimento_focus
 			trigger = {
 				NOT = { has_country_modifier = republican_vs_monarchist_culla_rinascimento_focus_modifier }
 			}
@@ -86,20 +120,24 @@ republican_vs_monarchist_mechanic = {
 				}
 				add_country_modifier = {
 					name = republican_vs_monarchist_culla_rinascimento_focus_modifier
-					duration = -1
+					duration = 5475
 					desc = republican_vs_monarchist_mechanic_interaction_duration
+				}
+				country_event = {
+					id = GE_Italian_Reforms_Events.100
+					tooltip = republican_vs_monarchist_culla_rinascimento_focus_TT
 				}
 			}
 			ai_chance = {
 				factor = 1
 			}
 		}
-		republican_vs_monarchist_military_focus = {
+		republican_vs_monarchist_ambizione_imperiale_focus = {
 			gui = republican_vs_monarchist_mechanic_interaction
 			cooldown_years = 20
 			cooldown_desc = republican_vs_monarchist_mechanic_cooldown_desc
 			cooldown_token = republican_vs_monarchist_mechanic
-			icon = GFX_republican_vs_monarchist_mechanic_military_focus_button
+			icon = GFX_republican_vs_monarchist_ambizione_imperiale_focus
 			trigger = {
 				NOT = { has_country_modifier = republican_vs_monarchist_ambizione_imperiale_focus_modifier }
 			}
@@ -111,8 +149,42 @@ republican_vs_monarchist_mechanic = {
 				}
 				add_country_modifier = {
 					name = republican_vs_monarchist_ambizione_imperiale_focus_modifier
-					duration = -1
+					duration = 5475
 					desc = republican_vs_monarchist_mechanic_interaction_duration
+				}
+				random_owned_province = {
+					limit = {
+						NOT = { has_province_flag = ambizione_imperiale_focus_province }
+						OR = {
+							province_id = 104
+							province_id = 118
+							province_id = 108
+							province_id = 103
+						}
+					}
+					add_base_manpower = 1
+					set_province_flag = ambizione_imperiale_focus_province
+					add_province_modifier = {
+						name = republican_vs_monarchist_ambizione_imperiale_focus_modifier_province
+						duration = 5475
+					}
+				}
+				hidden_effect = {
+					if = {
+						limit = {
+							calc_true_if = {
+								amount = 3
+								104 = { has_province_flag = ambizione_imperiale_focus_province }
+								118 = { has_province_flag = ambizione_imperiale_focus_province }
+								108 = { has_province_flag = ambizione_imperiale_focus_province }
+								103 = { has_province_flag = ambizione_imperiale_focus_province }
+							}
+						}
+						104 = { clr_province_flag = ambizione_imperiale_focus_province }
+						118 = { clr_province_flag = ambizione_imperiale_focus_province }
+						108 = { clr_province_flag = ambizione_imperiale_focus_province }
+						103 = { clr_province_flag = ambizione_imperiale_focus_province }
+					}
 				}
 			}
 			ai_chance = {

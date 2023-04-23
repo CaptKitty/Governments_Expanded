@@ -173,3 +173,51 @@
  desc_GE_maritime_republic_triggered_modifier_new_world: "The influx of the newly opened trade routes from the New World has diminished the importance of the Mediterranean sea."
  GE_maritime_republic_triggered_modifier_global_trade: "Global Trade"
  desc_GE_maritime_republic_triggered_modifier_global_trade: "With the discovery of the Americas, sea routes around Africa and the crossing of the Pacific Ocean, local trade networks are being connected into one world-spanning interconnected web, once more the Mediterranean sea has become just another sea in the vastness of this world."
+
+
+# Republican vs Monarchist Mechanic:
+ ## Mechanics:
+ ability_republican_vs_monarchist_mechanic: "Republican vs Monarchist"
+ republican_vs_monarchist_power: "Republican vs Monarchist Balance"
+ republican_vs_monarchist_power_desc: "Republican vs Monarchist is a measure of which between the two main factions is predominant in your politics. \n\nThe following will move you towards §YRepublican§!: \n   - Administrative Ruler Skill \n   - Culla del Rinascimento Focus \n\nThe following will move you towards §YMonarchist§!: \n   - Military Ruler Skill \n   - Ambizione Imperiale Focus \n\nBalance fully towards §YRepublican§! has the following effects: \n[global_unrest]: §G-2.00§! \n[all_power_cost]: §G-5.0%§! [Root.republican_vs_monarchist_power_max_effects] \n\n"
+
+ republican_vs_monarchist_mare_nostrum_focus: "Select Mare Nostrum Focus"
+ republican_vs_monarchist_mare_nostrum_focus_desc: ""
+ republican_vs_monarchist_culla_rinascimento_focus: "Select Culla del Rinascimento Focus"
+ republican_vs_monarchist_culla_rinascimento_focus_desc: ""
+ republican_vs_monarchist_ambizione_imperiale_focus: "Select Ambizione Imperiale Focus"
+ republican_vs_monarchist_ambizione_imperiale_focus_desc: ""
+ republican_vs_monarchist_mechanic_cooldown_desc: "The §YMare Nostrum Focus§!, §YCulla del Rinascimento Focus§! or §YAmbizione Imperiale Focus§!"
+
+ ## Power Modifiers:
+ monthly_republican_vs_monarchist_power: "Monthly Republican vs Monarchist Balance Change"
+ republican_vs_monarchist_power_gain_modifier: "Republican vs Monarchist Balance Change Modifier"
+
+ ## Modifiers:
+ republican_vs_monarchist_mare_nostrum_focus_modifier: "Mare Nostrum"
+ desc_republican_vs_monarchist_mare_nostrum_focus_modifier: ""
+ republican_vs_monarchist_culla_rinascimento_focus_modifier: "Culla del Rinascimento"
+ desc_republican_vs_monarchist_culla_rinascimento_focus_modifier: ""
+ republican_vs_monarchist_ambizione_imperiale_focus_modifier: "Ambizione Imperiale"
+ desc_republican_vs_monarchist_ambizione_imperiale_focus_modifier: ""
+
+ republican_vs_monarchist_mare_nostrum_focus_modifier_province: "Mare Nostrum"
+ desc_republican_vs_monarchist_mare_nostrum_focus_modifier_province: ""
+ republican_vs_monarchist_ambizione_imperiale_focus_modifier_province: "Ambizione Imperiale"
+ desc_republican_vs_monarchist_ambizione_imperiale_focus_modifier_province: ""
+ republican_vs_monarchist_culla_rinascimento_focus_modifier_province: "Italian Prosperity"
+ desc_republican_vs_monarchist_culla_rinascimento_focus_modifier_province: ""
+
+ ## Tooltips:
+ republican_vs_monarchist_mechanic_interaction_duration: "until the other focus is selected"
+ republican_vs_monarchist_culla_rinascimento_focus_TT: "We will decide wheter to invest a proseprity plan in §YNorthern§!, §YCentral§! or §YSouthern Italy§!. \nFor §Y15§! years they will receive: \n  Local Construction Cost: §G-15.0%§!\n  Local Construction Time: §G-15.0%§!\n  Local Prosperity Growth §G+1.00§!\n  Local Development Cost Modifier: §G-7.5%§!"
+
+ ## Customizable Localization:
+ string_republican_vs_monarchist_power_max_effects: "\n\nBalance fully towards §YMonarchist§! has the following effects: \n[core_creation]: §G-10.0%§! \n[manpower_in_own_culture_provinces]: §G+15.0%§!"
+
+ ## Events
+ GE_Italian_Reforms_Events.100.T: "Italian Prosperity"
+ GE_Italian_Reforms_Events.100.D: "Our great unification cannot be purely political. We must do our utmost to provide security and economic strength for all Italians, so that we all may prosper."
+ GE_Italian_Reforms_Events.100.OPT1: "We shall work on Northern Ital.y"
+ GE_Italian_Reforms_Events.100.OPT2: "The center will bring balance."
+ GE_Italian_Reforms_Events.100.OPT3: "All efforts to the boot!"

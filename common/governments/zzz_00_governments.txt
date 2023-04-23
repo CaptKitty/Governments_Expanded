@@ -129,7 +129,7 @@ monarchy = {
 				hispanic_kingdom
 				iberian_enlightened_despotism_reform
 				margrave_reform
-				consulate_of_the_sea_GE
+				# consulate_of_the_sea_GE
 				crown_of_saint_wenceslaus
 				crown_of_saint_wenceslaus_2
 				office_of_lord_regent_reform
@@ -162,7 +162,7 @@ monarchy = {
 				united_holy_roman_empire_reform
 				duchy_of_luxembourg_reform
 				emirate_of_andalusia_reform
-				mantua_house_of_gonzaga_reform
+				house_of_gonzaga_reform
 				#tanistry_reform
 				kingdom_of_gao_reform
 				kingdom_of_sardinia_reform
@@ -2025,7 +2025,7 @@ theocracy = {
 				free_trade_reform
 				embrace_the_economic_theory_reform
 				war_economy_reform
-				#Visible but locked
+				#Visible but locked2
 				lockean_proviso_reform
 				new_world_exploitation_reform
 				#Visible when unlocked

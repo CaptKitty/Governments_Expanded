@@ -9,6 +9,7 @@ ruler_adm = {
 	# GE:
 	monthly_bureaucracy_vs_military_power = -0.05
 	monthly_political_focus_power = 0.084
+	monthly_republican_vs_monarchist_power = -0.05
 }
 
 ruler_dip = {
@@ -22,6 +23,7 @@ ruler_mil = {
 	# GE:
 	monthly_bureaucracy_vs_military_power = 0.05
 	monthly_political_focus_power = 0.084
+	monthly_republican_vs_monarchist_power = 0.05
 }
 
 war = {

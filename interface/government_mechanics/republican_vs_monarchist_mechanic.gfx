@@ -15,22 +15,22 @@ spriteTypes = {
 		effectFile = "gfx/FX/progress.lua"
 	}
 	spriteType = {
-		name = "GFX_republican_vs_monarchist_mechanic_bureaucratic_focus_button"
-		textureFile = "gfx/interface/government_mechanics/republican_vs_monarchist_mechanic/republican_vs_monarchist_mechanic_bureaucratic_focus_button.dds"
-	}
-	spriteType = {
-		name = "GFX_republican_vs_monarchist_mechanic_military_focus_button"
-		textureFile = "gfx/interface/government_mechanics/republican_vs_monarchist_mechanic/republican_vs_monarchist_mechanic_military_focus_button.dds"
-	}
-	spriteType = {
-		name = "GFX_republican_vs_monarchist_mechanic_tall_focus_button"
-		textureFile = "gfx/interface/government_mechanics/republican_vs_monarchist_mechanic/republican_vs_monarchist_mechanic_tall_focus_button.dds"
-	}
-	spriteType = {
 		name = "GFX_republican_vs_monarchist_mechanic_alert_icon"
 		textureFile = "gfx/interface/government_mechanics/republican_vs_monarchist_mechanic/republican_vs_monarchist_mechanic_alert_icon.dds"
 		noOfFrames = 1
 		loadType = "INGAME"
 		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_republican_vs_monarchist_mare_nostrum_focus"
+		textureFile = "gfx/interface/government_mechanics/republican_vs_monarchist_mechanic/republican_vs_monarchist_mare_nostrum_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_republican_vs_monarchist_culla_rinascimento_focus"
+		textureFile = "gfx/interface/government_mechanics/republican_vs_monarchist_mechanic/republican_vs_monarchist_culla_rinascimento_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_republican_vs_monarchist_ambizione_imperiale_focus"
+		textureFile = "gfx/interface/government_mechanics/republican_vs_monarchist_mechanic/republican_vs_monarchist_ambizione_imperiale_focus.dds"
 	}
 }
