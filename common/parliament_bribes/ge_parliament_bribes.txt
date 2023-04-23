@@ -1,0 +1,79 @@
+pay_bureaucracy_vs_military_power = {
+	trigger = {
+		has_not_bribe_blocking_debate_active = {
+			type = government_power
+		}
+		has_government_mechanic = bureaucracy_vs_military_mechanic
+		has_government_power = {
+			mechanic_type = bureaucracy_vs_military_mechanic
+			power_type = bureaucracy_vs_military_power
+			value = -95
+		}
+	}
+
+	effect = {
+		if = {
+			limit = { halved_parliament_bribes = yes }
+			bribe_effect_scaling_with_estate_loyalty = {
+				estate = estate_nobles
+				effect_angry = "
+				add_government_power = {
+					mechanic_type = bureaucracy_vs_military_mechanic
+					power_type = bureaucracy_vs_military_power
+					value = -1
+				}"
+				effect_neutral = "
+				add_government_power = {
+					mechanic_type = bureaucracy_vs_military_mechanic
+					power_type = bureaucracy_vs_military_power
+					value = -0.5
+				}"
+				effect_happy = "
+				add_government_power = {
+					mechanic_type = bureaucracy_vs_military_mechanic
+					power_type = bureaucracy_vs_military_power
+					value = -0.25
+				}"
+				default_effect = "
+				add_government_power = {
+					mechanic_type = bureaucracy_vs_military_mechanic
+					power_type = bureaucracy_vs_military_power
+					value = -0.5
+				}"
+			}
+		}
+		else = {
+			bribe_effect_scaling_with_estate_loyalty = {
+				estate = estate_nobles
+				effect_angry = "
+				add_government_power = {
+					mechanic_type = bureaucracy_vs_military_mechanic
+					power_type = bureaucracy_vs_military_power
+					value = -2
+				}"
+				effect_neutral = "
+				add_government_power = {
+					mechanic_type = bureaucracy_vs_military_mechanic
+					power_type = bureaucracy_vs_military_power
+					value = -1
+				}"
+				effect_happy = "
+				add_government_power = {
+					mechanic_type = bureaucracy_vs_military_mechanic
+					power_type = bureaucracy_vs_military_power
+					value = -0.5
+				}"
+				default_effect = "
+				add_government_power = {
+					mechanic_type = bureaucracy_vs_military_mechanic
+					power_type = bureaucracy_vs_military_power
+					value = -1
+				}"
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 0.75
+	}
+}
