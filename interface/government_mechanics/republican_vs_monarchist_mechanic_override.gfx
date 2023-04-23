@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	progressbartype = {
+		name = "GFX_republican_vs_monarchist_mechanic_bar"
+		color = { 1.0 0.0 0.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/government_mechanics/republican_vs_monarchist_mechanic/republican_vs_monarchist_mechanic_bar.dds"
+		textureFile2 = "gfx/interface/government_mechanics/republican_vs_monarchist_mechanic/republican_vs_monarchist_mechanic_bar_bg.dds"
+		size = { x = 464 y = 40 }
+		effectFile = "gfx/FX/progress.lua"
+	}
+
+}

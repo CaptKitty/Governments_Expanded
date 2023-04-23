@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	progressbartype = {
+		name = "GFX_crusade_power_mechanic_bar"
+		color = { 1.0 0.0 0.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/government_mechanics/crusade_power_mechanic/crusade_power_mechanic_bar.dds"
+		textureFile2 = "gfx/interface/government_mechanics/crusade_power_mechanic/crusade_power_mechanic_bar_bg.dds"
+		size = { x = 512 y = 36 }
+		effectFile = "gfx/FX/progress.lua"
+	}
+
+}
