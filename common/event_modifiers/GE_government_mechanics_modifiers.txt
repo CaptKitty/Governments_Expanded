@@ -161,6 +161,7 @@ venetian_government_stato_tera_modifier = {
 	manpower_recovery_speed = 0.10
 }
 
+# Albergo Nobili Mechanic
 albergo_nobili_uso_di_mare_modifier = {
 	naval_attrition = -0.15
 	range = 0.15

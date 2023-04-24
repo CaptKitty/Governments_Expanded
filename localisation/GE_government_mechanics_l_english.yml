@@ -5,7 +5,7 @@
  ## Mechanics:
  ability_bureaucracy_vs_military_mechanic: "Bureaucracy vs Military"
  bureaucracy_vs_military_power: "Bureaucracy vs Military Balance"
- bureaucracy_vs_military_power_desc: "Bureaucracy vs Military is a measure of what institution is predominant for your politics, the administrative bureaucracy or the military. \n\nThe following will move you towards §YBureaucracy§!: \n   - Administrative Ruler Skill \n   - Overextension \n   - Bureaucratic Focus \n\nThe following will move you towards §YMilitary§!: \n   - Military Ruler Skill \n   - Being at War \n   - Military Focus [Root.bureaucracy_vs_military_power_max_effects] \n\nBalance fully towards §YBureaucracy§! has the following effects: \n[global_unrest]: §G-2.00§! \n[administrative_efficiency]: §G+5.0%§! \n[culture_conversion_time]: §G-25.0%§! \n[development_cost_in_primary_culture]: §G-10.0%§! \n\n"
+ bureaucracy_vs_military_power_desc: "Bureaucracy vs Military is a measure of what institution is predominant for your politics, the administrative bureaucracy or the military. \n\nThe following will move you towards §YBureaucracy§!: \n   - Administrative Ruler Skill \n   - Overextension \n   - Bureaucratic Focus \n\nThe following will move you towards §YMilitary§!: \n   - Military Ruler Skill \n   - Being at War \n   - Military Focus [Root.bureaucracy_vs_military_power_max_effects] \n\nBalance fully towards §YBureaucracy§! has the following effects: \n[global_unrest]: §G-2.00§! \n[administrative_efficiency]: §G+5.0%§! \n[culture_conversion_time]: §G-25.0%§! \n[development_cost_in_primary_culture]: §G-10.0%§! \n--------------\n"
  bureaucracy_vs_military_bureaucratic_focus: "Select Bureaucratic Focus"
  bureaucracy_vs_military_bureaucratic_focus_desc: ""
  bureaucracy_vs_military_military_focus: "Select Military Focus"
@@ -30,7 +30,7 @@
  ## Mechanics:
  ability_liberalism_mechanic: "Liberalism"
  liberalism: "Liberalism"
- liberalism_desc: "Liberalism is a measure of how liberal your government is. It works as a counter point to absolutism. \n\n"
+ liberalism_desc: "Liberalism is a measure of how liberal your government is. It works as a counter point to absolutism. \n--------------\n"
 
  ## Power Modifiers:
  monthly_liberalism: "Monthly Liberalism Gain"
@@ -40,7 +40,7 @@
  ## Mechanics:
  ability_crusade_power_mechanic: "Crusade Power"
  crusade_power: "Crusade Power"
- crusade_power_desc: "Crusade Power is a measure of how efficient and effective our fight against heretics and infidels is going. \n\nCrusade Power is gained by the following actions: \n   - Win a War against a Heretic: §G+20.00§! \n   - Win a War against a Heathen: §G+25.00§! [Root.crusade_power_mechanic_gain_from_winning_war_against_crusade_target] \n   - Force Convert a Country by War: §G+20.00§! \n   - Force Convert your Subject: §G+5.00§! \n\nCrusade Power is lost by the following actions: \n   - Lose a War against a Heretic: §R-25.00§! \n   - Lose a War against a Heathen: §R-35.00§! [Root.crusade_power_mechanic_gain_from_losing_war_against_crusade_target] \n   - Be Force Converted by War: §R-25.00§! \n\nThis is not affected by separate peaces, only when you as the war leader make peace with another war leader. Force converting a country will replace the gain from winning a war against them, you will not gain both.\n\n"
+ crusade_power_desc: "Crusade Power is a measure of how efficient and effective our fight against heretics and infidels is going. \n\nCrusade Power is gained by the following actions: \n   - Win a War against a Heretic: §G+20.00§! \n   - Win a War against a Heathen: §G+25.00§! [Root.crusade_power_mechanic_gain_from_winning_war_against_crusade_target] \n   - Force Convert a Country by War: §G+20.00§! \n   - Force Convert your Subject: §G+5.00§! \n\nCrusade Power is lost by the following actions: \n   - Lose a War against a Heretic: §R-25.00§! \n   - Lose a War against a Heathen: §R-35.00§! [Root.crusade_power_mechanic_gain_from_losing_war_against_crusade_target] \n   - Be Force Converted by War: §R-25.00§! \n\nThis is not affected by separate peaces, only when you as the war leader make peace with another war leader. Force converting a country will replace the gain from winning a war against them, you will not gain both. \n--------------\n"
 
  ## Power Modifiers:
  monthly_crusade_power: "Monthly Crusade Power Gain"
@@ -106,7 +106,7 @@
  ## Mechanics:
  ability_corruption_mechanic: "Corruption Acceptance"
  corruption_mechanic_power: "Corruption Acceptance"
- corruption_mechanic_power_desc: "Corruption Acceptance is a measure of how much corruption is accepted in your government. \nIt interacts with corruption and negates many of its modifiers fully or partially.\n\n"
+ corruption_mechanic_power_desc: "Corruption Acceptance is a measure of how much corruption is accepted in your government. \nIt interacts with corruption and negates many of its modifiers fully or partially. \n--------------\n"
  corruption_mechanic_reassure_election_standards: "Reassure Election Standards"
  corruption_mechanic_reassure_election_standards_desc: ""
  corruption_mechanic_encourage_corruption: "Encourage Corruption"
@@ -151,17 +151,14 @@
 
  ## Modifiers
  venetian_government_stato_mar_modifier: "Stato da Mar"
- desc_venetian_government_stato_mar_modifier: ""
  venetian_government_carnevale_venezia_modifier: "Carneval di Venezia"
- desc_venetian_government_carnevale_venezia_modifier: ""
  venetian_government_stato_tera_modifier: "Stato de Tera"
- desc_venetian_government_stato_tera_modifier: ""
 
 # Maritime Republic Mechanic
  ## Mechanics:
  ability_maritime_republic_mechanic: "Maritime Republicanism"
  maritime_republic: "Maritime Republicanism"
- maritime_republic_desc: "Maritime Republicanism is gained by owning and improving the following provinces (detailed requirements can be viewed in the province modifier tooltip): \n   - [101.GetName]: §G+0.25§! \n   - [112.GetName]: §G+0.25§! \n   - [115.GetName]: §G+0.25§! \n   - [2983.GetName]: §G+0.25§! \n\nMaritime Republicanism is lost by the following: \n   - Institution §YColonialism§! exists: §R-0.33§! \n   - Institution §YGlobal Trade§! exists: §R-0.33§! \n\n"
+ maritime_republic_desc: "Maritime Republicanism is gained by owning and improving the following provinces (detailed requirements can be viewed in the province modifier tooltip): \n   - [101.GetName]: §G+0.25§! \n   - [112.GetName]: §G+0.25§! \n   - [115.GetName]: §G+0.25§! \n   - [2983.GetName]: §G+0.25§! \n\nMaritime Republicanism is lost by the following: \n   - Institution §YColonialism§! exists: §R-0.33§! \n   - Institution §YGlobal Trade§! exists: §R-0.33§! \n--------------\n"
 
  monthly_maritime_republic: "Monthly Maritime Republicanism Gain"
  maritime_republic_gain_modifier: "Maritime Republicanism Gain Modifier"
@@ -169,7 +166,6 @@
  ## Triggered Modifiers:
  ### Province:
  GE_maritime_republic_triggered_modifier: "Local Maritime Republicanism"
- desc_GE_maritime_republic_triggered_modifier: ""
 
  ### Country:
  GE_maritime_republic_triggered_modifier_new_world: "New World"
@@ -182,7 +178,7 @@
  ## Mechanics:
  ability_republican_vs_monarchist_mechanic: "Republican vs Monarchist"
  republican_vs_monarchist_power: "Republican vs Monarchist Balance"
- republican_vs_monarchist_power_desc: "Republican vs Monarchist is a measure of which between the two main factions is predominant in your politics. \n\nThe following will move you towards §YRepublican§!: \n   - Administrative Ruler Skill \n   - Culla del Rinascimento Focus \n\nThe following will move you towards §YMonarchist§!: \n   - Military Ruler Skill \n   - Ambizione Imperiale Focus \n\nBalance fully towards §YRepublican§! has the following effects: \n[global_unrest]: §G-2.00§! \n[all_power_cost]: §G-5.0%§! [Root.republican_vs_monarchist_power_max_effects] \n\n"
+ republican_vs_monarchist_power_desc: "Republican vs Monarchist is a measure of which between the two main factions is predominant in your politics. \n\nThe following will move you towards §YRepublican§!: \n   - Administrative Ruler Skill \n   - Culla del Rinascimento Focus \n\nThe following will move you towards §YMonarchist§!: \n   - Military Ruler Skill \n   - Ambizione Imperiale Focus \n\nBalance fully towards §YRepublican§! has the following effects: \n[core_creation]: §G-10.0%§! \n[manpower_in_own_culture_provinces]: §G+15.0%§! [Root.republican_vs_monarchist_power_max_effects] \n--------------\n"
 
  republican_vs_monarchist_mare_nostrum_focus: "Select Mare Nostrum Focus"
  republican_vs_monarchist_mare_nostrum_focus_desc: ""
@@ -198,32 +194,25 @@
 
  ## Modifiers:
  republican_vs_monarchist_mare_nostrum_focus_modifier: "Mare Nostrum"
- desc_republican_vs_monarchist_mare_nostrum_focus_modifier: ""
  republican_vs_monarchist_culla_rinascimento_focus_modifier: "Culla del Rinascimento"
- desc_republican_vs_monarchist_culla_rinascimento_focus_modifier: ""
  republican_vs_monarchist_ambizione_imperiale_focus_modifier: "Ambizione Imperiale"
- desc_republican_vs_monarchist_ambizione_imperiale_focus_modifier: ""
-
  republican_vs_monarchist_mare_nostrum_focus_modifier_province: "Mare Nostrum"
- desc_republican_vs_monarchist_mare_nostrum_focus_modifier_province: ""
  republican_vs_monarchist_ambizione_imperiale_focus_modifier_province: "Ambizione Imperiale"
- desc_republican_vs_monarchist_ambizione_imperiale_focus_modifier_province: ""
  republican_vs_monarchist_culla_rinascimento_focus_modifier_province: "Italian Prosperity"
- desc_republican_vs_monarchist_culla_rinascimento_focus_modifier_province: ""
 
  ## Tooltips:
  republican_vs_monarchist_mechanic_interaction_duration: "until the other focus is selected"
  republican_vs_monarchist_culla_rinascimento_focus_TT: "We will decide wheter to invest a proseprity plan in §YNorthern§!, §YCentral§! or §YSouthern Italy§!. \nFor §Y15§! years they will receive: \n  Local Construction Cost: §G-15.0%§!\n  Local Construction Time: §G-15.0%§!\n  Local Prosperity Growth §G+1.00§!\n  Local Development Cost Modifier: §G-7.5%§!"
 
  ## Customizable Localization:
- string_republican_vs_monarchist_power_max_effects: "\n\nBalance fully towards §YMonarchist§! has the following effects: \n[core_creation]: §G-10.0%§! \n[manpower_in_own_culture_provinces]: §G+15.0%§!"
+ string_republican_vs_monarchist_power_max_effects: "\n\nBalance fully towards §YMonarchist§! has the following effects: \n[global_unrest]: §G-2.00§! \n[all_power_cost]: §G-5.0%§!"
 
  ## Events
- GE_Italian_Reforms_Events.100.T: "Italian Prosperity"
- GE_Italian_Reforms_Events.100.D: "Our great unification cannot be purely political. We must do our utmost to provide security and economic strength for all Italians, so that we all may prosper."
- GE_Italian_Reforms_Events.100.OPT1: "We shall work on Northern Ital.y"
- GE_Italian_Reforms_Events.100.OPT2: "The center will bring balance."
- GE_Italian_Reforms_Events.100.OPT3: "All efforts to the boot!"
+ republican_vs_monarchist_mechanic_events.1.T: "Italian Prosperity"
+ republican_vs_monarchist_mechanic_events.1.D: "Our great unification cannot be purely political. We must do our utmost to provide security and economic strength for all Italians, so that we all may prosper."
+ republican_vs_monarchist_mechanic_events.1.OPT1: "We shall work on Northern Ital.y"
+ republican_vs_monarchist_mechanic_events.1.OPT2: "The center will bring balance."
+ republican_vs_monarchist_mechanic_events.1.OPT3: "All efforts to the boot!"
 
 
 # Albergo dei Nobili Mechanic
@@ -238,8 +227,5 @@
 
  ## Modifiers
  albergo_nobili_uso_di_mare_modifier: "Esploratori d'Uso di Mare"
- desc_albergo_nobili_uso_di_mare_modifier: ""
  albergo_nobili_doria_modifier: "Ammiragli dei Doria"
- desc_albergo_nobili_doria_modifier: ""
  albergo_nobili_fieschi_modifier: "Capitani dei Fieschi"
- desc_albergo_nobili_fieschi_modifier: ""
