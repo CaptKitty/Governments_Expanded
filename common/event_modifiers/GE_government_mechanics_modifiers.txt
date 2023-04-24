@@ -228,3 +228,9 @@ imperial_grace_mechanic_colony_modifier = {
 imperial_grace_mechanic_tributary_modifier = {
 	monthly_imperial_grace_power = 0.05
 }
+
+imperial_grace_mechanic_decision_ease_up_on_taxation_modifier = {
+	global_tax_modifier = -0.2
+	nobles_influence_modifier = 0.2
+	monthly_imperial_grace_power = 0.1
+}

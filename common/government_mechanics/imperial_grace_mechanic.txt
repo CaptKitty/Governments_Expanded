@@ -27,6 +27,8 @@ imperial_grace_mechanic = {
 					global_unrest = -5
 					legitimacy = 1.5
 					stability_cost_modifier = -0.25
+					reduced_liberty_desire = 20
+					vassal_income = 0.2
 				}
 			}
 			scaled_modifier = {
