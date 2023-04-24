@@ -194,11 +194,17 @@
 
  ## Modifiers:
  republican_vs_monarchist_mare_nostrum_focus_modifier: "Mare Nostrum"
+ desc_republican_vs_monarchist_mare_nostrum_focus_modifier: ""
  republican_vs_monarchist_culla_rinascimento_focus_modifier: "Culla del Rinascimento"
+ desc_republican_vs_monarchist_culla_rinascimento_focus_modifier: ""
  republican_vs_monarchist_ambizione_imperiale_focus_modifier: "Ambizione Imperiale"
+ desc_republican_vs_monarchist_ambizione_imperiale_focus_modifier: ""
  republican_vs_monarchist_mare_nostrum_focus_modifier_province: "Mare Nostrum"
+ desc_republican_vs_monarchist_mare_nostrum_focus_modifier_province: ""
  republican_vs_monarchist_ambizione_imperiale_focus_modifier_province: "Ambizione Imperiale"
+ desc_republican_vs_monarchist_ambizione_imperiale_focus_modifier_province: ""
  republican_vs_monarchist_culla_rinascimento_focus_modifier_province: "Italian Prosperity"
+ desc_republican_vs_monarchist_culla_rinascimento_focus_modifier_province: ""
 
  ## Tooltips:
  republican_vs_monarchist_mechanic_interaction_duration: "until the other focus is selected"
@@ -227,5 +233,8 @@
 
  ## Modifiers
  albergo_nobili_uso_di_mare_modifier: "Esploratori d'Uso di Mare"
+ desc_albergo_nobili_uso_di_mare_modifier: ""
  albergo_nobili_doria_modifier: "Ammiragli dei Doria"
+ desc_albergo_nobili_doria_modifier: ""
  albergo_nobili_fieschi_modifier: "Capitani dei Fieschi"
+ desc_albergo_nobili_fieschi_modifier: ""
