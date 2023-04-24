@@ -9,7 +9,7 @@ ruler_adm = {
 	# GE:
 	monthly_bureaucracy_vs_military_power = -0.05
 	monthly_political_focus_power = 0.084
-	monthly_imperial_grace_power = 0.033
+	monthly_imperial_grace_power = 0.034
 }
 
 ruler_dip = {
@@ -114,7 +114,7 @@ positive_stability = {
 	yearly_harmony = 0.25
 	monthly_ottoman_decadence = -0.05
 	# GE:
-	monthly_imperial_grace_power = 0.083
+	monthly_imperial_grace_power = 0.084
 }
 
 negative_stability = {

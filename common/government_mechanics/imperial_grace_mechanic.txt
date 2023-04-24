@@ -7,6 +7,8 @@ imperial_grace_mechanic = {
 
 	powers = {
 		imperial_grace_power = {
+			gui = imperial_grace_mechanic_power
+			show_before_interactions = yes
 			min = -100
 			max = 100
 			default = 0
@@ -45,7 +47,9 @@ imperial_grace_mechanic = {
 
 	interactions = {
 		imperial_grace_mechanic_interaction_construct_barays = {
-			#icon =
+			gui = imperial_grace_mechanic_interaction
+			icon = GFX_imperial_grace_mechanic_interaction_construct_barrays
+			center = no
 			cost_type = imperial_grace_power
 			cost = 30
 			cooldown_years = 20
@@ -71,7 +75,9 @@ imperial_grace_mechanic = {
 			}
 		}
 		imperial_grace_mechanic_interaction_sanction_temple_cities = {
-			#icon =
+			gui = imperial_grace_mechanic_interaction
+			icon = GFX_imperial_grace_mechanic_interaction_sanction_temple_cities
+			center = no
 			cost_type = imperial_grace_power
 			cost = 30
 			cooldown_years = 20
@@ -91,7 +97,9 @@ imperial_grace_mechanic = {
 			}
 		}
 		imperial_grace_mechanic_interaction_reward_military_command = {
-			#icon =
+			gui = imperial_grace_mechanic_interaction
+			icon = GFX_imperial_grace_mechanic_interaction_reward_military_command
+			center = no
 			cost_type = imperial_grace_power
 			cost = 30
 			cooldown_years = 20
@@ -111,7 +119,9 @@ imperial_grace_mechanic = {
 			}
 		}
 		imperial_grace_mechanic_interaction_issue_royal_decree = {
-			#icon =
+			gui = imperial_grace_mechanic_interaction_2
+			icon = GFX_imperial_grace_mechanic_interaction_issue_royal_decree
+			center = no
 			cost_type = imperial_grace_power
 			cost = 20
 			cooldown_years = 20
@@ -129,6 +139,7 @@ imperial_grace_mechanic = {
 			}
 			effect = {
 				set_ruler_flag = imperial_grace_mechanic_interaction_issue_royal_decree_flag
+				add_legitimacy = 10
 				if = {
 					limit = {
 						has_country_modifier = imperial_grace_mechanic_interaction_construct_barays_modifier
