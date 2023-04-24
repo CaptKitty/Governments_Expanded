@@ -71,7 +71,21 @@ imperial_grace_mechanic = {
 				}
 			}
 			ai_chance = {
-				factor = 0
+				factor = 2
+				modifier = {
+					factor = 0
+					NOT = { adm_power = 600 }
+				}
+				modifier = {
+					factor = 0
+					NOT = {
+						has_government_power = {
+							mechanic_type = imperial_grace_mechanic
+							power_type = imperial_grace_power
+							value = 80
+						}
+					}
+				}
 			}
 		}
 		imperial_grace_mechanic_interaction_sanction_temple_cities = {
@@ -93,7 +107,21 @@ imperial_grace_mechanic = {
 				}
 			}
 			ai_chance = {
-				factor = 0
+				factor = 1
+				modifier = {
+					factor = 0
+					NOT = { dip_power = 600 }
+				}
+				modifier = {
+					factor = 0
+					NOT = {
+						has_government_power = {
+							mechanic_type = imperial_grace_mechanic
+							power_type = imperial_grace_power
+							value = 80
+						}
+					}
+				}
 			}
 		}
 		imperial_grace_mechanic_interaction_reward_military_command = {
@@ -115,7 +143,21 @@ imperial_grace_mechanic = {
 				}
 			}
 			ai_chance = {
-				factor = 0
+				factor = 3
+				modifier = {
+					factor = 0
+					NOT = { mil_power = 600 }
+				}
+				modifier = {
+					factor = 0
+					NOT = {
+						has_government_power = {
+							mechanic_type = imperial_grace_mechanic
+							power_type = imperial_grace_power
+							value = 80
+						}
+					}
+				}
 			}
 		}
 		imperial_grace_mechanic_interaction_issue_royal_decree = {
@@ -214,7 +256,7 @@ imperial_grace_mechanic = {
 				}
 			}
 			ai_chance = {
-				factor = 0
+				factor = 100
 			}
 		}
 	}

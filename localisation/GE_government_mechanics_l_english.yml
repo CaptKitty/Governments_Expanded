@@ -225,7 +225,7 @@
  ## Mechanics:
  ability_imperial_grace_mechanic: "Imperial Grace"
  imperial_grace_power: "Imperial Grace"
- imperial_grace_power_desc: ""
+ imperial_grace_power_desc: "Imperial Grace is gained by the following: \n   - Per Administrative Ruler Skill: §G+0.034§! / month \n   - Per Positive Stability Level: §G+0.084§! / month \n   - Per Vassal: §G+0.10§! / month \n   - Per Colonial Nation: §G+0.03§! / month [Root.imperial_grace_power_gain_from_tributaries] \n   - At War with at least §Y50%§! War Score: §G+0.10§! / month \n   - Developing Provinces: §G+1.00§! \n   - Concentrate Development: §G+3.00§! \n\nImperial Grace is lost by the following: \n   - Per Negative Stability Level: §R-0.50§! / month \n   - Per Overextension Percent: §R-0.01§! / month \n   - Per Corruption Percent: §R-0.01§! / month \n   - Per Percent Over Governing Capacity: §R-0.01§! / month \n   - At War with less than §Y50%§! War Score: §R-0.25§! / month \n\nAt Minimum Power, §YImperial Grace§! has the following effects:  \n[global_unrest]: §R+5.00§! \n[legitimacy]: §R-1.50§! \n[stability_cost_modifier]: §R+25.0%§! [Root.imperial_grace_power_max_effects] \n--------------\n"
  imperial_grace_mechanic_interaction_construct_barays: "Construct Barays"
  imperial_grace_mechanic_interaction_construct_barays_desc: ""
  imperial_grace_mechanic_interaction_sanction_temple_cities: "Sanction Temple Cities"
@@ -248,6 +248,8 @@
  imperial_grace_mechanic_interaction_issue_royal_decree_festivals_modifier: "The Festivals Decree"
  imperial_grace_mechanic_interaction_issue_royal_decree_veterans_modifier: "The Land Grants for Veterans Decree"
  imperial_grace_mechanic_interaction_issue_royal_decree_merchant_vessels_modifier: "The Diplomatic Attachments for Merchant Vessels Decree"
+ imperial_grace_mechanic_subject_modifier: "From Subjects"
+ imperial_grace_mechanic_colony_modifier: "From Colonies"
  imperial_grace_mechanic_tributary_modifier: "From Tributaries"
 
  ## Triggered Modifiers:
@@ -263,3 +265,7 @@
  imperial_grace_mechanic_interaction_issue_royal_decree_tt_4: "Else if §Y[Root.GetName]§! has the following modifiers (§YSanctioned Temple Cities§! and §YRewarded Military Command§!):"
  imperial_grace_mechanic_triggered_modifier_at_war_tt: "Is the §YWar Leader§! in a war with less than §Y50%§! war score in §Y[This.GetName]'s§! favor"
  imperial_grace_mechanic_triggered_modifier_winning_war_tt: "Is the §YWar Leader§! in a war with at least §Y50%§! war score in §Y[This.GetName]'s§! favor"
+
+ ## Customizable Localization:
+ string_imperial_grace_power_gain_from_tributaries: "\n   - Per Tributary State: §G+0.05§! / month"
+ string_imperial_grace_power_max_effects: "\n\nAt Maximum Power, §YImperial Grace§! has the following effects: \n[global_trade_goods_size_modifier]: §G+20.0%§! \n[land_morale]: §G+20.0%§!"

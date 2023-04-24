@@ -51,5 +51,8 @@ second_khmer_empire_reform = {
 	government_abilities = {
 		imperial_grace_mechanic
 	}
+	custom_attributes = {
+		can_create_mandala_trade_vassal_rule = yes
+	}
 	fixed_rank = 3
 }

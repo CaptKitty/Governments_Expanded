@@ -1,0 +1,9 @@
+﻿l_english:
+ # Reforms:
+ second_khmer_empire_reform: "Second Khmer Empire"
+ second_khmer_empire_reform_desc: ""
+
+ # Custom Attributes:
+ ## Empty, real loc is in SE:
+ mechanic_can_create_mandala_trade_vassal_rule: ""
+ mechanic_can_create_mandala_trade_vassal_rule_yes: ""

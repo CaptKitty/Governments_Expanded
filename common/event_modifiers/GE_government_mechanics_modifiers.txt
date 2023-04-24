@@ -217,6 +217,14 @@ imperial_grace_mechanic_interaction_issue_royal_decree_merchant_vessels_modifier
 	reinforce_speed = 0.25
 }
 
+imperial_grace_mechanic_subject_modifier = {
+	monthly_imperial_grace_power = 0.1
+}
+
+imperial_grace_mechanic_colony_modifier = {
+	monthly_imperial_grace_power = 0.03
+}
+
 imperial_grace_mechanic_tributary_modifier = {
 	monthly_imperial_grace_power = 0.05
 }
