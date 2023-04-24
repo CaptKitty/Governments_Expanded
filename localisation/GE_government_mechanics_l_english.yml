@@ -178,7 +178,7 @@
  ## Mechanics:
  ability_republican_vs_monarchist_mechanic: "Republican vs Monarchist"
  republican_vs_monarchist_power: "Republican vs Monarchist Balance"
- republican_vs_monarchist_power_desc: "Republican vs Monarchist is a measure of which between the two main factions is predominant in your politics. \n\nThe following will move you towards §YRepublican§!: \n   - Administrative Ruler Skill \n   - Culla del Rinascimento Focus \n\nThe following will move you towards §YMonarchist§!: \n   - Military Ruler Skill \n   - Ambizione Imperiale Focus \n\nBalance fully towards §YRepublican§! has the following effects: \n[core_creation]: §G-10.0%§! \n[manpower_in_own_culture_provinces]: §G+15.0%§! [Root.republican_vs_monarchist_power_max_effects] \n--------------\n"
+ republican_vs_monarchist_power_desc: "Republican vs Monarchist is a measure of which of the two main factions is predominant in your politics. \n\nThe following will move you towards §YRepublican§!: \n   - Administrative Ruler Skill \n   - Culla del Rinascimento Focus \n\nThe following will move you towards §YMonarchist§!: \n   - Military Ruler Skill \n   - Ambizione Imperiale Focus \n\nBalance fully towards §YRepublican§! has the following effects: \n[core_creation]: §G-10.0%§! \n[manpower_in_own_culture_provinces]: §G+15.0%§! [Root.republican_vs_monarchist_power_max_effects] \n--------------\n"
 
  republican_vs_monarchist_mare_nostrum_focus: "Select Mare Nostrum Focus"
  republican_vs_monarchist_mare_nostrum_focus_desc: ""
@@ -202,7 +202,7 @@
 
  ## Tooltips:
  republican_vs_monarchist_mechanic_interaction_duration: "until the other focus is selected"
- republican_vs_monarchist_culla_rinascimento_focus_TT: "We will decide wheter to invest a proseprity plan in §YNorthern§!, §YCentral§! or §YSouthern Italy§!. \nFor §Y15§! years they will receive: \n  Local Construction Cost: §G-15.0%§!\n  Local Construction Time: §G-15.0%§!\n  Local Prosperity Growth §G+1.00§!\n  Local Development Cost Modifier: §G-7.5%§!"
+ republican_vs_monarchist_culla_rinascimento_focus_TT: "We will decide whether to invest a proseprity plan in §YNorthern§!, §YCentral§! or §YSouthern Italy§!. \nFor §Y15§! years the selected provinces will receive the following effects: \n  Local Construction Cost: §G-15.0%§!\n  Local Construction Time: §G-15.0%§!\n  Local Prosperity Growth §G+1.00§!\n  Local Development Cost Modifier: §G-7.5%§!"
 
  ## Customizable Localization:
  string_republican_vs_monarchist_power_max_effects: "\n\nBalance fully towards §YMonarchist§! has the following effects: \n[global_unrest]: §G-2.00§! \n[all_power_cost]: §G-5.0%§!"

@@ -137,9 +137,30 @@ republican_vs_monarchist_mechanic = {
 					duration = 5475
 					desc = republican_vs_monarchist_mechanic_interaction_duration
 				}
-				country_event = {
-					id = republican_vs_monarchist_mechanic_events.1
-					tooltip = republican_vs_monarchist_culla_rinascimento_focus_TT
+				if = {
+					limit = {
+						OR = {
+							piedmont_area = { owned_by = ROOT }
+							lombardy_area = { owned_by = ROOT }
+							po_valley_area = { owned_by = ROOT }
+							venetia_area = { owned_by = ROOT }
+							emilia_romagna_area = { owned_by = ROOT }
+							liguria_area = { owned_by = ROOT }
+							corsica_sardinia_area = { owned_by = ROOT }
+							tuscany_area = { owned_by = ROOT }
+							central_italy_area = { owned_by = ROOT }
+							lazio_area = { owned_by = ROOT }
+							naples_area = { owned_by = ROOT }
+							apulia_area = { owned_by = ROOT }
+							calabria_area = { owned_by = ROOT }
+							sicily_area = { owned_by = ROOT }
+							western_sicily_area = { owned_by = ROOT }
+						}
+					}
+					country_event = {
+						id = republican_vs_monarchist_mechanic_events.1
+						tooltip = republican_vs_monarchist_culla_rinascimento_focus_TT
+					}
 				}
 			}
 			ai_chance = {
