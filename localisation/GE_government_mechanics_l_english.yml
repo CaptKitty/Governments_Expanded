@@ -225,7 +225,7 @@
 
 # Albergo dei Nobili Mechanic
  ## Mechanics:
- ability_albergo_nobili_mechanic: "Senato Veneziano"
+ ability_albergo_nobili_mechanic: "Albergo dei Nobili"
  albergo_nobili_mechanic_uso_di_mare: "Uso di Mare"
  albergo_nobili_mechanic_uso_di_mare_desc: "You can only pick one of the focuses at the same time and the picked focus will last til the death of your ruler. \n--------------\n"
  albergo_nobili_mechanic_doria: "I Doria"
@@ -235,5 +235,8 @@
 
  ## Modifiers
  albergo_nobili_uso_di_mare_modifier: "Esploratori d'Uso di Mare"
+ desc_albergo_nobili_uso_di_mare_modifier: ""
  albergo_nobili_doria_modifier: "Ammiragli dei Doria"
+ desc_albergo_nobili_doria_modifier: ""
  albergo_nobili_fieschi_modifier: "Capitani dei Fieschi"
+ desc_albergo_nobili_fieschi_modifier: ""
