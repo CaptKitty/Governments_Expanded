@@ -8,7 +8,7 @@ venetian_government_mechanic = {
 	interactions = {
 		venetian_government_mechanic_stato_da_mar = {
 			gui = venetian_government_mechanic_interaction
-			icon = GFX_stato_da_mar_button
+			icon = GFX_venetian_government_mechanic_stato_da_mar_button
 			trigger = {
 				NOT = { has_ruler_modifier = venetian_government_stato_mar_modifier }
 				NOT = { has_ruler_modifier = venetian_government_carnevale_venezia_modifier }
@@ -26,7 +26,7 @@ venetian_government_mechanic = {
 		}
 		venetian_government_mechanic_carnevale_venezia = {
 			gui = venetian_government_mechanic_interaction
-			icon = GFX_carnevale_venezia_button
+			icon = GFX_venetian_government_mechanic_carnevale_venezia_button
 			trigger = {
 				NOT = { has_ruler_modifier = venetian_government_stato_mar_modifier }
 				NOT = { has_ruler_modifier = venetian_government_carnevale_venezia_modifier }
@@ -44,7 +44,7 @@ venetian_government_mechanic = {
 		}
 		venetian_government_mechanic_stato_da_tera = {
 			gui = venetian_government_mechanic_interaction
-			icon = GFX_stato_da_tera_button
+			icon = GFX_venetian_government_mechanic_stato_da_tera_button
 			trigger = {
 				NOT = { has_ruler_modifier = venetian_government_stato_mar_modifier }
 				NOT = { has_ruler_modifier = venetian_government_carnevale_venezia_modifier }
