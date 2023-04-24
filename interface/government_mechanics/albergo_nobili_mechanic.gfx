@@ -1,0 +1,20 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_uso_di_mare_button"
+		texturefile = "gfx/interface/government_mechanics/albergo_nobili_mechanic/albergo_uso_di_mare.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_doria_button"
+		texturefile = "gfx/interface/government_mechanics/albergo_nobili_mechanic/albergo_doria.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_fieschi_button"
+		texturefile = "gfx/interface/government_mechanics/albergo_nobili_mechanic/albergo_fieschi.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+}

@@ -134,6 +134,9 @@ genoese_republic = {
 		enables_aristocratic_idea_group = no
 		is_merchant_republic = yes
 	}
+	government_abilities = {
+		albergo_nobili_mechanic
+	}
 }
 giudicati_sardi_reform = {
 	icon = sardinia_giudicati_sardi

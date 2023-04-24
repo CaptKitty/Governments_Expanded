@@ -141,7 +141,7 @@
 
 # Venetian Government Mechanic
  ## Mechanics:
- ability_venetian_government_mechanic: "Venetian Ruler Focus"
+ ability_venetian_government_mechanic: "Senato Veneziano"
  venetian_government_mechanic_stato_da_mar: "Stato Da Mar"
  venetian_government_mechanic_stato_da_mar_desc: "You can only pick one of the focuses at the same time and the picked focus will last til the death of your ruler. \n--------------\n"
  venetian_government_mechanic_carnevale_venezia: "Carnevale Di Venezia"
@@ -221,3 +221,19 @@
  GE_Italian_Reforms_Events.100.OPT1: "We shall work on Northern Ital.y"
  GE_Italian_Reforms_Events.100.OPT2: "The center will bring balance."
  GE_Italian_Reforms_Events.100.OPT3: "All efforts to the boot!"
+
+
+# Albergo dei Nobili Mechanic
+ ## Mechanics:
+ ability_albergo_nobili_mechanic: "Senato Veneziano"
+ albergo_nobili_mechanic_uso_di_mare: "Uso di Mare"
+ albergo_nobili_mechanic_uso_di_mare_desc: "You can only pick one of the focuses at the same time and the picked focus will last til the death of your ruler. \n--------------\n"
+ albergo_nobili_mechanic_doria: "I Doria"
+ albergo_nobili_mechanic_doria_desc: "You can only pick one of the focuses at the same time and the picked focus will last til the death of your ruler. \n--------------\n"
+ albergo_nobili_mechanic_fieschi: "I Fieschi"
+ albergo_nobili_mechanic_fieschi_desc: "You can only pick one of the focuses at the same time and the picked focus will last til the death of your ruler. \n--------------\n"
+
+ ## Modifiers
+ albergo_nobili_uso_di_mare_modifier: "Esploratori d'Uso di Mare"
+ albergo_nobili_doria_modifier: "Ammiragli dei Doria"
+ albergo_nobili_fieschi_modifier: "Capitani dei Fieschi"

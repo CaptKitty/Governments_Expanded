@@ -111,11 +111,11 @@ corruption_mechanic_grant_political_favor_mil_modifier = {
 
 # Republican vs Monarchist Mechanic
 republican_vs_monarchist_mare_nostrum_focus_modifier = {
-	galley_power = 0.10
+	movement_speed_in_fleet_modifier = 1
 	global_ship_trade_power = 0.20
-	leader_naval_manuever = 1
-	regiment_disembark_speed = 0.15
-	sailors_recovery_speed = 0.15
+	regiment_disembark_speed = 0.25
+	sailors_recovery_speed = 0.20
+	transport_attrition = -0.15
 }
 republican_vs_monarchist_culla_rinascimento_focus_modifier = {
 	same_culture_advisor_cost = -0.30
@@ -151,29 +151,31 @@ venetian_government_stato_mar_modifier = {
 	sailors_recovery_speed = 0.10
 	movement_speed_in_fleet_modifier = 1
 	regiment_disembark_speed = 0.15
-
-	global_trade_power = -0.10
-	global_tax_modifier = -0.10
-	nobles_loyalty_modifier = -0.05
 }
 venetian_government_carnevale_venezia_modifier = {
 	development_cost_in_primary_culture = -0.15
 	global_unrest = -2
 	all_estate_loyalty_equilibrium = 0.05
-	global_institution_spread = 0.15
-	expand_infrastructure_cost_modifier = -0.25
-
-	core_creation = 0.10
-	ae_impact = 0.15
-	stability_cost_to_declare_war = 1
 }
 venetian_government_stato_tera_modifier = {
 	land_morale = 0.05
 	manpower_recovery_speed = -0.10
 	core_creation = -0.05
 	ae_impact = -0.10
+}
 
-	diplomatic_reputation = -1
-	global_unrest = 2
-	development_cost = 0.10
+albergo_nobili_uso_di_mare_modifier = {
+	naval_attrition = -0.15
+	range = 0.15
+	transport_attrition = -0.15
+}
+albergo_nobili_doria_modifier = {
+	navy_tradition = 0.33
+	diplomatic_reputation = 1
+	trade_efficiency = 0.10
+}
+albergo_nobili_fieschi_modifier = {
+	core_creation = -0.10
+	land_morale = 0.10
+	loot_amount = 0.15
 }
