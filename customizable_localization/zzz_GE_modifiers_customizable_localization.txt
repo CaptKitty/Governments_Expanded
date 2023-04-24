@@ -184,3 +184,25 @@ defined_text = {
 		localisation_key = LAND_MAINTENANCE_MODIFIER
 	}
 }
+
+defined_text = {
+	name = all_power_cost
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_ALL_POWER_COST
+	}
+}
+
+defined_text = {
+	name = core_creation
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_CORE_CREATION
+	}
+}
