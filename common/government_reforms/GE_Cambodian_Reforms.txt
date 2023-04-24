@@ -1,6 +1,6 @@
 #T1
 second_khmer_empire_reform = {
-	icon = "mandala_system"
+	icon = "second_khmer_empire"
 	allow_normal_conversion = yes
 	valid_for_nation_designer = no
 	potential = {
@@ -13,7 +13,7 @@ second_khmer_empire_reform = {
 	trigger = {
 		if = {
 			limit = {
-				has_dlc = "Leviathan"
+				has_mission = mnd_khm_restored_empire
 			}
 			OR = {
 				AND = {

@@ -30,4 +30,11 @@ spriteTypes = {
 		name = "GFX_imperial_grace_mechanic_interaction_issue_royal_decree"
 		textureFile = "gfx/interface/government_mechanics/imperial_grace_mechanic/imperial_grace_mechanic_interaction_issue_royal_decree.dds"
 	}
+	spriteType = {
+		name = "GFX_imperial_grace_mechanic_alert_icon"
+		textureFile = "gfx/interface/government_mechanics/imperial_grace_mechanic/imperial_grace_mechanic_alert_icon.dds"
+		noOfFrames = 1
+		loadType = "INGAME"
+		alwaystransparent = yes
+	}
 }
