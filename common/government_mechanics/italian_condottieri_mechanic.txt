@@ -2,7 +2,7 @@ italian_condottieri_mechanic = {
 	alert_icon_gfx = GFX_alerticons_government_mechanics
 	alert_icon_index = 11
 	available = {
-		has_dlc = "Domination"
+		always = yes
 	}
 
 	powers = {
@@ -27,7 +27,7 @@ italian_condottieri_mechanic = {
 			is_good = yes
 		}
 	}
-	
+
 	interactions = {
 		promote_italian_condottieri = {
 			gui = hessian_militarization_gov_mech

@@ -23,8 +23,8 @@ republican_vs_monarchist_mechanic = {
 					}
 				}
 				modifier = {
-					core_creation = -0.10
-					manpower_in_own_culture_provinces = 0.15
+					core_creation = 0.1
+					manpower_in_own_culture_provinces = -0.15
 				}
 			}
 			scaled_modifier = {
@@ -86,16 +86,30 @@ republican_vs_monarchist_mechanic = {
 						limit = {
 							calc_true_if = {
 								amount = 3
-								101 = { has_province_flag = mare_nostrum_focus_province }
-								112 = { has_province_flag = mare_nostrum_focus_province }
-								121 = { has_province_flag = mare_nostrum_focus_province }
-								125 = { has_province_flag = mare_nostrum_focus_province }
+								OR = {
+									NOT = { owns = 101 }
+									101 = { has_province_flag = mare_nostrum_focus_province }
+								}
+								OR = {
+									NOT = { owns = 112 }
+									112 = { has_province_flag = mare_nostrum_focus_province }
+								}
+								OR = {
+									NOT = { owns = 121 }
+									121 = { has_province_flag = mare_nostrum_focus_province }
+								}
+								OR = {
+									NOT = { owns = 125 }
+									125 = { has_province_flag = mare_nostrum_focus_province }
+								}
 							}
 						}
-						101 = { clr_province_flag = mare_nostrum_focus_province }
-						112 = { clr_province_flag = mare_nostrum_focus_province }
-						121 = { clr_province_flag = mare_nostrum_focus_province }
-						125 = { clr_province_flag = mare_nostrum_focus_province }
+						every_owned_province = {
+							limit = {
+								has_province_flag = mare_nostrum_focus_province
+							}
+							clr_province_flag = mare_nostrum_focus_province
+						}
 					}
 				}
 			}
@@ -123,9 +137,30 @@ republican_vs_monarchist_mechanic = {
 					duration = 5475
 					desc = republican_vs_monarchist_mechanic_interaction_duration
 				}
-				country_event = {
-					id = GE_Italian_Reforms_Events.100
-					tooltip = republican_vs_monarchist_culla_rinascimento_focus_TT
+				if = {
+					limit = {
+						OR = {
+							piedmont_area = { owned_by = ROOT }
+							lombardy_area = { owned_by = ROOT }
+							po_valley_area = { owned_by = ROOT }
+							venetia_area = { owned_by = ROOT }
+							emilia_romagna_area = { owned_by = ROOT }
+							liguria_area = { owned_by = ROOT }
+							corsica_sardinia_area = { owned_by = ROOT }
+							tuscany_area = { owned_by = ROOT }
+							central_italy_area = { owned_by = ROOT }
+							lazio_area = { owned_by = ROOT }
+							naples_area = { owned_by = ROOT }
+							apulia_area = { owned_by = ROOT }
+							calabria_area = { owned_by = ROOT }
+							sicily_area = { owned_by = ROOT }
+							western_sicily_area = { owned_by = ROOT }
+						}
+					}
+					country_event = {
+						id = republican_vs_monarchist_mechanic_events.1
+						tooltip = republican_vs_monarchist_culla_rinascimento_focus_TT
+					}
 				}
 			}
 			ai_chance = {
@@ -174,16 +209,30 @@ republican_vs_monarchist_mechanic = {
 						limit = {
 							calc_true_if = {
 								amount = 3
-								104 = { has_province_flag = ambizione_imperiale_focus_province }
-								118 = { has_province_flag = ambizione_imperiale_focus_province }
-								108 = { has_province_flag = ambizione_imperiale_focus_province }
-								103 = { has_province_flag = ambizione_imperiale_focus_province }
+								OR = {
+									NOT = { owns = 104 }
+									104 = { has_province_flag = ambizione_imperiale_focus_province }
+								}
+								OR = {
+									NOT = { owns = 118 }
+									118 = { has_province_flag = ambizione_imperiale_focus_province }
+								}
+								OR = {
+									NOT = { owns = 108 }
+									108 = { has_province_flag = ambizione_imperiale_focus_province }
+								}
+								OR = {
+									NOT = { owns = 103 }
+									103 = { has_province_flag = ambizione_imperiale_focus_province }
+								}
 							}
 						}
-						104 = { clr_province_flag = ambizione_imperiale_focus_province }
-						118 = { clr_province_flag = ambizione_imperiale_focus_province }
-						108 = { clr_province_flag = ambizione_imperiale_focus_province }
-						103 = { clr_province_flag = ambizione_imperiale_focus_province }
+						every_owned_province = {
+							limit = {
+								has_province_flag = ambizione_imperiale_focus_province
+							}
+							clr_province_flag = ambizione_imperiale_focus_province
+						}
 					}
 				}
 			}
