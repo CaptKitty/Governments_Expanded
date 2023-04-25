@@ -192,16 +192,6 @@ administrative_region = {
 		modifier = imperial_grace_mechanic_subject_modifier
 	}
 }
-imperial_tributary_state = {
-	modifier_overlord = {
-		trigger = {
-			FROM = {
-				has_government_mechanic = imperial_grace_mechanic
-			}
-		}
-		modifier = imperial_grace_mechanic_tributary_modifier
-	}
-}
 annexable_colony = {
 	modifier_overlord = {
 		trigger = {

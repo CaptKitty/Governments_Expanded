@@ -34,15 +34,21 @@ imperial_grace_mechanic_triggered_modifier_at_war = {
 		is_at_war = yes
 		custom_trigger_tooltip = {
 			tooltip = imperial_grace_mechanic_triggered_modifier_at_war_tt
-			OR = {
+			NOT = {
 				AND = {
 					is_in_war = {
 						attacker_leader = ROOT
 					}
-					NOT = {
+					any_war_enemy_country = {
 						is_in_war = {
 							attacker_leader = ROOT
-							war_score = 50
+							defender_leader = THIS
+						}
+						ROOT = {
+							war_score_against = {
+								who = PREV
+								value = 50
+							}
 						}
 					}
 				}
@@ -50,10 +56,16 @@ imperial_grace_mechanic_triggered_modifier_at_war = {
 					is_in_war = {
 						defender_leader = ROOT
 					}
-					NOT = {
+					any_war_enemy_country = {
 						is_in_war = {
 							defender_leader = ROOT
-							war_score = 50
+							attacker_leader = THIS
+						}
+						ROOT = {
+							war_score_against = {
+								who = PREV
+								value = 50
+							}
 						}
 					}
 				}
@@ -76,18 +88,34 @@ imperial_grace_mechanic_triggered_modifier_winning_war = {
 					is_in_war = {
 						attacker_leader = ROOT
 					}
-					is_in_war = {
-						attacker_leader = ROOT
-						war_score = 50
+					any_war_enemy_country = {
+						is_in_war = {
+							attacker_leader = ROOT
+							defender_leader = THIS
+						}
+						ROOT = {
+							war_score_against = {
+								who = PREV
+								value = 50
+							}
+						}
 					}
 				}
 				AND = {
 					is_in_war = {
 						defender_leader = ROOT
 					}
-					is_in_war = {
-						defender_leader = ROOT
-						war_score = 50
+					any_war_enemy_country = {
+						is_in_war = {
+							defender_leader = ROOT
+							attacker_leader = THIS
+						}
+						ROOT = {
+							war_score_against = {
+								who = PREV
+								value = 50
+							}
+						}
 					}
 				}
 			}
