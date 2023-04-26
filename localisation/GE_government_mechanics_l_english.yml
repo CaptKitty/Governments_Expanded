@@ -276,6 +276,7 @@
  desc_imperial_grace_mechanic_triggered_modifier_winning_war: "We are fighting a war that we started or that was declared on us, and we are winning. This helps our people's trust in our ruler."
 
  ## Tooltips:
+ imperial_grace_mechanic_interaction_construct_barays_tt: "The §Y[Root.GetAdjective]§! province with the lowest development that follows the §Y[Root.Culture.GetName]§! culture:"
  imperial_grace_mechanic_interaction_issue_royal_decree_trigger_tt: "Has NOT issued a §YRoyal Decree§! during the reign of §Y[Root.Monarch.GetName]§!"
  imperial_grace_mechanic_interaction_issue_royal_decree_tt: "§Y[Root.GetName]§! will gain a modifier depending on which modifiers from the other interactions are active."
  imperial_grace_mechanic_interaction_issue_royal_decree_tt_1: "\nIf §Y[Root.GetName]§! has the following modifiers (§YConstructed Barays§!, §YSanctioned Temple Cities§! and §YRewarded Military Command§!):"

@@ -65,10 +65,39 @@ imperial_grace_mechanic = {
 					name = imperial_grace_mechanic_interaction_construct_barays_modifier
 					duration = 7300
 				}
-				capital_scope = {
+				custom_tooltip = imperial_grace_mechanic_interaction_construct_barays_tt
+				tooltip = {
 					add_province_modifier = {
 						name = imperial_grace_mechanic_interaction_construct_barays_province_modifier
 						duration = 7300
+					}
+				}
+				hidden_effect = {
+					capital_scope = {
+						save_event_target_as = imperial_grace_mechanic_interaction_construct_barays_target
+					}
+					every_owned_province = {
+						limit = {
+							is_capital = no
+							has_owner_culture = yes
+							event_target:imperial_grace_mechanic_interaction_construct_barays_target = {
+								higher_development_than = PREV
+							}
+						}
+						if = {
+							limit = {
+								event_target:imperial_grace_mechanic_interaction_construct_barays_target = {
+									higher_development_than = PREV
+								}
+							}
+							save_event_target_as = imperial_grace_mechanic_interaction_construct_barays_target
+						}
+					}
+					event_target:imperial_grace_mechanic_interaction_construct_barays_target = {
+						add_province_modifier = {
+							name = imperial_grace_mechanic_interaction_construct_barays_province_modifier
+							duration = 7300
+						}
 					}
 				}
 			}
