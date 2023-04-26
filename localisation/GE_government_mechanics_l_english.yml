@@ -282,7 +282,7 @@
  imperial_grace_mechanic_interaction_issue_royal_decree_tt_2: "Else if §Y[Root.GetName]§! has the following modifiers (§YConstructed Barays§! and §YSanctioned Temple Cities§!):"
  imperial_grace_mechanic_interaction_issue_royal_decree_tt_3: "Else if §Y[Root.GetName]§! has the following modifiers (§YConstructed Barays§! and §YRewarded Military Command§!):"
  imperial_grace_mechanic_interaction_issue_royal_decree_tt_4: "Else if §Y[Root.GetName]§! has the following modifiers (§YSanctioned Temple Cities§! and §YRewarded Military Command§!):"
- imperial_grace_mechanic_triggered_modifier_at_war_tt: "Is the §YWar Leader§! in a war with less than §Y50%§! war score in §Y[This.GetName]'s§! favor"
+ imperial_grace_mechanic_triggered_modifier_at_war_tt: "Is the §YWar Leader§! in a war and is NOT the §YWar Leader§! in a war with at least §Y50%§! war score in §Y[This.GetName]'s§! favor"
  imperial_grace_mechanic_triggered_modifier_winning_war_tt: "Is the §YWar Leader§! in a war with at least §Y50%§! war score in §Y[This.GetName]'s§! favor"
  imperial_grace_mechanic_events.1.tt: "\nIf we are able to kill all rebels within §Y50§! days, we will gain §G5§! Imperial Grace."
 
