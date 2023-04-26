@@ -241,7 +241,7 @@
  ## Mechanics:
  ability_imperial_grace_mechanic: "Imperial Grace"
  imperial_grace_power: "Imperial Grace"
- imperial_grace_power_desc: "Imperial Grace represents the faith the people have in our rule, it resets upon the ascension of a new ruler. \n\nImperial Grace is gained by the following: \n   - Per Administrative Ruler Skill: §G+0.034§! / month \n   - Per Positive Stability Level: §G+0.084§! / month \n   - Per Vassal: §G+0.10§! / month \n   - Per Large Colonial Nation: §G+0.03§! / month [Root.imperial_grace_power_gain_from_tributaries] \n   - At War with at least §Y50%§! War Score: §G+0.10§! / month \n   - Developing Provinces: §G+1.00§! \n   - Concentrating Development: §G+3.00§! \n\nImperial Grace is lost by the following: \n   - Per Negative Stability Level: §R-0.50§! / month \n   - Per Overextension Percent: §R-0.01§! / month \n   - Per Corruption Percent: §R-0.01§! / month \n   - Per Percent Over Governing Capacity: §R-0.01§! / month \n   - At War with less than §Y50%§! War Score: §R-0.25§! / month \n\nAt Minimum Power, §YImperial Grace§! has the following effects:  \n[global_unrest]: §R+5.00§! \n[legitimacy]: §R-1.50§! \n[stability_cost_modifier]: §R+25.0%§! \n[reduced_liberty_desire]: §R+20.0%§! \n[vassal_income]: §R-20.0%§! [Root.imperial_grace_power_max_effects] \n--------------\n"
+ imperial_grace_power_desc: "Imperial Grace represents the faith the people have in our rule, it resets upon the ascension of a new ruler. \n--------------\n§YYou can see a tooltip listing the minimum and maximum effects as well as all the possible factors that affect the gain or loss of Imperial Grace by hovering near the left and right ends of the progressbar.§! \n--------------\n"
  imperial_grace_mechanic_interaction_construct_barays: "Construct Barays"
  imperial_grace_mechanic_interaction_construct_barays_desc: ""
  imperial_grace_mechanic_interaction_sanction_temple_cities: "Sanction Temple Cities"
@@ -286,9 +286,12 @@
  imperial_grace_mechanic_triggered_modifier_winning_war_tt: "Is the §YWar Leader§! in a war with at least §Y50%§! war score in §Y[This.GetName]'s§! favor"
  imperial_grace_mechanic_events.1.tt: "\nIf we are able to kill all rebels within §Y50§! days, we will gain §G5§! Imperial Grace."
 
+ ## GUI Tooltips:
+ imperial_grace_power_tt_min_effects: "At Minimum Power, §YImperial Grace§! has the following effects:  \nNational Unrest: §R+5.00§! \nYearly Legitimacy: §R-1.50§! \nStability Cost Modifier: §R+25.0%§! \nLiberty Desire in Subjects: §R+20.0%§! \nIncome from Vassals: §R-20.0%§!"
+ imperial_grace_power_tt_max_effects: "At Maximum Power, §YImperial Grace§! has the following effects: \nGoods Produced Modifier: §G+20.0%§! \nMorale of Armies: §G+20.0%§!"
+ imperial_grace_power_tt_gain: "Imperial Grace is gained by the following: \n   - Per Administrative Ruler Skill: §G+0.034§! / month \n   - Per Positive Stability Level: §G+0.084§! / month \n   - Per Vassal: §G+0.10§! / month \n   - Per Large Colonial Nation: §G+0.03§! / month \n   - Per Tributary State: §G+0.05§! / month \n   - At War with at least §Y50%§! War Score: §G+0.10§! / month \n   - Developing Provinces: §G+1.00§! \n   - Concentrating Development: §G+3.00§! \n\nImperial Grace is lost by the following: \n   - Per Negative Stability Level: §R-0.50§! / month \n   - Per Overextension Percent: §R-0.01§! / month \n   - Per Corruption Percent: §R-0.01§! / month \n   - Per Percent Over Governing Capacity: §R-0.01§! / month \n   - At War with less than §Y50%§! War Score: §R-0.25§! / month"
+
  ## Customizable Localization:
- string_imperial_grace_power_gain_from_tributaries: "\n   - Per Tributary State: §G+0.05§! / month"
- string_imperial_grace_power_max_effects: "\n\nAt Maximum Power, §YImperial Grace§! has the following effects: \n[global_trade_goods_size_modifier]: §G+20.0%§! \n[land_morale]: §G+20.0%§!"
  string_imperial_grace_mechanic_peasants: "the Peasantry"
  string_imperial_grace_mechanic_nobles: "the Nobility"
 
