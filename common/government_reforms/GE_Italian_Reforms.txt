@@ -21,9 +21,10 @@ duchi_montefeltro_reform = {
 	modifiers = {
 		idea_cost = -0.05
 		mercenary_cost = -0.15
+		possible_condottieri = 0.25
 	}
 	# government_abilities = {
-	# 	italian_condottieri_mechanic
+	#  	italian_condottieri_mechanic
 	# }
 }
 florentine_republic = {
@@ -134,9 +135,9 @@ genoese_republic = {
 		enables_aristocratic_idea_group = no
 		is_merchant_republic = yes
 	}
-	# government_abilities = {
+	#government_abilities = {
 	# 	albergo_nobili_mechanic
-	# }
+	#}
 }
 giudicati_sardi_reform = {
 	icon = sardinia_giudicati_sardi
@@ -226,9 +227,9 @@ italian_monarchy_reform = {
 		legitimacy = 1
 		governing_capacity = 150
 	}
-	# government_abilities = {
+	#government_abilities = {
 	# 	republican_vs_monarchist_mechanic
-	# }
+	#}
 }
 italian_republic_reform = {
 	icon = italian_republic_reform
@@ -242,9 +243,9 @@ italian_republic_reform = {
 		governing_capacity = 150
 	}
 	duration = 5
-	# government_abilities = {
+	#government_abilities = {
 	# 	republican_vs_monarchist_mechanic
-	# }
+	#}
 	conditional = {
 		allow = { has_dlc = "Common Sense" }
 		has_parliament = yes
@@ -384,6 +385,7 @@ signoria_baglioni_reform = {
 	modifiers = {
 		reform_progress_growth = 0.15
 		mercenary_cost = -0.15
+		possible_condottieri = 0.25
 	}
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes
@@ -391,7 +393,7 @@ signoria_baglioni_reform = {
 		enables_nepotism = yes
 	}
 	# government_abilities = {
-	# 	italian_condottieri_mechanic
+	#  	italian_condottieri_mechanic
 	# }
 }
 

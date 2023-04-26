@@ -124,6 +124,45 @@ republican_vs_monarchist_mechanic = {
 			cooldown_token = republican_vs_monarchist_mechanic
 			icon = GFX_republican_vs_monarchist_culla_rinascimento_focus
 			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = republican_vs_monarchist_culla_rinascimento_focus_north_TT
+					num_of_owned_provinces_with = {
+						value = 12
+						OR = {
+							area = piedmont_area
+							area = lombardy_area
+							area = po_valley_area
+							area = venetia_area
+							area = emilia_romagna_area
+						}
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = republican_vs_monarchist_culla_rinascimento_focus_center_TT
+					num_of_owned_provinces_with = {
+						value = 12
+						OR = {
+							area = liguria_area
+							area = corsica_sardinia_area
+							area = tuscany_area
+							area = central_italy_area
+							area = lazio_area
+						}
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = republican_vs_monarchist_culla_rinascimento_focus_south_TT
+					num_of_owned_provinces_with = {
+						value = 12
+						OR = {
+							area = naples_area
+							area = apulia_area
+							area = calabria_area
+							area = sicily_area
+							area = western_sicily_area
+						}
+					}
+				}
 				NOT = { has_country_modifier = republican_vs_monarchist_culla_rinascimento_focus_modifier }
 			}
 			effect = {
@@ -137,32 +176,9 @@ republican_vs_monarchist_mechanic = {
 					duration = 5475
 					desc = republican_vs_monarchist_mechanic_interaction_duration
 				}
-				if = {
-					limit = {
-						any_owned_province = {
-							OR = {
-								area = piedmont_area
-								area = lombardy_area
-								area = po_valley_area
-								area = venetia_area
-								area = emilia_romagna_area
-								area = liguria_area
-								area = corsica_sardinia_area
-								area = tuscany_area
-								area = central_italy_area
-								area = lazio_area
-								area = naples_area
-								area = apulia_area
-								area = calabria_area
-								area = sicily_area
-								area = western_sicily_area
-							}
-						}
-					}
-					country_event = {
-						id = republican_vs_monarchist_mechanic_events.1
-						tooltip = republican_vs_monarchist_culla_rinascimento_focus_TT
-					}
+				country_event = {
+					id = republican_vs_monarchist_mechanic_events.1
+					tooltip = republican_vs_monarchist_culla_rinascimento_focus_TT
 				}
 			}
 			ai_chance = {
