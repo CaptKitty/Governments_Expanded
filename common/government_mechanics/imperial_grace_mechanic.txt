@@ -180,6 +180,39 @@ imperial_grace_mechanic = {
 					tooltip = imperial_grace_mechanic_interaction_issue_royal_decree_trigger_tt
 					NOT = { has_ruler_flag = imperial_grace_mechanic_interaction_issue_royal_decree_flag }
 				}
+				if = {
+					limit = {
+						ruler_total_stats = { stats = 16 }
+					}
+					months_of_ruling = 60
+				}
+				else_if = {
+					limit = {
+						ruler_total_stats = { stats = 13 }
+					}
+					months_of_ruling = 72
+				}
+				else_if = {
+					limit = {
+						ruler_total_stats = { stats = 10 }
+					}
+					months_of_ruling = 84
+				}
+				else_if = {
+					limit = {
+						ruler_total_stats = { stats = 7 }
+					}
+					months_of_ruling = 96
+				}
+				else_if = {
+					limit = {
+						ruler_total_stats = { stats = 4 }
+					}
+					months_of_ruling = 108
+				}
+				else = {
+					months_of_ruling = 120
+				}
 			}
 			effect = {
 				set_ruler_flag = imperial_grace_mechanic_interaction_issue_royal_decree_flag
