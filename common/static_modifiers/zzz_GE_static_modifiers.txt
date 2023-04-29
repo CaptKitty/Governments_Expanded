@@ -32,6 +32,7 @@ war = {
 	rr_girondists_influence = 0.15
 	# GE:
 	monthly_bureaucracy_vs_military_power = 0.05
+	monthly_imperial_grace_power = -0.1
 }
 
 over_extension = {
@@ -47,7 +48,6 @@ over_extension = {
 	ottoman_decadence_gain_modifier = 0.25
 	# GE:
 	monthly_bureaucracy_vs_military_power = -0.1
-	monthly_imperial_grace_power = -1
 }
 
 corruption = {
@@ -131,4 +131,14 @@ negative_stability = {
 	monthly_ottoman_decadence = -0.15
 	# GE:
 	monthly_imperial_grace_power = 0.5
+}
+
+inverse_religious_unity = {
+	stability_cost_modifier = 1.0		#more expensive to recover stability
+	global_unrest = 3
+	church_power_modifier = -1
+	devotion = -1
+	yearly_corruption = 0.1
+	# GE:
+	monthly_imperial_grace_power = -1
 }

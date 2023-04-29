@@ -196,7 +196,7 @@ imperial_grace_mechanic = {
 			icon = GFX_imperial_grace_mechanic_interaction_issue_royal_decree
 			center = no
 			cost_type = imperial_grace_power
-			cost = 20
+			cost = 35
 			cooldown_years = 0
 			trigger = {
 				calc_true_if = {
@@ -252,9 +252,59 @@ imperial_grace_mechanic = {
 						has_country_modifier = imperial_grace_mechanic_interaction_sanction_temple_cities_modifier
 						has_country_modifier = imperial_grace_mechanic_interaction_reward_military_command_modifier
 					}
-					add_ruler_modifier = {
-						name = imperial_grace_mechanic_interaction_issue_royal_decree_prosperity_modifier
-						duration = -1
+					if = {
+						limit = {
+							variable_arithmetic_trigger = {
+								export_to_variable = {
+									which = adm_var
+									value = ADM
+								}
+								export_to_variable = {
+									which = dip_var
+									value = DIP
+								}
+								export_to_variable = {
+									which = mil_var
+									value = MIL
+								}
+								check_variable = { which = adm_var which = dip_var }
+								check_variable = { which = adm_var which = mil_var }
+							}
+						}
+						add_ruler_modifier = {
+							name = imperial_grace_mechanic_interaction_issue_royal_decree_prosperity_adm_modifier
+							duration = -1
+						}
+					}
+					else_if = {
+						limit = {
+							variable_arithmetic_trigger = {
+								export_to_variable = {
+									which = adm_var
+									value = ADM
+								}
+								export_to_variable = {
+									which = dip_var
+									value = DIP
+								}
+								export_to_variable = {
+									which = mil_var
+									value = MIL
+								}
+								check_variable = { which = dip_var which = adm_var }
+								check_variable = { which = dip_var which = mil_var }
+							}
+						}
+						add_ruler_modifier = {
+							name = imperial_grace_mechanic_interaction_issue_royal_decree_prosperity_dip_modifier
+							duration = -1
+						}
+					}
+					else = {
+						add_ruler_modifier = {
+							name = imperial_grace_mechanic_interaction_issue_royal_decree_prosperity_mil_modifier
+							duration = -1
+						}
 					}
 				}
 				else_if = {
@@ -291,9 +341,59 @@ imperial_grace_mechanic = {
 					custom_tooltip = imperial_grace_mechanic_interaction_issue_royal_decree_tt
 					custom_tooltip = imperial_grace_mechanic_interaction_issue_royal_decree_tt_1
 					tooltip = {
-						add_ruler_modifier = {
-							name = imperial_grace_mechanic_interaction_issue_royal_decree_prosperity_modifier
-							duration = -1
+						if = {
+							limit = {
+								variable_arithmetic_trigger = {
+									export_to_variable = {
+										which = adm_var
+										value = ADM
+									}
+									export_to_variable = {
+										which = dip_var
+										value = DIP
+									}
+									export_to_variable = {
+										which = mil_var
+										value = MIL
+									}
+									check_variable = { which = adm_var which = dip_var }
+									check_variable = { which = adm_var which = mil_var }
+								}
+							}
+							add_ruler_modifier = {
+								name = imperial_grace_mechanic_interaction_issue_royal_decree_prosperity_adm_modifier
+								duration = -1
+							}
+						}
+						else_if = {
+							limit = {
+								variable_arithmetic_trigger = {
+									export_to_variable = {
+										which = adm_var
+										value = ADM
+									}
+									export_to_variable = {
+										which = dip_var
+										value = DIP
+									}
+									export_to_variable = {
+										which = mil_var
+										value = MIL
+									}
+									check_variable = { which = dip_var which = adm_var }
+									check_variable = { which = dip_var which = mil_var }
+								}
+							}
+							add_ruler_modifier = {
+								name = imperial_grace_mechanic_interaction_issue_royal_decree_prosperity_dip_modifier
+								duration = -1
+							}
+						}
+						else = {
+							add_ruler_modifier = {
+								name = imperial_grace_mechanic_interaction_issue_royal_decree_prosperity_mil_modifier
+								duration = -1
+							}
 						}
 					}
 					custom_tooltip = imperial_grace_mechanic_interaction_issue_royal_decree_tt_2

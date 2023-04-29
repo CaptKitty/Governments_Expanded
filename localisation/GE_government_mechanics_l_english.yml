@@ -260,7 +260,9 @@
  imperial_grace_mechanic_interaction_construct_barays_province_modifier: "Constructed Barays"
  imperial_grace_mechanic_interaction_sanction_temple_cities_modifier: "Sanctioned Temple Cities"
  imperial_grace_mechanic_interaction_reward_military_command_modifier: "Rewarded Military Command"
- imperial_grace_mechanic_interaction_issue_royal_decree_prosperity_modifier: "The Prosperity Decree"
+ imperial_grace_mechanic_interaction_issue_royal_decree_prosperity_adm_modifier: "The Prosperity Decree"
+ imperial_grace_mechanic_interaction_issue_royal_decree_prosperity_dip_modifier: "The Prosperity Decree"
+ imperial_grace_mechanic_interaction_issue_royal_decree_prosperity_mil_modifier: "The Prosperity Decree"
  imperial_grace_mechanic_interaction_issue_royal_decree_festivals_modifier: "The Festivals Decree"
  imperial_grace_mechanic_interaction_issue_royal_decree_veterans_modifier: "The Land Grants for Veterans Decree"
  imperial_grace_mechanic_interaction_issue_royal_decree_merchant_vessels_modifier: "The Diplomatic Attachments for Merchant Vessels Decree"
@@ -268,12 +270,6 @@
  imperial_grace_mechanic_colony_modifier: "From Large Colonies"
  imperial_grace_mechanic_tributary_modifier: "From Tributaries"
  imperial_grace_mechanic_decision_ease_up_on_taxation_modifier: "Reduced Taxes"
-
- ## Triggered Modifiers:
- imperial_grace_mechanic_triggered_modifier_at_war: "Fighting a War"
- desc_imperial_grace_mechanic_triggered_modifier_at_war: "We are fighting a war that we started or that was declared on us, but we have not yet demonstrated our ability to beat the enemies. This hurts our people's trust in our ruler."
- imperial_grace_mechanic_triggered_modifier_winning_war: "Winning a War"
- desc_imperial_grace_mechanic_triggered_modifier_winning_war: "We are fighting a war that we started or that was declared on us, and we are winning. This helps our people's trust in our ruler."
 
  ## Tooltips:
  imperial_grace_mechanic_interaction_construct_barays_tt: "The §Y[Root.GetAdjective]§! province with the lowest development that follows the §Y[Root.Culture.GetName]§! culture:"
@@ -283,14 +279,12 @@
  imperial_grace_mechanic_interaction_issue_royal_decree_tt_2: "Else if §Y[Root.GetName]§! has the following modifiers (§YConstructed Barays§! and §YSanctioned Temple Cities§!):"
  imperial_grace_mechanic_interaction_issue_royal_decree_tt_3: "Else if §Y[Root.GetName]§! has the following modifiers (§YConstructed Barays§! and §YRewarded Military Command§!):"
  imperial_grace_mechanic_interaction_issue_royal_decree_tt_4: "Else if §Y[Root.GetName]§! has the following modifiers (§YSanctioned Temple Cities§! and §YRewarded Military Command§!):"
- imperial_grace_mechanic_triggered_modifier_at_war_tt: "Is the §YWar Leader§! in a war and is NOT the §YWar Leader§! in a war with at least §Y50%§! war score in §Y[This.GetName]'s§! favor"
- imperial_grace_mechanic_triggered_modifier_winning_war_tt: "Is the §YWar Leader§! in a war with at least §Y50%§! war score in §Y[This.GetName]'s§! favor"
  imperial_grace_mechanic_events.1.tt: "\nIf we are able to kill all rebels within §Y50§! days, we will gain §G5§! Imperial Grace."
 
  ## GUI Tooltips:
  imperial_grace_power_tt_min_effects: "At Minimum Power, §YImperial Grace§! has the following effects:  \nNational Unrest: §R+5.00§! \nYearly Legitimacy: §R-1.50§! \nStability Cost Modifier: §R+25.0%§! \nLiberty Desire in Subjects: §R+20.0%§! \nIncome from Vassals: §R-20.0%§!"
  imperial_grace_power_tt_max_effects: "At Maximum Power, §YImperial Grace§! has the following effects: \nGoods Produced Modifier: §G+20.0%§! \nMorale of Armies: §G+20.0%§!"
- imperial_grace_power_tt_gain: "Imperial Grace is gained by the following: \n   - Per Administrative Ruler Skill: §G+0.034§! / month \n   - Per Positive Stability Level: §G+0.084§! / month \n   - Per Vassal: §G+0.10§! / month \n   - Per Large Colonial Nation: §G+0.03§! / month \n   - Per Tributary State: §G+0.05§! / month \n   - At War with at least §Y50%§! War Score: §G+0.10§! / month \n   - Developing Provinces: §G+1.00§! \n   - Concentrating Development: §G+3.00§! \n\nImperial Grace is lost by the following: \n   - Per Negative Stability Level: §R-0.50§! / month \n   - Per Overextension Percent: §R-0.01§! / month \n   - Per Corruption Percent: §R-0.01§! / month \n   - Per Percent Over Governing Capacity: §R-0.01§! / month \n   - At War with less than §Y50%§! War Score: §R-0.25§! / month"
+ imperial_grace_power_tt_gain: "Imperial Grace is gained by the following: \n   - Per Administrative Ruler Skill: §G+0.034§! / month \n   - Per Positive Stability Level: §G+0.084§! / month \n   - Per Vassal: §G+0.10§! / month \n   - Per Large Colonial Nation: §G+0.03§! / month \n   - Per Tributary State: §G+0.05§! / month \n   - Winning a War (War Leader vs War Leader): §G+7.50§! \n   - Developing Provinces: §G+0.50§! \n   - Concentrating Development: §G+3.00§! \n\nImperial Grace is lost by the following: \n   - Per Negative Stability Level: §R-0.50§! / month \n   - Per Corruption Percent: §R-0.01§! / month \n   - Per Percent Over Governing Capacity: §R-0.01§! / month \n   - Per Percent under Religious Unity: §R-0.01§! / month \n   - Be At War: §R-0.10§! / month"
 
  ## Customizable Localization:
  string_imperial_grace_mechanic_peasants: "the Peasantry"
