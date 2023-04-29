@@ -60,7 +60,7 @@ imperial_grace_mechanic = {
 				NOT = { has_country_modifier = imperial_grace_mechanic_interaction_construct_barays_modifier }
 			}
 			effect = {
-				adm_power_cost = -100
+				adm_power_cost = 100
 				add_country_modifier = {
 					name = imperial_grace_mechanic_interaction_construct_barays_modifier
 					duration = 7300
@@ -131,7 +131,7 @@ imperial_grace_mechanic = {
 				NOT = { has_country_modifier = imperial_grace_mechanic_interaction_sanction_temple_cities_modifier }
 			}
 			effect = {
-				dip_power_cost = -100
+				dip_power_cost = 100
 				add_country_modifier = {
 					name = imperial_grace_mechanic_interaction_sanction_temple_cities_modifier
 					duration = 7300
@@ -167,7 +167,7 @@ imperial_grace_mechanic = {
 				NOT = { has_country_modifier = imperial_grace_mechanic_interaction_reward_military_command_modifier }
 			}
 			effect = {
-				mil_power_cost = -100
+				mil_power_cost = 100
 				add_country_modifier = {
 					name = imperial_grace_mechanic_interaction_reward_military_command_modifier
 					duration = 7300
