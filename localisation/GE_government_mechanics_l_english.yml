@@ -31,6 +31,8 @@
  ability_liberalism_mechanic: "Liberalism"
  liberalism: "Liberalism"
  liberalism_desc: "Liberalism is a measure of how liberal your government is. It works as a counter point to absolutism. \n--------------\n"
+ boost_liberalism: "Boost Liberalism"
+ boost_liberalism_desc: ""
 
  ## Power Modifiers:
  monthly_liberalism: "Monthly Liberalism Gain"

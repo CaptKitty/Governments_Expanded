@@ -14,4 +14,15 @@ spriteTypes = {
 		size = { x = 226 y = 17 }
 		effectFile = "gfx/FX/progress.lua"
 	}
+	spriteType = {
+		name = "GFX_liberalism_mechanic_boost_liberalism"
+		texturefile = "gfx/interface/government_mechanics/liberalism_mechanic/liberalism_mechanic_boost_liberalism.dds"
+	}
+	spriteType = {
+		name = "GFX_liberalism_mechanic_alert_icon"
+		textureFile = "gfx/interface/government_mechanics/liberalism_mechanic/liberalism_mechanic_alert_icon.dds"
+		noOfFrames = 1
+		loadType = "INGAME"
+		alwaystransparent = yes
+	}
 }
