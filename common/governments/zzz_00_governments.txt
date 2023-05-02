@@ -638,7 +638,6 @@ monarchy = {
 				table_of_ranks_reform
 				theatines_reform
 				restored_land_establishment_reform
-				representative_electors_reform
 				nomad_councils_reform
 				office_of_kanzler_reform
 				diamond_of_the_earth_reform

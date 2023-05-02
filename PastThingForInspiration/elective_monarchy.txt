@@ -8,10 +8,10 @@ elective_monarchy = {
 		}
 		candidates_for_election = {
 			reforms = {
-				noble_electors_reform 
-				royal_electors_reform 
-				parliamental_electors_reform 
-				papal_electors_reform 
+				noble_electors_reform
+				royal_electors_reform
+				parliamental_electors_reform
+				papal_electors_reform
 			}
 		}
 		# deliberative_assembly = {
@@ -40,10 +40,10 @@ elective_monarchy = {
 		# 		weak_burghers_reform
 		# 		society_of_agriculture_reform
 		# 		bourgeoisie_aristocracy_reform
-		# 		noble_electors_reform 
-		# 		royal_electors_reform 
-		# 		parliamental_electors_reform 
-		# 		papal_electors_reform 
+		# 		noble_electors_reform
+		# 		royal_electors_reform
+		# 		parliamental_electors_reform
+		# 		papal_electors_reform
 		# 		union_of_crowns_reform
 		# 		declaration_of_breda_reform
 		# 		royal_society_reform
@@ -700,6 +700,116 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = reform_me_events.41
+	title = reform_me_events.41.t
+	desc = reform_me_events.41.d
+	picture = ACCUSATION_eventPicture
+
+	trigger = {
+		has_government_attribute = enables_elective_monarchy
+		NOT = { has_government_attribute = enables_royal_electors }
+		NOT = { has_ruler_flag = GE_Elective_1 }
+	}
+
+	mean_time_to_happen = {
+		days = 14600
+	}
+
+	immediate = {
+		set_ruler_flag = GE_Elective_1
+	}
+
+	option = {
+		name = reform_me_events.41.a
+
+		add_heir_claim = -10
+		ai_chance = { factor = 100 }
+	}
+
+	option = {
+		name = reform_me_events.41.b
+
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -5
+		}
+	}
+}
+
+country_event = {
+	id = reform_me_events.42
+	title = reform_me_events.42.t
+	desc = reform_me_events.42.d
+	picture = ACCUSATION_eventPicture
+
+	trigger = {
+		has_government_attribute = enables_elective_monarchy
+		NOT = { has_government_attribute = enables_royal_electors }
+		NOT = { has_ruler_flag = GE_Elective_2 }
+	}
+
+	mean_time_to_happen = {
+		days = 14600
+	}
+
+	immediate = {
+		set_ruler_flag = GE_Elective_2
+	}
+
+	option = {
+		name = reform_me_events.42.a
+
+		random_list = {
+			10 = { add_heir_claim = -10 }
+			10 = { }
+		}
+		ai_chance = { factor = 100 }
+	}
+
+	option = {
+		name = reform_me_events.42.b
+
+		add_years_of_income = -0.25
+		add_corruption = 0.10
+		add_heir_claim = 5
+	}
+}
+
+country_event = {
+	id = reform_me_events.43
+	title = reform_me_events.43.t
+	desc = reform_me_events.43.d
+	picture = ACCUSATION_eventPicture
+
+	trigger = {
+		has_government_attribute = enables_elective_monarchy
+		NOT = { has_government_attribute = enables_royal_electors }
+		NOT = { has_ruler_flag = GE_Elective_3 }
+	}
+
+	mean_time_to_happen = {
+		days = 14600
+	}
+
+	immediate = {
+		set_ruler_flag = GE_Elective_3
+	}
+
+	option = {
+		name = reform_me_events.43.a
+
+		add_heir_claim = -10
+		ai_chance = { factor = 100 }
+	}
+
+	option = {
+		name = reform_me_events.43.b
+
+		add_prestige = -10
+	}
+}
+
  GE_electoral_monarchy.1.t: "Imperial Succession"
  GE_electoral_monarchy.1.d: "With the death of Basileus [ROOT.Monarch.GetName] all influential people from across the empire have gathered to witness the succession. The designated heir of [ROOT.Dynasty.GetName] dynasty is legitimate by Imperial decree, however the army, the senate and the pentarchy have vied for influence and only one of them has come on top. We can either choose our heir apparent to rule normally or cave to the pressure and appoint the candidate from highest influence faction as [ROOT.Monarch.GetTitle]."
  GE_electoral_monarchy.1.a: "The Heir Apparent"
@@ -723,3 +833,33 @@ country_event = {
  GE_electoral_monarchy.4.e: "Appoint a regency council untill $HEIR$'s majority."
  GE_electoral_monarchy.4.f: "An Influencial Noble."
  GE_electoral_monarchy.4.g: "A Distant Relative."
+
+ elective_monarchy_reform: "Electoral Monarchy"
+ elective_monarchy_reform_desc: "A form of monarchy where a ruler is elected by some form of parliamentary body, typically comprised of nobles or other important members of society. Though opening the way for popular sovereignty, elective monarchies are prone to pretenders backed by foreign or internal bodies, and thus are volatile at best."
+ elective_monarchy_name:0 "Elective Monarchy"
+ elective_monarchy_descr:0 "A monarchy where rather than rule based on senior heritage, there are multiple candidates to be considered for the throne."
+ mechanic_enables_elective_monarchy_yes: "Elective Monarchy: Calls for an election upon a monarchs death."
+
+ noble_electors_reform: "Noble Electors"
+ noble_electors_reform_desc: "The nobility are the ones who control the land, and so, who better to elect our king then those that have experience ruling?"
+ royal_electors_reform: "Royal Electors"
+ royal_electors_reform_desc: "The only ones that deserve to elect the next ruler is our royal dynasty, as only we know what its like to wear the crown."
+ parliamental_electors_reform: "Parliamental Electors"
+ parliamental_electors_reform_desc: "We, The Parliament, rule the people, so who better to elect our king than us?"
+ papal_electors_reform: "Papal Electors"
+ papal_electors_reform_desc: "Crowned by god, for He is the only one that can truly know who deserves to rule."
+ representative_electors_reform: "Representative Electors"
+ representative_electors_reform_desc: "He who sits atop the pyramid of power should take care that every one of the blocks is aligned under him, and by giving even the lowest serf the right to vote for his monarch, he is sure to have  confidence in the monarch's leadership."
+
+ reform_me_events.41.t: "Dissenting Nobles"
+ reform_me_events.41.d: "A influential noble has gone on a trip recently, and appears to be stirring up otherwise passive nobles to go and agitate for a candidate of his liking. This man has a silver tongue and knows how to use it."
+ reform_me_events.41.a: "By cutting a man's tongue, you're only proving you fear his words."
+ reform_me_events.41.b: "Cut out his tongue."
+ reform_me_events.42.t: "Dirty Money"
+ reform_me_events.42.d: "One of our spies has infiltrated a underground society where an unknown benefactor is hosting generous feasts and lavish bribes to anyone willing to indebt themselves to him. This could be a way of gathering favours for a future succession crisis."
+ reform_me_events.42.a: "Probably just local politics."
+ reform_me_events.42.b: "Have our spy match the unknown benefactor in everything."
+ reform_me_events.43.t: "Mockery"
+ reform_me_events.43.d: "Our heir has recently been under attack from couriers over his supposed lack of accomplishments and how his father has to solve all his problems for him."
+ reform_me_events.43.a: "Execute them for this mockery."
+ reform_me_events.43.b: "It will pass soon."
