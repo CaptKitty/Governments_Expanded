@@ -166,33 +166,6 @@
  GE_privileges.10.d: "We are the representative of the imperial court, and over the past year we have encroached upon our neighbour's land and seized many minor holdings. Let us go and collect all the due taxes from our expropriated property!"
  GE_privileges.10.a: "We be rich!"
 
- 
- GE_electoral_monarchy.1.t: "Imperial Succession"
- GE_electoral_monarchy.1.d: "With the death of Basileus [ROOT.Monarch.GetName] all influential people from across the empire have gathered to witness the succession. The designated heir of [ROOT.Dynasty.GetName] dynasty is legitimate by Imperial decree, however the army, the senate and the pentarchy have vied for influence and only one of them has come on top. We can either choose our heir apparent to rule normally or cave to the pressure and appoint the candidate from highest influence faction as [ROOT.Monarch.GetTitle]."
- GE_electoral_monarchy.1.a: "The Heir Apparent"
- GE_electoral_monarchy.1.b: "The Coalition Leader of the Factions"
- GE_electoral_monarchy.1.f: "A Ambitious scion of our former royal family."
- GE_electoral_monarchy.2.t: "Dawn of a new Era"
- GE_electoral_monarchy.2.d: "Since the death of our most glorious ruler our court has fallen in disorder, with the imperial and shogunate factions fighting over who gets to claim the imperial power for a lifetime."
- GE_electoral_monarchy.2.a: "The Shogun, he led us to unification, and shall lead us beyond."
- GE_electoral_monarchy.2.b: "The Emperor, for he has been chosen by heaven."
- GE_electoral_monarchy.2.c: "A Council, to prevent conflict between the factions."
- GE_electoral_monarchy.3.t: "The Tanist"
- GE_electoral_monarchy.3.d: "As the light dimmed out and the priest voice softened the entire room was full of a silent heavy dread, our kind has passed away, and while we will never regret the deeds he accomplished in his life, the entire country will weep with sorrow after another great ruler has finally reached the Allfather. Despite tears still weeping from the eyes of the relatives and the dearest present we need to move on and choose who will lead the future of our kingdom, in the current Tanistry a few men stand above all the others, a strong and influential kinsman as well as the oldest son of our king"
- GE_electoral_monarchy.3.a: "The son of our king"
- GE_electoral_monarchy.3.b: "One of our influencial cousins"
-
- GE_electoral_monarchy.4.t: "The King is Dead, Long Live the King"
- GE_electoral_monarchy.4.d: "The King has passed on, and we have called the traditional council to elect a new king. Who shall have the right to rule?"
- GE_electoral_monarchy.4.a: "The Prince of course!"
- GE_electoral_monarchy.4.b: "One of the late king's brothers."
- GE_electoral_monarchy.4.c: "A member of a foreign dynasty."
- GE_electoral_monarchy.4.e: "Appoint a regency council untill $HEIR$'s majority."
- GE_electoral_monarchy.4.f: "An Influencial Noble."
- GE_electoral_monarchy.4.g: "A Distant Relative."
- 
-
-
 
 
  #GE Reform Cycle
