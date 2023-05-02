@@ -4,7 +4,6 @@ parliamentary_reform = {
 		is_revolutionary = no
 		NOT = { has_government_attribute = is_pirate_republic_reform }
 		NOT = { has_government_attribute = english_parliament }
-		NOT = { has_reform = elective_monarchy_reform }
 	}
 	modifiers = {
 		global_unrest = -1

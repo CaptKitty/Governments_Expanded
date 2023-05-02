@@ -1394,7 +1394,6 @@ royal_decree_reform = {
 			}
 			has_reform = royal_decree_reform
 		}
-		NOT = { has_reform = elective_monarchy_reform }
 		NOT = { culture_group = latin }
 	}
 	modifiers = {
@@ -1419,7 +1418,6 @@ aristocratic_court_reform = {
 			}
 			has_reform = aristocratic_court_reform
 		}
-		NOT = { has_reform = elective_monarchy_reform }
 	}
 	modifiers = {
 		diplomatic_reputation = 1
@@ -1436,7 +1434,6 @@ states_general_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		is_revolutionary = no
-		NOT = { has_reform = elective_monarchy_reform }
 	}
 	trigger = {
 		NOT = { is_lesser_in_union = yes }
@@ -1483,7 +1480,6 @@ general_estates_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		is_revolutionary = no
-		NOT = { has_reform = elective_monarchy_reform }
 		OR = {
 			NOT = {
 				check_variable = {
