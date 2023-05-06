@@ -247,6 +247,7 @@ l_english:
  ability_italian_condottieri_mechanic: "Italian Condottieri"
  italian_condottieri_gain_modifier: "Mercenary Prowness Modifier"
  monthly_italian_condottieri: "Monthly Mercenary Prowness"
+
 # Imperial Grace Mechanic
  ## Mechanics:
  ability_imperial_grace_mechanic: "Imperial Grace"
