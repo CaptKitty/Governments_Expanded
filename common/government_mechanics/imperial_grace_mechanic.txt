@@ -209,6 +209,7 @@ imperial_grace_mechanic = {
 					tooltip = imperial_grace_mechanic_interaction_issue_royal_decree_trigger_tt
 					NOT = { has_ruler_flag = imperial_grace_mechanic_interaction_issue_royal_decree_flag }
 				}
+				has_regency = no
 				if = {
 					limit = {
 						ruler_total_stats = { stats = 16 }
@@ -244,10 +245,10 @@ imperial_grace_mechanic = {
 				}
 			}
 			effect = {
-				set_ruler_flag = imperial_grace_mechanic_interaction_issue_royal_decree_flag
 				add_legitimacy = 10
 				if = {
 					limit = {
+						NOT = { has_ruler_flag = imperial_grace_mechanic_interaction_issue_royal_decree_flag }
 						has_country_modifier = imperial_grace_mechanic_interaction_construct_barays_modifier
 						has_country_modifier = imperial_grace_mechanic_interaction_sanction_temple_cities_modifier
 						has_country_modifier = imperial_grace_mechanic_interaction_reward_military_command_modifier
@@ -309,6 +310,7 @@ imperial_grace_mechanic = {
 				}
 				else_if = {
 					limit = {
+						NOT = { has_ruler_flag = imperial_grace_mechanic_interaction_issue_royal_decree_flag }
 						has_country_modifier = imperial_grace_mechanic_interaction_construct_barays_modifier
 						has_country_modifier = imperial_grace_mechanic_interaction_sanction_temple_cities_modifier
 					}
@@ -319,6 +321,7 @@ imperial_grace_mechanic = {
 				}
 				else_if = {
 					limit = {
+						NOT = { has_ruler_flag = imperial_grace_mechanic_interaction_issue_royal_decree_flag }
 						has_country_modifier = imperial_grace_mechanic_interaction_construct_barays_modifier
 						has_country_modifier = imperial_grace_mechanic_interaction_reward_military_command_modifier
 					}
@@ -329,6 +332,7 @@ imperial_grace_mechanic = {
 				}
 				else_if = {
 					limit = {
+						NOT = { has_ruler_flag = imperial_grace_mechanic_interaction_issue_royal_decree_flag }
 						has_country_modifier = imperial_grace_mechanic_interaction_sanction_temple_cities_modifier
 						has_country_modifier = imperial_grace_mechanic_interaction_reward_military_command_modifier
 					}
@@ -418,6 +422,7 @@ imperial_grace_mechanic = {
 						}
 					}
 				}
+				set_ruler_flag = imperial_grace_mechanic_interaction_issue_royal_decree_flag
 			}
 			ai_chance = {
 				factor = 100
