@@ -1,6 +1,6 @@
 guiTypes = {
 	windowType = {
-		name = "liberalism_mechanic_power"
+		name = "liberalism_mechanic"
 		size = { x = 300 y = 80 }
 		moveable = 0
 
@@ -8,15 +8,24 @@ guiTypes = {
 		iconType = {
 			name = "government_power_bar"
 			spriteType = "GFX_liberalism_mechanic_bar"
-			position = { x = 45 y = 61 }
+			position = { x = 44 y = 61 }
 		}
 
 		# Frame
 		iconType = {
 			name = "government_power_bar_frame"
 			spriteType = "GFX_liberalism_mechanic_bar_frame"
-			position = { x = 31 y = 2 }
+			position = { x = 30 y = 2 }
 			alwaystransparent = yes
+		}
+
+		# interaction
+		guiButtonType = {
+			name = "government_interaction_button"
+			quadTextureSprite = "GFX_liberalism_mechanic_boost_liberalism"
+			position = { x = 31 y = 13 }
+			buttonFont = "vic_18"
+			clicksound = back_click
 		}
 	}
 }

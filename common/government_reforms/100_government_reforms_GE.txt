@@ -1,25 +1,4 @@
 #Tier 1 {
-	elective_monarchy_reform = {
-		icon = "ballot_box"
-		allow_normal_conversion = yes
-		valid_for_nation_designer = yes
-		nation_designer_cost = 10
-		election_on_death = yes
-		queen = no
-		potential = {
-			NOT = { tag = POL }
-		}
-		effect = {
-			change_government = elective_monarchy
-		}
-		modifiers = {
-			heir_chance = 1.0
-		}
-		custom_attributes = {
-			enables_elective_monarchy = yes
-		}
-	}
-
 	arch_monarchy_reform = {
 		icon = "king"
 		allow_normal_conversion = yes
@@ -5210,7 +5189,6 @@
 				which = Royal_Influence
 				value = 3
 			}
-			NOT = { has_reform = elective_monarchy_reform }
 		}
 		trigger = {
 			check_variable = {
@@ -5250,7 +5228,6 @@
 				which = Clergy_Influence
 				value = 2
 			}
-			NOT = { has_reform = elective_monarchy_reform }
 		}
 		trigger = {
 			check_variable = {
@@ -5290,7 +5267,6 @@
 				which = Clergy_Influence
 				value = 2
 			}
-			NOT = { has_reform = elective_monarchy_reform }
 		}
 		trigger = {
 			check_variable = {
@@ -5323,7 +5299,6 @@
 				which = Noble_Influence
 				value = 3
 			}
-			NOT = { has_reform = elective_monarchy_reform }
 		}
 		trigger = {
 			culture_group = germanic
@@ -5353,7 +5328,6 @@
 				value = 3
 			}
 			NOT = { culture_group = germanic }
-			NOT = { has_reform = elective_monarchy_reform }
 		}
 		trigger = {
 			check_variable = {
@@ -5377,7 +5351,6 @@
 		icon = "poland_sejm"
 		allow_normal_conversion = yes
 		potential = {
-			NOT = { has_reform = elective_monarchy_reform }
 			check_variable = {
 				which = Burgher_Influence
 				value = 3
@@ -5407,7 +5380,6 @@
 		icon = "bishop"
 		allow_normal_conversion = yes
 		potential = {
-			NOT = { has_reform = elective_monarchy_reform }
 			check_variable = {
 				which = Clergy_Influence
 				value = 3
@@ -5631,96 +5603,6 @@
 			factor = 100
 		}
 	}
-
-	noble_electors_reform = {
-		icon = man_on_podium
-		allow_normal_conversion = yes
-		potential = {
-			has_reform = elective_monarchy_reform
-		}
-		modifiers = {
-			monarch_military_power = 1
-			max_absolutism = -5
-		}
-		custom_attributes = {
-			enables_noble_electors = yes
-		}
-		ai = {
-			factor = 1
-		}
-	}
-
-	royal_electors_reform = {
-		icon = king
-		allow_normal_conversion = yes
-		potential = {
-			has_reform = elective_monarchy_reform
-		}
-		modifiers = {
-			max_absolutism = 10
-		}
-		custom_attributes = {
-			enables_royal_electors = yes
-		}
-		ai = {
-			factor = 1
-		}
-	}
-
-	parliamental_electors_reform = {
-		icon = judge
-		allow_normal_conversion = yes
-		has_parliament = yes
-		potential = {
-			has_reform = elective_monarchy_reform
-		}
-		modifiers = {
-			legitimacy = 0.5
-		}
-		custom_attributes = {
-			enables_bureacratic_apparatus = yes
-		}
-		ai = {
-			factor = 1
-		}
-	}
-
-	papal_electors_reform = {
-		icon = clergyman
-		allow_normal_conversion = yes
-		potential = {
-			has_reform = elective_monarchy_reform
-			religion = catholic
-		}
-		modifiers = {
-			tolerance_own = 1
-		}
-		custom_attributes = {
-			enables_papal_favor = yes
-		}
-		ai = {
-			factor = 1
-		}
-	}
-
-	representative_electors_reform = {
-		icon = peasants
-		allow_normal_conversion = yes
-		potential = {
-			has_reform = elective_monarchy_reform
-		}
-		modifiers = {
-			global_unrest = -1
-		}
-		custom_attributes = {
-			enables_peasant_estate = yes
-		}
-		ai = {
-			factor = 1
-		}
-	}
-
-
 
 	grand_secretariat_reform = {
 		icon = "asian_scripture"
@@ -7522,7 +7404,6 @@
 				which = Burgher_Influence
 				value = 2
 			}
-			NOT = { has_reform = elective_monarchy_reform }
 		}
 		trigger = {
 			check_variable = {

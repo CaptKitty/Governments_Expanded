@@ -111,7 +111,6 @@ monarchy = {
 				tibetan_dual_government_reform
 				sisterhood_of_jeanne_darc_reform
 				### GE ###
-				# elective_monarchy_reform
 				arch_monarchy_reform
 				french_feudalism
 				#french_reformed_feudalism
@@ -617,10 +616,6 @@ monarchy = {
 				weak_burghers_reform
 				society_of_agriculture_reform
 				bourgeoisie_aristocracy_reform
-				noble_electors_reform
-				royal_electors_reform
-				parliamental_electors_reform
-				papal_electors_reform
 				union_of_crowns_reform
 				declaration_of_breda_reform
 				royal_society_reform
@@ -644,7 +639,6 @@ monarchy = {
 				table_of_ranks_reform
 				theatines_reform
 				restored_land_establishment_reform
-				representative_electors_reform
 				nomad_councils_reform
 				office_of_kanzler_reform
 				diamond_of_the_earth_reform

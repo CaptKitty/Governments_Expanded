@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
  # File includes localisation for government mechanics and connected modifiers, events, tooltips, etc
 
 # Bureaucracy vs Military Mechanic:
@@ -31,6 +31,8 @@
  ability_liberalism_mechanic: "Liberalism"
  liberalism: "Liberalism"
  liberalism_desc: "Liberalism is a measure of how liberal your government is. It works as a counter point to absolutism. \n--------------\n"
+ boost_liberalism: "Boost Liberalism"
+ boost_liberalism_desc: ""
 
  ## Power Modifiers:
  monthly_liberalism: "Monthly Liberalism Gain"
@@ -208,6 +210,9 @@
  ## Tooltips:
  republican_vs_monarchist_mechanic_interaction_duration: "until the other focus is selected"
  republican_vs_monarchist_culla_rinascimento_focus_TT: "We will decide whether to invest a proseprity plan in §YNorthern§!, §YCentral§! or §YSouthern Italy§!. \nFor §Y15§! years the selected provinces will receive the following effects: \n  Local Construction Cost: §G-15.0%§!\n  Local Construction Time: §G-15.0%§!\n  Local Prosperity Growth §G+1.00§!\n  Local Development Cost Modifier: §G-7.5%§!"
+ republican_vs_monarchist_culla_rinascimento_focus_north_TT: "Owns at least §Y12§! provinces in Northern Italy"
+ republican_vs_monarchist_culla_rinascimento_focus_center_TT: "Owns at least §Y12§! provinces in Central Italy"
+ republican_vs_monarchist_culla_rinascimento_focus_south_TT: "Owns at least §Y12§! provinces in Southern Italy"
 
  ## Customizable Localization:
  string_republican_vs_monarchist_power_max_effects: "\n\nBalance fully towards §YMonarchist§! has the following effects: \n[global_unrest]: §G-2.00§! \n[all_power_cost]: §G-5.0%§!"
@@ -237,6 +242,11 @@
  albergo_nobili_fieschi_modifier: "Capitani dei Fieschi"
  desc_albergo_nobili_fieschi_modifier: ""
 
+# Italian Condottieri
+ ## Mechanic
+ ability_italian_condottieri_mechanic: "Italian Condottieri"
+ italian_condottieri_gain_modifier: "Mercenary Prowness Modifier"
+ monthly_italian_condottieri: "Monthly Mercenary Prowness"
 # Imperial Grace Mechanic
  ## Mechanics:
  ability_imperial_grace_mechanic: "Imperial Grace"

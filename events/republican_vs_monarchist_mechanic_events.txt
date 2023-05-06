@@ -2,15 +2,15 @@ namespace = republican_vs_monarchist_mechanic_events
 
 #Culla del Rinascimento
 country_event = {
-	id = republican_vs_monarchist_mechanic_events.100
-	title = republican_vs_monarchist_mechanic_events.100.T
-	desc = republican_vs_monarchist_mechanic_events.100.D
+	id = republican_vs_monarchist_mechanic_events.1
+	title = republican_vs_monarchist_mechanic_events.1.T
+	desc = republican_vs_monarchist_mechanic_events.1.D
 	picture = CITY_DEVELOPMENT_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = republican_vs_monarchist_mechanic_events.100.OPT1
+		name = republican_vs_monarchist_mechanic_events.1.OPT1
 
 		trigger = {
 			NOT = { has_country_flag = republican_vs_monarchist_mechanic_events_1 }
@@ -66,7 +66,7 @@ country_event = {
 	}
 
 	option = {
-		name = republican_vs_monarchist_mechanic_events.100.OPT2
+		name = republican_vs_monarchist_mechanic_events.1.OPT2
 
 		trigger = {
 			NOT = { has_country_flag = republican_vs_monarchist_mechanic_events_2 }
@@ -122,7 +122,7 @@ country_event = {
 	}
 
 	option = {
-		name = republican_vs_monarchist_mechanic_events.100.OPT3
+		name = republican_vs_monarchist_mechanic_events.1.OPT3
 
 		trigger = {
 			NOT = { has_country_flag = republican_vs_monarchist_mechanic_events_3 }
@@ -182,36 +182,9 @@ country_event = {
 			limit = {
 				calc_true_if = {
 					amount = 2
-					OR = {
-						has_country_flag = republican_vs_monarchist_mechanic_events_1
-						NOT = {
-							piedmont_area = { owned_by = ROOT }
-							lombardy_area = { owned_by = ROOT }
-							po_valley_area = { owned_by = ROOT }
-							venetia_area = { owned_by = ROOT }
-							emilia_romagna_area = { owned_by = ROOT }
-						}
-					}
-					OR = {
-						has_country_flag = republican_vs_monarchist_mechanic_events_2
-						NOT = {
-							liguria_area = { owned_by = ROOT }
-							corsica_sardinia_area = { owned_by = ROOT }
-							tuscany_area = { owned_by = ROOT }
-							central_italy_area = { owned_by = ROOT }
-							lazio_area = { owned_by = ROOT }
-						}
-					}
-					OR = {
-						has_country_flag = republican_vs_monarchist_mechanic_events_3
-						NOT = {
-							naples_area = { owned_by = ROOT }
-							apulia_area = { owned_by = ROOT }
-							calabria_area = { owned_by = ROOT }
-							sicily_area = { owned_by = ROOT }
-							western_sicily_area = { owned_by = ROOT }
-						}
-					}
+					has_country_flag = republican_vs_monarchist_mechanic_events_1
+					has_country_flag = republican_vs_monarchist_mechanic_events_2
+					has_country_flag = republican_vs_monarchist_mechanic_events_3
 				}
 			}
 			clr_country_flag = republican_vs_monarchist_mechanic_events_1
