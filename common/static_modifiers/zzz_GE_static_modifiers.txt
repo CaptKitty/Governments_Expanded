@@ -10,6 +10,7 @@ ruler_adm = {
 	monthly_bureaucracy_vs_military_power = -0.05
 	monthly_political_focus_power = 0.084
 	monthly_republican_vs_monarchist_power = -0.05
+	monthly_imperial_grace_power = 0.034
 }
 
 ruler_dip = {
@@ -31,6 +32,7 @@ war = {
 	rr_girondists_influence = 0.15
 	# GE:
 	monthly_bureaucracy_vs_military_power = 0.05
+	monthly_imperial_grace_power = -0.1
 }
 
 over_extension = {
@@ -75,10 +77,68 @@ corruption = {
 	monthly_ottoman_decadence = 10
 	# GE:
 	monthly_corruption_mechanic_power = 1
+	monthly_imperial_grace_power = -1
 }
 
 root_out_corruption = {
 	yearly_corruption = -1.0
 	# GE:
 	monthly_corruption_mechanic_power = -0.08
+}
+
+over_governing_capacity_modifier = {
+	stability_cost_modifier = 1.0
+	ae_impact = 0.5
+	improve_relation_modifier = -0.5
+	advisor_cost = 1.0
+	monthly_militarized_society = -1
+	monthly_prussian_militarized_society_1 = -1
+	monthly_prussian_militarized_society_2 = -1
+	monthly_prussian_militarized_society_3 = -1
+	administrative_efficiency = -0.5
+	monthly_ottoman_decadence = 2
+	# GE:
+	monthly_imperial_grace_power = -1
+}
+
+positive_stability = {
+	global_unrest = -1					#-1% revolt risk each step
+	global_tax_modifier = 0.05
+	global_missionary_strength = 0.005
+	temples_influence = 0.02
+	mr_aristocrats_influence = 0.03
+	rr_jacobins_influence = 0.03
+	stability_cost_modifier = 0.50
+	monthly_fervor_increase = 1
+	devotion = 0.5
+	yearly_corruption = -0.02
+	global_institution_spread = 0.05
+	yearly_harmony = 0.25
+	monthly_ottoman_decadence = -0.05
+	# GE:
+	monthly_imperial_grace_power = 0.084
+}
+
+negative_stability = {
+	global_unrest = -2					#-1% EXTRA revolt risk each step
+	legitimacy = 1
+	interest = -1
+	migration_cost = 0.1
+	devotion = 1
+	caravan_power = 0.05
+	yearly_harmony = 0.25
+	monthly_russian_modernization = 0.03
+	monthly_ottoman_decadence = -0.15
+	# GE:
+	monthly_imperial_grace_power = 0.5
+}
+
+inverse_religious_unity = {
+	stability_cost_modifier = 1.0		#more expensive to recover stability
+	global_unrest = 3
+	church_power_modifier = -1
+	devotion = -1
+	yearly_corruption = 0.1
+	# GE:
+	monthly_imperial_grace_power = -1
 }

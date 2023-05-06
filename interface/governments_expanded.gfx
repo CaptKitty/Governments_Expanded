@@ -800,4 +800,8 @@ spriteTypes = {
 		name = "government_reform_german_kaiserreich"
 		texturefile = "gfx//interface//government_reform_icons//german_kaiserreich.dds"
 	}
+	spriteType = {
+		name = "government_reform_second_khmer_empire"
+		texturefile = "gfx//interface//government_reform_icons//second_khmer_empire.dds"
+	}
 }

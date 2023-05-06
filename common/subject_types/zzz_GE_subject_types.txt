@@ -1,0 +1,244 @@
+# additional modifiers for existing subject types
+## Vanilla:
+vassal = {
+	modifier_overlord = {
+		trigger = {
+			FROM = {
+				has_government_mechanic = imperial_grace_mechanic
+			}
+		}
+		modifier = imperial_grace_mechanic_subject_modifier
+	}
+}
+client_vassal = {
+	modifier_overlord = {
+		trigger = {
+			FROM = {
+				has_government_mechanic = imperial_grace_mechanic
+			}
+		}
+		modifier = imperial_grace_mechanic_subject_modifier
+	}
+}
+march = {
+	modifier_overlord = {
+		trigger = {
+			FROM = {
+				has_government_mechanic = imperial_grace_mechanic
+			}
+		}
+		modifier = imperial_grace_mechanic_subject_modifier
+	}
+}
+client_march = {
+	modifier_overlord = {
+		trigger = {
+			FROM = {
+				has_government_mechanic = imperial_grace_mechanic
+			}
+		}
+		modifier = imperial_grace_mechanic_subject_modifier
+	}
+}
+tributary_state = {
+	modifier_overlord = {
+		trigger = {
+			FROM = {
+				has_government_mechanic = imperial_grace_mechanic
+			}
+		}
+		modifier = imperial_grace_mechanic_tributary_modifier
+	}
+}
+colony = {
+	modifier_overlord = {
+		trigger = {
+			FROM = {
+				has_government_mechanic = imperial_grace_mechanic
+			}
+		}
+		modifier = imperial_grace_mechanic_colony_modifier
+	}
+}
+crown_colony = {
+	modifier_overlord = {
+		trigger = {
+			FROM = {
+				has_government_mechanic = imperial_grace_mechanic
+			}
+		}
+		modifier = imperial_grace_mechanic_colony_modifier
+	}
+}
+private_enterprise = {
+	modifier_overlord = {
+		trigger = {
+			FROM = {
+				has_government_mechanic = imperial_grace_mechanic
+			}
+		}
+		modifier = imperial_grace_mechanic_colony_modifier
+	}
+}
+self_governing_colony = {
+	modifier_overlord = {
+		trigger = {
+			FROM = {
+				has_government_mechanic = imperial_grace_mechanic
+			}
+		}
+		modifier = imperial_grace_mechanic_colony_modifier
+	}
+}
+commercial_enterprise = {
+	modifier_overlord = {
+		trigger = {
+			FROM = {
+				has_government_mechanic = imperial_grace_mechanic
+			}
+		}
+		modifier = imperial_grace_mechanic_colony_modifier
+	}
+}
+
+# SE:
+puppet_state = {
+	modifier_overlord = {
+		trigger = {
+			FROM = {
+				has_government_mechanic = imperial_grace_mechanic
+			}
+		}
+		modifier = imperial_grace_mechanic_subject_modifier
+	}
+}
+fief_subject = {
+	modifier_overlord = {
+		trigger = {
+			FROM = {
+				has_government_mechanic = imperial_grace_mechanic
+			}
+		}
+		modifier = imperial_grace_mechanic_subject_modifier
+	}
+}
+mandala_trade_vassal = {
+	modifier_overlord = {
+		trigger = {
+			FROM = {
+				has_government_mechanic = imperial_grace_mechanic
+			}
+		}
+		modifier = imperial_grace_mechanic_subject_modifier
+	}
+}
+revolution_subject = {
+	modifier_overlord = {
+		trigger = {
+			FROM = {
+				has_government_mechanic = imperial_grace_mechanic
+			}
+		}
+		modifier = imperial_grace_mechanic_subject_modifier
+	}
+}
+naval_march = {
+	modifier_overlord = {
+		trigger = {
+			FROM = {
+				has_government_mechanic = imperial_grace_mechanic
+			}
+		}
+		modifier = imperial_grace_mechanic_subject_modifier
+	}
+}
+defensive_march = {
+	modifier_overlord = {
+		trigger = {
+			FROM = {
+				has_government_mechanic = imperial_grace_mechanic
+			}
+		}
+		modifier = imperial_grace_mechanic_subject_modifier
+	}
+}
+agricultural_march = {
+	modifier_overlord = {
+		trigger = {
+			FROM = {
+				has_government_mechanic = imperial_grace_mechanic
+			}
+		}
+		modifier = imperial_grace_mechanic_subject_modifier
+	}
+}
+religious_march = {
+	modifier_overlord = {
+		trigger = {
+			FROM = {
+				has_government_mechanic = imperial_grace_mechanic
+			}
+		}
+		modifier = imperial_grace_mechanic_subject_modifier
+	}
+}
+administrative_region = {
+	modifier_overlord = {
+		trigger = {
+			FROM = {
+				has_government_mechanic = imperial_grace_mechanic
+			}
+		}
+		modifier = imperial_grace_mechanic_subject_modifier
+	}
+}
+annexable_colony = {
+	modifier_overlord = {
+		trigger = {
+			FROM = {
+				has_government_mechanic = imperial_grace_mechanic
+			}
+		}
+		modifier = imperial_grace_mechanic_colony_modifier
+	}
+}
+dominion = {
+	modifier_overlord = {
+		trigger = {
+			FROM = {
+				has_government_mechanic = imperial_grace_mechanic
+			}
+		}
+		modifier = imperial_grace_mechanic_colony_modifier
+	}
+}
+dominion_tc = {
+	modifier_overlord = {
+		trigger = {
+			FROM = {
+				has_government_mechanic = imperial_grace_mechanic
+			}
+		}
+		modifier = imperial_grace_mechanic_colony_modifier
+	}
+}
+autonomous_dominion = {
+	modifier_overlord = {
+		trigger = {
+			FROM = {
+				has_government_mechanic = imperial_grace_mechanic
+			}
+		}
+		modifier = imperial_grace_mechanic_colony_modifier
+	}
+}
+autonomous_dominion_tc = {
+	modifier_overlord = {
+		trigger = {
+			FROM = {
+				has_government_mechanic = imperial_grace_mechanic
+			}
+		}
+		modifier = imperial_grace_mechanic_colony_modifier
+	}
+}

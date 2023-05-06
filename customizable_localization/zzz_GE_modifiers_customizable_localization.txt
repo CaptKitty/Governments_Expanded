@@ -206,3 +206,58 @@ defined_text = {
 		localisation_key = MODIFIER_CORE_CREATION
 	}
 }
+
+defined_text = {
+	name = legitimacy
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = YEARLY_LEGITIMACY
+	}
+}
+
+defined_text = {
+	name = stability_cost_modifier
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = STABILITY_COST_MODIFIER
+	}
+}
+
+defined_text = {
+	name = global_trade_goods_size_modifier
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_GLOBAL_TRADE_GOODS_SIZE_MODIFIER
+	}
+}
+
+defined_text = {
+	name = reduced_liberty_desire
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_REDUCED_LIBERTY_DESIRE
+	}
+}
+
+defined_text = {
+	name = vassal_income
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_VASSAL_INCOME
+	}
+}

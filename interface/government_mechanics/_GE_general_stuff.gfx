@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_GE_small_transparent_texture"
+		textureFile = "gfx/interface/GE_small_transparent_texture.dds"
+	}
+}

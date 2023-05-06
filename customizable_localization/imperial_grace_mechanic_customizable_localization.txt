@@ -1,0 +1,17 @@
+defined_text = {
+	name = GetImperialGraceMechanicEventsRebelType
+	random = no
+
+	text = {
+		trigger = {
+			has_country_flag = imperial_grace_mechanic_peasants
+		}
+		localisation_key = string_imperial_grace_mechanic_peasants
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = string_imperial_grace_mechanic_nobles
+	}
+}
