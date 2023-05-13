@@ -1,0 +1,82 @@
+italian_dinasties_mechanic = {
+	alert_icon_gfx = GFX_alerticons_government_mechanics
+	alert_icon_index = 11
+	available = {
+		always = yes
+	}
+
+	powers = {
+		italian_dinasties = {
+			max = 100
+			reset_on_new_ruler = no
+			base_monthly_growth = 0
+			development_scaled_monthly_growth = 0
+			scaled_modifier = {
+				modifier = {
+					improve_relation_modifier = 0.25
+					monthly_splendor = 2
+					prestige_decay = -0.01
+					legitimacy = 1
+				}
+			}
+			on_max_reached = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = GE_reached_max_italian_dinasties }
+					}
+					set_country_flag = GE_reached_max_italian_dinasties
+					add_splendor = 200
+					change_adm = 1
+					change_dip = 1
+					change_mil = 1
+				}
+			}
+			is_good = yes
+		}
+	}
+
+	interactions = {
+		italian_dinasties_mechanic_gonzaga = {
+			gui = venetian_government_mechanic_interaction
+			icon = GFX_italian_dinasties_mechanic_gonzaga_button
+			potential = {
+				has_reform = house_of_gonzaga_reform
+			}
+			trigger = {
+				adm_power_cost = 50
+			}
+			effect = {
+				adm_power_cost = 50
+				add_ruler_modifier = {
+					name = italian_dinasties_gonzaga_modifier
+					duration = -1
+				}
+			}
+			cooldown_years = 5
+			ai_chance = {
+				factor = 33
+			}
+		}
+		italian_dinasties_mechanic_este = {
+			gui = venetian_government_mechanic_interaction
+			icon = GFX_italian_dinasties_mechanic_este_button
+			potential = {
+				has_reform = house_of_este_reform
+			}
+			trigger = {
+				adm_power_cost = 50
+			}
+			effect = {
+				adm_power_cost = 50
+				add_ruler_modifier = {
+					name = italian_dinasties_este_modifier
+					duration = -1
+				}
+			}
+			cooldown_years = 5
+			ai_chance = {
+				factor = 33
+			}
+		}
+	}
+}

@@ -11,12 +11,14 @@ ruler_adm = {
 	monthly_political_focus_power = 0.084
 	monthly_republican_vs_monarchist_power = -0.05
 	monthly_imperial_grace_power = 0.034
+	monthly_italian_dinasties = 0.1
 }
 
 ruler_dip = {
 	monthly_council_consensus = 0.1
 	# GE:
 	monthly_political_focus_power = 0.084
+	monthly_italian_dinasties = 0.1
 }
 
 ruler_mil = {
@@ -25,6 +27,7 @@ ruler_mil = {
 	monthly_bureaucracy_vs_military_power = 0.05
 	monthly_political_focus_power = 0.084
 	monthly_republican_vs_monarchist_power = 0.05
+	monthly_italian_dinasties = 0.1
 }
 
 war = {
@@ -141,4 +144,8 @@ inverse_religious_unity = {
 	yearly_corruption = 0.1
 	# GE:
 	monthly_imperial_grace_power = -1
+}
+
+diplomatic_reputation = {
+	monthly_italian_dinasties = 0.1
 }

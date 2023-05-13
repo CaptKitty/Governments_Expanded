@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
  # File includes localisation for government mechanics and connected modifiers, events, tooltips, etc
 
 # Bureaucracy vs Military Mechanic:
@@ -242,7 +242,7 @@
  albergo_nobili_fieschi_modifier: "Capitani dei Fieschi"
  desc_albergo_nobili_fieschi_modifier: ""
 
-# Italian Condottieri
+# Italian Condottieri Mechanic
  ## Mechanic
  ability_italian_condottieri_mechanic: "Italian Condottieri"
  italian_condottieri_gain_modifier: "Mercenary Prowness Modifier"
@@ -316,3 +316,14 @@
  ## Decisions:
  imperial_grace_mechanic_decision_ease_up_on_taxation_title: "Ease up on Taxation"
  imperial_grace_mechanic_decision_ease_up_on_taxation_desc: "The latest changes in our government got the people doubting our legitimacy and unrest is brewing. We might be able to placate them by granting concessions to the peasantry and aristocracy."
+
+
+# Italian Dinasties Mechanic
+ ## Mechanic
+ ability_italian_dinasties_mechanic: "Italian Dynasty"
+ italian_dinasties: "Dynastic Power"
+ italian_dinasties_gain_modifier: "Dynastic Power"
+ italian_dinasties_mechanic_gonzaga: "House of Gonzaga"
+ italian_dinasties_mechanic_gonzaga_desc: ""
+ italian_dinasties_mechanic_este: "House of Este"
+ italian_dinasties_mechanic_este_desc: ""

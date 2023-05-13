@@ -107,7 +107,7 @@ venice_merchants_reform = {
 	}
 	government_abilities = {
 		liberalism_mechanic
-		# venetian_government_mechanic
+		venetian_government_mechanic
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
