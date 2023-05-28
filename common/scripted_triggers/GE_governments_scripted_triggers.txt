@@ -343,6 +343,7 @@ has_nationalism_reform_35 = {
 	OR = {
 		has_reform = national_guard_reform
 		has_reform = general_war_commissariat_reform
+		has_reform = general_war_commissariat_reform_GE
 		has_reform = snaphaner_reform
 		has_reform = polish_national_guard_reform
 		has_reform = henry_reforms_reform

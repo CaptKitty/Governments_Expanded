@@ -27,6 +27,8 @@ has_rural_goods = {
 		trade_goods = tomato
 		trade_goods = llama
 		trade_goods = sea_turtle
+		trade_goods = exotic_fur
+		trade_goods = millet
 	}
 }
 
@@ -54,6 +56,9 @@ has_urban_goods = {
 		trade_goods = champagne
 		trade_goods = uniforms
 		trade_goods = marble_sculpture
+		trade_goods = fur_clothing
+		trade_goods = jade_sculptures
+		trade_goods = String_Instruments
 	}
 }
 
@@ -75,7 +80,6 @@ has_mining_goods = {
 		trade_goods = tar
 		trade_goods = sulfur
 		trade_goods = zinc
-		trade_goods = brass
 		trade_goods = cannon
 	}
 }

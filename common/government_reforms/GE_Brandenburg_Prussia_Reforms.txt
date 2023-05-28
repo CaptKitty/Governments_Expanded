@@ -216,7 +216,7 @@ kreditwerk_reform = {
 	}
 }
 
-general_war_commissariat_reform = {
+general_war_commissariat_reform_GE = {
 	icon = "king"
 	allow_normal_conversion = yes
 	effect = {
@@ -235,14 +235,14 @@ general_war_commissariat_reform = {
 		OR = {
 			primary_culture = prussian
 			primary_culture = saxon
-			has_reform = general_war_commissariat_reform
+			has_reform = general_war_commissariat_reform_GE
 		}
 	}
 	trigger = {
 		OR = {
 			primary_culture = prussian
 			primary_culture = saxon
-			has_reform = general_war_commissariat_reform
+			has_reform = general_war_commissariat_reform_GE
 		}
 	}
 	modifiers = {

@@ -535,7 +535,7 @@ monarchy = {
 				permanent_marathas_council_reform
 				governmental_purbias_register_reform
 				foreign_formation_regiments_reform
-				general_war_commissariat_reform
+				general_war_commissariat_reform_GE
 				gustavan_artillery_reform
 				#the_black_guard_reform
 				reorganize_the_imperial_army
@@ -1264,7 +1264,7 @@ republic = {
 				permanent_marathas_council_reform
 				governmental_purbias_register_reform
 				foreign_formation_regiments_reform
-				general_war_commissariat_reform
+				general_war_commissariat_reform_GE
 				gustavan_artillery_reform
 				the_black_guard_reform
 				reorganize_the_imperial_army
@@ -1682,6 +1682,7 @@ tribal = {
 				musketeers_reform
 				gendarmes_reform
 				general_war_commissariat_reform
+				general_war_commissariat_reform_GE
 				swiss_mercenary_reform
 				allotment_system
 				boyars_army_reform
@@ -1972,6 +1973,7 @@ theocracy = {
 				tradition_of_masada_and_bar_kochba_reform
 				turkoman_gunners_reform
 				mongol_ties_reform
+				general_war_commissariat_reform_GE
 				# subotai_lessons_reform
 			}
 		}
