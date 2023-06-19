@@ -50,7 +50,7 @@ over_extension = {
 	yearly_corruption = 0.5
 	ottoman_decadence_gain_modifier = 0.25
 	# GE:
-	monthly_bureaucracy_vs_military_power = -0.1
+	monthly_bureaucracy_vs_military_power = -0.2
 }
 
 corruption = {
