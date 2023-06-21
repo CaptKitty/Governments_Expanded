@@ -12,29 +12,19 @@ republican_vs_monarchist_mechanic = {
 			min = -100
 			max = 100
 			default = 0
-			scaled_modifier = {
-				trigger = {
-					NOT = {
-						has_government_power = {
-							mechanic_type = republican_vs_monarchist_mechanic
-							power_type = republican_vs_monarchist_power
-							value = 0
-						}
-					}
-				}
+			reverse_scaled_modifier = {
+				start_value = -100
+				end_value = 0
+				extend_beyond_value = no
 				modifier = {
-					core_creation = 0.1
-					manpower_in_own_culture_provinces = -0.15
+					core_creation = -0.1
+					manpower_in_own_culture_provinces = 0.15
 				}
 			}
 			scaled_modifier = {
-				trigger = {
-					has_government_power = {
-						mechanic_type = republican_vs_monarchist_mechanic
-						power_type = republican_vs_monarchist_power
-						value = 0
-					}
-				}
+				start_value = 0
+				end_value = 100
+				extend_beyond_value = no
 				modifier = {
 					all_power_cost = -0.05
 					global_unrest = -2

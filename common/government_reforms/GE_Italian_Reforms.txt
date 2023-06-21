@@ -140,6 +140,11 @@ genoese_republic = {
 	government_abilities = {
 		albergo_nobili_mechanic
 	}
+	removed_effect = {
+		remove_country_modifier = albergo_nobili_uso_di_mare_modifier
+		remove_country_modifier = albergo_nobili_doria_modifier
+		remove_country_modifier = albergo_nobili_fieschi_modifier
+	}
 }
 giudicati_sardi_reform = {
 	icon = sardinia_giudicati_sardi

@@ -5,7 +5,7 @@
  ## Mechanics:
  ability_bureaucracy_vs_military_mechanic: "Bureaucracy vs Military"
  bureaucracy_vs_military_power: "Bureaucracy vs Military Balance"
- bureaucracy_vs_military_power_desc: "Bureaucracy vs Military is a measure of what institution is predominant for your politics, the administrative bureaucracy or the military. \n\nThe following will move you towards §YBureaucracy§!: \n   - Administrative Ruler Skill \n   - Overextension \n   - Bureaucratic Focus \n\nThe following will move you towards §YMilitary§!: \n   - Military Ruler Skill \n   - Being at War \n   - Military Focus [Root.bureaucracy_vs_military_power_max_effects] \n\nBalance fully towards §YBureaucracy§! has the following effects: \n[global_unrest]: §G-2.00§! \n[administrative_efficiency]: §G+5.0%§! \n[culture_conversion_time]: §G-25.0%§! \n[development_cost_in_primary_culture]: §G-10.0%§! \n--------------\n"
+ bureaucracy_vs_military_power_desc: "Bureaucracy vs Military is a measure of what institution is predominant for your politics, the administrative bureaucracy or the military. \n\nThe following will move you towards §YBureaucracy§!: \n   - Administrative Ruler Skill \n   - Overextension \n   - Bureaucratic Focus \n\nThe following will move you towards §YMilitary§!: \n   - Military Ruler Skill \n   - Being at War \n   - Military Focus \n\nAt Minimum Power, §YBureaucracy vs Military Balance§! has the following effects: \n[global_unrest]: §G-2.00§! \n[administrative_efficiency]: §G+5.0%§! \n[culture_conversion_time]: §G-25.0%§! \n[development_cost_in_primary_culture]: §G-10.0%§! \n--------------\n"
  bureaucracy_vs_military_bureaucratic_focus: "Select Bureaucratic Focus"
  bureaucracy_vs_military_bureaucratic_focus_desc: ""
  bureaucracy_vs_military_military_focus: "Select Military Focus"
@@ -22,9 +22,6 @@
 
  ## Tooltips:
  bureaucracy_vs_military_mechanic_interaction_duration: "until the other focus is selected"
-
- ## Customizable Localization:
- string_bureaucracy_vs_military_power_max_effects: "\n\nBalance fully towards §YMilitary§! has the following effects: \n[army_tradition]: §G+1.00§! \n[discipline]: §G+5.0%§! \n[drill_gain_modifier]: §G+20.0%§! \n[manpower_in_own_culture_provinces]: §G+15.0%§!"
 
 # Liberalism Mechanic:
  ## Mechanics:
@@ -179,7 +176,7 @@
  ## Mechanics:
  ability_republican_vs_monarchist_mechanic: "Republican vs Monarchist"
  republican_vs_monarchist_power: "Republican vs Monarchist Balance"
- republican_vs_monarchist_power_desc: "Republican vs Monarchist is a measure of which of the two main factions is predominant in your politics. \n\nThe following will move you towards §YRepublican§!: \n   - Administrative Ruler Skill \n   - Culla del Rinascimento Focus \n\nThe following will move you towards §YMonarchist§!: \n   - Military Ruler Skill \n   - Ambizione Imperiale Focus \n\nBalance fully towards §YRepublican§! has the following effects: \n[core_creation]: §G-10.0%§! \n[manpower_in_own_culture_provinces]: §G+15.0%§! [Root.republican_vs_monarchist_power_max_effects] \n--------------\n"
+ republican_vs_monarchist_power_desc: "Republican vs Monarchist is a measure of which of the two main factions is predominant in your politics. \n\nThe following will move you towards §YRepublican§!: \n   - Administrative Ruler Skill \n   - Culla del Rinascimento Focus \n\nThe following will move you towards §YMonarchist§!: \n   - Military Ruler Skill \n   - Ambizione Imperiale Focus \n\nAt Minimum Power, §YRepublican vs Monarchist Balance§! has the following effects: \n[core_creation]: §G-10.0%§! \n[manpower_in_own_culture_provinces]: §G+15.0%§! \n--------------\n"
 
  republican_vs_monarchist_mare_nostrum_focus: "Select Mare Nostrum Focus"
  republican_vs_monarchist_mare_nostrum_focus_desc: ""
@@ -213,9 +210,6 @@
  republican_vs_monarchist_culla_rinascimento_focus_north_TT: "Owns at least §Y12§! provinces in Northern Italy"
  republican_vs_monarchist_culla_rinascimento_focus_center_TT: "Owns at least §Y12§! provinces in Central Italy"
  republican_vs_monarchist_culla_rinascimento_focus_south_TT: "Owns at least §Y12§! provinces in Southern Italy"
-
- ## Customizable Localization:
- string_republican_vs_monarchist_power_max_effects: "\n\nBalance fully towards §YMonarchist§! has the following effects: \n[global_unrest]: §G-2.00§! \n[all_power_cost]: §G-5.0%§!"
 
  ## Events
  republican_vs_monarchist_mechanic_events.1.T: "Italian Prosperity"

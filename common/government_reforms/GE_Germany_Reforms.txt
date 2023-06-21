@@ -33,4 +33,9 @@ german_kaiserreich = {
 	government_abilities = {
 		bureaucracy_vs_military_mechanic
 	}
+
+	removed_effect = {
+		remove_country_modifier = bureaucracy_vs_military_bureaucratic_focus_modifier
+		remove_country_modifier = bureaucracy_vs_military_military_focus_modifier
+	}
 }

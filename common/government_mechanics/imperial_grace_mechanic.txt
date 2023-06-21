@@ -13,32 +13,22 @@ imperial_grace_mechanic = {
 			max = 100
 			default = 0
 			reset_on_new_ruler = yes
-			scaled_modifier = {
-				trigger = {
-					NOT = {
-						has_government_power = {
-							mechanic_type = imperial_grace_mechanic
-							power_type = imperial_grace_power
-							value = 0
-						}
-					}
-				}
+			reverse_scaled_modifier = {
+				start_value = -100
+				end_value = 0
+				extend_beyond_value = no
 				modifier = {
-					global_unrest = -5
-					legitimacy = 1.5
-					stability_cost_modifier = -0.25
-					reduced_liberty_desire = 20
-					vassal_income = 0.2
+					global_unrest = 5
+					legitimacy = -1.5
+					stability_cost_modifier = 0.25
+					reduced_liberty_desire = -20
+					vassal_income = -0.2
 				}
 			}
 			scaled_modifier = {
-				trigger = {
-					has_government_power = {
-						mechanic_type = imperial_grace_mechanic
-						power_type = imperial_grace_power
-						value = 0
-					}
-				}
+				start_value = 0
+				end_value = 100
+				extend_beyond_value = no
 				modifier = {
 					global_trade_goods_size_modifier = 0.2
 					land_morale = 0.2

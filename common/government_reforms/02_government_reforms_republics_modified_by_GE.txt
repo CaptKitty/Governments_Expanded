@@ -159,6 +159,11 @@ venice_merchants_reform = {
 		bonus_stats_for_elected_ruler = yes
 	}
 	has_term_election = no
+	removed_effect = {
+		remove_country_modifier = venetian_government_stato_mar_modifier
+		remove_country_modifier = venetian_government_carnevale_venezia_modifier
+		remove_country_modifier = venetian_government_stato_tera_modifier
+	}
 }
 
 
