@@ -1,0 +1,34 @@
+catholics_vs_ultraquists_mechanic = {
+	alert_icon_gfx = GFX_alerticons_government_mechanics
+	alert_icon_index = 1
+
+	available = {
+		always = yes
+	}
+
+	powers = {
+		catholics_vs_ultraquists_mechanic_power = {
+			gui = catholics_vs_ultraquists_mechanic_power
+			min = -100
+			max = 100
+			default = 0
+			range_modifier = {
+				start_value = -100
+				end_value = -0.001
+				modifier = {
+					improve_relation_modifier = 0.1
+					land_morale = 0.05
+				}
+			}
+			range_modifier = {
+				start_value = 0.001
+				end_value = 100
+				modifier = {
+					global_unrest = -1
+					tolerance_heretic = 1
+				}
+			}
+
+		}
+	}
+}

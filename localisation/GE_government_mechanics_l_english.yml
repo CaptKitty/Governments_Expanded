@@ -311,6 +311,21 @@
  imperial_grace_mechanic_decision_ease_up_on_taxation_title: "Ease up on Taxation"
  imperial_grace_mechanic_decision_ease_up_on_taxation_desc: "The latest changes in our government got the people doubting our legitimacy and unrest is brewing. We might be able to placate them by granting concessions to the peasantry and aristocracy."
 
+# Catholics vs Ultraquists Mechanic
+ ## Mechanics:
+ ability_catholics_vs_ultraquists_mechanic: "Catholics vs Ultraquists"
+ catholics_vs_ultraquists_mechanic_power: "Catholics vs Ultraquists Balance"
+ catholics_vs_ultraquists_mechanic_power_desc: "In [Root.GetName] two groups, the Catholics and the Ultraquists - a specific branch of Hussitism - fight over the power. The balance is a measure to show who is currently ahead. \n\nThe modifiers for both sides are not scaled. You gain the full modifier for the side that is currently in power.\n--------------\nAt Minimum Power, §YCatholics vs Ultraquists Balance§! has the following effects: \nMorale of Armies: §G+5.0%§! \nImprove Relations: §G+10.0%§!\n--------------\n"
+
+ ## Power Modifiers:
+ monthly_catholics_vs_ultraquists_mechanic_power: "Monthly Catholics vs Ultraquists Balance Gain"
+ catholics_vs_ultraquists_mechanic_power_gain_modifier: "Catholics vs Ultraquists Balance Gain Modifier"
+
+ ## GUI Tooltips:
+ catholics_vs_ultraquists_mechanic_power_min_tt: "§YCatholics§! \nWhen the §YCatholics§! are in power, the following effects apply: \nMorale of Armies: §G+5.0%§! \nImprove Relations: §G+10.0%§!"
+ catholics_vs_ultraquists_mechanic_power_min_tt_delayed: "If the value is equal to or larger than §Y-100§! and smaller than §Y0§!, the §YCatholics§! are in power."
+ catholics_vs_ultraquists_mechanic_power_max_tt: "§YUltraquists§! \nWhen the §YUltraquists§! are in power, the following effects apply: \nNational Unrest: §G-1.00§! \nTolerance of Heretics: §G+1.00§!"
+ catholics_vs_ultraquists_mechanic_power_max_tt_delayed: "If the value is equal to or smaller than §Y100§! and larger than §Y0§!, the §YUltraquists§! are in power."
 
 # Italian Dinasties Mechanic
  ## Mechanic

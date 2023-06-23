@@ -117,27 +117,20 @@
 		potential = {
 			OR = {
 				has_reform = crown_of_saint_wenceslaus
+				have_had_reform = crown_of_saint_wenceslaus
 			}
 		}
 		modifiers = {
 			legitimacy = 0.5
 		}
+		government_abilities = {
+			catholics_vs_ultraquists_mechanic
+		}
 		conditional = {
-			allow = { has_dlc = "Res Publica" }
-			queen = yes
-			heir = no
-			duration = 100
-			has_term_election = yes
-			states_general_mechanic = {
-				Catholics = {
-					improve_relation_modifier = 0.1
-					land_morale = 0.05
-				}
-
-				Ultraquists = {
-					global_unrest = -1
-					tolerance_heretic = 1
-				}
+			allow = { has_dlc = "Domination" }
+			custom_attributes = {
+				has_ruler_election = yes
+				has_improved_ruler_election = yes
 			}
 		}
 	}
