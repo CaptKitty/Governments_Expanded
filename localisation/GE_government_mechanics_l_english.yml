@@ -316,6 +316,10 @@
  ability_catholics_vs_ultraquists_mechanic: "Catholics vs Ultraquists"
  catholics_vs_ultraquists_mechanic_power: "Catholics vs Ultraquists Balance"
  catholics_vs_ultraquists_mechanic_power_desc: "In [Root.GetName] two groups, the Catholics and the Ultraquists - a specific branch of Hussitism - fight over the power. The balance is a measure to show who is currently ahead. \n\nThe modifiers for both sides are not scaled. You gain the full modifier for the side that is currently in power.\n--------------\nAt Minimum Power, §YCatholics vs Ultraquists Balance§! has the following effects: \nMorale of Armies: §G+5.0%§! \nImprove Relations: §G+10.0%§!\n--------------\n"
+ catholics_vs_ultraquists_mechanic_grant_privileges_to_catholics_interaction: "Grant Privileges to the Catholics"
+ catholics_vs_ultraquists_mechanic_grant_privileges_to_catholics_interaction_desc: ""
+ catholics_vs_ultraquists_mechanic_grant_privileges_to_ultraquists_interaction: "Grant Privileges to the Ultraquists"
+ catholics_vs_ultraquists_mechanic_grant_privileges_to_ultraquists_interaction_desc: ""
 
  ## Power Modifiers:
  monthly_catholics_vs_ultraquists_mechanic_power: "Monthly Catholics vs Ultraquists Balance Gain"

@@ -1,7 +1,7 @@
 guiTypes = {
 	windowType = {
 		name = "catholics_vs_ultraquists_mechanic_power"
-		size = { x = 300 y = 30 }
+		size = { x = 300 y = 40 }
 		moveable = 0
 
 		# bar and frame for the power type associated with this interaction (if it's unique to the interaction - if not, these will be hidden)
@@ -35,6 +35,21 @@ guiTypes = {
 			position = { x = 267 y = 9 }
 			pdx_tooltip = "catholics_vs_ultraquists_mechanic_power_max_tt"
 			pdx_tooltip_delayed = "catholics_vs_ultraquists_mechanic_power_max_tt_delayed"
+		}
+	}
+
+	windowType = {
+		name = "catholics_vs_ultraquists_mechanic_interaction"
+		size = { x = 60 y = 50 }
+		moveable = 0
+
+		# Interaction button, graphics replaced from the interaction icon specification
+		guiButtonType = {
+			name = "government_interaction_button"
+			position = { x = 91 y = 0 }
+			quadTextureSprite = "GFX_russian_ability_ADM"
+			buttonFont = "vic_18"
+			clicksound = back_click
 		}
 	}
 }
