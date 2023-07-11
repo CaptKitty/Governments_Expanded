@@ -6144,10 +6144,11 @@
 		modifiers = {
 			land_morale = 0.05
 			army_tradition_decay = 0.003
+			manpower_in_own_culture_provinces = 0.25
 		}
-		custom_attributes = {
-			enables_patriotism = yes #+25% Manpower in primary culture provinces
-		}
+	#	custom_attributes = {
+	#		enables_patriotism = yes #+25% Manpower in primary culture provinces
+	#	}
 		ai = {
 			factor = 1
 		}
@@ -6627,10 +6628,11 @@
 			infantry_fire = 0.25
 			infantry_power = 0.05
 			years_of_nationalism = 5
+			manpower_in_own_culture_provinces = 0.25
 		}
-		custom_attributes = {
-			enables_patriotism = yes
-		}
+	#	custom_attributes = {
+	#		enables_patriotism = yes
+	#	}
 		ai = {
 			factor = 100
 		}
@@ -7152,10 +7154,11 @@
 		modifiers = {
 			land_forcelimit_modifier = 0.10
 			defensiveness = 0.10
+			manpower_in_own_culture_provinces = 0.25
 		}
-		custom_attributes = {
-			enables_patriotism = yes #+25% Manpower in primary culture provinces
-		}
+	#	custom_attributes = {
+	#		enables_patriotism = yes #+25% Manpower in primary culture provinces
+	#	}
 		ai = {
 			factor = 1
 		}
