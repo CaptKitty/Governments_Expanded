@@ -973,7 +973,8 @@
 			factor = 101
 		}
 	}
-	tanistry_reform = {
+
+	tanistry_reform_GE = {
 		icon = dutch_guilds
 		allow_normal_conversion = yes
 		valid_for_nation_designer = no
