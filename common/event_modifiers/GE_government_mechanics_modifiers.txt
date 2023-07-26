@@ -13,8 +13,8 @@ bureaucracy_vs_military_military_focus_modifier = {
 
 # Political Focus Mechanic
 political_focus_mechanic_administrative_focus_modifier = {
-	stability_cost_modifier = -0.1
-	reform_progress_growth = 0.1
+	global_unrest = -1
+	overextension_impact_modifier = -0.15
 	advisor_cost = -0.1
 	monthly_political_focus_power = -5
 }
@@ -34,8 +34,9 @@ political_focus_mechanic_military_focus_modifier = {
 }
 
 political_focus_mechanic_religious_focus_modifier = {
-	missionaries = 1
-	global_missionary_strength = 0.02
+	global_heathen_missionary_strength = 0.02
+	global_heretic_missionary_strength = 0.03
+	missionary_maintenance_cost = -0.1
 	monthly_political_focus_power = -5
 }
 

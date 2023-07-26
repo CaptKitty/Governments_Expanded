@@ -192,7 +192,7 @@ country_event = {
 
 
 	trigger = {
-		has_reform = unrestricted_diplomacy_reform
+		has_government_attribute = enables_unrestricted_diplomats
 		any_country = {
 			NOT = {
 				has_opinion_modifier = {
@@ -236,7 +236,7 @@ country_event = {
 
 
 	trigger = {
-		NOT = { has_reform = unrestricted_diplomacy_reform }
+		NOT = { has_government_attribute = enables_unrestricted_diplomats }
 		any_country = {
 			has_opinion_modifier = {
 				who = ROOT
@@ -310,7 +310,7 @@ country_event = {
 
 
 	trigger = {
-		has_reform = restore_the_davidic_line_reform
+		has_government_attribute = enables_davidic_line
 		has_heir = no
 	}
 
@@ -347,7 +347,7 @@ country_event = {
 
 
 	trigger = {
-		has_reform = dynastic_theocracy_reform
+		has_government_attribute = enables_hereditary_theocracy
 		has_heir = no
 	}
 
@@ -817,7 +817,7 @@ country_event = {
 
 
 	trigger = {
-		has_reform = habsburg_monarchy_reform
+		has_government_attribute = enables_religious_domination
 		any_subject_country = {
 			OR = {
 				AND = {
@@ -871,7 +871,7 @@ country_event = {
 
 
 	trigger = {
-		NOT = { has_reform = habsburg_monarchy_reform }
+		NOT = { has_government_attribute = enables_religious_domination }
 		has_country_modifier = Religious_Domination
 		is_subject = no
 	}
@@ -914,8 +914,10 @@ country_event = {
 	hidden = yes
 
 	trigger = {
-		OR = {
-			has_reform = austrian_empire_reform
+		has_government_attribute = enables_germanization
+		any_owned_province = {
+			is_territory = no
+			NOT = { culture_group = ROOT }
 		}
 	}
 
@@ -5008,7 +5010,7 @@ country_event = {
 
 
 	trigger = {
-		has_reform = integrate_tatars_reform
+		has_government_attribute = enables_settling_tribes
 		NOT = { has_country_flag = tatars_integrated }
 	}
 

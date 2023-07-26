@@ -69,9 +69,7 @@ holy_war_reform = {
 	allow_normal_conversion = yes
 	modifiers = {
 		manpower_recovery_speed = 0.10
-	}
-	custom_attributes = {
-		enables_holy_war = yes
+		cb_on_religious_enemies = yes
 	}
 	ai = {
 		factor = 1
