@@ -17,379 +17,365 @@ political_focus_mechanic = {
 			on_min_reached = {
 				custom_tooltip = political_focus_power_min_reached_tt
 				hidden_effect = {
-					remove_country_modifier = political_focus_mechanic_domestic_politics_focus_modifier
-					remove_country_modifier = political_focus_mechanic_religious_focus_modifier
-					remove_country_modifier = political_focus_mechanic_economic_focus_modifier
-					remove_country_modifier = political_focus_mechanic_science_focus_modifier
+					remove_country_modifier = political_focus_mechanic_administrative_focus_modifier
 					remove_country_modifier = political_focus_mechanic_diplomatic_focus_modifier
-					remove_country_modifier = political_focus_mechanic_subject_focus_modifier
-					remove_country_modifier = political_focus_mechanic_expansion_focus_modifier
 					remove_country_modifier = political_focus_mechanic_military_focus_modifier
+					remove_country_modifier = political_focus_mechanic_religious_focus_modifier
+					remove_country_modifier = political_focus_mechanic_trade_focus_modifier
 				}
 			}
 		}
 	}
 
 	interactions = {
-		political_focus_mechanic_domestic_politics_focus = {
+		# Adm Focus
+		political_focus_mechanic_administrative_focus = {
 			center = no
-			gui = political_focus_mechanic_domestic_politics_focus
+			gui = political_focus_mechanic_administrative_focus
+			potential = {
+				NOT = { has_country_modifier = political_focus_mechanic_administrative_focus_modifier }
+			}
 			trigger = {
-				if = {
-					limit = {
-						NOT = { has_country_modifier = political_focus_mechanic_domestic_politics_focus_modifier }
-					}
-					has_government_power = {
-						mechanic_type = political_focus_mechanic
-						power_type = political_focus_power
-						value = 6
-					}
+				has_government_power = {
+					mechanic_type = political_focus_mechanic
+					power_type = political_focus_power
+					value = 6
 				}
 			}
 			effect = {
-				if = {
-					limit = {
-						NOT = { has_country_modifier = political_focus_mechanic_domestic_politics_focus_modifier }
-					}
-					add_government_power = {
-						mechanic_type = political_focus_mechanic
-						power_type = political_focus_power
-						value = -5
-					}
+				add_government_power = {
+					mechanic_type = political_focus_mechanic
+					power_type = political_focus_power
+					value = -5
+				}
+				add_country_modifier = {
+					name = political_focus_mechanic_administrative_focus_modifier
+					duration = -1
+					desc = political_focus_mechanic_modifiers_duration
+				}
+			}
+			cooldown_years = 0
+			ai_chance = {
+				factor = 1
+			}
+		}
+		political_focus_mechanic_administrative_focus_selected = {
+			center = no
+			gui = political_focus_mechanic_administrative_focus_selected
+			potential = {
+				has_country_modifier = political_focus_mechanic_administrative_focus_modifier
+			}
+			trigger = {
+			}
+			effect = {
+				custom_tooltip = political_focus_mechanic_disable_focus_tt
+				hidden_effect = {
+					remove_country_modifier = political_focus_mechanic_administrative_focus_modifier
+				}
+				tooltip = {
 					add_country_modifier = {
-						name = political_focus_mechanic_domestic_politics_focus_modifier
+						name = political_focus_mechanic_administrative_focus_modifier
 						duration = -1
 						desc = political_focus_mechanic_modifiers_duration
 					}
 				}
-				else = {
-					remove_country_modifier = political_focus_mechanic_domestic_politics_focus_modifier
-					custom_tooltip = political_focus_mechanic_modifier_current_effects_tt
-					tooltip = {
-						add_country_modifier = {
-							name = political_focus_mechanic_domestic_politics_focus_modifier
-							duration = -1
-							desc = political_focus_mechanic_modifiers_duration
-						}
-					}
-				}
 			}
 			cooldown_years = 0
+			ai_chance = {
+				factor = 0
+			}
 		}
-		political_focus_mechanic_religious_focus = {
+		political_focus_mechanic_dummy_interaction_1 = {
 			center = no
-			gui = political_focus_mechanic_religious_focus
+			gui = political_focus_mechanic_dummy_interaction
+			potential = {
+				always = no
+			}
 			trigger = {
-				if = {
-					limit = {
-						NOT = { has_country_modifier = political_focus_mechanic_religious_focus_modifier }
-					}
-					has_government_power = {
-						mechanic_type = political_focus_mechanic
-						power_type = political_focus_power
-						value = 6
-					}
-				}
+				always = no
 			}
 			effect = {
-				if = {
-					limit = {
-						NOT = { has_country_modifier = political_focus_mechanic_religious_focus_modifier }
-					}
-					add_government_power = {
-						mechanic_type = political_focus_mechanic
-						power_type = political_focus_power
-						value = -5
-					}
-					add_country_modifier = {
-						name = political_focus_mechanic_religious_focus_modifier
-						duration = -1
-						desc = political_focus_mechanic_modifiers_duration
-					}
-				}
-				else = {
-					remove_country_modifier = political_focus_mechanic_religious_focus_modifier
-					custom_tooltip = political_focus_mechanic_modifier_current_effects_tt
-					tooltip = {
-						add_country_modifier = {
-							name = political_focus_mechanic_religious_focus_modifier
-							duration = -1
-							desc = political_focus_mechanic_modifiers_duration
-						}
-					}
-				}
 			}
 			cooldown_years = 0
+			ai_chance = {
+				factor = 0
+			}
 		}
-		political_focus_mechanic_economic_focus = {
-			center = no
-			gui = political_focus_mechanic_economic_focus
-			trigger = {
-				if = {
-					limit = {
-						NOT = { has_country_modifier = political_focus_mechanic_economic_focus_modifier }
-					}
-					has_government_power = {
-						mechanic_type = political_focus_mechanic
-						power_type = political_focus_power
-						value = 6
-					}
-				}
-			}
-			effect = {
-				if = {
-					limit = {
-						NOT = { has_country_modifier = political_focus_mechanic_economic_focus_modifier }
-					}
-					add_government_power = {
-						mechanic_type = political_focus_mechanic
-						power_type = political_focus_power
-						value = -5
-					}
-					add_country_modifier = {
-						name = political_focus_mechanic_economic_focus_modifier
-						duration = -1
-						desc = political_focus_mechanic_modifiers_duration
-					}
-				}
-				else = {
-					remove_country_modifier = political_focus_mechanic_economic_focus_modifier
-					custom_tooltip = political_focus_mechanic_modifier_current_effects_tt
-					tooltip = {
-						add_country_modifier = {
-							name = political_focus_mechanic_economic_focus_modifier
-							duration = -1
-							desc = political_focus_mechanic_modifiers_duration
-						}
-					}
-				}
-			}
-			cooldown_years = 0
-		}
-		political_focus_mechanic_science_focus = {
-			center = no
-			gui = political_focus_mechanic_science_focus
-			trigger = {
-				if = {
-					limit = {
-						NOT = { has_country_modifier = political_focus_mechanic_science_focus_modifier }
-					}
-					has_government_power = {
-						mechanic_type = political_focus_mechanic
-						power_type = political_focus_power
-						value = 6
-					}
-				}
-			}
-			effect = {
-				if = {
-					limit = {
-						NOT = { has_country_modifier = political_focus_mechanic_science_focus_modifier }
-					}
-					add_government_power = {
-						mechanic_type = political_focus_mechanic
-						power_type = political_focus_power
-						value = -5
-					}
-					add_country_modifier = {
-						name = political_focus_mechanic_science_focus_modifier
-						duration = -1
-						desc = political_focus_mechanic_modifiers_duration
-					}
-				}
-				else = {
-					remove_country_modifier = political_focus_mechanic_science_focus_modifier
-					custom_tooltip = political_focus_mechanic_modifier_current_effects_tt
-					tooltip = {
-						add_country_modifier = {
-							name = political_focus_mechanic_science_focus_modifier
-							duration = -1
-							desc = political_focus_mechanic_modifiers_duration
-						}
-					}
-				}
-			}
-			cooldown_years = 0
-		}
+		# Dip Focus
 		political_focus_mechanic_diplomatic_focus = {
 			center = no
 			gui = political_focus_mechanic_diplomatic_focus
+			potential = {
+				NOT = { has_country_modifier = political_focus_mechanic_diplomatic_focus_modifier }
+			}
 			trigger = {
-				if = {
-					limit = {
-						NOT = { has_country_modifier = political_focus_mechanic_diplomatic_focus_modifier }
-					}
-					has_government_power = {
-						mechanic_type = political_focus_mechanic
-						power_type = political_focus_power
-						value = 6
-					}
+				has_government_power = {
+					mechanic_type = political_focus_mechanic
+					power_type = political_focus_power
+					value = 6
 				}
 			}
 			effect = {
-				if = {
-					limit = {
-						NOT = { has_country_modifier = political_focus_mechanic_diplomatic_focus_modifier }
-					}
-					add_government_power = {
-						mechanic_type = political_focus_mechanic
-						power_type = political_focus_power
-						value = -5
-					}
+				add_government_power = {
+					mechanic_type = political_focus_mechanic
+					power_type = political_focus_power
+					value = -5
+				}
+				add_country_modifier = {
+					name = political_focus_mechanic_diplomatic_focus_modifier
+					duration = -1
+					desc = political_focus_mechanic_modifiers_duration
+				}
+			}
+			cooldown_years = 0
+			ai_chance = {
+				factor = 1
+			}
+		}
+		political_focus_mechanic_diplomatic_focus_selected = {
+			center = no
+			gui = political_focus_mechanic_diplomatic_focus_selected
+			potential = {
+				has_country_modifier = political_focus_mechanic_diplomatic_focus_modifier
+			}
+			trigger = {
+			}
+			effect = {
+				custom_tooltip = political_focus_mechanic_disable_focus_tt
+				hidden_effect = {
+					remove_country_modifier = political_focus_mechanic_diplomatic_focus_modifier
+				}
+				tooltip = {
 					add_country_modifier = {
 						name = political_focus_mechanic_diplomatic_focus_modifier
 						duration = -1
 						desc = political_focus_mechanic_modifiers_duration
 					}
 				}
-				else = {
-					remove_country_modifier = political_focus_mechanic_diplomatic_focus_modifier
-					custom_tooltip = political_focus_mechanic_modifier_current_effects_tt
-					tooltip = {
-						add_country_modifier = {
-							name = political_focus_mechanic_diplomatic_focus_modifier
-							duration = -1
-							desc = political_focus_mechanic_modifiers_duration
-						}
-					}
-				}
 			}
 			cooldown_years = 0
+			ai_chance = {
+				factor = 0
+			}
 		}
-		political_focus_mechanic_subject_focus = {
+		political_focus_mechanic_dummy_interaction_2 = {
 			center = no
-			gui = political_focus_mechanic_subject_focus
+			gui = political_focus_mechanic_dummy_interaction
+			potential = {
+				always = no
+			}
 			trigger = {
-				if = {
-					limit = {
-						NOT = { has_country_modifier = political_focus_mechanic_subject_focus_modifier }
-					}
-					has_government_power = {
-						mechanic_type = political_focus_mechanic
-						power_type = political_focus_power
-						value = 6
-					}
-				}
+				always = no
 			}
 			effect = {
-				if = {
-					limit = {
-						NOT = { has_country_modifier = political_focus_mechanic_subject_focus_modifier }
-					}
-					add_government_power = {
-						mechanic_type = political_focus_mechanic
-						power_type = political_focus_power
-						value = -5
-					}
-					add_country_modifier = {
-						name = political_focus_mechanic_subject_focus_modifier
-						duration = -1
-						desc = political_focus_mechanic_modifiers_duration
-					}
-				}
-				else = {
-					remove_country_modifier = political_focus_mechanic_subject_focus_modifier
-					custom_tooltip = political_focus_mechanic_modifier_current_effects_tt
-					tooltip = {
-						add_country_modifier = {
-							name = political_focus_mechanic_subject_focus_modifier
-							duration = -1
-							desc = political_focus_mechanic_modifiers_duration
-						}
-					}
-				}
 			}
 			cooldown_years = 0
-		}
-		political_focus_mechanic_expansion_focus = {
-			center = no
-			gui = political_focus_mechanic_expansion_focus
-			trigger = {
-				if = {
-					limit = {
-						NOT = { has_country_modifier = political_focus_mechanic_expansion_focus_modifier }
-					}
-					has_government_power = {
-						mechanic_type = political_focus_mechanic
-						power_type = political_focus_power
-						value = 6
-					}
-				}
+			ai_chance = {
+				factor = 0
 			}
-			effect = {
-				if = {
-					limit = {
-						NOT = { has_country_modifier = political_focus_mechanic_expansion_focus_modifier }
-					}
-					add_government_power = {
-						mechanic_type = political_focus_mechanic
-						power_type = political_focus_power
-						value = -5
-					}
-					add_country_modifier = {
-						name = political_focus_mechanic_expansion_focus_modifier
-						duration = -1
-						desc = political_focus_mechanic_modifiers_duration
-					}
-				}
-				else = {
-					remove_country_modifier = political_focus_mechanic_expansion_focus_modifier
-					custom_tooltip = political_focus_mechanic_modifier_current_effects_tt
-					tooltip = {
-						add_country_modifier = {
-							name = political_focus_mechanic_expansion_focus_modifier
-							duration = -1
-							desc = political_focus_mechanic_modifiers_duration
-						}
-					}
-				}
-			}
-			cooldown_years = 0
 		}
+		# Mil Focus
 		political_focus_mechanic_military_focus = {
 			center = no
 			gui = political_focus_mechanic_military_focus
+			potential = {
+				NOT = { has_country_modifier = political_focus_mechanic_military_focus_modifier }
+			}
 			trigger = {
-				if = {
-					limit = {
-						NOT = { has_country_modifier = political_focus_mechanic_military_focus_modifier }
-					}
-					has_government_power = {
-						mechanic_type = political_focus_mechanic
-						power_type = political_focus_power
-						value = 6
-					}
+				has_government_power = {
+					mechanic_type = political_focus_mechanic
+					power_type = political_focus_power
+					value = 6
 				}
 			}
 			effect = {
-				if = {
-					limit = {
-						NOT = { has_country_modifier = political_focus_mechanic_military_focus_modifier }
-					}
-					add_government_power = {
-						mechanic_type = political_focus_mechanic
-						power_type = political_focus_power
-						value = -5
-					}
+				add_government_power = {
+					mechanic_type = political_focus_mechanic
+					power_type = political_focus_power
+					value = -5
+				}
+				add_country_modifier = {
+					name = political_focus_mechanic_military_focus_modifier
+					duration = -1
+					desc = political_focus_mechanic_modifiers_duration
+				}
+			}
+			cooldown_years = 0
+			ai_chance = {
+				factor = 1
+			}
+		}
+		political_focus_mechanic_military_focus_selected = {
+			center = no
+			gui = political_focus_mechanic_military_focus_selected
+			potential = {
+				has_country_modifier = political_focus_mechanic_military_focus_modifier
+			}
+			trigger = {
+			}
+			effect = {
+				custom_tooltip = political_focus_mechanic_disable_focus_tt
+				hidden_effect = {
+					remove_country_modifier = political_focus_mechanic_military_focus_modifier
+				}
+				tooltip = {
 					add_country_modifier = {
 						name = political_focus_mechanic_military_focus_modifier
 						duration = -1
 						desc = political_focus_mechanic_modifiers_duration
 					}
 				}
-				else = {
-					remove_country_modifier = political_focus_mechanic_military_focus_modifier
-					custom_tooltip = political_focus_mechanic_modifier_current_effects_tt
-					tooltip = {
-						add_country_modifier = {
-							name = political_focus_mechanic_military_focus_modifier
-							duration = -1
-							desc = political_focus_mechanic_modifiers_duration
-						}
+			}
+			cooldown_years = 0
+			ai_chance = {
+				factor = 0
+			}
+		}
+		political_focus_mechanic_dummy_interaction_3 = {
+			center = no
+			gui = political_focus_mechanic_dummy_interaction
+			potential = {
+				always = no
+			}
+			trigger = {
+				always = no
+			}
+			effect = {
+			}
+			cooldown_years = 0
+			ai_chance = {
+				factor = 0
+			}
+		}
+		# Religious Focus
+		political_focus_mechanic_religious_focus = {
+			center = no
+			gui = political_focus_mechanic_religious_focus
+			potential = {
+				NOT = { has_country_modifier = political_focus_mechanic_religious_focus_modifier }
+			}
+			trigger = {
+				has_government_power = {
+					mechanic_type = political_focus_mechanic
+					power_type = political_focus_power
+					value = 6
+				}
+			}
+			effect = {
+				add_government_power = {
+					mechanic_type = political_focus_mechanic
+					power_type = political_focus_power
+					value = -5
+				}
+				add_country_modifier = {
+					name = political_focus_mechanic_religious_focus_modifier
+					duration = -1
+					desc = political_focus_mechanic_modifiers_duration
+				}
+			}
+			cooldown_years = 0
+			ai_chance = {
+				factor = 1
+			}
+		}
+		political_focus_mechanic_religious_focus_selected = {
+			center = no
+			gui = political_focus_mechanic_religious_focus_selected
+			potential = {
+				has_country_modifier = political_focus_mechanic_religious_focus_modifier
+			}
+			trigger = {
+			}
+			effect = {
+				custom_tooltip = political_focus_mechanic_disable_focus_tt
+				hidden_effect = {
+					remove_country_modifier = political_focus_mechanic_religious_focus_modifier
+				}
+				tooltip = {
+					add_country_modifier = {
+						name = political_focus_mechanic_religious_focus_modifier
+						duration = -1
+						desc = political_focus_mechanic_modifiers_duration
 					}
 				}
 			}
 			cooldown_years = 0
+			ai_chance = {
+				factor = 0
+			}
+		}
+		political_focus_mechanic_dummy_interaction_4 = {
+			center = no
+			gui = political_focus_mechanic_dummy_interaction
+			potential = {
+				always = no
+			}
+			trigger = {
+				always = no
+			}
+			effect = {
+			}
+			cooldown_years = 0
+			ai_chance = {
+				factor = 0
+			}
+		}
+		# Trade Focus
+		political_focus_mechanic_trade_focus = {
+			center = no
+			gui = political_focus_mechanic_trade_focus
+			potential = {
+				NOT = { has_country_modifier = political_focus_mechanic_trade_focus_modifier }
+			}
+			trigger = {
+				has_government_power = {
+					mechanic_type = political_focus_mechanic
+					power_type = political_focus_power
+					value = 6
+				}
+			}
+			effect = {
+				add_government_power = {
+					mechanic_type = political_focus_mechanic
+					power_type = political_focus_power
+					value = -5
+				}
+				add_country_modifier = {
+					name = political_focus_mechanic_trade_focus_modifier
+					duration = -1
+					desc = political_focus_mechanic_modifiers_duration
+				}
+			}
+			cooldown_years = 0
+			ai_chance = {
+				factor = 1
+			}
+		}
+		political_focus_mechanic_trade_focus_selected = {
+			center = no
+			gui = political_focus_mechanic_trade_focus_selected
+			potential = {
+				has_country_modifier = political_focus_mechanic_trade_focus_modifier
+			}
+			trigger = {
+			}
+			effect = {
+				custom_tooltip = political_focus_mechanic_disable_focus_tt
+				hidden_effect = {
+					remove_country_modifier = political_focus_mechanic_trade_focus_modifier
+				}
+				tooltip = {
+					add_country_modifier = {
+						name = political_focus_mechanic_trade_focus_modifier
+						duration = -1
+						desc = political_focus_mechanic_modifiers_duration
+					}
+				}
+			}
+			cooldown_years = 0
+			ai_chance = {
+				factor = 0
+			}
 		}
 	}
 }
