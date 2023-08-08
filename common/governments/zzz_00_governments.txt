@@ -1303,10 +1303,12 @@ republic = {
 				crusading_tradition_reform
 				citizen_soldiers_reform
 				institutionalized_repbulican_army_reform
+				alpini_reform
+				fonderie_ferraresi_reform
+				fanti_da_mar_reform
 				# ME Reforms:
 				federalism_reform
 				supremacy_constitution_reform
-
 			}
 		}
 		parliamentary_vs_presidential = {
