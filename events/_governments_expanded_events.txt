@@ -13,6 +13,25 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			set_global_flag = governments_expanded_mod_active
+			if = {
+				limit = {
+					OR = {
+						NOT = { 101 = { has_province_modifier = GE_maritime_republic_triggered_modifier } } 
+						NOT = { 112 = { has_province_modifier = GE_maritime_republic_triggered_modifier } } 
+						NOT = { 115 = { has_province_modifier = GE_maritime_republic_triggered_modifier } } 
+						NOT = { 2983 = { has_province_modifier = GE_maritime_republic_triggered_modifier } } 
+					}
+				}
+				random_country = {
+					limit = {
+						has_government_mechanic = maritime_republic_mechanic
+					}
+					country_event = {
+						id = GE_Maritime_Republics_Events.1
+						days = 1
+					}
+				}
+			}
 		}
 	}
 

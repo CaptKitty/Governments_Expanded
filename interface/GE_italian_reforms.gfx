@@ -52,6 +52,10 @@ spriteTypes = {
 		name = "government_reform_perugia_signoria_baglioni"
 		texturefile = "gfx//interface//government_reform_icons//perugia_signoria_baglioni.dds"
 	}
+	spriteType = {
+		name = "government_reform_ragusa_republic_of_saint_blaise"
+		texturefile = "gfx//interface//government_reform_icons//ragusa_republic_of_saint_blaise.dds"
+	}
 # Tier 2
 	spriteType = {
 		name = "government_reform_italy_ghibbelline"

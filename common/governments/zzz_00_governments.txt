@@ -1079,6 +1079,7 @@ republic = {
 				constitutional_republic_reform
 				#1.19
 				italian_republic_reform
+				republic_of_saint_blaise
 				signoria_baglioni_reform
 				# ME Reforms:
 				greek_league_reform

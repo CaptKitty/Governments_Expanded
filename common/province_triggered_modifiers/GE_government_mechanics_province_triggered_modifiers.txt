@@ -1,13 +1,16 @@
 # Maritime Republic Mechanic
 GE_maritime_republic_triggered_modifier = {
 	potential = {
-		owner = {
-			has_reform = maritime_republic_reform
+		any_country = {
+			has_government_mechanic = maritime_republic_mechanic
 		}
 	}
 	trigger = {
 		owner = {
-			has_reform = maritime_republic_reform
+			custom_trigger_tooltip = {
+				tooltip = maritime_republic_mechanic_tt
+				has_government_mechanic = maritime_republic_mechanic
+			}
 		}
 		controlled_by = owner
 		base_production = 10

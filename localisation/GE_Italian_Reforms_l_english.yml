@@ -22,6 +22,8 @@
  kingdom_of_sicily_reform_desc: "The Traditions and Laws of the Normans were used as the foundation of the Kingdom of Sicily, further formalized under the German Hohenstaufen dynasty into a highly centralized and absolute monarchy. Upon supporting Antipope Anacletus ll against Pope Innocentus ll, Ruggeru ll was crowned king the new Kingdom of Sicily."
  palaiologos_montferrat_reform: "Palaiologos of Montferrat"
  palaiologos_montferrat_reform_desc: "It began when John II, the son of Andronikos Palaiologos, was made the Marquis of Montferrat by the Byzantine emperor Andronikos II Palaiologos. During the Palaiologos Rule, the Montferrat became an important centre of culture and art, as the Palaiologos family brought with them a great appreciation for the arts and literature."
+ republic_of_saint_blaise: "Republic of Saint Blaise"
+ republic_of_saint_blaise_desc: "Saint Blaise's role in uniting the various Christian denominations in Ragusa was great. He was remembered for his willingness to bridge the divide between the Eastern Orthodox and Catholic Christians."
  savoia_reform: "I Savoia"
  savoia_reform_desc: "June 17, 1430. The career of Amedeo VIII, later called 'the peaceful', is at its peak. In the two previous decades, weaving a diplomatic network capable of taming both the Kingdom of France and the Empire, he expanded his domains like no Savoy before him. The recognition of the title of Duke by Emperor Sigismund in 1416 certifies the growing influence of the former Savoyard county and his leadership, who can now actively devote himself to domestic politics. And so Amedeo devoted himself to drafting the first body of general laws promulgated by the House of Savoy: the Sabaudiæ Statutes, also known as General Statutes, were born, and preserved in the Turin State Archives. With them, a uniform and common law are sanctioned for all the Savoy states, which replaces the multiplicity of different and discordant special laws of municipalities, colleges, corporations."
  signoria_baglioni_reform: "Signoria dei Baglioni"
@@ -146,6 +148,8 @@
  mechanic_enables_support_ghuelps_yes: "In support of the Pope and Defence against the Empire; §R-50§! opinion with Ghibellines, §G+25§! opinion with fellow Guelphs."
 
 # Tooltips
+ SUPPORT_GHIBELLINES_REFORM_TT: "Every Country\n    - if it has the §TSupport Ghibbellines§! reform will change their opinio of §Y[Root.GetName]§! by §G+25§!\n    - if it has the §TSupport Guelphs§! reform instead will change their opinio of §Y[Root.GetName]§! by §R-50§!"
+ SUPPORT_GUELPH_REFORM_TT: "Every Country\n    - if it has the §TSupport Guelphs§! reform will change their opinio of §Y[Root.GetName]§! by §G+25§!\n    - if it has the §TSupport Ghibbellines§! reform instead will change their opinio of §Y[Root.GetName]§! by §R-50§!"
 
 # Modifiers
  GE_Customs_House: "Customs House"
