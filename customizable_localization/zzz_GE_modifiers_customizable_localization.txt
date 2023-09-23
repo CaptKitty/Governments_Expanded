@@ -261,3 +261,36 @@ defined_text = {
 		localisation_key = MODIFIER_VASSAL_INCOME
 	}
 }
+
+defined_text = {
+	name = local_own_coast_naval_combat_bonus
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_LOCAL_OWN_COAST_NAVAL_COMBAT_BONUS
+	}
+}
+
+defined_text = {
+	name = local_defender_dice_roll_bonus
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_LOCAL_DEFENDER_DICE_ROLL_BONUS
+	}
+}
+
+defined_text = {
+	name = local_monthly_devastation
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_LOCAL_MONTHLY_DEVASTATION
+	}
+}

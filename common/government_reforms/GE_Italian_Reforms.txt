@@ -29,14 +29,14 @@ duchi_montefeltro_reform = {
 			hessian_militarization_mechanic
 		}
 	}
-	conditional = {
-		allow = {
-			NOT = { has_dlc = "Domination" }
-		}
-		government_abilities = {
-			italian_condottieri_mechanic
-		}
-	}
+	# conditional = {
+	# 	allow = {
+	# 		NOT = { has_dlc = "Domination" }
+	# 	}
+	# 	government_abilities = {
+	# 		italian_condottieri_mechanic
+	# 	}
+	# }
 }
 florentine_republic = {
 	icon = florentine_republic
@@ -502,14 +502,14 @@ signoria_baglioni_reform = {
 			hessian_militarization_mechanic
 		}
 	}
-	conditional = {
-		allow = {
-			NOT = { has_dlc = "Domination" }
-		}
-		government_abilities = {
-			italian_condottieri_mechanic
-		}
-	}
+	# conditional = {
+	# 	allow = {
+	# 		NOT = { has_dlc = "Domination" }
+	# 	}
+	# 	government_abilities = {
+	# 		italian_condottieri_mechanic
+	# 	}
+	# }
 }
 
 #Tier 2

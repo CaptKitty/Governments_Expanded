@@ -836,8 +836,8 @@ country_event = {
 
  elective_monarchy_reform: "Electoral Monarchy"
  elective_monarchy_reform_desc: "A form of monarchy where a ruler is elected by some form of parliamentary body, typically comprised of nobles or other important members of society. Though opening the way for popular sovereignty, elective monarchies are prone to pretenders backed by foreign or internal bodies, and thus are volatile at best."
- elective_monarchy_name:0 "Elective Monarchy"
- elective_monarchy_descr:0 "A monarchy where rather than rule based on senior heritage, there are multiple candidates to be considered for the throne."
+ elective_monarchy_name: "Elective Monarchy"
+ elective_monarchy_descr: "A monarchy where rather than rule based on senior heritage, there are multiple candidates to be considered for the throne."
  mechanic_enables_elective_monarchy_yes: "Elective Monarchy: Calls for an election upon a monarchs death."
 
  noble_electors_reform: "Noble Electors"

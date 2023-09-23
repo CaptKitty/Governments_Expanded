@@ -159,21 +159,28 @@
 # Maritime Republic Mechanic
  ## Mechanics:
  ability_maritime_republic_mechanic: "Maritime Republicanism"
+ maritime_republic_mechanic: "Maritime Republicanism"
  maritime_republic: "Maritime Republicanism"
  maritime_republic_desc: "Maritime Republicanism is gained by owning and improving the following provinces (detailed requirements can be viewed in the province modifier tooltip): \n   - [101.GetName]: §G+0.25§! \n   - [112.GetName]: §G+0.25§! \n   - [115.GetName]: §G+0.25§! \n   - [2983.GetName]: §G+0.25§! \n\nMaritime Republicanism is lost by the following: \n   - Institution §YColonialism§! exists: §R-0.33§! \n   - Institution §YGlobal Trade§! exists: §R-0.33§! \n--------------\n"
+ maritime_republic_mechanic_tt: "Government has '§YMaritime Republicanism§! mechanic"
 
  monthly_maritime_republic: "Monthly Maritime Republicanism Gain"
  maritime_republic_gain_modifier: "Maritime Republicanism Gain Modifier"
 
  ## Triggered Modifiers:
  ### Province:
- GE_maritime_republic_triggered_modifier: "Local Maritime Republicanism"
+ GE_maritime_republic_triggered_modifier: "Maritime Republic"
+ desc_GE_maritime_republic_triggered_modifier: ""
 
  ### Country:
  GE_maritime_republic_triggered_modifier_new_world: "New World"
  desc_GE_maritime_republic_triggered_modifier_new_world: "The influx of the newly opened trade routes from the New World has diminished the importance of the Mediterranean sea."
  GE_maritime_republic_triggered_modifier_global_trade: "Global Trade"
  desc_GE_maritime_republic_triggered_modifier_global_trade: "With the discovery of the Americas, sea routes around Africa and the crossing of the Pacific Ocean, local trade networks are being connected into one world-spanning interconnected web, once more the Mediterranean sea has become just another sea in the vastness of this world."
+
+ GE_Maritime_Republics_Events.1.T: "The Maritime Republics"
+ GE_Maritime_Republics_Events.1.D: "the Italian Maritime Republics emerged as powerful maritime realms, each with its own unique character and influence. Genoa showcased its craftiness in trade and diplomacy, while Venice enchanted with its canals and intricate bridges. Pisa's leaning tower symbolized its ambition, and Amalfi thrived as a hidden gem of maritime prowess. Ancona's strategic location facilitated connections with the east, and Ragusa excelled in diplomacy and peaceful relations. These republics, united by a shared love for the sea, embarked on voyages of discovery, trade, and cultural exchange that left an indelible mark on history. Sadly long has passed since the glory of all the Maritime Republic, but it is our duty to recover the Trading Jewels."
+ GE_Maritime_Republics_Events.1.OPT1: "Purely for Commerce!"
 
 # Republican vs Monarchist Mechanic:
  ## Mechanics:
@@ -338,8 +345,50 @@
  ## Mechanic
  ability_italian_dinasties_mechanic: "Italian Dynasty"
  italian_dinasties: "Dynastic Power"
+ italian_dinasties_desc: "Dynastic Power is a measure of how strong and influential our Dynasty is in spreading through the Game of Thrones that plays in Europe. \n\nDynastic Power is influence by the following: \n   - Legitimacy \n   - Number of Royal Marriages \n   - Prestige"
  italian_dinasties_gain_modifier: "Dynastic Power"
- italian_dinasties_mechanic_gonzaga: "House of Gonzaga"
- italian_dinasties_mechanic_gonzaga_desc: ""
- italian_dinasties_mechanic_este: "House of Este"
- italian_dinasties_mechanic_este_desc: ""
+ monthly_italian_dinasties: "Montly Dynastic Power"
+ italian_dinasties_mechanic_dynasty: "Head of Dynasty"
+ italian_dinasties_mechanic_dynasty_desc: ""
+ italian_dinasties_supreme_diplomacy: "Supreme Diplomacy"
+ italian_dinasties_supreme_diplomacy_desc: ""
+ italian_dinasties_condotte_militari: "Condotte Militari"
+ italian_dinasties_condotte_militari_desc: ""
+
+ italian_dinasties_gonzaga_modifier: "House of Gonzaga"
+ desc_italian_dinasties_gonzaga_modifier: ""
+ italian_dinasties_este_modifier: "House of Este"
+ desc_italian_dinasties_este_modifier: ""
+ italian_dinasties_supreme_diplomacy_modifier: "Supreme Diplomacy"
+ desc_italian_dinasties_supreme_diplomacy_modifier: ""
+ italian_dinasties_condotte_militari_modifier: "Condotte Military"
+ desc_italian_dinasties_condotte_militari_modifier: ""
+
+ italian_dinasties_at_100_tt: "[diplomatic_reputation]: §G+2.00§! \nThe monthly decay is negated until your §YDinastic Power§! falls under §Y100.00§!."
+
+# Sicilian Kingdom Mechanic
+ ## Mechanic 
+ ability_sicilian_kingdom_mechanic: "Sicilian Kingdom"
+ sicilian_kingdom_adm_power: "Encourage City Living Progress"
+ sicilian_kingdom_adm_power_gain_modifier: "Encourage City Living Progress Gain Modifier"
+ monthly_sicilian_kingdom_adm_power: ""
+ sicilian_kingdom_dip_power: "Sicilian Defence Progress"
+ sicilian_kingdom_dip_power_gain_modifier: "Sicilian Defence Progress Gain Modifier"
+ monthly_sicilian_kingdom_dip_power: ""
+ sicilian_kingdom_mil_power: "Centralization Progress"
+ sicilian_kingdom_mil_power_gain_modifier: "Sicilian Centralization Gain Modifier"
+ monthly_sicilian_kingdom_mil_power: ""
+
+ sicilian_kingdom_encouraged_city_living: "Encourage City Living"
+ sicilian_kingdom_encouraged_city_living_desc: ""
+ sicilian_kingdom_sicilian_defence: "Sicilian Defence"
+ sicilian_kingdom_sicilian_defence_desc: ""
+ sicilian_kingdom_centralization: "Centralization"
+ sicilian_kingdom_centralization_desc: ""
+
+ sicilian_kingdom_encouraged_city_living_modifier: "Encourage City Living"
+ desc_sicilian_kingdom_encouraged_city_living_modifier: ""
+ sicilian_kingdom_sicilian_defence_modifier: "Sicilian Defence"
+ desc_sicilian_kingdom_sicilian_defence_modifier: ""
+
+ sicilian_kingdom_sicilian_defence_tt: "The areas of §Y[121.GetAreaName]§!, §Y[124.GetAreaName]§!, §Y[125.GetAreaName]§!, §Y[123.GetAreaName]§!, §Y[122.GetAreaName]§! will receive the following effect:\n   - Gets '§YSicilian Defence§!' for §Y5 years§!, giving the following effects:\n      - [local_own_coast_naval_combat_bonus]: §G+1.00§!\n      - [local_defender_dice_roll_bonus]: §G+1.00§!\n      - [local_monthly_devastation]: §G-10.0%§!"

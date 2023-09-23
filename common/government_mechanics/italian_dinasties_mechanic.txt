@@ -67,7 +67,7 @@ italian_dinasties_mechanic = {
 				factor = 33
 			}
 		}
-		italian_dinasties_marriage_policies = {
+		italian_dinasties_supreme_diplomacy = {
 			gui = republican_vs_monarchist_mechanic_interaction
 			icon = GFX_italian_dinasties_mechanic_marriage_policies_button
 			trigger = {
@@ -76,7 +76,7 @@ italian_dinasties_mechanic = {
 			effect = {
 				dip_power_cost = 50
 				add_ruler_modifier = {
-					name = italian_dinasties_marriage_policies_modifier
+					name = italian_dinasties_supreme_diplomacy_modifier
 					duration = -1
 				}
 			}
