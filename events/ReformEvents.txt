@@ -181,6 +181,10 @@ country_event = {
 		add_navy_tradition = 40
 		add_government_reform = kingdom_of_portugal_and_azures
 	}
+
+	option = {
+		name = reform_me_events.2.b
+	}
 }
 
 country_event = {
@@ -3984,6 +3988,10 @@ country_event = {
 
 		add_government_reform = crown_of_castille
 	}
+
+	option = {
+		name = reform_me_events.66.b
+	}
 }
 
 country_event = {
@@ -4826,6 +4834,10 @@ country_event = {
 
 		add_government_reform = hispanic_kingdom
 	}
+
+	option = {
+		name = reform_me_events.78.b
+	}
 }
 
 country_event = {
@@ -4849,6 +4861,10 @@ country_event = {
 		name = reform_me_events.79.a
 
 		add_government_reform = iberian_enlightened_despotism_reform
+	}
+
+	option = {
+		name = reform_me_events.79.b
 	}
 }
 
@@ -4998,7 +5014,7 @@ country_event = {
 	option = {
 		name = reform_me_events.80000.a
 
-		add_stability = 1
+		add_stability_or_adm_power = yes 
 	}
 }
 
@@ -7815,6 +7831,10 @@ country_event = {
 		name = reform_me_events.146.a
 
 		add_government_reform = portuguese_empire_reform
+	}
+
+	option = {
+		name = reform_me_events.146.b
 	}
 }
 

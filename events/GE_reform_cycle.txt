@@ -1580,7 +1580,7 @@ country_event = {
 		
 		highlight = yes
 		
-		add_stability = 1
+		add_stability_or_adm_power = yes 
 	}
 }
 
@@ -2699,7 +2699,7 @@ country_event = {
 	option = {
 		name = regional_representation.55.a
 		
-		add_stability = 1
+		add_stability_or_adm_power = yes 
 	}
 	
 	option = {
@@ -4764,7 +4764,7 @@ country_event = {
 		trigger = {
 			tolerance_to_this = 5
 		}
-		add_stability = 1
+		add_stability_or_adm_power = yes 
 	}
 
 	option = {

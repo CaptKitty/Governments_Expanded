@@ -558,7 +558,7 @@ country_event = {
 
 		highlight = yes
 
-		add_stability = 1
+		add_stability_or_adm_power = yes 
 	}
 
 }
@@ -585,7 +585,7 @@ country_event = {
 	option = {
 		name = GE_reform_cycle_monarchy.303.a
 
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_years_of_income = -0.25
 	}
 
