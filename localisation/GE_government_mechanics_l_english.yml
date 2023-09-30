@@ -391,4 +391,4 @@
  sicilian_kingdom_sicilian_defence_modifier: "Sicilian Defence"
  desc_sicilian_kingdom_sicilian_defence_modifier: ""
 
- sicilian_kingdom_sicilian_defence_tt: "The areas of §Y[121.GetAreaName]§!, §Y[124.GetAreaName]§!, §Y[125.GetAreaName]§!, §Y[123.GetAreaName]§!, §Y[122.GetAreaName]§! will receive the following effect:\n   - Gets '§YSicilian Defence§!' for §Y5 years§!, giving the following effects:\n      - [local_own_coast_naval_combat_bonus]: §G+1.00§!\n      - [local_defender_dice_roll_bonus]: §G+1.00§!\n      - [local_monthly_devastation]: §G-10.0%§!"
+ sicilian_kingdom_sicilian_defence_tt: "The areas of §Y[121.GetAreaName]§!, §Y[124.GetAreaName]§!, §Y[125.GetAreaName]§!, §Y[123.GetAreaName]§!, §Y[122.GetAreaName]§! will receive the following effect:\n   - Gets '§YSicilian Defence§!' for §Y5 years§!, giving the following effects:\n      - [local_own_coast_naval_combat_bonus]: §G+1.00§!\n      - [local_defender_dice_roll_bonus]: §G+1.00§!\n      - [local_monthly_devastation]: §G-10.0%§!\n      - [local_prosperity_growth]: §G+0.50§!"

@@ -294,3 +294,14 @@ defined_text = {
 		localisation_key = MODIFIER_LOCAL_MONTHLY_DEVASTATION
 	}
 }
+
+defined_text = {
+	name = local_prosperity_growth
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_LOCAL_PROPSPERITY_GROWTH
+	}
+}

@@ -234,4 +234,5 @@ sicilian_kingdom_sicilian_defence_modifier = {
 	local_own_coast_naval_combat_bonus = 1
 	local_defender_dice_roll_bonus = 1
 	local_monthly_devastation = -0.10
+	local_prosperity_growth = 0.5
 }

@@ -25,7 +25,7 @@ sicilian_kingdom_mechanic = {
 	
 	interactions = {
 		sicilian_kingdom_encouraged_city_living = {
-			icon = GFX_cossacks_ability_ADM
+			icon = GFX_sicilian_kingdom_encouraged_city_living
 			cost_type = sicilian_kingdom_adm_power
 			cost = 100
 			trigger = {
@@ -41,6 +41,7 @@ sicilian_kingdom_mechanic = {
 				}
 			}
 			effect = {
+				add_years_of_income = 1
 				capital_scope = {
 					area = {
 						limit = {
@@ -86,7 +87,7 @@ sicilian_kingdom_mechanic = {
 			}
 		}
 		sicilian_kingdom_sicilian_defence = {
-			icon = GFX_cossacks_ability_DIP
+			icon = GFX_sicilian_kingdom_sicilian_defence
 			cost_type = sicilian_kingdom_dip_power
 			cost = 100
 			trigger = {
@@ -102,6 +103,7 @@ sicilian_kingdom_mechanic = {
 				}
 			}
 			effect = {
+				add_yearly_manpower = 1
 				custom_tooltip = sicilian_kingdom_sicilian_defence_tt
 				hidden_effect = {
 					every_owned_province = {
@@ -127,17 +129,16 @@ sicilian_kingdom_mechanic = {
 			}
 		}
 		sicilian_kingdom_centralization = {
-			icon = GFX_cossacks_ability_MIL
+			icon = GFX_sicilian_kingdom_centralization
 			cost_type = sicilian_kingdom_mil_power
 			cost = 100
 			trigger = { }
 			effect = {
-				add_yearly_manpower = 1
-				add_years_of_income = 0.5
+				add_legitimacy_equivalent = { amount = 5 republican_tradition = 3 }
 				add_reform_progress_medium_effect = yes
 				change_estate_land_share = {
 					estate = all
-					share = -1.25
+					share = -2.50
 				}
 			}
 			cooldown_years = 0
