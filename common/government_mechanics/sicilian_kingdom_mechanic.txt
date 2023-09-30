@@ -31,12 +31,8 @@ sicilian_kingdom_mechanic = {
 			trigger = {
 				capital_scope = {
 					area_for_scope_province = {
-						owner = {
-							tag = root
-						}
-						controller = {
-							tag = ROOT
-						}
+						owned_by = ROOT
+						controlled_by = ROOT
 					}
 				}
 			}
@@ -45,9 +41,7 @@ sicilian_kingdom_mechanic = {
 				capital_scope = {
 					area = {
 						limit = {
-							owner = {
-								tag = ROOT
-							}
+							owned_by = ROOT
 						}
 						add_province_modifier = {
 							name = sicilian_kingdom_encouraged_city_living_modifier
@@ -56,9 +50,7 @@ sicilian_kingdom_mechanic = {
 					}
 					random_area_province = {
 						limit = {
-							owner = {
-								tag = ROOT
-							}
+							owned_by = ROOT
 						}
 						if = {
 							limit = {

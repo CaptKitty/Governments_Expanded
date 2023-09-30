@@ -229,6 +229,7 @@ italian_dinasties_condotte_militari_modifier = {
 # Sicilian Kingdom
 sicilian_kingdom_encouraged_city_living_modifier = {
 	local_development_cost_modifier = -0.10
+	local_tax_modifier = 0.25
 }
 sicilian_kingdom_sicilian_defence_modifier = {
 	local_own_coast_naval_combat_bonus = 1
