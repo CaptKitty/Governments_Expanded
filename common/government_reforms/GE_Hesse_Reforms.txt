@@ -34,6 +34,7 @@ hessian_modern_militarized_monarchy_reform = {
 	potential = {
 		OR = {
 			tag = HES
+			has_reform = hessian_militarized_monarchy_reform
 			has_reform = hessian_modern_militarized_monarchy_reform
 		}
 	}
@@ -74,12 +75,14 @@ hessian_military_complex_reform = {
 	potential = {
 		OR = {
 			tag = HES
+			has_reform = hessian_militarized_monarchy_reform
 			has_reform = hessian_military_complex_reform
 		}
 	}
 	trigger = {
 		OR = {
 			tag = HES
+			has_reform = hessian_militarized_monarchy_reform
 			has_reform = hessian_military_complex_reform
 		}
 	}
@@ -112,12 +115,14 @@ found_the_rothschilds_reform = {
 	}
 	potential = {
 		OR = {
+			has_reform = hessian_militarized_monarchy_reform
 			has_reform = found_the_rothschilds_reform 
 			tag = HES
 		}
 	}
 	trigger = {
 		OR = {
+			has_reform = hessian_militarized_monarchy_reform
 			has_reform = found_the_rothschilds_reform 
 			tag = HES
 		}
@@ -148,12 +153,14 @@ hessian_elite_jaegers_reform = {
 	}
 	potential = {
 		OR = {
+			has_reform = hessian_militarized_monarchy_reform
 			has_reform = hessian_elite_jaegers_reform 
 			tag = HES
 		}
 	}
 	trigger = {
 		OR = {
+			has_reform = hessian_militarized_monarchy_reform
 			has_reform = hessian_elite_jaegers_reform 
 			tag = HES
 		}
