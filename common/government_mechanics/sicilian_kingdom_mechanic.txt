@@ -1,25 +1,23 @@
 sicilian_kingdom_mechanic = {
 	alert_icon_gfx = GFX_alerticons_government_mechanics
 	alert_icon_index = 6
-	available = {
-		always = yes
-	}
+	available = { always = yes }
 	
 	powers = {
 		sicilian_kingdom_adm_power = {
 			max = 150
 			monarch_power = ADM
-			base_monthly_growth = 2.5
+			base_monthly_growth = 0.75
 		}
 		sicilian_kingdom_dip_power = {
 			max = 150
 			monarch_power = DIP
-			base_monthly_growth = 2.5
+			base_monthly_growth = 0.75
 		}
 		sicilian_kingdom_mil_power = {
 			max = 150
 			monarch_power = MIL
-			base_monthly_growth = 2.5
+			base_monthly_growth = 0.75
 		}
 	}
 	
@@ -31,27 +29,24 @@ sicilian_kingdom_mechanic = {
 			trigger = {
 				capital_scope = {
 					area_for_scope_province = {
+						type = all
 						owned_by = ROOT
 						controlled_by = ROOT
 					}
 				}
 			}
 			effect = {
-				add_years_of_income = 1
+				add_years_of_income = 0.5
 				capital_scope = {
 					area = {
-						limit = {
-							owned_by = ROOT
-						}
+						limit = { owned_by = ROOT }
 						add_province_modifier = {
 							name = sicilian_kingdom_encouraged_city_living_modifier
 							duration = 1825
 						}
 					}
 					random_area_province = {
-						limit = {
-							owned_by = ROOT
-						}
+						limit = { owned_by = ROOT }
 						if = {
 							limit = {
 								owner = { ADM = 3 }
@@ -95,7 +90,7 @@ sicilian_kingdom_mechanic = {
 				}
 			}
 			effect = {
-				add_yearly_manpower = 1
+				add_yearly_manpower = 0.5
 				custom_tooltip = sicilian_kingdom_sicilian_defence_tt
 				hidden_effect = {
 					every_owned_province = {
@@ -115,7 +110,7 @@ sicilian_kingdom_mechanic = {
 					}
 				}
 			}
-			cooldown_years = 0
+			cooldown_years = 5
 			ai_chance = {
 				factor = 33
 			}
@@ -133,7 +128,7 @@ sicilian_kingdom_mechanic = {
 					share = -2.50
 				}
 			}
-			cooldown_years = 0
+			cooldown_years = 5
 			ai_chance = {
 				factor = 33
 			}
