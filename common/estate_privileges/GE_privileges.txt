@@ -231,7 +231,7 @@ estate_ghulams_military_corps = {
 		remove_country_modifier = GE_ghulam_regiments
 	}
 	modifier_by_land_ownership = {
-		special_unit_forcelimit = 0.5
+		allowed_rajput_fraction = 0.5
 	}
 	mechanics = {
 		exempt_from_seize_land
@@ -1089,7 +1089,7 @@ estate_nobles_elite_guards = {
 		nobles_influence_modifier = -0.10
 	}
 	benefits = {
-		special_unit_forcelimit = 0.10
+		allowed_rajput_fraction = 0.10
 	}
 	on_granted = {
 		add_country_modifier = {
