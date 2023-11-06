@@ -202,31 +202,31 @@ imperial_grace_mechanic = {
 				has_regency = no
 				if = {
 					limit = {
-						ruler_total_stats = { stats = 16 }
+						ruler_total_stats = { amount = 16 }
 					}
 					months_of_ruling = 60
 				}
 				else_if = {
 					limit = {
-						ruler_total_stats = { stats = 13 }
+						ruler_total_stats = { amount = 13 }
 					}
 					months_of_ruling = 72
 				}
 				else_if = {
 					limit = {
-						ruler_total_stats = { stats = 10 }
+						ruler_total_stats = { amount = 10 }
 					}
 					months_of_ruling = 84
 				}
 				else_if = {
 					limit = {
-						ruler_total_stats = { stats = 7 }
+						ruler_total_stats = { amount = 7 }
 					}
 					months_of_ruling = 96
 				}
 				else_if = {
 					limit = {
-						ruler_total_stats = { stats = 4 }
+						ruler_total_stats = { amount = 4 }
 					}
 					months_of_ruling = 108
 				}

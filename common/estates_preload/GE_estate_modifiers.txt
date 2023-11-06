@@ -23,29 +23,6 @@ estate_peasants = {
 		}
 	}
 }
-estate_ghulams = {
-	modifier_definition = {
-		type = loyalty
-		key = ghulams_loyalty_modifier
-		trigger = {
-			has_estate = estate_ghulams
-		}
-	}
-	modifier_definition = {
-		type = influence
-		key = ghulams_influence_modifier
-		trigger = {
-			has_estate = estate_ghulams
-		}
-	}
-	modifier_definition = {
-		type = privileges
-		key = ghulams_privileges_modifier
-		trigger = {
-			has_estate = estate_ghulams
-		}
-	}
-}
 
 estate_special = {
 	# vanilla estate for scripted modifiers

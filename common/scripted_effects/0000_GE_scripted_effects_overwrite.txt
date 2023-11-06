@@ -112,12 +112,22 @@ pick_random_estate_if_present = {
 		}
 		1 = { 
 			trigger = {
-				has_estate = estate_peasants
-				NOT = { has_country_flag = estate_peasants_$flag$ }
+				has_estate = estate_eunuchs
+				NOT = { has_country_flag = estate_eunuchs_$flag$ }
 			}
-			set_country_flag = estate_peasants_$flag$
+			set_country_flag = estate_eunuchs_$flag$
 			[[estate_action]
-			$estate_action$ = estate_peasants
+			$estate_action$ = estate_eunuchs
+			]
+		}
+		1 = { 
+			trigger = {
+				has_estate = estate_qizilbash
+				NOT = { has_country_flag = estate_qizilbash_$flag$ }
+			}
+			set_country_flag = estate_qizilbash_$flag$
+			[[estate_action]
+			$estate_action$ = estate_qizilbash
 			]
 		}
 		1 = { 
@@ -128,6 +138,16 @@ pick_random_estate_if_present = {
 			set_country_flag = estate_ghulams_$flag$
 			[[estate_action]
 			$estate_action$ = estate_ghulams
+			]
+		}
+		1 = { 
+			trigger = {
+				has_estate = estate_peasants
+				NOT = { has_country_flag = estate_peasants_$flag$ }
+			}
+			set_country_flag = estate_peasants_$flag$
+			[[estate_action]
+			$estate_action$ = estate_peasants
 			]
 		}
 		#EE estate

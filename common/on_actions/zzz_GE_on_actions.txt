@@ -1,80 +1,16 @@
 ##### GE Government Reform Events #####
 on_bi_yearly_pulse_3 = {
-	#Fire estate agenda if you have that privilege
-	# NOTE DOING THIS THROUGH RANDOM EVENT NOW WITH estate_privileges_and_agendas_events.4 INSTEAD!
-	#on_bi_yearly_pulse_estate_privileges_effect = yes
 	events = {
-		muslim_school_events.20 #Pick School
-		# GE:
 		GE_script_events.1
 		GE_script_events.2
 		GE_script_events.4
 		GE_script_events.5
 		GE_script_events.6
 	}
-	random_events = {
-		100 = new_court_flavour_events.25 #blood is thicker than water
-		200 = 0
-	}
-	# GE:
 	ge_on_bi_yearly_pulse_3_effect = yes
 }
 
 on_five_year_pulse_4 = {
-	if = { #fail-safe for flavor_pap.7, making religious leagues happen at some point if there is no PAP
-		limit = {
-			is_year = 1610
-			NOT = { exists = PAP }
-			NOT = { has_global_flag = counter_reformation }
-		}
-		set_global_flag = counter_reformation
-	}
-	#fail-safe if for whatever reason these flags stay after being used in events
-	if = {
-		limit = {
-			had_country_flag = {
-				flag = advisor_events_adm
-				days = 720
-			}
-		}
-		clr_country_flag = advisor_events_adm
-	}
-	if = {
-		limit = {
-			had_country_flag = {
-				flag = advisor_events_dip
-				days = 720
-			}
-		}
-		clr_country_flag = advisor_events_dip
-	}
-	if = {
-		limit = {
-			had_country_flag = {
-				flag = advisor_events_mil
-				days = 720
-			}
-		}
-		clr_country_flag = advisor_events_mil
-	}
-	#Clearing of Jewish events flags
-	if = {
-		limit = {
-			had_country_flag = {
-				flag = shalosh_regalim
-				days = 365
-			}
-		}
-		clr_country_flag = shalosh_regalim
-	}
-	random_events = {
-		200 = 0
-		100 = kalmar_union_events.7
-		100 = kalmar_union_events.8
-		100 = kalmar_union_events.9
-	}
-
-	# GE:
 	random_events = {
 		2000 = 0
 		200 = peasants_estate_events.1 #Swedish Peasant Estate
@@ -261,271 +197,45 @@ on_five_year_pulse_4 = {
 
 on_new_term_election = {
 	events = {
-		700		# Election event
-		elections.720		# Dutch Republic
-		elections.800	# Lottery election
-		pirates.1
-		# GE:
-		elections.7001 #GE
+		elections.7001
 	}
 }
 
 on_death_election = {
-	if = {
-		limit = { has_reform = presidential_despot_reform }
-		remove_government_reform = presidential_despot_reform
-	}
-	if = {
-		limit = {
-			has_government_attribute = is_pirate_republic_reform
-		}
-		set_country_flag = pirate_death_election
-		country_event = { id = pirates.1 }
-	}
 	events = {
-		701		# Election event
-		elections.721		# Dutch Republic
-		elections.800	# Lottery election
-		flavor_tus.16 #Savonarola Leaves This World
-		# GE:
-		elections.7002 #GE
-		reform_me_events.11
+		elections.7002
 	}
 }
 
 on_monarch_death = {
-	if = {
-		limit = {
-			tag = ANS
-			BRA = {
-				has_country_flag = albrecht_achilles_flag
-			}
-		}
-		BRA = {
-			clr_country_flag = albrecht_achilles_flag #Just to be sure
-			kill_heir = {} #If Albrecht Achilles dies in Ansbach he will also be dead in Brandenburg, will appear as normal death of heir to BRA.
-		}
-	}
-	if = {
-		limit = { has_country_modifier = sought_after_bachelor }
-		remove_country_modifier = sought_after_bachelor
-	}
-	if = {
-		limit = {
-			tag = SAX
-			has_country_flag = sax_thuringen_split_to_happen
-			OR = {
-				NOT = { dynasty = "von Wettin" }
-				NOT = { senior_union_with = THU }
-				has_regency = yes
-			}
-		}
-		clr_country_flag = sax_thuringen_split_to_happen
-	}
-	if = {
-		limit = { tag = SAM }
-		country_event = { id = polynesian.35 }
-	}
-	if = {
-		limit = { tag = TOG }
-		country_event = { id = polynesian.36 }
-	}
-	if = {	# Ascension of Trailokanat
-		limit = { tag = AYU }
-		country_event = { id = flavor_suk.1 }
-	}
-	if = {
-		limit = { tag = GOT }
-		country_event = { id = flavor_got.37 }
-	}
-	if = {
-		limit = { has_government_attribute = no_stability_loss_on_monarch_death }
-		add_stability = 1
-	}
-	burgundian_inheritance_start_effect = yes
-	ladislaus_postumus_king_died_effect = yes
-	joan_de_trastamara_king_died_effect = yes
 	events = {
-		flavor_wal.1 # Vlad the Impaler. So that he doesn't try to usurp his father.
-		flavor_nav.4 # Navarra succession event
-		flavor_sax.8 # Treaty of Leipzig
-		flavor_pap.16 # Borgia Pope
-		flavor_pap.19 # death of borgia pope
-		flavor_tus.22 # Medici Pope
-		flavor_tus.24 # death of the Medici Pope
-		majapahit.8 # Majapahit pretenders
-		flavor_mal.11 # Mali pretenders
-		flavor_mal.47 # Pilgrimage ends prematurely
-		government_events.3	# Election of a new Ruler
-		# GE:
         reform_me_events.240
-
-		# EE:
-		ME_Spain_Events.8
-		ME_Reform_Events.1
-		ME_Korea_Events.6
-        ME_Korea_Events.8
-	}
-	# EE:
-	if = {
-		limit = {
-			has_ruler_flag = Ulugh_beg_is_ruler
-		}
-		ROOT = {
-			country_event = { id = ME_Timurid_Princes_Event.11 }
-		}
-	}
-	if = {
-		limit = {
-			tag = CRI
-			is_subject_of_type = timar
-		}
-		TUR = {
-			country_event = { id = ME_Crimea_Events.1 }
-		}
-	}
-	if = {
-		limit = {
-			has_reform = west_slavic_monarchy
-			NOT = { has_country_flag = ME_FFS_STAP }
-		}
-		set_country_flag = ME_FFS_STAP
-		country_event = { id = ME_Zapadoslavia_Events.9 }
-	}
-	if = {
-		limit = {
-			tag = ERE
-			mission_completed = ERE_tombs
-		}
-		random_owned_province = {
-			province_event = {
-				id = ME_Beylik_Events.14
-			}
-		}
 	}
 }
 
 # country
 # root = winning country, from = loser country
 on_main_war_won = {
-	on_main_war_won_effect = yes
-	events = {
-		native_americans.7
-		flavor_kor.15
-	}
-	# GE:
 	ge_on_main_war_won_effect = yes
 }
 
 #ROOT = converted country, FROM = country which force converts ROOT, on_action gets called on Force religion peace and Enforce Religion subject interaction
 on_force_conversion = {
-	on_force_conversion_effect = yes
 	ge_on_force_conversion_effect = yes
 }
 
 on_adm_development = {
-	on_adm_development_effect = yes
-	if = {
-		limit = { owner = { has_country_flag = enable_supplemental_development_flag } }
-		random_list = {
-			20 = { add_base_tax = 1 }
-			80 = { }
-		}
-	}
-	if = {
-		limit = {
-			owner = { has_country_modifier = lit_increased_dev_modifier }
-		}
-		add_base_tax = 1
-	}
-	if = {
-		limit = { has_state_edict = chinese_industrialization }
-		random_list = {
-			10 = { add_base_tax = 1 }
-			10 = { add_prosperity = 1 }
-			10 = { add_province_modifier = { name = qng_center_of_industrialization_modifier duration = 3650 } }
-			70 = {  }
-		}
-	}
-	if = {
-		limit = { owner = { has_country_modifier = JAP_cadastral_surveys has_dlc = "Domination" } }
-		owner = {
-			change_estate_land_share = {
-				estate = all
-				share = -0.2
-			}
-		}
-	}
-
-	if = {
-		limit = { owner = { has_country_modifier = jap_20_years_devving_tax_yields_twice_bonus_1_burgher_loyalt_modifier } }
-		add_base_tax = 1
-		owner = {
-			add_estate_loyalty = {
-				estate = estate_burghers
-				loyalty = 1
-			}
-		}
-	}
-
-	if = {
-		limit = {
-			owner = { has_country_modifier = pru_victory_lower_saxony_modifier }
-			OR = {
-				culture = saxon
-				culture = lower_saxon
-			}
-		}
-		add_nationalism = -3
-		add_local_autonomy = -5
-		add_prosperity = 1
-	}
-
-	# GE:
 	ge_on_adm_development_effect = yes
 }
 
 on_dip_development = {
-	on_dip_development_effect = yes
-
-	if = {
-		limit = {
-			owner = { has_country_modifier = pru_victory_lower_saxony_modifier }
-			OR = {
-				culture = saxon
-				culture = lower_saxon
-			}
-		}
-		add_nationalism = -3
-		add_local_autonomy = -5
-		add_prosperity = 1
-	}
-
-	# GE:
 	ge_on_dip_development_effect = yes
 }
 
 on_mil_development = {
-	on_mil_development_effect = yes
-
-	if = {
-		limit = {
-			owner = { has_country_modifier = pru_victory_lower_saxony_modifier }
-			OR = {
-				culture = saxon
-				culture = lower_saxon
-			}
-		}
-		add_nationalism = -3
-		add_local_autonomy = -5
-		add_prosperity = 1
-	}
-
-	# GE:
 	ge_on_mil_development_effect = yes
 }
 
 on_transfer_development = {
-	# GE:
 	ge_on_transfer_development_effect = yes
 }

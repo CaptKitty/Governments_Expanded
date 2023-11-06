@@ -116,7 +116,10 @@ venice_merchants_reform = {
 		NOT = { map_setup = map_setup_random }
 		OR = {
 			tag = VEN
-			have_had_reform = venice_merchants_reform
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = venice_merchants_reform
+			}
 		}
 	}
 	boost_income = yes
@@ -389,7 +392,7 @@ veche_republic = {
 	legacy_equivalent = veche_republic_legacy
 	nation_designer_trigger = {
 		OR = {
-		culture_group = east_slavic
+			culture_group = east_slavic
 			culture_group = slavic
 		}
 	}
@@ -698,6 +701,9 @@ federal_republic = {
 			}
 		}
 	}
+	trigger = {
+		is_not_blocked_by_estate_privilege = { estate = estate_nobles }
+	}
 	legacy_equivalent = federal_republic_legacy
 	valid_for_nation_designer = yes
 	nation_designer_cost = 15
@@ -722,7 +728,7 @@ federal_republic = {
 	conditional = {
 		allow = {
 			OR = {
-			has_dlc = "Common Sense"
+				has_dlc = "Common Sense"
 				has_dlc = "Domination"
 			}
 		}
@@ -831,7 +837,10 @@ cossacks_reform = {
 			have_had_reform = cossacks_reform
 		}
 	}
-
+	trigger = {
+		is_not_blocked_by_estate_privilege = { estate = estate_nobles }
+	}
+	
 	raze_province = yes
 	government_abilities = {
 		cossacks_mechanic
@@ -865,7 +874,7 @@ cossacks_reform = {
 		cavalry_cost = -0.2
 		cav_to_inf_ratio = 0.25
 		governing_capacity = 50
-		special_unit_forcelimit = 0.25
+		allowed_cossack_fraction = 0.25
 		monthly_liberalism = 0.2
 	}
 

@@ -6,6 +6,7 @@ rajput_regiment = {
 
 ruler_adm = {
 	monthly_council_consensus = 0.1
+	monthly_egyptian_westernization = 0.05
 	# GE:
 	monthly_bureaucracy_vs_military_power = -0.05
 	monthly_political_focus_power = 0.084
@@ -15,12 +16,14 @@ ruler_adm = {
 
 ruler_dip = {
 	monthly_council_consensus = 0.1
+	monthly_egyptian_westernization = 0.05
 	# GE:
 	monthly_political_focus_power = 0.084
 }
 
 ruler_mil = {
 	monthly_council_consensus = 0.1
+	monthly_egyptian_westernization = 0.05
 	# GE:
 	monthly_bureaucracy_vs_military_power = 0.05
 	monthly_political_focus_power = 0.084
@@ -164,21 +167,9 @@ prestige = {
 	embracement_cost = -0.1
 	monthly_heir_claim_increase = 0.05
 
-	brahmins_hindu_loyalty_modifier = 0.05
-	brahmins_muslim_loyalty_modifier = 0.05
-	brahmins_other_loyalty_modifier = 0.05
-	church_loyalty_modifier = 0.05
-	maratha_loyalty_modifier = 0.05
-	nobles_loyalty_modifier = 0.05
-	burghers_loyalty_modifier = 0.05
-	vaisyas_loyalty_modifier = 0.05
-	cossacks_loyalty_modifier = 0.05
-	nomadic_tribes_loyalty_modifier = 0.05
-	dhimmi_loyalty_modifier = 0.05
-	jains_loyalty_modifier = 0.05
-	rajput_loyalty_modifier = 0.05
-	janissaries_loyalty_modifier = 0.05
-	eunuchs_loyalty_modifier = 0.05
+	monthly_persian_influence = 0.25
+
+	all_estate_loyalty_equilibrium = 0.05
 
 	# GE:
 	monthly_italian_dinasties = 0.25

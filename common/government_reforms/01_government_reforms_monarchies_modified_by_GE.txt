@@ -203,6 +203,18 @@ quash_noble_power_reform = {
 			factor = 1.5
 			is_in_deficit = yes
 		}
+		modifier = {
+			factor = 1.5
+			num_of_owned_provinces_with = {
+				OR = {
+					has_building = fort_15th
+					has_building = fort_16th
+					has_building = fort_17th
+					has_building = fort_18th
+				}
+				value = 5
+			}
+		}
 	}
 }
 
@@ -1333,7 +1345,10 @@ zabt_reform = {
 		}
 	}
 	potential = {
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+		}
 		tag = MUG
 	}
 	modifiers = {
@@ -1413,7 +1428,7 @@ aristocratic_court_reform = {
 			NOT = {
 				check_variable = {
 					which = Noble_Influence
-					value = 4
+					value = 3
 				}
 			}
 			has_reform = aristocratic_court_reform
@@ -1459,6 +1474,7 @@ states_general_reform = {
 		heir = no
 		duration = 4
 		has_term_election = yes
+		is_eligible_for_hre_emperor = no
 		states_general_mechanic = {
 			statists = {
 				diplomatic_reputation = 1
@@ -1476,7 +1492,7 @@ states_general_reform = {
 }
 
 general_estates_reform = {
-	icon = "paper_with_seal"
+	icon = "power_across_cities"
 	allow_normal_conversion = yes
 	potential = {
 		is_revolutionary = no

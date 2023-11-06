@@ -1,0 +1,11 @@
+estate_ghulams = {
+	privileges = {
+		estate_ghulams_military_corps
+		estate_ghulams_governor_positions
+		estate_ghulams_trade_privileges
+		estate_ghulams_councilor
+	}
+
+	agendas = {
+	}
+}
