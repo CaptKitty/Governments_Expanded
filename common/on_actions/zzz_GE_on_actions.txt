@@ -1,3 +1,7 @@
+on_startup = {
+	country_event = { id = governments_expanded_events.1 } # set flag
+}
+
 ##### GE Government Reform Events #####
 on_bi_yearly_pulse_3 = {
 	events = {
