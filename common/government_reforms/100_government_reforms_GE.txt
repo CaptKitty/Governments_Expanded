@@ -630,6 +630,7 @@
 				tag = KOJ
 				has_reform = kingdom_of_jerusalem_reform
 			}
+			NOT = { has_reform = celestial_empire }
 		}
 		modifiers = {
 			tolerance_own = 1
@@ -5221,6 +5222,7 @@
 				which = Clergy_Influence
 				value = 2
 			}
+			NOT = { has_reform = celestial_empire }
 		}
 		trigger = {
 			check_variable = {

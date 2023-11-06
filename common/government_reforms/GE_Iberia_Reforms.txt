@@ -221,12 +221,12 @@ crown_of_aragon = {
 
 
 
-consulate_of_the_sea = {
+consulate_of_the_sea_GE = {
 	icon = GE_trader
 	allow_normal_conversion = yes
 	valid_for_nation_designer = no
 	potential = {
-		has_reform = consulate_of_the_sea
+		has_reform = consulate_of_the_sea_GE
 	}
 	modifiers = {
 		merchants = 1
