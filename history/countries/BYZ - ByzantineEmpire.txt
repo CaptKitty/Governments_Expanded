@@ -1,16 +1,5 @@
 government = monarchy
-if = {
-	limit = {
-		has_dlc = "King of Kings"
-	}
-	add_government_reform = byzantine_autocracy_reform
-}
-if = {
-	limit = {
-		NOT = { has_dlc = "King of Kings" }
-	}
-	add_government_reform = theocratic_autocracy
-}
+add_government_reform = theocratic_autocracy
 government_rank = 3
 primary_culture = greek
 religion = orthodox
