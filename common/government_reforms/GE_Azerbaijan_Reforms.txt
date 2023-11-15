@@ -3,14 +3,16 @@ turkic_qasilbash_heirs_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			primary_culture = azerbaijani
+			culture_group = iranian
 			tag = PER
+			have_had_reform = turkic_qasilbash_heirs_reform
 		}
 	}
 	trigger = {
 		OR = {
-			primary_culture = azerbaijani
+			culture_group = iranian
 			tag = PER
+			have_had_reform = turkic_qasilbash_heirs_reform
 		}
 	}
 	effect = {
@@ -42,16 +44,18 @@ tajik_administration_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			primary_culture = azerbaijani
+			culture_group = iranian
 			accepted_culture = azerbaijani
 			tag = PER
+			have_had_reform = tajik_administration_reform
 		}
 	}
 	trigger = {
 		OR = {
-			primary_culture = azerbaijani
+			culture_group = iranian
 			accepted_culture = azerbaijani
 			tag = PER
+			have_had_reform = tajik_administration_reform
 		}
 	}
 	effect = {
@@ -84,14 +88,16 @@ foreign_ghulams_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			primary_culture = azerbaijani
+			culture_group = iranian
 			tag = PER
+			have_had_reform = foreign_ghulams_reform
 		}
 	}
 	trigger = {
 		OR = {
-			primary_culture = azerbaijani
+			culture_group = iranian
 			tag = PER
+			have_had_reform = foreign_ghulams_reform
 		}
 	}
 	effect = {
@@ -124,13 +130,15 @@ ghulam_governates_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			primary_culture = azerbaijani
+			have_had_reform = ghulam_governates_reform
+			culture_group = iranian
 			tag = PER
 		}
 	}
 	trigger = {
 		OR = {
-			primary_culture = azerbaijani
+			have_had_reform = ghulam_governates_reform
+			culture_group = iranian
 			tag = PER
 		}
 	}
@@ -152,13 +160,15 @@ principle_of_fiqh_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			primary_culture = azerbaijani
+			have_had_reform = principle_of_fiqh_reform
+			culture_group = iranian
 			tag = PER
 		}
 	}
 	trigger = {
 		OR = {
-			primary_culture = azerbaijani
+			have_had_reform = principle_of_fiqh_reform
+			culture_group = iranian
 			tag = PER
 		}
 	}
@@ -177,13 +187,15 @@ reforms_of_abbas_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			primary_culture = azerbaijani
+			have_had_reform = reforms_of_abbas_reform
+			culture_group = iranian
 			tag = PER
 		}
 	}
 	trigger = {
 		OR = {
-			primary_culture = azerbaijani
+			have_had_reform = reforms_of_abbas_reform
+			culture_group = iranian
 			tag = PER
 		}
 	}
@@ -217,13 +229,15 @@ armenian_silk_traders_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			primary_culture = azerbaijani
+			have_had_reform = armenian_silk_traders_reform
+			culture_group = iranian
 			tag = PER
 		}
 	}
 	trigger = {
 		OR = {
-			primary_culture = azerbaijani
+			have_had_reform = armenian_silk_traders_reform
+			culture_group = iranian
 			tag = PER
 		}
 	}
