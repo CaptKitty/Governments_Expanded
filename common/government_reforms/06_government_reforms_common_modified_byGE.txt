@@ -170,3 +170,46 @@ penal_colonies_reform = {
 		factor = 0.1
 	}
 }
+
+#Soft Military / Military Organisation
+
+rajput_military_leadership_reform = {
+	icon = "rajput_soldiers"
+	allow_normal_conversion = yes
+	potential = {
+		has_estate = estate_rajput
+	}
+	trigger = {
+		if = {
+			limit = { has_modifier_locking_military_tier = yes }
+			OR = {
+				has_reform = rajput_military_leadership_reform
+				has_not_modifier_locking_military_tier = yes
+			}
+		}
+	}
+	modifiers = {
+		can_recruit_rajputs = yes
+		rajput_loyalty_modifier = 0.1
+		rajput_influence_modifier = 0.1
+		rajput_privilege_slots = 1
+		allowed_rajput_fraction = 0.1
+	}
+	effect = {
+		add_country_modifier = {
+			name = GE_rajput_regiments
+			duration = -1
+		}
+	}
+	removed_effect = {
+		if = {
+			limit = {
+				NOT = { has_estate_privilege = estate_rajput_rajput_regiments }
+			}
+			remove_country_modifier = GE_rajput_regiments
+		}
+	}
+	ai = {
+		factor = 1000
+	}
+}

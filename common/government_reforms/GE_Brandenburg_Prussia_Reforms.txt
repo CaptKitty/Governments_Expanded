@@ -297,7 +297,10 @@ professional_army_reform = {
 			}
 		}
 	}
-	potential = { }
+	potential = { 
+		NOT = { has_estate = estate_rajput }
+		NOT = { has_estate = estate_ghulams }
+	}
 	modifiers = {
 		drill_gain_modifier = 0.25
 		yearly_army_professionalism = 0.001

@@ -1182,11 +1182,14 @@ empowered_consolidation_of_power_reform = {
 		}
 	}
 	modifiers = {
-		yearly_absolutism = 1
-		global_autonomy = -0.05
+		yearly_absolutism = 2
+		max_absolutism = 25
+		max_absolutism_effect = 0.15
+		reelection_cost = -0.1
 	}
 	custom_attributes = {
-		enables_absolute_reelection = yes
+		absolutism_reduction_on_ruler_death = yes
+		reelection_increases_absolutism = yes
 	}
 	ai = {
 		factor = 1
