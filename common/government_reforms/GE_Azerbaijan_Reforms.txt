@@ -99,6 +99,7 @@ foreign_ghulams_reform = {
 			tag = PER
 			have_had_reform = foreign_ghulams_reform
 		}
+		has_estate = estate_ghulams
 	}
 	effect = {
 		change_variable = {
@@ -116,9 +117,6 @@ foreign_ghulams_reform = {
 			which = Royal_Influence
 			value = -1
 		}
-	}
-	custom_attributes = {
-		enables_ghulams_estate = yes
 	}
 	ai = {
 		factor = 100
@@ -198,6 +196,7 @@ reforms_of_abbas_reform = {
 			culture_group = iranian
 			tag = PER
 		}
+		has_estate = estate_ghulams
 	}
 	effect = {
 		change_variable = {
