@@ -1,0 +1,730 @@
+ge_moutain_warfare_province_update = {
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = enables_mountain_warfare
+			}
+			region = italy_region 
+			OR = {
+				has_terrain = hills
+				has_terrain = mountain
+			}
+		}
+		add_province_modifier = {
+			name = GE_Mountain_Warfare
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = GE_Mountain_Warfare
+	}
+}
+
+ge_customs_house_province_update = {
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = enables_customs_house
+			}
+			OR = {
+				trade_goods = cloth
+				trade_goods = livestock
+				trade_goods = wool
+			}
+		}
+		add_province_modifier = {
+			name = GE_Customs_House
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = GE_Customs_House
+	}
+}
+
+ge_monastic_temples_province_update = {
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = enables_monastic_temples
+			}
+			has_tax_building_trigger = yes
+		}
+		add_province_modifier = {
+			name = GE_Monastic_Temples_Modifier
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = GE_Monastic_Temples_Modifier
+	}
+}
+
+ge_Regent_Investments_province_update = {
+	if = {
+		limit = {
+			owner = {
+				has_reform = regents_reform
+			}
+			development = 20
+			OR = {
+				culture = dutch
+				culture = flemish
+			}
+		}
+		add_province_modifier = {
+			name = Regent_Investments
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = Regent_Investments
+	}
+}
+
+ge_National_Strenghtening_province_update = {
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = enables_national_strenghtening_project
+			}
+			OR = {
+				has_owner_accepted_culture = yes
+				has_owner_culture = yes
+			}
+		}
+		add_province_modifier = {
+			name = National_Strenghtening_Project
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = National_Strenghtening_Project
+	}
+}
+
+ge_administrative_forts_province_update = {
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = enables_administrative_forts
+			}
+			any_province_in_state = {
+				fort_level = 2
+			}
+		}
+		add_province_modifier = {
+			name = Administrative_Forts
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = Administrative_Forts
+	}
+}
+
+ge_bureacratic_apparatus_province_update = {
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = enables_bureacratic_apparatus
+			}
+			any_province_in_state = {
+				has_seat_in_parliament = yes
+			}
+		}
+		add_province_modifier = {
+			name = Bureacratic_Apparatus
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = Bureacratic_Apparatus
+	}
+}
+
+ge_device_forts_province_update = {
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = enables_device_forts
+			}
+			fort_level = 2
+		}
+		add_province_modifier = {
+			name = Device_Forts
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = Device_Forts
+	}
+}
+
+ge_longbow_training_province_update = {
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = enables_longbow_training
+			}
+			culture = english
+			region = british_isles_region
+		}
+		add_province_modifier = {
+			name = Longbow_Training
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = Longbow_Training
+	}
+}
+
+ge_morisca_band_province_update = {
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = enables_morisca_band
+			}
+			fort_level = 2
+			any_neighbor_province = {
+				religion_group = christian
+				has_owner_religion = yes
+			}
+		}
+		add_province_modifier = {
+			name = Morisca_Band
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = Morisca_Band
+	}
+}
+
+ge_Berber_Herders_province_update = {
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = enables_grazing_herds
+			}
+			OR = {
+				has_terrain = drylands
+				has_terrain = hills
+				has_terrain = highlands
+			}
+			region = iberia_region
+		}
+		add_province_modifier = {
+			name = Berber_Herders
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = Berber_Herders
+	}
+}
+
+ge_Satrapy_province_update = {
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = enables_satrapies
+			}
+			is_territory = no
+			has_owner_culture = no
+		}
+		add_province_modifier = {
+			name = Satrapy
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = Satrapy
+	}
+}
+
+ge_Church_Poorhouses_province_update = {
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = enables_church_poorhouses
+			}
+			has_tax_building_trigger = yes
+		}
+		add_province_modifier = {
+			name = Church_Poorhouses
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = Church_Poorhouses
+	}
+}
+
+ge_Crown_Of_Aragon_province_update = {
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = enables_crown_of_aragon
+			}
+			is_core = ARA
+		}
+		add_province_modifier = {
+			name = Crown_Of_Aragon
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = Crown_Of_Aragon
+	}
+}
+
+ge_hwangog_province_update = {
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = enables_better_grain
+			}
+			trade_goods = grain
+		}
+		add_province_modifier = {
+			name = GE_hwangog
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = GE_hwangog
+	}
+}
+
+ge_siberian_tribe_province_update = {
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = enables_siberian_tribe
+			}
+			OR = {
+				has_terrain = glacier
+				has_climate = arctic
+			}
+		}
+		add_province_modifier = {
+			name = GE_Siberian_Tribe
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = GE_Siberian_Tribe
+	}
+}
+
+ge_nations_of_the_republic_province_update = {
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = enables_nations_of_the_republic
+			}
+			OR = {
+				has_owner_accepted_culture = yes
+				has_owner_culture = yes
+			}
+		}
+		add_province_modifier = {
+			name = GE_nations_of_the_republic
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = GE_nations_of_the_republic
+	}
+}
+
+ge_immigrant_settlements_province_update = {
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = enables_immigrant_settlements
+			}
+			has_rural_goods = yes
+		}
+		add_province_modifier = {
+			name = GE_immigrant_settlements
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = GE_immigrant_settlements
+	}
+}
+
+ge_kreditwerk_appointments_province_update = {
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = enables_kreditwerk_appointments
+			}
+			base_tax = 10
+		}
+		add_province_modifier = {
+			name = GE_Kreditwork
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = GE_Kreditwork
+	}
+}
+
+ge_cultural_supremacy_province_update = {
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = enables_cultural_supremacy
+			}
+			has_owner_culture = yes
+		}
+		add_province_modifier = {
+			name = GE_cultural_supremacy
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = GE_cultural_supremacy
+	}
+}
+
+ge_return_to_sender_province_update = {
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = enables_return_to_sender
+			}
+			has_port = yes
+		}
+		add_province_modifier = {
+			name = Return_To_Sender
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = Return_To_Sender
+	}
+}
+
+ge_industrialism_province_update = {
+	remove_province_modifier = Promoted_Industry
+	remove_province_modifier = Promoted_Industry_v2
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = enables_industrialism
+			}
+			has_building = workshop
+		}
+		add_province_modifier = {
+			name = Promoted_Industry
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = enables_industrialism
+			}
+			OR = {
+				has_building = counting_house
+				has_building = steam_factory
+			}
+		}
+		add_province_modifier = {
+			name = Promoted_Industry_v2
+			duration = -1
+		}
+	}
+}
+
+ge_society_of_agriculture_province_update = {
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = enables_society_of_agriculture
+			}
+			OR = {
+				trade_goods = grain
+				trade_goods = wool
+				trade_goods = livestock
+				trade_goods = lumber
+			}
+		}
+		add_province_modifier = {
+			name = Society_Of_Agriculture
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = Society_Of_Agriculture
+	}
+}
+
+ge_voc_mentality_province_update = {
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = enables_voc_mentality
+			}
+			is_owned_by_trade_company = yes
+		}
+		add_province_modifier = {
+			name = Soverein_Trade_Company
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = Soverein_Trade_Company
+	}
+}
+
+ge_qadi_authority_province_update = {
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = enables_qadi_authority
+			}
+			has_owner_religion = yes
+		}
+		add_province_modifier = {
+			name = GE_Qadi_Authority
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = GE_Qadi_Authority
+	}
+}
+
+ge_millet_system_province_update = {
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = enables_millet_system
+			}
+			OR = {
+				has_owner_accepted_culture = yes
+				has_owner_culture = yes
+			}
+		}
+		add_province_modifier = {
+			name = GE_Millet_System
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = GE_Millet_System
+	}
+}
+
+ge_devshirme_province_update = {
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = enables_devshirme
+			}
+			religion = orthodox
+		}
+		add_province_modifier = {
+			name = GE_Devshirme
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = GE_Devshirme
+	}
+}
+
+ge_public_works_province_update = {
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = enables_public_works
+			}
+			OR = {
+				has_building = courthouse
+				has_building = town_hall
+			}
+		}
+		add_province_modifier = {
+			name = GE_Public_Works
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = GE_Public_Works
+	}
+}
+
+ge_caravanserai_province_update = {
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = enables_caravanserai
+			}
+			province_has_center_of_trade_of_level = 1
+			fort_level = 2
+		}
+		add_province_modifier = {
+			name = GE_Caravanserai
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = GE_Caravanserai
+	}
+}
+
+ge_fortified_settlements_province_update = {
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = enables_fortified_settlements
+			}
+			any_province_in_state = {
+				fort_level = 2
+			}
+		}
+		add_province_modifier = {
+			name = GE_Fortified_Settlement
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = GE_Fortified_Settlement
+	}
+}
+
+ge_mint_towns_province_update = {
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = enables_mint_towns
+			}
+			development = 20
+		}
+		add_province_modifier = {
+			name = Mint_Towns
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = Mint_Towns
+	}
+}
+
+ge_salt_monopoly_province_update = {
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = enables_salt_monopoly
+			}
+			OR = {
+				trade_goods = salt
+				trade_goods = naval_supplies
+			}
+		}
+		add_province_modifier = {
+			name = Salt_Monopoly
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = Salt_Monopoly
+	}
+}
+
+ge_religious_adherence_province_update = {
+	if = {
+		limit = {
+			OR = {
+				AND = {
+					owner = { has_government_attribute = enables_people_under_tengri }
+					has_terrain = steppe
+				}
+				owner = {
+					has_government_attribute = enables_religious_adherence
+				}
+			}
+			has_owner_religion = yes
+			has_building = temple
+		}
+		add_province_modifier = {
+			name = GE_Religious_Adherence
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = GE_Religious_Adherence
+	}
+}
+
+ge_royal_mining_monopoly_province_update = {
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = enables_royal_mining_monopoly
+			}
+			OR = {
+				trade_goods = iron
+				trade_goods = copper
+				trade_goods = gold
+				trade_goods = coal
+				trade_goods = salt
+			}
+		}
+		add_province_modifier = {
+			name = GE_Mining_Monopoly
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = GE_Mining_Monopoly
+	}
+}
+
+ge_military_governors_province_update = {
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = enables_military_governors
+			}
+			fort_level = 2
+		}
+		add_province_modifier = {
+			name = GE_military_governors
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = GE_military_governors
+	}
+}
+
+ge_huaca_cults_province_update = {
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = enables_huaca_cults
+			}
+			OR = {
+				has_owner_accepted_culture = yes
+				has_owner_culture = yes
+			}
+		}
+		add_province_modifier = {
+			name = GE_Huaca_Cults
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = GE_Huaca_Cults
+	}
+}

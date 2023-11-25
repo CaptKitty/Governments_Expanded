@@ -231,11 +231,23 @@ henry_reforms_reform = {
 			which = Royal_Influence
 			value = 1
 		}
+		hidden_effect = {
+			every_owned_province = {
+				ge_device_forts_province_update = yes
+				ge_longbow_training_province_update = yes
+			}
+		}
 	}
 	removed_effect = {
 		change_variable = {
 			which = Royal_Influence
 			value = -1
+		}
+		hidden_effect = {
+			every_owned_province = {
+				ge_device_forts_province_update = yes
+				ge_longbow_training_province_update = yes
+			}
 		}
 	}
 	potential = {

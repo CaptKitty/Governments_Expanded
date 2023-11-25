@@ -979,12 +979,22 @@ hansa_representatives_reform = {
 			which = Plutocrat_Influence
 			value = 1
 		}
+		#hidden_effect = {
+		#	every_owned_province = {
+		#		ge_return_to_sender_province_update = yes
+		#	}
+		#}
 	}
 	removed_effect = {
 		change_variable = {
 			which = Plutocrat_Influence
 			value = -1
 		}
+		#hidden_effect = {
+		#	every_owned_province = {
+		#		ge_return_to_sender_province_update = yes
+		#	}
+		#}
 	}
 	# custom_attributes = {
 		# enables_return_to_sender = yes #25% Trade Value in coastal burgher provinces
@@ -1010,11 +1020,21 @@ confederate_nations_reform = {
 			which = Populist_Influence
 			value = 1
 		}
+		hidden_effect = {
+			every_owned_province = {
+				ge_nations_of_the_republic_province_update = yes
+			}
+		}
 	}
 	removed_effect = {
 		change_variable = {
 			which = Populist_Influence
 			value = -1
+		}
+		hidden_effect = {
+			every_owned_province = {
+				ge_nations_of_the_republic_province_update = yes
+			}
 		}
 	}
 	custom_attributes = {
@@ -1060,6 +1080,20 @@ cultural_judges_reform = {
 	}
 	custom_attributes = {
 		enables_cultural_supremacy = yes #-15% governing cap cost for primary culture provinces
+	}
+	effect = {
+		hidden_effect = {
+			every_owned_province = {
+				ge_cultural_supremacy_province_update = yes
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				ge_cultural_supremacy_province_update = yes
+			}
+		}
 	}
 	ai = {
 		factor = 1
@@ -1157,6 +1191,20 @@ empowered_sovereign_trade_companies_reform = {
 		max_absolutism = -5
 		trade_company_investment_cost = -0.10
 		ae_impact = -0.10
+	}
+	effect = {
+		hidden_effect = {
+			every_owned_province = {
+				ge_voc_mentality_province_update = yes
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				ge_voc_mentality_province_update = yes
+			}
+		}
 	}
 	custom_attributes = {
 		enables_voc_mentality = yes
@@ -1412,6 +1460,20 @@ regents_reform = {
 	}
 	modifiers = {
 		development_cost = -0.10
+	}
+	effect = {
+		hidden_effect = {
+			every_owned_province = {
+				ge_Regent_Investments_province_update = yes
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				ge_Regent_Investments_province_update = yes
+			}
+		}
 	}
 	custom_attributes = {
 		enables_regent_investments = yes

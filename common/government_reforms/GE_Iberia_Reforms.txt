@@ -67,6 +67,20 @@ hispanic_kingdom = {
 		tolerance_own = 1
 		governing_capacity = 100
 	}
+	effect = {
+		hidden_effect = {
+			every_owned_province = {
+				ge_Crown_Of_Aragon_province_update = yes
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				ge_Crown_Of_Aragon_province_update = yes
+			}
+		}
+	}
 	custom_attributes = {
 		enables_crown_of_aragon = yes #25% Autonomy in Aragonese Provinces
 	}

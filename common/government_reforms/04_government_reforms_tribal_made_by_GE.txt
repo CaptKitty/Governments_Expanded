@@ -46,6 +46,20 @@ siberian_tribal_confederation_reform = {
 		land_attrition = -0.15
 		stability_cost_modifier = -0.25
 	}
+	effect = {
+		hidden_effect = {
+			every_owned_province = {
+				ge_siberian_tribe_province_update = yes
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				ge_siberian_tribe_province_update = yes
+			}
+		}
+	}
 	custom_attributes = {
 		enables_siberian_tribe = yes #-25% Development Cost in Glacial provinces
 	}

@@ -1477,11 +1477,21 @@
 				which = Noble_Influence
 				value = 1
 			}
+			hidden_effect = {
+				every_owned_province = {
+					ge_fortified_settlements_province_update = yes
+				}
+			}
 		}
 		removed_effect = {
 			change_variable = {
 				which = Noble_Influence
 				value = -1
+			}
+			hidden_effect = {
+				every_owned_province = {
+					ge_fortified_settlements_province_update = yes
+				}
 			}
 		}
 		potential = {
@@ -1843,11 +1853,21 @@
 				which = Noble_Influence
 				value = 1
 			}
+			hidden_effect = {
+				every_owned_province = {
+					ge_morisca_band_province_update = yes
+				}
+			}
 		}
 		removed_effect = {
 			change_variable = {
 				which = Noble_Influence
 				value = -1
+			}
+			hidden_effect = {
+				every_owned_province = {
+					ge_morisca_band_province_update = yes
+				}
 			}
 		}
 		potential = {
@@ -2260,11 +2280,21 @@
 				which = Royal_Influence
 				value = 1
 			}
+			hidden_effect = {
+				every_owned_province = {
+					ge_mint_towns_province_update = yes
+				}
+			}
 		}
 		removed_effect = {
 			change_variable = {
 				which = Royal_Influence
 				value = -1
+			}
+			hidden_effect = {
+				every_owned_province = {
+					ge_mint_towns_province_update = yes
+				}
 			}
 		}
 		potential = {
@@ -2432,11 +2462,21 @@
 				which = Noble_Influence
 				value = 1
 			}
+			hidden_effect = {
+				every_owned_province = {
+					ge_fortified_settlements_province_update = yes
+				}
+			}
 		}
 		removed_effect = {
 			change_variable = {
 				which = Noble_Influence
 				value = -1
+			}
+			hidden_effect = {
+				every_owned_province = {
+					ge_fortified_settlements_province_update = yes
+				}
 			}
 		}
 		potential = {
@@ -2518,11 +2558,21 @@
 				which = Noble_Influence
 				value = 1
 			}
+			hidden_effect = {
+				every_owned_province = {
+					ge_administrative_forts_province_update = yes
+				}
+			}
 		}
 		removed_effect = {
 			change_variable = {
 				which = Noble_Influence
 				value = -1
+			}
+			hidden_effect = {
+				every_owned_province = {
+					ge_administrative_forts_province_update = yes
+				}
 			}
 		}
 		potential = {
@@ -2562,11 +2612,21 @@
 				which = Noble_Influence
 				value = 1
 			}
+			hidden_effect = {
+				every_owned_province = {
+					ge_caravanserai_province_update = yes
+				}
+			}
 		}
 		removed_effect = {
 			change_variable = {
 				which = Noble_Influence
 				value = -1
+			}
+			hidden_effect = {
+				every_owned_province = {
+					ge_caravanserai_province_update = yes
+				}
 			}
 		}
 		potential = {
@@ -2744,11 +2804,21 @@
 				which = Clergy_Influence
 				value = 1
 			}
+			hidden_effect = {
+				every_owned_province = {
+					ge_religious_adherence_province_update = yes
+				}
+			}
 		}
 		removed_effect = {
 			change_variable = {
 				which = Clergy_Influence
 				value = -1
+			}
+			hidden_effect = {
+				every_owned_province = {
+					ge_religious_adherence_province_update = yes
+				}
 			}
 		}
 		potential = {
@@ -2928,11 +2998,21 @@
 				which = Clergy_Influence
 				value = 1
 			}
+			hidden_effect = {
+				every_owned_province = {
+					ge_religious_adherence_province_update = yes
+				}
+			}
 		}
 		removed_effect = {
 			change_variable = {
 				which = Clergy_Influence
 				value = -1
+			}
+			hidden_effect = {
+				every_owned_province = {
+					ge_religious_adherence_province_update = yes
+				}
 			}
 		}
 		potential = {
@@ -3009,11 +3089,21 @@
 				which = Clergy_Influence
 				value = 1
 			}
+			hidden_effect = {
+				every_owned_province = {
+					ge_religious_adherence_province_update = yes
+				}
+			}
 		}
 		removed_effect = {
 			change_variable = {
 				which = Clergy_Influence
 				value = -1
+			}
+			hidden_effect = {
+				every_owned_province = {
+					ge_religious_adherence_province_update = yes
+				}
 			}
 		}
 		potential = {
@@ -3046,11 +3136,21 @@
 				which = Clergy_Influence
 				value = 1
 			}
+			hidden_effect = {
+				every_owned_province = {
+					ge_huaca_cults_province_update = yes
+				}
+			}
 		}
 		removed_effect = {
 			change_variable = {
 				which = Clergy_Influence
 				value = -1
+			}
+			hidden_effect = {
+				every_owned_province = {
+					ge_huaca_cults_province_update = yes
+				}
 			}
 		}
 		potential = {
@@ -3473,11 +3573,21 @@
 				which = Noble_Influence
 				value = 1
 			}
+			hidden_effect = {
+				every_owned_province = {
+					ge_Satrapy_province_update = yes
+				}
+			}
 		}
 		removed_effect = {
 			change_variable = {
 				which = Noble_Influence
 				value = -1
+			}
+			hidden_effect = {
+				every_owned_province = {
+					ge_Satrapy_province_update = yes
+				}
 			}
 		}
 		potential = {
@@ -3754,11 +3864,21 @@
 				which = Royal_Influence
 				value = 1
 			}
+			hidden_effect = {
+				every_owned_province = {
+					ge_salt_monopoly_province_update = yes
+				}
+			}
 		}
 		removed_effect = {
 			change_variable = {
 				which = Royal_Influence
 				value = -1
+			}
+			hidden_effect = {
+				every_owned_province = {
+					ge_salt_monopoly_province_update = yes
+				}
 			}
 		}
 		potential = {
@@ -3980,11 +4100,21 @@
 				which = Royal_Influence
 				value = 1
 			}
+			hidden_effect = {
+				every_owned_province = {
+					ge_fortified_settlements_province_update = yes
+				}
+			}
 		}
 		removed_effect = {
 			change_variable = {
 				which = Royal_Influence
 				value = -1
+			}
+			hidden_effect = {
+				every_owned_province = {
+					ge_fortified_settlements_province_update = yes
+				}
 			}
 		}
 		potential = {
@@ -5390,6 +5520,20 @@
 			tolerance_own = 1
 			global_missionary_strength = 0.02
 		}
+		effect = {
+			hidden_effect = {
+				every_owned_province = {
+					ge_Church_Poorhouses_province_update = yes
+				}
+			}
+		}
+		removed_effect = {
+			hidden_effect = {
+				every_owned_province = {
+					ge_Church_Poorhouses_province_update = yes
+				}
+			}
+		}
 		custom_attributes = {
 			enables_church_poorhouses = yes
 		}
@@ -6774,11 +6918,21 @@
 				which = Noble_Influence
 				value = 1
 			}
+			hidden_effect = {
+				every_owned_province = {
+					ge_Berber_Herders_province_update = yes
+				}
+			}
 		}
 		removed_effect = {
 			change_variable = {
 				which = Noble_Influence
 				value = -1
+			}
+			hidden_effect = {
+				every_owned_province = {
+					ge_Berber_Herders_province_update = yes
+				}
 			}
 		}
 		potential = {
@@ -7181,6 +7335,20 @@
 		}
 		custom_attributes = {
 			enables_industrialism = yes #+0.2 Goods produced in workshops
+		}
+		effect = {
+			hidden_effect = {
+				every_owned_province = {
+					ge_industrialism_province_update = yes
+				}
+			}
+		}
+		removed_effect = {
+			hidden_effect = {
+				every_owned_province = {
+					ge_industrialism_province_update = yes
+				}
+			}
 		}
 		ai = {
 			factor = 1
