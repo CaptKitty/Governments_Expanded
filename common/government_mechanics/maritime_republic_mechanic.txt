@@ -22,7 +22,7 @@ maritime_republic_mechanic = {
 					limit = {
 						NOT = { has_country_flag = max_maritime_republic_reached }
 					}
-					add_mercantilism = 10
+					add_mercantilism_or_monarch_power = { amount = 10 }
 				}
 				set_country_flag = max_maritime_republic_reached
 			}
