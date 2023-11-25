@@ -89,6 +89,20 @@ monastic_temples_reform = {
 		tolerance_own = 1
 		global_tax_modifier = 0.10
 	}
+	effect = {
+		hidden_effect = {
+			every_owned_province = {
+				ge_monastic_temples_province_update = yes
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				ge_monastic_temples_province_update = yes
+			}
+		}
+	}
 	custom_attributes = {
 		enables_monastic_temples = yes #-25% Development cost in hills and mountains
 	}

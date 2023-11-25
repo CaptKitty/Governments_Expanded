@@ -1201,11 +1201,21 @@ customs_house_of_apena_sheep_reform = {
 			which = Burgher_Influence
 			value = 1
 		}
+		hidden_effect = {
+			every_owned_province = {
+				ge_customs_house_province_update = yes
+			}
+		}
 	}
 	removed_effect = {
 		change_variable = {
 			which = Burgher_Influence
 			value = -1
+		}
+		hidden_effect = {
+			every_owned_province = {
+				ge_customs_house_province_update = yes
+			}
 		}
 	}
 	potential = {
@@ -1419,6 +1429,20 @@ alpini_reform = {
 	}
 	custom_attributes = {
 		enables_mountain_warfare = yes #+1 roll in Italy's hill, highlands and mountains provinces
+	}
+	effect = {
+		hidden_effect = {
+			every_owned_province = {
+				ge_moutain_warfare_province_update = yes
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				ge_moutain_warfare_province_update = yes
+			}
+		}
 	}
 	conditional = {
 		allow = { }

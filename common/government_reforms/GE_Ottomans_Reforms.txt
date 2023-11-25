@@ -58,11 +58,21 @@ qadi_authority_reform = {
 			which = Clergy_Influence
 			value = 1
 		}
+		hidden_effect = {
+			every_owned_province = {
+				ge_qadi_authority_province_update = yes
+			}
+		}
 	}
 	removed_effect = {
 		change_variable = {
 			which = Clergy_Influence
 			value = -1
+		}
+		hidden_effect = {
+			every_owned_province = {
+				ge_qadi_authority_province_update = yes
+			}
 		}
 	}
 	potential = {
@@ -97,11 +107,21 @@ millet_reform = {
 			which = Noble_Influence
 			value = 1
 		}
+		hidden_effect = {
+			every_owned_province = {
+				ge_millet_system_province_update = yes
+			}
+		}
 	}
 	removed_effect = {
 		change_variable = {
 			which = Noble_Influence
 			value = -1
+		}
+		hidden_effect = {
+			every_owned_province = {
+				ge_millet_system_province_update = yes
+			}
 		}
 	}
 	potential = {
@@ -254,11 +274,21 @@ sultanate_of_women_reform = {
 			which = Royal_Influence
 			value = 1
 		}
+		hidden_effect = {
+			every_owned_province = {
+				ge_public_works_province_update = yes
+			}
+		}
 	}
 	removed_effect = {
 		change_variable = {
 			which = Royal_Influence
 			value = -1
+		}
+		hidden_effect = {
+			every_owned_province = {
+				ge_public_works_province_update = yes
+			}
 		}
 	}
 	potential = {
@@ -319,11 +349,21 @@ expanded_devshirme_reform = {
 			which = Royal_Influence
 			value = 1
 		}
+		hidden_effect = {
+			every_owned_province = {
+				ge_devshirme_province_update = yes
+			}
+		}
 	}
 	removed_effect = {
 		change_variable = {
 			which = Royal_Influence
 			value = -1
+		}
+		hidden_effect = {
+			every_owned_province = {
+				ge_devshirme_province_update = yes
+			}
 		}
 	}
 	potential = {

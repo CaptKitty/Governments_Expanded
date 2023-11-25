@@ -230,24 +230,14 @@ reinforce_the_hwangog_reform = {
 	effect = {
 		hidden_effect = {
 			every_owned_province = {
-				limit = {
-					trade_goods = grain
-					NOT = { has_province_modifier = GE_hwangog }
-				}
-				add_province_modifier = {
-					name = GE_hwangog
-					duration = -1
-				}
+				ge_hwangog_province_update = yes
 			}
 		}
 	}
 	removed_effect = {
 		hidden_effect = {
 			every_owned_province = {
-				limit = {
-					has_province_modifier = GE_hwangog
-				}
-				remove_province_modifier = GE_hwangog
+				ge_hwangog_province_update = yes
 			}
 		}
 	}

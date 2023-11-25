@@ -524,6 +524,20 @@ society_of_agriculture_reform = {
 		global_trade_goods_size_modifier = 0.10
 		global_own_trade_power = 0.25
 	}
+	effect = {
+		hidden_effect = {
+			every_owned_province = {
+				ge_society_of_agriculture_province_update = yes
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				ge_society_of_agriculture_province_update = yes
+			}
+		}
+	}
 	custom_attributes = {
 		enables_society_of_agriculture = yes #25% Production Efficiency in Stated Agricultural Goods (Livestock, Grain)
 	}

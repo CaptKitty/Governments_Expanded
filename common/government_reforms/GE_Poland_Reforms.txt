@@ -18,6 +18,20 @@ polish_constitutionalism_reform = {
 		administrative_efficiency = 0.05
 		max_absolutism = -10
 	}
+	effect = {
+		hidden_effect = {
+			every_owned_province = {
+				ge_National_Strenghtening_province_update = yes
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				ge_National_Strenghtening_province_update = yes
+			}
+		}
+	}
 	has_parliament = yes
 	custom_attributes = {
 		enables_national_strenghtening_project = yes #+15% Manpower, -0.05 monthly devastation and -10 Hostile Movement Speed in provinces with accepted culture.

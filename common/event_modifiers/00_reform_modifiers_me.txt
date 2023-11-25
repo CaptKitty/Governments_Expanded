@@ -1414,6 +1414,6 @@ GE_ghulam_regiments = {
 GE_guards_regiments = {
 	land_maintenance_modifier = 1
 	reinforce_speed = -0.50
-	discipline = 0.05
+	discipline = 0.1
 	is_rajput_modifier = yes
 }

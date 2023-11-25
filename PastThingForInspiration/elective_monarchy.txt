@@ -126,6 +126,16 @@ elective_monarchy = {
 		modifiers = {
 			legitimacy = 0.5
 		}
+		effect = {
+			every_owned_province = {
+				ge_bureacratic_apparatus_province_update = yes
+			}
+		}
+		removed_effect = {
+			every_owned_province = {
+				ge_bureacratic_apparatus_province_update = yes
+			}
+		}
 		custom_attributes = {
 			enables_bureacratic_apparatus = yes
 		}
