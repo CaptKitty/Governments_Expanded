@@ -450,12 +450,7 @@ ge_society_of_agriculture_province_update = {
 			owner = {
 				has_government_attribute = enables_society_of_agriculture
 			}
-			OR = {
-				trade_goods = grain
-				trade_goods = wool
-				trade_goods = livestock
-				trade_goods = lumber
-			}
+			has_rural_goods = yes
 		}
 		add_province_modifier = {
 			name = Society_Of_Agriculture
