@@ -242,8 +242,8 @@ on_mil_development = {
 
 on_transfer_development = {
 	ge_on_transfer_development_effect = yes
-	ge_Regent_Investments_province_update
-	ge_kreditwerk_appointments_province_update
+	ge_Regent_Investments_province_update = yes
+	ge_kreditwerk_appointments_province_update = yes
 }
 
 on_province_owner_change = {
