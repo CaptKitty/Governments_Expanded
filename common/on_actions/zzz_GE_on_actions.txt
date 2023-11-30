@@ -230,20 +230,34 @@ on_force_conversion = {
 
 on_adm_development = {
 	ge_on_adm_development_effect = yes
+	ge_kreditwerk_appointments_province_update = yes
+	ge_Regent_Investments_province_update = yes
+	ge_mint_towns_province_update = yes
 }
 
 on_dip_development = {
 	ge_on_dip_development_effect = yes
+	ge_Regent_Investments_province_update = yes
+	ge_mint_towns_province_update = yes
 }
 
 on_mil_development = {
 	ge_on_mil_development_effect = yes
+	ge_Regent_Investments_province_update = yes
+	ge_mint_towns_province_update = yes
 }
 
 on_transfer_development = {
 	ge_on_transfer_development_effect = yes
-	ge_Regent_Investments_province_update = yes
 	ge_kreditwerk_appointments_province_update = yes
+	ge_Regent_Investments_province_update = yes
+	ge_mint_towns_province_update = yes
+}
+
+on_raze = {
+	ge_kreditwerk_appointments_province_update = yes
+	ge_Regent_Investments_province_update = yes
+	ge_mint_towns_province_update = yes
 }
 
 on_province_owner_change = {
@@ -260,7 +274,6 @@ on_province_owner_change = {
 	ge_millet_system_province_update = yes
 	ge_qadi_authority_province_update = yes
 	ge_voc_mentality_province_update = yes
-	ge_return_to_sender_province_update = yes
 	ge_society_of_agriculture_province_update = yes
 	#deactivated ge_return_to_sender_province_update = yes
 	ge_cultural_supremacy_province_update = yes
@@ -344,3 +357,17 @@ on_parliament_seat_lost = {
 	#desactivated every_province_in_state = { ge_bureacratic_apparatus_province_update = yes }
 }
 
+on_yearly_pulse_2 = {
+	every_owned_province = { ge_monastic_temples_province_update = yes }
+	every_owned_province = { ge_device_forts_province_update = yes }
+	every_owned_province = { ge_Church_Poorhouses_province_update = yes }
+	every_owned_province = { ge_industrialism_province_update = yes }
+	every_owned_province = { ge_public_works_province_update = yes }
+	every_owned_province = { ge_caravanserai_province_update = yes }
+	every_owned_province = { ge_religious_adherence_province_update = yes }
+	every_owned_province = { ge_military_governors_province_update = yes }
+	every_owned_province = { ge_fortified_settlements_province_update = yes }
+	every_owned_province = { ge_administrative_forts_province_update = yes }
+	every_owned_province = { ge_Satrapy_province_update = yes }
+	every_owned_province = { ge_voc_mentality_province_update = yes }	
+}
