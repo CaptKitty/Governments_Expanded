@@ -452,7 +452,7 @@ Rural_Development = {
 	local_manpower = 0.5
 }
 Society_Of_Agriculture = {
-	local_production_efficiency = 0.10
+	province_trade_power_value = 2
 	trade_value_modifier = 0.10
 }
 Monastic_Trade = {

@@ -256,6 +256,7 @@ general_war_commissariat_reform_GE = {
 		}
 	}
 	potential = {
+		NOT = { has_dlc = "Domination" }
 		OR = {
 			primary_culture = prussian
 			primary_culture = saxon
@@ -272,7 +273,7 @@ general_war_commissariat_reform_GE = {
 	modifiers = {
 		global_tax_modifier = 0.10
 		global_regiment_cost = -0.05
-		monthly_militarized_society = 0.03
+		monthly_militarized_society = 0.05
 	}
 	custom_attributes = {
 		enables_expansion_of_junker_privileges = yes

@@ -1,4 +1,4 @@
-on_startup = {
+﻿on_startup = {
 	country_event = { id = governments_expanded_events.1 } # set flag
 }
 

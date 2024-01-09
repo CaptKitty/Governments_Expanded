@@ -2,6 +2,7 @@ french_feudalism = {
 	icon = feudalism
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { has_dlc = "Domination"}
 		OR = {
 			culture_group = french
 			has_reform = french_absolutism
@@ -28,6 +29,7 @@ ancien_regime_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 10
 	potential = {
+		NOT = { has_dlc = "Domination"}
 		OR = {
 			culture_group = french
 			has_reform = french_absolutism
@@ -53,6 +55,7 @@ french_absolutism = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 100
 	potential = {
+		NOT = { has_dlc = "Domination"}
 		OR = {
 			culture_group = french
 			has_reform = french_absolutism
@@ -97,11 +100,12 @@ blood_tax_reform = {
 			culture_group = french
 			has_reform = blood_tax_reform
 		}
-		NOT = { has_reform = ancien_regime_reform }
-		NOT = { has_reform = french_absolutism }
 	}
 	trigger = {
 		government_rank = 2
+		NOT = { has_reform = ancien_regime_reform }
+		NOT = { has_reform = french_absolutism }
+		NOT = { has_reform = absolutist_france_reform }
 	}
 	modifiers = {
 		mil_advisor_cost = -0.10
@@ -134,9 +138,12 @@ noblesse_d_epee_reform = {
 			culture_group = french
 			has_reform = noblesse_d_epee_reform
 		}
-		has_reform = ancien_regime_reform
 	}
 	trigger = {
+		OR = {
+			has_reform = ancien_regime_reform
+			has_reform = absolutist_france_reform
+		}
 	}
 	modifiers = {
 		free_leader_pool = 1
@@ -155,13 +162,13 @@ noble_court_attendance_reform = {
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
-			which = Noble_Influence
+			which = Royal_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Noble_Influence
+			which = Royal_Influence
 			value = -1
 		}
 	}
@@ -170,13 +177,17 @@ noble_court_attendance_reform = {
 			culture_group = french
 			has_reform = noble_court_attendance_reform
 		}
-		has_reform = french_absolutism
 	}
 	trigger = {
+		OR = {
+			has_reform = french_absolutism
+			has_reform = absolutist_france_reform
+		}
 	}
 	modifiers = {
 		prestige = 0.5
-		global_unrest = -1
+		max_absolutism = 10
+		nobles_influence_modifier = -0.1
 	}
 	# custom_attributes = {
 		# enables_royal_nobles = yes #10% Legitimacy for "Noble Diet"
@@ -204,10 +215,15 @@ independent_vassals_reform = {
 	}
 	potential = {
 		OR = {
-			primary_culture = cosmopolitan_french
+			culture_group = french
 			has_reform = independent_vassals_reform
 		}
-		has_reform = french_feudalism
+	}
+	trigger = {
+		OR = {
+			has_reform = french_feudalism
+			has_reform = feudal_france_reform
+		}
 	}
 	modifiers = {
 		reduced_liberty_desire = 5
@@ -238,14 +254,19 @@ generalites_reform = {
 	}
 	potential = {
 		OR = {
-			primary_culture = cosmopolitan_french
+			culture_group = french
 			has_reform = generalites_reform
 		}
-		has_reform = ancien_regime_reform
+	}
+	trigger = {
+		OR = {
+			has_reform = ancien_regime_reform
+			has_reform = absolutist_france_reform
+		}
 	}
 	modifiers = {
 		global_autonomy = -0.025
-		global_tax_modifier = 0.10
+		global_tax_modifier = 0.2
 	}
 	ai = {
 		factor = 100
@@ -270,14 +291,19 @@ abolish_local_parliaments_reform = {
 	}
 	potential = {
 		OR = {
-			primary_culture = cosmopolitan_french
+			culture_group = french
 			has_reform = abolish_local_parliaments_reform
 		}
-		has_reform = french_absolutism
+	}
+	trigger = {
+		OR = {
+			has_reform = french_absolutism
+			has_reform = absolutist_france_reform
+		}
 	}
 	modifiers = {
 		global_tax_modifier = 0.15
-		yearly_absolutism = 0.25
+		yearly_absolutism = 0.5
 	}
 	ai = {
 		factor = 100
@@ -286,27 +312,30 @@ abolish_local_parliaments_reform = {
 
 #T3.5
 
-compagnies_dordonnance_reform = {
+compagnies_dordonnance_reform_GE = {
 	icon = france_compagnies
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
-			which = Noble_Influence
+			which = Royal_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Noble_Influence
+			which = Royal_Influence
 			value = -1
 		}
 	}
 	potential = {
+		NOT = { has_dlc = "Domination"}
+		tag = FRA
 		OR = {
-			primary_culture = cosmopolitan_french
-			has_reform = compagnies_dordonnance_reform
+			culture_group = french
+			has_reform = compagnies_dordonnance_reform_GE
 		}
-		has_reform = french_feudalism
+	}
+	trigger = {
 	}
 	modifiers = {
 		infantry_power = 0.05
@@ -337,15 +366,19 @@ abolish_the_patronage_system_reform = {
 	}
 	potential = {
 		OR = {
-			primary_culture = cosmopolitan_french
+			culture_group = french
 			has_reform = abolish_the_patronage_system_reform
 		}
-		has_reform = ancien_regime_reform
+	}
+	trigger = {
+		OR = {
+			has_reform = ancien_regime_reform
+			has_reform = absolutist_france_reform
+		}
 	}
 	modifiers = {
-		land_maintenance_modifier = -0.05
 		cavalry_power = 0.15
-		cavalry_cost = -0.10
+		cavalry_cost = -0.15
 	}
 	custom_attributes = {
 		enables_foreign_worship = yes #10% Religious Unity if you employ mercenaries
@@ -373,10 +406,15 @@ royal_training_reform = {
 	}
 	potential = {
 		OR = {
-			primary_culture = cosmopolitan_french
+			culture_group = french
 			has_reform = royal_training_reform
 		}
-		has_reform = french_absolutism
+	}
+	trigger = {
+		OR = {
+			has_reform = french_absolutism
+			has_reform = absolutist_france_reform
+		}
 	}
 	modifiers = {
 		drill_gain_modifier = 0.25
@@ -412,12 +450,15 @@ parisian_court_reform = {
 	}
 	potential = {
 		OR = {
-			primary_culture = cosmopolitan_french
+			culture_group = french
 			has_reform = parisian_court_reform
 		}
+	}
+	trigger = {
 		OR = {
-			has_reform = french_feudalism
 			has_reform = ancien_regime_reform
+			has_reform = french_absolutism
+			has_reform = absolutist_france_reform
 		}
 	}
 	modifiers = {
@@ -449,12 +490,15 @@ corps_diplomatique_reform = {
 	}
 	potential = {
 		OR = {
-			primary_culture = cosmopolitan_french
+			culture_group = french
 			has_reform = corps_diplomatique_reform
 		}
+	}
+	trigger = {
 		OR = {
-			has_reform = french_absolutism
 			has_reform = ancien_regime_reform
+			has_reform = french_absolutism
+			has_reform = absolutist_france_reform
 		}
 	}
 	modifiers = {
@@ -476,10 +520,15 @@ weak_burghers_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			primary_culture = cosmopolitan_french
+			culture_group = french
 			has_reform = weak_burghers_reform
 		}
-		NOT = { has_reform = french_absolutism }
+	}
+	trigger = {
+		OR = {
+			has_reform = french_feudalism
+			has_reform = feudal_france_reform
+		}
 	}
 	modifiers = {
 		war_taxes_cost_modifier = -0.5
@@ -495,13 +544,18 @@ bourgeoisie_aristocracy_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			primary_culture = cosmopolitan_french
+			culture_group = french
 			has_reform = bourgeoisie_aristocracy_reform
 		}
-		has_reform = ancien_regime_reform
+	}
+	trigger = {
+		OR = {
+			has_reform = ancien_regime_reform
+			has_reform = absolutist_france_reform
+		}
 	}
 	modifiers = {
-		global_tax_modifier = 0.10
+		production_efficiency = 0.10
 		global_trade_goods_size_modifier = 0.05
 	}
 	ai = {
@@ -515,14 +569,18 @@ society_of_agriculture_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			primary_culture = cosmopolitan_french
+			culture_group = french
 			has_reform = society_of_agriculture_reform
 		}
-		has_reform = french_absolutism
+	}
+	trigger = {
+		OR = {
+			has_reform = french_absolutism
+			has_reform = absolutist_france_reform
+		}
 	}
 	modifiers = {
-		global_trade_goods_size_modifier = 0.10
-		global_own_trade_power = 0.25
+		global_trade_goods_size_modifier = 0.05
 	}
 	effect = {
 		hidden_effect = {
@@ -558,7 +616,6 @@ conseil_souverain_reform = {
 		}
 	}
 	modifiers = {
-		global_tariffs = 0.20
 		global_foreign_trade_power = 0.15
 		trade_steering = 0.20
 	}
@@ -597,18 +654,6 @@ continental_system_reform = {
 droit_divine_reform = {
 	icon = french_louis
 	allow_normal_conversion = yes
-	effect = {
-		change_variable = {
-			which = Royal_Influence
-			value = 1
-		}
-	}
-	removed_effect = {
-		change_variable = {
-			which = Royal_Influence
-			value = -1
-		}
-	}
 	potential = {
 		OR = {
 			culture_group = french

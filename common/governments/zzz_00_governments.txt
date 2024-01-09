@@ -554,12 +554,10 @@ monarchy = {
 				south_east_asian_elephants_reform
 				portugese_marines_reform
 				#les_vieux_corps_reform
-				compagnies_dordonnance_reform
+				compagnies_dordonnance_reform_GE
 				abolish_the_patronage_system_reform
 				royal_training_reform
 				abolish_manrent_reform
-				permanent_marathas_council_reform
-				governmental_purbias_register_reform
 				foreign_formation_regiments_reform
 				general_war_commissariat_reform_GE
 				gustavan_artillery_reform
@@ -683,6 +681,8 @@ monarchy = {
 				dakhni_culture_reform
 				zabt_reform
 				dyanstic_administration_reform
+				permanent_marathas_council_reform
+				governmental_purbias_register_reform
 				revolutionary_principle_reform
 				equality_principle_reform
 				imperial_principle_reform
@@ -1060,8 +1060,6 @@ republic = {
 		protectorate_parliament_legacy
 		prussian_republic
 		united_cantons_legacy
-		#Mamluks
-		egyptian_government_reform
 		# ME Legacy Governments:
 		greek_league
 		athenian_republic_legacy
@@ -1109,6 +1107,8 @@ republic = {
 				parliamentary_republic_reform
 				absolute_shogunate_reform
 				japanese_divine_empire
+				#Mamluks
+				egyptian_government_reform
 				### GE ###
 				florentine_republic
 				#american_government
@@ -1182,6 +1182,8 @@ republic = {
 				consolidate_power_in_cities_reform
 				force_reelection_reform
 				devotee_to_the_people_reform
+				permanent_marathas_council_reform
+				governmental_purbias_register_reform
 				lottery_reform
 				council_of_the_indies_reform
 				legislative_assembly_reform
@@ -1303,6 +1305,7 @@ republic = {
 				modernized_furusiyya_reform
 				cawa_auxiliary_forces
 				### GE ###
+				compagnies_dordonnance_reform_GE
 				feudal_levies_reform
 				national_guard_reform
 				milizia_nationale_reform
@@ -1314,8 +1317,6 @@ republic = {
 				tatar_mercenaries_reform
 				south_east_asian_elephants_reform
 				portugese_marines_reform
-				permanent_marathas_council_reform
-				governmental_purbias_register_reform
 				foreign_formation_regiments_reform
 				general_war_commissariat_reform_GE
 				gustavan_artillery_reform
@@ -1704,17 +1705,12 @@ tribal = {
 		}
 		tribal_military_doctrines = {
 			reforms = {
-				organized_military_staff_reform
-				military_engineering_reform
-				defensive_stance_reform
 				sygnakhs_system_reform
 				sustained_discipline_reform
 				cavalry_warfare_reform
 				mercenary_leadership_reform
 				#Visible but locked
-				amphibious_specialization_reform
 				royal_marines_reform
-				maritime_military_reform
 				professional_navy_reform
 				doppelsoldner_reform
 				#Invisible until unlocked
@@ -1761,6 +1757,11 @@ tribal = {
 				merchant_arsenal_reform
 				tercios_reform
 				expanded_black_army_reform
+				#1.36
+				sparapet_office
+				legacy_of_the_seljuk_reform
+				modernized_furusiyya_reform
+				cawa_auxiliary_forces
 				### GE ###
 				gunpowder_weapons_reform
 				gunpowder_weapons_african_reform
@@ -2043,12 +2044,11 @@ theocracy = {
 				modernized_furusiyya_reform
 				cawa_auxiliary_forces
 				### GE ###
+				compagnies_dordonnance_reform_GE
 				holy_war_reform
 				militarized_monasteries_reform
 				brothers_in_arms_reform
 				the_bishops_army_reform
-				permanent_marathas_council_reform
-				governmental_purbias_register_reform
 				mamluk_soldiers_reform
 				tradition_of_masada_and_bar_kochba_reform
 				turkoman_gunners_reform
@@ -2086,6 +2086,8 @@ theocracy = {
 			reforms = {
 				subservient_administrators_reform
 				religious_administrators_reform
+				permanent_marathas_council_reform
+				governmental_purbias_register_reform
 				loyal_nobility_reform
 				pious_merchants_reform
 				monastic_breweries_reform
