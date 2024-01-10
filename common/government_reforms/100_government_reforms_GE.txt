@@ -89,6 +89,13 @@
 		custom_attributes = {
 			enables_roman_empire = yes #Co-Emperor Mechanic
 		}
+		removed_effect = {
+			hidden_effect = {
+				remove_country_modifier = GE_Roman_Empire_Corruption
+				remove_country_modifier = GE_Roman_Empire_Administration
+				remove_country_modifier = GE_Roman_Empire_Drill
+			}
+		}
 	}
 
 	beylik = {
@@ -245,6 +252,26 @@
 					}
 				}
 				has_reform = habsburg_monarchy_reform
+			}
+		}
+		effect = {
+			hidden_effect = {
+				every_subject_country = {
+					limit = {
+						religion = catholic
+					}
+					add_country_modifier = {
+						name = "Religious_Domination"
+						duration = -1
+					}
+				}
+			}
+		}
+		removed_effect = {
+			hidden_effect = {
+				every_subject_country = {
+					remove_country_modifier = Religious_Domination
+				}
 			}
 		}
 		modifiers = {
@@ -639,6 +666,28 @@
 			enables_crusader_order = yes
 			enables_divine_blood = yes
 		}
+		effect = {
+			hidden_effect = {
+				country_event = { 
+					id = reform_me_events.67
+					days = 1
+				}
+			}
+		}
+		removed_effect = {
+			hidden_effect = {
+				remove_country_modifier = Crusader_Order_1
+				remove_country_modifier = Crusader_Order_2
+				remove_country_modifier = Crusader_Order_3
+				remove_country_modifier = Crusader_Order_4
+				remove_country_modifier = Crusader_Order_5
+				remove_country_modifier = Crusader_Order_6
+				remove_country_modifier = Crusader_Order_7
+				remove_country_modifier = Crusader_Order_8
+				remove_country_modifier = Crusader_Order_9
+				remove_country_modifier = Crusader_Order_10
+			}
+		}
 		conditional = {
 			allow = { has_dlc = "Cradle of Civilization" }
 			government_abilities = {
@@ -667,6 +716,19 @@
 		}
 		custom_attributes = {
 			enables_royal_council = yes
+		}
+		effect = {
+			hidden_effect = {
+				country_event = { 
+					id = reform_me_events.52
+					days = 1
+				}
+			}
+		}
+		removed_effect = {
+			hidden_effect = {
+				ge_country_royal_council_remove = yes
+			}
 		}
 		factions = {
 			GE_orthodox
@@ -709,6 +771,20 @@
 		}
 		custom_attributes = {
 			enables_custodian_of_cities = yes
+		}
+		removed_effect = {
+			hidden_effect = {
+				remove_country_modifier = GE_Kaza_System_0
+				remove_country_modifier = GE_Kaza_System_1
+				remove_country_modifier = GE_Kaza_System_2
+				remove_country_modifier = GE_Kaza_System_3
+				remove_country_modifier = GE_Kaza_System_4
+				remove_country_modifier = GE_Kaza_System_5
+				remove_country_modifier = GE_Kaza_System_6
+				remove_country_modifier = GE_Kaza_System_7
+				remove_country_modifier = GE_Kaza_System_8
+				remove_country_modifier = GE_Kaza_System_9
+			}
 		}
 		conditional = {
 			allow = { has_dlc = "Cradle of Civilization" }
@@ -777,6 +853,19 @@
 		custom_attributes = {
 			enables_royal_council = yes
 		}
+		effect = {
+			hidden_effect = {
+				country_event = { 
+					id = reform_me_events.52
+					days = 1
+				}
+			}
+		}
+		removed_effect = {
+			hidden_effect = {
+				ge_country_royal_council_remove = yes
+			}
+		}
 		ai = {
 			factor = 100
 		}
@@ -797,6 +886,16 @@
 		}
 		custom_attributes = {
 			enables_unite_the_malay = yes #5% Naval Force Limit and Sailors for each Accepted Malay Culture.
+		}
+		effect = {
+			hidden_effect = {
+				ge_country_unite_the_malay_update = yes
+			}
+		}
+		removed_effect = {
+			hidden_effect = {
+				ge_country_unite_the_malay_update = yes
+			}
 		}
 		ai = {
 			factor = 100
@@ -938,6 +1037,19 @@
 		custom_attributes = {
 			enables_royal_council = yes
 		}
+		effect = {
+			hidden_effect = {
+				country_event = { 
+					id = reform_me_events.52
+					days = 1
+				}
+			}
+		}
+		removed_effect = {
+			hidden_effect = {
+				ge_country_royal_council_remove = yes
+			}
+		}
 		ai = {
 			factor = 100
 		}
@@ -1014,6 +1126,19 @@
 		custom_attributes = {
 			enables_royal_council = yes
 		}
+		effect = {
+			hidden_effect = {
+				country_event = { 
+					id = reform_me_events.52
+					days = 1
+				}
+			}
+		}
+		removed_effect = {
+			hidden_effect = {
+				ge_country_royal_council_remove = yes
+			}
+		}
 		ai = {
 			factor = 1
 		}
@@ -1085,11 +1210,21 @@
 				which = Clergy_Influence
 				value = 1
 			}
+			hidden_effect = {
+				PAP = {
+					add_opinion = { who = ROOT modifier = opinion_papal_delegation }
+				}
+			}
 		}
 		removed_effect = {
 			change_variable = {
 				which = Clergy_Influence
 				value = -1
+			}
+			hidden_effect = {
+				PAP = {
+					remove_opinion = { who = ROOT modifier = opinion_papal_delegation }
+				}
 			}
 		}
 		custom_attributes = {
@@ -1866,7 +2001,7 @@
 			}
 			hidden_effect = {
 				every_owned_province = {
-					ge_morisca_band_province_update = yes
+					remove_province_modifier = Morisca_Band
 				}
 			}
 		}
@@ -1950,11 +2085,17 @@
 				which = Clergy_Influence
 				value = 1
 			}
+			hidden_effect = {
+				ge_country_militant_orders_update = yes
+			}
 		}
 		removed_effect = {
 			change_variable = {
 				which = Clergy_Influence
 				value = -1
+			}
+			hidden_effect = {
+				ge_country_militant_orders_update = yes
 			}
 		}
 		potential = {
@@ -2293,7 +2434,7 @@
 			}
 			hidden_effect = {
 				every_owned_province = {
-					ge_mint_towns_province_update = yes
+					remove_province_modifier = Mint_Towns
 				}
 			}
 		}
@@ -2330,11 +2471,17 @@
 				which = Noble_Influence
 				value = 1
 			}
+			hidden_effect = {
+				ge_country_militant_orders_update = yes
+			}
 		}
 		removed_effect = {
 			change_variable = {
 				which = Noble_Influence
 				value = -1
+			}
+			hidden_effect = {
+				ge_country_militant_orders_update = yes
 			}
 		}
 		potential = {
@@ -2571,7 +2718,7 @@
 			}
 			hidden_effect = {
 				every_owned_province = {
-					ge_administrative_forts_province_update = yes
+					remove_province_modifier = Administrative_Forts
 				}
 			}
 		}
@@ -2625,7 +2772,7 @@
 			}
 			hidden_effect = {
 				every_owned_province = {
-					ge_caravanserai_province_update = yes
+					remove_province_modifier = GE_Caravanserai
 				}
 			}
 		}
@@ -2700,11 +2847,24 @@
 				which = Clergy_Influence
 				value = 1
 			}
+			hidden_effect = {
+				country_event = { 
+					id = reform_me_events.33
+					days = 1
+				}
+			}
 		}
 		removed_effect = {
 			change_variable = {
 				which = Clergy_Influence
 				value = -1
+			}
+			hidden_effect = {
+				remove_country_modifier = Holy_Tithe_1
+				remove_country_modifier = Holy_Tithe_2
+				remove_country_modifier = Holy_Tithe_3
+				remove_country_modifier = Holy_Tithe_4
+				remove_country_modifier = Holy_Tithe_5
 			}
 		}
 		potential = {
@@ -2817,7 +2977,7 @@
 			}
 			hidden_effect = {
 				every_owned_province = {
-					ge_religious_adherence_province_update = yes
+					remove_province_modifier = GE_Religious_Adherence
 				}
 			}
 		}
@@ -3011,7 +3171,7 @@
 			}
 			hidden_effect = {
 				every_owned_province = {
-					ge_religious_adherence_province_update = yes
+					remove_province_modifier = GE_Religious_Adherence
 				}
 			}
 		}
@@ -3102,7 +3262,7 @@
 			}
 			hidden_effect = {
 				every_owned_province = {
-					ge_religious_adherence_province_update = yes
+					remove_province_modifier = GE_Religious_Adherence
 				}
 			}
 		}
@@ -3149,7 +3309,7 @@
 			}
 			hidden_effect = {
 				every_owned_province = {
-					ge_huaca_cults_province_update = yes
+					remove_province_modifier = GE_Huaca_Cults
 				}
 			}
 		}
@@ -3190,6 +3350,18 @@
 			change_variable = {
 				which = Royal_Influence
 				value = -1
+			}			
+			hidden_effect = {
+				remove_country_modifier = Jurisprudence_1
+				remove_country_modifier = Jurisprudence_2
+				remove_country_modifier = Jurisprudence_3
+				remove_country_modifier = Jurisprudence_4
+				remove_country_modifier = Jurisprudence_5
+				remove_country_modifier = Jurisprudence_6
+				remove_country_modifier = Jurisprudence_7
+				remove_country_modifier = Jurisprudence_8
+				remove_country_modifier = Jurisprudence_9
+				remove_country_modifier = Jurisprudence_10
 			}
 		}
 		potential = {
@@ -3586,7 +3758,7 @@
 			}
 			hidden_effect = {
 				every_owned_province = {
-					ge_Satrapy_province_update = yes
+					remove_province_modifier = Satrapy
 				}
 			}
 		}
@@ -3877,7 +4049,7 @@
 			}
 			hidden_effect = {
 				every_owned_province = {
-					ge_salt_monopoly_province_update = yes
+					remove_province_modifier = Salt_Monopoly
 				}
 			}
 		}
@@ -4698,11 +4870,29 @@
 				which = Burgher_Influence
 				value = 1
 			}
+			hidden_effect = {
+				country_event = { 
+					id = reform_me_events.59
+					days = 1
+				}
+			}
 		}
 		removed_effect = {
 			change_variable = {
 				which = Burgher_Influence
 				value = -1
+			}
+			hidden_effect = {
+				remove_country_modifier = Foreign_Artists_1
+				remove_country_modifier = Foreign_Artists_2
+				remove_country_modifier = Foreign_Artists_3
+				remove_country_modifier = Foreign_Artists_4
+				remove_country_modifier = Foreign_Artists_5
+				remove_country_modifier = Foreign_Artists_6
+				remove_country_modifier = Foreign_Artists_7
+				remove_country_modifier = Foreign_Artists_8
+				remove_country_modifier = Foreign_Artists_9
+				remove_country_modifier = Foreign_Artists_10
 			}
 		}
 		potential = {
@@ -4743,11 +4933,33 @@
 				which = Noble_Influence
 				value = 1
 			}
+			hidden_effect = {
+				country_event = { 
+					id = reform_me_events.35
+					days = 1
+				}
+				country_event = { 
+					id = reform_me_events.37
+					days = 1
+				}
+			}
 		}
 		removed_effect = {
 			change_variable = {
 				which = Noble_Influence
 				value = -1
+			}
+			hidden_effect = {
+				remove_country_modifier = General_Connections_1
+				remove_country_modifier = General_Connections_2
+				remove_country_modifier = General_Connections_3
+				remove_country_modifier = General_Connections_4
+				remove_country_modifier = General_Connections_5
+				remove_country_modifier = General_Connections_6
+				remove_country_modifier = General_Connections_7
+				remove_country_modifier = General_Connections_8
+				remove_country_modifier = General_Connections_9
+				remove_country_modifier = General_Connections_10
 			}
 		}
 		potential = {
@@ -4931,6 +5143,12 @@
 		custom_attributes = {
 			enables_eastern_courts = yes
 		}
+		removed_effect = {
+			hidden_effect = {
+				remove_country_modifier = GE_eastern_courts_incorruptible
+				remove_country_modifier = GE_eastern_courts_corruptible
+			}
+		}
 		ai = {
 			factor = 100
 		}
@@ -4960,6 +5178,12 @@
 		}
 		custom_attributes = {
 			enables_eastern_courts = yes
+		}
+		removed_effect = {
+			hidden_effect = {
+				remove_country_modifier = GE_eastern_courts_incorruptible
+				remove_country_modifier = GE_eastern_courts_corruptible
+			}
 		}
 		ai = {
 			factor = 100
@@ -5330,6 +5554,19 @@
 		custom_attributes = {
 			enables_royal_council = yes
 		}
+		effect = {
+			hidden_effect = {
+				country_event = { 
+					id = reform_me_events.52
+					days = 1
+				}
+			}
+		}
+		removed_effect = {
+			hidden_effect = {
+				ge_country_royal_council_remove = yes
+			}
+		}
 		ai = {
 			factor = 10
 		}
@@ -5409,6 +5646,16 @@
 		}
 		custom_attributes = {
 			enables_militant_orders = yes #25% manpower recovery and 1AT during war with heretics n heathens
+		}
+		effect = {
+			hidden_effect = {
+				ge_country_militant_orders_update = yes
+			}
+		}
+		removed_effect = {
+			hidden_effect = {
+				ge_country_militant_orders_update = yes
+			}
 		}
 		ai = {
 			factor = 10
@@ -5496,6 +5743,21 @@
 			diet_increases_not_influence = yes
 			enables_burgher_council = yes
 		}
+		effect = {
+			hidden_effect = {
+				country_event = { 
+					id = reform_me_events.88
+					days = 1
+				}
+			}
+		}
+		removed_effect = {
+			hidden_effect = {
+				remove_country_modifier = Autarky
+				remove_country_modifier = Balanced_Policy
+				remove_country_modifier = Open_Doors
+			}
+		}
 		ai = {
 			factor = 0
 		}
@@ -5530,7 +5792,7 @@
 		removed_effect = {
 			hidden_effect = {
 				every_owned_province = {
-					ge_Church_Poorhouses_province_update = yes
+					remove_province_modifier = Church_Poorhouses
 				}
 			}
 		}
@@ -5786,6 +6048,13 @@
 		custom_attributes = {
 			enables_qing_court = yes
 		}
+		removed_effect = {
+			hidden_effect = {
+				remove_country_modifier = GE_qing_court_small
+				remove_country_modifier = GE_qing_court_medium
+				remove_country_modifier = GE_qing_court_large
+			}
+		}
 		ai = {
 			factor = 100
 		}
@@ -5941,6 +6210,28 @@
 		}
 		modifiers = {
 			merchants = 1
+		}
+		effect = {
+			hidden_effect = {
+				country_event = { 
+					id = reform_me_events.59
+					days = 1
+				}
+			}
+		}
+		removed_effect = {
+			hidden_effect = {
+				remove_country_modifier = Foreign_Artists_1
+				remove_country_modifier = Foreign_Artists_2
+				remove_country_modifier = Foreign_Artists_3
+				remove_country_modifier = Foreign_Artists_4
+				remove_country_modifier = Foreign_Artists_5
+				remove_country_modifier = Foreign_Artists_6
+				remove_country_modifier = Foreign_Artists_7
+				remove_country_modifier = Foreign_Artists_8
+				remove_country_modifier = Foreign_Artists_9
+				remove_country_modifier = Foreign_Artists_10
+			}
 		}
 		custom_attributes = {
 			enables_foreign_artists = yes #0.1 Prestige per Merchant.
@@ -6203,11 +6494,21 @@
 				which = Noble_Influence
 				value = 1
 			}
+			every_subject_country = {
+				hidden_effect = {
+					ge_country_marcher_lords_update = yes
+				}
+			}
 		}
 		removed_effect = {
 			change_variable = {
 				which = Noble_Influence
 				value = -1
+			}
+			every_subject_country = {
+				hidden_effect = {
+					remove_country_modifier = GE_Marcher_Lords
+				}
 			}
 		}
 		potential = {
@@ -6262,7 +6563,6 @@
 		}
 		custom_attributes = {
 			enables_white_knights = yes
-			#enables_noble_knights = yes #5% shock damage if you have aristocratic ideas.
 		}
 		ai = {
 			factor = 1
@@ -6385,11 +6685,29 @@
 				which = Clergy_Influence
 				value = 1
 			}
+			hidden_effect = {
+				country_event = { 
+					id = reform_me_events.67
+					days = 1
+				}
+			}
 		}
 		removed_effect = {
 			change_variable = {
 				which = Clergy_Influence
 				value = -1
+			}
+			hidden_effect = {
+				remove_country_modifier = Crusader_Order_1
+				remove_country_modifier = Crusader_Order_2
+				remove_country_modifier = Crusader_Order_3
+				remove_country_modifier = Crusader_Order_4
+				remove_country_modifier = Crusader_Order_5
+				remove_country_modifier = Crusader_Order_6
+				remove_country_modifier = Crusader_Order_7
+				remove_country_modifier = Crusader_Order_8
+				remove_country_modifier = Crusader_Order_9
+				remove_country_modifier = Crusader_Order_10
 			}
 		}
 		potential = {
@@ -6931,7 +7249,7 @@
 			}
 			hidden_effect = {
 				every_owned_province = {
-					ge_Berber_Herders_province_update = yes
+					remove_province_modifier = Berber_Herders
 				}
 			}
 		}
@@ -7346,7 +7664,8 @@
 		removed_effect = {
 			hidden_effect = {
 				every_owned_province = {
-					ge_industrialism_province_update = yes
+					remove_province_modifier = Promoted_Industry
+					remove_province_modifier = Promoted_Industry_v2
 				}
 			}
 		}
@@ -7371,6 +7690,20 @@
 		}
 		custom_attributes = {
 			enables_home_market = yes #1.5% Trade Efficiency per 10% Mercantilism
+		}
+		removed_effect = {
+			hidden_effect = {
+				remove_country_modifier = Home_Market_1
+				remove_country_modifier = Home_Market_2
+				remove_country_modifier = Home_Market_3
+				remove_country_modifier = Home_Market_4
+				remove_country_modifier = Home_Market_5
+				remove_country_modifier = Home_Market_6
+				remove_country_modifier = Home_Market_7
+				remove_country_modifier = Home_Market_8
+				remove_country_modifier = Home_Market_9
+				remove_country_modifier = Home_Market_10
+			}
 		}
 		ai = {
 			factor = 1

@@ -136,6 +136,22 @@ union_of_crowns_reform = {
 		legitimacy = 0.5
 		diplomatic_reputation = 1
 	}
+	effect = {
+		hidden_effect = {
+			country_event = { 
+				id = reform_me_events.44
+				days = 1
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			remove_country_modifier = Pride_of_the_Navy_1
+			remove_country_modifier = Pride_of_the_Navy_2
+			remove_country_modifier = Pride_of_the_Navy_3
+			remove_country_modifier = Pride_of_the_Navy_4
+		}
+	}
 	custom_attributes = {
 		enables_pride_of_the_navy = yes
 	}
@@ -162,6 +178,22 @@ declaration_of_breda_reform = {
 	modifiers = {
 		religious_unity = 0.15
 		war_exhaustion = -0.025
+	}
+	effect = {
+		hidden_effect = {
+			country_event = { 
+				id = reform_me_events.44
+				days = 1
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			remove_country_modifier = Pride_of_the_Navy_1
+			remove_country_modifier = Pride_of_the_Navy_2
+			remove_country_modifier = Pride_of_the_Navy_3
+			remove_country_modifier = Pride_of_the_Navy_4
+		}
 	}
 	custom_attributes = {
 		enables_pride_of_the_navy = yes
@@ -215,6 +247,20 @@ commonwealth_of_nations_reform = {
 		vassal_forcelimit_bonus = 1.0
 		reduced_liberty_desire = 5
 	}
+	effect = {
+		hidden_effect = {
+			every_subject_country = {
+				ge_country_such_waste_of_life_update = yes
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_subject_country = {
+				remove_country_modifier = Colonial_Militias
+			}
+		}
+	}
 	custom_attributes = {
 		enables_such_waste_of_life = yes
 	}
@@ -245,8 +291,8 @@ henry_reforms_reform = {
 		}
 		hidden_effect = {
 			every_owned_province = {
-				ge_device_forts_province_update = yes
-				ge_longbow_training_province_update = yes
+				remove_province_modifier = Device_Forts
+				remove_province_modifier = Longbow_Training
 			}
 		}
 	}

@@ -20,3 +20,721 @@ remove_vassal_tax = {
 	remove_country_modifier = GE_vassal_tax_script_19
 	remove_country_modifier = GE_vassal_tax_script_20
 }
+
+ge_country_religious_domination_update = {
+	if = {
+		limit = {
+			is_subject = yes
+			overlord = { has_government_attribute = enables_religious_domination }
+			religion = catholic
+		}
+		add_country_modifier = {
+			name = "Religious_Domination"
+			duration = -1
+		}
+	}
+	else = {
+		remove_country_modifier = Religious_Domination
+	}
+}
+
+ge_country_marcher_lords_update = {
+	if = {
+		limit = {
+			overlord = { has_government_attribute = enables_marcher_lords }
+			is_subject = yes
+			is_colonial_nation = no
+		}
+		add_country_modifier = {
+			name = "GE_Marcher_Lords"
+			duration = -1
+		}
+	}
+	else = {
+		remove_country_modifier = GE_Marcher_Lords
+	}
+}
+
+ge_country_unrestricted_diplomats_add = {
+	if = {
+		limit = {
+			has_government_attribute = enables_unrestricted_diplomats
+		}
+		every_known_country = {
+			add_opinion = { who = ROOT modifier = opinion_unrestricted_diplomacy }
+		}
+	}
+}
+
+ge_country_unrestricted_diplomats_add = {
+	if = {
+		limit = {
+			has_government_attribute = enables_unrestricted_diplomats
+		}
+		every_known_country = {
+			add_opinion = { who = ROOT modifier = opinion_unrestricted_diplomacy }
+		}
+	}
+}
+
+ge_country_unite_the_malay_update = {
+	remove_country_modifier = Malay_Sailors_1
+	remove_country_modifier = Malay_Sailors_2
+	remove_country_modifier = Malay_Sailors_3
+	remove_country_modifier = Malay_Sailors_4
+	remove_country_modifier = Malay_Sailors_5
+	remove_country_modifier = Malay_Sailors_6
+	remove_country_modifier = Malay_Sailors_7
+	if = {
+		limit = {
+			has_government_attribute = enables_unite_the_malay
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+						accepted_culture = polynesian
+						accepted_culture = cham
+						accepted_culture = malayan
+						accepted_culture = sumatran
+						accepted_culture = javanese
+						accepted_culture = filipino
+						accepted_culture = bornean
+						accepted_culture = madagascan
+						accepted_culture = sulawesi
+				}
+				NOT = {
+					calc_true_if = {
+							accepted_culture = polynesian
+							accepted_culture = cham
+							accepted_culture = malayan
+							accepted_culture = sumatran
+							accepted_culture = javanese
+							accepted_culture = filipino
+							accepted_culture = bornean
+							accepted_culture = madagascan
+							accepted_culture = sulawesi
+						amount = 2
+					}
+				}
+			}
+			add_country_modifier = {
+				name = Malay_Sailors_1
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+						accepted_culture = polynesian
+						accepted_culture = cham
+						accepted_culture = malayan
+						accepted_culture = sumatran
+						accepted_culture = javanese
+						accepted_culture = filipino
+						accepted_culture = bornean
+						accepted_culture = madagascan
+						accepted_culture = sulawesi
+					amount = 2
+				}
+				NOT = {
+					calc_true_if = {
+							accepted_culture = polynesian
+							accepted_culture = cham
+							accepted_culture = malayan
+							accepted_culture = sumatran
+							accepted_culture = javanese
+							accepted_culture = filipino
+							accepted_culture = bornean
+							accepted_culture = madagascan
+							accepted_culture = sulawesi
+						amount = 3
+					}
+				}
+			}
+			add_country_modifier = {
+				name = Malay_Sailors_2
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+						accepted_culture = polynesian
+						accepted_culture = cham
+						accepted_culture = malayan
+						accepted_culture = sumatran
+						accepted_culture = javanese
+						accepted_culture = filipino
+						accepted_culture = bornean
+						accepted_culture = madagascan
+						accepted_culture = sulawesi
+					amount = 3
+				}
+				NOT = {
+					calc_true_if = {
+							accepted_culture = polynesian
+							accepted_culture = cham
+							accepted_culture = malayan
+							accepted_culture = sumatran
+							accepted_culture = javanese
+							accepted_culture = filipino
+							accepted_culture = bornean
+							accepted_culture = madagascan
+							accepted_culture = sulawesi
+						amount = 4
+					}
+				}
+			}
+			add_country_modifier = {
+				name = Malay_Sailors_3
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+						accepted_culture = polynesian
+						accepted_culture = cham
+						accepted_culture = malayan
+						accepted_culture = sumatran
+						accepted_culture = javanese
+						accepted_culture = filipino
+						accepted_culture = bornean
+						accepted_culture = madagascan
+						accepted_culture = sulawesi
+					amount = 4
+				}
+				NOT = {
+					calc_true_if = {
+							accepted_culture = polynesian
+							accepted_culture = cham
+							accepted_culture = malayan
+							accepted_culture = sumatran
+							accepted_culture = javanese
+							accepted_culture = filipino
+							accepted_culture = bornean
+							accepted_culture = madagascan
+							accepted_culture = sulawesi
+						amount = 5
+					}
+				}
+			}
+			add_country_modifier = {
+				name = Malay_Sailors_4
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+						accepted_culture = polynesian
+						accepted_culture = cham
+						accepted_culture = malayan
+						accepted_culture = sumatran
+						accepted_culture = javanese
+						accepted_culture = filipino
+						accepted_culture = bornean
+						accepted_culture = madagascan
+						accepted_culture = sulawesi
+					amount = 5
+				}
+				NOT = {
+					calc_true_if = {
+							accepted_culture = polynesian
+							accepted_culture = cham
+							accepted_culture = malayan
+							accepted_culture = sumatran
+							accepted_culture = javanese
+							accepted_culture = filipino
+							accepted_culture = bornean
+							accepted_culture = madagascan
+							accepted_culture = sulawesi
+						amount = 6
+					}
+				}
+			}
+			add_country_modifier = {
+				name = Malay_Sailors_5
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+						accepted_culture = polynesian
+						accepted_culture = cham
+						accepted_culture = malayan
+						accepted_culture = sumatran
+						accepted_culture = javanese
+						accepted_culture = filipino
+						accepted_culture = bornean
+						accepted_culture = madagascan
+						accepted_culture = sulawesi
+					amount = 6
+				}
+				NOT = {
+					calc_true_if = {
+							accepted_culture = polynesian
+							accepted_culture = cham
+							accepted_culture = malayan
+							accepted_culture = sumatran
+							accepted_culture = javanese
+							accepted_culture = filipino
+							accepted_culture = bornean
+							accepted_culture = madagascan
+							accepted_culture = sulawesi
+						amount = 7
+					}
+				}
+			}
+			add_country_modifier = {
+				name = Malay_Sailors_6
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					calc_true_if = {
+							accepted_culture = polynesian
+							accepted_culture = cham
+							accepted_culture = malayan
+							accepted_culture = sumatran
+							accepted_culture = javanese
+							accepted_culture = filipino
+							accepted_culture = bornean
+							accepted_culture = madagascan
+							accepted_culture = sulawesi
+						amount = 7
+					}
+					AND = {
+						government_rank = 3
+						culture_group = malay
+					}
+				}
+			}
+			add_country_modifier = {
+				name = Malay_Sailors_7
+				duration = -1
+			}
+		}
+	}
+}
+
+ge_country_royal_council_remove = {
+	if = {
+		limit = {
+			NOT = { has_government_attribute = enables_royal_council }
+		}
+		remove_country_modifier = Bad_Admin
+		remove_country_modifier = Decent_Admin
+		remove_country_modifier = Good_Admin
+		remove_country_modifier = Bad_Diplo
+		remove_country_modifier = Decent_Diplo
+		remove_country_modifier = Good_Diplo
+		remove_country_modifier = Bad_Mil
+		remove_country_modifier = Decent_Mil
+		remove_country_modifier = Good_Mil
+	}
+}
+
+ge_country_such_waste_of_life_update = {
+	if = {
+		limit = {
+			is_colonial_nation = yes
+			overlord = { has_government_attribute = enables_such_waste_of_life }
+		}
+		add_country_modifier = {
+			name = "Colonial_Militias"
+			duration = -1
+		}
+	}
+	else = {
+		remove_country_modifier = Colonial_Militias
+	}
+}
+
+ge_country_legacy_of_independence_update = {
+	if = {
+		limit = {
+			is_subject = yes
+			overlord = { has_government_attribute = enables_legacy_of_independence }
+		}
+		add_country_modifier = {
+			name = "Taifa_Spirit"
+			duration = -1
+		}
+	}
+	else = {
+		remove_country_modifier = Taifa_Spirit
+	}
+}
+
+ge_feudal_receipts_update = {
+	if = {
+		limit = {
+			is_subject = yes
+			is_colonial_nation = no
+			overlord = { has_government_attribute = enables_feudal_receipts }
+		}
+		add_country_modifier = {
+			name = "Feudal_Receipts"
+			duration = -1
+		}
+	}
+	else = {
+		remove_country_modifier = Feudal_Receipts
+	}
+}
+
+ge_french_ordonannce_update = {
+	if = {
+		limit = {
+			is_colonial_nation = yes
+			overlord = { has_government_attribute = enables_french_ordonannce }
+		}
+		add_country_modifier = {
+			name = "French_Ordonnance"
+			duration = -1
+		}
+	}
+	else = {
+		remove_country_modifier = French_Ordonnance
+	}
+}
+
+ge_country_trade_princes_update = {
+	if = {
+		limit = {
+			has_government_attribute = enables_trade_princes
+			any_subject_country = {
+				OR = {
+					primary_culture = aragonese
+					primary_culture = catalan
+				}
+			}
+		}
+		add_country_modifier = {
+			name = "Trade_Princes"
+			duration = -1
+		}
+	}
+	else = {
+		remove_country_modifier = Trade_Princes
+	}
+}
+
+ge_country_militant_orders_update = {
+	if = {
+		limit = {
+			has_government_attribute = enables_militant_orders
+			at_war_with_religious_enemy = yes
+		}
+		add_country_modifier = {
+			name = "Militant_Orders"
+			duration = -1
+		}
+	}
+	else = {
+		remove_country_modifier = Militant_Orders
+	}
+}
+
+ge_country_swiss_guard_update = {
+	if = {
+		limit = {
+			has_government_attribute = enables_swiss_guard
+			OR = {
+				any_ally = {
+					primary_culture = swiss
+				}
+				any_subject_country = {
+					primary_culture = swiss
+				}
+			}
+		}
+		add_country_modifier = {
+			name = "GE_Swiss_Guard"
+			duration = -1
+		}
+	}
+	else = {
+		remove_country_modifier = GE_Swiss_Guard
+	}
+}
+
+ge_country_papal_delegation_PAP_recreated = {
+	if = {
+		limit = {
+			tag = PAP
+		}
+		every_country = {
+			limit = {
+				has_government_attribute = enables_papal_delegation
+			}
+			PAP = {
+				add_opinion = { who = ROOT modifier = opinion_papal_delegation }
+			}
+		}
+	}
+}
+
+ge_country_kingdom_of_brazil_update = {
+	if = {
+		limit = {
+			is_colonial_nation = yes
+			overlord = { has_government_attribute = enables_kingdom_of_brazil }
+			capital_scope = {
+				colonial_region = colonial_brazil
+			}
+		}
+		add_country_modifier = {
+			name = "Kingdom_Of_Brazil"
+			duration = -1
+		}
+	}
+	else = {
+		remove_country_modifier = Kingdom_Of_Brazil
+	}
+}
+
+ge_country_arabian_horses_update = {
+	remove_country_modifier = Arabian_Horses_5
+	remove_country_modifier = Arabian_Horses_4
+	remove_country_modifier = Arabian_Horses_3
+	remove_country_modifier = Arabian_Horses_2
+	remove_country_modifier = Arabian_Horses_1
+	if = {
+		limit = {
+			has_government_attribute = enables_arabian_horses
+			num_of_subjects = 1
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_subject_country = {
+						OR = {
+							primary_culture = bedouin_arabic
+							primary_culture = mahri_culture
+							primary_culture = hejazi_culture
+							primary_culture = omani_culture
+							primary_culture = yemeni_culture
+							primary_culture = gulf_arabic
+							primary_culture = al_iraqiya_arabic
+						}
+					}
+					amount = 5
+				}
+			}
+			add_country_modifier = {
+				name = Arabian_Horses_5
+				duration = -1
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					calc_true_if = {
+						all_subject_country = {
+							OR = {
+								primary_culture = bedouin_arabic
+								primary_culture = mahri_culture
+								primary_culture = hejazi_culture
+								primary_culture = omani_culture
+								primary_culture = yemeni_culture
+								primary_culture = gulf_arabic
+								primary_culture = al_iraqiya_arabic
+							}
+						}
+						amount = 4
+					}
+				}
+				add_country_modifier = {
+					name = Arabian_Horses_4
+					duration = -1
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						calc_true_if = {
+							all_subject_country = {
+								OR = {
+									primary_culture = bedouin_arabic
+									primary_culture = mahri_culture
+									primary_culture = hejazi_culture
+									primary_culture = omani_culture
+									primary_culture = yemeni_culture
+									primary_culture = gulf_arabic
+									primary_culture = al_iraqiya_arabic
+								}
+							}
+							amount = 3
+						}
+					}
+					add_country_modifier = {
+						name = Arabian_Horses_3
+						duration = -1
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							calc_true_if = {
+								all_subject_country = {
+									OR = {
+										primary_culture = bedouin_arabic
+										primary_culture = mahri_culture
+										primary_culture = hejazi_culture
+										primary_culture = omani_culture
+										primary_culture = yemeni_culture
+										primary_culture = gulf_arabic
+										primary_culture = al_iraqiya_arabic
+									}
+								}
+								amount = 2
+							}
+						}
+						add_country_modifier = {
+							name = Arabian_Horses_2
+							duration = -1
+						}
+					}
+					else = {
+						if = {
+							limit = {
+								any_subject_country = {
+									OR = {
+										primary_culture = bedouin_arabic
+										primary_culture = mahri_culture
+										primary_culture = hejazi_culture
+										primary_culture = omani_culture
+										primary_culture = yemeni_culture
+										primary_culture = gulf_arabic
+										primary_culture = al_iraqiya_arabic
+									}
+								}
+							}
+							add_country_modifier = {
+								name = Arabian_Horses_2
+								duration = -1
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+ge_country_hansa_ties_update = {
+	remove_country_modifier = Hansa_Ties_5
+	remove_country_modifier = Hansa_Ties_4
+	remove_country_modifier = Hansa_Ties_3
+	remove_country_modifier = Hansa_Ties_2
+	remove_country_modifier = Hansa_Ties_1
+	if = {
+		limit = {
+			has_government_attribute = enables_hansa_ties
+			OR = {
+				num_of_subjects = 1
+				num_of_allies = 1
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_country = {
+						OR = {
+							is_subject_of = ROOT
+							alliance_with = ROOT
+						}
+						government = republic
+					}
+					amount = 5
+				}
+			}
+			add_country_modifier = {
+				name = Hansa_Ties_5
+				duration = -1
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					calc_true_if = {
+						all_country = {
+							OR = {
+								is_subject_of = ROOT
+								alliance_with = ROOT
+							}
+							government = republic
+						}
+						amount = 4
+					}
+				}
+				add_country_modifier = {
+					name = Hansa_Ties_4
+					duration = -1
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						calc_true_if = {
+							all_country = {
+								OR = {
+									is_subject_of = ROOT
+									alliance_with = ROOT
+								}
+								government = republic
+							}
+							amount = 3
+						}
+					}
+					add_country_modifier = {
+						name = Hansa_Ties_3
+						duration = -1
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							calc_true_if = {
+								all_country = {
+									OR = {
+										is_subject_of = ROOT
+										alliance_with = ROOT
+									}
+									government = republic
+								}
+								amount = 2
+							}
+						}
+						add_country_modifier = {
+							name = Hansa_Ties_2
+							duration = -1
+						}
+					}
+					else = {
+						if = {
+							limit = {
+								any_country = {
+									OR = {
+										is_subject_of = ROOT
+										alliance_with = ROOT
+									}
+									government = republic
+								}
+							}
+							add_country_modifier = {
+								name = Hansa_Ties_1
+								duration = -1
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

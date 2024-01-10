@@ -99,7 +99,7 @@ monastic_temples_reform = {
 	removed_effect = {
 		hidden_effect = {
 			every_owned_province = {
-				ge_monastic_temples_province_update = yes
+				remove_province_modifier = GE_Monastic_Temples_Modifier
 			}
 		}
 	}

@@ -44,6 +44,16 @@ crown_of_castille = {
 	custom_attributes = {
 		enables_trade_princes = yes #1 Merchant if you got a aragonese of catalan vassal
 	}
+	effect = {
+		hidden_effect = {
+			ge_country_trade_princes_update = yes
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			remove_country_modifier = Trade_Princes
+		}
+	}
 	ai = {
 		factor = 101
 	}
@@ -77,7 +87,7 @@ hispanic_kingdom = {
 	removed_effect = {
 		hidden_effect = {
 			every_owned_province = {
-				ge_Crown_Of_Aragon_province_update = yes
+				remove_province_modifier = Crown_Of_Aragon
 			}
 		}
 	}
@@ -112,6 +122,19 @@ iberian_enlightened_despotism_reform = {
 	}
 	custom_attributes = {
 		enables_royal_council = yes
+	}
+	effect = {
+		hidden_effect = {
+			country_event = { 
+				id = reform_me_events.52
+				days = 1
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			ge_country_royal_council_remove = yes
+		}
 	}
 	ai = {
 		factor = 103
@@ -197,6 +220,20 @@ portuguese_empire_reform = {
 	custom_attributes = {
 		enables_kingdom_of_brazil = yes
 	}
+	effect = {
+		hidden_effect = {
+			every_subject_country = {
+				ge_country_kingdom_of_brazil_update = yes
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_subject_country = {
+				remove_country_modifier = Kingdom_Of_Brazil
+			}
+		}
+	}
 	ai = {
 		factor = 102
 	}
@@ -216,6 +253,23 @@ crown_of_aragon = {
 	trigger = {
 		has_reform = crown_of_aragon
 	}
+	effect = {
+		hidden_effect = {
+			every_owned_province = {
+				ge_aragon_crown_union_province_update = yes
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				remove_province_modifier = Kingdom_of_Aragon
+				remove_province_modifier = Principality_Of_Catalonia
+				remove_province_modifier = City_Of_Valencia
+				remove_province_modifier = Kingdom_Of_Sicily
+			}
+		}
+	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	modifiers = {
@@ -223,10 +277,7 @@ crown_of_aragon = {
 		global_unrest = -1
 	}
 	custom_attributes = {
-		enables_kingdom_of_aragon = yes
-		enables_principality_of_catalonia = yes
-		enables_city_of_valencia = yes
-		enables_kingdom_of_sicily = yes
+		enables_aragon_crown_union = yes
 	}
 	ai = {
 		factor = 100

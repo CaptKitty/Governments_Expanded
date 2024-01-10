@@ -259,6 +259,9 @@ sovereignity_reform = {
 			which = Populist_Influence
 			value = -1
 		}
+		hidden_effect = {
+			remove_country_modifier = Recognize_No_Crown
+		}
 	}
 	modifiers = {
 		hostile_attrition = 1
@@ -287,11 +290,21 @@ hanseatic_ties_reform = {
 			which = Plutocrat_Influence
 			value = 1
 		}
+		hidden_effect = {
+			ge_country_hansa_ties_update = yes
+		}
 	}
 	removed_effect = {
 		change_variable = {
 			which = Plutocrat_Influence
 			value = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = Hansa_Ties_5
+			remove_country_modifier = Hansa_Ties_4
+			remove_country_modifier = Hansa_Ties_3
+			remove_country_modifier = Hansa_Ties_2
+			remove_country_modifier = Hansa_Ties_1
 		}
 	}
 	modifiers = {
@@ -388,6 +401,9 @@ peasant_council_reform = {
 		change_variable = {
 			which = Populist_Influence
 			value = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = Peasant_Council
 		}
 	}
 	modifiers = {
@@ -944,11 +960,24 @@ council_of_lords_reform = {
 			which = Noble_Influence
 			value = 1
 		}
+		hidden_effect = {
+			country_event = { 
+				id = reform_me_events.33
+				days = 1
+			}
+		}
 	}
 	removed_effect = {
 		change_variable = {
 			which = Noble_Influence
 			value = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = Holy_Tithe_1
+			remove_country_modifier = Holy_Tithe_2
+			remove_country_modifier = Holy_Tithe_3
+			remove_country_modifier = Holy_Tithe_4
+			remove_country_modifier = Holy_Tithe_5
 		}
 	}
 	custom_attributes = {
@@ -1033,7 +1062,7 @@ confederate_nations_reform = {
 		}
 		hidden_effect = {
 			every_owned_province = {
-				ge_nations_of_the_republic_province_update = yes
+				remove_province_modifier = GE_nations_of_the_republic
 			}
 		}
 	}
@@ -1091,7 +1120,7 @@ cultural_judges_reform = {
 	removed_effect = {
 		hidden_effect = {
 			every_owned_province = {
-				ge_cultural_supremacy_province_update = yes
+				remove_province_modifier = GE_cultural_supremacy
 			}
 		}
 	}
@@ -1202,7 +1231,7 @@ empowered_sovereign_trade_companies_reform = {
 	removed_effect = {
 		hidden_effect = {
 			every_owned_province = {
-				ge_voc_mentality_province_update = yes
+				remove_province_modifier = Soverein_Trade_Company
 			}
 		}
 	}
@@ -1397,6 +1426,20 @@ empowered_principle_of_profit_reform = {
 	custom_attributes = {
 		enables_home_market = yes
 	}
+	removed_effect = {
+		hidden_effect = {
+			remove_country_modifier = Home_Market_1
+			remove_country_modifier = Home_Market_2
+			remove_country_modifier = Home_Market_3
+			remove_country_modifier = Home_Market_4
+			remove_country_modifier = Home_Market_5
+			remove_country_modifier = Home_Market_6
+			remove_country_modifier = Home_Market_7
+			remove_country_modifier = Home_Market_8
+			remove_country_modifier = Home_Market_9
+			remove_country_modifier = Home_Market_10
+		}
+	}
 	ai = {
 		factor = 1
 	}
@@ -1471,7 +1514,7 @@ regents_reform = {
 	removed_effect = {
 		hidden_effect = {
 			every_owned_province = {
-				ge_Regent_Investments_province_update = yes
+				remove_province_modifier = Regent_Investments
 			}
 		}
 	}
@@ -1540,6 +1583,14 @@ hansa_universities_reform = {
 	}
 	custom_attributes = {
 		enables_attracting_academics = yes #12.5% Innovativeness Gain per 20 prestige
+	}
+	removed_effect = {
+		hidden_effect = {
+			remove_country_modifier = Hansa_Academics_1
+			remove_country_modifier = Hansa_Academics_2
+			remove_country_modifier = Hansa_Academics_3
+			remove_country_modifier = Hansa_Academics_4
+		}
 	}
 	ai = {
 		factor = 100

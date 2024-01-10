@@ -237,7 +237,7 @@ reinforce_the_hwangog_reform = {
 	removed_effect = {
 		hidden_effect = {
 			every_owned_province = {
-				ge_hwangog_province_update = yes
+				remove_province_modifier = GE_hwangog
 			}
 		}
 	}

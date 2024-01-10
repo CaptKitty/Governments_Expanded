@@ -1214,7 +1214,7 @@ customs_house_of_apena_sheep_reform = {
 		}
 		hidden_effect = {
 			every_owned_province = {
-				ge_customs_house_province_update = yes
+				remove_province_modifier = GE_Customs_House
 			}
 		}
 	}
@@ -1440,7 +1440,7 @@ alpini_reform = {
 	removed_effect = {
 		hidden_effect = {
 			every_owned_province = {
-				ge_moutain_warfare_province_update = yes
+				remove_province_modifier = GE_Mountain_Warfare
 			}
 		}
 	}

@@ -14,6 +14,19 @@ autocracy_reform = {
 	custom_attributes = {
 		enables_royal_council = yes
 	}
+	effect = {
+		hidden_effect = {
+			country_event = { 
+				id = reform_me_events.52
+				days = 1
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			ge_country_royal_council_remove = yes
+		}
+	}
 	ai = {
 		factor = 0.5 #generic
 	}

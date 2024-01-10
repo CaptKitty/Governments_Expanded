@@ -71,6 +71,18 @@ hessian_military_complex_reform = {
 			which = Burgher_Influence
 			value = -1
 		}
+		hidden_effect = {
+			remove_country_modifier = Military_Industry_1
+			remove_country_modifier = Military_Industry_2
+			remove_country_modifier = Military_Industry_3
+			remove_country_modifier = Military_Industry_4
+			remove_country_modifier = Military_Industry_5
+			remove_country_modifier = Military_Industry_6
+			remove_country_modifier = Military_Industry_7
+			remove_country_modifier = Military_Industry_8
+			remove_country_modifier = Military_Industry_9
+			remove_country_modifier = Military_Industry_10
+		}
 	}
 	potential = {
 		OR = {

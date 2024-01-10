@@ -73,6 +73,19 @@ french_absolutism = {
 		global_autonomy = -0.05
 		monarch_admin_power = 1
 	}
+	effect = {
+		hidden_effect = {
+			country_event = { 
+				id = reform_me_events.52
+				days = 1
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			ge_country_royal_council_remove = yes
+		}
+	}
 	ai = {
 		factor = 100
 	}
@@ -131,6 +144,9 @@ noblesse_d_epee_reform = {
 		change_variable = {
 			which = Noble_Influence
 			value = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = Officers_Of_The_Sword
 		}
 	}
 	potential = {
@@ -206,11 +222,21 @@ independent_vassals_reform = {
 			which = Noble_Influence
 			value = 1
 		}
+		hidden_effect = {
+			every_subject_country = {
+				ge_feudal_receipts_update = yes
+			}
+		}
 	}
 	removed_effect = {
 		change_variable = {
 			which = Noble_Influence
 			value = -1
+		}
+		hidden_effect = {
+			every_subject_country = {
+				remove_country_modifier = Feudal_Receipts
+			}
 		}
 	}
 	potential = {
@@ -326,6 +352,9 @@ compagnies_dordonnance_reform_GE = {
 			which = Royal_Influence
 			value = -1
 		}
+		hidden_effect = {
+			remove_country_modifier = Regulated_Leave
+		}
 	}
 	potential = {
 		NOT = { has_dlc = "Domination"}
@@ -363,6 +392,9 @@ abolish_the_patronage_system_reform = {
 			which = Royal_Influence
 			value = -1
 		}
+		hidden_effect = {
+			remove_country_modifier = Foreign_Regiments
+		}
 	}
 	potential = {
 		OR = {
@@ -397,11 +429,17 @@ royal_training_reform = {
 			which = Royal_Influence
 			value = 1
 		}
+		hidden_effect = {
+			ge_country_swiss_guard_update = yes
+		}
 	}
 	removed_effect = {
 		change_variable = {
 			which = Royal_Influence
 			value = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = GE_Swiss_Guard
 		}
 	}
 	potential = {
@@ -447,6 +485,9 @@ parisian_court_reform = {
 			which = Royal_Influence
 			value = -1
 		}
+		hidden_effect = {
+			remove_country_modifier = French_Court
+		}
 	}
 	potential = {
 		OR = {
@@ -486,6 +527,11 @@ corps_diplomatique_reform = {
 		change_variable = {
 			which = Burgher_Influence
 			value = -1
+		}
+		hidden_effect = {
+			every_country = {
+				remove_opinion = { who = ROOT modifier = opinion_lingua_franca }
+			}
 		}
 	}
 	potential = {
@@ -592,7 +638,7 @@ society_of_agriculture_reform = {
 	removed_effect = {
 		hidden_effect = {
 			every_owned_province = {
-				ge_society_of_agriculture_province_update = yes
+				remove_province_modifier = Society_Of_Agriculture
 			}
 		}
 	}
@@ -622,6 +668,20 @@ conseil_souverain_reform = {
 	custom_attributes = {
 		enables_french_ordonannce = yes #10% Goods Produced in Colonies
 	}
+	effect = {
+		hidden_effect = {
+			every_subject_country ={
+				ge_french_ordonannce_update = yes
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_subject_country ={
+				remove_country_modifier = French_Ordonnance
+			}
+		}
+	}
 	ai = {
 		factor = 100
 	}
@@ -643,6 +703,20 @@ continental_system_reform = {
 	}
 	custom_attributes = {
 		enables_economic_block = yes #2.5% Trade efficiency per ally
+	}
+	removed_effect = {
+		hidden_effect = {
+			remove_country_modifier = Home_Market_1
+			remove_country_modifier = Home_Market_2
+			remove_country_modifier = Home_Market_3
+			remove_country_modifier = Home_Market_4
+			remove_country_modifier = Home_Market_5
+			remove_country_modifier = Home_Market_6
+			remove_country_modifier = Home_Market_7
+			remove_country_modifier = Home_Market_8
+			remove_country_modifier = Home_Market_9
+			remove_country_modifier = Home_Market_10
+		}
 	}
 	ai = {
 		factor = 100

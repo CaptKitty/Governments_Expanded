@@ -71,7 +71,7 @@ qadi_authority_reform = {
 		}
 		hidden_effect = {
 			every_owned_province = {
-				ge_qadi_authority_province_update = yes
+				remove_province_modifier = GE_Qadi_Authority
 			}
 		}
 	}
@@ -120,7 +120,7 @@ millet_reform = {
 		}
 		hidden_effect = {
 			every_owned_province = {
-				ge_millet_system_province_update = yes
+				remove_province_modifier = GE_Millet_System
 			}
 		}
 	}
@@ -287,7 +287,7 @@ sultanate_of_women_reform = {
 		}
 		hidden_effect = {
 			every_owned_province = {
-				ge_public_works_province_update = yes
+				remove_province_modifier = GE_Public_Works
 			}
 		}
 	}
@@ -362,7 +362,7 @@ expanded_devshirme_reform = {
 		}
 		hidden_effect = {
 			every_owned_province = {
-				ge_devshirme_province_update = yes
+				remove_province_modifier = GE_Devshirme
 			}
 		}
 	}

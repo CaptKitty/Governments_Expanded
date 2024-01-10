@@ -667,13 +667,7 @@ ge_royal_mining_monopoly_province_update = {
 			owner = {
 				has_government_attribute = enables_royal_mining_monopoly
 			}
-			OR = {
-				trade_goods = iron
-				trade_goods = copper
-				trade_goods = gold
-				trade_goods = coal
-				trade_goods = salt
-			}
+			has_mining_goods = yes
 		}
 		add_province_modifier = {
 			name = GE_Mining_Monopoly
@@ -721,5 +715,60 @@ ge_huaca_cults_province_update = {
 	}
 	else = {
 		remove_province_modifier = GE_Huaca_Cults
+	}
+}
+
+ge_aragon_crown_union_province_update = {
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = enables_aragon_crown_union
+			}
+		}
+		if = {
+			limit = {
+				area = aragon_area
+			}
+			add_province_modifier = {
+				name = Kingdom_of_Aragon
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				area = catalonia_area
+			}
+			add_province_modifier = {
+				name = Principality_Of_Catalonia
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				area = valencia_area
+			}
+			add_province_modifier = {
+				name = City_Of_Valencia
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					area = sicily_area
+					area = western_sicily_area
+				}
+			}
+			add_province_modifier = {
+				name = Kingdom_Of_Sicily
+				duration = -1
+			}
+		}
+	}
+	else = {
+		remove_province_modifier = Kingdom_of_Aragon
+		remove_province_modifier = Principality_Of_Catalonia
+		remove_province_modifier = City_Of_Valencia
+		remove_province_modifier = Kingdom_Of_Sicily
 	}
 }

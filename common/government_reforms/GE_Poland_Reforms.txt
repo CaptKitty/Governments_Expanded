@@ -28,7 +28,7 @@ polish_constitutionalism_reform = {
 	removed_effect = {
 		hidden_effect = {
 			every_owned_province = {
-				ge_National_Strenghtening_province_update = yes
+				remove_province_modifier = National_Strenghtening_Project
 			}
 		}
 	}

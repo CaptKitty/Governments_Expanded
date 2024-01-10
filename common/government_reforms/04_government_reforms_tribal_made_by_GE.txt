@@ -54,7 +54,7 @@ siberian_tribal_confederation_reform = {
 	removed_effect = {
 		hidden_effect = {
 			every_owned_province = {
-				ge_siberian_tribe_province_update = yes
+				remove_province_modifier = GE_Siberian_Tribe
 			}
 		}
 	}

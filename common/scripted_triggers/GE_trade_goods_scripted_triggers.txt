@@ -59,6 +59,7 @@ has_urban_goods = {
 		trade_goods = fur_clothing
 		trade_goods = jade_sculptures
 		trade_goods = String_Instruments
+		trade_goods = cannon
 	}
 }
 
@@ -80,7 +81,6 @@ has_mining_goods = {
 		trade_goods = tar
 		trade_goods = sulfur
 		trade_goods = zinc
-		trade_goods = cannon
 	}
 }
 

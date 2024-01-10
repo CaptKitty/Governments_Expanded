@@ -56,7 +56,7 @@ serbian_empire_reform = {
 	removed_effect = {
 		hidden_effect = {
 			every_owned_province = {
-				ge_royal_mining_monopoly_province_update = yes
+				remove_province_modifier = GE_Mining_Monopoly
 			}
 		}
 	}
@@ -90,7 +90,7 @@ vlast_voivodes_reform = {
 		}
 		hidden_effect = {
 			every_owned_province = {
-				ge_military_governors_province_update = yes
+				remove_province_modifier = GE_military_governors
 			}
 		}
 	}

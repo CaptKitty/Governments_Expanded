@@ -1225,11 +1225,6 @@ consolidation_of_power_reform = {
 		election_cycle = 1
 		max_terms = 1
 	}
-	effect = {
-		hidden_effect = {
-
-		}
-	}
 	custom_attributes = {
 		reelection_depowers_estates = yes
 	}

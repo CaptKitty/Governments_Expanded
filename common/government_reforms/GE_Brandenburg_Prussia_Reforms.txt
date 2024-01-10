@@ -173,7 +173,7 @@ fredrickan_reforms_reform = {
 	removed_effect = {
 		hidden_effect = {
 			every_owned_province = {
-				ge_immigrant_settlements_province_update = yes
+				remove_province_modifier = GE_immigrant_settlements
 			}
 		}
 	}
@@ -206,7 +206,7 @@ kreditwerk_reform = {
 		}
 		hidden_effect = {
 			every_owned_province = {
-				ge_kreditwerk_appointments_province_update = yes
+				remove_province_modifier = GE_Kreditwork
 			}
 		}
 	}
