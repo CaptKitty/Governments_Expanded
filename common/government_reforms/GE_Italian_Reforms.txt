@@ -1083,6 +1083,23 @@ genoa_merchants_reform = {
 	custom_attributes = {
 		enables_ianuensis_ergo_mercator = yes #10 global settler per every 30% Trade Efficiency
 	}
+	effect = {
+		hidden_effect = {
+			country_event = {
+				id = GE_Italian_Reforms_Events.2
+				days = 1
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			remove_country_modifier = GE_Genoese_Merchants_Explorers_1
+			remove_country_modifier = GE_Genoese_Merchants_Explorers_2
+			remove_country_modifier = GE_Genoese_Merchants_Explorers_3
+			remove_country_modifier = GE_Genoese_Merchants_Explorers_4
+			remove_country_modifier = GE_Genoese_Merchants_Explorers_5
+		}
+	}
 	ai = {
 		factor = 100
 	}
@@ -1463,6 +1480,22 @@ berberi_mantovani_reform = {
 	}
 	custom_attributes = {
 		enables_ordine_cordone_giallo = yes #+5% CCA and 1 PI for each 2 ToTf over 4
+	}
+	effect = {
+		hidden_effect = {
+			country_event = {
+				id = GE_Italian_Reforms_Events.1
+				days = 1
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			remove_country_modifier = GE_Mantua_Knightly_Orders_1
+			remove_country_modifier = GE_Mantua_Knightly_Orders_2
+			remove_country_modifier = GE_Mantua_Knightly_Orders_3
+			remove_country_modifier = GE_Mantua_Knightly_Orders_4
+		}
 	}
 	ai = {
 		factor = 100
@@ -2031,6 +2064,21 @@ theatines_reform = {
 	}
 	custom_attributes = {
 		enables_mary_of_the_purity = yes # -0.025 corruption per year per tolerance of the true faith over 4
+	}
+	effect = {
+		hidden_effect = {
+			country_event = {
+				id = GE_Italian_Reforms_Events.3
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			remove_country_modifier = GE_Mary_Of_The_Purity_1
+			remove_country_modifier = GE_Mary_Of_The_Purity_2
+			remove_country_modifier = GE_Mary_Of_The_Purity_3
+			remove_country_modifier = GE_Mary_Of_The_Purity_4
+		}
 	}
 	ai = {
 		factor = 100

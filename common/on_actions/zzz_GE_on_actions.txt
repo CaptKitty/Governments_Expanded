@@ -217,6 +217,10 @@ on_monarch_death = {
 	}
 }
 
+on_monthly_pulse = {
+	ge_on_monthly_pulse_effect = yes
+}
+
 # country
 # root = winning country, from = loser country
 on_main_war_won = {
