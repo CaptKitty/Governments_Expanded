@@ -5,15 +5,13 @@ duchi_montefeltro_reform = {
 	potential = {
 		OR = {
 			have_had_reform = duchi_montefeltro_reform
-			tag = URB
-			was_tag = URB
+			is_or_was_tag = { tag = URB } 
 		}
 	}
 	trigger = {
 		OR = {
 			have_had_reform = duchi_montefeltro_reform
-			tag = URB
-			was_tag = URB
+			is_or_was_tag = { tag = URB } 
 		}
 	}
 	valid_for_nation_designer = yes
@@ -107,8 +105,7 @@ genoese_republic = {
 	legacy_equivalent = merchant_republic
 	potential = {
 		OR = {
-			tag = GEN
-			was_tag = GEN
+			is_or_was_tag = { tag = GEN }
 		}
 	}
 	boost_income = yes
@@ -163,15 +160,13 @@ giudicati_sardi_reform = {
 	potential = {
 		OR = {
 			have_had_reform = giudicati_sardi_reform
-			tag = SAR
-			was_tag = SAR
+			is_or_was_tag = { tag = SAR }
 		}
 	}
 	trigger = {
 		OR = {
 			have_had_reform = giudicati_sardi_reform
-			tag = SAR
-			was_tag = SAR
+			is_or_was_tag = { tag = SAR }
 		}
 	}
 	valid_for_nation_designer = yes
@@ -187,15 +182,13 @@ house_of_este_reform = {
 	potential = {
 		OR = {
 			have_had_reform = house_of_este_reform
-			tag = FER
-			was_tag = FER
+			is_or_was_tag = { tag = FER }
 		}
 	}
 	trigger = {
 		OR = {
 			have_had_reform = house_of_este_reform
-			tag = FER
-			was_tag = FER
+			is_or_was_tag = { tag = FER }
 		}
 	}
 	valid_for_nation_designer = yes
@@ -214,16 +207,14 @@ house_of_gonzaga_reform = {
 	valid_for_nation_designer = no
 	potential = {
 		OR = {
-			tag = MAN
-			was_tag = MAN
-			has_reform = house_of_gonzaga_reform
+			is_or_was_tag = { tag = MAN }
+			have_had_reform = house_of_gonzaga_reform
 		}
 	}
 	trigger = {
 		OR = {
-			tag = MAN
-			was_tag = MAN
-			has_reform = house_of_gonzaga_reform
+			is_or_was_tag = { tag = MAN }
+			have_had_reform = house_of_gonzaga_reform
 		}
 	}
 	modifiers = {
@@ -283,7 +274,7 @@ kingdom_of_sardinia_reform = {
 		OR = {
 			primary_culture = sardinian
 			primary_culture = piedmontese
-			has_reform = kingdom_of_sardinia_reform
+			have_had_reform = kingdom_of_sardinia_reform
 		}
 	}
 	trigger = {
@@ -291,7 +282,7 @@ kingdom_of_sardinia_reform = {
 		OR = {
 			primary_culture = sardinian
 			primary_culture = piedmontese
-			has_reform = kingdom_of_sardinia_reform
+			have_had_reform = kingdom_of_sardinia_reform
 		}
 	}
 	modifiers = {
@@ -311,14 +302,14 @@ kingdom_of_sicily_reform = {
 		OR = {
 			primary_culture = neapolitan
 			primary_culture = sicilian
-			has_reform = kingdom_of_sicily_reform
+			have_had_reform = kingdom_of_sicily_reform
 		}
 	}
 	trigger = {
 		OR = {
 			primary_culture = neapolitan
 			primary_culture = sicilian
-			has_reform = kingdom_of_sicily_reform
+			have_had_reform = kingdom_of_sicily_reform
 		}
 	}
 	modifiers = {
@@ -339,16 +330,14 @@ palaiologos_montferrat_reform = {
 	valid_for_nation_designer = no
 	potential = {
 		OR = {
-			tag = MFA
-			was_tag = MFA
-			has_reform = palaiologos_montferrat_reform
+			is_or_was_tag = { tag = MFA }
+			have_had_reform = palaiologos_montferrat_reform
 		}
 	}
 	trigger = {
 		OR = {
-			tag = MFA
-			was_tag = MFA
-			has_reform = palaiologos_montferrat_reform
+			is_or_was_tag = { tag = MFA }
+			have_had_reform = palaiologos_montferrat_reform
 		}
 	}
 	modifiers = {
@@ -375,8 +364,7 @@ republic_of_saint_blaise = {
 	legacy_equivalent = merchant_republic
 	potential = {
 		OR = {
-			tag = RAG
-			was_tag = RAG
+			is_or_was_tag = { tag = RAG }
 		}
 	}
 	boost_income = yes
@@ -441,16 +429,14 @@ savoia_reform = {
 	valid_for_nation_designer = no
 	potential = {
 		OR = {
-			tag = SAV
-			was_tag = SAV
-			has_reform = savoia_reform
+			is_or_was_tag = { tag = SAV }
+			have_had_reform = savoia_reform
 		}
 	}
 	trigger = {
 		OR = {
-			tag = SAV
-			was_tag = SAV
-			has_reform = savoia_reform
+			is_or_was_tag = { tag = SAV }
+			have_had_reform = savoia_reform
 		}
 	}
 	modifiers = {
@@ -472,15 +458,13 @@ signoria_baglioni_reform = {
 	potential = {
 		OR = {
 			have_had_reform = signoria_baglioni_reform
-			tag = PGA
-			was_tag = PGA
+			is_or_was_tag = { tag = PGA }
 		}
 	}
 	trigger = {
 		OR = {
 			have_had_reform = signoria_baglioni_reform
-			tag = PGA
-			was_tag = PGA
+			is_or_was_tag = { tag = PGA }
 		}
 	}
 	duration = 12
@@ -550,7 +534,7 @@ legacy_of_st_ambrose_reform = {
 	potential = {
 		OR = {
 			primary_culture = lombard
-			has_reform = legacy_of_st_ambrose_reform
+			have_had_reform = legacy_of_st_ambrose_reform
 		}
 	}
 	effect = {
@@ -580,7 +564,7 @@ support_borghese_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		culture_group = latin
-		NOT = { has_reform = pirate_republic_reform }
+		NOT = { have_had_reform = pirate_republic_reform }
 		is_year = 1490
 	}
 	effect = {
@@ -625,7 +609,7 @@ support_ghibbelline_reform = {
 			every_country = {
 				if = {
 					limit = {
-						has_reform = support_ghibbelline_reform
+						have_had_reform = support_ghibbelline_reform
 						OR = {
 							NOT = {
 								has_opinion_modifier = {
@@ -652,7 +636,7 @@ support_ghibbelline_reform = {
 				}
 				else_if = {
 					limit = {
-						has_reform = support_guelphs_reform
+						have_had_reform = support_guelphs_reform
 						OR = {
 							NOT = {
 								has_opinion_modifier = {
@@ -800,7 +784,7 @@ support_guelphs_reform = {
 			every_country = {
 				if = {
 					limit = {
-						has_reform = support_guelphs_reform
+						have_had_reform = support_guelphs_reform
 						OR = {
 							NOT = {
 								has_opinion_modifier = {
@@ -827,7 +811,7 @@ support_guelphs_reform = {
 				}
 				else_if = {
 					limit = {
-						has_reform = support_ghibbelline_reform
+						have_had_reform = support_ghibbelline_reform
 						OR = {
 							NOT = {
 								has_opinion_modifier = {
@@ -973,14 +957,14 @@ angevin_nobles_reform = {
 		OR = {
 			primary_culture = neapolitan
 			primary_culture = sicilian
-			has_reform = angevin_nobles_reform
+			have_had_reform = angevin_nobles_reform
 		}
 	}
 	trigger = {
 		OR = {
 			primary_culture = neapolitan
 			primary_culture = sicilian
-			has_reform = angevin_nobles_reform
+			have_had_reform = angevin_nobles_reform
 		}
 	}
 	modifiers = {
@@ -1000,13 +984,13 @@ archdiocese_of_pisa_reform = {
 	potential = {
 		OR = {
 			tag = PIS
-			has_reform = archdiocese_of_pisa_reform
+			have_had_reform = archdiocese_of_pisa_reform
 		}
 	}
 	trigger = {
 		OR = {
 			tag = PIS
-			has_reform = archdiocese_of_pisa_reform
+			have_had_reform = archdiocese_of_pisa_reform
 		}
 	}
 	effect = {
@@ -1034,14 +1018,14 @@ demedici_dynasty_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			has_reform = demedici_dynasty_reform
+			have_had_reform = demedici_dynasty_reform
 			tag = LAN
 		}
-		NOT = { has_reform = pirate_republic_reform }
+		NOT = { have_had_reform = pirate_republic_reform }
 	}
 	trigger = {
 		OR = {
-			has_reform = demedici_dynasty_reform
+			have_had_reform = demedici_dynasty_reform
 			tag = LAN
 		}
 	}
@@ -1075,19 +1059,17 @@ genoa_merchants_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			tag = GEN
-			was_tag = GEN
+			is_or_was_tag = { tag = GEN }
 			AND = {
 				tag = ITA
 				owns_core_province = 101
 			}
 		}
-		NOT = { has_reform = pirate_republic_reform }
+		NOT = { have_had_reform = pirate_republic_reform }
 	}
 	trigger = {
 		OR = {
-			tag = GEN
-			was_tag = GEN
+			is_or_was_tag = { tag = GEN }
 			AND = {
 				tag = ITA
 				owns_core_province = 101
@@ -1124,14 +1106,14 @@ parliament_of_sicily_reform = {
 		OR = {
 			primary_culture = neapolitan
 			primary_culture = sicilian
-			has_reform = parliament_of_sicily_reform
+			have_had_reform = parliament_of_sicily_reform
 		}
 	}
 	trigger = {
 		OR = {
 			primary_culture = neapolitan
 			primary_culture = sicilian
-			has_reform = parliament_of_sicily_reform
+			have_had_reform = parliament_of_sicily_reform
 		}
 	}
 	modifiers = {
@@ -1156,15 +1138,13 @@ rule_by_consent_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			tag = GEN
-			was_tag = GEN
+			is_or_was_tag = { tag = GEN }
 		}
-		NOT = { has_reform = pirate_republic_reform }
+		NOT = { have_had_reform = pirate_republic_reform }
 	}
 	trigger = {
 		OR = {
-			tag = GEN
-			was_tag = GEN
+			is_or_was_tag = { tag = GEN }
 		}
 	}
 	effect = {
@@ -1222,14 +1202,14 @@ customs_house_of_apena_sheep_reform = {
 		OR = {
 			primary_culture = neapolitan
 			primary_culture = sicilian
-			has_reform = customs_house_of_apena_sheep_reform
+			have_had_reform = customs_house_of_apena_sheep_reform
 		}
 	}
 	trigger = {
 		OR = {
 			primary_culture = neapolitan
 			primary_culture = sicilian
-			has_reform = customs_house_of_apena_sheep_reform
+			have_had_reform = customs_house_of_apena_sheep_reform
 		}
 	}
 	modifiers = {
@@ -1288,13 +1268,13 @@ italian_mercenaries_reform = {
 	potential = {
 		OR = {
 			culture_group = latin
-			has_reform = italian_mercenaries_reform
+			have_had_reform = italian_mercenaries_reform
 		}
 	}
 	trigger = {
 		OR = {
 			culture_group = latin
-			has_reform = italian_mercenaries_reform
+			have_had_reform = italian_mercenaries_reform
 		}
 	}
 	modifiers = {
@@ -1346,13 +1326,13 @@ milizia_nationale_reform = {
 	potential = {
 		OR = {
 			culture_group = latin
-			has_reform = milizia_nationale_reform
+			have_had_reform = milizia_nationale_reform
 		}
 	}
 	trigger = {
 		OR = {
 			culture_group = latin
-			has_reform = milizia_nationale_reform
+			have_had_reform = milizia_nationale_reform
 		}
 	}
 	modifiers = {
@@ -1384,7 +1364,7 @@ almogavars_reform = {
 			primary_culture = neapolitan
 			primary_culture = sicilian
 			accepted_culture = catalan
-			has_reform = almogavars_reform
+			have_had_reform = almogavars_reform
 		}
 	}
 	trigger = {
@@ -1392,7 +1372,7 @@ almogavars_reform = {
 			primary_culture = neapolitan
 			primary_culture = sicilian
 			accepted_culture = catalan
-			has_reform = almogavars_reform
+			have_had_reform = almogavars_reform
 		}
 	}
 	modifiers = {
@@ -1414,13 +1394,13 @@ alpini_reform = {
 	potential = {
 		OR = {
 			tag = ITA
-			has_reform = alpini_reform
+			have_had_reform = alpini_reform
 		}
 	}
 	trigger = {
 		OR = {
 			tag = ITA
-			has_reform = alpini_reform
+			have_had_reform = alpini_reform
 		}
 	}
 	modifiers = {
@@ -1458,8 +1438,7 @@ berberi_mantovani_reform = {
 	valid_for_nation_designer = no
 	potential = {
 		OR = {
-			tag = MAN
-			was_tag = MAN
+			is_or_was_tag = { tag = MAN }
 			AND = {
 				culture_group = latin
 				owns_core_province = 109
@@ -1470,8 +1449,7 @@ berberi_mantovani_reform = {
 	trigger = {
 		religion = catholic
 		OR = {
-			tag = MAN
-			was_tag = MAN
+			is_or_was_tag = { tag = MAN }
 			AND = {
 				culture_group = latin
 				owns_core_province = 109
@@ -1496,7 +1474,7 @@ crusading_tradition_reform = {
 	potential = {
 		OR = {
 			tag = PIS
-			has_reform = crusading_tradition_reform
+			have_had_reform = crusading_tradition_reform
 		}
 	}
 	effect = {
@@ -1559,8 +1537,7 @@ fonderie_ferraresi_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			tag = FER
-			was_tag = FER
+			is_or_was_tag = { tag = FER }
 			AND = {
 				culture_group = latin
 				owns_core_province = 113
@@ -1596,7 +1573,7 @@ nunziatella_reform = {
 			tag = TTS
 			primary_culture = neapolitan
 			primary_culture = sicilian
-			has_reform = nunziatella_reform
+			have_had_reform = nunziatella_reform
 			AND = {
 				culture_group = latin
 				owns_core_province = 121
@@ -1617,7 +1594,7 @@ nunziatella_reform = {
 				culture_group = latin
 				owns_core_province = 121
 			}
-			has_reform = nunziatella_reform
+			have_had_reform = nunziatella_reform
 		}
 	}
 	modifiers = {
@@ -1700,7 +1677,7 @@ union_of_italian_states_reform = {
 	potential = {
 		OR = {
 			culture_group = latin
-			has_reform = union_of_italian_states_reform
+			have_had_reform = union_of_italian_states_reform
 		}
 	}
 	trigger = {
@@ -1733,13 +1710,13 @@ advanced_bookkeeping_reform_republic_venice = {
 	}
 	potential = {
 		OR = {
-			has_reform = advanced_bookkeeping_reform_republic_venice
+			have_had_reform = advanced_bookkeeping_reform_republic_venice
 			primary_culture = venetian
 		}
 	}
 	trigger = {
 		OR = {
-			has_reform = advanced_bookkeeping_reform_republic_venice
+			have_had_reform = advanced_bookkeeping_reform_republic_venice
 			primary_culture = venetian
 		}
 	}
@@ -1769,9 +1746,8 @@ communal_territories_reform = {
 	}
 	potential = {
 		OR = {
-			tag = GEN
-			was_tag = GEN
-			has_reform = communal_territories_reform
+			is_or_was_tag = { tag = GEN }
+			have_had_reform = communal_territories_reform
 		}
 	}
 	modifiers = {
@@ -1789,13 +1765,13 @@ mantua_mecenatismo_mantovano_reform = {
 	potential = {
 		OR = {
 			tag = MAN
-			has_reform = mantua_mecenatismo_mantovano_reform
+			have_had_reform = mantua_mecenatismo_mantovano_reform
 		}
 	}
 	trigger = {
 		OR = {
 			tag = MAN
-			has_reform = mantua_mecenatismo_mantovano_reform
+			have_had_reform = mantua_mecenatismo_mantovano_reform
 		}
 	}
 	modifiers = {
@@ -1826,14 +1802,14 @@ neapolitan_renaissance_reform = {
 		OR = {
 			primary_culture = neapolitan
 			primary_culture = sicilian
-			has_reform = neapolitan_renaissance_reform
+			have_had_reform = neapolitan_renaissance_reform
 		}
 	}
 	trigger = {
 		OR = {
 			primary_culture = neapolitan
 			primary_culture = sicilian
-			has_reform = neapolitan_renaissance_reform
+			have_had_reform = neapolitan_renaissance_reform
 		}
 	}
 	modifiers = {
@@ -1852,7 +1828,7 @@ council_of_petitions_reform = {
 	potential = {
 		culture_group = latin
 		NOT = {
-			has_reform = pirate_republic_reform
+			have_had_reform = pirate_republic_reform
 		}
 	}
 	trigger = {
@@ -1884,13 +1860,13 @@ legacy_of_constitutionalism_reform = {
 	potential = {
 		OR = {
 			culture_group = latin
-			has_reform = legacy_of_constitutionalism_reform
+			have_had_reform = legacy_of_constitutionalism_reform
 		}
 	}
 	trigger = {
 		OR = {
 			culture_group = latin
-			has_reform = legacy_of_constitutionalism_reform
+			have_had_reform = legacy_of_constitutionalism_reform
 		}
 	}
 	modifiers = {
@@ -1908,7 +1884,7 @@ the_consigliere_reform = {
 	potential = {
 		culture_group = latin
 		NOT = {
-			has_reform = pirate_republic_reform
+			have_had_reform = pirate_republic_reform
 		}
 	}
 	trigger = {
@@ -1940,17 +1916,16 @@ andrea_doria_constitution_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			tag = GEN
-			was_tag = GEN
-			has_reform = andrea_doria_constitution_reform
+			is_or_was_tag = { tag = GEN }
+			have_had_reform = andrea_doria_constitution_reform
 		}
 		NOT = {
-			has_reform = pirate_republic_reform
+			have_had_reform = pirate_republic_reform
 		}
 	}
 	trigger = {
-		NOT = { has_reform = frequent_elections_reform }
-		has_reform = rule_by_consent_reform
+		NOT = { have_had_reform = frequent_elections_reform }
+		have_had_reform = rule_by_consent_reform
 	}
 	effect = {
 		change_variable = {
@@ -2040,14 +2015,14 @@ theatines_reform = {
 		OR = {
 			primary_culture = neapolitan
 			primary_culture = sicilian
-			has_reform = theatines_reform
+			have_had_reform = theatines_reform
 		}
 	}
 	trigger = {
 		OR = {
 			primary_culture = neapolitan
 			primary_culture = sicilian
-			has_reform = theatines_reform
+			have_had_reform = theatines_reform
 		}
 	}
 	modifiers = {
@@ -2067,17 +2042,15 @@ banco_dei_medici_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			was_tag = LAN
-			tag = LAN
-			has_reform = banco_dei_medici_reform
+			is_or_was_tag = { tag = LAN }
+			have_had_reform = banco_dei_medici_reform
 			have_had_reform = banco_dei_medici_reform
 		}
 	}
 	trigger = {
 		OR = {
-			was_tag = LAN
-			tag = LAN
-			has_reform = banco_dei_medici_reform
+			is_or_was_tag = { tag = LAN }
+			have_had_reform = banco_dei_medici_reform
 			have_had_reform = banco_dei_medici_reform
 		}
 	}
@@ -2116,14 +2089,14 @@ constitution_of_melfi_reform = {
 		OR = {
 			primary_culture = neapolitan
 			primary_culture = sicilian
-			has_reform = constitution_of_melfi_reform
+			have_had_reform = constitution_of_melfi_reform
 		}
 	}
 	trigger = {
 		OR = {
 			primary_culture = neapolitan
 			primary_culture = sicilian
-			has_reform = constitution_of_melfi_reform
+			have_had_reform = constitution_of_melfi_reform
 		}
 	}
 	modifiers = {
