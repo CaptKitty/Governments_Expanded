@@ -1,0 +1,99 @@
+# T1
+satavahana_dynasty_reform = {
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			have_had_reform = satavahana_dynasty_reform
+			is_or_was_tag = { tag = YOR }
+		}
+	}
+	trigger = {
+		OR = {
+			have_had_reform = satavahana_dynasty_reform
+			is_or_was_tag = { tag = YOR }
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+	modifiers = {
+		army_tradition = 0.25
+		legitimacy = 1
+		manpower_in_own_culture_provinces = 0.20
+		prestige_decay = -0.01
+		province_warscore_cost = -0.10
+	}
+	custom_attributes = {
+		maintain_dynasty = yes
+	}
+}
+
+pandya_dynasty_reform = {
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			have_had_reform = pandya_dynasty_reform
+			is_or_was_tag = { tag = MAD }
+			is_or_was_tag = { tag = TNJ }
+		}
+	}
+	trigger = {
+		OR = {
+			have_had_reform = pandya_dynasty_reform
+			religion = hinduism
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	modifiers = {
+		heavy_ship_power = 0.1
+		no_stability_loss_on_monarch_death = yes
+		reduced_liberty_desire_on_other_continent = 10
+		trade_efficiency = 0.1
+	}
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+		}
+		has_parliament = yes
+	}
+	custom_attributes = {
+		enables_aristocratic_idea_group = no
+		enables_plutocratic_idea_group = yes
+	}
+	effect = {
+		set_country_flag = can_use_propagate_religion
+	}
+	removed_effect = {
+		custom_tooltip = can_use_propagate_religion_tt
+		clr_country_flag = can_use_propagate_religion
+	}
+}
+
+# T5
+tamil_trade_guilds_reform = {
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			have_had_reform = tamil_trade_guilds_reform
+			primary_culture = tamil
+			accepted_culture = tamil
+		}
+	}
+	trigger = {
+		OR = {
+			have_had_reform = tamil_trade_guilds_reform
+			primary_culture = tamil
+			accepted_culture = tamil
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+	modifiers = {
+		production_efficiency = 0.10
+		trade_efficiency = 0.10
+		burghers_privilege_slots = 1
+	}
+}

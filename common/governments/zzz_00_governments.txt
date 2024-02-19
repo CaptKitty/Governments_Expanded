@@ -181,6 +181,8 @@ monarchy = {
 				palaiologos_montferrat_reform
 				savoia_reform
 				second_khmer_empire_reform
+				satavahana_dynasty_reform
+				pandya_dynasty_reform
 				#####BeginMEReforms#####
 				crusader_kingdom
 				khaganate
@@ -794,6 +796,7 @@ monarchy = {
 				expand_the_trans_saharan_trade_reform
 				customs_duties_reform
 				maritime_republic_reform
+				tamil_trade_guilds_reform
 			}
 		}
 		legitimation_of_power = {
