@@ -693,10 +693,6 @@ spriteTypes = {
 		texturefile = "gfx//interface//government_reform_icons//clans_of_ireland.dds"
 	}
 	spriteType = {
-		name = "government_reform_high_king_of_ireland_reform"
-		texturefile = "gfx//interface//government_reform_icons//high_king_of_ireland_reform.dds"
-	}
-	spriteType = {
 		name = "government_reform_serbian_despotate"
 		texturefile = "gfx//interface//government_reform_icons//serbian_despotate.dds"
 	}

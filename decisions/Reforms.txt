@@ -60,7 +60,7 @@ country_decisions = {
 	reforms_me_empire_of_serbia = {
 		major = yes
 		potential = {
-			has_reform = despotate_of_serbia_reform
+			has_reform = serbian_despotate_reform
 		}
 		allow = {
 			total_development = 300

@@ -2,26 +2,6 @@
 #GE Factions
 ###############################
 
-GE_ultraquists = {
-	monarch_power = MIL
-	always = yes
-	
-	modifier = {
-		global_unrest = -1
-		tolerance_heretic = 1
-	}
-}
-
-GE_catholics = {
-	monarch_power = DIP
-	always = yes
-	
-	modifier = {
-		improve_relation_modifier = 0.1
-		papal_influence = 1
-	}
-}
-
 GE_federalists = {
 	monarch_power = null
 	always = yes

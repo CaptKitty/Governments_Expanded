@@ -138,7 +138,6 @@ monarchy = {
 				crown_of_saint_wenceslaus
 				crown_of_saint_wenceslaus_2
 				office_of_lord_regent_reform
-				arch_king_reform
 				arch_duchy_reform
 				habsburg_monarchy_reform
 				austrian_empire_reform
@@ -153,14 +152,11 @@ monarchy = {
 				empire_of_japan_reform
 				kingdom_of_jerusalem_reform
 				despotate_of_caucasia_reform
-				sharifate_reform
 				rum_eagle_reform
-				#high_king_of_ireland_reform
 				hermit_kingdom_reform
 				consulate_of_the_malay
 				basic_reformed_mandala_reform
 				solar_kingdom_reform
-				despotate_of_serbia_reform
 				serbian_empire_reform
 				kingdom_of_sicily_reform
 				tsardom_of_bulgaria_reform
@@ -168,11 +164,9 @@ monarchy = {
 				duchy_of_luxembourg_reform
 				emirate_of_andalusia_reform
 				house_of_gonzaga_reform
-				#tanistry_reform
 				kingdom_of_gao_reform
 				kingdom_of_sardinia_reform
 				klever_union_reform
-				life_on_the_plateau_reform
 				#1.19
 				duchi_montefeltro_reform
 				giudicati_sardi_reform
@@ -1906,7 +1900,6 @@ theocracy = {
 				### GE ###
 				# ajuraan_theocracy_reform
 				dynastic_theocracy_reform
-				life_on_the_plateau_reform
 				#Missions Expanded Reforms
 				ME_sufi_order_reform
 				ME_bektashi_order_reform

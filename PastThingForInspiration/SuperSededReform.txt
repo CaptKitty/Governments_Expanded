@@ -1,0 +1,258 @@
+
+	tanistry_reform_GE = {
+		icon = dutch_guilds
+		allow_normal_conversion = yes
+		valid_for_nation_designer = no
+		potential = {
+			OR = {
+				primary_culture = irish
+				has_reform = tanistry_reform
+			}
+		}
+		trigger = {
+			OR = {
+				primary_culture = irish
+				has_reform = tanistry_reform
+			}
+		}
+		modifiers = {
+			heir_chance = -2
+			same_culture_advisor_cost = -0.15
+		}
+		custom_attributes = {
+			enables_tanistry = yes #elect an heir
+			#enables_disputed_heir = yes #heir will face challenges
+		}
+		ai = {
+			factor = 101
+		}
+	}
+
+
+ tanistry_reform: "Tanistry"
+ tanistry_reform_desc: "Tanistry is a form of Irish elective monarchy where the heirs are chosen from lesser parts of the family to ensure a balance of power between the rich and the powerfull to ensure no member is left behind."
+mechanic_enables_tanistry_yes: "Tanistry Elective: Enables you to elect an heir from amongst your extended family."
+ 
+
+
+
+	high_king_of_ireland_reform = {
+		icon = high_king_of_ireland
+		allow_normal_conversion = yes
+		valid_for_nation_designer = no
+		potential = {
+			OR = {
+				has_reform = high_king_of_ireland_reform
+				tag = IRE
+			}
+		}
+		trigger = {
+			OR = {
+				has_reform = high_king_of_ireland_reform
+				tag = IRE
+			}
+		}
+		modifiers = {
+			prestige = 1
+			max_absolutism = 5
+		}
+		custom_attributes = {
+			enables_royal_council = yes
+		}
+		effect = {
+			hidden_effect = {
+				country_event = { 
+					id = reform_me_events.52
+					days = 1
+				}
+			}
+		}
+		removed_effect = {
+			hidden_effect = {
+				ge_country_royal_council_remove = yes
+			}
+		}
+		ai = {
+			factor = 100
+		}
+	}
+	
+	spriteType = {
+		name = "government_reform_high_king_of_ireland_reform"
+		texturefile = "gfx//interface//government_reform_icons//high_king_of_ireland_reform.dds"
+	}
+
+	 life_on_the_plateau_reform: "Life on the Plateau"
+ life_on_the_plateau_reform_desc: "After the decline of the Yuan Dynasty to our east, the authority in Tibet that the Mongols once had waned heavily and we were one of the bastions of Tibetan strength. Our dynasty created an autonomous Tibetan state and formally threw off the shackles of Mongol authority and it is because of this that many still flock to our banners."
+#Mechanic were given to pdx version
+
+
+ arch_king_reform: "Arch-King"
+ arch_king_reform_desc: "The Danish Arch-Kings of the Kalmar Union have long tried to unite the scandinavian nations against foreign powers. This union came with a lot of foiled attempts at integrating the minor partners of Norway and Sweden, as well as the Pomeranian, Schleswig and Holsteiner duchies."
+ 
+
+
+
+	arch_king_reform = {
+		icon = crown_highlighted
+		allow_normal_conversion = yes
+		valid_for_nation_designer = yes
+		nation_designer_cost = 0
+		potential = {
+			OR = {
+				primary_culture = danish
+				has_reform = arch_king_reform
+			}
+			1 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			12 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			17 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			1 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			12 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			17 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		modifiers = {
+			prestige = 1
+			diplomatic_annexation_cost = -0.05
+		}
+		ai = {
+			factor = 100
+		}
+	}
+
+
+
+
+
+	crown_of_saint_wenceslaus_2 = {
+		icon = crown_of_saint_wenceslaus
+		allow_normal_conversion = yes
+		valid_for_nation_designer = no
+		potential = {
+			OR = {
+				tag = BOH
+				has_reform = crown_of_saint_wenceslaus_2
+			}
+		}
+		modifiers = {
+			legitimacy = 0.5
+		}
+		factions = {
+			GE_ultraquists
+			GE_catholics
+		}
+	}
+
+ Catholics_MECHANIC_TOOLTIP: "Catholics"
+ Ultraquists_MECHANIC_TOOLTIP: "Ultraquists"
+ 
+ GE_ultraquists: "Ultraquists"
+ GE_ultraquists_influence: "Ultraquist Influence"
+ GE_ultraquists_FACTION_DESC: "The Ultraquists are hardline followers of the teachings of Jan Hus, a Catholic Czech Theologian who preached against the decadence of the church. But got betrayed and executed."
+ GE_catholics: "Catholics"
+ GE_catholics_influence: "Catholic Influence"
+ GE_catholics_FACTION_DESC: "The Catholics support the Catholic doctrine set up by the pope and consider him the highest religious figure on earth, and his words as gospel."
+
+
+    spriteType = {
+        name = "GFX_faction_bg_GE_ultraquists"	
+        texturefile = "gfx//interface//faction_red_frame.tga"
+        transparencecheck = yes
+    }
+    spriteType = {
+        name = "GFX_faction_GE_ultraquists"	
+        texturefile = "gfx//interface//icon_catholic_reform_desire.dds"
+    }
+    spriteType = {
+        name = "GFX_faction_bg_GE_catholics"	
+        texturefile = "gfx//interface//faction_blue_frame.tga"
+        transparencecheck = yes
+    }
+    spriteType = {
+        name = "GFX_faction_GE_catholics"	
+        texturefile = "gfx//interface//papal_influence.dds"
+    }
+
+
+
+GE_ultraquists = {
+	monarch_power = MIL
+	always = yes
+	
+	modifier = {
+		global_unrest = -1
+		tolerance_heretic = 1
+	}
+}
+
+GE_catholics = {
+	monarch_power = DIP
+	always = yes
+	
+	modifier = {
+		improve_relation_modifier = 0.1
+		papal_influence = 1
+	}
+}
+ 
+
+
+
+	sharifate_reform_GE = {
+		icon = hejaz_sharif
+		allow_normal_conversion = yes
+		valid_for_nation_designer = no
+		queen = no
+		potential = {
+			OR = {
+				AND = {
+					religion_group = muslim
+					primary_culture = hejazi_culture
+				}
+				has_reform = sharifate_reform_GE
+			}
+		}
+		trigger = {
+			OR = {
+				AND = {
+					religion_group = muslim
+					primary_culture = hejazi_culture
+				}
+				has_reform = sharifate_reform_GE
+			}
+		}
+		modifiers = {
+			global_unrest = -1
+			legitimacy = 0.5
+			tolerance_heretic = -3
+			church_influence_modifier = 0.20
+		}
+		custom_attributes = {
+			enables_custodian_of_cities = yes
+		}
+		conditional = {
+			allow = { has_dlc = "Cradle of Civilization" }
+			government_abilities = {
+				iqta_mechanic
+			}
+		}
+		ai = {
+			factor = 100
+		}
+	}
+
+ sharifate_reform_GE: "Sharifate"
+ sharifate_reform_GE_desc: "Akin to European feudal nobility, Ashraf were essentially wealthy, hereditary landowners, but differed in their methods of rule. Sharifates were highly centralized around religious centers such as Mecca or Medina, and thus ruled with a heavy dependency on theological principles, with heavy emphasis on Islamic law and punishment."

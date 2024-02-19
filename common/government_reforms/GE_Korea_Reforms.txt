@@ -4,6 +4,7 @@ hermit_kingdom_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 30
 	potential = {
+		NOT = { has_dlc = "Domination"}
 		OR = {
 			primary_culture = korean 
 			has_reform = hermit_kingdom_reform

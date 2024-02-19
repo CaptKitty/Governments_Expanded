@@ -1,5 +1,5 @@
 government = theocracy
-add_government_reform = life_on_the_plateau_reform
+add_government_reform = tibetan_dual_government_reform
 government_rank = 1
 primary_culture = tibetan
 religion = vajrayana

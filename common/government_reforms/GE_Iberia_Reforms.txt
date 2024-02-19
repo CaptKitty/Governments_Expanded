@@ -63,6 +63,7 @@ hispanic_kingdom = {
 	icon = spain_charles
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { has_dlc = "Domination"}
 		OR = {
 			tag = SPA
 			has_reform = hispanic_kingdom
@@ -103,6 +104,7 @@ iberian_enlightened_despotism_reform = {
 	icon = spain_bourbon
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { has_dlc = "Domination"}
 		OR = {
 			tag = SPA
 			has_reform = iberian_enlightened_despotism_reform

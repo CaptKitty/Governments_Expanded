@@ -2877,6 +2877,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+		NOT = { has_dlc = "Domination"}
 		tag = SPA
 	}
 
@@ -2904,6 +2905,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+		NOT = { has_dlc = "Domination"}
 		tag = SPA
 		absolutism = 50
 	}
