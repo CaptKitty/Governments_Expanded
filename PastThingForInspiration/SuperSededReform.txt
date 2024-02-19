@@ -135,7 +135,29 @@ mechanic_enables_tanistry_yes: "Tanistry Elective: Enables you to elect an heir 
 
 
 
-
+	crown_of_saint_wenceslaus = {
+		icon = crown_of_saint_wenceslaus
+		allow_normal_conversion = no
+		potential = {
+			OR = {
+				has_reform = crown_of_saint_wenceslaus
+				have_had_reform = crown_of_saint_wenceslaus
+			}
+		}
+		modifiers = {
+			legitimacy = 0.5
+		}
+		government_abilities = {
+			catholics_vs_ultraquists_mechanic
+		}
+		conditional = {
+			allow = { has_dlc = "Domination" }
+			custom_attributes = {
+				has_ruler_election = yes
+				has_improved_ruler_election = yes
+			}
+		}
+	}
 
 	crown_of_saint_wenceslaus_2 = {
 		icon = crown_of_saint_wenceslaus
@@ -154,6 +176,17 @@ mechanic_enables_tanistry_yes: "Tanistry Elective: Enables you to elect an heir 
 			GE_ultraquists
 			GE_catholics
 		}
+	}
+
+ crown_of_saint_wenceslaus: "Crown of Saint Wencleslaus"
+ crown_of_saint_wenceslaus_desc: "The Crown of Bohemia is a elective title, as such, our monarch has a much better claim to rule then our rivals, as we were chosen not by luck, but by the people."
+ crown_of_saint_wenceslaus_2: "Crown of Saint Wencleslaus"
+ crown_of_saint_wenceslaus_2_desc: "The Crown of Bohemia is a elective title, as such, our monarch has a much better claim to rule then our rivals, as we were chosen not by luck, but by the people."
+
+
+	spriteType = {
+		name = "government_reform_crown_of_saint_wenceslaus"
+		texturefile = "gfx//interface//government_reform_icons//crown_of_saint_wenceslaus.dds"
 	}
 
  Catholics_MECHANIC_TOOLTIP: "Catholics"

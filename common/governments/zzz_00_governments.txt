@@ -135,8 +135,6 @@ monarchy = {
 				iberian_enlightened_despotism_reform
 				margrave_reform
 				consulate_of_the_sea_GE
-				crown_of_saint_wenceslaus
-				crown_of_saint_wenceslaus_2
 				office_of_lord_regent_reform
 				arch_duchy_reform
 				habsburg_monarchy_reform

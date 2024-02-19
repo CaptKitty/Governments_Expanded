@@ -119,30 +119,6 @@
 		}
 	}
 
-	crown_of_saint_wenceslaus = {
-		icon = crown_of_saint_wenceslaus
-		allow_normal_conversion = no
-		potential = {
-			OR = {
-				has_reform = crown_of_saint_wenceslaus
-				have_had_reform = crown_of_saint_wenceslaus
-			}
-		}
-		modifiers = {
-			legitimacy = 0.5
-		}
-		government_abilities = {
-			catholics_vs_ultraquists_mechanic
-		}
-		conditional = {
-			allow = { has_dlc = "Domination" }
-			custom_attributes = {
-				has_ruler_election = yes
-				has_improved_ruler_election = yes
-			}
-		}
-	}
-
 	arch_duchy_reform = {
 		icon = archduchy
 		allow_normal_conversion = yes
