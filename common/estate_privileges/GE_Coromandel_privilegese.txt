@@ -1,4 +1,4 @@
-estate_burghers_tamil_guilds = {
+estate_vaisyas_tamil_guilds = {
 	icon = privilege_monopoly
 	land_share = 0
 	max_absolutism = -5

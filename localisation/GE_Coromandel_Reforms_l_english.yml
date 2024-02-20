@@ -11,8 +11,8 @@
  tamil_trade_guilds_reform_desc: "The Tamil Trade Guilds, anchored in the maritime legacy of the Tamil people, play a vital role in the Coromandel trade node. Situated on the southeastern coast of the Indian subcontinent, this node is a bustling hub for Indian Ocean trade, and the guilds excel as key players in this intricate economic network. \nProficient in maritime activities, the guilds manage fleets of trading vessels, navigating the Indian Ocean to facilitate the exchange of goods, spices, textiles, and other coveted commodities. Their mastery of trade routes establishes them as shrewd negotiators, fostering connections with diverse ports. \nBeyond commerce, the guilds contribute to the cultural and social fabric of the region, acting as patrons of the arts and fostering cosmopolitan practices. They also serve as diplomatic intermediaries, maintaining stability in the region and ensuring the smooth flow of trade."
 
 # Privileges
- estate_burghers_tamil_guilds: "Tamil Guilds"
- estate_burghers_tamil_guilds_desc: "Custodians of Tamil heritage, the guilds balance traditional values with adaptability to global trade dynamics. With keen business acumen, maritime expertise, and cultural contributions, the Tamil Trade Guilds continue to shape the Coromandel trade node's economic and cultural landscape."
+ estate_vaisyas_tamil_guilds: "Tamil Guilds"
+ estate_vaisyas_tamil_guilds_desc: "Custodians of Tamil heritage, the guilds balance traditional values with adaptability to global trade dynamics. With keen business acumen, maritime expertise, and cultural contributions, the Tamil Trade Guilds continue to shape the Coromandel trade node's economic and cultural landscape."
 
 # Modifiers
  ge_tamil_trade_guilds_modifier: "Tamil Trade Guilds"
