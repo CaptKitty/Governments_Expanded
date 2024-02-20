@@ -36,6 +36,7 @@ duchi_montefeltro_reform = {
 	# 	}
 	# }
 }
+
 florentine_republic = {
 	icon = florentine_republic
 	allow_normal_conversion = yes
@@ -1034,11 +1035,24 @@ demedici_dynasty_reform = {
 			which = Oliarch_Influence
 			value = 1
 		}
+		hidden_effect = {
+			country_event = { 
+				id = reform_me_events.224
+				days = 1
+			}
+		}
 	}
 	removed_effect = {
 		change_variable = {
 			which = Oliarch_Influence
 			value = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = GE_Influencial_Ties_1
+			remove_country_modifier = GE_Influencial_Ties_2
+			remove_country_modifier = GE_Influencial_Ties_3
+			remove_country_modifier = GE_Influencial_Ties_4
+			remove_country_modifier = GE_Influencial_Ties_5
 		}
 	}
 	modifiers = {

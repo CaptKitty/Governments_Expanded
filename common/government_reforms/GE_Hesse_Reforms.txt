@@ -65,6 +65,12 @@ hessian_military_complex_reform = {
 			which = Burgher_Influence
 			value = 1
 		}
+		hidden_effect = {
+			country_event = { 
+				id = reform_me_events.102
+				days = 1
+			}
+		}
 	}
 	removed_effect = {
 		change_variable = {

@@ -421,9 +421,6 @@ Home_Market_9 = {
 Home_Market_10 = {
 	trade_efficiency = 0.150
 }
-French_Ordonnance = {
-	global_trade_goods_size_modifier = 0.10
-}
 Economic_Block_1 = {
 	trade_efficiency = 0.025
 }

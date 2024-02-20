@@ -245,6 +245,19 @@ armenian_silk_traders_reform = {
 		caravan_power = 0.25
 		trade_deals_slots = 1
 	}
+	effect = {
+		hidden_effect = {
+			country_event = { 
+				id = reform_me_events.147
+				days = 1
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			remove_country_modifier = GE_silk_trade
+		}
+	}
 	custom_attributes = {
 		enables_silk_traders = yes #15% trade efficiency if trading in silk
 	}

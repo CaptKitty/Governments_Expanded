@@ -415,7 +415,6 @@ on_dependency_gained = {
 	FROM = { ge_country_legacy_of_independence_update = yes }
 	FROM = { ge_country_kingdom_of_brazil_update = yes }
 	FROM = { ge_feudal_receipts_update = yes }
-	FROM = { ge_french_ordonannce_update = yes }
 	FROM = { ge_country_marcher_lords_update = yes }
 	FROM = { ge_country_mandala_peripher_update = yes }
 	FROM = { ge_country_solar_periphery_update = yes }
@@ -434,7 +433,6 @@ on_dependency_lost = {
 	FROM = { ge_country_legacy_of_independence_update = yes }
 	FROM = { ge_country_kingdom_of_brazil_update = yes }
 	FROM = { ge_feudal_receipts_update = yes }
-	FROM = { ge_french_ordonannce_update = yes }
 	FROM = { ge_country_marcher_lords_update = yes }
 	FROM = { ge_country_mandala_peripher_update = yes }
 	FROM = { ge_country_solar_periphery_update = yes }
@@ -456,6 +454,7 @@ on_new_monarch = {
 		reform_me_events.165
 		reform_me_events.193
 		reform_me_events.216
+		reform_me_events.223
 	}
 }
 
@@ -481,6 +480,7 @@ on_alliance_created = {
 	ge_country_swiss_guard_update = yes
 	ge_country_hansa_ties_update = yes
 	ge_country_Varangian_Guard_update = yes
+	ge_country_no_crown_update = yes
 	events = {
 		reform_me_events.217
 		reform_me_events.224
@@ -491,24 +491,39 @@ on_alliance_broken ={
 	ge_country_swiss_guard_update = yes
 	ge_country_hansa_ties_update = yes
 	ge_country_Varangian_Guard_update = yes
+	ge_country_no_crown_update = yes
 	events = {
 		reform_me_events.217
 		reform_me_events.224
 	}
 }
 
+on_mercenary_recruited = {
+	events = {
+		reform_me_events.229
+	}
+}
+
 on_advisor_hired = { #ROOT - Country
 	ge_country_union_of_arras_update = yes
+	ge_country_peasant_council_update = yes
+	ge_country_french_court_update = yes
 }
 
 on_post_adm_advisor_fired = {
 	remove_country_modifier = GE_Union_of_Arras
+	remove_country_modifier = Peasant_Council
+	remove_country_modifier = French_Court
 }
 
 on_post_dip_advisor_fired = {
 	remove_country_modifier = GE_Union_of_Arras
+	remove_country_modifier = Peasant_Council
+	remove_country_modifier = French_Court
 }
 
 on_post_mil_advisor_fired = {
 	remove_country_modifier = GE_Union_of_Arras
+	remove_country_modifier = Peasant_Council
+	remove_country_modifier = French_Court
 }

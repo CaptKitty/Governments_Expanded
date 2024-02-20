@@ -169,11 +169,29 @@ kaza_system_reform = {
 			which = Burgher_Influence
 			value = 1
 		}
+		hidden_effect = {
+			country_event = { 
+				id = reform_me_events.153
+				days = 1
+			}
+		}
 	}
 	removed_effect = {
 		change_variable = {
 			which = Burgher_Influence
 			value = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = GE_Kaza_System_0
+			remove_country_modifier = GE_Kaza_System_1
+			remove_country_modifier = GE_Kaza_System_2
+			remove_country_modifier = GE_Kaza_System_3
+			remove_country_modifier = GE_Kaza_System_4
+			remove_country_modifier = GE_Kaza_System_5
+			remove_country_modifier = GE_Kaza_System_6
+			remove_country_modifier = GE_Kaza_System_7
+			remove_country_modifier = GE_Kaza_System_8
+			remove_country_modifier = GE_Kaza_System_9
 		}
 	}
 	potential = {
@@ -235,11 +253,24 @@ koprulu_dynasty_reform = {
 			which = Royal_Influence
 			value = 1
 		}
+		hidden_effect = {
+			country_event = { 
+				id = reform_me_events.156
+				days = 1
+			}
+		}
 	}
 	removed_effect = {
 		change_variable = {
 			which = Royal_Influence
 			value = -1
+		}
+		hidden_effect = {
+			every_owned_province = {
+				remove_province_modifier = GE_Koprulu_Defence_Local
+				remove_province_modifier = GE_Koprulu_Economy_Local
+			}
+			remove_country_modifier = GE_Koprulu_Court
 		}
 	}
 	potential = {
@@ -353,6 +384,10 @@ expanded_devshirme_reform = {
 			every_owned_province = {
 				ge_devshirme_province_update = yes
 			}
+			country_event = { 
+				id = reform_me_events.155
+				days = 1
+			}
 		}
 	}
 	removed_effect = {
@@ -364,6 +399,7 @@ expanded_devshirme_reform = {
 			every_owned_province = {
 				remove_province_modifier = GE_Devshirme
 			}
+			remove_country_modifier = GE_Janissary_Guards
 		}
 	}
 	potential = {

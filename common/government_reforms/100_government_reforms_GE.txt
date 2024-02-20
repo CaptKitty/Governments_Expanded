@@ -90,6 +90,14 @@ theocratic_autocracy = {
 	custom_attributes = {
 		enables_roman_empire = yes #Co-Emperor Mechanic
 	}
+	effect = {
+		hidden_effect = {
+			country_event = { 
+				id = reform_me_events.165
+				days = 1
+			}
+		}
+	}
 	removed_effect = {
 		hidden_effect = {
 			remove_country_modifier = GE_Roman_Empire_Corruption
@@ -312,6 +320,14 @@ emirate_of_andalusia_reform = {
 		governing_capacity = 150
 		global_unrest = -1
 		heir_chance = -2
+	}
+	removed_effect = {
+		hidden_effect = {
+			remove_country_modifier = GE_Iberian_Harem_Andalucian
+			remove_country_modifier = GE_Iberian_Harem_Portugese
+			remove_country_modifier = GE_Iberian_Harem_Castillian
+			remove_country_modifier = GE_Iberian_Harem_Catalan
+		}
 	}
 	custom_attributes = {
 		enables_iberian_harem = yes
@@ -1406,13 +1422,18 @@ guild_dominance_reform_upgrade = {
 		}
 	}
 	potential = {
-		mission_completed = ME_HOL_Mother_Of_All_Trade
-	}
-	trigger = {
 		OR = {
 			primary_culture = dutch
 			primary_culture = flemish
+			primary_culture = Frisian
 			has_reform = guild_dominance_reform_upgrade
+		}
+	}
+	trigger = {
+		OR = {
+			mission_completed = ned_spice_australia
+			mission_completed = ME_HOL_Mother_Of_All_Trade
+			mission_completed = emp_ned_dutch_east_indies
 		}
 	}
 	modifiers = {
@@ -2345,11 +2366,20 @@ buddhist_nation_reform = {
 			which = Clergy_Influence
 			value = 1
 		}
+		hidden_effect = {
+			country_event = { 
+				id = reform_me_events.185
+				days = 1
+			}
+		}
 	}
 	removed_effect = {
 		change_variable = {
 			which = Clergy_Influence
 			value = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = GE_Religious_Fervor
 		}
 	}
 	potential = {
@@ -3168,6 +3198,12 @@ diocletian_reforms_reform = {
 		change_variable = {
 			which = Royal_Influence
 			value = 1
+		}
+		hidden_effect = {
+			country_event = { 
+				id = reform_me_events.168
+				days = 1
+			}
 		}
 	}
 	removed_effect = {
@@ -4973,14 +5009,10 @@ eunich_administration_reform = {
 	icon = "asian_scripture"
 	allow_normal_conversion = yes
 	potential = {
-		OR = {
-			tag = MNG
-		}
+		tag = MNG
 	}
 	trigger = {
-		OR = {
-			tag = MNG
-		}
+		tag = MNG
 	}
 	modifiers = {
 		free_dip_policy = 1
@@ -4989,6 +5021,14 @@ eunich_administration_reform = {
 	}
 	custom_attributes = {
 		enables_eastern_courts = yes
+	}
+	effect = {
+		hidden_effect = {
+			country_event = { 
+				id = reform_me_events.148
+				days = 1
+			}
+		}
 	}
 	removed_effect = {
 		hidden_effect = {
@@ -5025,6 +5065,14 @@ civil_servant_reform = {
 	}
 	custom_attributes = {
 		enables_eastern_courts = yes
+	}
+	effect = {
+		hidden_effect = {
+			country_event = { 
+				id = reform_me_events.148
+				days = 1
+			}
+		}
 	}
 	removed_effect = {
 		hidden_effect = {
@@ -5088,11 +5136,29 @@ kiwi_support_reform = {
 			which = Burgher_Influence
 			value = 1
 		}
+		hidden_effect = {
+			country_event = { 
+				id = reform_me_events.159
+				days = 1
+			}
+		}
 	}
 	removed_effect = {
 		change_variable = {
 			which = Burgher_Influence
 			value = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = Kiwi_Rights_1
+			remove_country_modifier = Kiwi_Rights_2
+			remove_country_modifier = Kiwi_Rights_3
+			remove_country_modifier = Kiwi_Rights_4
+			remove_country_modifier = Kiwi_Rights_5
+			remove_country_modifier = Kiwi_Rights_6
+			remove_country_modifier = Kiwi_Rights_7
+			remove_country_modifier = Kiwi_Rights_8
+			remove_country_modifier = Kiwi_Rights_9
+			remove_country_modifier = Kiwi_Rights_10
 		}
 	}
 	potential = {
@@ -5167,11 +5233,20 @@ decretum_maius_reform = {
 			which = Royal_Influence
 			value = 1
 		}
+		hidden_effect = {
+			country_event = { 
+				id = reform_me_events.59
+				days = 1
+			}
+		}
 	}
 	removed_effect = {
 		change_variable = {
 			which = Royal_Influence
 			value = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = Masked_Monarch
 		}
 	}
 	potential = {
@@ -5789,6 +5864,28 @@ foreign_recruitment_reform = {
 		merchants = 1
 		trade_deals_slots = 1
 	}
+	effect = {
+		hidden_effect = {
+			country_event = { 
+				id = reform_me_events.23
+				days = 1
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			remove_country_modifier = Mercenary_Markets_1
+			remove_country_modifier = Mercenary_Markets_2
+			remove_country_modifier = Mercenary_Markets_3
+			remove_country_modifier = Mercenary_Markets_4
+			remove_country_modifier = Mercenary_Markets_5
+			remove_country_modifier = Mercenary_Markets_6
+			remove_country_modifier = Mercenary_Markets_7
+			remove_country_modifier = Mercenary_Markets_8
+			remove_country_modifier = Mercenary_Markets_9
+			remove_country_modifier = Mercenary_Markets_10
+		}
+	}
 	custom_attributes = {
 		enables_mercenary_markets = yes #-1% Infantry Cost and 2% Manpower Recovery per merchant
 	}
@@ -5919,6 +6016,14 @@ grand_council_reform = {
 	custom_attributes = {
 		enables_qing_court = yes
 	}
+	effect = {
+		hidden_effect = {
+			country_event = { 
+				id = reform_me_events.149
+				days = 1
+			}
+		}
+	}
 	removed_effect = {
 		hidden_effect = {
 			remove_country_modifier = GE_qing_court_small
@@ -5941,11 +6046,20 @@ tripartum_reform = {
 			which = Noble_Influence
 			value = 1
 		}
+		hidden_effect = {
+			country_event = { 
+				id = reform_me_events.180
+				days = 1
+			}
+		}
 	}
 	removed_effect = {
 		change_variable = {
 			which = Noble_Influence
 			value = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = Noble_Service
 		}
 	}
 	potential = {
@@ -6525,11 +6639,20 @@ landsknecht_captains_reform = {
 			which = Burgher_Influence
 			value = 1
 		}
+		hidden_effect = {
+			country_event = { 
+				id = reform_me_events.229
+				days = 1
+			}
+		}
 	}
 	removed_effect = {
 		change_variable = {
 			which = Burgher_Influence
 			value = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = GE_Landsknecht_Sergeants
 		}
 	}
 	potential = {
@@ -6756,11 +6879,24 @@ south_east_asian_elephants_reform = {
 			which = Royal_Influence
 			value = 1
 		}
+		hidden_effect = {
+			country_event = { 
+				id = reform_me_events.183
+				days = 1
+			}
+		}
 	}
 	removed_effect = {
 		change_variable = {
 			which = Royal_Influence
 			value = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = GE_Elephant_Cavalry_1
+			remove_country_modifier = GE_Elephant_Cavalry_2
+			remove_country_modifier = GE_Elephant_Cavalry_3
+			remove_country_modifier = GE_Elephant_Cavalry_4
+			remove_country_modifier = GE_Elephant_Cavalry_5
 		}
 	}
 	potential = {
@@ -6797,11 +6933,21 @@ honor_of_thai_kingdoms_reform = {
 			which = Royal_Influence
 			value = 1
 		}
+		hidden_effect = {
+			country_event = { 
+				id = reform_me_events.184
+				days = 1
+			}
+		}
 	}
 	removed_effect = {
 		change_variable = {
 			which = Royal_Influence
 			value = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = siamese_national_pride
+			remove_country_modifier = siamese_national_shame
 		}
 	}
 	potential = {
@@ -7482,11 +7628,24 @@ jayish_al_malik_reform = {
 			which = Royal_Influence
 			value = 1
 		}
+		hidden_effect = {
+			country_event = { 
+				id = reform_me_events.231
+				days = 1
+			}
+		}
 	}
 	removed_effect = {
 		change_variable = {
 			which = Royal_Influence
 			value = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = GE_Foreign_Drill_Masters_1
+			remove_country_modifier = GE_Foreign_Drill_Masters_2
+			remove_country_modifier = GE_Foreign_Drill_Masters_3
+			remove_country_modifier = GE_Foreign_Drill_Masters_4
+			remove_country_modifier = GE_Foreign_Drill_Masters_5
 		}
 	}
 	potential = {
@@ -7586,12 +7745,6 @@ strenghten_industry_reform = {
 mercantilism_reform = {
 	icon = economy_trade
 	allow_normal_conversion = yes
-	# effect = {
-	# 	add_mercantilism = 5
-	# }
-	# removed_effect = {
-	# 	add_mercantilism = -5
-	# }
 	modifiers = {
 		# global_prov_trade_power_modifier = 0.10
 		merchants = 1
@@ -7599,6 +7752,14 @@ mercantilism_reform = {
 	}
 	custom_attributes = {
 		enables_home_market = yes #1.5% Trade Efficiency per 10% Mercantilism
+	}
+	effect = {
+		hidden_effect = {
+			country_event = { 
+				id = reform_me_events.118
+				days = 1
+			}
+		}
 	}
 	removed_effect = {
 		hidden_effect = {

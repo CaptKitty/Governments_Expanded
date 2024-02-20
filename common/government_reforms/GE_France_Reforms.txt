@@ -139,6 +139,12 @@ noblesse_d_epee_reform = {
 			which = Noble_Influence
 			value = 1
 		}
+		hidden_effect = {
+			country_event = { 
+				id = reform_me_events.111
+				days = 1
+			}
+		}
 	}
 	removed_effect = {
 		change_variable = {
@@ -346,6 +352,12 @@ compagnies_dordonnance_reform_GE = {
 			which = Royal_Influence
 			value = 1
 		}
+		hidden_effect = {
+			country_event = { 
+				id = reform_me_events.107
+				days = 1
+			}
+		}
 	}
 	removed_effect = {
 		change_variable = {
@@ -385,6 +397,12 @@ abolish_the_patronage_system_reform = {
 		change_variable = {
 			which = Royal_Influence
 			value = 1
+		}
+		hidden_effect = {
+			country_event = { 
+				id = reform_me_events.122
+				days = 1
+			}
 		}
 	}
 	removed_effect = {
@@ -479,6 +497,9 @@ parisian_court_reform = {
 			which = Royal_Influence
 			value = 1
 		}
+		hidden_effect = {
+			ge_country_french_court_update = yes
+		}
 	}
 	removed_effect = {
 		change_variable = {
@@ -521,6 +542,14 @@ corps_diplomatique_reform = {
 		change_variable = {
 			which = Burgher_Influence
 			value = 1
+		}
+		hidden_effect = {
+			every_known_country = {
+				country_event = { 
+					id = reform_me_events.115
+					days = 1
+				}
+			}
 		}
 	}
 	removed_effect = {
@@ -666,21 +695,7 @@ conseil_souverain_reform = {
 		trade_steering = 0.20
 	}
 	custom_attributes = {
-		enables_french_ordonannce = yes #10% Goods Produced in Colonies
-	}
-	effect = {
-		hidden_effect = {
-			every_subject_country ={
-				ge_french_ordonannce_update = yes
-			}
-		}
-	}
-	removed_effect = {
-		hidden_effect = {
-			every_subject_country ={
-				remove_country_modifier = French_Ordonnance
-			}
-		}
+		extra_trade_goods_for_colonial_subjects = yes
 	}
 	ai = {
 		factor = 100
@@ -703,6 +718,14 @@ continental_system_reform = {
 	}
 	custom_attributes = {
 		enables_economic_block = yes #2.5% Trade efficiency per ally
+	}
+	effect = {
+		hidden_effect = {
+			country_event = { 
+				id = reform_me_events.121
+				days = 1
+			}
+		}
 	}
 	removed_effect = {
 		hidden_effect = {

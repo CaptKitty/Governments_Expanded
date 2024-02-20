@@ -409,3 +409,164 @@ country_event = {
 		}
 	}
 }
+
+
+ reform_me_events.228.a: "[Root.GE_Minority_Exploitation_Counter.GetValue]"
+ GE_Minority_Exploitation_Counter_Tooltip: "Gain §G+[Root.GE_Minority_Exploitation_Counter.GetValue]§! Manpower from this year's foreign recruitment efforts."
+
+
+country_event = {
+	id = reform_me_events.228
+	title = reform_me_events.228.t
+	desc = reform_me_events.228.d
+	picture = WESTERNISATION_eventPicture
+	# hidden = yes
+
+	trigger = {
+		has_government_attribute = GE_minority_exploitation
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	immediate = {
+		every_owned_province = {
+			limit = {
+				has_owner_accepted_culture = no
+				has_owner_culture = no
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						base_manpower = 1
+					}
+					FROM = {
+						change_variable = {
+							which = GE_Minority_Exploitation_Counter
+							value = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						base_manpower = 2
+					}
+					FROM = {
+						change_variable = {
+							which = GE_Minority_Exploitation_Counter
+							value = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						base_manpower = 3
+					}
+					FROM = {
+						change_variable = {
+							which = GE_Minority_Exploitation_Counter
+							value = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						base_manpower = 4
+					}
+					FROM = {
+						change_variable = {
+							which = GE_Minority_Exploitation_Counter
+							value = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						base_manpower = 5
+					}
+					FROM = {
+						change_variable = {
+							which = GE_Minority_Exploitation_Counter
+							value = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						base_manpower = 6
+					}
+					FROM = {
+						change_variable = {
+							which = GE_Minority_Exploitation_Counter
+							value = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						base_manpower = 7
+					}
+					FROM = {
+						change_variable = {
+							which = GE_Minority_Exploitation_Counter
+							value = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						base_manpower = 8
+					}
+					FROM = {
+						change_variable = {
+							which = GE_Minority_Exploitation_Counter
+							value = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						base_manpower = 9
+					}
+					FROM = {
+						change_variable = {
+							which = GE_Minority_Exploitation_Counter
+							value = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						base_manpower = 10
+					}
+					FROM = {
+						change_variable = {
+							which = GE_Minority_Exploitation_Counter
+							value = 1
+						}
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = reform_me_events.228.a
+		custom_tooltip = GE_Minority_Exploitation_Counter_Tooltip
+		#hidden_effect = {
+			while = {
+				limit = {
+					check_variable = {
+						which = GE_Minority_Exploitation_Counter
+						value = 1
+					}
+				}
+				add_manpower = 0.001
+				change_variable = {
+					which = GE_Minority_Exploitation_Counter
+					value = -1
+				}
+			}
+		#}
+	}
+}

@@ -19,6 +19,21 @@ hermit_kingdom_reform = {
 	modifiers = {
 		defensiveness = 0.2
 	}
+	effect = {
+		hidden_effect = {
+			country_event = { 
+				id = reform_me_events.173
+				days = 1
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			remove_country_modifier = Hermit_five
+			remove_country_modifier = Hermit_ten
+			remove_country_modifier = Hermit_fifteen
+		}
+	}
 	custom_attributes = {
 		enables_peace_development_reduction = yes
 	}

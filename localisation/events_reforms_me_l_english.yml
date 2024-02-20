@@ -117,9 +117,6 @@
  GE_burgher_autonomy_event: "Every owned province with §MUrban Trade Goods§! (up to 5) will gain:"
  reform_me_events.226.b: "Mere citizens dare to restrict my ability to revoke their privileges?"
 
- reform_me_events.228.a: "[Root.GE_Minority_Exploitation_Counter.GetValue]"
- GE_Minority_Exploitation_Counter_Tooltip: "Gain §G+[Root.GE_Minority_Exploitation_Counter.GetValue]§! Manpower from this year's foreign recruitment efforts."
-
  reform_me_events.232.t: "Wattasid Coup"
  reform_me_events.232.d: "Following the death of my father, the beloved sultan, the Wattasids have been acting as regents for our sultanate. With my rising star, it is time for them to hand over the royal authority and crown me. But despite my wishes, they have ignored this. Rumors are spreading about a new sultan, and there seems to be little mention of my name or family in these rumors. This suggests that darker forces are at play and my throne might be in peril."
  reform_me_events.232.a: "Ignore these Rumors, they are our loyal viziers."

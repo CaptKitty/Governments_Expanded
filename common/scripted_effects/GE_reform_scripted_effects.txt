@@ -387,22 +387,6 @@ ge_feudal_receipts_update = {
 	}
 }
 
-ge_french_ordonannce_update = {
-	if = {
-		limit = {
-			is_colonial_nation = yes
-			overlord = { has_government_attribute = enables_french_ordonannce }
-		}
-		add_country_modifier = {
-			name = "French_Ordonnance"
-			duration = -1
-		}
-	}
-	else = {
-		remove_country_modifier = French_Ordonnance
-	}
-}
-
 ge_country_trade_princes_update = {
 	if = {
 		limit = {
@@ -498,6 +482,25 @@ ge_country_kingdom_of_brazil_update = {
 	}
 }
 
+ge_country_colonial_plantations_update = {
+	if = {
+		limit = {
+			is_colonial_nation = yes
+			overlord = { has_government_attribute = enables_colonial_plantations }
+			capital_scope = {
+				colonial_region = colonial_brazil
+			}
+		}
+		add_country_modifier = {
+			name = "Kingdom_Of_Brazil"
+			duration = -1
+		}
+	}
+	else = {
+		remove_country_modifier = Kingdom_Of_Brazil
+	}
+}
+
 ge_country_Varangian_Guard_update = {
 	if = {
 		limit = {
@@ -555,9 +558,27 @@ ge_country_solar_periphery_update = {
 	}
 }
 
+ge_country_no_crown_update = {
+	if = {
+		limit = {
+			has_government_attribute = enables_no_crown
+			num_of_allies = 2
+			NOT = { any_ally = { government = monarchy } }
+		}
+		add_country_modifier = {
+			name = "Recognize_No_Crown"
+			duration = -1
+		}
+	}
+	else = {
+		remove_country_modifier = Recognize_No_Crown
+	}
+}
+
 ge_country_union_of_arras_update = {
 	if = {
 		limit = {
+			has_government_attribute = enables_union_of_arras 
 			employed_advisor = {
 				religion = catholic
 				category = ADM
@@ -570,7 +591,6 @@ ge_country_union_of_arras_update = {
 				religion = catholic
 				category = MIL
 			}
-			overlord = { has_government_attribute = enables_union_of_arras }
 		}
 		add_country_modifier = {
 			name = "GE_Union_of_Arras"
@@ -579,6 +599,57 @@ ge_country_union_of_arras_update = {
 	}
 	else = {
 		remove_country_modifier = GE_Union_of_Arras
+	}
+}
+
+ge_country_peasant_council_update = {
+	if = {
+		limit = {
+			has_government_attribute = enables_peasant_council 
+			employed_advisor = {
+				category = ADM
+			}
+			employed_advisor = {
+				category = DIP
+			}
+			employed_advisor = {
+				category = MIL
+			}
+		}
+		add_country_modifier = {
+			name = "Peasant_Council"
+			duration = -1
+		}
+	}
+	else = {
+		remove_country_modifier = Peasant_Council
+	}
+}
+
+ge_country_french_court_update = {
+	if = {
+		limit = {
+			has_government_attribute = enables_french_court 
+			employed_advisor = {
+				category = ADM
+				culture = ROOT
+			}
+			employed_advisor = {
+				category = DIP
+				culture = ROOT
+			}
+			employed_advisor = {
+				category = MIL
+				culture = ROOT
+			}
+		}
+		add_country_modifier = {
+			name = "French_Court"
+			duration = -1
+		}
+	}
+	else = {
+		remove_country_modifier = French_Court
 	}
 }
 

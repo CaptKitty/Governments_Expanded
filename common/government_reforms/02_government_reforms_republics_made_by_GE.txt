@@ -253,6 +253,9 @@ sovereignity_reform = {
 			which = Populist_Influence
 			value = 1
 		}
+		hidden_effect = {
+			ge_country_no_crown_update = yes 
+		}
 	}
 	removed_effect = {
 		change_variable = {
@@ -395,6 +398,9 @@ peasant_council_reform = {
 		change_variable = {
 			which = Populist_Influence
 			value = 1
+		}
+		hidden_effect = {
+			ge_country_peasant_council_update = yes
 		}
 	}
 	removed_effect = {
@@ -1439,6 +1445,14 @@ empowered_principle_of_profit_reform = {
 	custom_attributes = {
 		enables_home_market = yes
 	}
+	effect = {
+		hidden_effect = {
+			country_event = { 
+				id = reform_me_events.118
+				days = 1
+			}
+		}
+	}
 	removed_effect = {
 		hidden_effect = {
 			remove_country_modifier = Home_Market_1
@@ -1477,6 +1491,19 @@ empowered_principle_of_power_reform = {
 		election_cycle = 1
 		reelection_cost = -0.15
 		republican_tradition = -0.1
+	}
+	effect = {
+		hidden_effect = {
+			country_event = { 
+				id = reform_me_events.145
+				days = 1
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			remove_country_modifier = Long_Reign
+		}
 	}
 	custom_attributes = {
 		enables_long_reign = yes
@@ -1596,6 +1623,14 @@ hansa_universities_reform = {
 	}
 	custom_attributes = {
 		enables_attracting_academics = yes #12.5% Innovativeness Gain per 20 prestige
+	}
+	effect = {
+		hidden_effect = {
+			country_event = { 
+				id = reform_me_events.100
+				days = 1
+			}
+		}
 	}
 	removed_effect = {
 		hidden_effect = {
