@@ -672,9 +672,6 @@
 			max_absolutism = 5
 			diplomatic_upkeep = 1
 		}
-		custom_attributes = {
-
-		}
 		conditional = {
 			allow = { has_dlc = "Cradle of Civilization" }
 			government_abilities = {

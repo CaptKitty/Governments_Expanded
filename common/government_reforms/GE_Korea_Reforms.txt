@@ -82,9 +82,9 @@ nobi_jongmobub_reform = {
 	modifiers = {
 		global_tax_modifier = 0.1
 	}
-	custom_attributes = {
-		#enables_abolish_noble_customs = yes # +15% Local Trade Power and Production Efficiency in noble estate provinces
-	}
+	# custom_attributes = {
+	#	# enables_abolish_noble_customs = yes # +15% Local Trade Power and Production Efficiency in noble estate provinces
+	# }
 	removed_effect = {
 		change_variable = {
 			which = Royal_Influence
