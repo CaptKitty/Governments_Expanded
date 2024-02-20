@@ -135,7 +135,7 @@ monastic_temples_reform = {
 		}
 	}
 	custom_attributes = {
-		enables_monastic_temples = yes #-25% Development cost in hills and mountains
+		enables_monastic_temples = yes #+15% Manpower in provinces with §YTax Building§!
 	}
 	ai = {
 		factor = 100
