@@ -680,11 +680,24 @@ republican_guard_reform_republic = {
 			which = Populist_Influence
 			value = 1
 		}
+		hidden_effect = {
+			country_event = { 
+				id = reform_me_events.202
+				days = 1
+			}
+		}
 	}
 	removed_effect = {
 		change_variable = {
 			which = Populist_Influence
 			value = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = GE_Republican_Guard_1
+			remove_country_modifier = GE_Republican_Guard_2
+			remove_country_modifier = GE_Republican_Guard_3
+			remove_country_modifier = GE_Republican_Guard_4
+			remove_country_modifier = GE_Republican_Guard_5
 		}
 	}
 	potential = {

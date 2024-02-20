@@ -99,11 +99,21 @@ grand_logothete_reform = {
 			which = Noble_Influence
 			value = 1
 		}
+		hidden_effect = {
+			country_event = { 
+				id = reform_me_events.193
+				days = 1
+			}
+		}
 	}
 	removed_effect = {
 		change_variable = {
 			which = Noble_Influence
 			value = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = GE_church_policy_tolerance
+			remove_country_modifier = GE_church_policy_missionary
 		}
 	}
 	potential = {
@@ -138,11 +148,26 @@ form_the_vojstatic_reform = {
 			which = Noble_Influence
 			value = 1
 		}
+		hidden_effect = {
+			country_event = { 
+				id = reform_me_events.216
+				days = 1
+			}
+		}
 	}
 	removed_effect = {
 		change_variable = {
 			which = Noble_Influence
 			value = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = GE_Grand_Leader_0
+			remove_country_modifier = GE_Grand_Leader_1
+			remove_country_modifier = GE_Grand_Leader_2
+			remove_country_modifier = GE_Grand_Leader_3
+			remove_country_modifier = GE_Grand_Leader_4
+			remove_country_modifier = GE_Grand_Leader_5
+			remove_country_modifier = GE_Grand_Leader_6
 		}
 	}
 	potential = {

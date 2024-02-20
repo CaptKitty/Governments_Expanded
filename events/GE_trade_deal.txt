@@ -1,0 +1,988 @@
+namespace = reform_me_events
+
+country_event = {
+	id = reform_me_events.236
+	title = reform_me_events.236.t
+	desc = reform_me_events.236.d
+	picture = ACCUSATION_eventPicture
+	hidden = yes
+
+	trigger = {
+		check_variable = {
+			which = GE_num_of_total_trade
+			value = 1
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 3650
+	}
+
+	immediate = {
+		#Rural Exports {
+			if = {
+				limit = {
+					check_variable = {
+						which = GE_num_of_outgoing_rural_trade
+						value = 5
+					}
+					NOT = {
+						calc_true_if = {
+							all_country = {
+								has_country_flag = GE_Rural_Trade_Deal_With_@Root
+								exists = yes
+							}
+							amount = 5
+						}
+					}
+				}
+				change_variable = {
+					which = GE_num_of_outgoing_rural_trade
+					value = -1
+				}
+				add_export_effect = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = GE_num_of_outgoing_rural_trade
+						value = 4
+					}
+					NOT = {
+						calc_true_if = {
+							all_country = {
+								has_country_flag = GE_Rural_Trade_Deal_With_@Root
+								exists = yes
+							}
+							amount = 4
+						}
+					}
+				}
+				change_variable = {
+					which = GE_num_of_outgoing_rural_trade
+					value = -1
+				}
+				add_export_effect = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = GE_num_of_outgoing_rural_trade
+						value = 3
+					}
+					NOT = {
+						calc_true_if = {
+							all_country = {
+								has_country_flag = GE_Rural_Trade_Deal_With_@Root
+								exists = yes
+							}
+							amount = 3
+						}
+					}
+				}
+				change_variable = {
+					which = GE_num_of_outgoing_rural_trade
+					value = -1
+				}
+				add_export_effect = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = GE_num_of_outgoing_rural_trade
+						value = 2
+					}
+					NOT = {
+						calc_true_if = {
+							all_country = {
+								has_country_flag = GE_Rural_Trade_Deal_With_@Root
+								exists = yes
+							}
+							amount = 2
+						}
+					}
+				}
+				change_variable = {
+					which = GE_num_of_outgoing_rural_trade
+					value = -1
+				}
+				add_export_effect = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = GE_num_of_outgoing_rural_trade
+						value = 1
+					}
+					NOT = {
+						calc_true_if = {
+							all_country = {
+								has_country_flag = GE_Rural_Trade_Deal_With_@Root
+								exists = yes
+							}
+							amount = 1
+						}
+					}
+				}
+				change_variable = {
+					which = GE_num_of_outgoing_rural_trade
+					value = -1
+				}
+				add_export_effect = yes
+			}
+		#}
+		#Rural Imports {
+			if = {
+				limit = {
+					check_variable = {
+						which = GE_num_of_incoming_rural_trade
+						value = 5
+					}
+					NOT = {
+						calc_true_if = {
+							all_country = {
+								has_country_flag = GE_Rural_Trade_Deal_From_@Root
+								exists = yes
+							}
+							amount = 5
+						}
+					}
+				}
+				change_variable = {
+					which = GE_num_of_incoming_rural_trade
+					value = -1
+				}
+				add_import_effect = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = GE_num_of_incoming_rural_trade
+						value = 4
+					}
+					NOT = {
+						calc_true_if = {
+							all_country = {
+								has_country_flag = GE_Rural_Trade_Deal_From_@Root
+								exists = yes
+							}
+							amount = 4
+						}
+					}
+				}
+				change_variable = {
+					which = GE_num_of_incoming_rural_trade
+					value = -1
+				}
+				add_import_effect = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = GE_num_of_incoming_rural_trade
+						value = 3
+					}
+					NOT = {
+						calc_true_if = {
+							all_country = {
+								has_country_flag = GE_Rural_Trade_Deal_From_@Root
+								exists = yes
+							}
+							amount = 3
+						}
+					}
+				}
+				change_variable = {
+					which = GE_num_of_incoming_rural_trade
+					value = -1
+				}
+				add_import_effect = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = GE_num_of_incoming_rural_trade
+						value = 2
+					}
+					NOT = {
+						calc_true_if = {
+							all_country = {
+								has_country_flag = GE_Rural_Trade_Deal_From_@Root
+								exists = yes
+							}
+							amount = 2
+						}
+					}
+				}
+				change_variable = {
+					which = GE_num_of_incoming_rural_trade
+					value = -1
+				}
+				add_import_effect = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = GE_num_of_incoming_rural_trade
+						value = 1
+					}
+					NOT = {
+						calc_true_if = {
+							all_country = {
+								has_country_flag = GE_Rural_Trade_Deal_From_@Root
+								exists = yes
+							}
+							amount = 1
+						}
+					}
+				}
+				change_variable = {
+					which = GE_num_of_incoming_rural_trade
+					value = -1
+				}
+				add_import_effect = yes
+			}
+		#}
+		#Urban Exports {
+			if = {
+				limit = {
+					check_variable = {
+						which = GE_num_of_outgoing_Urban_trade
+						value = 5
+					}
+					NOT = {
+						calc_true_if = {
+							all_country = {
+								has_country_flag = GE_Urban_Trade_Deal_With_@Root
+								exists = yes
+							}
+							amount = 5
+						}
+					}
+				}
+				change_variable = {
+					which = GE_num_of_outgoing_Urban_trade
+					value = -1
+				}
+				add_export_effect = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = GE_num_of_outgoing_Urban_trade
+						value = 4
+					}
+					NOT = {
+						calc_true_if = {
+							all_country = {
+								has_country_flag = GE_Urban_Trade_Deal_With_@Root
+								exists = yes
+							}
+							amount = 4
+						}
+					}
+				}
+				change_variable = {
+					which = GE_num_of_outgoing_Urban_trade
+					value = -1
+				}
+				add_export_effect = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = GE_num_of_outgoing_Urban_trade
+						value = 3
+					}
+					NOT = {
+						calc_true_if = {
+							all_country = {
+								has_country_flag = GE_Urban_Trade_Deal_With_@Root
+								exists = yes
+							}
+							amount = 3
+						}
+					}
+				}
+				change_variable = {
+					which = GE_num_of_outgoing_Urban_trade
+					value = -1
+				}
+				add_export_effect = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = GE_num_of_outgoing_Urban_trade
+						value = 2
+					}
+					NOT = {
+						calc_true_if = {
+							all_country = {
+								has_country_flag = GE_Urban_Trade_Deal_With_@Root
+								exists = yes
+							}
+							amount = 2
+						}
+					}
+				}
+				change_variable = {
+					which = GE_num_of_outgoing_Urban_trade
+					value = -1
+				}
+				add_export_effect = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = GE_num_of_outgoing_Urban_trade
+						value = 1
+					}
+					NOT = {
+						calc_true_if = {
+							all_country = {
+								has_country_flag = GE_Urban_Trade_Deal_With_@Root
+								exists = yes
+							}
+							amount = 1
+						}
+					}
+				}
+				change_variable = {
+					which = GE_num_of_outgoing_Urban_trade
+					value = -1
+				}
+				add_export_effect = yes
+			}
+		#}
+		#Urban Imports {
+			if = {
+				limit = {
+					check_variable = {
+						which = GE_num_of_incoming_Urban_trade
+						value = 5
+					}
+					NOT = {
+						calc_true_if = {
+							all_country = {
+								has_country_flag = GE_Urban_Trade_Deal_From_@Root
+								exists = yes
+							}
+							amount = 5
+						}
+					}
+				}
+				change_variable = {
+					which = GE_num_of_incoming_Urban_trade
+					value = -1
+				}
+				add_import_effect = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = GE_num_of_incoming_Urban_trade
+						value = 4
+					}
+					NOT = {
+						calc_true_if = {
+							all_country = {
+								has_country_flag = GE_Urban_Trade_Deal_From_@Root
+								exists = yes
+							}
+							amount = 4
+						}
+					}
+				}
+				change_variable = {
+					which = GE_num_of_incoming_Urban_trade
+					value = -1
+				}
+				add_import_effect = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = GE_num_of_incoming_Urban_trade
+						value = 3
+					}
+					NOT = {
+						calc_true_if = {
+							all_country = {
+								has_country_flag = GE_Urban_Trade_Deal_From_@Root
+								exists = yes
+							}
+							amount = 3
+						}
+					}
+				}
+				change_variable = {
+					which = GE_num_of_incoming_Urban_trade
+					value = -1
+				}
+				add_import_effect = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = GE_num_of_incoming_Urban_trade
+						value = 2
+					}
+					NOT = {
+						calc_true_if = {
+							all_country = {
+								has_country_flag = GE_Urban_Trade_Deal_From_@Root
+								exists = yes
+							}
+							amount = 2
+						}
+					}
+				}
+				change_variable = {
+					which = GE_num_of_incoming_Urban_trade
+					value = -1
+				}
+				add_import_effect = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = GE_num_of_incoming_Urban_trade
+						value = 1
+					}
+					NOT = {
+						calc_true_if = {
+							all_country = {
+								has_country_flag = GE_Urban_Trade_Deal_From_@Root
+								exists = yes
+							}
+							amount = 1
+						}
+					}
+				}
+				change_variable = {
+					which = GE_num_of_incoming_Urban_trade
+					value = -1
+				}
+				add_import_effect = yes
+			}
+		#}
+		#Mining Exports {
+			if = {
+				limit = {
+					check_variable = {
+						which = GE_num_of_outgoing_Mining_trade
+						value = 5
+					}
+					NOT = {
+						calc_true_if = {
+							all_country = {
+								has_country_flag = GE_Mining_Trade_Deal_With_@Root
+								exists = yes
+							}
+							amount = 5
+						}
+					}
+				}
+				change_variable = {
+					which = GE_num_of_outgoing_Mining_trade
+					value = -1
+				}
+				add_export_effect = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = GE_num_of_outgoing_Mining_trade
+						value = 4
+					}
+					NOT = {
+						calc_true_if = {
+							all_country = {
+								has_country_flag = GE_Mining_Trade_Deal_With_@Root
+								exists = yes
+							}
+							amount = 4
+						}
+					}
+				}
+				change_variable = {
+					which = GE_num_of_outgoing_Mining_trade
+					value = -1
+				}
+				add_export_effect = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = GE_num_of_outgoing_Mining_trade
+						value = 3
+					}
+					NOT = {
+						calc_true_if = {
+							all_country = {
+								has_country_flag = GE_Mining_Trade_Deal_With_@Root
+								exists = yes
+							}
+							amount = 3
+						}
+					}
+				}
+				change_variable = {
+					which = GE_num_of_outgoing_Mining_trade
+					value = -1
+				}
+				add_export_effect = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = GE_num_of_outgoing_Mining_trade
+						value = 2
+					}
+					NOT = {
+						calc_true_if = {
+							all_country = {
+								has_country_flag = GE_Mining_Trade_Deal_With_@Root
+								exists = yes
+							}
+							amount = 2
+						}
+					}
+				}
+				change_variable = {
+					which = GE_num_of_outgoing_Mining_trade
+					value = -1
+				}
+				add_export_effect = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = GE_num_of_outgoing_Mining_trade
+						value = 1
+					}
+					NOT = {
+						calc_true_if = {
+							all_country = {
+								has_country_flag = GE_Mining_Trade_Deal_With_@Root
+								exists = yes
+							}
+							amount = 1
+						}
+					}
+				}
+				change_variable = {
+					which = GE_num_of_outgoing_Mining_trade
+					value = -1
+				}
+				add_export_effect = yes
+			}
+		#}
+		#Mining Imports {
+			if = {
+				limit = {
+					check_variable = {
+						which = GE_num_of_incoming_Mining_trade
+						value = 5
+					}
+					NOT = {
+						calc_true_if = {
+							all_country = {
+								has_country_flag = GE_Mining_Trade_Deal_From_@Root
+								exists = yes
+							}
+							amount = 5
+						}
+					}
+				}
+				change_variable = {
+					which = GE_num_of_incoming_Mining_trade
+					value = -1
+				}
+				add_import_effect = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = GE_num_of_incoming_Mining_trade
+						value = 4
+					}
+					NOT = {
+						calc_true_if = {
+							all_country = {
+								has_country_flag = GE_Mining_Trade_Deal_From_@Root
+								exists = yes
+							}
+							amount = 4
+						}
+					}
+				}
+				change_variable = {
+					which = GE_num_of_incoming_Mining_trade
+					value = -1
+				}
+				add_import_effect = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = GE_num_of_incoming_Mining_trade
+						value = 3
+					}
+					NOT = {
+						calc_true_if = {
+							all_country = {
+								has_country_flag = GE_Mining_Trade_Deal_From_@Root
+								exists = yes
+							}
+							amount = 3
+						}
+					}
+				}
+				change_variable = {
+					which = GE_num_of_incoming_Mining_trade
+					value = -1
+				}
+				add_import_effect = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = GE_num_of_incoming_Mining_trade
+						value = 2
+					}
+					NOT = {
+						calc_true_if = {
+							all_country = {
+								has_country_flag = GE_Mining_Trade_Deal_From_@Root
+								exists = yes
+							}
+							amount = 2
+						}
+					}
+				}
+				change_variable = {
+					which = GE_num_of_incoming_Mining_trade
+					value = -1
+				}
+				add_import_effect = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = GE_num_of_incoming_Mining_trade
+						value = 1
+					}
+					NOT = {
+						calc_true_if = {
+							all_country = {
+								has_country_flag = GE_Mining_Trade_Deal_From_@Root
+								exists = yes
+							}
+							amount = 1
+						}
+					}
+				}
+				change_variable = {
+					which = GE_num_of_incoming_Mining_trade
+					value = -1
+				}
+
+				add_import_effect = yes
+			}
+		#}
+		#Plantation Exports {
+			if = {
+				limit = {
+					check_variable = {
+						which = GE_num_of_outgoing_Plantation_trade
+						value = 5
+					}
+					NOT = {
+						calc_true_if = {
+							all_country = {
+								has_country_flag = GE_Plantation_Trade_Deal_With_@Root
+								exists = yes
+							}
+							amount = 5
+						}
+					}
+				}
+				change_variable = {
+					which = GE_num_of_outgoing_Plantation_trade
+					value = -1
+				}
+				add_export_effect = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = GE_num_of_outgoing_Plantation_trade
+						value = 4
+					}
+					NOT = {
+						calc_true_if = {
+							all_country = {
+								has_country_flag = GE_Plantation_Trade_Deal_With_@Root
+								exists = yes
+							}
+							amount = 4
+						}
+					}
+				}
+				change_variable = {
+					which = GE_num_of_outgoing_Plantation_trade
+					value = -1
+				}
+				add_export_effect = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = GE_num_of_outgoing_Plantation_trade
+						value = 3
+					}
+					NOT = {
+						calc_true_if = {
+							all_country = {
+								has_country_flag = GE_Plantation_Trade_Deal_With_@Root
+								exists = yes
+							}
+							amount = 3
+						}
+					}
+				}
+				change_variable = {
+					which = GE_num_of_outgoing_Plantation_trade
+					value = -1
+				}
+				add_export_effect = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = GE_num_of_outgoing_Plantation_trade
+						value = 2
+					}
+					NOT = {
+						calc_true_if = {
+							all_country = {
+								has_country_flag = GE_Plantation_Trade_Deal_With_@Root
+								exists = yes
+							}
+							amount = 2
+						}
+					}
+				}
+				change_variable = {
+					which = GE_num_of_outgoing_Plantation_trade
+					value = -1
+				}
+				add_export_effect = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = GE_num_of_outgoing_Plantation_trade
+						value = 1
+					}
+					NOT = {
+						calc_true_if = {
+							all_country = {
+								has_country_flag = GE_Plantation_Trade_Deal_With_@Root
+								exists = yes
+							}
+							amount = 1
+						}
+					}
+				}
+				change_variable = {
+					which = GE_num_of_outgoing_Plantation_trade
+					value = -1
+				}
+				add_export_effect = yes
+			}
+		#}
+		#Plantation Imports {
+			if = {
+				limit = {
+					check_variable = {
+						which = GE_num_of_incoming_Plantation_trade
+						value = 5
+					}
+					NOT = {
+						calc_true_if = {
+							all_country = {
+								has_country_flag = GE_Plantation_Trade_Deal_From_@Root
+								exists = yes
+							}
+							amount = 5
+						}
+					}
+				}
+				change_variable = {
+					which = GE_num_of_incoming_Plantation_trade
+					value = -1
+				}
+				add_import_effect = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = GE_num_of_incoming_Plantation_trade
+						value = 4
+					}
+					NOT = {
+						calc_true_if = {
+							all_country = {
+								has_country_flag = GE_Plantation_Trade_Deal_From_@Root
+								exists = yes
+							}
+							amount = 4
+						}
+					}
+				}
+				change_variable = {
+					which = GE_num_of_incoming_Plantation_trade
+					value = -1
+				}
+				add_import_effect = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = GE_num_of_incoming_Plantation_trade
+						value = 3
+					}
+					NOT = {
+						calc_true_if = {
+							all_country = {
+								has_country_flag = GE_Plantation_Trade_Deal_From_@Root
+								exists = yes
+							}
+							amount = 3
+						}
+					}
+				}
+				change_variable = {
+					which = GE_num_of_incoming_Plantation_trade
+					value = -1
+				}
+				add_import_effect = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = GE_num_of_incoming_Plantation_trade
+						value = 2
+					}
+					NOT = {
+						calc_true_if = {
+							all_country = {
+								has_country_flag = GE_Plantation_Trade_Deal_From_@Root
+								exists = yes
+							}
+							amount = 2
+						}
+					}
+				}
+				change_variable = {
+					which = GE_num_of_incoming_Plantation_trade
+					value = -1
+				}
+				add_import_effect = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = GE_num_of_incoming_Plantation_trade
+						value = 1
+					}
+					NOT = {
+						calc_true_if = {
+							all_country = {
+								has_country_flag = GE_Plantation_Trade_Deal_From_@Root
+								exists = yes
+							}
+							amount = 1
+						}
+					}
+				}
+				change_variable = {
+					which = GE_num_of_incoming_Plantation_trade
+					value = -1
+				}
+
+				add_import_effect = yes
+			}
+		#}
+	}
+
+	option = {
+		name = reform_me_events.236.a
+
+	}
+	after = {
+		random_country = {
+			limit = {
+				OR = {
+					has_country_flag = GE_Rural_Trade_Deal_With_@Root
+					has_country_flag = GE_Rural_Trade_Deal_From_@Root
+					has_country_flag = GE_Urban_Trade_Deal_With_@Root
+					has_country_flag = GE_Urban_Trade_Deal_From_@Root
+					has_country_flag = GE_Mining_Trade_Deal_With_@Root
+					has_country_flag = GE_Mining_Trade_Deal_From_@Root
+					has_country_flag = GE_Plantation_Trade_Deal_With_@Root
+					has_country_flag = GE_Plantation_Trade_Deal_From_@Root
+					has_country_flag = GE_Trade_Deal_From_@Root
+					has_country_flag = GE_Trade_Deal_With_@Root
+				}
+				NOT = { exists = yes }
+			}
+			ROOT = {
+				clr_country_flag = GE_Rural_Trade_Deal_From_@Prev
+				clr_country_flag = GE_Rural_Trade_Deal_With_@Prev
+				clr_country_flag = GE_Urban_Trade_Deal_With_@Prev
+				clr_country_flag = GE_Urban_Trade_Deal_From_@Prev
+				clr_country_flag = GE_Mining_Trade_Deal_With_@Prev
+				clr_country_flag = GE_Mining_Trade_Deal_From_@Prev
+				clr_country_flag = GE_Plantation_Trade_Deal_With_@Prev
+				clr_country_flag = GE_Plantation_Trade_Deal_From_@Prev
+				clr_country_flag = GE_Trade_Deal_From_@Prev
+				clr_country_flag = GE_Trade_Deal_With_@Prev
+				if = {
+					limit = {
+						has_country_flag = GE_Initiated_Trade_Deal_With_@Prev
+					}
+					clr_country_flag = GE_Initiated_Trade_Deal_With_@Prev
+					change_variable = {
+						which = GE_num_of_total_trade
+						value = -1
+					}
+				}
+
+			}
+			clr_country_flag = GE_Rural_Trade_Deal_With_@Root
+			clr_country_flag = GE_Rural_Trade_Deal_From_@Root
+			clr_country_flag = GE_Urban_Trade_Deal_With_@Root
+			clr_country_flag = GE_Urban_Trade_Deal_From_@Root
+			clr_country_flag = GE_Mining_Trade_Deal_With_@Root
+			clr_country_flag = GE_Mining_Trade_Deal_From_@Root
+			clr_country_flag = GE_Plantation_Trade_Deal_With_@Root
+			clr_country_flag = GE_Plantation_Trade_Deal_From_@Root
+			clr_country_flag = GE_Trade_Deal_With_@Root
+			clr_country_flag = GE_Trade_Deal_From_@Root
+			if = {
+				limit = {
+					has_country_flag = GE_Initiated_Trade_Deal_With_@Root
+				}
+				clr_country_flag = GE_Initiated_Trade_Deal_With_@Root
+				change_variable = {
+					which = GE_num_of_total_trade
+					value = -1
+				}
+			}
+		}
+	}
+}

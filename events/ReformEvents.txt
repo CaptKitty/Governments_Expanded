@@ -829,7 +829,7 @@ country_event = {
 			remove_country_modifier = Mercenary_Markets_9
 			remove_country_modifier = Mercenary_Markets_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				num_of_merchants = 2
 				NOT = { num_of_merchants = 3 }
@@ -848,7 +848,7 @@ country_event = {
 			remove_country_modifier = Mercenary_Markets_9
 			remove_country_modifier = Mercenary_Markets_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				num_of_merchants = 3
 				NOT = { num_of_merchants = 4 }
@@ -867,7 +867,7 @@ country_event = {
 			remove_country_modifier = Mercenary_Markets_9
 			remove_country_modifier = Mercenary_Markets_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				num_of_merchants = 4
 				NOT = { num_of_merchants = 5 }
@@ -886,7 +886,7 @@ country_event = {
 			remove_country_modifier = Mercenary_Markets_9
 			remove_country_modifier = Mercenary_Markets_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				num_of_merchants = 5
 				NOT = { num_of_merchants = 6 }
@@ -905,7 +905,7 @@ country_event = {
 			remove_country_modifier = Mercenary_Markets_9
 			remove_country_modifier = Mercenary_Markets_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				num_of_merchants = 6
 				NOT = { num_of_merchants = 7 }
@@ -924,7 +924,7 @@ country_event = {
 			remove_country_modifier = Mercenary_Markets_9
 			remove_country_modifier = Mercenary_Markets_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				num_of_merchants = 7
 				NOT = { num_of_merchants = 8 }
@@ -943,7 +943,7 @@ country_event = {
 			remove_country_modifier = Mercenary_Markets_9
 			remove_country_modifier = Mercenary_Markets_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				num_of_merchants = 8
 				NOT = { num_of_merchants = 9 }
@@ -962,7 +962,7 @@ country_event = {
 			remove_country_modifier = Mercenary_Markets_9
 			remove_country_modifier = Mercenary_Markets_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				num_of_merchants = 9
 				NOT = { num_of_merchants = 10 }
@@ -981,7 +981,7 @@ country_event = {
 			remove_country_modifier = Mercenary_Markets_8
 			remove_country_modifier = Mercenary_Markets_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				num_of_merchants = 10
 			}
@@ -1021,17 +1021,19 @@ country_event = {
 		has_government_attribute = enables_holy_tithe
 		OR = {
 			AND = {
-				has_global_modifier_value = {
-					which = tolerance_own
-					value = 4
-				}
 				NOT = {
 					has_global_modifier_value = {
 						which = tolerance_own
 						value = 5
 					}
 				}
-				NOT = { has_country_modifier = Holy_Tithe_1 }
+				OR = { 
+					has_country_modifier = Holy_Tithe_1
+					has_country_modifier = Holy_Tithe_2
+					has_country_modifier = Holy_Tithe_3
+					has_country_modifier = Holy_Tithe_4
+					has_country_modifier = Holy_Tithe_5
+				}
 			}
 			AND = {
 				has_global_modifier_value = {
@@ -1109,7 +1111,7 @@ country_event = {
 			remove_country_modifier = Holy_Tithe_4
 			remove_country_modifier = Holy_Tithe_5
 		}
-		if = {
+		else_if = {
 			limit = {
 				has_global_modifier_value = {
 					which = tolerance_own
@@ -1131,7 +1133,7 @@ country_event = {
 			remove_country_modifier = Holy_Tithe_4
 			remove_country_modifier = Holy_Tithe_5
 		}
-		if = {
+		else_if = {
 			limit = {
 				has_global_modifier_value = {
 					which = tolerance_own
@@ -1153,7 +1155,7 @@ country_event = {
 			remove_country_modifier = Holy_Tithe_4
 			remove_country_modifier = Holy_Tithe_5
 		}
-		if = {
+		else_if = {
 			limit = {
 				has_global_modifier_value = {
 					which = tolerance_own
@@ -1175,7 +1177,7 @@ country_event = {
 			remove_country_modifier = Holy_Tithe_3
 			remove_country_modifier = Holy_Tithe_5
 		}
-		if = {
+		else_if = {
 			limit = {
 				has_global_modifier_value = {
 					which = tolerance_own
@@ -1249,7 +1251,13 @@ country_event = {
 		OR = {
 			AND = {
 				NOT = { num_of_generals = 1 }
-				has_country_modifier = General_Connections_1
+				OR = {
+					has_country_modifier = General_Connections_1
+					has_country_modifier = General_Connections_2
+					has_country_modifier = General_Connections_3
+					has_country_modifier = General_Connections_4
+					has_country_modifier = General_Connections_5
+				}
 			}
 			AND = {
 				num_of_generals = 1
@@ -1293,7 +1301,7 @@ country_event = {
 			remove_country_modifier = General_Connections_4
 			remove_country_modifier = General_Connections_5
 		}
-		if = {
+		else_if = {
 			limit = {
 				num_of_generals = 1
 				NOT = { num_of_generals = 2 }
@@ -1307,7 +1315,7 @@ country_event = {
 			remove_country_modifier = General_Connections_4
 			remove_country_modifier = General_Connections_5
 		}
-		if = {
+		else_if = {
 			limit = {
 				num_of_generals = 2
 				NOT = { num_of_generals = 3 }
@@ -1321,7 +1329,7 @@ country_event = {
 			remove_country_modifier = General_Connections_4
 			remove_country_modifier = General_Connections_5
 		}
-		if = {
+		else_if = {
 			limit = {
 				num_of_generals = 3
 				NOT = { num_of_generals = 4 }
@@ -1335,7 +1343,7 @@ country_event = {
 			remove_country_modifier = General_Connections_4
 			remove_country_modifier = General_Connections_5
 		}
-		if = {
+		else_if = {
 			limit = {
 				num_of_generals = 4
 				NOT = { num_of_generals = 5 }
@@ -1349,7 +1357,7 @@ country_event = {
 			remove_country_modifier = General_Connections_3
 			remove_country_modifier = General_Connections_5
 		}
-		if = {
+		else_if = {
 			limit = {
 				num_of_generals = 5
 			}
@@ -1420,7 +1428,13 @@ country_event = {
 		OR = {
 			AND = {
 				NOT = { num_of_admirals = 1 }
-				has_country_modifier = General_Connections_6
+				OR = {
+					has_country_modifier = General_Connections_6
+					has_country_modifier = General_Connections_7
+					has_country_modifier = General_Connections_8
+					has_country_modifier = General_Connections_9
+					has_country_modifier = General_Connections_10
+				}
 			}
 			AND = {
 				num_of_admirals = 1
@@ -1464,7 +1478,7 @@ country_event = {
 			remove_country_modifier = General_Connections_9
 			remove_country_modifier = General_Connections_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				num_of_admirals = 1
 				NOT = { num_of_admirals = 2 }
@@ -1478,7 +1492,7 @@ country_event = {
 			remove_country_modifier = General_Connections_9
 			remove_country_modifier = General_Connections_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				num_of_admirals = 2
 				NOT = { num_of_admirals = 3 }
@@ -1492,7 +1506,7 @@ country_event = {
 			remove_country_modifier = General_Connections_9
 			remove_country_modifier = General_Connections_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				num_of_admirals = 3
 				NOT = { num_of_admirals = 4 }
@@ -1506,7 +1520,7 @@ country_event = {
 			remove_country_modifier = General_Connections_9
 			remove_country_modifier = General_Connections_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				num_of_admirals = 4
 				NOT = { num_of_admirals = 5 }
@@ -1520,7 +1534,7 @@ country_event = {
 			remove_country_modifier = General_Connections_8
 			remove_country_modifier = General_Connections_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				num_of_admirals = 5
 			}
@@ -1593,7 +1607,12 @@ country_event = {
 				NOT = {
 					navy_tradition = 20
 				}
-				has_country_modifier = Pride_of_the_Navy_1
+				OR = {
+					has_country_modifier = Pride_of_the_Navy_1
+					has_country_modifier = Pride_of_the_Navy_2
+					has_country_modifier = Pride_of_the_Navy_3
+					has_country_modifier = Pride_of_the_Navy_4
+				}
 			}
 			AND = {
 				navy_tradition = 20
@@ -1639,7 +1658,7 @@ country_event = {
 			remove_country_modifier = Pride_of_the_Navy_3
 			remove_country_modifier = Pride_of_the_Navy_4
 		}
-		if = {
+		else_if = {
 			limit = {
 				navy_tradition = 20
 				NOT = {
@@ -1654,7 +1673,7 @@ country_event = {
 			remove_country_modifier = Pride_of_the_Navy_3
 			remove_country_modifier = Pride_of_the_Navy_4
 		}
-		if = {
+		else_if = {
 			limit = {
 				navy_tradition = 40
 				NOT = {
@@ -1669,7 +1688,7 @@ country_event = {
 			remove_country_modifier = Pride_of_the_Navy_3
 			remove_country_modifier = Pride_of_the_Navy_4
 		}
-		if = {
+		else_if = {
 			limit = {
 				navy_tradition = 60
 				NOT = {
@@ -1684,7 +1703,7 @@ country_event = {
 			remove_country_modifier = Pride_of_the_Navy_2
 			remove_country_modifier = Pride_of_the_Navy_4
 		}
-		if = {
+		else_if = {
 			limit = {
 				navy_tradition = 80
 			}
@@ -2069,7 +2088,7 @@ country_event = {
 			remove_country_modifier = Foreign_Artists_9
 			remove_country_modifier = Foreign_Artists_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				num_of_merchants = 2
 				NOT = { num_of_merchants = 3 }
@@ -2088,7 +2107,7 @@ country_event = {
 			remove_country_modifier = Foreign_Artists_9
 			remove_country_modifier = Foreign_Artists_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				num_of_merchants = 3
 				NOT = { num_of_merchants = 4 }
@@ -2107,7 +2126,7 @@ country_event = {
 			remove_country_modifier = Foreign_Artists_9
 			remove_country_modifier = Foreign_Artists_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				num_of_merchants = 4
 				NOT = { num_of_merchants = 5 }
@@ -2126,7 +2145,7 @@ country_event = {
 			remove_country_modifier = Foreign_Artists_9
 			remove_country_modifier = Foreign_Artists_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				num_of_merchants = 5
 				NOT = { num_of_merchants = 6 }
@@ -2145,7 +2164,7 @@ country_event = {
 			remove_country_modifier = Foreign_Artists_9
 			remove_country_modifier = Foreign_Artists_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				num_of_merchants = 6
 				NOT = { num_of_merchants = 7 }
@@ -2164,7 +2183,7 @@ country_event = {
 			remove_country_modifier = Foreign_Artists_9
 			remove_country_modifier = Foreign_Artists_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				num_of_merchants = 7
 				NOT = { num_of_merchants = 8 }
@@ -2183,7 +2202,7 @@ country_event = {
 			remove_country_modifier = Foreign_Artists_9
 			remove_country_modifier = Foreign_Artists_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				num_of_merchants = 8
 				NOT = { num_of_merchants = 9 }
@@ -2202,7 +2221,7 @@ country_event = {
 			remove_country_modifier = Foreign_Artists_9
 			remove_country_modifier = Foreign_Artists_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				num_of_merchants = 9
 				NOT = { num_of_merchants = 10 }
@@ -2221,7 +2240,7 @@ country_event = {
 			remove_country_modifier = Foreign_Artists_8
 			remove_country_modifier = Foreign_Artists_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				num_of_merchants = 10
 			}
@@ -2258,7 +2277,6 @@ country_event = {
 	trigger = {
 		tag = CAS
 		senior_union_with = ARA
-		NOT = { exists = GRA }
 	}
 
 	mean_time_to_happen = {
@@ -2294,7 +2312,18 @@ country_event = {
 						value = 1
 					}
 				}
-				has_country_modifier = Crusader_Order_1
+				OR = {
+					has_country_modifier = Crusader_Order_1
+					has_country_modifier = Crusader_Order_2
+					has_country_modifier = Crusader_Order_3
+					has_country_modifier = Crusader_Order_4
+					has_country_modifier = Crusader_Order_5
+					has_country_modifier = Crusader_Order_6
+					has_country_modifier = Crusader_Order_7
+					has_country_modifier = Crusader_Order_8
+					has_country_modifier = Crusader_Order_9
+					has_country_modifier = Crusader_Order_10
+				}
 			}
 			AND = {
 				has_global_modifier_value = {
@@ -2448,7 +2477,7 @@ country_event = {
 			remove_country_modifier = Crusader_Order_9
 			remove_country_modifier = Crusader_Order_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				has_global_modifier_value = {
 					which = tolerance_own
@@ -2475,7 +2504,7 @@ country_event = {
 			remove_country_modifier = Crusader_Order_9
 			remove_country_modifier = Crusader_Order_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				has_global_modifier_value = {
 					which = tolerance_own
@@ -2502,7 +2531,7 @@ country_event = {
 			remove_country_modifier = Crusader_Order_9
 			remove_country_modifier = Crusader_Order_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				has_global_modifier_value = {
 					which = tolerance_own
@@ -2529,7 +2558,7 @@ country_event = {
 			remove_country_modifier = Crusader_Order_9
 			remove_country_modifier = Crusader_Order_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				has_global_modifier_value = {
 					which = tolerance_own
@@ -2556,7 +2585,7 @@ country_event = {
 			remove_country_modifier = Crusader_Order_9
 			remove_country_modifier = Crusader_Order_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				has_global_modifier_value = {
 					which = tolerance_own
@@ -2583,7 +2612,7 @@ country_event = {
 			remove_country_modifier = Crusader_Order_9
 			remove_country_modifier = Crusader_Order_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				has_global_modifier_value = {
 					which = tolerance_own
@@ -2610,7 +2639,7 @@ country_event = {
 			remove_country_modifier = Crusader_Order_9
 			remove_country_modifier = Crusader_Order_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				has_global_modifier_value = {
 					which = tolerance_own
@@ -2637,7 +2666,7 @@ country_event = {
 			remove_country_modifier = Crusader_Order_9
 			remove_country_modifier = Crusader_Order_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				has_global_modifier_value = {
 					which = tolerance_own
@@ -2664,7 +2693,7 @@ country_event = {
 			remove_country_modifier = Crusader_Order_9
 			remove_country_modifier = Crusader_Order_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				has_global_modifier_value = {
 					which = tolerance_own
@@ -2691,7 +2720,7 @@ country_event = {
 			remove_country_modifier = Crusader_Order_8
 			remove_country_modifier = Crusader_Order_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				has_global_modifier_value = {
 					which = tolerance_own
@@ -2775,9 +2804,7 @@ country_event = {
 	hidden = yes
 
 	trigger = {
-		OR = {
-			has_government_attribute = enables_religious_supremacy
-		}
+		has_government_attribute = enables_religious_supremacy
 	}
 
 	mean_time_to_happen = {
@@ -2937,9 +2964,7 @@ country_event = {
 		NOT = { has_country_flag = tatars_integrated }
 	}
 
-	mean_time_to_happen = {
-		days = 30
-	}
+	is_triggered_only = yes
 
 	immediate = {
 		set_country_flag = tatars_integrated
@@ -3001,10 +3026,6 @@ country_event = {
 		days = 30
 	}
 
-	immediate = {
-
-	}
-
 	option = {
 		name = reform_me_events.82.a
 
@@ -3035,7 +3056,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 365
+		months = 12
 	}
 
 	immediate = {
@@ -3220,7 +3241,7 @@ country_event = {
 				hidden = yes
 			}
 		}
-		if = {
+		else_if = {
 			limit = {
 				NOT = {
 					AND = {
@@ -3371,7 +3392,12 @@ country_event = {
 				NOT = {
 					prestige = 20
 				}
-				has_country_modifier = Hansa_Academics_1
+				OR = {
+					has_country_modifier = Hansa_Academics_1
+					has_country_modifier = Hansa_Academics_2
+					has_country_modifier = Hansa_Academics_3
+					has_country_modifier = Hansa_Academics_4
+				}
 			}
 			AND = {
 				prestige = 20
@@ -3417,7 +3443,7 @@ country_event = {
 			remove_country_modifier = Hansa_Academics_3
 			remove_country_modifier = Hansa_Academics_4
 		}
-		if = {
+		else_if = {
 			limit = {
 				prestige = 20
 				NOT = {
@@ -3432,7 +3458,7 @@ country_event = {
 			remove_country_modifier = Hansa_Academics_3
 			remove_country_modifier = Hansa_Academics_4
 		}
-		if = {
+		else_if = {
 			limit = {
 				prestige = 40
 				NOT = {
@@ -3447,7 +3473,7 @@ country_event = {
 			remove_country_modifier = Hansa_Academics_3
 			remove_country_modifier = Hansa_Academics_4
 		}
-		if = {
+		else_if = {
 			limit = {
 				prestige = 60
 				NOT = {
@@ -3462,7 +3488,7 @@ country_event = {
 			remove_country_modifier = Hansa_Academics_2
 			remove_country_modifier = Hansa_Academics_4
 		}
-		if = {
+		else_if = {
 			limit = {
 				prestige = 80
 			}
@@ -3530,6 +3556,18 @@ country_event = {
 		OR = {
 			AND = {
 				NOT = { army_professionalism = 0.10 }
+				OR = {
+					has_country_modifier = Military_Industry_1
+					has_country_modifier = Military_Industry_2
+					has_country_modifier = Military_Industry_3
+					has_country_modifier = Military_Industry_4
+					has_country_modifier = Military_Industry_5
+					has_country_modifier = Military_Industry_6
+					has_country_modifier = Military_Industry_7
+					has_country_modifier = Military_Industry_8
+					has_country_modifier = Military_Industry_9
+					has_country_modifier = Military_Industry_10
+				}
 			}
 			AND = {
 				army_professionalism = 0.10
@@ -3603,7 +3641,7 @@ country_event = {
 			remove_country_modifier = Military_Industry_9
 			remove_country_modifier = Military_Industry_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				army_professionalism = 0.10
 				NOT = { army_professionalism = 0.20 }
@@ -3622,7 +3660,7 @@ country_event = {
 			remove_country_modifier = Military_Industry_9
 			remove_country_modifier = Military_Industry_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				army_professionalism = 0.20
 				NOT = { army_professionalism = 0.30 }
@@ -3641,7 +3679,7 @@ country_event = {
 			remove_country_modifier = Military_Industry_9
 			remove_country_modifier = Military_Industry_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				army_professionalism = 0.30
 				NOT = { army_professionalism = 0.40 }
@@ -3660,7 +3698,7 @@ country_event = {
 			remove_country_modifier = Military_Industry_9
 			remove_country_modifier = Military_Industry_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				army_professionalism = 0.40
 				NOT = { army_professionalism = 0.50 }
@@ -3679,7 +3717,7 @@ country_event = {
 			remove_country_modifier = Military_Industry_9
 			remove_country_modifier = Military_Industry_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				army_professionalism = 0.50
 				NOT = { army_professionalism = 0.60 }
@@ -3698,7 +3736,7 @@ country_event = {
 			remove_country_modifier = Military_Industry_9
 			remove_country_modifier = Military_Industry_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				army_professionalism = 0.60
 				NOT = { army_professionalism = 0.70 }
@@ -3717,7 +3755,7 @@ country_event = {
 			remove_country_modifier = Military_Industry_9
 			remove_country_modifier = Military_Industry_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				army_professionalism = 0.70
 				NOT = { army_professionalism = 0.80 }
@@ -3736,7 +3774,7 @@ country_event = {
 			remove_country_modifier = Military_Industry_9
 			remove_country_modifier = Military_Industry_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				army_professionalism = 0.80
 				NOT = { army_professionalism = 0.90 }
@@ -3755,7 +3793,7 @@ country_event = {
 			remove_country_modifier = Military_Industry_9
 			remove_country_modifier = Military_Industry_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				army_professionalism = 0.90
 				NOT = { army_professionalism = 1 }
@@ -3774,7 +3812,7 @@ country_event = {
 			remove_country_modifier = Military_Industry_8
 			remove_country_modifier = Military_Industry_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				army_professionalism = 1
 			}
@@ -4201,7 +4239,18 @@ country_event = {
 		OR = {
 			AND = {
 				NOT = { mercantilism = 10 }
-				has_country_modifier = Home_Market_1
+				OR = {
+					has_country_modifier = Home_Market_1
+					has_country_modifier = Home_Market_2
+					has_country_modifier = Home_Market_3
+					has_country_modifier = Home_Market_4
+					has_country_modifier = Home_Market_5
+					has_country_modifier = Home_Market_6
+					has_country_modifier = Home_Market_7
+					has_country_modifier = Home_Market_8
+					has_country_modifier = Home_Market_9
+					has_country_modifier = Home_Market_10
+				}
 			}
 			AND = {
 				mercantilism = 10
@@ -4275,7 +4324,7 @@ country_event = {
 			remove_country_modifier = Home_Market_9
 			remove_country_modifier = Home_Market_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				mercantilism = 10
 				NOT = { mercantilism = 20 }
@@ -4294,7 +4343,7 @@ country_event = {
 			remove_country_modifier = Home_Market_9
 			remove_country_modifier = Home_Market_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				mercantilism = 20
 				NOT = { mercantilism = 30 }
@@ -4313,7 +4362,7 @@ country_event = {
 			remove_country_modifier = Home_Market_9
 			remove_country_modifier = Home_Market_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				mercantilism = 30
 				NOT = { mercantilism = 40 }
@@ -4332,7 +4381,7 @@ country_event = {
 			remove_country_modifier = Home_Market_9
 			remove_country_modifier = Home_Market_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				mercantilism = 40
 				NOT = { mercantilism = 50 }
@@ -4351,7 +4400,7 @@ country_event = {
 			remove_country_modifier = Home_Market_9
 			remove_country_modifier = Home_Market_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				mercantilism = 50
 				NOT = { mercantilism = 60 }
@@ -4370,7 +4419,7 @@ country_event = {
 			remove_country_modifier = Home_Market_9
 			remove_country_modifier = Home_Market_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				mercantilism = 60
 				NOT = { mercantilism = 70 }
@@ -4389,7 +4438,7 @@ country_event = {
 			remove_country_modifier = Home_Market_9
 			remove_country_modifier = Home_Market_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				mercantilism = 70
 				NOT = { mercantilism = 80 }
@@ -4408,7 +4457,7 @@ country_event = {
 			remove_country_modifier = Home_Market_9
 			remove_country_modifier = Home_Market_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				mercantilism = 80
 				NOT = { mercantilism = 90 }
@@ -4427,7 +4476,7 @@ country_event = {
 			remove_country_modifier = Home_Market_9
 			remove_country_modifier = Home_Market_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				mercantilism = 90
 				NOT = { mercantilism = 100 }
@@ -4446,7 +4495,7 @@ country_event = {
 			remove_country_modifier = Home_Market_8
 			remove_country_modifier = Home_Market_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				mercantilism = 100
 			}
@@ -4485,7 +4534,14 @@ country_event = {
 		OR = {
 			AND = {
 				NOT = { num_of_allies = 1 }
-				has_country_modifier = Home_Market_1
+				OR = {
+					has_country_modifier = Home_Market_1
+					has_country_modifier = Home_Market_2
+					has_country_modifier = Home_Market_3
+					has_country_modifier = Home_Market_4
+					has_country_modifier = Home_Market_5
+					has_country_modifier = Home_Market_6
+				}
 			}
 			AND = {
 				num_of_allies = 1
@@ -4535,7 +4591,7 @@ country_event = {
 			remove_country_modifier = Home_Market_5
 			remove_country_modifier = Home_Market_6
 		}
-		if = {
+		else_if = {
 			limit = {
 				num_of_allies = 1
 				NOT = { num_of_allies = 2 }
@@ -4550,7 +4606,7 @@ country_event = {
 			remove_country_modifier = Home_Market_5
 			remove_country_modifier = Home_Market_6
 		}
-		if = {
+		else_if = {
 			limit = {
 				num_of_allies = 2
 				NOT = { num_of_allies = 3 }
@@ -4565,7 +4621,7 @@ country_event = {
 			remove_country_modifier = Home_Market_5
 			remove_country_modifier = Home_Market_6
 		}
-		if = {
+		else_if = {
 			limit = {
 				num_of_allies = 3
 				NOT = { num_of_allies = 4 }
@@ -4580,7 +4636,7 @@ country_event = {
 			remove_country_modifier = Home_Market_5
 			remove_country_modifier = Home_Market_6
 		}
-		if = {
+		else_if = {
 			limit = {
 				num_of_allies = 4
 				NOT = { num_of_allies = 5 }
@@ -4595,7 +4651,7 @@ country_event = {
 			remove_country_modifier = Home_Market_5
 			remove_country_modifier = Home_Market_6
 		}
-		if = {
+		else_if = {
 			limit = {
 				num_of_allies = 5
 				NOT = { num_of_allies = 6 }
@@ -4610,7 +4666,7 @@ country_event = {
 			remove_country_modifier = Home_Market_4
 			remove_country_modifier = Home_Market_6
 		}
-		if = {
+		else_if = {
 			limit = {
 				num_of_allies = 6
 			}
@@ -4669,7 +4725,7 @@ country_event = {
 				duration = -1
 			}
 		}
-		if = {
+		else_if = {
 			limit = {
 				NOT = { num_of_mercenaries = 10 }
 				has_country_modifier = Foreign_Regiments
@@ -4855,7 +4911,7 @@ country_event = {
 				duration = -1
 			}
 		}
-		if = {
+		else_if = {
 			limit = {
 				has_government_attribute = enables_silk_traders
 				trading_bonus = {
@@ -4866,7 +4922,7 @@ country_event = {
 			}
 			remove_country_modifier = GE_silk_trade
 		}
-		if = {
+		else_if = {
 			limit = {
 				NOT = { has_government_attribute = enables_silk_traders }
 				has_country_modifier = GE_silk_trade
@@ -4964,89 +5020,6 @@ country_event = {
 			duration = -1
 		}
 		add_years_of_income = -2
-	}
-}
-
-country_event = {
-	id = reform_me_events.150
-	title = reform_me_events.150.t
-	desc = reform_me_events.150.d
-	picture = WESTERNISATION_eventPicture
-	hidden = yes
-
-	trigger = {
-		OR = {
-			AND = {
-				has_government_attribute = enables_custodian_of_cities
-				OR = {
-					AND = {
-						owns = 384
-						owns = 385
-						NOT = { has_country_modifier = GE_Good_Custodian }
-					}
-					AND = {
-						NOT = {
-							owns = 384
-							owns = 385
-						}
-						NOT = { has_country_modifier = GE_Bad_Custodian }
-					}
-				}
-			}
-			AND = {
-				OR = {
-					has_country_modifier = GE_Bad_Custodian
-					has_country_modifier = GE_Good_Custodian
-				}
-				NOT = { has_government_attribute = enables_custodian_of_cities }
-			}
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 30
-	}
-
-	option = {
-		name = reform_me_events.150.a
-
-		if = {
-			limit = {
-				owns = 384
-				owns = 385
-				NOT = { has_country_modifier = GE_Good_Custodian }
-			}
-			remove_country_modifier = GE_Bad_Custodian
-			add_country_modifier = {
-				name = GE_Good_Custodian
-				duration = -1
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					owns = 384
-					owns = 385
-				}
-				NOT = { has_country_modifier = GE_Bad_Custodian }
-			}
-			remove_country_modifier = GE_Good_Custodian
-			add_country_modifier = {
-				name = GE_Bad_Custodian
-				duration = -1
-			}
-		}
-		if = {
-			limit = {
-				OR = {
-					has_country_modifier = GE_Bad_Custodian
-					has_country_modifier = GE_Good_Custodian
-				}
-				NOT = { has_government_attribute = enables_custodian_of_cities }
-			}
-			remove_country_modifier = GE_Good_Custodian
-			remove_country_modifier = GE_Bad_Custodian
-		}
 	}
 }
 
@@ -5232,7 +5205,7 @@ country_event = {
 			remove_country_modifier = GE_Kaza_System_8
 			remove_country_modifier = GE_Kaza_System_9
 		}
-		if = {
+		else_if = {
 			limit = {
 				AND = {
 					num_of_religion = {
@@ -5263,7 +5236,7 @@ country_event = {
 			remove_country_modifier = GE_Kaza_System_8
 			remove_country_modifier = GE_Kaza_System_9
 		}
-		if = {
+		else_if = {
 			limit = {
 				AND = {
 					num_of_religion = {
@@ -5293,7 +5266,7 @@ country_event = {
 			remove_country_modifier = GE_Kaza_System_8
 			remove_country_modifier = GE_Kaza_System_9
 		}
-		if = {
+		else_if = {
 			limit = {
 				AND = {
 					num_of_religion = {
@@ -5323,7 +5296,7 @@ country_event = {
 			remove_country_modifier = GE_Kaza_System_8
 			remove_country_modifier = GE_Kaza_System_9
 		}
-		if = {
+		else_if = {
 			limit = {
 				AND = {
 					num_of_religion = {
@@ -5353,7 +5326,7 @@ country_event = {
 			remove_country_modifier = GE_Kaza_System_8
 			remove_country_modifier = GE_Kaza_System_9
 		}
-		if = {
+		else_if = {
 			limit = {
 				AND = {
 					num_of_religion = {
@@ -5383,7 +5356,7 @@ country_event = {
 			remove_country_modifier = GE_Kaza_System_8
 			remove_country_modifier = GE_Kaza_System_9
 		}
-		if = {
+		else_if = {
 			limit = {
 				AND = {
 					num_of_religion = {
@@ -5413,7 +5386,7 @@ country_event = {
 			remove_country_modifier = GE_Kaza_System_8
 			remove_country_modifier = GE_Kaza_System_9
 		}
-		if = {
+		else_if = {
 			limit = {
 				AND = {
 					num_of_religion = {
@@ -5443,7 +5416,7 @@ country_event = {
 			remove_country_modifier = GE_Kaza_System_8
 			remove_country_modifier = GE_Kaza_System_9
 		}
-		if = {
+		else_if = {
 			limit = {
 				AND = {
 					num_of_religion = {
@@ -5473,7 +5446,7 @@ country_event = {
 			remove_country_modifier = GE_Kaza_System_7
 			remove_country_modifier = GE_Kaza_System_9
 		}
-		if = {
+		else_if = {
 			limit = {
 				AND = {
 					num_of_religion = {
@@ -5503,7 +5476,7 @@ country_event = {
 			remove_country_modifier = GE_Kaza_System_7
 			remove_country_modifier = GE_Kaza_System_8
 		}
-		if = {
+		else_if = {
 			limit = {
 				NOT = { has_government_attribute = enables_kaza_system }
 			}
@@ -5572,14 +5545,14 @@ country_event = {
 				duration = -1
 			}
 		}
-		if = {
+		else_if = {
 			limit = {
 				janissary_percentage = 0.2
 				has_country_modifier = GE_Janissary_Guards
 			}
 			remove_country_modifier = GE_Janissary_Guards
 		}
-		if = {
+		else_if = {
 			limit = {
 				NOT = { has_government_attribute = enables_janissary_guards }
 			}
@@ -5758,7 +5731,7 @@ country_event = {
 			remove_country_modifier = Kiwi_Rights_9
 			remove_country_modifier = Kiwi_Rights_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				num_of_merchants = 2
 				NOT = { num_of_merchants = 3 }
@@ -5777,7 +5750,7 @@ country_event = {
 			remove_country_modifier = Kiwi_Rights_9
 			remove_country_modifier = Kiwi_Rights_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				num_of_merchants = 3
 				NOT = { num_of_merchants = 4 }
@@ -5796,7 +5769,7 @@ country_event = {
 			remove_country_modifier = Kiwi_Rights_9
 			remove_country_modifier = Kiwi_Rights_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				num_of_merchants = 4
 				NOT = { num_of_merchants = 5 }
@@ -5815,7 +5788,7 @@ country_event = {
 			remove_country_modifier = Kiwi_Rights_9
 			remove_country_modifier = Kiwi_Rights_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				num_of_merchants = 5
 				NOT = { num_of_merchants = 6 }
@@ -5834,7 +5807,7 @@ country_event = {
 			remove_country_modifier = Kiwi_Rights_9
 			remove_country_modifier = Kiwi_Rights_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				num_of_merchants = 6
 				NOT = { num_of_merchants = 7 }
@@ -5853,7 +5826,7 @@ country_event = {
 			remove_country_modifier = Kiwi_Rights_9
 			remove_country_modifier = Kiwi_Rights_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				num_of_merchants = 7
 				NOT = { num_of_merchants = 8 }
@@ -5872,7 +5845,7 @@ country_event = {
 			remove_country_modifier = Kiwi_Rights_9
 			remove_country_modifier = Kiwi_Rights_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				num_of_merchants = 8
 				NOT = { num_of_merchants = 9 }
@@ -5891,7 +5864,7 @@ country_event = {
 			remove_country_modifier = Kiwi_Rights_9
 			remove_country_modifier = Kiwi_Rights_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				num_of_merchants = 9
 				NOT = { num_of_merchants = 10 }
@@ -5910,7 +5883,7 @@ country_event = {
 			remove_country_modifier = Kiwi_Rights_8
 			remove_country_modifier = Kiwi_Rights_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				num_of_merchants = 10
 			}
@@ -6084,7 +6057,7 @@ country_event = {
 			remove_country_modifier = Jurisprudence_9
 			remove_country_modifier = Jurisprudence_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				average_autonomy = 10
 				NOT = { average_autonomy = 20 }
@@ -6103,7 +6076,7 @@ country_event = {
 			remove_country_modifier = Jurisprudence_9
 			remove_country_modifier = Jurisprudence_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				average_autonomy = 20
 				NOT = { average_autonomy = 30 }
@@ -6122,7 +6095,7 @@ country_event = {
 			remove_country_modifier = Jurisprudence_9
 			remove_country_modifier = Jurisprudence_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				average_autonomy = 30
 				NOT = { average_autonomy = 40 }
@@ -6141,7 +6114,7 @@ country_event = {
 			remove_country_modifier = Jurisprudence_9
 			remove_country_modifier = Jurisprudence_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				average_autonomy = 40
 				NOT = { average_autonomy = 50 }
@@ -6160,7 +6133,7 @@ country_event = {
 			remove_country_modifier = Jurisprudence_9
 			remove_country_modifier = Jurisprudence_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				average_autonomy = 50
 				NOT = { average_autonomy = 60 }
@@ -6179,7 +6152,7 @@ country_event = {
 			remove_country_modifier = Jurisprudence_9
 			remove_country_modifier = Jurisprudence_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				average_autonomy = 60
 				NOT = { average_autonomy = 70 }
@@ -6198,7 +6171,7 @@ country_event = {
 			remove_country_modifier = Jurisprudence_9
 			remove_country_modifier = Jurisprudence_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				average_autonomy = 70
 				NOT = { average_autonomy = 80 }
@@ -6217,7 +6190,7 @@ country_event = {
 			remove_country_modifier = Jurisprudence_9
 			remove_country_modifier = Jurisprudence_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				average_autonomy = 80
 				NOT = { average_autonomy = 90 }
@@ -6236,7 +6209,7 @@ country_event = {
 			remove_country_modifier = Jurisprudence_8
 			remove_country_modifier = Jurisprudence_10
 		}
-		if = {
+		else_if = {
 			limit = {
 				average_autonomy = 90
 			}
@@ -6300,117 +6273,6 @@ country_event = {
 #	option = {
 #	}
 #}
-
-country_event = {
-	id = reform_me_events.169
-	title = reform_me_events.169.t
-	desc = reform_me_events.169.d
-	picture = WESTERNISATION_eventPicture
-	hidden = yes
-
-
-	trigger = {
-		has_government_attribute = enables_varangian_guard
-		OR = {
-			AND = {
-				OR = {
-					any_ally = {
-						culture_group = scandinavian
-					}
-					any_subject_country = {
-						culture_group = scandinavian
-					}
-				}
-				NOT = { has_country_modifier = GE_Varangian_Guard }
-			}
-			AND = {
-				NOT = {
-					OR = {
-						any_ally = {
-							culture_group = scandinavian
-						}
-						any_subject_country = {
-							culture_group = scandinavian
-						}
-					}
-				}
-				has_country_modifier = GE_Varangian_Guard
-			}
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 30
-	}
-
-	immediate = {
-		if = {
-			limit = {
-				OR = {
-					any_ally = {
-						culture_group = scandinavian
-					}
-					any_subject_country = {
-						culture_group = scandinavian
-					}
-				}
-				NOT = { has_country_modifier = GE_Varangian_Guard }
-            }
-			add_country_modifier = {
-				name = "GE_Varangian_Guard"
-				duration = -1
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					OR = {
-						any_ally = {
-							culture_group = scandinavian
-						}
-						any_subject_country = {
-							culture_group = scandinavian
-						}
-					}
-				}
-				has_country_modifier = GE_Varangian_Guard
-            }
-			remove_country_modifier = GE_Varangian_Guard
-		}
-	}
-
-	option = {
-		name = reform_me_events.169.a
-
-	}
-}
-
-country_event = {
-	id = reform_me_events.170
-	title = reform_me_events.170.t
-	desc = reform_me_events.170.d
-	picture = WESTERNISATION_eventPicture
-	hidden = yes
-
-
-	trigger = {
-		NOT = { has_government_attribute = enables_varangian_guard }
-		has_country_modifier = GE_Varangian_Guard
-	}
-
-	mean_time_to_happen = {
-		days = 30
-	}
-
-	immediate = {
-		remove_country_modifier = GE_Varangian_Guard
-	}
-
-	option = {
-		name = reform_me_events.170.a
-
-	}
-}
 
 country_event = {
 	id = reform_me_events.173
@@ -6501,62 +6363,63 @@ country_event = {
 
 	}
 }
-country_event = {
-	id = reform_me_events.174
-	title = reform_me_events.167.t
-	desc = reform_me_events.167.d
-	picture = WESTERNISATION_eventPicture
-	hidden = yes
 
+#country_event = {
+#	id = reform_me_events.174
+#	title = reform_me_events.167.t
+#	desc = reform_me_events.167.d
+#	picture = WESTERNISATION_eventPicture
+#	hidden = yes
+#
+#
+#	trigger = {
+#		NOT = { has_government_attribute = enables_peace_development_reduction }
+#		OR = {
+#			has_country_modifier = Hermit_five
+#			has_country_modifier = Hermit_ten
+#			has_country_modifier = Hermit_fifteen
+#		}
+#	}
+#
+#	mean_time_to_happen = {
+#		days = 30
+#	}
+#
+#	immediate = {
+#		remove_country_modifier = Hermit_five
+#		remove_country_modifier = Hermit_ten
+#		remove_country_modifier = Hermit_fifteen
+#	}
+#
+#	option = {
+#		name = reform_me_events.167.a
+#
+#	}
+#}
 
-	trigger = {
-		NOT = { has_government_attribute = enables_peace_development_reduction }
-		OR = {
-			has_country_modifier = Hermit_five
-			has_country_modifier = Hermit_ten
-			has_country_modifier = Hermit_fifteen
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 30
-	}
-
-	immediate = {
-		remove_country_modifier = Hermit_five
-		remove_country_modifier = Hermit_ten
-		remove_country_modifier = Hermit_fifteen
-	}
-
-	option = {
-		name = reform_me_events.167.a
-
-	}
-}
-
-country_event = {
-	id = reform_me_events.176
-	title = reform_me_events.168.t
-	desc = reform_me_events.168.d
-	picture = WESTERNISATION_eventPicture
-	hidden = yes
-	fire_only_once = yes
-
-	mean_time_to_happen = {
-		days = 30
-	}
-
-	immediate = {
-		hidden_effect = {
-			set_global_flag = governments_expanded_mod_active
-		}
-	}
-
-	option = {
-		name = reform_me_events.137.c
-
-	}
-}
+#country_event = {
+#	id = reform_me_events.176
+#	title = reform_me_events.168.t
+#	desc = reform_me_events.168.d
+#	picture = WESTERNISATION_eventPicture
+#	hidden = yes
+#	fire_only_once = yes
+#
+#	mean_time_to_happen = {
+#		days = 30
+#	}
+#
+#	immediate = {
+#		hidden_effect = {
+#			set_global_flag = governments_expanded_mod_active
+#		}
+#	}
+#
+#	option = {
+#		name = reform_me_events.137.c
+#
+#	}
+#}
 
 
 
@@ -6601,13 +6464,7 @@ country_event = {
 				duration = -1
 			}
 		}
-		if = {
-			limit = {
-				OR = {
-					is_at_war = yes
-					NOT = { has_government_attribute = enables_masked_monarch }
-				}
-			}
+		else = {
 			remove_country_modifier = Masked_Monarch
 		}
 	}
@@ -6669,17 +6526,7 @@ country_event = {
 				duration = -1
 			}
 		}
-		if = {
-			limit = {
-				OR = {
-					NOT = {
-						any_country = {
-							offensive_war_with = ROOT
-						}
-					}
-					NOT = { has_government_attribute = enables_noble_service }
-				}
-			}
+		else = {
 			remove_country_modifier = Noble_Service
 		}
 	}
@@ -6700,6 +6547,21 @@ country_event = {
 	trigger = {
 		has_government_attribute = enables_elephant_cavalry
 		OR = {
+			AND = {
+				NOT = {
+					has_global_modifier_value = {
+						which = cavalry_power
+						value = 0.05
+					}
+				}
+				OR = {
+					has_country_modifier = GE_Elephant_Cavalry_1
+					has_country_modifier = GE_Elephant_Cavalry_2
+					has_country_modifier = GE_Elephant_Cavalry_3
+					has_country_modifier = GE_Elephant_Cavalry_4
+					has_country_modifier = GE_Elephant_Cavalry_5
+				}
+			}
 			AND = {
 				has_global_modifier_value = {
 					which = cavalry_power
@@ -6769,6 +6631,21 @@ country_event = {
 	immediate = {
 		if = {
 			limit = {
+				NOT = {
+					has_global_modifier_value = {
+						which = cavalry_power
+						value = 0.05
+					}
+				}
+			}
+			remove_country_modifier = GE_Elephant_Cavalry_1
+			remove_country_modifier = GE_Elephant_Cavalry_2
+			remove_country_modifier = GE_Elephant_Cavalry_3
+			remove_country_modifier = GE_Elephant_Cavalry_4
+			remove_country_modifier = GE_Elephant_Cavalry_5
+		}
+		else_if = {
+			limit = {
 				has_global_modifier_value = {
 					which = cavalry_power
 					value = 0.05
@@ -6789,7 +6666,7 @@ country_event = {
 			remove_country_modifier = GE_Elephant_Cavalry_4
 			remove_country_modifier = GE_Elephant_Cavalry_5
 		}
-		if = {
+		else_if = {
 			limit = {
 				has_global_modifier_value = {
 					which = cavalry_power
@@ -6811,7 +6688,7 @@ country_event = {
 			remove_country_modifier = GE_Elephant_Cavalry_4
 			remove_country_modifier = GE_Elephant_Cavalry_5
 		}
-		if = {
+		else_if = {
 			limit = {
 				has_global_modifier_value = {
 					which = cavalry_power
@@ -6833,7 +6710,7 @@ country_event = {
 			remove_country_modifier = GE_Elephant_Cavalry_4
 			remove_country_modifier = GE_Elephant_Cavalry_5
 		}
-		if = {
+		else_if = {
 			limit = {
 				has_global_modifier_value = {
 					which = cavalry_power
@@ -6855,7 +6732,7 @@ country_event = {
 			remove_country_modifier = GE_Elephant_Cavalry_3
 			remove_country_modifier = GE_Elephant_Cavalry_5
 		}
-		if = {
+		else_if = {
 			limit = {
 				has_global_modifier_value = {
 					which = cavalry_power
@@ -6926,6 +6803,12 @@ country_event = {
 	immediate = {
 		if = {
 			limit = {
+				NOT = { has_government_attribute = enables_siamese_honor }
+			}
+			remove_country_modifier = siamese_national_pride
+		}
+		else_if = {
+			limit = {
 				legitimacy = 75
 				NOT = { has_country_modifier = siamese_national_pride }
 			}
@@ -6934,14 +6817,14 @@ country_event = {
 				duration = -1
 			}
 		}
-		if = {
+		else_if = {
 			limit = {
 				NOT = { legitimacy = 75 }
 				has_country_modifier = siamese_national_pride
 			}
 			remove_country_modifier = siamese_national_pride
 		}
-		if = {
+		else_if = {
 			limit = {
 				NOT = {	legitimacy = 50	}
 				NOT = { has_country_modifier = siamese_national_shame }
@@ -6951,18 +6834,12 @@ country_event = {
 				duration = -1
 			}
 		}
-		if = {
+		else_if = {
 			limit = {
 				legitimacy = 50
 				has_country_modifier = siamese_national_shame
 			}
 			remove_country_modifier = siamese_national_shame
-		}
-		if = {
-			limit = {
-				NOT = { has_government_attribute = enables_siamese_honor }
-			}
-			remove_country_modifier = siamese_national_pride
 		}
 	}
 
@@ -7010,6 +6887,12 @@ country_event = {
 	immediate = {
 		if = {
 			limit = {
+				NOT = { has_government_attribute = enables_Religious_Fervor }
+			}
+			remove_country_modifier = GE_Religious_Fervor
+		}
+		else_if = {
+			limit = {
 				religious_unity = 0.90
 				NOT = { has_country_modifier = GE_Religious_Fervor }
 			}
@@ -7018,16 +6901,10 @@ country_event = {
 				duration = -1
 			}
 		}
-		if = {
+		else_if = {
 			limit = {
 				NOT = { religious_unity = 0.90 }
 				has_country_modifier = GE_Religious_Fervor
-			}
-			remove_country_modifier = GE_Religious_Fervor
-		}
-		if = {
-			limit = {
-				NOT = { has_government_attribute = enables_Religious_Fervor }
 			}
 			remove_country_modifier = GE_Religious_Fervor
 		}
@@ -7035,175 +6912,6 @@ country_event = {
 
 	option = {
 		name = reform_me_events.185.a
-
-	}
-}
-
-country_event = {
-	id = reform_me_events.186
-	title = reform_me_events.186.t
-	desc = reform_me_events.186.d
-	picture = WESTERNISATION_eventPicture
-	 hidden = yes
-
-	trigger = {
-		has_government_attribute = enables_mandala_periphery
-		any_subject_country = {
-			AND = {
-				NOT = { is_colonial_nation = yes }
-				NOT = { has_country_modifier = GE_Mandala_Periphery }
-			}
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 30
-	}
-
-	immediate = {
-		every_subject_country = {
-			limit = {
-				NOT = { is_colonial_nation = yes }
-				NOT = { has_country_modifier = GE_Mandala_Periphery }
-            }
-			add_country_modifier = {
-				name = "GE_Mandala_Periphery"
-				duration = -1
-			}
-		}
-	}
-
-	option = {
-		name = reform_me_events.186.a
-
-	}
-}
-
-country_event = {
-	id = reform_me_events.187
-	title = reform_me_events.187.t
-	desc = reform_me_events.187.d
-	picture = WESTERNISATION_eventPicture
-	 hidden = yes
-
-
-	trigger = {
-		has_country_modifier = GE_Mandala_Periphery
-		is_subject = no
-		is_at_war = no
-	}
-
-	mean_time_to_happen = {
-		days = 30
-	}
-
-	immediate = {
-		remove_country_modifier = GE_Mandala_Periphery
-	}
-
-	option = {
-		name = reform_me_events.187.a
-
-	}
-}
-
-country_event = {
-	id = reform_me_events.188
-	title = reform_me_events.188.t
-	desc = reform_me_events.188.d
-	picture = WESTERNISATION_eventPicture
-	 hidden = yes
-
-	trigger = {
-		has_government_attribute = enables_solar_periphery
-		any_subject_country = {
-			AND = {
-				NOT = { is_colonial_nation = yes }
-				NOT = { has_country_modifier = GE_Solar_Periphery }
-			}
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 30
-	}
-
-	immediate = {
-		every_subject_country = {
-			limit = {
-				NOT = { is_colonial_nation = yes }
-				NOT = { has_country_modifier = GE_Solar_Periphery }
-            }
-			add_country_modifier = {
-				name = "GE_Solar_Periphery"
-				duration = -1
-			}
-		}
-	}
-
-	option = {
-		name = reform_me_events.188.a
-
-	}
-}
-
-country_event = {
-	id = reform_me_events.189
-	title = reform_me_events.189.t
-	desc = reform_me_events.189.d
-	picture = WESTERNISATION_eventPicture
-	 hidden = yes
-
-
-	trigger = {
-		has_country_modifier = GE_Solar_Periphery
-		is_subject = no
-		is_at_war = no
-	}
-
-	mean_time_to_happen = {
-		days = 30
-	}
-
-	immediate = {
-		remove_country_modifier = GE_Solar_Periphery
-	}
-
-	option = {
-		name = reform_me_events.189.a
-
-	}
-}
-
-country_event = {
-	id = reform_me_events.190
-	title = reform_me_events.190.t
-	desc = reform_me_events.190.d
-	picture = WESTERNISATION_eventPicture
-	hidden = yes
-
-
-	trigger = {
-		has_government_attribute = enables_byzantine_administration
-		exists = BYZ
-		NOT = {
-			has_country_modifier = GE_byzantine_administration
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 30
-	}
-
-	immediate = {
-		add_country_modifier = {
-			name = GE_byzantine_administration
-			duration = 3650
-		}
-	}
-
-	option = {
-		name = reform_me_events.190.a
 
 	}
 }
@@ -7222,9 +6930,7 @@ country_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		days = 30
-	}
+	is_triggered_only = yes
 
 	immediate = {
 		set_ruler_flag = GE_church_policy_set
@@ -7255,305 +6961,6 @@ country_event = {
 }
 
 
-
-country_event = {
-	id = reform_me_events.200
-	title = reform_me_events.200.t
-	desc = reform_me_events.200.d
-	picture = WESTERNISATION_eventPicture
-	hidden = yes
-
-
-	trigger = {
-		has_government_attribute = enables_imperial_circle
-		OR = {
-			AND = {
-				calc_true_if = {
-					all_subject_country = {
-						NOT = {
-							is_colonial_nation = yes
-							is_subject_of_type = tributary_state
-						}
-						is_part_of_hre = yes
-					}
-					amount = 1
-				}
-				NOT = { has_country_modifier = GE_Imperial_Circle_1 }
-			}
-			AND = {
-				calc_true_if = {
-					all_subject_country = {
-						NOT = {
-							is_colonial_nation = yes
-							is_subject_of_type = tributary_state
-						}
-						is_part_of_hre = yes
-					}
-					amount = 2
-				}
-				NOT = { has_country_modifier = GE_Imperial_Circle_2 }
-			}
-			AND = {
-				calc_true_if = {
-					all_subject_country = {
-						NOT = {
-							is_colonial_nation = yes
-							is_subject_of_type = tributary_state
-						}
-						is_part_of_hre = yes
-					}
-					amount = 3
-				}
-				NOT = { has_country_modifier = GE_Imperial_Circle_3 }
-			}
-			AND = {
-				calc_true_if = {
-					all_subject_country = {
-						NOT = {
-							is_colonial_nation = yes
-							is_subject_of_type = tributary_state
-						}
-						is_part_of_hre = yes
-					}
-					amount = 4
-				}
-				NOT = { has_country_modifier = GE_Imperial_Circle_4 }
-			}
-			AND = {
-				calc_true_if = {
-					all_subject_country = {
-						NOT = {
-							is_colonial_nation = yes
-							is_subject_of_type = tributary_state
-						}
-						is_part_of_hre = yes
-					}
-					amount = 5
-				}
-				NOT = { has_country_modifier = GE_Imperial_Circle_5 }
-			}
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 30
-	}
-
-	immediate = {
-		if = {
-			limit = {
-				calc_true_if = {
-					all_subject_country = {
-						NOT = {
-							is_colonial_nation = yes
-							is_subject_of_type = tributary_state
-						}
-						is_part_of_hre = yes
-					}
-					amount = 1
-				}
-				NOT = {
-					calc_true_if = {
-						all_subject_country = {
-							NOT = {
-								is_colonial_nation = yes
-								is_subject_of_type = tributary_state
-							}
-							is_part_of_hre = yes
-						}
-						amount = 2
-					}
-				}
-			}
-			add_country_modifier = {
-				name = GE_Imperial_Circle_1
-				duration = -1
-				hidden = yes
-			}
-			remove_country_modifier = GE_Imperial_Circle_2
-			remove_country_modifier = GE_Imperial_Circle_3
-			remove_country_modifier = GE_Imperial_Circle_4
-			remove_country_modifier = GE_Imperial_Circle_5
-		}
-		if = {
-			limit = {
-				calc_true_if = {
-					all_subject_country = {
-						NOT = {
-							is_colonial_nation = yes
-							is_subject_of_type = tributary_state
-						}
-						is_part_of_hre = yes
-					}
-					amount = 2
-				}
-				NOT = {
-					calc_true_if = {
-						all_subject_country = {
-							NOT = {
-								is_colonial_nation = yes
-								is_subject_of_type = tributary_state
-							}
-							is_part_of_hre = yes
-						}
-						amount = 3
-					}
-				}
-			}
-			add_country_modifier = {
-				name = GE_Imperial_Circle_2
-				duration = -1
-				hidden = yes
-			}
-			remove_country_modifier = GE_Imperial_Circle_1
-			remove_country_modifier = GE_Imperial_Circle_3
-			remove_country_modifier = GE_Imperial_Circle_4
-			remove_country_modifier = GE_Imperial_Circle_5
-		}
-		if = {
-			limit = {
-				calc_true_if = {
-					all_subject_country = {
-						NOT = {
-							is_colonial_nation = yes
-							is_subject_of_type = tributary_state
-						}
-						is_part_of_hre = yes
-					}
-					amount = 3
-				}
-				NOT = {
-					calc_true_if = {
-						all_subject_country = {
-							NOT = {
-								is_colonial_nation = yes
-								is_subject_of_type = tributary_state
-							}
-							is_part_of_hre = yes
-						}
-						amount = 4
-					}
-				}
-			}
-			add_country_modifier = {
-				name = GE_Imperial_Circle_3
-				duration = -1
-				hidden = yes
-			}
-			remove_country_modifier = GE_Imperial_Circle_1
-			remove_country_modifier = GE_Imperial_Circle_2
-			remove_country_modifier = GE_Imperial_Circle_4
-			remove_country_modifier = GE_Imperial_Circle_5
-		}
-		if = {
-			limit = {
-				calc_true_if = {
-					all_subject_country = {
-						NOT = {
-							is_colonial_nation = yes
-							is_subject_of_type = tributary_state
-						}
-						is_part_of_hre = yes
-					}
-					amount = 4
-				}
-				NOT = {
-					calc_true_if = {
-						all_subject_country = {
-							NOT = {
-								is_colonial_nation = yes
-								is_subject_of_type = tributary_state
-							}
-							is_part_of_hre = yes
-						}
-						amount = 5
-					}
-				}
-			}
-			add_country_modifier = {
-				name = GE_Imperial_Circle_4
-				duration = -1
-				hidden = yes
-			}
-			remove_country_modifier = GE_Imperial_Circle_1
-			remove_country_modifier = GE_Imperial_Circle_2
-			remove_country_modifier = GE_Imperial_Circle_3
-			remove_country_modifier = GE_Imperial_Circle_5
-		}
-		if = {
-			limit = {
-				calc_true_if = {
-					all_subject_country = {
-						NOT = {
-							is_colonial_nation = yes
-							is_subject_of_type = tributary_state
-						}
-						is_part_of_hre = yes
-					}
-					amount = 5
-				}
-			}
-			add_country_modifier = {
-				name = GE_Imperial_Circle_5
-				duration = -1
-				hidden = yes
-			}
-			remove_country_modifier = GE_Imperial_Circle_1
-			remove_country_modifier = GE_Imperial_Circle_2
-			remove_country_modifier = GE_Imperial_Circle_3
-			remove_country_modifier = GE_Imperial_Circle_4
-		}
-	}
-
-	option = {
-		name = reform_me_events.200.a
-
-	}
-}
-
-country_event = {
-	id = reform_me_events.201
-	title = reform_me_events.201.t
-	desc = reform_me_events.201.d
-	picture = WESTERNISATION_eventPicture
-	hidden = yes
-
-
-	trigger = {
-		OR = {
-			NOT = { has_government_attribute = enables_imperial_circle }
-			AND = {
-				has_government_attribute = enables_imperial_circle
-				NOT = { num_of_subjects = 1 }
-			}
-		}
-		OR = {
-			has_country_modifier = GE_Imperial_Circle_1
-			has_country_modifier = GE_Imperial_Circle_2
-			has_country_modifier = GE_Imperial_Circle_3
-			has_country_modifier = GE_Imperial_Circle_4
-			has_country_modifier = GE_Imperial_Circle_5
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 30
-	}
-
-	immediate = {
-		remove_country_modifier = GE_Imperial_Circle_1
-		remove_country_modifier = GE_Imperial_Circle_2
-		remove_country_modifier = GE_Imperial_Circle_3
-		remove_country_modifier = GE_Imperial_Circle_4
-		remove_country_modifier = GE_Imperial_Circle_5
-	}
-
-	option = {
-		name = reform_me_events.201.a
-
-	}
-}
-
 country_event = {
 	id = reform_me_events.202
 	title = reform_me_events.202.t
@@ -7565,6 +6972,16 @@ country_event = {
 	trigger = {
 		has_government_attribute = enables_republican_guard
 		OR = {
+			AND = {
+				NOT = {republican_tradition = 60 }
+				OR = {
+					has_country_modifier = GE_Republican_Guard_1
+					has_country_modifier = GE_Republican_Guard_2
+					has_country_modifier = GE_Republican_Guard_3
+					has_country_modifier = GE_Republican_Guard_4
+					has_country_modifier = GE_Republican_Guard_5
+				}
+			}
 			AND = {
 				republican_tradition = 60
 				NOT = { republican_tradition = 70 }
@@ -7599,6 +7016,16 @@ country_event = {
 	immediate = {
 		if = {
 			limit = {
+				NOT = {republican_tradition = 60 }
+			}
+			remove_country_modifier = GE_Republican_Guard_1
+			remove_country_modifier = GE_Republican_Guard_2
+			remove_country_modifier = GE_Republican_Guard_3
+			remove_country_modifier = GE_Republican_Guard_4
+			remove_country_modifier = GE_Republican_Guard_5
+		}
+		else_if = {
+			limit = {
 				republican_tradition = 60
 				NOT = { republican_tradition = 70 }
 				NOT = { has_country_modifier = GE_Republican_Guard_1 }
@@ -7613,7 +7040,7 @@ country_event = {
 			remove_country_modifier = GE_Republican_Guard_4
 			remove_country_modifier = GE_Republican_Guard_5
 		}
-		if = {
+		else_if = {
 			limit = {
 				republican_tradition = 70
 				NOT = { republican_tradition = 80 }
@@ -7629,7 +7056,7 @@ country_event = {
 			remove_country_modifier = GE_Republican_Guard_4
 			remove_country_modifier = GE_Republican_Guard_5
 		}
-		if = {
+		else_if = {
 			limit = {
 				republican_tradition = 80
 				NOT = { republican_tradition = 90 }
@@ -7645,7 +7072,7 @@ country_event = {
 			remove_country_modifier = GE_Republican_Guard_4
 			remove_country_modifier = GE_Republican_Guard_5
 		}
-		if = {
+		else_if = {
 			limit = {
 				republican_tradition = 90
 				NOT = { republican_tradition = 100 }
@@ -7661,7 +7088,7 @@ country_event = {
 			remove_country_modifier = GE_Republican_Guard_3
 			remove_country_modifier = GE_Republican_Guard_5
 		}
-		if = {
+		else_if = {
 			limit = {
 				republican_tradition = 100
 				NOT = { has_country_modifier = GE_Republican_Guard_5 }
@@ -7680,49 +7107,6 @@ country_event = {
 
 	option = {
 		name = reform_me_events.202.a
-
-	}
-}
-
-country_event = {
-	id = reform_me_events.203
-	title = reform_me_events.203.t
-	desc = reform_me_events.203.d
-	picture = WESTERNISATION_eventPicture
-	hidden = yes
-
-
-	trigger = {
-		OR = {
-			NOT = { has_government_attribute = enables_republican_guard }
-			AND = {
-				has_government_attribute = enables_republican_guard
-				NOT = { republican_tradition = 50 }
-			}
-		}
-		OR = {
-			has_country_modifier = GE_Republican_Guard_1
-			has_country_modifier = GE_Republican_Guard_2
-			has_country_modifier = GE_Republican_Guard_3
-			has_country_modifier = GE_Republican_Guard_4
-			has_country_modifier = GE_Republican_Guard_5
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 30
-	}
-
-	immediate = {
-		remove_country_modifier = GE_Republican_Guard_1
-		remove_country_modifier = GE_Republican_Guard_2
-		remove_country_modifier = GE_Republican_Guard_3
-		remove_country_modifier = GE_Republican_Guard_4
-		remove_country_modifier = GE_Republican_Guard_5
-	}
-
-	option = {
-		name = reform_me_events.203.a
 
 	}
 }
@@ -7797,413 +7181,6 @@ country_event = {
 }
 
 country_event = {
-	id = reform_me_events.206
-	title = reform_me_events.206.t
-	desc = reform_me_events.206.d
-	picture = WESTERNISATION_eventPicture
-	hidden = yes
-
-
-	trigger = {
-		has_government_attribute = enables_unified_drills
-		OR = {
-			AND = {
-				calc_true_if = {
-					all_subject_country = {
-						NOT = {
-							is_colonial_nation = yes
-							is_subject_of_type = tributary_state
-						}
-						is_part_of_hre = yes
-					}
-					amount = 1
-				}
-				NOT = { has_country_modifier = GE_Shared_Drills_1 }
-			}
-			AND = {
-				calc_true_if = {
-					all_subject_country = {
-						NOT = {
-							is_colonial_nation = yes
-							is_subject_of_type = tributary_state
-						}
-						is_part_of_hre = yes
-					}
-					amount = 2
-				}
-				NOT = { has_country_modifier = GE_Shared_Drills_2 }
-			}
-			AND = {
-				calc_true_if = {
-					all_subject_country = {
-						NOT = {
-							is_colonial_nation = yes
-							is_subject_of_type = tributary_state
-						}
-						is_part_of_hre = yes
-					}
-					amount = 3
-				}
-				NOT = { has_country_modifier = GE_Shared_Drills_3 }
-			}
-			AND = {
-				calc_true_if = {
-					all_subject_country = {
-						NOT = {
-							is_colonial_nation = yes
-							is_subject_of_type = tributary_state
-						}
-						is_part_of_hre = yes
-					}
-					amount = 4
-				}
-				NOT = { has_country_modifier = GE_Shared_Drills_4 }
-			}
-			AND = {
-				calc_true_if = {
-					all_subject_country = {
-						NOT = {
-							is_colonial_nation = yes
-							is_subject_of_type = tributary_state
-						}
-						is_part_of_hre = yes
-					}
-					amount = 5
-				}
-				NOT = { has_country_modifier = GE_Shared_Drills_5 }
-			}
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 30
-	}
-
-	immediate = {
-		if = {
-			limit = {
-				calc_true_if = {
-					all_subject_country = {
-						NOT = {
-							is_colonial_nation = yes
-							is_subject_of_type = tributary_state
-						}
-						is_part_of_hre = yes
-					}
-					amount = 1
-				}
-				NOT = {
-					calc_true_if = {
-						all_subject_country = {
-							NOT = {
-								is_colonial_nation = yes
-								is_subject_of_type = tributary_state
-							}
-							is_part_of_hre = yes
-						}
-						amount = 2
-					}
-				}
-			}
-			add_country_modifier = {
-				name = GE_Shared_Drills_1
-				duration = -1
-				hidden = yes
-			}
-			remove_country_modifier = GE_Shared_Drills_2
-			remove_country_modifier = GE_Shared_Drills_3
-			remove_country_modifier = GE_Shared_Drills_4
-			remove_country_modifier = GE_Shared_Drills_5
-		}
-		if = {
-			limit = {
-				calc_true_if = {
-					all_subject_country = {
-						NOT = {
-							is_colonial_nation = yes
-							is_subject_of_type = tributary_state
-						}
-						is_part_of_hre = yes
-					}
-					amount = 2
-				}
-				NOT = {
-					calc_true_if = {
-						all_subject_country = {
-							NOT = {
-								is_colonial_nation = yes
-								is_subject_of_type = tributary_state
-							}
-							is_part_of_hre = yes
-						}
-						amount = 3
-					}
-				}
-			}
-			add_country_modifier = {
-				name = GE_Shared_Drills_2
-				duration = -1
-				hidden = yes
-			}
-			remove_country_modifier = GE_Shared_Drills_1
-			remove_country_modifier = GE_Shared_Drills_3
-			remove_country_modifier = GE_Shared_Drills_4
-			remove_country_modifier = GE_Shared_Drills_5
-		}
-		if = {
-			limit = {
-				calc_true_if = {
-					all_subject_country = {
-						NOT = {
-							is_colonial_nation = yes
-							is_subject_of_type = tributary_state
-						}
-						is_part_of_hre = yes
-					}
-					amount = 3
-				}
-				NOT = {
-					calc_true_if = {
-						all_subject_country = {
-							NOT = {
-								is_colonial_nation = yes
-								is_subject_of_type = tributary_state
-							}
-							is_part_of_hre = yes
-						}
-						amount = 4
-					}
-				}
-			}
-			add_country_modifier = {
-				name = GE_Shared_Drills_3
-				duration = -1
-				hidden = yes
-			}
-			remove_country_modifier = GE_Shared_Drills_1
-			remove_country_modifier = GE_Shared_Drills_2
-			remove_country_modifier = GE_Shared_Drills_4
-			remove_country_modifier = GE_Shared_Drills_5
-		}
-		if = {
-			limit = {
-				calc_true_if = {
-					all_subject_country = {
-						NOT = {
-							is_colonial_nation = yes
-							is_subject_of_type = tributary_state
-						}
-						is_part_of_hre = yes
-					}
-					amount = 4
-				}
-				NOT = {
-					calc_true_if = {
-						all_subject_country = {
-							NOT = {
-								is_colonial_nation = yes
-								is_subject_of_type = tributary_state
-							}
-							is_part_of_hre = yes
-						}
-						amount = 5
-					}
-				}
-			}
-			add_country_modifier = {
-				name = GE_Shared_Drills_4
-				duration = -1
-				hidden = yes
-			}
-			remove_country_modifier = GE_Shared_Drills_1
-			remove_country_modifier = GE_Shared_Drills_2
-			remove_country_modifier = GE_Shared_Drills_3
-			remove_country_modifier = GE_Shared_Drills_5
-		}
-		if = {
-			limit = {
-				calc_true_if = {
-					all_subject_country = {
-						NOT = {
-							is_colonial_nation = yes
-							is_subject_of_type = tributary_state
-						}
-						is_part_of_hre = yes
-					}
-					amount = 5
-				}
-			}
-			add_country_modifier = {
-				name = GE_Shared_Drills_5
-				duration = -1
-				hidden = yes
-			}
-			remove_country_modifier = GE_Shared_Drills_1
-			remove_country_modifier = GE_Shared_Drills_2
-			remove_country_modifier = GE_Shared_Drills_3
-			remove_country_modifier = GE_Shared_Drills_4
-		}
-	}
-
-	option = {
-		name = reform_me_events.206.a
-
-	}
-}
-
-country_event = {
-	id = reform_me_events.207
-	title = reform_me_events.207.t
-	desc = reform_me_events.207.d
-	picture = WESTERNISATION_eventPicture
-	hidden = yes
-
-
-	trigger = {
-		OR = {
-			NOT = { has_government_attribute = enables_unified_drills }
-			AND = {
-				has_government_attribute = enables_unified_drills
-				NOT = { num_of_subjects = 1 }
-			}
-		}
-		OR = {
-			has_country_modifier = GE_Shared_Drills_1
-			has_country_modifier = GE_Shared_Drills_2
-			has_country_modifier = GE_Shared_Drills_3
-			has_country_modifier = GE_Shared_Drills_4
-			has_country_modifier = GE_Shared_Drills_5
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 30
-	}
-
-	immediate = {
-		remove_country_modifier = GE_Shared_Drills_1
-		remove_country_modifier = GE_Shared_Drills_2
-		remove_country_modifier = GE_Shared_Drills_3
-		remove_country_modifier = GE_Shared_Drills_4
-		remove_country_modifier = GE_Shared_Drills_5
-	}
-
-	option = {
-		name = reform_me_events.207.a
-
-	}
-}
-
-country_event = {
-	id = reform_me_events.210
-	title = reform_me_events.210.t
-	desc = reform_me_events.210.d
-	picture = WESTERNISATION_eventPicture
-	hidden = yes
-
-
-	trigger = {
-		has_government_attribute = enables_union_of_arras
-		OR = {
-			AND = {
-				employed_advisor = {
-					religion = catholic
-					category = ADM
-				}
-				employed_advisor = {
-					religion = catholic
-					category = DIP
-				}
-				employed_advisor = {
-					religion = catholic
-					category = MIL
-				}
-				NOT = { has_country_modifier = GE_Union_of_Arras }
-			}
-			AND = {
-				NOT = {
-					employed_advisor = {
-						religion = catholic
-						category = ADM
-					}
-					employed_advisor = {
-						religion = catholic
-						category = DIP
-					}
-					employed_advisor = {
-						religion = catholic
-						category = MIL
-					}
-				}
-				has_country_modifier = GE_Union_of_Arras
-			}
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 30
-	}
-
-	immediate = {
-		if = {
-			limit = {
-				employed_advisor = {
-					religion = catholic
-					category = ADM
-				}
-				employed_advisor = {
-					religion = catholic
-					category = DIP
-				}
-				employed_advisor = {
-					religion = catholic
-					category = MIL
-				}
-			}
-			add_country_modifier = {
-				name = "GE_Union_of_Arras"
-				duration = -1
-			}
-		}
-		else = {
-			remove_country_modifier = GE_Union_of_Arras
-		}
-	}
-
-	option = {
-		name = reform_me_events.210.a
-
-	}
-}
-
-country_event = {
-	id = reform_me_events.211
-	title = reform_me_events.211.t
-	desc = reform_me_events.211.d
-	picture = WESTERNISATION_eventPicture
-	hidden = yes
-
-
-	trigger = {
-		NOT = { has_government_attribute = enables_union_of_arras }
-		has_country_modifier = GE_Union_of_Arras
-	}
-
-	mean_time_to_happen = {
-		days = 30
-	}
-
-	immediate = {
-		remove_country_modifier = GE_Union_of_Arras
-	}
-
-	option = {
-		name = reform_me_events.211.a
-
-	}
-}
-
-country_event = {
 	id = reform_me_events.212
 	title = reform_me_events.212.t
 	desc = reform_me_events.212.d
@@ -8214,6 +7191,18 @@ country_event = {
 	trigger = {
 		has_government_attribute = enables_cultural_inspiration
 		OR = {
+			AND = {
+				NOT = {
+					num_accepted_cultures = 1
+				}
+				OR = {
+					has_country_modifier = GE_Cultural_Inspiration_1
+					has_country_modifier = GE_Cultural_Inspiration_2
+					has_country_modifier = GE_Cultural_Inspiration_3
+					has_country_modifier = GE_Cultural_Inspiration_4
+					has_country_modifier = GE_Cultural_Inspiration_5
+				}
+			}
 			AND = {
 				num_accepted_cultures = 1
 				NOT = {
@@ -8249,12 +7238,22 @@ country_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		days = 30
-	}
+	is_triggered_only = yes
 
 	immediate = {
 		if = {
+			limit = {
+				NOT = {
+					num_accepted_cultures = 1
+				}
+			}
+			remove_country_modifier = GE_Cultural_Inspiration_1
+			remove_country_modifier = GE_Cultural_Inspiration_2
+			remove_country_modifier = GE_Cultural_Inspiration_3
+			remove_country_modifier = GE_Cultural_Inspiration_4
+			remove_country_modifier = GE_Cultural_Inspiration_5
+		}
+		else_if = {
 			limit = {
 				AND = {
 					num_accepted_cultures = 1
@@ -8273,7 +7272,7 @@ country_event = {
 			remove_country_modifier = GE_Cultural_Inspiration_4
 			remove_country_modifier = GE_Cultural_Inspiration_5
 		}
-		if = {
+		else_if = {
 			limit = {
 				AND = {
 					num_accepted_cultures = 2
@@ -8292,7 +7291,7 @@ country_event = {
 			remove_country_modifier = GE_Cultural_Inspiration_4
 			remove_country_modifier = GE_Cultural_Inspiration_5
 		}
-		if = {
+		else_if = {
 			limit = {
 				AND = {
 					num_accepted_cultures = 3
@@ -8311,7 +7310,7 @@ country_event = {
 			remove_country_modifier = GE_Cultural_Inspiration_4
 			remove_country_modifier = GE_Cultural_Inspiration_5
 		}
-		if = {
+		else_if = {
 			limit = {
 				AND = {
 					num_accepted_cultures = 4
@@ -8330,7 +7329,7 @@ country_event = {
 			remove_country_modifier = GE_Cultural_Inspiration_3
 			remove_country_modifier = GE_Cultural_Inspiration_5
 		}
-		if = {
+		else_if = {
 			limit = {
 				AND = {
 					num_accepted_cultures = 5
@@ -8350,43 +7349,6 @@ country_event = {
 
 	option = {
 		name = reform_me_events.212.a
-
-	}
-}
-
-country_event = {
-	id = reform_me_events.213
-	title = reform_me_events.213.t
-	desc = reform_me_events.213.d
-	picture = WESTERNISATION_eventPicture
-	hidden = yes
-
-
-	trigger = {
-		NOT = { has_government_attribute = enables_cultural_inspiration }
-		OR = {
-			has_country_modifier = GE_Cultural_Inspiration_1
-			has_country_modifier = GE_Cultural_Inspiration_2
-			has_country_modifier = GE_Cultural_Inspiration_3
-			has_country_modifier = GE_Cultural_Inspiration_4
-			has_country_modifier = GE_Cultural_Inspiration_5
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 30
-	}
-
-	immediate = {
-		remove_country_modifier = GE_Cultural_Inspiration_1
-		remove_country_modifier = GE_Cultural_Inspiration_2
-		remove_country_modifier = GE_Cultural_Inspiration_3
-		remove_country_modifier = GE_Cultural_Inspiration_4
-		remove_country_modifier = GE_Cultural_Inspiration_5
-	}
-
-	option = {
-		name = reform_me_events.213.a
 
 	}
 }
@@ -8416,7 +7378,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 1
+		days = 30
 	}
 
 	immediate = {
@@ -8442,33 +7404,6 @@ country_event = {
 }
 
 country_event = {
-	id = reform_me_events.215
-	title = reform_me_events.215.t
-	desc = reform_me_events.215.d
-	picture = WESTERNISATION_eventPicture
-	hidden = yes
-
-
-	trigger = {
-		NOT = { has_government_attribute = enables_coin_over_crown }
-		has_country_modifier = GE_Coin_over_Crown
-	}
-
-	mean_time_to_happen = {
-		days = 1
-	}
-
-	immediate = {
-		remove_country_modifier = GE_Coin_over_Crown
-	}
-
-	option = {
-		name = reform_me_events.215.a
-
-	}
-}
-
-country_event = {
 	id = reform_me_events.216
 	title = reform_me_events.216.t
 	desc = reform_me_events.216.d
@@ -8477,69 +7412,55 @@ country_event = {
 
 
 	trigger = {
-		OR = {
-			AND = {
-				has_government_attribute = enables_grand_leader
-				OR = {
-					AND = {
-						mil = 0
-						NOT = {
-							mil = 1
-						}
-						NOT = { has_country_modifier = GE_Grand_Leader_0 }
-					}
-					AND = {
+		AND = {
+			has_government_attribute = enables_grand_leader
+			OR = {
+				AND = {
+					mil = 0
+					NOT = {
 						mil = 1
-						NOT = {
-							mil = 2
-						}
-						NOT = { has_country_modifier = GE_Grand_Leader_1 }
 					}
-					AND = {
+					NOT = { has_country_modifier = GE_Grand_Leader_0 }
+				}
+				AND = {
+					mil = 1
+					NOT = {
 						mil = 2
-						NOT = {
-							mil = 3
-						}
-						NOT = { has_country_modifier = GE_Grand_Leader_2 }
 					}
-					AND = {
+					NOT = { has_country_modifier = GE_Grand_Leader_1 }
+				}
+				AND = {
+					mil = 2
+					NOT = {
 						mil = 3
-						NOT = {
-							mil = 4
-						}
-						NOT = { has_country_modifier = GE_Grand_Leader_3 }
 					}
-					AND = {
+					NOT = { has_country_modifier = GE_Grand_Leader_2 }
+				}
+				AND = {
+					mil = 3
+					NOT = {
 						mil = 4
-						NOT = {
-							mil = 5
-						}
-						NOT = { has_country_modifier = GE_Grand_Leader_4 }
 					}
-					AND = {
+					NOT = { has_country_modifier = GE_Grand_Leader_3 }
+				}
+				AND = {
+					mil = 4
+					NOT = {
 						mil = 5
-						NOT = {
-							mil = 6
-						}
-						NOT = { has_country_modifier = GE_Grand_Leader_5 }
 					}
-					AND = {
+					NOT = { has_country_modifier = GE_Grand_Leader_4 }
+				}
+				AND = {
+					mil = 5
+					NOT = {
 						mil = 6
-						NOT = { has_country_modifier = GE_Grand_Leader_6 }
 					}
+					NOT = { has_country_modifier = GE_Grand_Leader_5 }
 				}
-			}
-			AND = {
-				OR = {
-					has_country_modifier = GE_Grand_Leader_0
-					has_country_modifier = GE_Grand_Leader_1
-					has_country_modifier = GE_Grand_Leader_2
-					has_country_modifier = GE_Grand_Leader_3
-					has_country_modifier = GE_Grand_Leader_4
-					has_country_modifier = GE_Grand_Leader_5
-					has_country_modifier = GE_Grand_Leader_6
+				AND = {
+					mil = 6
+					NOT = { has_country_modifier = GE_Grand_Leader_6 }
 				}
-				NOT = { has_government_attribute = enables_grand_leader }
 			}
 		}
 	}
@@ -8679,15 +7600,6 @@ country_event = {
 			remove_country_modifier = GE_Grand_Leader_4
 			remove_country_modifier = GE_Grand_Leader_5
 		}
-		else = {
-			remove_country_modifier = GE_Grand_Leader_0
-			remove_country_modifier = GE_Grand_Leader_1
-			remove_country_modifier = GE_Grand_Leader_2
-			remove_country_modifier = GE_Grand_Leader_3
-			remove_country_modifier = GE_Grand_Leader_4
-			remove_country_modifier = GE_Grand_Leader_5
-			remove_country_modifier = GE_Grand_Leader_6
-		}
 	}
 
 	option = {
@@ -8703,128 +7615,148 @@ country_event = {
 	hidden = yes
 
 	trigger = {
-		OR = {
-			AND = {
-				has_government_attribute = enables_foreign_experts
-				OR = {
-					AND = {
-						calc_true_if = {
-							all_ally = {
-								NOT = {
-									culture_group = ROOT
-								}
-							}
-							amount = 1
-						}
+		has_government_attribute = enables_foreign_experts
+		AND = {
+			OR = {
+				has_country_modifier = GE_Foreign_Experts_1
+				has_country_modifier = GE_Foreign_Experts_2
+				has_country_modifier = GE_Foreign_Experts_3
+				has_country_modifier = GE_Foreign_Experts_4
+				has_country_modifier = GE_Foreign_Experts_5
+			}
+			NOT = {
+				calc_true_if = {
+					amount = 1
+					all_ally = {
 						NOT = {
-							calc_true_if = {
-								amount = 2
-								all_ally = {
-									NOT = {
-										culture_group = ROOT
-									}
-								}
-							}
+							culture_group = ROOT
 						}
-						NOT = { has_country_modifier = GE_Foreign_Experts_1 }
-					}
-					AND = {
-						calc_true_if = {
-							all_ally = {
-								NOT = {
-									culture_group = ROOT
-								}
-							}
-							amount = 2
-						}
-						NOT = {
-							calc_true_if = {
-								all_ally = {
-									NOT = {
-										culture_group = ROOT
-									}
-								}
-								amount = 3
-							}
-						}
-						NOT = { has_country_modifier = GE_Foreign_Experts_2 }
-					}
-					AND = {
-						calc_true_if = {
-							all_ally = {
-								NOT = {
-									culture_group = ROOT
-								}
-							}
-							amount = 3
-						}
-						NOT = {
-							calc_true_if = {
-								all_ally = {
-									NOT = {
-										culture_group = ROOT
-									}
-								}
-								amount = 4
-							}
-						}
-						NOT = { has_country_modifier = GE_Foreign_Experts_3 }
-					}
-					AND = {
-						calc_true_if = {
-							all_ally = {
-								NOT = {
-									culture_group = ROOT
-								}
-							}
-							amount = 4
-						}
-						NOT = {
-							calc_true_if = {
-								all_ally = {
-									NOT = {
-										culture_group = ROOT
-									}
-								}
-								amount = 5
-							}
-						}
-						NOT = { has_country_modifier = GE_Foreign_Experts_4 }
-					}
-					AND = {
-						calc_true_if = {
-							all_ally = {
-								NOT = {
-									culture_group = ROOT
-								}
-							}
-							amount = 5
-						}
-						NOT = { has_country_modifier = GE_Foreign_Experts_5 }
 					}
 				}
 			}
+		}
+		OR = {
 			AND = {
-				OR = {
-					has_country_modifier = GE_Foreign_Experts_1
-					has_country_modifier = GE_Foreign_Experts_2
-					has_country_modifier = GE_Foreign_Experts_3
-					has_country_modifier = GE_Foreign_Experts_4
-					has_country_modifier = GE_Foreign_Experts_5
+				calc_true_if = {
+					all_ally = {
+						NOT = {
+							culture_group = ROOT
+						}
+					}
+					amount = 1
 				}
 				NOT = {
-					has_government_attribute = enables_foreign_experts
+					calc_true_if = {
+						amount = 2
+						all_ally = {
+							NOT = {
+								culture_group = ROOT
+							}
+						}
+					}
 				}
+				NOT = { has_country_modifier = GE_Foreign_Experts_1 }
+			}
+			AND = {
+				calc_true_if = {
+					all_ally = {
+						NOT = {
+							culture_group = ROOT
+						}
+					}
+					amount = 2
+				}
+				NOT = {
+					calc_true_if = {
+						all_ally = {
+							NOT = {
+								culture_group = ROOT
+							}
+						}
+						amount = 3
+					}
+				}
+				NOT = { has_country_modifier = GE_Foreign_Experts_2 }
+			}
+			AND = {
+				calc_true_if = {
+					all_ally = {
+						NOT = {
+							culture_group = ROOT
+						}
+					}
+					amount = 3
+				}
+				NOT = {
+					calc_true_if = {
+						all_ally = {
+							NOT = {
+								culture_group = ROOT
+							}
+						}
+						amount = 4
+					}
+				}
+				NOT = { has_country_modifier = GE_Foreign_Experts_3 }
+			}
+			AND = {
+				calc_true_if = {
+					all_ally = {
+						NOT = {
+							culture_group = ROOT
+						}
+					}
+					amount = 4
+				}
+				NOT = {
+					calc_true_if = {
+						all_ally = {
+							NOT = {
+								culture_group = ROOT
+							}
+						}
+						amount = 5
+					}
+				}
+				NOT = { has_country_modifier = GE_Foreign_Experts_4 }
+			}
+			AND = {
+				calc_true_if = {
+					all_ally = {
+						NOT = {
+							culture_group = ROOT
+						}
+					}
+					amount = 5
+				}
+				NOT = { has_country_modifier = GE_Foreign_Experts_5 }
 			}
 		}
 	}
 
-	mean_time_to_happen = {
-		days = 30
-	}
+	is_triggered_only = yes
 
 	immediate = {
 		if = {
+			limit = {
+				NOT = {
+					calc_true_if = {
+						all_ally = {
+							NOT = {
+								culture_group = ROOT
+							}
+						}
+						amount = 1
+					}
+				}
+			}
+			remove_country_modifier = GE_Foreign_Experts_1
+			remove_country_modifier = GE_Foreign_Experts_2
+			remove_country_modifier = GE_Foreign_Experts_3
+			remove_country_modifier = GE_Foreign_Experts_4
+			remove_country_modifier = GE_Foreign_Experts_5
+		}
+		else_if = {
 			limit = {
 				calc_true_if = {
 					all_ally = {
@@ -9414,20 +8346,66 @@ country_event = {
 
 
 	trigger = {
-		has_government_attribute = enables_influencial_ties
 		OR = {
 			AND = {
-				calc_true_if = {
-					all_ally = {
-						OR = {
-							is_great_power = yes
-							tag = PAP
-							is_emperor = yes
+				NOT = { has_government_attribute = enables_influencial_ties }		
+				OR = {
+					has_country_modifier = GE_Influencial_Ties_1
+					has_country_modifier = GE_Influencial_Ties_2
+					has_country_modifier = GE_Influencial_Ties_3
+					has_country_modifier = GE_Influencial_Ties_4
+					has_country_modifier = GE_Influencial_Ties_5
+				}
+			}
+			AND = {
+				has_government_attribute = enables_influencial_ties
+				AND = {
+					NOT = {
+						calc_true_if = {
+							all_ally = {
+								OR = {
+									is_great_power = yes
+									tag = PAP
+									is_emperor = yes
+								}
+							}
+							amount = 1
 						}
 					}
-					amount = 1
+					OR = {
+						has_country_modifier = GE_Influencial_Ties_1
+						has_country_modifier = GE_Influencial_Ties_2
+						has_country_modifier = GE_Influencial_Ties_3
+						has_country_modifier = GE_Influencial_Ties_4
+						has_country_modifier = GE_Influencial_Ties_5
+					}
 				}
-				NOT = {
+				AND = {
+					calc_true_if = {
+						all_ally = {
+							OR = {
+								is_great_power = yes
+								tag = PAP
+								is_emperor = yes
+							}
+						}
+						amount = 1
+					}
+					NOT = {
+						calc_true_if = {
+							all_ally = {
+								OR = {
+									is_great_power = yes
+									tag = PAP
+									is_emperor = yes
+								}
+							}
+							amount = 2
+						}
+					}
+					NOT = { has_country_modifier = GE_Influencial_Ties_1 }
+				}
+				AND = {
 					calc_true_if = {
 						all_ally = {
 							OR = {
@@ -9438,21 +8416,21 @@ country_event = {
 						}
 						amount = 2
 					}
-				}
-				NOT = { has_country_modifier = GE_Influencial_Ties_1 }
-			}
-			AND = {
-				calc_true_if = {
-					all_ally = {
-						OR = {
-							is_great_power = yes
-							tag = PAP
-							is_emperor = yes
+					NOT = {
+						calc_true_if = {
+							all_ally = {
+								OR = {
+									is_great_power = yes
+									tag = PAP
+									is_emperor = yes
+								}
+							}
+							amount = 3
 						}
 					}
-					amount = 2
+					NOT = { has_country_modifier = GE_Influencial_Ties_2 }
 				}
-				NOT = {
+				AND = {
 					calc_true_if = {
 						all_ally = {
 							OR = {
@@ -9463,21 +8441,21 @@ country_event = {
 						}
 						amount = 3
 					}
-				}
-				NOT = { has_country_modifier = GE_Influencial_Ties_2 }
-			}
-			AND = {
-				calc_true_if = {
-					all_ally = {
-						OR = {
-							is_great_power = yes
-							tag = PAP
-							is_emperor = yes
+					NOT = {
+						calc_true_if = {
+							all_ally = {
+								OR = {
+									is_great_power = yes
+									tag = PAP
+									is_emperor = yes
+								}
+							}
+							amount = 4
 						}
 					}
-					amount = 3
+					NOT = { has_country_modifier = GE_Influencial_Ties_3 }
 				}
-				NOT = {
+				AND = {
 					calc_true_if = {
 						all_ally = {
 							OR = {
@@ -9488,21 +8466,21 @@ country_event = {
 						}
 						amount = 4
 					}
-				}
-				NOT = { has_country_modifier = GE_Influencial_Ties_3 }
-			}
-			AND = {
-				calc_true_if = {
-					all_ally = {
-						OR = {
-							is_great_power = yes
-							tag = PAP
-							is_emperor = yes
+					NOT = {
+						calc_true_if = {
+							all_ally = {
+								OR = {
+									is_great_power = yes
+									tag = PAP
+									is_emperor = yes
+								}
+							}
+							amount = 5
 						}
 					}
-					amount = 4
+					NOT = { has_country_modifier = GE_Influencial_Ties_4 }
 				}
-				NOT = {
+				AND = {
 					calc_true_if = {
 						all_ally = {
 							OR = {
@@ -9511,33 +8489,42 @@ country_event = {
 								is_emperor = yes
 							}
 						}
-						amount = 5
+						amount = 4
 					}
+					NOT = { has_country_modifier = GE_Influencial_Ties_5 }
 				}
-				NOT = { has_country_modifier = GE_Influencial_Ties_4 }
-			}
-			AND = {
-				calc_true_if = {
-					all_ally = {
-						OR = {
-							is_great_power = yes
-							tag = PAP
-							is_emperor = yes
-						}
-					}
-					amount = 4
-				}
-				NOT = { has_country_modifier = GE_Influencial_Ties_5 }
 			}
 		}
 	}
 
-	mean_time_to_happen = {
-		days = 30
-	}
+	is_triggered_only = yes
 
 	immediate = {
 		if = {
+			limit = {
+				OR = {
+					NOT = { has_government_attribute = enables_influencial_ties }	
+					NOT = {
+						calc_true_if = {
+							all_ally = {
+								OR = {
+									is_great_power = yes
+									tag = PAP
+									is_emperor = yes
+								}
+							}
+							amount = 1
+						}
+					}
+				}
+			}
+			remove_country_modifier = GE_Influencial_Ties_1
+			remove_country_modifier = GE_Influencial_Ties_2
+			remove_country_modifier = GE_Influencial_Ties_3
+			remove_country_modifier = GE_Influencial_Ties_4
+			remove_country_modifier = GE_Influencial_Ties_5
+		}
+		else_if = {
 			limit = {
 				AND = {
 					calc_true_if = {
@@ -9574,7 +8561,7 @@ country_event = {
 			remove_country_modifier = GE_Influencial_Ties_4
 			remove_country_modifier = GE_Influencial_Ties_5
 		}
-		if = {
+		else_if = {
 			limit = {
 				AND = {
 					calc_true_if = {
@@ -9611,7 +8598,7 @@ country_event = {
 			remove_country_modifier = GE_Influencial_Ties_4
 			remove_country_modifier = GE_Influencial_Ties_5
 		}
-		if = {
+		else_if = {
 			limit = {
 				AND = {
 					calc_true_if = {
@@ -9648,7 +8635,7 @@ country_event = {
 			remove_country_modifier = GE_Influencial_Ties_4
 			remove_country_modifier = GE_Influencial_Ties_5
 		}
-		if = {
+		else_if = {
 			limit = {
 				AND = {
 					calc_true_if = {
@@ -9685,7 +8672,7 @@ country_event = {
 			remove_country_modifier = GE_Influencial_Ties_3
 			remove_country_modifier = GE_Influencial_Ties_5
 		}
-		if = {
+		else_if = {
 			limit = {
 				calc_true_if = {
 					all_ally = {
@@ -9712,43 +8699,6 @@ country_event = {
 
 	option = {
 		name = reform_me_events.224.a
-
-	}
-}
-
-country_event = {
-	id = reform_me_events.225
-	title = reform_me_events.225.t
-	desc = reform_me_events.225.d
-	picture = WESTERNISATION_eventPicture
-	hidden = yes
-
-
-	trigger = {
-		NOT = { has_government_attribute = enables_influencial_ties }
-		OR = {
-			has_country_modifier = GE_Influencial_Ties_1
-			has_country_modifier = GE_Influencial_Ties_2
-			has_country_modifier = GE_Influencial_Ties_3
-			has_country_modifier = GE_Influencial_Ties_4
-			has_country_modifier = GE_Influencial_Ties_5
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 30
-	}
-
-	immediate = {
-		remove_country_modifier = GE_Influencial_Ties_1
-		remove_country_modifier = GE_Influencial_Ties_2
-		remove_country_modifier = GE_Influencial_Ties_3
-		remove_country_modifier = GE_Influencial_Ties_4
-		remove_country_modifier = GE_Influencial_Ties_5
-	}
-
-	option = {
-		name = reform_me_events.225.a
 
 	}
 }
@@ -10474,36 +9424,6 @@ country_event = {
 }
 
 country_event = {
-	id = reform_me_events.234
-	title = reform_me_events.234.t
-	desc = reform_me_events.234.d
-	picture = ACCUSATION_eventPicture
-	hidden = yes
-
-	trigger = {
-		NOT = {
-			has_country_flag = GE_TE_fired
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 1
-	}
-
-	immediate = {
-		set_country_flag = GE_TE_fired
-		hidden_effect = {
-			GE_calculate_goods_produced_effect = yes
-		}
-	}
-
-	option = {
-		name = reform_me_events.234.a
-		#add_stability_or_adm_power_per_stab = { amount = 1 }
-	}
-}
-
-country_event = {
 	id = reform_me_events.235
 	title = reform_me_events.235.t
 	desc = reform_me_events.235.d
@@ -10524,15 +9444,10 @@ country_event = {
 			}
 			AND = {
 				has_country_modifier = GE_Italian_Grain_Treaties
-				OR = {
-					NOT = {
-						has_government_attribute = enables_italian_grain_treaties
-					}
-					NOT = {
-						any_country = {
-							culture_group = latin
-							has_country_flag = GE_Rural_Trade_Deal_With_@Root
-						}
+				NOT = {
+					any_country = {
+						culture_group = latin
+						has_country_flag = GE_Rural_Trade_Deal_With_@Root
 					}
 				}
 			}
@@ -10586,993 +9501,6 @@ country_event = {
 }
 
 country_event = {
-	id = reform_me_events.236
-	title = reform_me_events.236.t
-	desc = reform_me_events.236.d
-	picture = ACCUSATION_eventPicture
-	hidden = yes
-
-	trigger = {
-		check_variable = {
-			which = GE_num_of_total_trade
-			value = 1
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 3650
-	}
-
-	immediate = {
-		#Rural Exports {
-			if = {
-				limit = {
-					check_variable = {
-						which = GE_num_of_outgoing_rural_trade
-						value = 5
-					}
-					NOT = {
-						calc_true_if = {
-							all_country = {
-								has_country_flag = GE_Rural_Trade_Deal_With_@Root
-								exists = yes
-							}
-							amount = 5
-						}
-					}
-				}
-				change_variable = {
-					which = GE_num_of_outgoing_rural_trade
-					value = -1
-				}
-				add_export_effect = yes
-			}
-			else_if = {
-				limit = {
-					check_variable = {
-						which = GE_num_of_outgoing_rural_trade
-						value = 4
-					}
-					NOT = {
-						calc_true_if = {
-							all_country = {
-								has_country_flag = GE_Rural_Trade_Deal_With_@Root
-								exists = yes
-							}
-							amount = 4
-						}
-					}
-				}
-				change_variable = {
-					which = GE_num_of_outgoing_rural_trade
-					value = -1
-				}
-				add_export_effect = yes
-			}
-			else_if = {
-				limit = {
-					check_variable = {
-						which = GE_num_of_outgoing_rural_trade
-						value = 3
-					}
-					NOT = {
-						calc_true_if = {
-							all_country = {
-								has_country_flag = GE_Rural_Trade_Deal_With_@Root
-								exists = yes
-							}
-							amount = 3
-						}
-					}
-				}
-				change_variable = {
-					which = GE_num_of_outgoing_rural_trade
-					value = -1
-				}
-				add_export_effect = yes
-			}
-			else_if = {
-				limit = {
-					check_variable = {
-						which = GE_num_of_outgoing_rural_trade
-						value = 2
-					}
-					NOT = {
-						calc_true_if = {
-							all_country = {
-								has_country_flag = GE_Rural_Trade_Deal_With_@Root
-								exists = yes
-							}
-							amount = 2
-						}
-					}
-				}
-				change_variable = {
-					which = GE_num_of_outgoing_rural_trade
-					value = -1
-				}
-				add_export_effect = yes
-			}
-			else_if = {
-				limit = {
-					check_variable = {
-						which = GE_num_of_outgoing_rural_trade
-						value = 1
-					}
-					NOT = {
-						calc_true_if = {
-							all_country = {
-								has_country_flag = GE_Rural_Trade_Deal_With_@Root
-								exists = yes
-							}
-							amount = 1
-						}
-					}
-				}
-				change_variable = {
-					which = GE_num_of_outgoing_rural_trade
-					value = -1
-				}
-				add_export_effect = yes
-			}
-		#}
-		#Rural Imports {
-			if = {
-				limit = {
-					check_variable = {
-						which = GE_num_of_incoming_rural_trade
-						value = 5
-					}
-					NOT = {
-						calc_true_if = {
-							all_country = {
-								has_country_flag = GE_Rural_Trade_Deal_From_@Root
-								exists = yes
-							}
-							amount = 5
-						}
-					}
-				}
-				change_variable = {
-					which = GE_num_of_incoming_rural_trade
-					value = -1
-				}
-				add_import_effect = yes
-			}
-			else_if = {
-				limit = {
-					check_variable = {
-						which = GE_num_of_incoming_rural_trade
-						value = 4
-					}
-					NOT = {
-						calc_true_if = {
-							all_country = {
-								has_country_flag = GE_Rural_Trade_Deal_From_@Root
-								exists = yes
-							}
-							amount = 4
-						}
-					}
-				}
-				change_variable = {
-					which = GE_num_of_incoming_rural_trade
-					value = -1
-				}
-				add_import_effect = yes
-			}
-			else_if = {
-				limit = {
-					check_variable = {
-						which = GE_num_of_incoming_rural_trade
-						value = 3
-					}
-					NOT = {
-						calc_true_if = {
-							all_country = {
-								has_country_flag = GE_Rural_Trade_Deal_From_@Root
-								exists = yes
-							}
-							amount = 3
-						}
-					}
-				}
-				change_variable = {
-					which = GE_num_of_incoming_rural_trade
-					value = -1
-				}
-				add_import_effect = yes
-			}
-			else_if = {
-				limit = {
-					check_variable = {
-						which = GE_num_of_incoming_rural_trade
-						value = 2
-					}
-					NOT = {
-						calc_true_if = {
-							all_country = {
-								has_country_flag = GE_Rural_Trade_Deal_From_@Root
-								exists = yes
-							}
-							amount = 2
-						}
-					}
-				}
-				change_variable = {
-					which = GE_num_of_incoming_rural_trade
-					value = -1
-				}
-				add_import_effect = yes
-			}
-			else_if = {
-				limit = {
-					check_variable = {
-						which = GE_num_of_incoming_rural_trade
-						value = 1
-					}
-					NOT = {
-						calc_true_if = {
-							all_country = {
-								has_country_flag = GE_Rural_Trade_Deal_From_@Root
-								exists = yes
-							}
-							amount = 1
-						}
-					}
-				}
-				change_variable = {
-					which = GE_num_of_incoming_rural_trade
-					value = -1
-				}
-				add_import_effect = yes
-			}
-		#}
-		#Urban Exports {
-			if = {
-				limit = {
-					check_variable = {
-						which = GE_num_of_outgoing_Urban_trade
-						value = 5
-					}
-					NOT = {
-						calc_true_if = {
-							all_country = {
-								has_country_flag = GE_Urban_Trade_Deal_With_@Root
-								exists = yes
-							}
-							amount = 5
-						}
-					}
-				}
-				change_variable = {
-					which = GE_num_of_outgoing_Urban_trade
-					value = -1
-				}
-				add_export_effect = yes
-			}
-			else_if = {
-				limit = {
-					check_variable = {
-						which = GE_num_of_outgoing_Urban_trade
-						value = 4
-					}
-					NOT = {
-						calc_true_if = {
-							all_country = {
-								has_country_flag = GE_Urban_Trade_Deal_With_@Root
-								exists = yes
-							}
-							amount = 4
-						}
-					}
-				}
-				change_variable = {
-					which = GE_num_of_outgoing_Urban_trade
-					value = -1
-				}
-				add_export_effect = yes
-			}
-			else_if = {
-				limit = {
-					check_variable = {
-						which = GE_num_of_outgoing_Urban_trade
-						value = 3
-					}
-					NOT = {
-						calc_true_if = {
-							all_country = {
-								has_country_flag = GE_Urban_Trade_Deal_With_@Root
-								exists = yes
-							}
-							amount = 3
-						}
-					}
-				}
-				change_variable = {
-					which = GE_num_of_outgoing_Urban_trade
-					value = -1
-				}
-				add_export_effect = yes
-			}
-			else_if = {
-				limit = {
-					check_variable = {
-						which = GE_num_of_outgoing_Urban_trade
-						value = 2
-					}
-					NOT = {
-						calc_true_if = {
-							all_country = {
-								has_country_flag = GE_Urban_Trade_Deal_With_@Root
-								exists = yes
-							}
-							amount = 2
-						}
-					}
-				}
-				change_variable = {
-					which = GE_num_of_outgoing_Urban_trade
-					value = -1
-				}
-				add_export_effect = yes
-			}
-			else_if = {
-				limit = {
-					check_variable = {
-						which = GE_num_of_outgoing_Urban_trade
-						value = 1
-					}
-					NOT = {
-						calc_true_if = {
-							all_country = {
-								has_country_flag = GE_Urban_Trade_Deal_With_@Root
-								exists = yes
-							}
-							amount = 1
-						}
-					}
-				}
-				change_variable = {
-					which = GE_num_of_outgoing_Urban_trade
-					value = -1
-				}
-				add_export_effect = yes
-			}
-		#}
-		#Urban Imports {
-			if = {
-				limit = {
-					check_variable = {
-						which = GE_num_of_incoming_Urban_trade
-						value = 5
-					}
-					NOT = {
-						calc_true_if = {
-							all_country = {
-								has_country_flag = GE_Urban_Trade_Deal_From_@Root
-								exists = yes
-							}
-							amount = 5
-						}
-					}
-				}
-				change_variable = {
-					which = GE_num_of_incoming_Urban_trade
-					value = -1
-				}
-				add_import_effect = yes
-			}
-			else_if = {
-				limit = {
-					check_variable = {
-						which = GE_num_of_incoming_Urban_trade
-						value = 4
-					}
-					NOT = {
-						calc_true_if = {
-							all_country = {
-								has_country_flag = GE_Urban_Trade_Deal_From_@Root
-								exists = yes
-							}
-							amount = 4
-						}
-					}
-				}
-				change_variable = {
-					which = GE_num_of_incoming_Urban_trade
-					value = -1
-				}
-				add_import_effect = yes
-			}
-			else_if = {
-				limit = {
-					check_variable = {
-						which = GE_num_of_incoming_Urban_trade
-						value = 3
-					}
-					NOT = {
-						calc_true_if = {
-							all_country = {
-								has_country_flag = GE_Urban_Trade_Deal_From_@Root
-								exists = yes
-							}
-							amount = 3
-						}
-					}
-				}
-				change_variable = {
-					which = GE_num_of_incoming_Urban_trade
-					value = -1
-				}
-				add_import_effect = yes
-			}
-			else_if = {
-				limit = {
-					check_variable = {
-						which = GE_num_of_incoming_Urban_trade
-						value = 2
-					}
-					NOT = {
-						calc_true_if = {
-							all_country = {
-								has_country_flag = GE_Urban_Trade_Deal_From_@Root
-								exists = yes
-							}
-							amount = 2
-						}
-					}
-				}
-				change_variable = {
-					which = GE_num_of_incoming_Urban_trade
-					value = -1
-				}
-				add_import_effect = yes
-			}
-			else_if = {
-				limit = {
-					check_variable = {
-						which = GE_num_of_incoming_Urban_trade
-						value = 1
-					}
-					NOT = {
-						calc_true_if = {
-							all_country = {
-								has_country_flag = GE_Urban_Trade_Deal_From_@Root
-								exists = yes
-							}
-							amount = 1
-						}
-					}
-				}
-				change_variable = {
-					which = GE_num_of_incoming_Urban_trade
-					value = -1
-				}
-				add_import_effect = yes
-			}
-		#}
-		#Mining Exports {
-			if = {
-				limit = {
-					check_variable = {
-						which = GE_num_of_outgoing_Mining_trade
-						value = 5
-					}
-					NOT = {
-						calc_true_if = {
-							all_country = {
-								has_country_flag = GE_Mining_Trade_Deal_With_@Root
-								exists = yes
-							}
-							amount = 5
-						}
-					}
-				}
-				change_variable = {
-					which = GE_num_of_outgoing_Mining_trade
-					value = -1
-				}
-				add_export_effect = yes
-			}
-			else_if = {
-				limit = {
-					check_variable = {
-						which = GE_num_of_outgoing_Mining_trade
-						value = 4
-					}
-					NOT = {
-						calc_true_if = {
-							all_country = {
-								has_country_flag = GE_Mining_Trade_Deal_With_@Root
-								exists = yes
-							}
-							amount = 4
-						}
-					}
-				}
-				change_variable = {
-					which = GE_num_of_outgoing_Mining_trade
-					value = -1
-				}
-				add_export_effect = yes
-			}
-			else_if = {
-				limit = {
-					check_variable = {
-						which = GE_num_of_outgoing_Mining_trade
-						value = 3
-					}
-					NOT = {
-						calc_true_if = {
-							all_country = {
-								has_country_flag = GE_Mining_Trade_Deal_With_@Root
-								exists = yes
-							}
-							amount = 3
-						}
-					}
-				}
-				change_variable = {
-					which = GE_num_of_outgoing_Mining_trade
-					value = -1
-				}
-				add_export_effect = yes
-			}
-			else_if = {
-				limit = {
-					check_variable = {
-						which = GE_num_of_outgoing_Mining_trade
-						value = 2
-					}
-					NOT = {
-						calc_true_if = {
-							all_country = {
-								has_country_flag = GE_Mining_Trade_Deal_With_@Root
-								exists = yes
-							}
-							amount = 2
-						}
-					}
-				}
-				change_variable = {
-					which = GE_num_of_outgoing_Mining_trade
-					value = -1
-				}
-				add_export_effect = yes
-			}
-			else_if = {
-				limit = {
-					check_variable = {
-						which = GE_num_of_outgoing_Mining_trade
-						value = 1
-					}
-					NOT = {
-						calc_true_if = {
-							all_country = {
-								has_country_flag = GE_Mining_Trade_Deal_With_@Root
-								exists = yes
-							}
-							amount = 1
-						}
-					}
-				}
-				change_variable = {
-					which = GE_num_of_outgoing_Mining_trade
-					value = -1
-				}
-				add_export_effect = yes
-			}
-		#}
-		#Mining Imports {
-			if = {
-				limit = {
-					check_variable = {
-						which = GE_num_of_incoming_Mining_trade
-						value = 5
-					}
-					NOT = {
-						calc_true_if = {
-							all_country = {
-								has_country_flag = GE_Mining_Trade_Deal_From_@Root
-								exists = yes
-							}
-							amount = 5
-						}
-					}
-				}
-				change_variable = {
-					which = GE_num_of_incoming_Mining_trade
-					value = -1
-				}
-				add_import_effect = yes
-			}
-			else_if = {
-				limit = {
-					check_variable = {
-						which = GE_num_of_incoming_Mining_trade
-						value = 4
-					}
-					NOT = {
-						calc_true_if = {
-							all_country = {
-								has_country_flag = GE_Mining_Trade_Deal_From_@Root
-								exists = yes
-							}
-							amount = 4
-						}
-					}
-				}
-				change_variable = {
-					which = GE_num_of_incoming_Mining_trade
-					value = -1
-				}
-				add_import_effect = yes
-			}
-			else_if = {
-				limit = {
-					check_variable = {
-						which = GE_num_of_incoming_Mining_trade
-						value = 3
-					}
-					NOT = {
-						calc_true_if = {
-							all_country = {
-								has_country_flag = GE_Mining_Trade_Deal_From_@Root
-								exists = yes
-							}
-							amount = 3
-						}
-					}
-				}
-				change_variable = {
-					which = GE_num_of_incoming_Mining_trade
-					value = -1
-				}
-				add_import_effect = yes
-			}
-			else_if = {
-				limit = {
-					check_variable = {
-						which = GE_num_of_incoming_Mining_trade
-						value = 2
-					}
-					NOT = {
-						calc_true_if = {
-							all_country = {
-								has_country_flag = GE_Mining_Trade_Deal_From_@Root
-								exists = yes
-							}
-							amount = 2
-						}
-					}
-				}
-				change_variable = {
-					which = GE_num_of_incoming_Mining_trade
-					value = -1
-				}
-				add_import_effect = yes
-			}
-			else_if = {
-				limit = {
-					check_variable = {
-						which = GE_num_of_incoming_Mining_trade
-						value = 1
-					}
-					NOT = {
-						calc_true_if = {
-							all_country = {
-								has_country_flag = GE_Mining_Trade_Deal_From_@Root
-								exists = yes
-							}
-							amount = 1
-						}
-					}
-				}
-				change_variable = {
-					which = GE_num_of_incoming_Mining_trade
-					value = -1
-				}
-
-				add_import_effect = yes
-			}
-		#}
-		#Plantation Exports {
-			if = {
-				limit = {
-					check_variable = {
-						which = GE_num_of_outgoing_Plantation_trade
-						value = 5
-					}
-					NOT = {
-						calc_true_if = {
-							all_country = {
-								has_country_flag = GE_Plantation_Trade_Deal_With_@Root
-								exists = yes
-							}
-							amount = 5
-						}
-					}
-				}
-				change_variable = {
-					which = GE_num_of_outgoing_Plantation_trade
-					value = -1
-				}
-				add_export_effect = yes
-			}
-			else_if = {
-				limit = {
-					check_variable = {
-						which = GE_num_of_outgoing_Plantation_trade
-						value = 4
-					}
-					NOT = {
-						calc_true_if = {
-							all_country = {
-								has_country_flag = GE_Plantation_Trade_Deal_With_@Root
-								exists = yes
-							}
-							amount = 4
-						}
-					}
-				}
-				change_variable = {
-					which = GE_num_of_outgoing_Plantation_trade
-					value = -1
-				}
-				add_export_effect = yes
-			}
-			else_if = {
-				limit = {
-					check_variable = {
-						which = GE_num_of_outgoing_Plantation_trade
-						value = 3
-					}
-					NOT = {
-						calc_true_if = {
-							all_country = {
-								has_country_flag = GE_Plantation_Trade_Deal_With_@Root
-								exists = yes
-							}
-							amount = 3
-						}
-					}
-				}
-				change_variable = {
-					which = GE_num_of_outgoing_Plantation_trade
-					value = -1
-				}
-				add_export_effect = yes
-			}
-			else_if = {
-				limit = {
-					check_variable = {
-						which = GE_num_of_outgoing_Plantation_trade
-						value = 2
-					}
-					NOT = {
-						calc_true_if = {
-							all_country = {
-								has_country_flag = GE_Plantation_Trade_Deal_With_@Root
-								exists = yes
-							}
-							amount = 2
-						}
-					}
-				}
-				change_variable = {
-					which = GE_num_of_outgoing_Plantation_trade
-					value = -1
-				}
-				add_export_effect = yes
-			}
-			else_if = {
-				limit = {
-					check_variable = {
-						which = GE_num_of_outgoing_Plantation_trade
-						value = 1
-					}
-					NOT = {
-						calc_true_if = {
-							all_country = {
-								has_country_flag = GE_Plantation_Trade_Deal_With_@Root
-								exists = yes
-							}
-							amount = 1
-						}
-					}
-				}
-				change_variable = {
-					which = GE_num_of_outgoing_Plantation_trade
-					value = -1
-				}
-				add_export_effect = yes
-			}
-		#}
-		#Plantation Imports {
-			if = {
-				limit = {
-					check_variable = {
-						which = GE_num_of_incoming_Plantation_trade
-						value = 5
-					}
-					NOT = {
-						calc_true_if = {
-							all_country = {
-								has_country_flag = GE_Plantation_Trade_Deal_From_@Root
-								exists = yes
-							}
-							amount = 5
-						}
-					}
-				}
-				change_variable = {
-					which = GE_num_of_incoming_Plantation_trade
-					value = -1
-				}
-				add_import_effect = yes
-			}
-			else_if = {
-				limit = {
-					check_variable = {
-						which = GE_num_of_incoming_Plantation_trade
-						value = 4
-					}
-					NOT = {
-						calc_true_if = {
-							all_country = {
-								has_country_flag = GE_Plantation_Trade_Deal_From_@Root
-								exists = yes
-							}
-							amount = 4
-						}
-					}
-				}
-				change_variable = {
-					which = GE_num_of_incoming_Plantation_trade
-					value = -1
-				}
-				add_import_effect = yes
-			}
-			else_if = {
-				limit = {
-					check_variable = {
-						which = GE_num_of_incoming_Plantation_trade
-						value = 3
-					}
-					NOT = {
-						calc_true_if = {
-							all_country = {
-								has_country_flag = GE_Plantation_Trade_Deal_From_@Root
-								exists = yes
-							}
-							amount = 3
-						}
-					}
-				}
-				change_variable = {
-					which = GE_num_of_incoming_Plantation_trade
-					value = -1
-				}
-				add_import_effect = yes
-			}
-			else_if = {
-				limit = {
-					check_variable = {
-						which = GE_num_of_incoming_Plantation_trade
-						value = 2
-					}
-					NOT = {
-						calc_true_if = {
-							all_country = {
-								has_country_flag = GE_Plantation_Trade_Deal_From_@Root
-								exists = yes
-							}
-							amount = 2
-						}
-					}
-				}
-				change_variable = {
-					which = GE_num_of_incoming_Plantation_trade
-					value = -1
-				}
-				add_import_effect = yes
-			}
-			else_if = {
-				limit = {
-					check_variable = {
-						which = GE_num_of_incoming_Plantation_trade
-						value = 1
-					}
-					NOT = {
-						calc_true_if = {
-							all_country = {
-								has_country_flag = GE_Plantation_Trade_Deal_From_@Root
-								exists = yes
-							}
-							amount = 1
-						}
-					}
-				}
-				change_variable = {
-					which = GE_num_of_incoming_Plantation_trade
-					value = -1
-				}
-
-				add_import_effect = yes
-			}
-		#}
-	}
-
-	option = {
-		name = reform_me_events.236.a
-
-	}
-	after = {
-		random_country = {
-			limit = {
-				OR = {
-					has_country_flag = GE_Rural_Trade_Deal_With_@Root
-					has_country_flag = GE_Rural_Trade_Deal_From_@Root
-					has_country_flag = GE_Urban_Trade_Deal_With_@Root
-					has_country_flag = GE_Urban_Trade_Deal_From_@Root
-					has_country_flag = GE_Mining_Trade_Deal_With_@Root
-					has_country_flag = GE_Mining_Trade_Deal_From_@Root
-					has_country_flag = GE_Plantation_Trade_Deal_With_@Root
-					has_country_flag = GE_Plantation_Trade_Deal_From_@Root
-					has_country_flag = GE_Trade_Deal_From_@Root
-					has_country_flag = GE_Trade_Deal_With_@Root
-				}
-				NOT = { exists = yes }
-			}
-			ROOT = {
-				clr_country_flag = GE_Rural_Trade_Deal_From_@Prev
-				clr_country_flag = GE_Rural_Trade_Deal_With_@Prev
-				clr_country_flag = GE_Urban_Trade_Deal_With_@Prev
-				clr_country_flag = GE_Urban_Trade_Deal_From_@Prev
-				clr_country_flag = GE_Mining_Trade_Deal_With_@Prev
-				clr_country_flag = GE_Mining_Trade_Deal_From_@Prev
-				clr_country_flag = GE_Plantation_Trade_Deal_With_@Prev
-				clr_country_flag = GE_Plantation_Trade_Deal_From_@Prev
-				clr_country_flag = GE_Trade_Deal_From_@Prev
-				clr_country_flag = GE_Trade_Deal_With_@Prev
-				if = {
-					limit = {
-						has_country_flag = GE_Initiated_Trade_Deal_With_@Prev
-					}
-					clr_country_flag = GE_Initiated_Trade_Deal_With_@Prev
-					change_variable = {
-						which = GE_num_of_total_trade
-						value = -1
-					}
-				}
-
-			}
-			clr_country_flag = GE_Rural_Trade_Deal_With_@Root
-			clr_country_flag = GE_Rural_Trade_Deal_From_@Root
-			clr_country_flag = GE_Urban_Trade_Deal_With_@Root
-			clr_country_flag = GE_Urban_Trade_Deal_From_@Root
-			clr_country_flag = GE_Mining_Trade_Deal_With_@Root
-			clr_country_flag = GE_Mining_Trade_Deal_From_@Root
-			clr_country_flag = GE_Plantation_Trade_Deal_With_@Root
-			clr_country_flag = GE_Plantation_Trade_Deal_From_@Root
-			clr_country_flag = GE_Trade_Deal_With_@Root
-			clr_country_flag = GE_Trade_Deal_From_@Root
-			if = {
-				limit = {
-					has_country_flag = GE_Initiated_Trade_Deal_With_@Root
-				}
-				clr_country_flag = GE_Initiated_Trade_Deal_With_@Root
-				change_variable = {
-					which = GE_num_of_total_trade
-					value = -1
-				}
-			}
-		}
-	}
-}
-
-country_event = {
 	id = reform_me_events.2360
 	title = reform_me_events.2360.t
 	desc = reform_me_events.2360.d
@@ -11583,6 +9511,31 @@ country_event = {
 	trigger = {
 		has_government_attribute = enables_baltic_sea_trade
 		OR = {
+			AND = {
+				NOT = {
+					calc_true_if = {
+						any_country = {
+							any_owned_province = {
+								OR = {
+									region = baltic_region
+									region = scandinavia_region
+								}
+							}
+							OR = {
+								has_country_flag = GE_Trade_Deal_With_@Root
+								has_country_flag = GE_Trade_Deal_From_@Root
+							}
+						}
+						amount = 1
+					}
+				}
+				OR = {
+					has_country_modifier = GE_baltic_sea_trade_1
+					has_country_modifier = GE_baltic_sea_trade_2
+					has_country_modifier = GE_baltic_sea_trade_3
+					has_country_modifier = GE_baltic_sea_trade_4
+				}
+			}
 			AND = {
 				calc_true_if = {
 					any_country = {
@@ -11890,41 +9843,6 @@ country_event = {
 }
 
 country_event = {
-	id = reform_me_events.237
-	title = reform_me_events.237.t
-	desc = reform_me_events.237.d
-	picture = WESTERNISATION_eventPicture
-	hidden = yes
-
-
-	trigger = {
-		NOT = { has_government_attribute = enables_baltic_sea_trade }
-		OR = {
-			has_country_modifier = GE_baltic_sea_trade_1
-			has_country_modifier = GE_baltic_sea_trade_2
-			has_country_modifier = GE_baltic_sea_trade_3
-			has_country_modifier = GE_baltic_sea_trade_4
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 30
-	}
-
-	immediate = {
-		remove_country_modifier = GE_baltic_sea_trade_1
-		remove_country_modifier = GE_baltic_sea_trade_2
-		remove_country_modifier = GE_baltic_sea_trade_3
-		remove_country_modifier = GE_baltic_sea_trade_4
-	}
-
-	option = {
-		name = reform_me_events.237.a
-
-	}
-}
-
-country_event = {
 	id = reform_me_events.238
 	title = reform_me_events.238.t
 	desc = reform_me_events.238.d
@@ -11935,6 +9853,18 @@ country_event = {
 	trigger = {
 		has_government_attribute = enables_foreign_students
 		OR = {
+			AND = {
+				NOT = {
+					num_accepted_cultures = 1
+				}
+				OR = { 
+					has_country_modifier = GE_Foreign_Students_1
+					has_country_modifier = GE_Foreign_Students_2
+					has_country_modifier = GE_Foreign_Students_3
+					has_country_modifier = GE_Foreign_Students_4
+					has_country_modifier = GE_Foreign_Students_5
+				}
+			}
 			AND = {
 				num_accepted_cultures = 1
 				NOT = {
@@ -11970,12 +9900,22 @@ country_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		days = 30
-	}
+	is_triggered_only = yes
 
 	immediate = {
 		if = {
+			limit = {
+				NOT = {
+					num_accepted_cultures = 1
+				}
+			}
+			remove_country_modifier = GE_Foreign_Students_1
+			remove_country_modifier = GE_Foreign_Students_2
+			remove_country_modifier = GE_Foreign_Students_3
+			remove_country_modifier = GE_Foreign_Students_4
+			remove_country_modifier = GE_Foreign_Students_5
+		}
+		else_if = {
 			limit = {
 				AND = {
 					num_accepted_cultures = 1
@@ -11994,7 +9934,7 @@ country_event = {
 			remove_country_modifier = GE_Foreign_Students_4
 			remove_country_modifier = GE_Foreign_Students_5
 		}
-		if = {
+		else_if = {
 			limit = {
 				AND = {
 					num_accepted_cultures = 2
@@ -12013,7 +9953,7 @@ country_event = {
 			remove_country_modifier = GE_Foreign_Students_4
 			remove_country_modifier = GE_Foreign_Students_5
 		}
-		if = {
+		else_if = {
 			limit = {
 				AND = {
 					num_accepted_cultures = 3
@@ -12032,7 +9972,7 @@ country_event = {
 			remove_country_modifier = GE_Foreign_Students_4
 			remove_country_modifier = GE_Foreign_Students_5
 		}
-		if = {
+		else_if = {
 			limit = {
 				AND = {
 					num_accepted_cultures = 4
@@ -12051,7 +9991,7 @@ country_event = {
 			remove_country_modifier = GE_Foreign_Students_3
 			remove_country_modifier = GE_Foreign_Students_5
 		}
-		if = {
+		else_if = {
 			limit = {
 				AND = {
 					num_accepted_cultures = 5
@@ -12071,43 +10011,6 @@ country_event = {
 
 	option = {
 		name = reform_me_events.238.a
-
-	}
-}
-
-country_event = {
-	id = reform_me_events.239
-	title = reform_me_events.239.t
-	desc = reform_me_events.239.d
-	picture = WESTERNISATION_eventPicture
-	hidden = yes
-
-
-	trigger = {
-		NOT = { has_government_attribute = enables_foreign_students }
-		OR = {
-			has_country_modifier = GE_Foreign_Students_1
-			has_country_modifier = GE_Foreign_Students_2
-			has_country_modifier = GE_Foreign_Students_3
-			has_country_modifier = GE_Foreign_Students_4
-			has_country_modifier = GE_Foreign_Students_5
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 30
-	}
-
-	immediate = {
-		remove_country_modifier = GE_Foreign_Students_1
-		remove_country_modifier = GE_Foreign_Students_2
-		remove_country_modifier = GE_Foreign_Students_3
-		remove_country_modifier = GE_Foreign_Students_4
-		remove_country_modifier = GE_Foreign_Students_5
-	}
-
-	option = {
-		name = reform_me_events.239.a
 
 	}
 }

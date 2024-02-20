@@ -1,3 +1,14 @@
+GE_TE_init = {
+	every_country = {
+		GE_TE_init_country = yes
+	}
+}
+
+GE_TE_init_country = {
+	set_country_flag = GE_TE_fired
+	GE_calculate_goods_produced_effect = yes
+}
+
 remove_rural_goods_produced = {
 	remove_province_modifier = rural_goods_produced_1
 	remove_province_modifier = rural_goods_produced_2

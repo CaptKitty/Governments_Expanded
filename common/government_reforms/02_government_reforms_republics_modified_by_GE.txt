@@ -1536,11 +1536,22 @@ presidential_reform = {
 			which = Populist_Influence
 			value = 1
 		}
+		hidden_effect = {
+			country_event = { 
+			    id = reform_me_events.204
+			    days = 1
+			}
+		}
 	}
 	removed_effect = {
 		change_variable = {
 			which = Populist_Influence
 			value = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = GE_Presidential_Adm
+			remove_country_modifier = GE_Presidential_Dip
+			remove_country_modifier = GE_Presidential_Mil
 		}
 	}
 	modifiers = {

@@ -241,7 +241,41 @@ GE_catholics = {
 	}
 }
  
+ mechanic_enables_byzantine_administration_yes: "Byzantine Administration: §G-10%§! Administrative Tech Cost and §G+0.5§! yearly legitimacy while Byzantium exists."
 
+
+country_event = {
+	id = reform_me_events.190
+	title = reform_me_events.190.t
+	desc = reform_me_events.190.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+
+
+	trigger = {
+		has_government_attribute = enables_byzantine_administration
+		exists = BYZ
+		NOT = {
+			has_country_modifier = GE_byzantine_administration
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	immediate = {
+		add_country_modifier = {
+			name = GE_byzantine_administration
+			duration = 3650
+		}
+	}
+
+	option = {
+		name = reform_me_events.190.a
+
+	}
+}
 
 
 	sharifate_reform_GE = {
@@ -288,4 +322,90 @@ GE_catholics = {
 	}
 
  sharifate_reform_GE: "Sharifate"
- sharifate_reform_GE_desc: "Akin to European feudal nobility, Ashraf were essentially wealthy, hereditary landowners, but differed in their methods of rule. Sharifates were highly centralized around religious centers such as Mecca or Medina, and thus ruled with a heavy dependency on theological principles, with heavy emphasis on Islamic law and punishment."
+ sharifate_reform_GE_desc: "Akin to European feudal nobility, Ashraf were essentially wealthy, hereditary landowners, but differed in their methods of rule. Sharifates were highly centralized around religious centers such as Mecca or Medina, and thus ruled with a heavy dependency on theological principles, with heavy emphasis on Islamic law and punishment." mechanic_enables_custodian_of_cities_yes: "Custodian of the Cities: §G+1§! Prestige if you control both Mecca and Medina, lose §R-2§! prestige and §R-1§! legitimacy if you do not."
+
+
+
+
+country_event = {
+	id = reform_me_events.150
+	title = reform_me_events.150.t
+	desc = reform_me_events.150.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+
+	trigger = {
+		OR = {
+			AND = {
+				has_government_attribute = enables_custodian_of_cities
+				OR = {
+					AND = {
+						owns = 384
+						owns = 385
+						NOT = { has_country_modifier = GE_Good_Custodian }
+					}
+					AND = {
+						NOT = {
+							owns = 384
+							owns = 385
+						}
+						NOT = { has_country_modifier = GE_Bad_Custodian }
+					}
+				}
+			}
+			AND = {
+				OR = {
+					has_country_modifier = GE_Bad_Custodian
+					has_country_modifier = GE_Good_Custodian
+				}
+				NOT = { has_government_attribute = enables_custodian_of_cities }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	option = {
+		name = reform_me_events.150.a
+
+		if = {
+			limit = {
+				owns = 384
+				owns = 385
+				NOT = { has_country_modifier = GE_Good_Custodian }
+			}
+			remove_country_modifier = GE_Bad_Custodian
+			add_country_modifier = {
+				name = GE_Good_Custodian
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					owns = 384
+					owns = 385
+				}
+				NOT = { has_country_modifier = GE_Bad_Custodian }
+			}
+			remove_country_modifier = GE_Good_Custodian
+			add_country_modifier = {
+				name = GE_Bad_Custodian
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					has_country_modifier = GE_Bad_Custodian
+					has_country_modifier = GE_Good_Custodian
+				}
+				NOT = { has_government_attribute = enables_custodian_of_cities }
+			}
+			remove_country_modifier = GE_Good_Custodian
+			remove_country_modifier = GE_Bad_Custodian
+		}
+	}
+}

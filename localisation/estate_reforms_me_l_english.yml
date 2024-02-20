@@ -1160,7 +1160,6 @@ constitutio_valdemariana_reform: "Constitutio Valdemariana"
 
  mechanic_enables_eastern_courts_yes: "Heavenly Court: choose between loyalists and incorruptible courtiers upon ruler ascention."
  mechanic_enables_qing_court_yes: "Qing Council : choose the size of your council upon ruler ascention."
- mechanic_enables_custodian_of_cities_yes: "Custodian of the Cities: §G+1§! Prestige if you control both Mecca and Medina, lose §R-2§! prestige and §R-1§! legitimacy if you do not."
  mechanic_enables_qadi_authority_yes: "Qadi Authority: §G-15%§! State Maintenance in Muslim provinces."
  mechanic_enables_kaza_system_yes: "Kaza System: For every 10% Sunni Provinces, gain §G+1%§! Trade Efficiency. Up to a maximum of §G10%§! Trade Efficiency."
  mechanic_enables_millet_system_yes: "Millet System: Accepted Cultures gain §G-1§! Unrest and §G+15%§! Tax."
@@ -1206,7 +1205,6 @@ constitutio_valdemariana_reform: "Constitutio Valdemariana"
 
  mechanic_enables_church_policy_yes: "Church Policy: Upon Ascention, pick a policy for your administration."
  mechanic_enables_royal_levies_yes: "Royal Levies: §G+1§! Land Force Limit and §G5%§! Land Force Limit Modifier for each point of military skill of your monarch."
- mechanic_enables_byzantine_administration_yes: "Byzantine Administration: §G-10%§! Administrative Tech Cost and §G+0.5§! yearly legitimacy while Byzantium exists."
  mechanic_enables_military_governors_yes: "Military Governors: §G500§! Base Manpower and §G-10%§! Local Development Cost in provinces with forts."
  mechanic_enables_royal_mining_monopoly_yes: "Mining Monopolies: §G0.5§! Goods produced and §G-0.05§! Autonomy in Mining Provinces."
 

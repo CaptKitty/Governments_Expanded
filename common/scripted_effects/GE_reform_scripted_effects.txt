@@ -498,6 +498,90 @@ ge_country_kingdom_of_brazil_update = {
 	}
 }
 
+ge_country_Varangian_Guard_update = {
+	if = {
+		limit = {
+			has_government_attribute = enables_varangian_guard
+			OR = {
+				any_ally = {
+					culture_group = scandinavian
+				}
+				any_subject_country = {
+					culture_group = scandinavian
+				}
+			}
+		}
+		add_country_modifier = {
+			name = "GE_Varangian_Guard"
+			duration = -1
+		}
+	}
+	else = {
+		remove_country_modifier = GE_Varangian_Guard
+	}
+}
+
+ge_country_mandala_peripher_update = {
+	if = {
+		limit = {
+			is_subject = yes
+			is_colonial_nation = no
+			overlord = { has_government_attribute = enables_mandala_periphery }
+		}
+		add_country_modifier = {
+			name = "GE_Mandala_Periphery"
+			duration = -1
+		}
+	}
+	else = {
+		remove_country_modifier = GE_Mandala_Periphery
+	}
+}
+
+ge_country_solar_periphery_update = {
+	if = {
+		limit = {
+			is_subject = yes
+			is_colonial_nation = no
+			overlord = { has_government_attribute = enables_solar_periphery }
+		}
+		add_country_modifier = {
+			name = "GE_Solar_Periphery"
+			duration = -1
+		}
+	}
+	else = {
+		remove_country_modifier = GE_Solar_Periphery
+	}
+}
+
+ge_country_union_of_arras_update = {
+	if = {
+		limit = {
+			employed_advisor = {
+				religion = catholic
+				category = ADM
+			}
+			employed_advisor = {
+				religion = catholic
+				category = DIP
+			}
+			employed_advisor = {
+				religion = catholic
+				category = MIL
+			}
+			overlord = { has_government_attribute = enables_union_of_arras }
+		}
+		add_country_modifier = {
+			name = "GE_Union_of_Arras"
+			duration = -1
+		}
+	}
+	else = {
+		remove_country_modifier = GE_Union_of_Arras
+	}
+}
+
 ge_country_arabian_horses_update = {
 	remove_country_modifier = Arabian_Horses_5
 	remove_country_modifier = Arabian_Horses_4
@@ -616,7 +700,7 @@ ge_country_arabian_horses_update = {
 								}
 							}
 							add_country_modifier = {
-								name = Arabian_Horses_2
+								name = Arabian_Horses_1
 								duration = -1
 							}
 						}
@@ -729,6 +813,226 @@ ge_country_hansa_ties_update = {
 							}
 							add_country_modifier = {
 								name = Hansa_Ties_1
+								duration = -1
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+ge_country_imperial_circle_update = {
+	remove_country_modifier = GE_Imperial_Circle_1
+	remove_country_modifier = GE_Imperial_Circle_2
+	remove_country_modifier = GE_Imperial_Circle_3
+	remove_country_modifier = GE_Imperial_Circle_4
+	remove_country_modifier = GE_Imperial_Circle_5
+	if = {
+		limit = {
+			has_government_attribute = enables_imperial_circle
+			num_of_subjects = 1
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_subject_country = {
+						NOT = {
+							is_colonial_nation = yes
+							is_subject_of_type = tributary_state
+						}
+						is_part_of_hre = yes
+					}
+					amount = 5
+				}
+			}
+			add_country_modifier = {
+				name = GE_Imperial_Circle_5
+				duration = -1
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					calc_true_if = {
+						all_subject_country = {
+							NOT = {
+								is_colonial_nation = yes
+								is_subject_of_type = tributary_state
+							}
+							is_part_of_hre = yes
+						}
+						amount = 4
+					}
+				}
+				add_country_modifier = {
+					name = GE_Imperial_Circle_4
+					duration = -1
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						calc_true_if = {
+							all_subject_country = {
+								NOT = {
+									is_colonial_nation = yes
+									is_subject_of_type = tributary_state
+								}
+								is_part_of_hre = yes
+							}
+							amount = 3
+						}
+					}
+					add_country_modifier = {
+						name = GE_Imperial_Circle_3
+						duration = -1
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							calc_true_if = {
+								all_subject_country = {
+									NOT = {
+										is_colonial_nation = yes
+										is_subject_of_type = tributary_state
+									}
+									is_part_of_hre = yes
+								}
+								amount = 2
+							}
+						}
+						add_country_modifier = {
+							name = GE_Imperial_Circle_2
+							duration = -1
+						}
+					}
+					else = {
+						if = {
+							limit = {
+								any_subject_country = {
+									NOT = {
+										is_colonial_nation = yes
+										is_subject_of_type = tributary_state
+									}
+									is_part_of_hre = yes
+								}
+							}
+							add_country_modifier = {
+								name = GE_Imperial_Circle_1
+								duration = -1
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+ge_country_unified_drills_update = {
+	remove_country_modifier = GE_Shared_Drills_1
+	remove_country_modifier = GE_Shared_Drills_2
+	remove_country_modifier = GE_Shared_Drills_3
+	remove_country_modifier = GE_Shared_Drills_4
+	remove_country_modifier = GE_Shared_Drills_5
+	if = {
+		limit = {
+			has_government_attribute = enables_unified_drills
+			num_of_subjects = 1
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_subject_country = {
+						NOT = {
+							is_colonial_nation = yes
+							is_subject_of_type = tributary_state
+						}
+						is_part_of_hre = yes
+					}
+					amount = 5
+				}
+			}
+			add_country_modifier = {
+				name = GE_Shared_Drills_5
+				duration = -1
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					calc_true_if = {
+						all_subject_country = {
+							NOT = {
+								is_colonial_nation = yes
+								is_subject_of_type = tributary_state
+							}
+							is_part_of_hre = yes
+						}
+						amount = 4
+					}
+				}
+				add_country_modifier = {
+					name = GE_Shared_Drills_4
+					duration = -1
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						calc_true_if = {
+							all_subject_country = {
+								NOT = {
+									is_colonial_nation = yes
+									is_subject_of_type = tributary_state
+								}
+								is_part_of_hre = yes
+							}
+							amount = 3
+						}
+					}
+					add_country_modifier = {
+						name = GE_Shared_Drills_3
+						duration = -1
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							calc_true_if = {
+								all_subject_country = {
+									NOT = {
+										is_colonial_nation = yes
+										is_subject_of_type = tributary_state
+									}
+									is_part_of_hre = yes
+								}
+								amount = 2
+							}
+						}
+						add_country_modifier = {
+							name = GE_Shared_Drills_2
+							duration = -1
+						}
+					}
+					else = {
+						if = {
+							limit = {
+								any_subject_country = {
+									NOT = {
+										is_colonial_nation = yes
+										is_subject_of_type = tributary_state
+									}
+									is_part_of_hre = yes
+								}
+							}
+							add_country_modifier = {
+								name = GE_Shared_Drills_1
 								duration = -1
 							}
 						}

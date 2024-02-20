@@ -1,5 +1,6 @@
 ﻿on_startup = {
-	country_event = { id = governments_expanded_events.1 } # set flag
+	set_global_flag = governments_expanded_mod_active
+	GE_TE_init = yes
 }
 
 ##### GE Government Reform Events #####
@@ -324,12 +325,28 @@ on_province_culture_converted = {
 	ge_huaca_cults_province_update = yes
 }
 
+on_province_culture_changed = {
+	ge_Regent_Investments_province_update = yes
+	ge_National_Strenghtening_province_update = yes
+	ge_longbow_training_province_update = yes
+	ge_Satrapy_province_update = yes
+	ge_nations_of_the_republic_province_update = yes
+	ge_cultural_supremacy_province_update = yes
+	ge_millet_system_province_update = yes
+	ge_devshirme_province_update = yes
+	ge_huaca_cults_province_update = yes
+}
+
 on_culture_promoted = {
 	every_owned_province = { ge_National_Strenghtening_province_update = yes }
 	every_owned_province = { ge_nations_of_the_republic_province_update = yes }
 	every_owned_province = { ge_millet_system_province_update = yes }
 	every_owned_province = { ge_huaca_cults_province_update = yes }
 	ge_country_unite_the_malay_update = yes
+	events = {
+		reform_me_events.212
+		reform_me_events.238
+	}
 }
 
 on_culture_demoted = {
@@ -338,6 +355,10 @@ on_culture_demoted = {
 	every_owned_province = { ge_millet_system_province_update = yes }
 	every_owned_province = { ge_huaca_cults_province_update = yes }
 	ge_country_unite_the_malay_update = yes
+	events = {
+		reform_me_events.212
+		reform_me_events.238
+	}
 }
 
 on_primary_culture_changed = {
@@ -354,6 +375,12 @@ on_province_religion_converted = {
 	every_neighbor_province = { ge_morisca_band_province_update = yes }
 	ge_qadi_authority_province_update = yes
 	ge_religious_adherence_province_update = yes
+}
+
+on_province_religion_changed = {
+	every_neighbor_province = { ge_morisca_band_province_update = yes }
+	ge_qadi_authority_province_update = yes
+	ge_religious_adherence_province_update = yes	
 }
 
 on_religion_change = {
@@ -390,10 +417,15 @@ on_dependency_gained = {
 	FROM = { ge_feudal_receipts_update = yes }
 	FROM = { ge_french_ordonannce_update = yes }
 	FROM = { ge_country_marcher_lords_update = yes }
+	FROM = { ge_country_mandala_peripher_update = yes }
+	FROM = { ge_country_solar_periphery_update = yes }
 	ge_country_arabian_horses_update = yes
 	ge_country_trade_princes_update = yes
 	ge_country_swiss_guard_update = yes
 	ge_country_hansa_ties_update = yes
+	ge_country_Varangian_Guard_update = yes
+	ge_country_imperial_circle_update = yes
+	ge_country_unified_drills_update = yes
 }
 
 on_dependency_lost = {
@@ -404,32 +436,26 @@ on_dependency_lost = {
 	FROM = { ge_feudal_receipts_update = yes }
 	FROM = { ge_french_ordonannce_update = yes }
 	FROM = { ge_country_marcher_lords_update = yes }
+	FROM = { ge_country_mandala_peripher_update = yes }
+	FROM = { ge_country_solar_periphery_update = yes }
 	ge_country_arabian_horses_update = yes
 	ge_country_trade_princes_update = yes
 	ge_country_swiss_guard_update = yes
 	ge_country_hansa_ties_update = yes
+	ge_country_Varangian_Guard_update =yes 
+	ge_country_imperial_circle_update = yes
+	ge_country_unified_drills_update = yes
 }
 
 on_new_monarch = {
-	country_event = { 
-		id = reform_me_events.52
-		days = 1
-	}
-	country_event = { 
-		id = reform_me_events.88
-		days = 1
-	}
-	country_event = { 
-		id = reform_me_events.148
-		days = 1
-	}
-	country_event = { 
-		id = reform_me_events.149
-		days = 1
-	}
-	country_event = { 
-		id = reform_me_events.165
-		days = 1
+	events = {
+		reform_me_events.52
+		reform_me_events.88
+		reform_me_events.148
+		reform_me_events.149
+		reform_me_events.165
+		reform_me_events.193
+		reform_me_events.216
 	}
 }
 
@@ -443,18 +469,46 @@ on_war_lost = {
 
 on_country_released = {
 	ge_country_papal_delegation_PAP_recreated = yes
+	GE_TE_init_country = yes
 }
 
 on_country_creation = {
 	ge_country_papal_delegation_PAP_recreated = yes
+	GE_TE_init_country = yes
 }
 
 on_alliance_created = {
 	ge_country_swiss_guard_update = yes
 	ge_country_hansa_ties_update = yes
+	ge_country_Varangian_Guard_update = yes
+	events = {
+		reform_me_events.217
+		reform_me_events.224
+	}
 }
 
 on_alliance_broken ={
 	ge_country_swiss_guard_update = yes
 	ge_country_hansa_ties_update = yes
+	ge_country_Varangian_Guard_update = yes
+	events = {
+		reform_me_events.217
+		reform_me_events.224
+	}
+}
+
+on_advisor_hired = { #ROOT - Country
+	ge_country_union_of_arras_update = yes
+}
+
+on_post_adm_advisor_fired = {
+	remove_country_modifier = GE_Union_of_Arras
+}
+
+on_post_dip_advisor_fired = {
+	remove_country_modifier = GE_Union_of_Arras
+}
+
+on_post_mil_advisor_fired = {
+	remove_country_modifier = GE_Union_of_Arras
 }
