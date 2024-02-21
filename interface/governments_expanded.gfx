@@ -1,5 +1,17 @@
 spriteTypes = {
 	spriteType = {
+		name = "GFX_estates_icons"
+		texturefile = "gfx//interface//estates_icons.dds"
+		noOfFrames = 16
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_estates_icons_colour-stroke"
+		texturefile = "gfx/interface/estates_icons_colour-stroke.dds"
+		noOfFrames = 16
+		loadType = "INGAME"
+	}
+	spriteType = {
 		name = "government_reform_feudalism"
 		texturefile = "gfx//interface//government_reform_icons//feudalism.dds"
 	}

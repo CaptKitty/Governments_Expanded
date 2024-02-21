@@ -1,5 +1,5 @@
 estate_peasants = {
-	icon = 12
+	icon = 16
 
 	trigger = {
 		OR = {
