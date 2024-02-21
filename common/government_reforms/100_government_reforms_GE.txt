@@ -912,7 +912,7 @@ united_holy_roman_empire_reform = {
 }
 
 duchy_of_luxembourg_reform = {
-	icon = GE_luxembourg_0
+	icon = "crown"
 	allow_normal_conversion = yes
 	valid_for_nation_designer = no
 	potential = {
@@ -2455,7 +2455,7 @@ nationalized_cetas_reform = {
 }
 
 gibraltar_of_the_north_reform = {
-	icon = GE_luxembourg_2
+	icon = "castle"
 	allow_normal_conversion = yes
 	valid_for_nation_designer = no
 	effect = {
@@ -4025,7 +4025,7 @@ vladislavs_provincial_establishment_reform = {
 }
 
 crossroads_of_cultures_reform = {
-	icon = GE_luxembourg_1
+	icon = "map"
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -5351,7 +5351,7 @@ german_aristocracy_reform = {
 }
 
 hof_van_brabant_reform = {
-	icon = GE_luxembourg_3
+	icon = szlachta
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -7574,7 +7574,7 @@ restore_the_komnenoid_army_reform = {
 }
 
 army_of_flanders_reform = {
-	icon = army_of_flanders
+	icon = "commander_king_reform"
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {

@@ -220,6 +220,9 @@ on_monarch_death = {
 
 on_monthly_pulse = {
 	ge_on_monthly_pulse_effect = yes
+	ge_country_union_of_arras_update = yes
+	ge_country_peasant_council_update = yes
+	ge_country_french_court_update = yes
 }
 
 # country
@@ -505,25 +508,23 @@ on_mercenary_recruited = {
 }
 
 on_advisor_hired = { #ROOT - Country
+	#doesn't work post hire (or not at all)
+}
+
+on_post_adm_advisor_fired = {
 	ge_country_union_of_arras_update = yes
 	ge_country_peasant_council_update = yes
 	ge_country_french_court_update = yes
 }
 
-on_post_adm_advisor_fired = {
-	remove_country_modifier = GE_Union_of_Arras
-	remove_country_modifier = Peasant_Council
-	remove_country_modifier = French_Court
-}
-
 on_post_dip_advisor_fired = {
-	remove_country_modifier = GE_Union_of_Arras
-	remove_country_modifier = Peasant_Council
-	remove_country_modifier = French_Court
+	ge_country_union_of_arras_update = yes
+	ge_country_peasant_council_update = yes
+	ge_country_french_court_update = yes
 }
 
 on_post_mil_advisor_fired = {
-	remove_country_modifier = GE_Union_of_Arras
-	remove_country_modifier = Peasant_Council
-	remove_country_modifier = French_Court
+	ge_country_union_of_arras_update = yes
+	ge_country_peasant_council_update = yes
+	ge_country_french_court_update = yes
 }

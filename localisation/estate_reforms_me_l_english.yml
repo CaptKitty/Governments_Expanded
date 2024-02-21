@@ -1783,3 +1783,11 @@ constitutio_valdemariana_reform: "Constitutio Valdemariana"
 
 
  theocratic_idea_groups_expanded: "Theocratic Ideas"
+
+ estate_privileges_and_agendas_events.6.peasant: "Sell it to the paysants"
+ estate_privileges_and_agendas_events.6.junker: "Sell it to the junkers"
+ estate_privileges_and_agendas_events.6.jew: "Sell it to the jews"
+
+ estate_privileges_and_agendas_events.7.peasant: "Seize it from the paysants"
+ estate_privileges_and_agendas_events.7.junker: "Seize it from the junkers"
+ estate_privileges_and_agendas_events.7.jew: "Seize it from the jews"

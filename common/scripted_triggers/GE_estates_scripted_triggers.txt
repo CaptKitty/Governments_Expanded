@@ -1,0 +1,68 @@
+has_exempt_from_seize_land_for_estate_peasants = {
+	OR = {
+		has_estate_privilege = estate_peasants_guild_assembly
+		has_estate_privilege = estate_peasants_manpower_drive
+		has_estate_privilege = estate_peasants_bear_arms
+	}
+}
+
+has_exempt_from_seize_land_for_estate_junkers = {
+	has_estate_privilege = estate_nobles_land_rights
+}
+
+has_exempt_from_seize_land_for_estate_jews = {
+	always = no
+}
+
+
+#Modified by GE
+has_exempt_from_seize_land_for_estate_ghulams = {
+	#FROM GE
+	has_estate_privilege = estate_ghulams_military_corps
+	has_estate_privilege = estate_ghulams_governor_positions
+	has_estate_privilege = estate_ghulams_trade_privileges
+}
+
+has_exempt_from_seize_land_for_estate_nobles = {
+	OR = {
+		has_estate_privilege = estate_nobles_levies
+		has_estate_privilege = estate_nobles_golden_liberty
+		#Jolof's starting privileges
+		has_estate_privilege = estate_nobles_decentralized_tribe
+		has_estate_privilege = estate_nobles_tribe_unification
+		#Norway's starting privileges
+		has_estate_privilege = estate_nobles_danish_nobility
+		has_estate_privilege = estate_nobles_nobles_instead_of_royal_court
+		#England's starting privilege
+		has_estate_privilege = estate_nobles_english_villeinage
+		#Prussia's privilege
+		has_estate_privilege = estate_nobles_consolidated_noble_contracts
+		#GE
+		has_estate_privilege = estate_nobles_magnate_law_privilege
+		has_estate_privilege = estate_nobles_white_knights
+		has_estate_privilege = estate_nobles_kreditwerk_appointment
+	}
+}
+
+
+has_exempt_from_seize_land_for_estate_burghers = {
+	has_estate_privilege = estate_burghers_land_trade_rights
+	#GE
+	has_estate_privilege = estate_burghers_town_rights
+	has_estate_privilege = estate_burghers_saharan_outposts
+}
+
+has_exempt_from_seize_land_for_estate_church = {
+	OR = {
+		has_estate_privilege = estate_church_inwards_perfection
+		has_estate_privilege = estate_church_administrative_privileges
+		#Livonian Order's starting privileges
+		has_estate_privilege = estate_church_lands_of_riga
+		has_estate_privilege = estate_church_bishopric_of_dorpat
+		has_estate_privilege = estate_church_bishopric_of_osel_wiek
+		has_estate_privilege = estate_church_bishopric_of_courland
+		has_estate_privilege = estate_church_bishopric_of_reval
+		#GE
+		has_estate_privilege = estate_church_four_articles_of_prague
+	}
+}
