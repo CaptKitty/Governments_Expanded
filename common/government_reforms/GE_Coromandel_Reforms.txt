@@ -1,5 +1,6 @@
 # T1
 satavahana_dynasty_reform = {
+	icon = noble_indian
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -28,6 +29,7 @@ satavahana_dynasty_reform = {
 }
 
 pandya_dynasty_reform = {
+	icon = indian_crown
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -72,8 +74,9 @@ pandya_dynasty_reform = {
 	}
 }
 
-# T5
+# T8
 tamil_trade_guilds_reform = {
+	icon = tamil_trade_guilds_reform_icon
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -95,5 +98,10 @@ tamil_trade_guilds_reform = {
 		production_efficiency = 0.10
 		trade_efficiency = 0.10
 		vaisyas_privilege_slots = 1
+	}
+	effect = {
+		unlock_estate_privilege = {
+			estate_privilege = estate_vaisyas_tamil_guilds
+		}
 	}
 }

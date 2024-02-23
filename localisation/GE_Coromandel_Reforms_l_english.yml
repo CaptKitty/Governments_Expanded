@@ -17,3 +17,8 @@
 # Modifiers
  ge_tamil_trade_guilds_modifier: "Tamil Trade Guilds"
  desc_ge_tamil_trade_guilds_modifier: ""
+
+# Tooltips
+ unlock_privilege_estate_vaisyas_tamil_guilds_tt: "Unlock the [Root.GetVaishyasName] estate privilege '§YTamil Guiilds§!'"
+ estate_vaisyas_tamil_guilds_gt: "Every owned province in the §Y[1340.GetName]§! Trade Node that has §MTamil§! culture gains the following bonus:"
+ estate_vaisyas_tamil_guilds_rt: "The modifier '§YTamil Trade Guilds§!' is removed from all provinces in the §Y[1340.GetName]§! Trade Node that has §MTamil§! culture"
