@@ -1,0 +1,16 @@
+spriteTypes = {
+# Bengal
+	# Tier 1
+# Coromandel
+	# Tier 8
+		spriteType = {
+			name = "government_reform_tamil_trade_guilds_reform_icon"
+			texturefile = "gfx//interface//government_reform_icons//tamil_trade_guilds_reform_icon.dds"
+		}
+# Deccan
+	# Tier 1
+# Hindustan
+	# Tier 1
+# Western India
+	# Tier 1
+}

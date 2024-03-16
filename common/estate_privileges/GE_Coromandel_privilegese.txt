@@ -1,0 +1,64 @@
+estate_vaisyas_tamil_guilds = {
+	icon = privilege_monopoly
+	land_share = 0
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.10
+	is_valid = { has_reform = tamil_trade_guilds_reform }
+	can_select = {
+		has_reform = tamil_trade_guilds_reform
+		1340 = {
+			any_trade_node_member_province = {
+				owned_by = ROOT
+				culture = tamil
+			}
+		}
+	}
+	on_invalid = {
+	}
+	penalties = {
+	}
+	on_granted = {
+		custom_tooltip = estate_vaisyas_tamil_guilds_gt
+		tooltip	= {
+			add_province_modifier = {
+				name = ge_tamil_trade_guilds_modifier
+				duration = -1
+			}
+		}
+	}
+	on_granted_province = {
+		1340 = {
+			every_trade_node_member_province = {
+				limit = {
+					culture = tamil
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = ge_tamil_trade_guilds_modifier
+					duration = -1
+				}
+			}
+		}
+	}
+	on_invalid_province = {
+		if = {
+			limit = { has_province_modifier = ge_tamil_trade_guilds_modifier }
+			remove_province_modifier = ge_tamil_trade_guilds_modifier
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_vaisyas_tamil_guilds_rt
+	}
+	on_revoked_province = {
+		if = {
+			limit = { has_province_modifier = ge_tamil_trade_guilds_modifier }
+			remove_province_modifier = ge_tamil_trade_guilds_modifier
+		}
+	}
+	benefits = { }
+	conditional_modifier = { }
+	ai_will_do = {
+		factor = 1
+	}
+}

@@ -1,0 +1,24 @@
+﻿l_english:
+# Tier 1
+ satavahana_dynasty_reform: "Satavahana Dynasty"
+ satavahana_dynasty_reform_desc: "Our ancestral dynasty, which has wielded authority over our kingdom for centuries, bears witness to the ebb and flow of history—from the inception to the demise of the Gupta Empire, the ascendancy of the Vijayanagar Empire, to the establishment of the Deccan Sultanates. Remarkably, even today, an offshoot of this venerable dynasty continues to govern our realm. \nThe time has come for us to reclaim the rich legacy of our lineage and embark on a journey to reconquer our lost territories in both the west and south, thereby revitalizing the grandeur of the Satavahana Empire. Drawing inspiration from the spirits of antiquity, we must initiate comprehensive reforms—strengthening the military, fortifying the state apparatus, and reclaiming what is rightfully ours. The Telugu identity shall experience a renaissance, forging anew the elements that were once lost to time."
+
+ pandya_dynasty_reform: "Pandya Dynasty"
+ pandya_dynasty_reform_desc: " Today, we stand as the sole survivor of this illustrious triumvirate, as the Chola and Chera lines have faded into oblivion. As the last remaining Tamil dynasty, it is not merely our duty but our destiny to reclaim our former glory and surpass it, or face our demise. Our aim is to revive our lost kingdom and reinstate our profound influence across the Indian Ocean. \nLegend holds that the Cholas are the heirs of the sun, the Cheras are heroes to the fire, and the Pandyas are heirs to the moon. According to ancient tales, our three dynastic founders were created by Shiva to counter the malevolent Buddhist dynasty of Andhra, the Satavahana, who persecuted and forcibly converted our people. Entrusted with a singular purpose—protecting the children and followers of Shiva—the Kings of Fire exemplify indomitable spirits, the Kings of the Moon emerge as natural leaders of Shiva's devotees, and the Lunar Kings master the realms of the sea, trade, diplomacy, and economy. Our naval and trade prowess is perceived as a divine gift from Shiva himself."
+
+# Tier 5
+ tamil_trade_guilds_reform: "Tamil Trade Guilds"
+ tamil_trade_guilds_reform_desc: "The Tamil Trade Guilds, anchored in the maritime legacy of the Tamil people, play a vital role in the Coromandel trade node. Situated on the southeastern coast of the Indian subcontinent, this node is a bustling hub for Indian Ocean trade, and the guilds excel as key players in this intricate economic network. \nProficient in maritime activities, the guilds manage fleets of trading vessels, navigating the Indian Ocean to facilitate the exchange of goods, spices, textiles, and other coveted commodities. Their mastery of trade routes establishes them as shrewd negotiators, fostering connections with diverse ports. \nBeyond commerce, the guilds contribute to the cultural and social fabric of the region, acting as patrons of the arts and fostering cosmopolitan practices. They also serve as diplomatic intermediaries, maintaining stability in the region and ensuring the smooth flow of trade."
+
+# Privileges
+ estate_vaisyas_tamil_guilds: "Tamil Guilds"
+ estate_vaisyas_tamil_guilds_desc: "Custodians of Tamil heritage, the guilds balance traditional values with adaptability to global trade dynamics. With keen business acumen, maritime expertise, and cultural contributions, the Tamil Trade Guilds continue to shape the Coromandel trade node's economic and cultural landscape."
+
+# Modifiers
+ ge_tamil_trade_guilds_modifier: "Tamil Trade Guilds"
+ desc_ge_tamil_trade_guilds_modifier: ""
+
+# Tooltips
+ unlock_privilege_estate_vaisyas_tamil_guilds_tt: "Unlock the [Root.GetVaishyasName] estate privilege '§YTamil Guiilds§!'"
+ estate_vaisyas_tamil_guilds_gt: "Every owned province in the §Y[1340.GetName]§! Trade Node that has §MTamil§! culture gains the following bonus:"
+ estate_vaisyas_tamil_guilds_rt: "The modifier '§YTamil Trade Guilds§!' is removed from all provinces in the §Y[1340.GetName]§! Trade Node that has §MTamil§! culture"
