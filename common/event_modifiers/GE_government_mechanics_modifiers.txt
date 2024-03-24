@@ -237,3 +237,9 @@ sicilian_kingdom_sicilian_defence_modifier = {
 	local_monthly_devastation = -0.10
 	local_prosperity_growth = 0.5
 }
+
+# Legitimation through Representation
+legitimation_through_representation_mechanic_renovate_the_palace_modifier = {
+	monthly_legitimation_through_representation_power = 0.5
+	legitimation_through_representation_power_gain_modifier = 0.5
+}

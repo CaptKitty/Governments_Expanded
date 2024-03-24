@@ -367,7 +367,7 @@
  italian_dinasties_at_100_tt: "[diplomatic_reputation]: §G+2.00§! \nThe monthly decay is negated until your §YDinastic Power§! falls under §Y100.00§!."
 
 # Sicilian Kingdom Mechanic
- ## Mechanic 
+ ## Mechanic
  ability_sicilian_kingdom_mechanic: "Sicilian Kingdom"
  sicilian_kingdom_adm_power: "Encourage City Living Progress"
  sicilian_kingdom_adm_power_gain_modifier: "Encourage City Living Progress Gain Modifier"
@@ -392,3 +392,24 @@
  desc_sicilian_kingdom_sicilian_defence_modifier: ""
 
  sicilian_kingdom_sicilian_defence_tt: "The owned provinces in the areas of §Y[121.GetAreaName]§!, §Y[124.GetAreaName]§!, §Y[125.GetAreaName]§!, §Y[123.GetAreaName]§!, §Y[122.GetAreaName]§! will:\n   '§YSicilian Defence§!' for §Y5 years§!, giving the following effects:\n      - [local_own_coast_naval_combat_bonus]: §G+1.00§!\n      - [local_defender_dice_roll_bonus]: §G+1.00§!\n      - [local_monthly_devastation]: §G-10.0%§!\n      - [local_prosperity_growth]: §G+0.50§!"
+
+# Legitimation through Represenation Mechanic:
+ ## Mechanics:
+ ability_legitimation_through_representation_mechanic: "Power Representation"
+ legitimation_through_representation_power: "Power Representation"
+ legitimation_through_representation_power_desc: "Power Representation - for example through art, music or architecture - is important to demonstrate the status and the ruler's claim to power. However, it is also very expensive to maintain. \n\nThe §YPower Represenation§! will decay faster, the higher it is and can be increased by spending power and money through court actions.\n\n"
+ legitimation_through_representation_mechanic_obtain_new_paintings: "Obtain New Paintings"
+ legitimation_through_representation_mechanic_obtain_new_paintings_desc: ""
+ legitimation_through_representation_mechanic_host_a_court_festival: "Host a Court Festival"
+ legitimation_through_representation_mechanic_host_a_court_festival_desc: ""
+ legitimation_through_representation_mechanic_perform_an_opera: "Perform an Opera"
+ legitimation_through_representation_mechanic_perform_an_opera_desc: ""
+ legitimation_through_representation_mechanic_renovate_the_palace: "Renovate the Palace"
+ legitimation_through_representation_mechanic_renovate_the_palace_desc: "§gRenovating the Palace is a costly and time consuming way to increase the ruler's Power Representation value. It will not grant an instant reward, but increase the Power Representation over time.§!\n\n"
+
+ ## Power Modifiers:
+ monthly_legitimation_through_representation_power: "Monthly Power Representation Change"
+ legitimation_through_representation_power_gain_modifier: "Power Representation Change Modifier"
+
+ ## Modifiers:
+ legitimation_through_representation_mechanic_renovate_the_palace_modifier: "Renovation of the Palace"

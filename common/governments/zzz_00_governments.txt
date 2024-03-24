@@ -114,7 +114,7 @@ monarchy = {
 				#Turkomen
 				turkoman_ottoman_institutions
 				pronoiar_monarchy_reform #custom nation
-				#Egypt 
+				#Egypt
 				egyptian_government_reform
 				### GE ###
 				arch_monarchy_reform
@@ -798,6 +798,7 @@ monarchy = {
 				two_treatises_reform
 				the_leviathan_reform
 				the_social_contract_reform
+				legitimation_through_representation_reform
 			}
 		}
 		absolute_rule_vs_constitutional = {
@@ -2139,6 +2140,7 @@ theocracy = {
 				monastic_elections_reform
 				commander_king_reform
 				admiral_king_reform
+				legitimation_through_representation_reform
 			}
 		}
 		nature_of_faith = {
