@@ -2,6 +2,7 @@ GE_TE_init = {
 	every_country = {
 		GE_TE_init_country = yes
 	}
+	ge_maritime_republic_set = yes
 }
 
 GE_TE_init_country = {

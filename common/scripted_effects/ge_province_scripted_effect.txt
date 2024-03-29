@@ -772,3 +772,38 @@ ge_aragon_crown_union_province_update = {
 		remove_province_modifier = Kingdom_Of_Sicily
 	}
 }
+
+ge_maritime_republic_set = {
+	101 = {
+		if = {
+			limit = {
+				NOT = { has_province_modifier = GE_maritime_republic_triggered_modifier }
+			}
+			add_province_triggered_modifier = GE_maritime_republic_triggered_modifier
+		}
+	}
+	112 = {
+		if = {
+			limit = {
+				NOT = { has_province_modifier = GE_maritime_republic_triggered_modifier }
+			}
+			add_province_triggered_modifier = GE_maritime_republic_triggered_modifier
+		}
+	}
+	115 = {
+		if = {
+			limit = {
+				NOT = { has_province_modifier = GE_maritime_republic_triggered_modifier }
+			}
+			add_province_triggered_modifier = GE_maritime_republic_triggered_modifier
+		}
+	}
+	2983 = {
+		if = {
+			limit = {
+				NOT = { has_province_modifier = GE_maritime_republic_triggered_modifier }
+			}
+			add_province_triggered_modifier = GE_maritime_republic_triggered_modifier
+		}
+	}
+}

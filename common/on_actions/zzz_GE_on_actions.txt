@@ -1,4 +1,4 @@
-﻿on_startup = {
+on_startup = {
 	set_global_flag = governments_expanded_mod_active
 	GE_TE_init = yes
 }
