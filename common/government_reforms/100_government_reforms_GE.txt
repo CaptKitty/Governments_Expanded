@@ -185,7 +185,7 @@ habsburg_monarchy_reform = {
 					religion = catholic
 				}
 				add_country_modifier = {
-					name = "Religious_Domination"
+					name = Religious_Domination
 					duration = -1
 				}
 			}
@@ -353,14 +353,14 @@ achaemenid_empire_reform = {
 	potential = {
 		OR = {
 			AND = {
-				religion_group = zoroastrian
+				religion_group = zoroastrian_group
 				culture_group = iranian
 			}
 		}
 	}
 	trigger = {
 		AND = {
-			religion_group = zoroastrian
+			religion_group = zoroastrian_group
 			culture_group = iranian
 		}
 	}
@@ -3631,14 +3631,14 @@ persian_satrapies_reform = {
 	potential = {
 		OR = {
 			AND = {
-				religion_group = zoroastrian
+				religion_group = zoroastrian_group
 				culture_group = iranian
 			}
 		}
 	}
 	trigger = {
 		AND = {
-			religion_group = zoroastrian
+			religion_group = zoroastrian_group
 			culture_group = iranian
 		}
 	}
@@ -4899,14 +4899,14 @@ justice_and_truth_reform = {
 	potential = {
 		OR = {
 			AND = {
-				religion_group = zoroastrian
+				religion_group = zoroastrian_group
 				culture_group = iranian
 			}
 		}
 	}
 	trigger = {
 		AND = {
-			religion_group = zoroastrian
+			religion_group = zoroastrian_group
 			culture_group = iranian
 		}
 	}
@@ -5912,14 +5912,14 @@ preeminent_padishah_reform = {
 	potential = {
 		OR = {
 			AND = {
-				religion_group = zoroastrian
+				religion_group = zoroastrian_group
 				culture_group = iranian
 			}
 		}
 	}
 	trigger = {
 		AND = {
-			religion_group = zoroastrian
+			religion_group = zoroastrian_group
 			culture_group = iranian
 		}
 	}
@@ -7342,14 +7342,14 @@ expand_the_immortals_reform = {
 	potential = {
 		OR = {
 			AND = {
-				religion_group = zoroastrian
+				religion_group = zoroastrian_group
 				culture_group = iranian
 			}
 		}
 	}
 	trigger = {
 		AND = {
-			religion_group = zoroastrian
+			religion_group = zoroastrian_group
 			culture_group = iranian
 		}
 	}
