@@ -161,7 +161,7 @@
  ability_maritime_republic_mechanic: "Maritime Republicanism"
  maritime_republic_mechanic: "Maritime Republicanism"
  maritime_republic: "Maritime Republicanism"
- maritime_republic_desc: "Maritime Republicanism is gained by owning and improving the following provinces (detailed requirements can be viewed in the province modifier tooltip): \n   - [101.GetName]: §G+0.25§! \n   - [112.GetName]: §G+0.25§! \n   - [115.GetName]: §G+0.25§! \n   - [2983.GetName]: §G+0.25§! \n\nMaritime Republicanism is lost by the following: \n   - Institution §YColonialism§! exists: §R-0.33§! \n   - Institution §YGlobal Trade§! exists: §R-0.33§! \n--------------\n"
+ maritime_republic_desc: "Maritime Republicanism is gained by owning and improving the following provinces (detailed requirements can be viewed in the province modifier tooltip): \n   - [101.GetName]: §G+0.25§! \n   - [112.GetName]: §G+0.25§! \n   - [115.GetName]: §G+0.25§! \n   - [137.GetName]: §G+0.25§! \n\nMaritime Republicanism is lost by the following: \n   - Institution §YColonialism§! exists: §R-0.33§! \n   - Institution §YGlobal Trade§! exists: §R-0.33§! \n--------------\n"
  maritime_republic_mechanic_tt: "Government has '§YMaritime Republicanism§! mechanic"
 
  monthly_maritime_republic: "Monthly Maritime Republicanism Gain"

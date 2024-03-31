@@ -21,7 +21,7 @@ GE_maritime_republic_triggered_modifier = {
 		}
 	}
 
-	monthly_maritime_republic = 0.25
+	monthly_maritime_republic = 0.20
 	province_trade_power_value = 3
 	province_trade_power_modifier = 0.25
 	trade_value = 0.5

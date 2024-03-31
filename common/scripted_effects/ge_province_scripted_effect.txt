@@ -798,7 +798,7 @@ ge_maritime_republic_set = {
 			add_province_triggered_modifier = GE_maritime_republic_triggered_modifier
 		}
 	}
-	2983 = {
+	137 = {
 		if = {
 			limit = {
 				NOT = { has_province_modifier = GE_maritime_republic_triggered_modifier }
