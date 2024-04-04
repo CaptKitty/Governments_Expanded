@@ -200,7 +200,7 @@
 		effect = {
 			hidden_effect = {
 				country_event = { 
-					id = reform_me_events.212
+					id = reform_me_events.238
 					days = 1
 				}
 			}
