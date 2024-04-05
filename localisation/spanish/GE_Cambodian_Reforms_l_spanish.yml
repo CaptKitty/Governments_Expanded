@@ -1,0 +1,9 @@
+﻿l_spanish:
+ # Reforms:
+ second_khmer_empire_reform: "Second Khmer Empire"
+ second_khmer_empire_reform_desc: "The Khmer have recovered from the brink of annihilation, and we can now step in the footsteps of our ancestors to guide our people with a renewed grandeur."
+
+ # Custom Attributes:
+ ## Empty, real loc is in SE:
+ mechanic_can_create_mandala_trade_vassal_rule: ""
+ mechanic_can_create_mandala_trade_vassal_rule_yes: ""
