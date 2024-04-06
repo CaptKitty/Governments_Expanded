@@ -954,197 +954,222 @@ add_import_effect = {
 
 GE_calculate_goods_produced_effect = {
 	hidden_effect = {
-		set_variable = {
-			which = GE_total_goods
-			value = 0
-		}
-		#Rural = {
-			every_owned_province = {
-				export_to_variable = {
-					variable_name = GE_total_goods_counter
-					value = base_production
-				}
-				while = {
-					limit = {
-						check_variable = {
+		if = {
+			limit = { development_in_provinces = 1 }
+			set_variable = {
+				which = GE_total_goods
+				value = 0
+			}
+			#Rural = {
+				every_owned_province = {
+					export_to_variable = {
+						variable_name = GE_total_goods_counter
+						value = base_production
+					}
+					while = {
+						limit = {
+							check_variable = {
+								which = GE_total_goods_counter
+								value = 1
+							}
+						}
+						change_variable = {
 							which = GE_total_goods_counter
-							value = 1
+							value = -1
 						}
-					}
-					change_variable = {
-						which = GE_total_goods_counter
-						value = -1
-					}
-					ROOT = {
-						change_variable = {
-							which = GE_total_goods
-							value = 1
+						ROOT = {
+							change_variable = {
+								which = GE_total_goods
+								value = 1
+							}
 						}
 					}
 				}
-			}
-			set_variable = {
-				which = GE_percentage_of_rural_goods
-				value = 0
-			}
-			every_owned_province = {
-				limit = {
-					has_rural_goods = yes
+				set_variable = {
+					which = GE_percentage_of_rural_goods
+					value = 0
 				}
-				export_to_variable = {
-					variable_name = GE_rural_goods_counter
-					value = base_production
-				}
-				while = {
+				every_owned_province = {
 					limit = {
-						check_variable = {
+						has_rural_goods = yes
+					}
+					export_to_variable = {
+						variable_name = GE_rural_goods_counter
+						value = base_production
+					}
+					while = {
+						limit = {
+							check_variable = {
+								which = GE_rural_goods_counter
+								value = 1
+							}
+						}
+						change_variable = {
 							which = GE_rural_goods_counter
-							value = 1
+							value = -1
 						}
-					}
-					change_variable = {
-						which = GE_rural_goods_counter
-						value = -1
-					}
-					ROOT = {
-						change_variable = {
-							which = GE_percentage_of_rural_goods
-							value = 1
+						ROOT = {
+							change_variable = {
+								which = GE_percentage_of_rural_goods
+								value = 1
+							}
 						}
 					}
 				}
-			}
-			multiply_variable = {
-				which = GE_percentage_of_rural_goods
-				value = 100
-			}
-			divide_variable = {
-				which = GE_percentage_of_rural_goods
-				which = GE_total_goods
-			}
-		#}
-		#Urban = {
-			set_variable = {
-				which = GE_percentage_of_urban_goods
-				value = 0
-			}
-			every_owned_province = {
-				limit = {
-					has_urban_goods = yes
+				multiply_variable = {
+					which = GE_percentage_of_rural_goods
+					value = 100
 				}
-				export_to_variable = {
-					variable_name = GE_urban_goods_counter
-					value = base_production
+				divide_variable = {
+					which = GE_percentage_of_rural_goods
+					which = GE_total_goods
 				}
-				while = {
+			#}
+			#Urban = {
+				set_variable = {
+					which = GE_percentage_of_urban_goods
+					value = 0
+				}
+				every_owned_province = {
 					limit = {
-						check_variable = {
+						has_urban_goods = yes
+					}
+					export_to_variable = {
+						variable_name = GE_urban_goods_counter
+						value = base_production
+					}
+					while = {
+						limit = {
+							check_variable = {
+								which = GE_urban_goods_counter
+								value = 1
+							}
+						}
+						change_variable = {
 							which = GE_urban_goods_counter
-							value = 1
+							value = -1
 						}
-					}
-					change_variable = {
-						which = GE_urban_goods_counter
-						value = -1
-					}
-					ROOT = {
-						change_variable = {
-							which = GE_percentage_of_urban_goods
-							value = 1
+						ROOT = {
+							change_variable = {
+								which = GE_percentage_of_urban_goods
+								value = 1
+							}
 						}
 					}
 				}
-			}
-			multiply_variable = {
-				which = GE_percentage_of_urban_goods
-				value = 100
-			}
-			divide_variable = {
-				which = GE_percentage_of_urban_goods
-				which = GE_total_goods
-			}
-		#}
-		#Mining = {
-			set_variable = {
-				which = GE_percentage_of_mining_goods
-				value = 0
-			}
-			every_owned_province = {
-				limit = {
-					has_mining_goods = yes
+				multiply_variable = {
+					which = GE_percentage_of_urban_goods
+					value = 100
 				}
-				export_to_variable = {
-					variable_name = GE_mining_goods_counter
-					value = base_production
+				divide_variable = {
+					which = GE_percentage_of_urban_goods
+					which = GE_total_goods
 				}
-				while = {
+			#}
+			#Mining = {
+				set_variable = {
+					which = GE_percentage_of_mining_goods
+					value = 0
+				}
+				every_owned_province = {
 					limit = {
-						check_variable = {
+						has_mining_goods = yes
+					}
+					export_to_variable = {
+						variable_name = GE_mining_goods_counter
+						value = base_production
+					}
+					while = {
+						limit = {
+							check_variable = {
+								which = GE_mining_goods_counter
+								value = 1
+							}
+						}
+						change_variable = {
 							which = GE_mining_goods_counter
-							value = 1
+							value = -1
 						}
-					}
-					change_variable = {
-						which = GE_mining_goods_counter
-						value = -1
-					}
-					ROOT = {
-						change_variable = {
-							which = GE_percentage_of_mining_goods
-							value = 1
+						ROOT = {
+							change_variable = {
+								which = GE_percentage_of_mining_goods
+								value = 1
+							}
 						}
 					}
 				}
-			}
-			multiply_variable = {
-				which = GE_percentage_of_mining_goods
-				value = 100
-			}
-			divide_variable = {
-				which = GE_percentage_of_mining_goods
+				multiply_variable = {
+					which = GE_percentage_of_mining_goods
+					value = 100
+				}
+				divide_variable = {
+					which = GE_percentage_of_mining_goods
+					which = GE_total_goods
+				}
+			#}
+			#Plantation = {
+				set_variable = {
+					which = GE_percentage_of_plantation_goods
+					value = 0
+				}
+				every_owned_province = {
+					limit = {
+						has_plantage_goods = yes
+					}
+					export_to_variable = {
+						variable_name = GE_plantation_goods_counter
+						value = base_production
+					}
+					while = {
+						limit = {
+							check_variable = {
+								which = GE_plantation_goods_counter
+								value = 1
+							}
+						}
+						change_variable = {
+							which = GE_plantation_goods_counter
+							value = -1
+						}
+						ROOT = {
+							change_variable = {
+								which = GE_percentage_of_plantation_goods
+								value = 1
+							}
+						}
+					}
+				}
+				multiply_variable = {
+					which = GE_percentage_of_plantation_goods
+					value = 100
+				}
+				divide_variable = {
+					which = GE_percentage_of_plantation_goods
+					which = GE_total_goods
+				}
+			#}
+		}
+		else = {
+			set_variable = {
 				which = GE_total_goods
+				value = 0
+			}	
+			set_variable = {
+				which = GE_percentage_of_rural_goods
+				value = 0
 			}
-		#}
-		#Plantation = {
+			set_variable = {
+				which = GE_percentage_of_mining_goods
+				value = 0
+			}
+			set_variable = {
+				which = GE_percentage_of_mining_goods
+				value = 0
+			}
 			set_variable = {
 				which = GE_percentage_of_plantation_goods
 				value = 0
 			}
-			every_owned_province = {
-				limit = {
-					has_plantage_goods = yes
-				}
-				export_to_variable = {
-					variable_name = GE_plantation_goods_counter
-					value = base_production
-				}
-				while = {
-					limit = {
-						check_variable = {
-							which = GE_plantation_goods_counter
-							value = 1
-						}
-					}
-					change_variable = {
-						which = GE_plantation_goods_counter
-						value = -1
-					}
-					ROOT = {
-						change_variable = {
-							which = GE_percentage_of_plantation_goods
-							value = 1
-						}
-					}
-				}
-			}
-			multiply_variable = {
-				which = GE_percentage_of_plantation_goods
-				value = 100
-			}
-			divide_variable = {
-				which = GE_percentage_of_plantation_goods
-				which = GE_total_goods
-			}
-		#}
+		}
 	}
 }
