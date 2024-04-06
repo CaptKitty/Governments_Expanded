@@ -553,7 +553,7 @@ support_borghese_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		culture_group = latin
-		NOT = { have_had_reform = pirate_republic_reform }
+		NOT = { has_reform = pirate_republic_reform }
 		is_year = 1490
 	}
 	effect = {
@@ -1012,7 +1012,7 @@ demedici_dynasty_reform = {
 			is_or_was_tag = { tag = LAN }
 			is_or_was_tag = { tag = TUS }
 		}
-		NOT = { have_had_reform = pirate_republic_reform }
+		NOT = { has_reform = pirate_republic_reform }
 	}
 	trigger = {
 		OR = {
@@ -1069,7 +1069,7 @@ genoa_merchants_reform = {
 				owns_core_province = 101
 			}
 		}
-		NOT = { have_had_reform = pirate_republic_reform }
+		NOT = { has_reform = pirate_republic_reform }
 	}
 	trigger = {
 		OR = {
@@ -1164,7 +1164,7 @@ rule_by_consent_reform = {
 		OR = {
 			is_or_was_tag = { tag = GEN }
 		}
-		NOT = { have_had_reform = pirate_republic_reform }
+		NOT = { has_reform = pirate_republic_reform }
 	}
 	trigger = {
 		OR = {
@@ -1964,7 +1964,7 @@ andrea_doria_constitution_reform = {
 		}
 	}
 	trigger = {
-		NOT = { have_had_reform = frequent_elections_reform }
+		NOT = { has_reform = frequent_elections_reform }
 		have_had_reform = rule_by_consent_reform
 	}
 	effect = {
