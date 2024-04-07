@@ -1,0 +1,7 @@
+estate_maratha = {
+	privileges = {
+		### GE ###
+		estate_nobles_blood_tax
+		estate_nobles_elite_guards
+	}
+}
