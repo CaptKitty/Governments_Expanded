@@ -955,7 +955,7 @@ add_import_effect = {
 GE_calculate_goods_produced_effect = {
 	hidden_effect = {
 		if = {
-			limit = { development_in_provinces = 1 }
+			limit = { total_development = 1 }
 			set_variable = {
 				which = GE_total_goods
 				value = 0
