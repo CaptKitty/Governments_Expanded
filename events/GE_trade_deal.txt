@@ -924,7 +924,7 @@ country_event = {
 
 	}
 	after = {
-		random_country = {
+		every_country  = {
 			limit = {
 				OR = {
 					has_country_flag = GE_Rural_Trade_Deal_With_@Root

@@ -532,3 +532,26 @@ on_post_mil_advisor_fired = {
 	ge_country_peasant_council_update = yes
 	ge_country_french_court_update = yes
 }
+
+on_annexed = {
+	every_country  = {
+		limit = {
+			OR = {
+				has_country_flag = GE_Rural_Trade_Deal_With_@Root
+				has_country_flag = GE_Rural_Trade_Deal_From_@Root
+				has_country_flag = GE_Urban_Trade_Deal_With_@Root
+				has_country_flag = GE_Urban_Trade_Deal_From_@Root
+				has_country_flag = GE_Mining_Trade_Deal_With_@Root
+				has_country_flag = GE_Mining_Trade_Deal_From_@Root
+				has_country_flag = GE_Plantation_Trade_Deal_With_@Root
+				has_country_flag = GE_Plantation_Trade_Deal_From_@Root
+				has_country_flag = GE_Trade_Deal_From_@Root
+				has_country_flag = GE_Trade_Deal_With_@Root
+			}
+			NOT = { exists = yes }
+		}
+		country_event = { 
+			id = reform_me_events.236
+			days = 1
+		}
+}
