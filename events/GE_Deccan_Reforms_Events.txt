@@ -1,0 +1,180 @@
+namespace = GE_Deccan_Reforms_Events
+
+country_event = {
+	id = GE_Deccan_Reforms_Events.1
+	title = GE_Deccan_Reforms_Events.1.T
+	desc = GE_Deccan_Reforms_Events.1.D
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			every_owned_province = {
+				if = {
+					limit = { has_terrain = drylands }
+					remove_province_modifier = ge_vij_dryland
+				}
+				else_if = {
+					limit = {
+						OR = {
+							has_terrain = woods
+							has_terrain = jungle
+						}
+					}
+					remove_province_modifier = ge_vij_woodland
+				}
+				else_if = {
+					limit = {
+						OR = {
+							has_terrain = farmlands
+							has_terrain = grasslands
+						}
+					}
+					remove_province_modifier = ge_vij_wetland
+				}
+			}
+		}
+	}
+
+	option = {
+		name = GE_Deccan_Reforms_Events.1.OPT1
+		trigger = {
+			capital_scope = {
+				region_for_scope_province = {
+					any_province = {
+						owned_by = ROOT
+						has_terrain = drylands
+					}
+				}
+			}
+		}
+		ai_chance = {
+			factor = 33
+		}
+
+		custom_tooltip = GE_VIJ_LAND_REVENUE_DRYLAND_TT
+		tooltip = {
+			add_province_modifier = {
+				name = ge_vij_dryland
+				duration = -1
+				desc = "Until New Land Revenue"
+			}
+		}
+		hidden_effect = {
+			capital_scope = {
+				region = {
+					every_province = {
+						limit = {
+							owned_by = ROOT
+							has_terrain = drylands
+						}
+						add_province_modifier = {
+							name = ge_vij_dryland
+							duration = -1
+							desc = "Until New Land Revenue"
+						}
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = GE_Deccan_Reforms_Events.1.OPT2
+		trigger = {
+			capital_scope = {
+				region_for_scope_province = {
+					any_province = {
+						owned_by = ROOT
+						OR = {
+							has_terrain = woods
+							has_terrain = jungle
+						}
+					}
+				}
+			}
+		}
+		ai_chance = {
+			factor = 33
+		}
+
+		custom_tooltip = GE_VIJ_LAND_REVENUE_WOODLAND_TT
+		tooltip = {
+			add_province_modifier = {
+				name = ge_vij_woodland
+				duration = -1
+				desc = "Until New Land Revenue"
+			}
+		}
+		hidden_effect = {
+			capital_scope = {
+				region = {
+					every_province = {
+						limit = {
+							owned_by = ROOT
+							OR = {
+								has_terrain = woods
+								has_terrain = jungle
+							}
+						}
+						add_province_modifier = {
+							name = ge_vij_woodland
+							duration = -1
+							desc = "Until New Land Revenue"
+						}
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = GE_Deccan_Reforms_Events.1.OPT3
+		trigger = {
+			capital_scope = {
+				region_for_scope_province = {
+					any_province = {
+						owned_by = ROOT
+						OR = {
+							has_terrain = farmlands
+							has_terrain = grasslands
+						}
+					}
+				}
+			}
+		}
+		ai_chance = {
+			factor = 33
+		}
+
+		custom_tooltip = GE_VIJ_LAND_REVENUE_WETLAND_TT
+		tooltip = {
+			add_province_modifier = {
+				name = ge_vij_wetland
+				duration = -1
+				desc = "Until New Land Revenue"
+			}
+		}
+		hidden_effect = {
+			capital_scope = {
+				region = {
+					every_province = {
+						limit = {
+							owned_by = ROOT
+							OR = {
+								has_terrain = farmlands
+								has_terrain = grasslands
+							}
+						}
+						add_province_modifier = {
+							name = ge_vij_wetland
+							duration = -1
+							desc = "Until New Land Revenue"
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,72 @@
+# T1
+vijayanagar_empire_reform = {
+	icon = nayankara_system
+	allow_normal_conversion = yes
+	lock_level_when_selected = yes
+	potential = {
+		OR = {
+			have_had_reform = vijayanagar_empire_reform
+			is_or_was_tag = { tag = VIJ }
+		}
+	}
+	trigger = {
+		OR = {
+			have_had_reform = vijayanagar_empire_reform
+			is_or_was_tag = { tag = VIJ }
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+	modifiers = {
+		land_forcelimit_modifier = 0.10
+		global_manpower_modifier = 0.10
+		state_governing_cost = -0.10
+	}
+	government_abilities = {
+		vijayanagar_empire_mechanic
+	}
+	effect = {
+		custom_tooltip = "Every new monarch will decide further investments in capital's region."
+		hidden_effect = {
+			country_event = { id = GE_Deccan_Reforms_Events.1 days = 30 random = 15 }
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				if = {
+					limit = { has_terrain = drylands }
+					remove_province_modifier = ge_vij_dryland
+				}
+				else_if = {
+					limit = {
+						OR = {
+							has_terrain = woods
+							has_terrain = jungle
+						}
+					}
+					remove_province_modifier = ge_vij_woodland
+				}
+				else_if = {
+					limit = {
+						OR = {
+							has_terrain = farmlands
+							has_terrain = grasslands
+						}
+					}
+					remove_province_modifier = ge_vij_wetland
+				}
+			}
+		}
+	}
+	conditional = {
+		allow = { 
+			has_dlc = "Mandate of Heaven"
+		}
+		custom_attributes = {
+			has_tributaries = yes
+		}
+	}
+}
+
+# T8

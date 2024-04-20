@@ -1,0 +1,30 @@
+﻿l_english:
+# Tier 1
+ vijayanagar_empire_reform: "Vijayanagar Empire"
+ vijayanagar_empire_reform_desc: ""
+
+# Tier 5
+
+# Events
+ GE_Deccan_Reforms_Events.1.T: "Land Revenue"
+ GE_Deccan_Reforms_Events.1.D: "In the administrative framework of the Vijayanagara Empire, the territory was intricately divided into six distinct provinces, each under the jurisdiction of local administrators. These officials were tasked with the crucial responsibility of overseeing the collection of land revenue, which served as the lifeblood of the government's finances. To ensure a systematic approach to taxation, the land revenue department meticulously classified the vast expanse of land into three primary categories: wetland, dryland, and woodland. This classification facilitated a more nuanced understanding of the varied agricultural and geographical features across the empire, enabling fair and efficient taxation practices. \nBeyond the land tax, the government implemented a range of supplementary levies to bolster its revenue streams. These included taxes on grazing, marriages, customs duties, and activities such as gardening and manufacturing. Despite the relatively high taxation rates, the administration prided itself on maintaining a fair and equitable system. Taxpayers were afforded the flexibility to discharge their obligations through either monetary payments or in kind, reflecting the diverse economic landscape of the empire. This multifaceted approach to taxation not only sustained the financial stability of the government but also fostered a sense of economic cohesion and cooperation among its subjects."
+ GE_Deccan_Reforms_Events.1.OPT1: "Develop the Drylands"
+ GE_Deccan_Reforms_Events.1.OPT2: "Improve the Woodlands"
+ GE_Deccan_Reforms_Events.1.OPT3: "Acquire new levies from the Wetlands"
+
+# Privileges
+
+# Mechanics
+
+# Modifiers
+ ge_vij_dryland: "Dryland"
+ desc_ge_vij_dryland: ""
+ ge_vij_woodland: "Woodland"
+ desc_ge_vij_woodland: ""
+ ge_vij_wetland: "Wetland"
+ desc_ge_vij_wetland: ""
+
+# Tooltips
+ GE_VIJ_LAND_REVENUE_DRYLAND_TT: "Every Owned §YArid§! Province, in the §MSame Region§! of our §YCapital§! will gain the following effect:\n"
+ GE_VIJ_LAND_REVENUE_WOODLAND_TT: "Every Owned §YWood§! or §YJungle§! Province, in the §MSame Region§! of our §YCapital§! will gain the following effect:\n"
+ GE_VIJ_LAND_REVENUE_WETLAND_TT: "Every Owned §YFarmland§! or §YGreassland§! Province, in the §MSame Region§! of our §YCapital§! will gain the following effect:\n"

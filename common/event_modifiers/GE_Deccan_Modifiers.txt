@@ -1,0 +1,9 @@
+ge_vij_dryland = {
+	local_development_cost = -0.10
+}
+ge_vij_woodland = {
+	local_build_cost = -0.10
+}
+ge_vij_wetland = {
+	local_manpower_modifier = 0.10
+}

@@ -1,13 +1,8 @@
-GE_TE_init = {
-	every_country = {
-		GE_TE_init_country = yes
-	}
-	ge_maritime_republic_set = yes
-}
-
 GE_TE_init_country = {
 	set_country_flag = GE_TE_fired
 	GE_calculate_goods_produced_effect = yes
+	GE_calculate_starting_mechanic_power_effect = yes
+	GE_initiate_starting_events_effect = yes
 }
 
 remove_rural_goods_produced = {
@@ -1170,6 +1165,24 @@ GE_calculate_goods_produced_effect = {
 				which = GE_percentage_of_plantation_goods
 				value = 0
 			}
+		}
+	}
+}
+
+GE_calculate_starting_mechanic_power_effect = {
+	hidden_effect = {
+		if = {
+			limit = { has_government_mechanic = vijayanagar_empire_mechanic }
+			GE_calculate_vijayanagar_empire_ruler_effect = yes
+		}
+	}
+}
+
+GE_initiate_starting_events_effect = {
+	hidden_effect = {
+		if = {
+			limit = { has_reform = vijayanagar_empire_reform }
+			country_event = { id = GE_Deccan_Reforms_Events.1 days = 30 random = 15 }
 		}
 	}
 }

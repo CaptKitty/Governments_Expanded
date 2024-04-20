@@ -175,6 +175,8 @@ monarchy = {
 				second_khmer_empire_reform
 				satavahana_dynasty_reform
 				pandya_dynasty_reform
+				#1.20
+				vijayanagar_empire_reform
 				#####BeginMEReforms#####
 				crusader_kingdom
 				khaganate

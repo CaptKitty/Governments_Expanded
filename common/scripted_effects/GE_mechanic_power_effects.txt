@@ -1,0 +1,30 @@
+GE_calculate_vijayanagar_empire_ruler_effect = {
+	export_to_variable = {
+		which = adm_value
+		value = ADM
+	}
+	export_to_variable = {
+		which = dip_value
+		value = DIP
+	}
+	export_to_variable = {
+		which = mil_value
+		value = MIL
+	}
+	change_variable = { which = adm_value which = dip_value }
+	change_variable = { which = adm_value which = mil_value }
+	while = {
+		limit = {
+			check_variable = {
+				which = adm_value
+				value = 1
+			}
+		}
+		add_government_power = {
+			mechanic_type = vijayanagar_empire_mechanic
+			power_type = vijayanagar_empire
+			value = 1
+		}
+		change_variable = { which = adm_value value = -1 }
+	}
+}
