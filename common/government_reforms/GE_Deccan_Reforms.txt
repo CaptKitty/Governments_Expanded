@@ -26,7 +26,6 @@ vijayanagar_empire_reform = {
 		vijayanagar_empire_mechanic
 	}
 	effect = {
-		custom_tooltip = "Every new monarch will decide further investments in capital's region."
 		hidden_effect = {
 			country_event = { id = GE_Deccan_Reforms_Events.1 days = 30 random = 15 }
 		}
@@ -65,6 +64,15 @@ vijayanagar_empire_reform = {
 		}
 		custom_attributes = {
 			has_tributaries = yes
+			enables_land_revenue = yes
+		}
+	}
+	conditional = {
+		allow = {
+			NOT = { has_dlc = "Mandate of Heaven" }
+		}
+		custom_attributes = {
+			enables_land_revenue = yes
 		}
 	}
 }

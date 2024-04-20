@@ -10,29 +10,45 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
+			export_to_variable = {
+				which = adm_value
+				value = ADM
+			}
+			export_to_variable = {
+				which = dip_value
+				value = DIP
+			}
+			export_to_variable = {
+				which = mil_value
+				value = MIL
+			}
+			change_variable = { which = adm_value which = dip_value }
+			change_variable = { which = adm_value which = mil_value }
+			while = {
+				limit = {
+					check_variable = {
+						which = adm_value
+						value = 1
+					}
+				}
+				add_government_power = {
+					mechanic_type = vijayanagar_empire_mechanic
+					power_type = vijayanagar_empire
+					value = 1
+				}
+				change_variable = { which = adm_value value = -1 }
+			}
 			every_owned_province = {
-				if = {
-					limit = { has_terrain = drylands }
-					remove_province_modifier = ge_vij_dryland
-				}
-				else_if = {
-					limit = {
-						OR = {
-							has_terrain = woods
-							has_terrain = jungle
-						}
+				limit = {
+					OR = {
+						has_province_modifier = ge_vij_dryland
+						has_province_modifier = ge_vij_woodland
+						has_province_modifier = ge_vij_wetland
 					}
-					remove_province_modifier = ge_vij_woodland
 				}
-				else_if = {
-					limit = {
-						OR = {
-							has_terrain = farmlands
-							has_terrain = grasslands
-						}
-					}
-					remove_province_modifier = ge_vij_wetland
-				}
+				remove_province_modifier = ge_vij_dryland
+				remove_province_modifier = ge_vij_woodland
+				remove_province_modifier = ge_vij_wetland
 			}
 		}
 	}
@@ -58,7 +74,7 @@ country_event = {
 			add_province_modifier = {
 				name = ge_vij_dryland
 				duration = -1
-				desc = "Until New Land Revenue"
+				desc = ge_land_revenue_until_new
 			}
 		}
 		hidden_effect = {
@@ -72,7 +88,7 @@ country_event = {
 						add_province_modifier = {
 							name = ge_vij_dryland
 							duration = -1
-							desc = "Until New Land Revenue"
+							desc = ge_land_revenue_until_new
 						}
 					}
 				}
@@ -104,7 +120,7 @@ country_event = {
 			add_province_modifier = {
 				name = ge_vij_woodland
 				duration = -1
-				desc = "Until New Land Revenue"
+				desc = ge_land_revenue_until_new
 			}
 		}
 		hidden_effect = {
@@ -121,7 +137,7 @@ country_event = {
 						add_province_modifier = {
 							name = ge_vij_woodland
 							duration = -1
-							desc = "Until New Land Revenue"
+							desc = ge_land_revenue_until_new
 						}
 					}
 				}
@@ -153,7 +169,7 @@ country_event = {
 			add_province_modifier = {
 				name = ge_vij_wetland
 				duration = -1
-				desc = "Until New Land Revenue"
+				desc = ge_land_revenue_until_new
 			}
 		}
 		hidden_effect = {
@@ -170,7 +186,7 @@ country_event = {
 						add_province_modifier = {
 							name = ge_vij_wetland
 							duration = -1
-							desc = "Until New Land Revenue"
+							desc = ge_land_revenue_until_new
 						}
 					}
 				}

@@ -15,6 +15,7 @@
 # Privileges
 
 # Mechanics
+ mechanic_enables_land_revenue_yes: "§YLand Revenue§!: Every new monarch will decide further investments in capital's region."
 
 # Modifiers
  ge_vij_dryland: "Dryland"
@@ -28,3 +29,4 @@
  GE_VIJ_LAND_REVENUE_DRYLAND_TT: "Every Owned §YArid§! Province, in the §MSame Region§! of our §YCapital§! will gain the following effect:\n"
  GE_VIJ_LAND_REVENUE_WOODLAND_TT: "Every Owned §YWood§! or §YJungle§! Province, in the §MSame Region§! of our §YCapital§! will gain the following effect:\n"
  GE_VIJ_LAND_REVENUE_WETLAND_TT: "Every Owned §YFarmland§! or §YGreassland§! Province, in the §MSame Region§! of our §YCapital§! will gain the following effect:\n"
+ ge_land_revenue_until_new: "Until New Land Revenue"

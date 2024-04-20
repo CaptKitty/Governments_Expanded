@@ -460,7 +460,6 @@ on_new_monarch = {
 		reform_me_events.216
 		reform_me_events.223
 	}
-	GE_calculate_vijayanagar_empire_ruler_effect = yes
 	if = {
 		limit = { has_reform = vijayanagar_empire_reform }
 		country_event = { id = GE_Deccan_Reforms_Events.1 days = 30 random = 15 }
