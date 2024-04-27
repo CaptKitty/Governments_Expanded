@@ -7,17 +7,17 @@ sicilian_kingdom_mechanic = {
 		sicilian_kingdom_adm_power = {
 			max = 150
 			monarch_power = ADM
-			base_monthly_growth = 0.75
+			base_monthly_growth = 0.66
 		}
 		sicilian_kingdom_dip_power = {
 			max = 150
 			monarch_power = DIP
-			base_monthly_growth = 0.75
+			base_monthly_growth = 0.66
 		}
 		sicilian_kingdom_mil_power = {
 			max = 150
 			monarch_power = MIL
-			base_monthly_growth = 0.75
+			base_monthly_growth = 0.66
 		}
 	}
 	

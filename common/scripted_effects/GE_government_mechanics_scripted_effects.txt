@@ -1,0 +1,53 @@
+GE_calculate_dinastic_power = {
+	hidden_effect = {
+		export_to_variable = {
+			which = adm_value
+			value = ADM
+		}
+		export_to_variable = {
+			which = dip_value
+			value = DIP
+		}
+		export_to_variable = {
+			which = mil_value
+			value = MIL
+		}
+		change_variable = { which = adm_value which = dip_value }
+		change_variable = { which = adm_value which = mil_value }
+		while = {
+			limit = {
+				check_variable = {
+					which = adm_value
+					value = 1
+				}
+			}
+			if = {
+				limit = { has_government_mechanic = italian_dinasties_mechanic }
+				add_government_power = {
+					mechanic_type = italian_dinasties_mechanic
+					power_type = italian_dinasties
+					value = 1
+				}
+			}
+			else_if = {
+				limit = { has_government_mechanic = sicilian_kingdom_mechanic }
+				add_government_power = {
+					mechanic_type = sicilian_kingdom_mechanic
+					power_type = sicilian_kingdom_adm_power
+					value = 1
+				}
+				add_government_power = {
+					mechanic_type = sicilian_kingdom_mechanic
+					power_type = sicilian_kingdom_dip_power
+					value = 1
+				}
+				add_government_power = {
+					mechanic_type = sicilian_kingdom_mechanic
+					power_type = sicilian_kingdom_mil_power
+					value = 1
+				}
+			}
+			change_variable = { which = adm_value value = -1 }
+		}
+	}
+}

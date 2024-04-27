@@ -1,0 +1,21 @@
+GE_TE_init_country = {
+	set_country_flag = GE_TE_fired
+	GE_calculate_goods_produced_effect = yes
+	GE_initiate_starting_events_effect = yes
+}
+
+GE_initiate_starting_events_effect = {
+	hidden_effect = {
+		if = {
+			limit = {
+				OR = {
+					has_government_mechanic = italian_dinasties_mechanic
+					has_government_mechanic = sicilian_kingdom_mechanic
+				}
+				NOT = { has_country_flag = ge_initial_setup_done }
+			}
+			GE_calculate_dinastic_power = yes
+			set_country_flag = ge_initial_setup_done
+		}
+	}
+}
