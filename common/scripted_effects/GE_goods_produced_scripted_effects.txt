@@ -1172,7 +1172,7 @@ GE_initiate_starting_events_effect = {
 	hidden_effect = {
 		if = {
 			limit = {
-				has_reform = vijayanagar_empire_reform
+				has_reform = karnataka_samrajya_reform
 				NOT = { has_country_flag = ge_initial_event_fired }
 			}
 			country_event = { id = GE_Deccan_Reforms_Events.1 days = 30 random = 15 }

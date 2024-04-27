@@ -176,7 +176,7 @@ monarchy = {
 				satavahana_dynasty_reform
 				pandya_dynasty_reform
 				#1.20
-				vijayanagar_empire_reform
+				karnataka_samrajya_reform
 				#####BeginMEReforms#####
 				crusader_kingdom
 				khaganate

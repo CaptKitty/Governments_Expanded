@@ -1,17 +1,17 @@
 # T1
-vijayanagar_empire_reform = {
+karnataka_samrajya_reform = {
 	icon = nayankara_system
 	allow_normal_conversion = yes
 	lock_level_when_selected = yes
 	potential = {
 		OR = {
-			have_had_reform = vijayanagar_empire_reform
+			have_had_reform = karnataka_samrajya_reform
 			is_or_was_tag = { tag = VIJ }
 		}
 	}
 	trigger = {
 		OR = {
-			have_had_reform = vijayanagar_empire_reform
+			have_had_reform = karnataka_samrajya_reform
 			is_or_was_tag = { tag = VIJ }
 		}
 	}
