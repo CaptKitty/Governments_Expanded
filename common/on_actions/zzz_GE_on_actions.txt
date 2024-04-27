@@ -461,6 +461,15 @@ on_new_monarch = {
 		reform_me_events.223
 	}
 	if = {
+		limit = {
+			OR = {
+				has_government_mechanic = italian_dinasties_mechanic
+				has_government_mechanic = sicilian_kingdom_mechanic
+			}
+		}
+		GE_calculate_dinastic_power = yes
+	}
+	if = {
 		limit = { has_reform = karnataka_samrajya_reform }
 		country_event = { id = GE_Deccan_Reforms_Events.1 days = 30 random = 15 }
 	}
