@@ -100,6 +100,16 @@ commercial_enterprise = {
 		modifier = imperial_grace_mechanic_colony_modifier
 	}
 }
+trade_protectorate = {
+	modifier_overlord = {
+		trigger = {
+			FROM = {
+				has_government_mechanic = imperial_grace_mechanic
+			}
+		}
+		modifier = imperial_grace_mechanic_colony_modifier
+	}
+}
 
 # SE:
 puppet_state = {
