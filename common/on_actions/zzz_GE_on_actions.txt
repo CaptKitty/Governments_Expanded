@@ -516,8 +516,11 @@ on_alliance_broken ={
 }
 
 on_mercenary_recruited = {
-	events = {
-		reform_me_events.229
+	FROM = {
+		country_event = { 
+			id = reform_me_events.229
+			days = 1
+		}
 	}
 }
 

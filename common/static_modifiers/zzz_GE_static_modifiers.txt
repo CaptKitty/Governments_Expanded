@@ -7,6 +7,7 @@ rajput_regiment = {
 ruler_adm = {
 	monthly_council_consensus = 0.1
 	monthly_egyptian_westernization = 0.05
+	monthly_divine_authority = 0.01
 	# GE:
 	monthly_bureaucracy_vs_military_power = -0.05
 	monthly_political_focus_power = 0.084
@@ -18,6 +19,8 @@ ruler_adm = {
 ruler_dip = {
 	monthly_council_consensus = 0.1
 	monthly_egyptian_westernization = 0.05
+	monthly_arabic_trade_influence_power = 0.05
+	monthly_divine_authority = 0.01
 	# GE:
 	monthly_political_focus_power = 0.084
 	monthly_vijayanagar_empire = 0.025
@@ -26,6 +29,7 @@ ruler_dip = {
 ruler_mil = {
 	monthly_council_consensus = 0.1
 	monthly_egyptian_westernization = 0.05
+	monthly_divine_authority = 0.01
 	# GE:
 	monthly_bureaucracy_vs_military_power = 0.05
 	monthly_political_focus_power = 0.084
@@ -36,6 +40,9 @@ ruler_mil = {
 war = {
 	monthly_militarized_society = 0.1
 	rr_girondists_influence = 0.15
+	monthly_arabic_trade_influence_power = -0.5
+	monthly_blood = 0.3
+	monthly_authority_power = -0.05
 	# GE:
 	monthly_bureaucracy_vs_military_power = 0.05
 	monthly_imperial_grace_power = -0.1
@@ -81,6 +88,8 @@ corruption = {
 	monthly_heir_claim_increase = 0.025
 	monthly_russian_modernization = -1
 	monthly_ottoman_decadence = 10
+	monthly_arabic_trade_influence_power = -0.5
+	monthly_authority_power = 0.5
 	# GE:
 	monthly_corruption_mechanic_power = 1
 	monthly_imperial_grace_power = -1
@@ -103,6 +112,7 @@ over_governing_capacity_modifier = {
 	monthly_prussian_militarized_society_3 = -1
 	administrative_efficiency = -0.5
 	monthly_ottoman_decadence = 2
+	monthly_authority_power = 0.5
 	# GE:
 	monthly_imperial_grace_power = -1
 }
@@ -121,6 +131,7 @@ positive_stability = {
 	global_institution_spread = 0.05
 	yearly_harmony = 0.25
 	monthly_ottoman_decadence = -0.05
+	monthly_authority_power = -0.01
 	# GE:
 	monthly_imperial_grace_power = 0.084
 }
@@ -135,6 +146,7 @@ negative_stability = {
 	yearly_harmony = 0.25
 	monthly_russian_modernization = 0.03
 	monthly_ottoman_decadence = -0.15
+	monthly_authority_power = 0.05
 	# GE:
 	monthly_imperial_grace_power = 0.5
 }
@@ -171,8 +183,11 @@ prestige = {
 	monthly_heir_claim_increase = 0.05
 
 	monthly_persian_influence = 0.25
+	monthly_divine_authority = 0.1
+	monthly_authority_power = -0.2
 
 	all_estate_loyalty_equilibrium = 0.05
+	
 
 	# GE:
 	monthly_italian_dinasties = 0.25
@@ -189,6 +204,8 @@ legitimacy = {
 	monthly_militarized_society = 0.05
 	max_absolutism = 20
 	nobles_loyalty_modifier = 0.1
+	monthly_cultural_unity = 0.2
+	monthly_divine_authority = 0.3
 
 	# GE:
 	monthly_italian_dinasties = 0.50
