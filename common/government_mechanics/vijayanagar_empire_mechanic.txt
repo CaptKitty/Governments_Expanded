@@ -26,7 +26,6 @@ vijayanagar_empire_mechanic = {
 					all_estate_influence_modifier = -0.05
 					diplomatic_reputation = 1
 					max_absolutism = 15
-					monarch_power_tribute = 1
 				}
 			}
 		}

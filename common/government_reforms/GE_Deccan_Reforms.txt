@@ -58,22 +58,8 @@ karnataka_samrajya_reform = {
 			}
 		}
 	}
-	conditional = {
-		allow = { 
-			has_dlc = "Mandate of Heaven"
-		}
-		custom_attributes = {
-			has_tributaries = yes
-			enables_land_revenue = yes
-		}
-	}
-	conditional = {
-		allow = {
-			NOT = { has_dlc = "Mandate of Heaven" }
-		}
-		custom_attributes = {
-			enables_land_revenue = yes
-		}
+	custom_attributes = {
+		enables_land_revenue = yes
 	}
 }
 
