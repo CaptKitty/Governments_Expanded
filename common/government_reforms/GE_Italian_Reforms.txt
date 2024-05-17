@@ -1482,8 +1482,8 @@ berberi_mantovani_reform = {
 		}
 	}
 	modifiers = {
-		cav_to_inf_ratio = 0.15
-		cavalry_flanking = 0.35
+		cav_to_inf_ratio = 0.10
+		cavalry_flanking = 0.50
 	}
 	custom_attributes = {
 		enables_ordine_cordone_giallo = yes #+5% CCA and 1 PI for each 2 ToTf over 4
