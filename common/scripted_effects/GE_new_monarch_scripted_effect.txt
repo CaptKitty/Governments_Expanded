@@ -1,0 +1,62 @@
+ge_calculate_clerical_administration_set = {
+	if = {
+		limit = { ADM = 6 }
+		random = {
+			chance = 30
+			add_ruler_modifier = {
+				name = ge_clerical_administration
+				duration = -1
+			}
+		}
+	}
+	else_if = {
+		limit = { ADM = 5 }
+		random = {
+			chance = 25
+			add_ruler_modifier = {
+				name = ge_clerical_administration
+				duration = -1
+			}
+		}
+	}
+	else_if = {
+		limit = { ADM = 4 }
+		random = {
+			chance = 20
+			add_ruler_modifier = {
+				name = ge_clerical_administration
+				duration = -1
+			}
+		}
+	}
+	else_if = {
+		limit = { ADM = 3 }
+		random = {
+			chance = 15
+			add_ruler_modifier = {
+				name = ge_clerical_administration
+				duration = -1
+			}
+		}
+	}
+	else_if = {
+		limit = { ADM = 2 }
+		random = {
+			chance = 10
+			add_ruler_modifier = {
+				name = ge_clerical_administration
+				duration = -1
+			}
+		}
+	}
+	else_if = {
+		limit = { ADM = 1 }
+		random = {
+			chance = 5
+			add_ruler_modifier = {
+				name = ge_clerical_administration
+				duration = -1
+			}
+		}
+	}
+}

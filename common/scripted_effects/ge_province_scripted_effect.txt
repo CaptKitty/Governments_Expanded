@@ -807,3 +807,51 @@ ge_maritime_republic_set = {
 		}
 	}
 }
+
+ge_clan_system_province_update = {
+	if = {
+		limit = {
+			owner = { has_government_attribute = enable_clan_system }
+			culture_group = ROOT
+		}
+		add_province_modifier = {
+			name = ge_clan_system
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = ge_clan_system
+	}
+}
+
+ge_bridge_between_worlds_update = {
+	if = {
+		limit = {
+			owner = { has_government_attribute = enable_bridge_between_worlds }
+			has_owner_accepted_culture = yes
+		}
+		add_province_modifier = {
+			name = ge_bridge_between_worlds
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = ge_bridge_between_worlds
+	}
+}
+
+ge_sculptures_and_shells_update = {
+	if = {
+		limit = {
+			owner = { has_government_attribute = enable_sculpture_and_shells }
+			has_terrain = coastline
+		}
+		add_province_modifier = {
+			name = ge_sculptures_and_shells
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = ge_sculptures_and_shells
+	}
+}

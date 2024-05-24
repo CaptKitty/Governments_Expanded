@@ -306,6 +306,9 @@ on_province_owner_change = {
 	ge_monastic_temples_province_update = yes
 	ge_customs_house_province_update = yes
 	ge_moutain_warfare_province_update = yes
+	ge_clan_system_province_update = yes
+	ge_bridge_between_worlds_update = yes
+	ge_sculptures_and_shells_update = yes
 }
 
 on_trade_good_changed = {
@@ -346,6 +349,8 @@ on_culture_promoted = {
 	every_owned_province = { ge_nations_of_the_republic_province_update = yes }
 	every_owned_province = { ge_millet_system_province_update = yes }
 	every_owned_province = { ge_huaca_cults_province_update = yes }
+	every_owned_province = { ge_clan_system_province_update = yes }
+	every_owned_province = { ge_bridge_between_worlds_update = yes }
 	ge_country_unite_the_malay_update = yes
 	events = {
 		reform_me_events.212
@@ -358,6 +363,8 @@ on_culture_demoted = {
 	every_owned_province = { ge_nations_of_the_republic_province_update = yes }
 	every_owned_province = { ge_millet_system_province_update = yes }
 	every_owned_province = { ge_huaca_cults_province_update = yes }
+	every_owned_province = { ge_clan_system_province_update = yes }
+	every_owned_province = { ge_bridge_between_worlds_update = yes }
 	ge_country_unite_the_malay_update = yes
 	events = {
 		reform_me_events.212
@@ -372,6 +379,8 @@ on_primary_culture_changed = {
 	every_owned_province = { ge_cultural_supremacy_province_update = yes }
 	every_owned_province = { ge_millet_system_province_update = yes }
 	every_owned_province = { ge_huaca_cults_province_update = yes }
+	every_owned_province = { ge_clan_system_province_update = yes }
+	every_owned_province = { ge_bridge_between_worlds_update = yes }
 	ge_country_unite_the_malay_update = yes
 }
 
@@ -468,6 +477,12 @@ on_new_monarch = {
 			}
 		}
 		GE_calculate_dinastic_power = yes
+	}
+	if = {
+		limit = {
+			has_government_attribute = enable_clerical_administration
+		}
+		ge_calculate_clerical_administration_set = yes
 	}
 }
 
