@@ -1,0 +1,45 @@
+﻿l_french:
+# T2 
+ kaj_reform: "K'aj"
+ kaj_reform_desc: "The integration of Nahuatl-speaking warlords, who conquered our people eight centuries ago, brought a significant shift to K'iche' society. Their descendants rose to prominence, shaping our noble class and leading in governance and warfare. Embracing their dual role as rulers and military commanders, they fused Maya wisdom with Mexica martial traditions, fostering a unique tradition of discipline and valour. Under their guidance, K'iche' warriors became renowned for their prowess on the battlefield, defending against external threats and guiding our people through times of prosperity and adversity."
+ sajtaj_u_yajawil_k_oxelil_u_k_iche_reform: "Sajtaj u yajawil k'oxelil u K'iche"
+ sajtaj_u_yajawil_k_oxelil_u_k_iche_reform_desc: "With a heritage stretching back millennia, our people have safeguarded the southern realms of Mesoamerica, driven by a mission to disseminate Maya culture's values and traditions. In the northern expanses, their efforts at colonization bore fruit, as they shared expertise in agriculture, architecture, and spirituality with neighboring societies. Yet, these strides were tainted by external forces like the Aztecs, who sought to exploit Maya teachings for their gain. These encounters taught valuable lessons about cultural preservation and the sanctity of faith, society, and architecture. Rather than repeat past errors, our people approach southern expansion with prudence and foresight, mindful of the complexities ahead. They march into uncharted territories, steadfast in their quest to spread enlightenment, thus honoring their ancestors' legacy and illuminating the path for a future where enlightenment reigns supreme."
+
+# T3
+ nimajay_pa_winaq_reform: "Nimajay Pa Winaq"
+ nimajay_pa_winaq_reform_desc: "Central to our existence were the clans, known as "ajawil." Each clan resembled a resilient tree in the forest, its roots deeply entwined in the soil of ancestral bonds. Families within these clans traced their lineage to legendary ancestors, whose tales echoed around hearth fires, shaping our collective narrative. Guiding us were wise elders, their faces etched with time, serving as custodians of tradition and mediators of disputes. Together, the clans cultivated the land, shared its bounty, and defended their territories, which held the echoes of ancestral whispers in every rustling leaf. Marriages between clans forged alliances, celebrated through vibrant feasts and ceremonies that united destinies. Amidst life's rhythms, rituals honored ancestors, invoking their blessings for the journey ahead."
+
+# T4
+ imajtz_ib_aj_k_iche_reform: "Imajtz'ib'aj K'iche"
+ imajtz_ib_aj_k_iche_reform_desc: "Amidst the hushed whispers of ancient scrolls and the gentle rustle of parchment, our society held a profound reverence for the written word, a legacy meticulously woven by the priesthood into the very fabric of our existence. Guided by the sagacity of the priests, literacy became a sacred obligation, a pathway towards enlightenment and comprehension. In a realm where myths and legends echoed through every stone and shadow, the ability to read and write in our native tongue was both an honor and a duty. Under the guidance of the priesthood, schools and academies flourished, their halls vibrant with the flickering light of knowledge. From the lowliest farmer to the most esteemed warrior, all were urged to grasp the quill and parchment, to explore the depths of written wisdom and unlock the secrets of bygone eras. Championing literacy was not merely a matter of practicality for the priesthood; it was a means of preserving our cultural heritage, safeguarding our sacred texts. Foremost among these was the Popol Vuh, a repository of ancient wisdom and myth that resonated deeply with our people's essence. Thus, armed with pen and fueled by curiosity, they delved into its pages, seeking solace and inspiration within its timeless truths. In a realm where illiteracy prevailed, our kingdom stood as a beacon of enlightenment, a testament to the transformative power of education and the enduring legacy of the written word. "
+
+# T5
+ xolon_maj_reform: "Xolon Maj"
+ xolon_maj_reform_desc: "In a realm dominated by stone and obsidian, the Mayans people unlocked the mysteries of metallurgy, harnessing fire and forge to transform raw ores into shimmering treasures of copper and its alloys. With deft hands and sharp minds, they ushered in an era of innovation, crafting weapons and tools far superior to their ancestors' stone and obsidian implements. From their molten furnaces emerged an impressive array of weaponry and equipment, each a testament to their skill and artistry. Copper alloys, infused with the essence of earth and fire, were shaped into hammers, axes, swords, daggers, arrowheads, and spearheads - instruments of both war and labor. Yet, their mastery extended beyond the battlefield. In the fields, copper ploughs turned the soil effortlessly, yielding bountiful harvests and fostering prosperity. In the kitchens, copper cookware conducted heat with precision, elevating humble ingredients to regal feasts. With each hammer blow and flicker of flame, the Mayans forged a new destiny, shaping their future with the strength of metal and the brilliance of innovation. "
+
+# T6
+ nexik_xoloj_reform: "Nexik Xoloj"
+ nexik_xoloj_reform_desc: "Fluent in both Maya and Mexica tongues, the Mayans traders possessed a rare linguistic prowess, serving as invaluable intermediaries between the two civilizations. Across the diverse landscapes of Mesoamerica, from lush jungles to rugged highlands, they traversed vast distances, facilitating trade and cultural exchange. Beyond mere commerce, their role transcended to that of mediators and peacemakers in borderlands fraught with tension. With insights drawn from both Maya and Mexica cultures, they navigated complex disputes with grace and diplomacy, earning widespread trust and respect for their sage counsel."
+
+# T8
+ tajkaj_tojchaj_reform: "Tajkaj Tojchaj"
+ tajkaj_tojchaj_reform_desc: "In the coastal realms of our civilization, the Mayans people masterfully blend metallurgy, sculpture, and the allure of pearls and shells, fashioning an unparalleled tapestry of artistry and elegance. With tools honed by generations of craftsmanship, they sculpt intricate marvels from tough stones, each stroke of their chisels breathing life into divine beings and legendary heroes. Yet, their mastery extends beyond stone - gathering nature's treasures, they fashion jewellery of unmatched beauty, radiating with the iridescence of pearls and the shimmer of shells, adorning themselves and their sacred rituals with the splendor of the natural world. As embodiments of art and nature's harmony, they carry forth the legacy of their ancestors - artisans and craftsmen whose spirit lives on in every masterpiece crafted and every pearl adorned."
+
+# Mechanic
+ mechanic_enable_clan_system_yes: "Clan System: §G-5.0%§! Development Cost, §G+0.5§! Prosperity Growth, §G-0.10§! Recruitment Time in §!Culture Group Provinces§!"
+ mechanic_enable_clerical_administration_yes: "Clerical Administration: Ruler have a chance to gain §G-5.0%§! Tech Cost"
+ mechanic_enable_bridge_between_worlds_yes: "§G+25.0%§! Trade Power in provinces of §!Accepted Culture§!"
+ mechanic_enable_sculpture_and_shells_yes: "§G-10.0%§! Build Cost and §G-10.0%§! Build Time in provinces with §YCoastline§! Terrain"
+
+# Modifiers
+ ge_clan_system: "Clan System"
+ desc_ge_clan_system: ""
+
+ ge_clerical_administration: "Clerical Administration"
+ desc_ge_clerical_administration: ""
+
+ ge_bridge_between_worlds: "Bridge Between the Worlds"
+ desc_ge_bridge_between_worlds: ""
+
+ ge_sculptures_and_shells: "Sculputers and Shells"
+ desc_ge_sculptures_and_shells: ""
