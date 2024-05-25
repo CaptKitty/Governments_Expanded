@@ -1,0 +1,256 @@
+# T2
+kaj_reform = {
+	icon = kaj_reform_icon
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			have_had_reform = kaj_reform
+			culture_group = maya
+			religion = mesoamerican_religion
+		}
+	}
+	trigger = {
+		OR = {
+			have_had_reform = kaj_reform
+			culture_group = maya
+			religion = mesoamerican_religion
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+	modifiers = {
+		advisor_pool = 1
+		general_cost = -0.10
+		nobles_influence_modifier = 0.05
+		nobles_loyalty_modifier = 0.10
+	}
+}
+sajtaj_u_yajawil_k_oxelil_u_k_iche_reform = {
+	icon = sajtaj_u_yajawil_k_oxelil_u_k_iche_reform_icon
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			have_had_reform = sajtaj_u_yajawil_k_oxelil_u_k_iche_reform
+			culture_group = maya
+			religion = mesoamerican_religion
+		}
+	}
+	trigger = {
+		OR = {
+			have_had_reform = sajtaj_u_yajawil_k_oxelil_u_k_iche_reform
+			culture_group = maya
+			religion = mesoamerican_religion
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+	modifiers = {
+		ae_impact = -0.10
+		reform_progress_growth = 0.10
+	}
+}
+
+# T3
+nimajay_pa_winaq_reform = {
+	icon = nimajay_pa_winaq_reform_icon
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			have_had_reform = nimajay_pa_winaq_reform
+			culture_group = maya
+			religion = mesoamerican_religion
+		}
+	}
+	trigger = {
+		OR = {
+			have_had_reform = nimajay_pa_winaq_reform
+			culture_group = maya
+			religion = mesoamerican_religion
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+	modifiers = {
+		advisor_cost = -0.10
+		all_estate_influence_modifier = 0.05
+		manpower_in_accepted_culture_provinces = 0.10
+	}
+	custom_attributes = {
+		enable_clan_system = yes # -0.05 Development Cost, +0.5 Prosperity Growth, -0.10 Recruitment Time in Culture Group
+	}
+	effect = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = { culture_group = ROOT }
+				add_province_modifier = {
+					name = ge_clan_system
+					duration = -1
+				}
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				remove_province_modifier = ge_clan_system
+			}
+		}
+	}
+}
+
+# T4
+imajtz_ib_aj_k_iche_reform = {
+	icon = imajtz_ib_aj_k_iche_reform_icon
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			have_had_reform = imajtz_ib_aj_k_iche_reform
+			culture_group = maya
+			religion = mesoamerican_religion
+		}
+	}
+	trigger = {
+		OR = {
+			have_had_reform = imajtz_ib_aj_k_iche_reform
+			culture_group = maya
+			religion = mesoamerican_religion
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+	modifiers = {
+		church_influence_modifier = 0.10
+		church_loyalty_modifier = 0.05
+		idea_cost = -0.05
+		tolerance_own = 1
+	}
+	custom_attributes = {
+		enable_clerical_administration = yes # Rulers have a 5% chance (per admin level) to gain -5% Tech Cost until their death
+	}
+	effect = {
+		hidden_effect = {
+			ge_calculate_clerical_administration_set = yes
+		}
+	}
+	removed_effect = {
+		hidden_effect = { remove_country_modifier = ge_clerical_administration }
+	}
+}
+
+# T5
+xolon_maj_reform = {
+	icon = xolon_maj_reform_icon
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			have_had_reform = xolon_maj_reform
+			culture_group = maya
+			religion = mesoamerican_religion
+		}
+	}
+	trigger = {
+		OR = {
+			have_had_reform = xolon_maj_reform
+			culture_group = maya
+			religion = mesoamerican_religion
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+	modifiers = {
+		infantry_cost = -0.10
+		infantry_power = 0.10
+		manpower_in_own_culture_provinces = 0.15
+	}
+}
+
+# T6
+nexik_xoloj_reform = {
+	icon = nexik_xoloj_reform_icon
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			have_had_reform = nexik_xoloj_reform
+			culture_group = maya
+			religion = mesoamerican_religion
+		}
+	}
+	trigger = {
+		OR = {
+			have_had_reform = nexik_xoloj_reform
+			culture_group = maya
+			religion = mesoamerican_religion
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+	modifiers = {
+		diplomatic_reputation = 1
+		num_accepted_cultures = 1
+	}
+	custom_attributes = {
+		enable_bridge_between_worlds = yes # Accepted Culture Provinces' Trade Power: 0.25
+	}
+	effect = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = { has_owner_accepted_culture = yes }
+				add_province_modifier = {
+					name = ge_bridge_between_worlds
+					duration = -1
+				}
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = { remove_province_modifier = ge_bridge_between_worlds }
+		}
+	}
+}
+
+# T8
+tajkaj_tojchaj_reform = {
+	icon = tajkaj_tojchaj_reform_icon
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			have_had_reform = tajkaj_tojchaj_reform
+			culture_group = maya
+			religion = mesoamerican_religion
+		}
+	}
+	trigger = {
+		OR = {
+			have_had_reform = tajkaj_tojchaj_reform
+			culture_group = maya
+			religion = mesoamerican_religion
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+	modifiers = {
+		build_time = -0.15
+		great_project_upgrade_cost = -0.10
+		great_project_upgrade_time = -0.10
+	}
+	custom_attributes = {
+		enable_sculpture_and_shells = yes # Coastal Provinces': Build Cost: -0.10, Build Time: -0.10
+	}
+	effect = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = { has_port = yes }
+				add_province_modifier = {
+					name = ge_sculptures_and_shells
+					duration = -1
+				}
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = { remove_province_modifier = ge_sculptures_and_shells }
+		}
+	}
+}

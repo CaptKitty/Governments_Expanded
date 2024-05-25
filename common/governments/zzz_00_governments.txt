@@ -346,6 +346,8 @@ monarchy = {
 				slave_farmer_reform
 				carriers_of_the_quiver_reform
 				generic_nobles_priests_reform
+				kaj_reform
+				sajtaj_u_yajawil_k_oxelil_u_k_iche_reform
 				# ME Reforms:
 				incan_society_reform
 				aztec_society_reform
@@ -453,6 +455,7 @@ monarchy = {
 				farba_system_reform
 				inca_mountain_farms
 				renaissance_forts_reform
+				nimajay_pa_winaq_reform
 				# ME Reforms:
 				tur_reform_beylerbeys
 				tur_reform_eyalets
@@ -502,6 +505,8 @@ monarchy = {
 				#1.36
 				legacy_of_the_safavid_reform
 				state_madrasas_reform
+				# GE Reforms
+				imajtz_ib_aj_k_iche_reform
 				#ME Reforms
 				ME_enlist_the_help_of_sufi_orders
 				ME_enlist_the_help_of_sufi_orders_ADU
@@ -644,6 +649,7 @@ monarchy = {
 				alpini_reform
 				fonderie_ferraresi_reform
 				fanti_da_mar_reform
+				xolon_maj_reform
 			}
 		}
 		deliberative_assembly = {
@@ -709,6 +715,8 @@ monarchy = {
 				diamond_of_the_earth_reform
 				secure_the_succession_reform
 				gbara_reform
+				#GE Reforms:
+				nexik_xoloj_reform
 				#ME Reforms:
 				me_hindu_administration
 			}
@@ -840,6 +848,7 @@ monarchy = {
 				customs_duties_reform
 				maritime_republic_reform
 				tamil_trade_guilds_reform
+				tajkaj_tojchaj_reform
 			}
 		}
 		legitimation_of_power = {

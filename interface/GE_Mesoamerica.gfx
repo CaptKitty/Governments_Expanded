@@ -1,0 +1,41 @@
+spriteTypes = {
+# Aztec
+	# Tier 1
+# Maya
+	# Tier 2
+		spriteType = {
+			name = "government_reform_kaj_reform_icon"
+			texturefile = "gfx//interface//government_reform_icons//kaj_reform_icon.dds"
+		}
+		spriteType = {
+			name = "government_reform_sajtaj_u_yajawil_k_oxelil_u_k_iche_reform_icon"
+			texturefile = "gfx//interface//government_reform_icons//sajtaj_u_yajawil_k_oxelil_u_k_iche_reform_icon.dds"
+		}
+	# Tier 3
+		spriteType = {
+			name = "government_reform_nimajay_pa_winaq_reform_icon"
+			texturefile = "gfx//interface//government_reform_icons//nimajay_pa_winaq_reform_icon.dds"
+		}
+	# Tier 4
+		spriteType = {
+			name = "government_reform_imajtz_ib_aj_k_iche_reform_icon"
+			texturefile = "gfx//interface//government_reform_icons//imajtz_ib_aj_k_iche_reform_icon.dds"
+		}
+	# Tier 5
+		spriteType = {
+			name = "government_reform_xolon_maj_reform_icon"
+			texturefile = "gfx//interface//government_reform_icons//xolon_maj_reform_icon.dds"
+		}
+	# Tier 6
+		spriteType = {
+			name = "government_reform_nexik_xoloj_reform_icon"
+			texturefile = "gfx//interface//government_reform_icons//nexik_xoloj_reform_icon.dds"
+		}
+	# Tier 8
+		spriteType = {
+			name = "government_reform_tajkaj_tojchaj_reform_icon"
+			texturefile = "gfx//interface//government_reform_icons//tajkaj_tojchaj_reform_icon.dds"
+		}
+# Inca
+	# Tier 1
+}

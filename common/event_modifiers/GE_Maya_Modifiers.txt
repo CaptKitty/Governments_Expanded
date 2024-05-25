@@ -1,0 +1,12 @@
+ge_clan_system = {
+	local_development_cost = -0.05
+	local_prosperity_growth = 0.5
+	regiment_recruit_speed = -0.10
+}
+ge_bridge_between_worlds = {
+	province_trade_power_modifier = 0.25
+}
+ge_sculptures_and_shells = {
+	local_build_cost = -0.10
+	local_build_time = -0.10
+}
