@@ -1,6 +1,6 @@
 # T2
 kaj_reform = {
-	icon = nayankara_system
+	icon = kaj_reform_icon
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -26,7 +26,7 @@ kaj_reform = {
 	}
 }
 sajtaj_u_yajawil_k_oxelil_u_k_iche_reform = {
-	icon = nayankara_system
+	icon = sajtaj_u_yajawil_k_oxelil_u_k_iche_reform_icon
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -52,7 +52,7 @@ sajtaj_u_yajawil_k_oxelil_u_k_iche_reform = {
 
 # T3
 nimajay_pa_winaq_reform = {
-	icon = nayankara_system
+	icon = nimajay_pa_winaq_reform_icon
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -100,7 +100,7 @@ nimajay_pa_winaq_reform = {
 
 # T4
 imajtz_ib_aj_k_iche_reform = {
-	icon = nayankara_system
+	icon = imajtz_ib_aj_k_iche_reform_icon
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -131,7 +131,7 @@ imajtz_ib_aj_k_iche_reform = {
 
 # T5
 xolon_maj_reform = {
-	icon = nayankara_system
+	icon = xolon_maj_reform_icon
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -152,12 +152,13 @@ xolon_maj_reform = {
 	modifiers = {
 		infantry_cost = -0.10
 		infantry_power = 0.10
+		manpower_in_own_culture_provinces = 0.15
 	}
 }
 
 # T6
 nexik_xoloj_reform = {
-	icon = nayankara_system
+	icon = nexik_xoloj_reform_icon
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -202,7 +203,7 @@ nexik_xoloj_reform = {
 
 # T8
 tajkaj_tojchaj_reform = {
-	icon = nayankara_system
+	icon = tajkaj_tojchaj_reform_icon
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
