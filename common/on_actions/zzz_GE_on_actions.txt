@@ -342,6 +342,8 @@ on_province_culture_changed = {
 	ge_millet_system_province_update = yes
 	ge_devshirme_province_update = yes
 	ge_huaca_cults_province_update = yes
+	ge_bridge_between_worlds_update = yes
+	ge_clan_system_province_update = yes
 }
 
 on_culture_promoted = {
@@ -349,7 +351,6 @@ on_culture_promoted = {
 	every_owned_province = { ge_nations_of_the_republic_province_update = yes }
 	every_owned_province = { ge_millet_system_province_update = yes }
 	every_owned_province = { ge_huaca_cults_province_update = yes }
-	every_owned_province = { ge_clan_system_province_update = yes }
 	every_owned_province = { ge_bridge_between_worlds_update = yes }
 	ge_country_unite_the_malay_update = yes
 	events = {
@@ -363,7 +364,6 @@ on_culture_demoted = {
 	every_owned_province = { ge_nations_of_the_republic_province_update = yes }
 	every_owned_province = { ge_millet_system_province_update = yes }
 	every_owned_province = { ge_huaca_cults_province_update = yes }
-	every_owned_province = { ge_clan_system_province_update = yes }
 	every_owned_province = { ge_bridge_between_worlds_update = yes }
 	ge_country_unite_the_malay_update = yes
 	events = {
@@ -578,4 +578,5 @@ on_annexed = {
 			id = reform_me_events.236
 			days = 1
 		}
+	}
 }
