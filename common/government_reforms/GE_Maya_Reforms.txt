@@ -127,6 +127,14 @@ imajtz_ib_aj_k_iche_reform = {
 	custom_attributes = {
 		enable_clerical_administration = yes # Rulers have a 5% chance (per admin level) to gain -5% Tech Cost until their death
 	}
+	effect = {
+		hidden_effect = {
+			ge_calculate_clerical_administration_set = yes
+		}
+	}
+	removed_effect = {
+		hidden_effect = { remove_country_modifier = ge_clerical_administration }
+	}
 }
 
 # T5
