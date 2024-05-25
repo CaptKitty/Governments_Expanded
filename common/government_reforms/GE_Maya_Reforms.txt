@@ -240,7 +240,7 @@ tajkaj_tojchaj_reform = {
 	effect = {
 		hidden_effect = {
 			every_owned_province = {
-				limit = { has_terrain = coastline }
+				limit = { has_port = yes }
 				add_province_modifier = {
 					name = ge_sculptures_and_shells
 					duration = -1

@@ -812,7 +812,7 @@ ge_clan_system_province_update = {
 	if = {
 		limit = {
 			owner = { has_government_attribute = enable_clan_system }
-			culture_group = ROOT
+			culture_group = owner
 		}
 		add_province_modifier = {
 			name = ge_clan_system
@@ -844,7 +844,7 @@ ge_sculptures_and_shells_update = {
 	if = {
 		limit = {
 			owner = { has_government_attribute = enable_sculpture_and_shells }
-			has_terrain = coastline
+			has_port = yes
 		}
 		add_province_modifier = {
 			name = ge_sculptures_and_shells
