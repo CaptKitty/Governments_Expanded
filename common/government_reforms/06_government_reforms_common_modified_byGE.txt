@@ -11,6 +11,8 @@ parliamentary_reform = {
 			OR = {
 				tag = BYZ
 				was_tag = BYZ 
+			}
+		}
 	}
 	effect = {
 		change_variable = {
