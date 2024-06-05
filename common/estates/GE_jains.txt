@@ -1,0 +1,5 @@
+estate_jains = {
+	privileges = {
+		estate_jain_basadis_patronage
+	}
+}

@@ -3,7 +3,22 @@
  karnataka_samrajya_reform: "Karnataka Samrajya"
  karnataka_samrajya_reform_desc: ""
 
-# Tier 5
+ coral_kingdom_reform: "Coral Kingdom"
+ coral_kingdom_reform_desc: ""
+
+# Tier 2
+ patronage_jain_temples_reform: "Patronage of Jain Temples"
+ patronage_jain_temples_reform_desc: "In the vibrant canvas of South Indian commerce, coastal Karnataka traders held sway, with their influence intricately entwined with the sanctity of Jaina basadis—a sacred haven for followers of Jainism. These basadis, standing as symbols of piety and prosperity, were pivotal in the bustling trade hubs of Barkur, Karkala, and Mudabidre. The inscriptions of Hoysala and Vijayanagara eras bear witness to a profound symbiosis between trade and the sacred, where the settis and settikara found both spiritual solace and communal unity within these hallowed bastions. The state's patronage to Jaina basadis, far from mere benevolence, was a strategic alliance aimed at fortifying the sinews of commerce by nurturing the spiritual essence of traders. The basadis, as conduits to the divine, became fulcrums elevating the trade reach of coastal Karnataka—a legacy where prosperity and spiritual fervor intertwined."
+
+# Tier
+ krsi_trivate_reform: "Krsi Tivrate"
+ krsi_trivate_reform_desc: "Since water was scarce in the rocky terrain in the Tungabhadra Valley, it had to be harnessed to its optimum use. Therefore, the state tried to control the irrigation techniques in the Vijayanagara metropolitan region and this was also important for the assertion of power and authority. The kings exploited the hydrological environment to its maximum advantage, irrigating agricultural land inside the city, directing water into urban areas for domestic use, and building an impressive system of baths and channels to service the Royal Centre."
+
+# Tier 8
+ lyand_rutargalalli_vyapara_reform: "Lyand Rutargalalli Vyapara"
+ lyand_rutargalalli_vyapara_reform_desc: "The Rayas prioritized internal land trade over ocean trade, striving to foster a vibrant commercial life within the empire. Accounts from foreign travelers, inscriptions, and literature illuminate a network of land routes linking vital cities. Seven highways radiated from the capital: the first to Goa via Bankapur, the second to Sri Rangapattanam via Sivasamudram, the third to Cochin and the Malabar regions, the fourth linking it to Dhanushkoti via Chandragiri, Tirupati, Kanchi, Chidambaram, Madurai, and Rameswaram. The fifth connected to Kondavidu via Udayagiri, the sixth to Raichur and other northern towns. Beyond these, cities were linked to key towns in the empire, fostering trade, commerce, and safeguarding merchants along these routes."
+ sagarottara_vyapara_reform: "Sagarotta Vyapara"
+ sagarottara_vyapara_reform_desc: "The western sea ports were categorized into three groups: Konkan group, Tulunadu group, and Malabar group. The Konkan group included ports like Mirjan, Honovar, Bhatkal, Basrur, Bakanur, Mangalore, and Kumbola. Meanwhile, the Malabar group comprised as many as 25 ports extending between Mount Delhi in the North and Cape Comorin in the South, with key seaports like Cannanore, Dharmapattanam, Calicut, Cochin, and Quilon. On the eastern coast, ports were divided into the Coromandel group and Telingana group. The Coromandel group featured ports such as Nagapatnam, Tirupamalai, Raja Patnam, Tranquebar, Portonova, Devanam Patnam, Mailapur, and Pulicat. In contrast, the Telingana group included only two ports: Motupalli and Masuli Patnam. These ports played a vital role in facilitating trade and commerce during this period, engaging in exchanges with Persian, Arabian, Southeast Asian countries, the Maldives, Ceylon, and Pegu. The import and export activities encompassed a wide array of goods required by the populace."
 
 # Events
  GE_Deccan_Reforms_Events.1.T: "Land Revenue"
@@ -13,9 +28,15 @@
  GE_Deccan_Reforms_Events.1.OPT3: "Acquire new levies from the Wetlands"
 
 # Privileges
+ estate_jain_basadis_patronage: "Basadis Patronage"
+ estate_jain_basadis_patronage_desc: ""
 
 # Mechanics
  mechanic_enables_land_revenue_yes: "§YLand Revenue§!: Every new monarch will decide further investments in capital's region."
+ mechanic_enables_coral_masons_yes: "§YCoral Mason§!: §G-10.0%§! Build Cost and §G-20.0%§! Development Cost in §MCoastal§! Provinces"
+ mechanic_enable_cistern_yes: "§YCisterns§!: §G-15.0%§! Development Cost in Provinces that border your capital's state"
+ mechanic_enable_inland_trade_yes: "§YInland Trade§!: §G+5§! Trade Power in §MInland Centers of Trade§!"
+ mechanic_enable_coastal_trade_yes: "§YCostal Trade§!: §G+5§! Trade Power in §MCoastal Centers of Trade§!"
 
 # Modifiers
  ge_vij_dryland: "Dryland"
@@ -24,9 +45,27 @@
  desc_ge_vij_woodland: ""
  ge_vij_wetland: "Wetland"
  desc_ge_vij_wetland: ""
+ ge_coral_mason: "Coral Mason"
+ desc_ge_coral_mason: ""
+
+ ge_basadis_patronage_modifier: "Basadis Patronage"
+ desc_ge_basadis_patronage_modifier: ""
+
+ ge_cistern_modifier: "Cistern"
+ desc_ge_cistern_modifier: ""
+
+ ge_coastal_trade_modifier: "Coastal Trade"
+ desc_ge_coastal_trade_modifier: ""
+ ge_inland_trade_modifier: "Inland Trade"
+ desc_ge_inland_trade_modifier: ""
 
 # Tooltips
  GE_VIJ_LAND_REVENUE_DRYLAND_TT: "Every Owned §YArid§! Province, in the §MSame Region§! of our §YCapital§! will gain the following effect:\n"
  GE_VIJ_LAND_REVENUE_WOODLAND_TT: "Every Owned §YWood§! or §YJungle§! Province, in the §MSame Region§! of our §YCapital§! will gain the following effect:\n"
  GE_VIJ_LAND_REVENUE_WETLAND_TT: "Every Owned §YFarmland§! or §YGreassland§! Province, in the §MSame Region§! of our §YCapital§! will gain the following effect:\n"
  ge_land_revenue_until_new: "Until New Land Revenue"
+
+
+ unlock_privilege_estate_jain_basadis_patronage_tt: "Unlock the [Root.GetJainsName] estate privilege '§YBasadis Patronage§!'"
+ estate_jain_basadis_patronage_gt: "Every owned province in the §Y[1948.GetName]§! Trade Node that has §MTax§! building gains the following bonus:"
+ estate_jain_basadis_patronage_rt: "The modifier '§YBasadis Patronage§!' is removed from all provinces in the §Y[1948.GetName]§! Trade Node that has §MTax§! building"

@@ -855,3 +855,71 @@ ge_sculptures_and_shells_update = {
 		remove_province_modifier = ge_sculptures_and_shells
 	}
 }
+
+ge_coral_mason_update = {
+	if = {
+		limit = {
+			owner = { has_government_attribute = enables_coral_masons }
+			has_port = yes
+		}
+		add_province_modifier = {
+			name = ge_coral_mason
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = ge_coral_mason
+	}
+}
+
+ge_cistern_update = {
+	if = {
+		limit = {
+			owner = { has_government_attribute = enable_cistern }
+			OR = {
+				any_neighbor_province = { is_capital_of = ROOT }
+				area_for_scope_province = { is_capital_of = ROOT }
+			}
+		}
+		add_province_modifier = {
+			name = ge_cistern_modifier
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = ge_cistern_modifier
+	}
+}
+
+ge_inland_trade_update = {
+	if = {
+		limit = {
+			owner = { has_government_attribute = enable_inland_trade }
+			NOT = { has_port = yes }
+			province_has_center_of_trade_of_level = 1
+		}
+		add_province_modifier = {
+			name = ge_inland_trade_modifier
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = ge_inland_trade_modifier
+	}
+}
+ge_coastal_trade_update = {
+	if = {
+		limit = {
+			owner = { has_government_attribute = enable_coastal_trade }
+			has_port = yes
+			province_has_center_of_trade_of_level = 1
+		}
+		add_province_modifier = {
+			name = ge_coastal_trade_modifier
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = ge_coastal_trade_modifier
+	}
+}

@@ -309,6 +309,10 @@ on_province_owner_change = {
 	ge_clan_system_province_update = yes
 	ge_bridge_between_worlds_update = yes
 	ge_sculptures_and_shells_update = yes
+	ge_coral_mason_update = yes
+	ge_cistern_update = yes
+	ge_inland_trade_update = yes
+	ge_coastal_trade_update = yes
 }
 
 on_trade_good_changed = {
@@ -582,4 +586,33 @@ on_annexed = {
 			id = reform_me_events.236
 			days = 1
 		}
+	}
+}
+
+on_center_of_trade_upgrade = {
+	ge_inland_trade_update = yes
+	ge_coastal_trade_update = yes
+}
+
+on_capital_moved = {
+	if = {
+        limit = {
+            owner = { has_government_attribute = enable_cistern }
+		}
+		every_owned_province = {
+			if = {
+				limit = {
+					OR = {
+						any_neighbor_province = { is_capital_of = ROOT }
+						area_for_scope_province = { is_capital_of = ROOT }
+					}
+				}
+				add_province_modifier = {
+					name = ge_cistern_modifier
+					duration = -1
+				}
+			}
+			else = { remove_province_modifier = ge_cistern_modifier }
+		}
+	}
 }
