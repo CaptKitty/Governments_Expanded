@@ -860,7 +860,7 @@ ge_coral_mason_update = {
 	if = {
 		limit = {
 			owner = { has_government_attribute = enables_coral_masons }
-			has_port = yes
+			has_terrain = coastline
 		}
 		add_province_modifier = {
 			name = ge_coral_mason

@@ -28,7 +28,7 @@ GE_initiate_starting_effects = {
 		if = {
 			limit = { has_government_attribute = enables_coral_masons }
 			every_owned_province = {
-				limit = { has_port = yes }
+				limit = { has_terrain = coastline }
 				add_province_modifier = {
 					name = ge_coral_mason
 					duration = -1

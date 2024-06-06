@@ -102,7 +102,7 @@ coral_kingdom_reform = {
 	effect = {
 		hidden_effect = {
 			every_owned_province = {
-				limit = { has_port = yes }
+				limit = { has_terrain = coastline }
 				add_province_modifier = {
 					name = ge_coral_mason
 					duration = -1
