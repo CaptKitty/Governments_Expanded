@@ -64,7 +64,7 @@ estate_vaisyas_tamil_guilds = {
 }
 
 estate_jain_basadis_patronage = {
-	icon = privilege_monopoly
+	icon = privilege_build_jain_temple
 	land_share = 0
 	max_absolutism = -5
 	loyalty = 0.05
@@ -72,11 +72,10 @@ estate_jain_basadis_patronage = {
 	is_valid = { has_reform = patronage_jain_temples_reform }
 	can_select = {
 		has_reform = patronage_jain_temples_reform
-		1948 = {
-			any_trade_node_member_province = {
-				owned_by = ROOT
-				has_tax_building_trigger = yes
-			}
+		any_owned_province = {
+			region = deccan_region
+			owned_by = ROOT
+			has_tax_building_trigger = yes
 		}
 	}
 	on_invalid = {
@@ -93,16 +92,15 @@ estate_jain_basadis_patronage = {
 		}
 	}
 	on_granted_province = {
-		1948 = {
-			every_trade_node_member_province = {
-				limit = {
-					has_tax_building_trigger = yes
-					owned_by = ROOT
-				}
-				add_province_modifier = {
-					name = ge_basadis_patronage_modifier
-					duration = -1
-				}
+		if = {
+			limit = {
+				region = deccan_region
+				has_tax_building_trigger = yes
+				owned_by = ROOT
+			}
+			add_province_modifier = {
+				name = ge_basadis_patronage_modifier
+				duration = -1
 			}
 		}
 	}
@@ -123,6 +121,76 @@ estate_jain_basadis_patronage = {
 	}
 	benefits = {
 		trade_efficiency = 0.05
+	}
+	conditional_modifier = { }
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_persian_weaving_industry = {
+	icon = privilege_monopoly_of_goods_cloth
+	land_share = 0
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		OR = {
+			culture_group = dravidian
+			culture_group = western_aryan
+			culture_group = hindusthani
+		}
+	}
+	can_select = {
+		any_owned_province = {
+			has_carpet_trade_goods = yes
+		}
+	}
+	on_invalid = {
+	}
+	penalties = {
+	}
+	on_granted = {
+		custom_tooltip = estate_persian_weaving_industry_gt
+		tooltip	= {
+			add_province_modifier = {
+				name = ge_persian_weaving_industry_modifier
+				duration = -1
+			}
+		}
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				has_carpet_trade_goods = yes
+			}
+			add_province_modifier = {
+				name = ge_persian_weaving_industry_modifier
+				duration = -1
+			}
+		}
+		else = {
+			remove_province_modifier = ge_persian_weaving_industry_modifier
+		}
+	}
+	on_invalid_province = {
+		if = {
+			limit = { has_province_modifier = ge_persian_weaving_industry_modifier }
+			remove_province_modifier = ge_persian_weaving_industry_modifier
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_persian_weaving_industry_rt
+	}
+	on_revoked_province = {
+		if = {
+			limit = { has_province_modifier = ge_persian_weaving_industry_modifier }
+			remove_province_modifier = ge_persian_weaving_industry_modifier
+		}
+	}
+	benefits = {
+		burghers_privilege_slots = 1
+		jains_privilege_slots = 1
 	}
 	conditional_modifier = { }
 	ai_will_do = {

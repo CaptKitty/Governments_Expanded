@@ -97,7 +97,8 @@ tamil_trade_guilds_reform = {
 	modifiers = {
 		production_efficiency = 0.10
 		trade_efficiency = 0.10
-		vaisyas_privilege_slots = 1
+		burghers_privilege_slots = 1
+		jains_privilege_slots = 1
 	}
 	effect = {
 		unlock_estate_privilege = {

@@ -26,7 +26,10 @@ GE_initiate_starting_effects = {
 			set_country_flag = ge_initial_setup_done
 		}
 		if = {
-			limit = { has_government_attribute = enables_coral_masons }
+			limit = {
+				has_government_attribute = enables_coral_masons
+				NOT = { has_country_flag = ge_initial_setup_done }
+			}
 			every_owned_province = {
 				limit = { has_terrain = coastline }
 				add_province_modifier = {

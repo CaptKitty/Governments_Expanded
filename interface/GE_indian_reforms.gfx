@@ -8,6 +8,15 @@ spriteTypes = {
 			texturefile = "gfx//interface//government_reform_icons//tamil_trade_guilds_reform_icon.dds"
 		}
 # Deccan
+	# Tier 1
+		spriteType = {
+			name = "government_reform_karnataka_samrajya_reform_icon"
+			texturefile = "gfx//interface//government_reform_icons//karnataka_samrajya_reform_icon.dds"
+		}
+		spriteType = {
+			name = "government_reform_coral_kingdom_reform_icon"
+			texturefile = "gfx//interface//government_reform_icons//coral_kingdom_reform_icon.dds"
+		}
 	# Tier 2
 		spriteType = {
 			name = "government_reform_patronage_jain_temples_reform_icon"

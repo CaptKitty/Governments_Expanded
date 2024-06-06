@@ -1,5 +1,0 @@
-estate_vaisyas = {
-	privileges = {
-		estate_vaisyas_tamil_guilds
-	}
-}

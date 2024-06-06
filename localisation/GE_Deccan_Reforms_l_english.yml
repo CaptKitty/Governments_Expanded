@@ -30,6 +30,8 @@
 # Privileges
  estate_jain_basadis_patronage: "Basadis Patronage"
  estate_jain_basadis_patronage_desc: ""
+ estate_persian_weaving_industry: "Persian Weaving Industry"
+ estate_persian_weaving_industry_desc: "An ancient form of Deccani art, introduced by Persian colonists during the Delhi Sultanate era, revolves around the craftsmanship of tapestries. This art form found particular favor among our nobility, with a penchant for the more extravagant creations. The Deccani carpet, adorned with gold, silver, precious gems, and the exquisite lapis lazuli, epitomized opulence. Unfortunately, this artistic legacy has all but vanished in the wake of the Bahmani Sultanate's fall, exacerbated by the reluctance of traders to venture deep into the unstable regions, raising the costs of goods. Now more than ever, these workshops depend on royal patronage to sustain this ancient and extravagant tradition."
 
 # Mechanics
  mechanic_enables_land_revenue_yes: "§YLand Revenue§!: Every new monarch will decide further investments in capital's region."
@@ -59,6 +61,9 @@
  ge_inland_trade_modifier: "Inland Trade"
  desc_ge_inland_trade_modifier: ""
 
+ ge_persian_weaving_industry_modifier: "Persian Weaving Industry"
+ desc_ge_persian_weaving_industry_modifier: ""
+
 # Tooltips
  GE_VIJ_LAND_REVENUE_DRYLAND_TT: "Every Owned §YArid§! Province, in the §MSame Region§! of our §YCapital§! will gain the following effect:\n"
  GE_VIJ_LAND_REVENUE_WOODLAND_TT: "Every Owned §YWood§! or §YJungle§! Province, in the §MSame Region§! of our §YCapital§! will gain the following effect:\n"
@@ -67,5 +72,9 @@
 
 
  unlock_privilege_estate_jain_basadis_patronage_tt: "Unlock the [Root.GetJainsName] estate privilege '§YBasadis Patronage§!'"
- estate_jain_basadis_patronage_gt: "Every owned province in the §Y[1948.GetName]§! Trade Node that has §MTax§! building gains the following bonus:"
- estate_jain_basadis_patronage_rt: "The modifier '§YBasadis Patronage§!' is removed from all provinces in the §Y[1948.GetName]§! Trade Node that has §MTax§! building"
+ estate_jain_basadis_patronage_gt: "Every owned province in the §YDeccan§! Region that has §MTax§! building gains the following bonus:"
+ estate_jain_basadis_patronage_rt: "The modifier '§YBasadis Patronage§!' is removed from all provinces in the §YDeccan§! Region that has §MTax§! building"
+
+
+ estate_persian_weaving_industry_gt: "Every owned §YCloth§!, §YSilk§!, §YWool§! or §YCarpet§! province gains the following bonus:"
+ estate_persian_weaving_industry_rt: "The modifier '§YPersian Weaving Industry§!' is removed from all eligible provinces."
