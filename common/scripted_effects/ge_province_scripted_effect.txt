@@ -876,9 +876,11 @@ ge_cistern_update = {
 	if = {
 		limit = {
 			owner = { has_government_attribute = enable_cistern }
-			OR = {
-				any_neighbor_province = { is_capital_of = ROOT }
-				area_for_scope_province = { is_capital_of = ROOT }
+			any_neighbor_province = {
+				OR = {
+					is_capital_of = ROOT
+					area_for_scope_province = { is_capital_of = ROOT }
+				}
 			}
 		}
 		add_province_modifier = {
