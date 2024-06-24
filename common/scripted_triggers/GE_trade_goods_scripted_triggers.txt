@@ -112,3 +112,13 @@ has_plantage_goods = {
 		trade_goods = chocolate
 	}
 }
+
+has_carpet_trade_goods = {
+	OR = {
+		trade_goods = cloth
+		trade_goods = silk
+		trade_goods = wool
+		#TGESTUFFS
+		trade_goods = carpet
+	}
+}

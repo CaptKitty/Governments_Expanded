@@ -1,0 +1,7 @@
+estate_jains = {
+	privileges = {
+		estate_jain_basadis_patronage
+		estate_vaisyas_tamil_guilds
+		estate_persian_weaving_industry
+	}
+}

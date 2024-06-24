@@ -9,5 +9,7 @@ estate_burghers = {
 		estate_burghers_saharan_outposts
 		estate_burghers_office_of_chancellor
 		estate_vaisyas_tamil_guilds
+		estate_jain_basadis_patronage
+		estate_persian_weaving_industry
 	}
 }

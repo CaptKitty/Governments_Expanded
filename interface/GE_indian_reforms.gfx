@@ -9,6 +9,34 @@ spriteTypes = {
 		}
 # Deccan
 	# Tier 1
+		spriteType = {
+			name = "government_reform_karnataka_samrajya_reform_icon"
+			texturefile = "gfx//interface//government_reform_icons//karnataka_samrajya_reform_icon.dds"
+		}
+		spriteType = {
+			name = "government_reform_coral_kingdom_reform_icon"
+			texturefile = "gfx//interface//government_reform_icons//coral_kingdom_reform_icon.dds"
+		}
+	# Tier 2
+		spriteType = {
+			name = "government_reform_patronage_jain_temples_reform_icon"
+			texturefile = "gfx//interface//government_reform_icons//patronage_jain_temples_reform_icon.dds"
+		}
+	# Tier 3
+		spriteType = {
+			name = "government_reform_krsi_trivate_reform_icon"
+			texturefile = "gfx//interface//government_reform_icons//krsi_trivate_reform_icon.dds"
+		}
+
+	# Tier 8
+		spriteType = {
+			name = "government_reform_lyand_rutargalalli_vyapara_reform_icon"
+			texturefile = "gfx//interface//government_reform_icons//lyand_rutargalalli_vyapara_reform_icon.dds"
+		}
+		spriteType = {
+			name = "government_reform_sagarottara_vyapara_reform_icon"
+			texturefile = "gfx//interface//government_reform_icons//sagarottara_vyapara_reform_icon.dds"
+		}
 # Hindustan
 	# Tier 1
 # Western India
