@@ -32,8 +32,8 @@ country_event = {
 					}
 				}
 				add_government_power = {
-					mechanic_type = vijayanagar_empire_mechanic
-					power_type = vijayanagar_empire
+					mechanic_type = imperial_control_mechanic
+					power_type = imperial_control
 					value = 1
 				}
 				change_variable = { which = adm_value value = -1 }

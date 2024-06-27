@@ -1,11 +1,11 @@
-vijayanagar_empire_mechanic = {
+imperial_control_mechanic = {
 	available = {
 		always = yes
 	}
 
 	powers = {
-		vijayanagar_empire = {
-			gui = maritime_republic_mechanic_power
+		imperial_control = {
+			gui = imperial_control_mechanic_power
 			min = 0
 			max = 100
 			default = 0

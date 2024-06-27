@@ -20,4 +20,14 @@ spriteTypes = {
 		size = { x = 228 y = 18 }
 		effectFile = "gfx/FX/progress.lua"
 	}
+
+	progressbartype = {
+		name = "GFX_GE_generic_bar_purple"
+		color = { 1.0 0.0 0.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/government_mechanics/_generic/GE_generic_bar_purple.dds"
+		textureFile2 = "gfx/interface/government_mechanics/_generic/GE_generic_bar_bg.dds"
+		size = { x = 226 y = 17 }
+		effectFile = "gfx/FX/progress.lua"
+	}
 }

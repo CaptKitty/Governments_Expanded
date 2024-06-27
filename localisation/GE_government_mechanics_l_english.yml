@@ -412,14 +412,14 @@
 
 # Karnataka Samrajya Mechanic:
  ## Mechanics
- ability_vijayanagar_empire_mechanic: "Imperial Control"
- vijayanagar_empire_mechanic: "Imperial Control"
- vijayanagar_empire: "Imperial Control"
- vijayanagar_empire_desc: "Imperial Control is a measure of the ability of our ruler to esercitate absolute power on the country."
- vijayanagar_empire_mechanic_tt: "Government has '§YImperial Control§! mechanic"
+ ability_imperial_control_mechanic: "Imperial Control"
+ imperial_control_mechanic: "Imperial Control"
+ imperial_control: "Imperial Control"
+ imperial_control_desc: "Imperial Control is a measure of the ability of our ruler to esercitate absolute power on the country."
+ imperial_control_mechanic_tt: "Government has '§YImperial Control§! mechanic"
 
- monthly_vijayanagar_empire: "Monthly Imperial Control Gain"
- vijayanagar_empire_gain_modifier: "Imperial Control Gain Modifier"
+ monthly_imperial_control: "Monthly Imperial Control Gain"
+ imperial_control_gain_modifier: "Imperial Control Gain Modifier"
 
  ## Tooltip:
- vijayanagar_empire_at_100_tt: "At §Y100§! we will gain:\n   - All Estate Influence Modifier: §G-5.0%§! \n   - Max Absolutism: §G+15%§!"
+ imperial_control_at_100_tt: "At §Y100§! we will gain:\n   - All Estate Influence Modifier: §G-5.0%§! \n   - Max Absolutism: §G+15%§!"

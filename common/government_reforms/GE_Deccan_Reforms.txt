@@ -23,7 +23,7 @@ karnataka_samrajya_reform = {
 		state_governing_cost = -0.10
 	}
 	government_abilities = {
-		vijayanagar_empire_mechanic
+		imperial_control_mechanic
 	}
 	effect = {
 		hidden_effect = {

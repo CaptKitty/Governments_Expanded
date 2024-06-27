@@ -13,7 +13,7 @@ ruler_adm = {
 	monthly_political_focus_power = 0.084
 	monthly_republican_vs_monarchist_power = -0.05
 	monthly_imperial_grace_power = 0.034
-	monthly_vijayanagar_empire = 0.025
+	monthly_imperial_control = 0.025
 }
 
 ruler_dip = {
@@ -23,7 +23,7 @@ ruler_dip = {
 	monthly_divine_authority = 0.01
 	# GE:
 	monthly_political_focus_power = 0.084
-	monthly_vijayanagar_empire = 0.025
+	monthly_imperial_control = 0.025
 }
 
 ruler_mil = {
@@ -34,7 +34,7 @@ ruler_mil = {
 	monthly_bureaucracy_vs_military_power = 0.05
 	monthly_political_focus_power = 0.084
 	monthly_republican_vs_monarchist_power = 0.05
-	monthly_vijayanagar_empire = 0.025
+	monthly_imperial_control = 0.025
 }
 
 war = {
