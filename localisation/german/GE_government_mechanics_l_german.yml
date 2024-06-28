@@ -409,3 +409,17 @@
 
  ## Modifiers:
  legitimation_through_representation_mechanic_renovate_the_palace_modifier: "Renovation of the Palace"
+
+# Karnataka Samrajya Mechanic:
+ ## Mechanics
+ ability_imperial_control_mechanic: "Imperial Control"
+ imperial_control_mechanic: "Imperial Control"
+ imperial_control: "Imperial Control"
+ imperial_control_desc: "Imperial Control is a measure of the ability of our ruler to esercitate absolute power on the country."
+ imperial_control_mechanic_tt: "Government has '§YImperial Control§! mechanic"
+
+ monthly_imperial_control: "Monthly Imperial Control Gain"
+ imperial_control_gain_modifier: "Imperial Control Gain Modifier"
+
+ ## Tooltip:
+ imperial_control_at_100_tt: "At §Y100§! we will gain:\n   - All Estate Influence Modifier: §G-5.0%§! \n   - Max Absolutism: §G+15%§!"
