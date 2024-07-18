@@ -201,6 +201,9 @@ house_of_este_reform = {
 	government_abilities = {
 		italian_dinasties_mechanic
 	}
+	effect = {
+		GE_calculate_dinastic_power = yes
+	}
 }
 house_of_gonzaga_reform = {
 	icon = mantua_house_of_gonzaga
@@ -227,6 +230,9 @@ house_of_gonzaga_reform = {
 	}
 	government_abilities = {
 		italian_dinasties_mechanic
+	}
+	effect = {
+		GE_calculate_dinastic_power = yes
 	}
 }
 italian_monarchy_reform = {
@@ -320,6 +326,9 @@ kingdom_of_sicily_reform = {
 	}
 	government_abilities = {
 		sicilian_kingdom_mechanic
+	}
+	effect = {
+		GE_calculate_dinastic_power = yes
 	}
 	ai = {
 		factor = 100

@@ -6,7 +6,13 @@ GE_TE_init_country = {
 
 GE_initiate_starting_effects = {
 	hidden_effect = {
-		GE_initiate_starting_reforms = yes
+		if = {
+			limit = {
+				NOT = { has_global_flag = ge_initial_setup_done }
+			}
+			GE_initiate_starting_reforms = yes
+			set_global_flag = ge_initial_setup_done
+		}
 	}
 }
 
@@ -14,471 +20,197 @@ GE_initiate_starting_reforms = {
 	ANS = {
 		if = {
 			limit = {
-				NOT = { has_country_flag = ge_initial_setup_done }
+				has_dlc = "Domination"
 			}
-			if = {
-				limit = {
-					has_dlc = "Domination"
-				}
-				add_government_reform = margraviate_reform
+			add_government_reform = margraviate_reform
+		}
+		if = {
+			limit = {
+				NOT = { has_dlc = "Domination" }
 			}
-			if = {
-				limit = {
-					NOT = { has_dlc = "Domination" }
-				}
-				add_government_reform = margrave_reform
-			}
-			set_country_flag = ge_initial_setup_done
+			add_government_reform = margrave_reform
 		}
 	}
 	ARA = {
-		if = {
-			limit = {
-				NOT = { has_country_flag = ge_initial_setup_done }
-			}
-			add_government_reform = crown_of_aragon
-			every_owned_province = { ge_aragon_crown_union_province_update = yes }
-			set_country_flag = ge_initial_setup_done
-		}
+		add_government_reform = crown_of_aragon
 	}
 	BAD = {
 		if = {
 			limit = {
-				NOT = { has_country_flag = ge_initial_setup_done }
+				has_dlc = "Domination"
 			}
-			if = {
-				limit = {
-					has_dlc = "Domination"
-				}
-				add_government_reform = margraviate_reform
+			add_government_reform = margraviate_reform
+		}
+		if = {
+			limit = {
+				NOT = { has_dlc = "Domination" }
 			}
-			if = {
-				limit = {
-					NOT = { has_dlc = "Domination" }
-				}
-				add_government_reform = margrave_reform
-			}
-			set_country_flag = ge_initial_setup_done
+			add_government_reform = margrave_reform
 		}
 	}
 	BRA = {
 		if = {
 			limit = {
-				NOT = { has_country_flag = ge_initial_setup_done }
+				has_dlc = "Domination"
 			}
-			if = {
-				limit = {
-					has_dlc = "Domination"
-				}
-				add_government_reform = margraviate_reform
+			add_government_reform = margraviate_reform
+		}
+		if = {
+			limit = {
+				NOT = { has_dlc = "Domination" }
 			}
-			if = {
-				limit = {
-					NOT = { has_dlc = "Domination" }
-				}
-				add_government_reform = margrave_reform
-			}
-			set_country_flag = ge_initial_setup_done
+			add_government_reform = margrave_reform
 		}
 	}
 	BRT = {
-		if = {
-			limit = {
-				NOT = { has_country_flag = ge_initial_setup_done }
-			}
-			change_government = tribal
-			add_government_reform = siberian_tribal_confederation_reform
-			every_owned_province = { ge_siberian_tribe_province_update = yes }
-			set_country_flag = ge_initial_setup_done
-		}
+		change_government = tribal
+		add_government_reform = siberian_tribal_confederation_reform
 	}
 	CAS = {
-		if = {
-			limit = {
-				NOT = { has_country_flag = ge_initial_setup_done }
-			}
-			add_government_reform = kingdom_of_castille_and_leon
-			set_country_flag = ge_initial_setup_done
-		}
+		add_government_reform = kingdom_of_castille_and_leon
 	}
 	CHU = {
-		if = {
-			limit = {
-				NOT = { has_country_flag = ge_initial_setup_done }
-			}
-			change_government = tribal
-			add_government_reform = siberian_tribal_confederation_reform
-			every_owned_province = { ge_siberian_tribe_province_update = yes }
-			set_country_flag = ge_initial_setup_done
-		}
+		change_government = tribal
+		add_government_reform = siberian_tribal_confederation_reform
 	}
 	CHV = {
-		if = {
-			limit = {
-				NOT = { has_country_flag = ge_initial_setup_done }
-			}
-			change_government = tribal
-			add_government_reform = siberian_tribal_confederation_reform
-			every_owned_province = { ge_siberian_tribe_province_update = yes }
-			set_country_flag = ge_initial_setup_done
-		}
+		change_government = tribal
+		add_government_reform = siberian_tribal_confederation_reform
 	}
 	DGL = {
-		if = {
-			limit = {
-				NOT = { has_country_flag = ge_initial_setup_done }
-			}
-			add_government_reform = coral_kingdom_reform
-			every_owned_province = { ge_coral_mason_update = yes }
-			set_country_flag = ge_initial_setup_done
-		}
+		add_government_reform = coral_kingdom_reform
 	}
 	FER = {
-		if = {
-			limit = {
-				NOT = { has_country_flag = ge_initial_setup_done }
-			}
-			add_government_reform = house_of_este_reform
-			GE_calculate_dinastic_power = yes
-			set_country_flag = ge_initial_setup_done
-		}
+		add_government_reform = house_of_este_reform
 	}
 	FRA = {
 		if = {
 			limit = {
-				NOT = { has_country_flag = ge_initial_setup_done }
+				has_dlc = "Domination"
 			}
-			if = {
-				limit = {
-					has_dlc = "Domination"
-				}
-				add_government_reform = feudal_france_reform
+			add_government_reform = feudal_france_reform
+		}
+		if = {
+			limit = {
+				NOT = { has_dlc = "Domination" }
 			}
-			if = {
-				limit = {
-					NOT = { has_dlc = "Domination" }
-				}
-				add_government_reform = french_feudalism
-			}
-			set_country_flag = ge_initial_setup_done
+			add_government_reform = french_feudalism
 		}
 	}
 	GEN = {
-		if = {
-			limit = {
-				NOT = { has_country_flag = ge_initial_setup_done }
-			}
-			add_government_reform = genoese_republic
-			set_country_flag = ge_initial_setup_done
-		}
+		add_government_reform = genoese_republic
 	}
 	GRA = {
-		if = {
-			limit = {
-				NOT = { has_country_flag = ge_initial_setup_done }
-			}
-			add_government_reform = granadan_iqta_reform
-			set_country_flag = ge_initial_setup_done
-		}
+		add_government_reform = granadan_iqta_reform
 	}
 	GRK = {
-		if = {
-			limit = {
-				NOT = { has_country_flag = ge_initial_setup_done }
-			}
-			add_government_reform = gorkha_kingdom_reform
-			set_country_flag = ge_initial_setup_done
-		}
+		add_government_reform = gorkha_kingdom_reform
 	}
 	GUG = {
-		if = {
-			limit = {
-				NOT = { has_country_flag = ge_initial_setup_done }
-			}
-			change_government = theocracy
-			add_government_reform = tibetan_dual_government_reform
-			set_country_flag = ge_initial_setup_done
-		}
+		change_government = theocracy
+		add_government_reform = tibetan_dual_government_reform
 	}
 	HAB = {
-		if = {
-			limit = {
-				NOT = { has_country_flag = ge_initial_setup_done }
-			}
-			add_government_reform = austrian_archduchy_reform
-			set_country_flag = ge_initial_setup_done
-		}
+		add_government_reform = austrian_archduchy_reform
 	}
 	HES = {
-		if = {
-			limit = {
-				NOT = { has_country_flag = ge_initial_setup_done }
-			}
-			add_government_reform = hessian_militarized_monarchy_reform
-			set_country_flag = ge_initial_setup_done
-		}
+		add_government_reform = hessian_militarized_monarchy_reform
 	}
 	HOD = {
-		if = {
-			limit = {
-				NOT = { has_country_flag = ge_initial_setup_done }
-			}
-			change_government = tribal
-			add_government_reform = siberian_tribal_confederation_reform
-			every_owned_province = { ge_siberian_tribe_province_update = yes }
-			set_country_flag = ge_initial_setup_done
-		}
+		change_government = tribal
+		add_government_reform = siberian_tribal_confederation_reform
 	}
 	KAM = {
-		if = {
-			limit = {
-				NOT = { has_country_flag = ge_initial_setup_done }
-			}
-			change_government = theocracy
-			add_government_reform = tibetan_dual_government_reform
-			set_country_flag = ge_initial_setup_done
-		}
+		change_government = theocracy
+		add_government_reform = tibetan_dual_government_reform
 	}
 	KMC = {
-		if = {
-			limit = {
-				NOT = { has_country_flag = ge_initial_setup_done }
-			}
-			change_government = tribal
-			add_government_reform = siberian_tribal_confederation_reform
-			every_owned_province = { ge_siberian_tribe_province_update = yes }
-			set_country_flag = ge_initial_setup_done
-		}
+		change_government = tribal
+		add_government_reform = siberian_tribal_confederation_reform
 	}
 	LAN = {
-		if = {
-			limit = {
-				NOT = { has_country_flag = ge_initial_setup_done }
-			}
-			add_government_reform = florentine_republic
-			set_country_flag = ge_initial_setup_done
-		}
+		add_government_reform = florentine_republic
 	}
 	MAD = {
-		if = {
-			limit = {
-				NOT = { has_country_flag = ge_initial_setup_done }
-			}
-			add_government_reform = pandya_dynasty_reform
-			set_country_flag = ge_initial_setup_done
-		}
+		add_government_reform = pandya_dynasty_reform
 	}
 	MAN = {
-		if = {
-			limit = {
-				NOT = { has_country_flag = ge_initial_setup_done }
-			}
-			add_government_reform = house_of_gonzaga_reform
-			GE_calculate_dinastic_power = yes
-			set_country_flag = ge_initial_setup_done
-		}
+		add_government_reform = house_of_gonzaga_reform
 	}
 	MFA = {
-		if = {
-			limit = {
-				NOT = { has_country_flag = ge_initial_setup_done }
-			}
-			add_government_reform = palaiologos_montferrat_reform
-			set_country_flag = ge_initial_setup_done
-		}
+		add_government_reform = palaiologos_montferrat_reform
 	}
 	MVA = {
 		if = {
 			limit = {
-				NOT = { has_country_flag = ge_initial_setup_done }
+				has_dlc = "Domination"
 			}
-			if = {
-				limit = {
-					has_dlc = "Domination"
-				}
-				add_government_reform = margraviate_reform
+			add_government_reform = margraviate_reform
+		}
+		if = {
+			limit = {
+				NOT = { has_dlc = "Domination" }
 			}
-			if = {
-				limit = {
-					NOT = { has_dlc = "Domination" }
-				}
-				add_government_reform = margrave_reform
-			}
-			set_country_flag = ge_initial_setup_done
+			add_government_reform = margrave_reform
 		}
 	}
 	NAP = {
-		if = {
-			limit = {
-				NOT = { has_country_flag = ge_initial_setup_done }
-			}
-			add_government_reform = kingdom_of_sicily_reform
-			GE_calculate_dinastic_power = yes
-			set_country_flag = ge_initial_setup_done
-		}
+		add_government_reform = kingdom_of_sicily_reform
 	}
 	NVK = {
-		if = {
-			limit = {
-				NOT = { has_country_flag = ge_initial_setup_done }
-			}
-			change_government = tribal
-			add_government_reform = siberian_tribal_confederation_reform
-			every_owned_province = { ge_siberian_tribe_province_update = yes }
-			set_country_flag = ge_initial_setup_done
-		}
+		change_government = tribal
+		add_government_reform = siberian_tribal_confederation_reform
 	}
 	PGA = {
-		if = {
-			limit = {
-				NOT = { has_country_flag = ge_initial_setup_done }
-			}
-			add_government_reform = signoria_baglioni_reform
-			set_country_flag = ge_initial_setup_done
-		}
+		add_government_reform = signoria_baglioni_reform
 	}
 	PHA = {
-		if = {
-			limit = {
-				NOT = { has_country_flag = ge_initial_setup_done }
-			}
-			change_government = theocracy
-			add_government_reform = tibetan_dual_government_reform
-			set_country_flag = ge_initial_setup_done
-		}
+		change_government = theocracy
+		add_government_reform = tibetan_dual_government_reform
 	}
 	RAG = {
-		if = {
-			limit = {
-				NOT = { has_country_flag = ge_initial_setup_done }
-			}
-			add_government_reform = republic_of_saint_blaise
-			ge_maritime_republic_set = yes
-			set_country_flag = ge_initial_setup_done
-		}
+		add_government_reform = republic_of_saint_blaise
 	}
 	SAR = {
-		if = {
-			limit = {
-				NOT = { has_country_flag = ge_initial_setup_done }
-			}
-			add_government_reform = giudicati_sardi_reform
-			set_country_flag = ge_initial_setup_done
-		}
+		add_government_reform = giudicati_sardi_reform
 	}
 	SAV = {
-		if = {
-			limit = {
-				NOT = { has_country_flag = ge_initial_setup_done }
-			}
-			add_government_reform = savoia_reform
-			set_country_flag = ge_initial_setup_done
-		}
+		add_government_reform = savoia_reform
 	}
 	SIC = {
-		if = {
-			limit = {
-				NOT = { has_country_flag = ge_initial_setup_done }
-			}
-			add_government_reform = kingdom_of_sicily_reform
-			GE_calculate_dinastic_power = yes
-			set_country_flag = ge_initial_setup_done
-		}
+		add_government_reform = kingdom_of_sicily_reform
 	}
 	SOL = {
-		if = {
-			limit = {
-				NOT = { has_country_flag = ge_initial_setup_done }
-			}
-			change_government = tribal
-			add_government_reform = siberian_tribal_confederation_reform
-			every_owned_province = { ge_siberian_tribe_province_update = yes }
-			set_country_flag = ge_initial_setup_done
-		}
+		change_government = tribal
+		add_government_reform = siberian_tribal_confederation_reform
 	}
 	SON = {
-		if = {
-			limit = {
-				NOT = { has_country_flag = ge_initial_setup_done }
-			}
-			add_government_reform = kingdom_of_gao_reform
-			set_country_flag = ge_initial_setup_done
-		}
+		add_government_reform = kingdom_of_gao_reform
 	}
 	SPI = {
-		if = {
-			limit = {
-				NOT = { has_country_flag = ge_initial_setup_done }
-			}
-			add_government_reform = kingdom_of_sardinia_reform
-			set_country_flag = ge_initial_setup_done
-		}
+		add_government_reform = kingdom_of_sardinia_reform
 	}
 	TIB = {
-		if = {
-			limit = {
-				NOT = { has_country_flag = ge_initial_setup_done }
-			}
-			change_government = theocracy
-			add_government_reform = tibetan_dual_government_reform
-			set_country_flag = ge_initial_setup_done
-		}
+		change_government = theocracy
+		add_government_reform = tibetan_dual_government_reform
 	}
 	TNJ = {
-		if = {
-			limit = {
-				NOT = { has_country_flag = ge_initial_setup_done }
-			}
-			add_government_reform = pandya_dynasty_reform
-			set_country_flag = ge_initial_setup_done
-		}
+		add_government_reform = pandya_dynasty_reform
 	}
 	TTS = {
-		if = {
-			limit = {
-				NOT = { has_country_flag = ge_initial_setup_done }
-			}
-			add_government_reform = kingdom_of_sicily_reform
-			GE_calculate_dinastic_power = yes
-			set_country_flag = ge_initial_setup_done
-		}
+		add_government_reform = kingdom_of_sicily_reform
 	}
 	URB = {
-		if = {
-			limit = {
-				NOT = { has_country_flag = ge_initial_setup_done }
-			}
-			add_government_reform = duchi_montefeltro_reform
-			set_country_flag = ge_initial_setup_done
-		}
+		add_government_reform = duchi_montefeltro_reform
 	}
 	UTS = {
-		if = {
-			limit = {
-				NOT = { has_country_flag = ge_initial_setup_done }
-			}
-			change_government = theocracy
-			add_government_reform = tibetan_dual_government_reform
-			set_country_flag = ge_initial_setup_done
-		}
+		change_government = theocracy
+		add_government_reform = tibetan_dual_government_reform
 	}
 	VIJ = {
-		if = {
-			limit = {
-				NOT = { has_country_flag = ge_initial_setup_done }
-			}
-			add_government_reform = karnataka_samrajya_reform
-			country_event = { id = GE_Deccan_Reforms_Events.1 days = 30 random = 15 }
-			set_country_flag = ge_initial_setup_done
-		}
+		add_government_reform = karnataka_samrajya_reform
 	}
 	YOR = {
-		if = {
-			limit = {
-				NOT = { has_country_flag = ge_initial_setup_done }
-			}
-			add_government_reform = satavahana_dynasty_reform
-			set_country_flag = ge_initial_setup_done
-		}
+		add_government_reform = satavahana_dynasty_reform
 	}
 }
