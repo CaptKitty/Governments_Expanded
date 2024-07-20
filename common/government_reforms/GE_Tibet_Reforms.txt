@@ -21,6 +21,20 @@ yak_provvision_reform = {
 		manpower_recovery_speed = 0.10
 		rural_goods_produced_modifier = 0.10
 	}
+	effect = {
+		hidden_effect = {
+			every_owned_province = {
+				ge_siberian_tribe_province_update = yes
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				remove_province_modifier = GE_Siberian_Tribe
+			}
+		}
+	}
 	custom_attributes = {
 		enables_mountain_towns = yes #-25% Development cost in hills and mountains
 		enables_siberian_tribe = yes #-25% Development Cost in Glacial provinces
