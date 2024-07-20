@@ -313,6 +313,7 @@ on_province_owner_change = {
 	ge_cistern_update = yes
 	ge_inland_trade_update = yes
 	ge_coastal_trade_update = yes
+	ge_uidapur_state_update = yes
 }
 
 on_trade_good_changed = {
@@ -598,10 +599,12 @@ on_center_of_trade_upgrade = {
 on_capital_moved = {
 	owner = {
 		if = {
-			limit = {
-				has_government_attribute = enable_cistern
-			}
+			limit = { has_government_attribute = enable_cistern }
 			every_owned_province = { ge_cistern_update = yes }
+		}
+		if = {
+			limit = { has_government_attribute = enables_uidapur_state }
+			every_owned_province = { ge_uidapur_state_update = yes }
 		}
 	}
 }

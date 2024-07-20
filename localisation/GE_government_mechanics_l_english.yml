@@ -145,11 +145,11 @@
  ## Mechanics:
  ability_venetian_government_mechanic: "Senato Veneziano"
  venetian_government_mechanic_stato_da_mar: "Stato Da Mar"
- venetian_government_mechanic_stato_da_mar_desc: "You can only pick one of the focuses at the same time and the picked focus will last til the death of your ruler. \n--------------\n"
+ venetian_government_mechanic_stato_da_mar_desc: "You can only pick one of the focuses at the same time and the picked focus will last for 10 years. \n--------------\n"
  venetian_government_mechanic_carnevale_venezia: "Carnevale Di Venezia"
- venetian_government_mechanic_carnevale_venezia_desc: "You can only pick one of the focuses at the same time and the picked focus will last til the death of your ruler. \n--------------\n"
+ venetian_government_mechanic_carnevale_venezia_desc: "You can only pick one of the focuses at the same time and the picked focus will last for 10 years. \n--------------\n"
  venetian_government_mechanic_stato_da_tera: "Stato da Tera"
- venetian_government_mechanic_stato_da_tera_desc: "You can only pick one of the focuses at the same time and the picked focus will last til the death of your ruler. \n--------------\n"
+ venetian_government_mechanic_stato_da_tera_desc: "You can only pick one of the focuses at the same time and the picked focus will last for 10 years. \n--------------\n"
 
  ## Modifiers
  venetian_government_stato_mar_modifier: "Stato da Mar"
@@ -228,11 +228,11 @@
  ## Mechanics:
  ability_albergo_nobili_mechanic: "Albergo dei Nobili"
  albergo_nobili_mechanic_uso_di_mare: "Uso di Mare"
- albergo_nobili_mechanic_uso_di_mare_desc: "You can only pick one of the focuses at the same time and the picked focus will last til the death of your ruler. \n--------------\n"
+ albergo_nobili_mechanic_uso_di_mare_desc: "You can only pick one of the focuses at the same time and the picked focus will last for 10 years. \n--------------\n"
  albergo_nobili_mechanic_doria: "I Doria"
- albergo_nobili_mechanic_doria_desc: "You can only pick one of the focuses at the same time and the picked focus will last til the death of your ruler. \n--------------\n"
+ albergo_nobili_mechanic_doria_desc: "You can only pick one of the focuses at the same time and the picked focus will last for 10 years. \n--------------\n"
  albergo_nobili_mechanic_fieschi: "I Fieschi"
- albergo_nobili_mechanic_fieschi_desc: "You can only pick one of the focuses at the same time and the picked focus will last til the death of your ruler. \n--------------\n"
+ albergo_nobili_mechanic_fieschi_desc: "You can only pick one of the focuses at the same time and the picked focus will last for 10 years. \n--------------\n"
 
  ## Modifiers
  albergo_nobili_uso_di_mare_modifier: "Esploratori d'Uso di Mare"
@@ -410,7 +410,7 @@
  ## Modifiers:
  legitimation_through_representation_mechanic_renovate_the_palace_modifier: "Renovation of the Palace"
 
-# Karnataka Samrajya Mechanic:
+# Imperial Control Mechanic:
  ## Mechanics
  ability_imperial_control_mechanic: "Imperial Control"
  imperial_control_mechanic: "Imperial Control"
@@ -423,3 +423,21 @@
 
  ## Tooltip:
  imperial_control_at_100_tt: "At §Y100§! we will gain:\n   - All Estate Influence Modifier: §G-5.0%§! \n   - Max Absolutism: §G+15%§!"
+
+# Rajput Princedom Mechanic:
+ ## Mechanics
+ ability_rajput_princedom_mechanic: "Rajput Princedom"
+ rajput_princedom_mechanic_enlist_the_infantry: "Enlist the Infantry"
+ rajput_princedom_mechanic_enlist_the_infantry_desc: "You can only pick one of the focuses at the same time and the picked focus will last for 10 years. \n--------------\n"
+ rajput_princedom_mechanic_focus_on_cavalry: "Focus on Cavalry"
+ rajput_princedom_mechanic_focus_on_cavalry_desc: "You can only pick one of the focuses at the same time and the picked focus will last for 10 years. \n--------------\n"
+ rajput_princedom_mechanic_supply_of_provisions: "Supply of Provvisions"
+ rajput_princedom_mechanic_supply_of_provisions_desc: "You can only pick one of the focuses at the same time and the picked focus will last for 10 years. \n--------------\n"
+
+ ## Modifiers
+ rajput_princedom_paidalsena_modifier: "Paidalsena"
+ desc_rajput_princedom_paidalsena_modifier: ""
+ rajput_princedom_cavalry_raids_modifier: "Cavalry Raids"
+ desc_rajput_princedom_cavalry_raids_modifier: ""
+ rajput_princedom_road_and_transport_modifier: "Roads and Transport"
+ desc_rajput_princedom_road_and_transport_modifier: ""

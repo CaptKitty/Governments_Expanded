@@ -1,0 +1,64 @@
+rajput_princedom_mechanic = {
+	alert_icon_gfx = GFX_alerticons_government_mechanics
+	alert_icon_index = 8
+	available = {
+		always = yes
+	}
+
+	interactions = {
+		rajput_princedom_mechanic_enlist_the_infantry = {
+			gui = venetian_government_mechanic_interaction
+			icon = GFX_rajput_princedom_mechanic_enlist_the_infantry_button
+			trigger = {
+				NOT = { has_country_modifier = rajput_princedom_paidalsena_modifier }
+				NOT = { has_country_modifier = rajput_princedom_cavalry_raids_modifier }
+				NOT = { has_country_modifier = rajput_princedom_road_and_transport_modifier }
+			}
+			effect = {
+				add_country_modifier = {
+					name = rajput_princedom_paidalsena_modifier
+					duration = 3650
+				}
+			}
+			ai_chance = {
+				factor = 20
+			}
+		}
+		rajput_princedom_mechanic_focus_on_cavalry = {
+			gui = venetian_government_mechanic_interaction
+			icon = GFX_rajput_princedom_mechanic_focus_on_cavalry_button
+			trigger = {
+				NOT = { has_country_modifier = rajput_princedom_paidalsena_modifier }
+				NOT = { has_country_modifier = rajput_princedom_cavalry_raids_modifier }
+				NOT = { has_country_modifier = rajput_princedom_road_and_transport_modifier }
+			}
+			effect = {
+				add_country_modifier = {
+					name = rajput_princedom_cavalry_raids_modifier
+					duration = 3650
+				}
+			}
+			ai_chance = {
+				factor = 0
+			}
+		}
+		rajput_princedom_mechanic_supply_of_provisions = {
+			gui = venetian_government_mechanic_interaction
+			icon = GFX_rajput_princedom_mechanic_supply_of_provisions_button
+			trigger = {
+				NOT = { has_country_modifier = rajput_princedom_paidalsena_modifier }
+				NOT = { has_country_modifier = rajput_princedom_cavalry_raids_modifier }
+				NOT = { has_country_modifier = rajput_princedom_road_and_transport_modifier }
+			}
+			effect = {
+				add_country_modifier = {
+					name = rajput_princedom_road_and_transport_modifier
+					duration = 3650
+				}
+			}
+			ai_chance = {
+				factor = 10
+			}
+		}
+	}
+}

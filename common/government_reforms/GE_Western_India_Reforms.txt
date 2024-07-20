@@ -1,0 +1,311 @@
+# T1
+uidapur_state_reform = {
+	icon = uidapur_state_reform_icon
+	allow_normal_conversion = yes
+	lock_level_when_selected = yes
+	potential = {
+		OR = {
+			have_had_reform = uidapur_state_reform
+			OR = {
+				is_or_was_tag = { tag = MER }
+				is_or_was_tag = { tag = MAW }
+			}
+		}
+	}
+	trigger = {
+		OR = {
+			have_had_reform = uidapur_state_reform
+			OR = {
+				is_or_was_tag = { tag = MER }
+				is_or_was_tag = { tag = MAW }
+			}
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+	modifiers = {
+		army_tradition = 0.25
+		inflation_reduction = 0.10
+		fort_maintenance_modifier = -0.10
+		monarch_military_power = 1
+		tolerance_own = 1
+
+		allowed_rajput_fraction = 0.10
+		rajput_loyalty_modifier = 0.10
+		rajput_influence_modifier = 0.10
+		can_recruit_rajputs = yes
+	}
+	government_abilities = {
+		rajput_princedom_mechanic
+	}
+	effect = {
+		hidden_effect = {
+			ge_uidapur_state_update = yes
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				remove_province_modifier = ge_mer_city_of_lakes
+				remove_province_modifier = ge_maw_blue_city
+			}
+		}
+	}
+	custom_attributes = {
+		enables_uidapur_state = yes
+	}
+}
+coral_kingdom_reform = {
+	icon = coral_kingdom_reform_icon
+	allow_normal_conversion = yes
+	lock_level_when_selected = yes
+	potential = {
+		OR = {
+			have_had_reform = coral_kingdom_reform
+			is_or_was_tag = { tag = DGL }
+		}
+	}
+	trigger = {
+		OR = {
+			have_had_reform = coral_kingdom_reform
+			is_or_was_tag = { tag = DGL }
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+	modifiers = {
+		naval_maintenance_modifier = -0.15
+		landing_penalty = -2
+		regiment_disembark_speed = 0.15
+	}
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Cradle of Civilization"
+				has_dlc = "Winds of Change"
+			}
+		}
+		government_abilities = {
+			iqta_mechanic
+		}
+	}
+	custom_attributes = {
+		enables_coral_masons = yes # Every Owned Coastal Province gains -0.10 Local Build Cost, -0.20 Local Development Cost
+	}
+	effect = {
+		hidden_effect = {
+			every_owned_province = { ge_coral_mason_update = yes }
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = { remove_province_modifier = ge_coral_mason }
+		}
+	}
+}
+
+# T2
+patronage_jain_temples_reform = {
+	icon = patronage_jain_temples_reform_icon
+	allow_normal_conversion = yes
+	lock_level_when_selected = no
+	potential = {
+		OR = {
+			have_had_reform = patronage_jain_temples_reform
+			religion = hinduism
+		}
+	}
+	trigger = {
+		OR = {
+			have_had_reform = patronage_jain_temples_reform
+			capital_scope = {
+				region = deccan_region
+			}
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+	modifiers = {
+		global_tax_modifier = 0.10
+		burghers_privilege_slots = 1
+		jains_privilege_slots = 1
+	}
+	effect = {
+		unlock_estate_privilege = {
+			estate_privilege = estate_jain_basadis_patronage
+		}
+	}
+}
+
+# T3
+krsi_trivate_reform = {
+	icon = krsi_trivate_reform_icon
+	allow_normal_conversion = yes
+	lock_level_when_selected = no
+	potential = {
+		OR = {
+			have_had_reform = krsi_trivate_reform
+			culture_group = dravidian
+		}
+	}
+	trigger = {
+		OR = {
+			have_had_reform = krsi_trivate_reform
+			culture_group = dravidian
+			capital_scope = {
+				OR = {
+					region = deccan_region
+					region = coromandel_region
+				}
+			}
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+	modifiers = {
+		manpower_recovery_speed = 0.10
+		global_autonomy = -0.025
+	}
+	custom_attributes = {
+		enable_cistern = yes #-15% local development cost in Arid Provinces
+	}
+	effect = {
+		hidden_effect = {
+			capital_scope = {
+				area = {
+					every_neighbor_province = {
+						limit = { owned_by = ROOT }
+						add_province_modifier = {
+							name = ge_cistern_modifier
+							duration = -1
+						}
+					}
+				}
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				remove_province_modifier = ge_cistern_modifier
+			}
+		}
+	}
+}
+
+# T8
+lyand_rutargalalli_vyapara_reform = {
+	icon = lyand_rutargalalli_vyapara_reform_icon
+	allow_normal_conversion = yes
+	lock_level_when_selected = no
+	potential = {
+		OR = {
+			have_had_reform = lyand_rutargalalli_vyapara_reform
+			culture_group = dravidian
+		}
+	}
+	trigger = {
+		OR = {
+			have_had_reform = lyand_rutargalalli_vyapara_reform
+			culture_group = dravidian
+			capital_scope = {
+				OR = {
+					region = deccan_region
+					region = coromandel_region
+				}
+			}
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+	modifiers = {
+		trade_efficiency = 0.10
+		global_prov_trade_power_modifier = 0.33
+		center_of_trade_upgrade_cost = -0.33
+	}
+	custom_attributes = {
+		enable_inland_trade = yes #Every NON Coastal COT province gains +5 Trade Power
+	}
+	effect = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					NOT = { has_port = yes }
+					province_has_center_of_trade_of_level = 1
+				}
+				add_province_modifier = {
+					name = ge_inland_trade_modifier
+					duration = -1
+				}
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				remove_province_modifier = ge_inland_trade_modifier
+			}
+		}
+	}
+}
+sagarottara_vyapara_reform = {
+	icon = sagarottara_vyapara_reform_icon
+	allow_normal_conversion = yes
+	lock_level_when_selected = no
+	potential = {
+		OR = {
+			have_had_reform = sagarottara_vyapara_reform
+			culture_group = dravidian
+		}
+	}
+	trigger = {
+		OR = {
+			have_had_reform = sagarottara_vyapara_reform
+			culture_group = dravidian
+			capital_scope = {
+				OR = {
+					region = deccan_region
+					region = coromandel_region
+				}
+			}
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+	modifiers = {
+		global_trade_power = 0.10
+		ship_trade_power_modifier = 0.15
+		reduced_trade_penalty_on_non_main_tradenode = 0.15
+	}
+	custom_attributes = {
+		enable_coastal_trade = yes #Every Coastal COT province gains +5 Trade Power
+	}
+	effect = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					has_port = yes
+					province_has_center_of_trade_of_level = 1
+				}
+				add_center_of_trade_level = 1
+			}
+			every_owned_province = {
+				limit = {
+					has_port = yes
+					province_has_center_of_trade_of_level = 1
+				}
+				add_province_modifier = {
+					name = ge_coastal_trade_modifier
+					duration = -1
+				}
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				remove_province_modifier = ge_coastal_trade_modifier
+			}
+		}
+	}
+}

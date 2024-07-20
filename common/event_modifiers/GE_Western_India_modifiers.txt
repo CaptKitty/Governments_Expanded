@@ -1,0 +1,16 @@
+ge_mer_city_of_lakes = {
+	local_development_cost = -0.075
+}
+ge_maw_blue_city = {
+	local_build_cost = -0.15
+}
+
+rajput_princedom_paidalsena_modifier = {
+	global_regiment_cost = -0.1
+}
+rajput_princedom_cavalry_raids_modifier = {
+	loot_amount = 0.15
+}
+rajput_princedom_road_and_transport_modifier = {
+	manpower_recovery_speed = 0.10
+}

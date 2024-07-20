@@ -192,6 +192,8 @@ monarchy = {
 				#1.20
 				karnataka_samrajya_reform
 				coral_kingdom_reform
+				#1.21
+				uidapur_state_reform
 				#####BeginMEReforms#####
 				crusader_kingdom
 				khaganate

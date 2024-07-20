@@ -10,8 +10,8 @@ spriteTypes = {
 # Deccan
 	# Tier 1
 		spriteType = {
-			name = "government_reform_karnataka_samrajya_reform_icon"
-			texturefile = "gfx//interface//government_reform_icons//karnataka_samrajya_reform_icon.dds"
+			name = "government_reform_uidapur_state_reform_icon"
+			texturefile = "gfx//interface//government_reform_icons//uidapur_state_reform_icon.dds"
 		}
 		spriteType = {
 			name = "government_reform_coral_kingdom_reform_icon"
@@ -41,4 +41,12 @@ spriteTypes = {
 	# Tier 1
 # Western India
 	# Tier 1
+		spriteType = {
+			name = "government_reform_uidapur_state_reform_icon"
+			texturefile = "gfx//interface//government_reform_icons//uidapur_state_reform_icon.dds"
+		}
+		spriteType = {
+			name = "government_reform_coral_kingdom_reform_icon"
+			texturefile = "gfx//interface//government_reform_icons//coral_kingdom_reform_icon.dds"
+		}
 }

@@ -925,3 +925,33 @@ ge_coastal_trade_update = {
 		remove_province_modifier = ge_coastal_trade_modifier
 	}
 }
+
+ge_uidapur_state_update = {
+	if = {
+		limit = {
+			owner = { has_government_attribute = enables_uidapur_state }
+			area_for_scope_province = { is_capital_of = ROOT }
+		}
+		if = {
+			limit = {
+				owner = {
+					is_or_was_tag = { tag = MER }
+				}
+			}
+			add_province_modifier = {
+				name = ge_mer_city_of_lakes
+				duration = -1
+			}
+		}
+		else = {
+			add_province_modifier = {
+				name = ge_maw_blue_city
+				duration = -1
+			}
+		}
+	}
+	else = {
+		remove_province_modifier = ge_mer_city_of_lakes
+		remove_province_modifier = ge_maw_blue_city
+	}
+}

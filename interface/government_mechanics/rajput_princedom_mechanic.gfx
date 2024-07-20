@@ -1,0 +1,20 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_rajput_princedom_mechanic_enlist_the_infantry_button"
+		texturefile = "gfx/interface/government_mechanics/rajput_princedom_mechanic/rajput_princedom_mechanic_enlist_the_infantry_button.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_rajput_princedom_mechanic_focus_on_cavalry_button"
+		texturefile = "gfx/interface/government_mechanics/rajput_princedom_mechanic/rajput_princedom_mechanic_focus_on_cavalry_button.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_rajput_princedom_mechanic_supply_of_provisions_button"
+		texturefile = "gfx/interface/government_mechanics/rajput_princedom_mechanic/rajput_princedom_mechanic_supply_of_provisions_button.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+}
