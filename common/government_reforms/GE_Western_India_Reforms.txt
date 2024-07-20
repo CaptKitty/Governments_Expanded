@@ -2,7 +2,6 @@
 uidapur_state_reform = {
 	icon = uidapur_state_reform_icon
 	allow_normal_conversion = yes
-	lock_level_when_selected = yes
 	potential = {
 		OR = {
 			have_had_reform = uidapur_state_reform
@@ -24,11 +23,8 @@ uidapur_state_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 20
 	modifiers = {
-		army_tradition = 0.25
-		inflation_reduction = 0.10
 		fort_maintenance_modifier = -0.10
 		monarch_military_power = 1
-		tolerance_own = 1
 
 		allowed_rajput_fraction = 0.10
 		rajput_loyalty_modifier = 0.10
@@ -53,8 +49,18 @@ uidapur_state_reform = {
 			}
 		}
 	}
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Dharma"
+				has_dlc = "Winds of Change"
+			}
+		}
+		custom_attributes = {
+			enables_estate_rajput = yes
+		}
+	}
 	custom_attributes = {
-		locked_government_type = yes
 		enables_uidapur_state = yes
 	}
 }
@@ -105,17 +111,17 @@ divine_rajputana_splendor_reform = {
 	icon = divine_rajputana_splendor_reform_icon
 	potential = {
 		culture_group = western_aryan
+		religion = hinduism
 	}
 	trigger = {
 		culture_group = western_aryan
+		religion = hinduism
 	}
 	modifiers = {
 		religious_unity = 0.1
 		church_loyalty_modifier = 0.1
 		church_privilege_slots = 1
 		brahmins_hindu_loyalty_modifier = 0.1
-		brahmins_muslim_loyalty_modifier = 0.1
-		brahmins_other_loyalty_modifier = 0.1
 		brahmins_privilege_slots = 1
 	}
 	custom_attributes = {
@@ -138,42 +144,6 @@ divine_rajputana_splendor_reform = {
 }
 
 # T3
-the_bread_basket_reform = {
-	icon = krsi_trivate_reform_icon
-	potential = {
-		capital_scope = {
-			region = west_india_region
-		}
-		culture_group = western_aryan
-	}
-	trigger = {
-		capital_scope = {
-			region = west_india_region
-		}
-		culture_group = western_aryan
-	}
-	modifiers = {
-		global_prov_trade_power_modifier = 0.15
-		production_efficiency = 0.1
-	}
-	custom_attributes = {
-		enables_bread_basket_province = yes
-	}
-	effect = {
-		hidden_effect = {
-			every_owned_province = {
-				ge_bread_basket_province_update = yes
-			}
-		}
-	}
-	removed_effect = {
-		hidden_effect = {
-			every_owned_province = {
-				remove_province_modifier = ge_bread_basket_province_modifier
-			}
-		}
-	}
-}
 
 # T4
 
@@ -229,6 +199,7 @@ desert_construction_reform = {
 	}
 	modifiers = {
 		build_time = -0.1
+		global_prov_trade_power_modifier = 0.15
 	}
 	custom_attributes = {
 		enables_desert_construction_province = yes

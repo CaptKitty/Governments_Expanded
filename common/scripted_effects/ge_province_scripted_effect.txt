@@ -973,22 +973,6 @@ ge_western_aryan_province_update = {
 	}
 }
 
-ge_bread_basket_province_update = {
-	if = {
-		limit = {
-			owner = { has_government_attribute = enables_bread_basket_province }
-			has_river_estuary_trigger = yes
-		}
-		add_province_modifier = {
-			name = ge_bread_basket_province_modifier
-			duration = -1
-		}
-	}
-	else = {
-		remove_province_modifier = ge_bread_basket_province_modifier
-	}
-}
-
 ge_western_indian_frontier_guards_province_update = {
 	if = {
 		limit = {

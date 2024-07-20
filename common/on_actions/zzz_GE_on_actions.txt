@@ -315,7 +315,6 @@ on_province_owner_change = {
 	ge_coastal_trade_update = yes
 	ge_uidapur_state_update = yes
 	ge_western_aryan_province_update = yes
-	ge_bread_basket_province_update = yes
 	ge_western_indian_frontier_guards_province_update = yes
 	ge_desert_construction_province_update = yes
 }

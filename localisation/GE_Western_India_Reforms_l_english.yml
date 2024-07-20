@@ -20,9 +20,6 @@
  krsi_trivate_reform: "Krsi Tivrate"
  krsi_trivate_reform_desc: "Since water was scarce in the rocky terrain in the Tungabhadra Valley, it had to be harnessed to its optimum use. Therefore, the state tried to control the irrigation techniques in the Vijayanagara metropolitan region and this was also important for the assertion of power and authority. The kings exploited the hydrological environment to its maximum advantage, irrigating agricultural land inside the city, directing water into urban areas for domestic use, and building an impressive system of baths and channels to service the Royal Centre."
 
- the_bread_basket_reform: "The Bread Basket"
- the_bread_basket_reform_desc: ""
-
 # Tier 5
  frontier_guards_reform: "Frontier Guards"
  frontier_guards_reform_desc: "Before the arrival of the Muslim conquerors, our noble Rajput dynasties ruled over much of northern and western India. As proud warriors from illustrious Hindu families, we Rajputs stood as the guardians of our lands, our culture, and our people. The rising threat from the expansionist empires of the Muslim world, including the Arabs, Turks, Pashtuns, and Mughals, only strengthened our resolve. In 712 A.D., the Umayyad Caliphate seized Sindh and Multan, marking the beginning of a series of fierce battles between us and the Arab invaders. Among our fiercest defenders was the Gurjara-Pratihara dynasty, led by the valiant Nagabhata I, who repeatedly drove the Arabs from our lands. Under the leadership of Bappa Rawal, a united Rajput confederacy successfully repelled an Arab invasion with an army composed of warriors from nearly all the northern dynasties. As the centuries passed, new threats emerged from the Turkic and Turco-Persian states such as the Ghaznavids and Ghorids, who launched fresh raids into our sacred soil. Our Rajput kingdoms, including the mighty realm of Prithviraj Chauhan, fought tirelessly against these invaders. Despite our relentless resistance, the Ghorids eventually captured Delhi and the fertile Gangetic plains, leading to the fragmentation of our territories and the rise of the Delhi Sultanate. Yet, the spirit of the Rajput defenders endures, a testament to our bravery and unwavering dedication to protecting our homeland."
@@ -62,7 +59,7 @@
  mechanic_enables_western_aryan_province_yes: "§YDevine Rajputana Splendor§!: §G-5.0%§! Local Development Cost and §G-7.5%§! Local Construction Cost in §YWestern Aryan§! provinces following the country religion"
  mechanic_enables_bread_basket_province_yes: "§YBread Basket§!: §G-15.0%§! Local Development Cost in provinces with a §YRiver Estuary§!"
  mechanic_enables_western_indian_frontier_guards_province_yes: "§YInvasion Defense§!: §G+15.0%§! Local Manpower Modifier, §G-15.0%§! Local Regiment Cost, §G-15.0%§! Local Recruitment Time, §G-15.0%§! Local Fort Maintenance Modifier and §G+15.0%§! Local Defensiveness in provinces in the §YWestern India§! region that border provinces outside of that region"
- mechanic_enables_desert_construction_province_yes: "§YDesert Construction§!: §G-15.0%§! Local Construction Cost in §YDesert§! provinces"
+ mechanic_enables_desert_construction_province_yes: "§YDesert Construction§!: §G-15.0%§! Local Construction Cost and §G-15.0%§! Local Development Cost in §YDesert§! provinces"
 
 # Modifiers
  ge_mer_city_of_lakes: "City of Lakes"
@@ -86,9 +83,6 @@
 
  ge_western_aryan_province_modifier: "Devine Rajputana Splendor"
  desc_ge_western_aryan_province_modifier: ""
-
- ge_bread_basket_province_modifier: "Bread Basket"
- desc_ge_bread_basket_province_modifier: ""
 
  ge_western_indian_frontier_guards_province_modifier: "Invasion Defense"
  desc_ge_western_indian_frontier_guards_province_modifier: ""
