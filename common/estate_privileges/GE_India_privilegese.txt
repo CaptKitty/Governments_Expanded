@@ -197,3 +197,20 @@ estate_persian_weaving_industry = {
 		factor = 1
 	}
 }
+
+estate_rajput_increased_rajput_volunteers = {
+	icon = privilege_manpower_of_true_faith
+	land_share = 0
+	max_absolutism = -5
+	loyalty = 0
+	influence = 0.1
+	is_valid = {
+		culture_group = western_aryan
+	}
+	modifier_by_land_ownership = {
+		global_manpower_modifier = 0.33
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}

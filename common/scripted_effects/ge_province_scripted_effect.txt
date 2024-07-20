@@ -4,7 +4,7 @@ ge_moutain_warfare_province_update = {
 			owner = {
 				has_government_attribute = enables_mountain_warfare
 			}
-			region = italy_region 
+			region = italy_region
 			OR = {
 				has_terrain = hills
 				has_terrain = mountain
@@ -953,5 +953,73 @@ ge_uidapur_state_update = {
 	else = {
 		remove_province_modifier = ge_mer_city_of_lakes
 		remove_province_modifier = ge_maw_blue_city
+	}
+}
+
+ge_western_aryan_province_update = {
+	if = {
+		limit = {
+			owner = { has_government_attribute = enables_western_aryan_province }
+			has_owner_religion = yes
+			culture_group = western_aryan
+		}
+		add_province_modifier = {
+			name = ge_western_aryan_province_modifier
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = ge_western_aryan_province_modifier
+	}
+}
+
+ge_bread_basket_province_update = {
+	if = {
+		limit = {
+			owner = { has_government_attribute = enables_bread_basket_province }
+			has_river_estuary_trigger = yes
+		}
+		add_province_modifier = {
+			name = ge_bread_basket_province_modifier
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = ge_bread_basket_province_modifier
+	}
+}
+
+ge_western_indian_frontier_guards_province_update = {
+	if = {
+		limit = {
+			owner = { has_government_attribute = enables_western_indian_frontier_guards_province }
+			region = west_india_region
+			any_neighbor_province = {
+				NOT = { region = west_india_region }
+			}
+		}
+		add_province_modifier = {
+			name = ge_western_indian_frontier_guards_province_modifier
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = ge_western_indian_frontier_guards_province_modifier
+	}
+}
+
+ge_desert_construction_province_update = {
+	if = {
+		limit = {
+			owner = { has_government_attribute = enables_desert_construction_province }
+			has_terrain = desert
+		}
+		add_province_modifier = {
+			name = ge_desert_construction_province_modifier
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = ge_desert_construction_province_modifier
 	}
 }

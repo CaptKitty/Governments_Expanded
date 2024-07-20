@@ -441,3 +441,46 @@
  desc_rajput_princedom_cavalry_raids_modifier: ""
  rajput_princedom_road_and_transport_modifier: "Roads and Transport"
  desc_rajput_princedom_road_and_transport_modifier: ""
+
+
+# Pratihara Mechanic:
+ ## Mechanics:
+ ability_pratihara_mechanic: "Pratihara"
+ pratihara_mechanic_adm_power: "Strengthen Clan System Progress"
+ pratihara_mechanic_adm_power_desc: ""
+ pratihara_mechanic_dip_power: "Strengthen Palacial Authority Progress"
+ pratihara_mechanic_dip_power_desc: ""
+ pratihara_mechanic_mil_power: "Call Guards of Bharat Progress"
+ pratihara_mechanic_mil_power_desc: ""
+
+ pratihara_mechanic_clan_system: "Strengthen Clan System"
+ pratihara_mechanic_clan_system_desc: ""
+ pratihara_mechanic_strengthen_the_palacial_authority: "Strengthen Palacial Authority"
+ pratihara_mechanic_strengthen_the_palacial_authority_desc: ""
+ pratihara_mechanic_guards_of_bharat: "Strengthen Clan System Progress"
+ pratihara_mechanic_guards_of_bharat_desc: "Call Guards of Bharat"
+
+ ## Power Modifiers:
+ monthly_pratihara_mechanic_adm_power: "Monthly Strengthen Clan System Progress"
+ pratihara_mechanic_adm_power_gain_modifier: "Strengthen Clan System Progress Change Modifier"
+ monthly_pratihara_mechanic_dip_power: "Monthly Strengthen Palacial Authority Progress"
+ pratihara_mechanic_dip_power_gain_modifier: "Strengthen Palacial Authority Progress Change Modifier"
+ monthly_pratihara_mechanic_mil_power: "Monthly Call Guards of Bharat Progress"
+ pratihara_mechanic_mil_power_gain_modifier: "Call Guards of Bharat Progress Change Modifier"
+
+ ## Modifiers:
+ pratihara_mechanic_clan_system_modifier: "The Amber Phoenix"
+ desc_pratihara_mechanic_clan_system_modifier: ""
+ pratihara_mechanic_guards_of_bharat_modifier: "Resisting the Invasion"
+ desc_pratihara_mechanic_guards_of_bharat_modifier: "As long as this modifier is active, we gain §G+15.0%§! Army Morale when at war with §YMuslim§! countries."
+ pratihara_mechanic_strengthen_the_palacial_authority_modifier: "Pratihara Renaissance"
+ desc_pratihara_mechanic_strengthen_the_palacial_authority_modifier: ""
+
+ ## Triggered Modifiers:
+ GE_pratihara_mechanic_guards_of_bharat_triggered_modifier: "Resisting the Invasion"
+ desc_GE_pratihara_mechanic_guards_of_bharat_triggered_modifier: ""
+
+ ## Tooltips:
+ pratihara_mechanic_clan_system_tt: "One random owned province with the §YRajasthani§! culture gains §G1§! random development. \nEvery owned province with the §YRajasthani§! culture gets '§YThe Amber Phoenix§!' for §Y15 years§!, giving the following effects: \nLocal Regiment Cost: §G-15.0%§! \nLocal Recruitment Time: §G-15.0%§!"
+ pratihara_mechanic_guards_of_bharat_tt: "[Root.GetName] gets '§YResisting the Invasion§!' for §Y10 years§!, giving the following effects: Army Morale: §G+15.0%§! \n§YThis modifier is only active, if at war with a Muslim country.§!\n"
+ pratihara_mechanic_guards_of_bharat_manpower_tt: "from owned provinces with the §YRajasthani§! culture."

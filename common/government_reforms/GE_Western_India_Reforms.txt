@@ -40,7 +40,9 @@ uidapur_state_reform = {
 	}
 	effect = {
 		hidden_effect = {
-			ge_uidapur_state_update = yes
+			every_owned_province = {
+				ge_uidapur_state_update = yes
+			}
 		}
 	}
 	removed_effect = {
@@ -52,8 +54,197 @@ uidapur_state_reform = {
 		}
 	}
 	custom_attributes = {
+		locked_government_type = yes
 		enables_uidapur_state = yes
 	}
 }
 
+pratihara_reform = {
+	icon = pratihara_reform_icon
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			have_had_reform = pratihara_reform
+			is_or_was_tag = { tag = RJP }
+		}
+	}
+	trigger = {
+		OR = {
+			have_had_reform = pratihara_reform
+			is_or_was_tag = { tag = RJP }
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+	modifiers = {
+		infantry_cost = -0.2
+		infantry_power = 0.1
+		governing_capacity = 50
+		special_unit_forcelimit = 0.25
+		rajput_privilege_slots = 1
+		can_recruit_rajputs = yes
+	}
+	government_abilities = {
+		pratihara_mechanic
+	}
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Dharma"
+				has_dlc = "Winds of Change"
+			}
+		}
+		custom_attributes = {
+			enables_estate_rajput = yes
+		}
+	}
+}
+
 # T2
+divine_rajputana_splendor_reform = {
+	icon = divine_rajputana_splendor_reform_icon
+	potential = {
+		culture_group = western_aryan
+	}
+	trigger = {
+		culture_group = western_aryan
+	}
+	modifiers = {
+		religious_unity = 0.1
+		church_loyalty_modifier = 0.1
+		church_privilege_slots = 1
+		brahmins_hindu_loyalty_modifier = 0.1
+		brahmins_muslim_loyalty_modifier = 0.1
+		brahmins_other_loyalty_modifier = 0.1
+		brahmins_privilege_slots = 1
+	}
+	custom_attributes = {
+		enables_western_aryan_province = yes
+	}
+	effect = {
+		hidden_effect = {
+			every_owned_province = {
+				ge_western_aryan_province_update = yes
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				remove_province_modifier = ge_western_aryan_province_modifier
+			}
+		}
+	}
+}
+
+# T3
+the_bread_basket_reform = {
+	icon = krsi_trivate_reform_icon
+	potential = {
+		capital_scope = {
+			region = west_india_region
+		}
+		culture_group = western_aryan
+	}
+	trigger = {
+		capital_scope = {
+			region = west_india_region
+		}
+		culture_group = western_aryan
+	}
+	modifiers = {
+		global_prov_trade_power_modifier = 0.15
+		production_efficiency = 0.1
+	}
+	custom_attributes = {
+		enables_bread_basket_province = yes
+	}
+	effect = {
+		hidden_effect = {
+			every_owned_province = {
+				ge_bread_basket_province_update = yes
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				remove_province_modifier = ge_bread_basket_province_modifier
+			}
+		}
+	}
+}
+
+# T4
+
+# T5
+frontier_guards_reform = {
+	icon = frontier_guards_reform_icon
+	potential = {
+		culture_group = western_aryan
+	}
+	trigger = {
+		culture_group = western_aryan
+	}
+	modifiers = {
+		cavalry_cost = -0.1
+		cavalry_power = 0.1
+	}
+	custom_attributes = {
+		enables_western_indian_frontier_guards_province = yes
+	}
+	effect = {
+		hidden_effect = {
+			every_owned_province = {
+				ge_western_indian_frontier_guards_province_update = yes
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				remove_province_modifier = ge_western_indian_frontier_guards_province_modifier
+			}
+		}
+	}
+}
+
+# T6
+# T7
+
+# T8
+desert_construction_reform = {
+	icon = desert_construction_reform_icon
+	potential = {
+		capital_scope = {
+			region = west_india_region
+		}
+		culture_group = western_aryan
+	}
+	trigger = {
+		capital_scope = {
+			region = west_india_region
+		}
+		culture_group = western_aryan
+	}
+	modifiers = {
+		build_time = -0.1
+	}
+	custom_attributes = {
+		enables_desert_construction_province = yes
+	}
+	effect = {
+		hidden_effect = {
+			every_owned_province = {
+				ge_desert_construction_province_update = yes
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				remove_province_modifier = ge_desert_construction_province_modifier
+			}
+		}
+	}
+}

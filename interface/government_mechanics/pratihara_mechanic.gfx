@@ -1,0 +1,14 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_pratihara_mechanic_clan_system_button"
+		textureFile = "gfx/interface/government_mechanics/pratihara_mechanic/pratihara_mechanic_clan_system_button.dds"
+	}
+	spriteType = {
+		name = "GFX_pratihara_mechanic_strengthen_the_palacial_authority_button"
+		textureFile = "gfx/interface/government_mechanics/pratihara_mechanic/pratihara_mechanic_strengthen_the_palacial_authority_button.dds"
+	}
+	spriteType = {
+		name = "GFX_pratihara_mechanic_guards_of_bharat_button"
+		textureFile = "gfx/interface/government_mechanics/pratihara_mechanic/pratihara_mechanic_guards_of_bharat_button.dds"
+	}
+}

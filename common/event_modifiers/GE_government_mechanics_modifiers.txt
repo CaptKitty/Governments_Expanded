@@ -243,3 +243,16 @@ legitimation_through_representation_mechanic_renovate_the_palace_modifier = {
 	monthly_legitimation_through_representation_power = 0.5
 	legitimation_through_representation_power_gain_modifier = 0.5
 }
+
+# Pratihara Mechanic:
+pratihara_mechanic_clan_system_modifier = {
+	local_regiment_cost = -0.15
+	regiment_recruit_speed = -0.15
+}
+pratihara_mechanic_guards_of_bharat_modifier = {
+	picture = "land_morale"
+}
+pratihara_mechanic_strengthen_the_palacial_authority_modifier = {
+	institution_spread_from_true_faith = 0.33
+	build_cost = -0.05
+}

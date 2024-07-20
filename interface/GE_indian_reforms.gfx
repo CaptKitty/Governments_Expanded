@@ -46,8 +46,8 @@ spriteTypes = {
 			texturefile = "gfx//interface//government_reform_icons//uidapur_state_reform_icon.dds"
 		}
 		spriteType = {
-			name = "government_reform_gfx_pratihara_reform_icon.dds"
-			texturefile = "gfx//interface//government_reform_icons//gfx_pratihara_reform_icon.dds"
+			name = "government_reform_pratihara_reform_icon"
+			texturefile = "gfx//interface//government_reform_icons//pratihara_reform_icon.dds"
 		}
 	# Tier 2
 		spriteType = {

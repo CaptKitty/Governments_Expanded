@@ -1,0 +1,132 @@
+pratihara_mechanic = {
+	alert_icon_gfx = GFX_alerticons_government_mechanics
+	alert_icon_index = 8
+	available = {
+		always = yes
+	}
+
+	powers = {
+		pratihara_mechanic_adm_power = {
+			max = 150
+			monarch_power = ADM
+			base_monthly_growth = 3
+		}
+		pratihara_mechanic_dip_power = {
+			max = 150
+			monarch_power = DIP
+			base_monthly_growth = 3
+		}
+		pratihara_mechanic_mil_power = {
+			max = 150
+			monarch_power = MIL
+			base_monthly_growth = 3
+		}
+	}
+
+	interactions = {
+		pratihara_mechanic_clan_system = {
+			icon = GFX_pratihara_mechanic_clan_system_button
+			cost_type = pratihara_mechanic_adm_power
+			cost = 100
+			trigger = {
+				any_owned_province = {
+					culture = rajput
+				}
+			}
+			effect = {
+				custom_tooltip = " "
+				custom_tooltip = pratihara_mechanic_clan_system_tt
+				hidden_effect = {
+					random_owned_province = {
+						limit = {
+							culture = rajput
+						}
+						add_random_development = 1
+					}
+					every_owned_province = {
+						limit = {
+							culture = rajput
+						}
+						remove_province_modifier = pratihara_mechanic_clan_system_modifier
+						add_province_modifier = {
+							name = pratihara_mechanic_clan_system_modifier
+							duration = 5475
+						}
+					}
+				}
+			}
+			ai_chance = {
+				factor = 20
+			}
+		}
+		pratihara_mechanic_strengthen_the_palacial_authority = {
+			icon = GFX_pratihara_mechanic_strengthen_the_palacial_authority_button
+			cost_type = pratihara_mechanic_dip_power
+			cost = 100
+			trigger = {
+			}
+			effect = {
+				custom_tooltip = " "
+				hidden_effect = {
+					if = {
+						limit = {
+							has_country_modifier = pratihara_mechanic_strengthen_the_palacial_authority_modifier
+						}
+						remove_country_modifier = pratihara_mechanic_strengthen_the_palacial_authority_modifier
+					}
+				}
+				add_country_modifier = {
+					name = pratihara_mechanic_strengthen_the_palacial_authority_modifier
+					duration = 3650
+				}
+			}
+			ai_chance = {
+				factor = 20
+			}
+		}
+		pratihara_mechanic_guards_of_bharat = {
+			icon = GFX_pratihara_mechanic_guards_of_bharat_button
+			cost_type = pratihara_mechanic_mil_power
+			cost = 100
+			trigger = {
+				OR = {
+					any_owned_province = {
+						culture = rajput
+					}
+					AND = {
+						is_at_war = yes
+						any_war_enemy_country = {
+							religion_group = muslim
+						}
+					}
+				}
+			}
+			effect = {
+				custom_tooltip = " "
+				custom_tooltip = pratihara_mechanic_guards_of_bharat_tt
+				add_years_of_owned_provinces_manpower = {
+					years = 3
+					trigger = {
+						culture = rajput
+					}
+					custom_tooltip = pratihara_mechanic_guards_of_bharat_manpower_tt
+				}
+				hidden_effect = {
+					if = {
+						limit = {
+							has_country_modifier = pratihara_mechanic_guards_of_bharat_modifier
+						}
+						remove_country_modifier = pratihara_mechanic_guards_of_bharat_modifier
+					}
+					add_country_modifier = {
+						name = pratihara_mechanic_guards_of_bharat_modifier
+						duration = 3650
+					}
+				}
+			}
+			ai_chance = {
+				factor = 20
+			}
+		}
+	}
+}

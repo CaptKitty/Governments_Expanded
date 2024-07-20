@@ -14,3 +14,24 @@ rajput_princedom_cavalry_raids_modifier = {
 rajput_princedom_road_and_transport_modifier = {
 	manpower_recovery_speed = 0.10
 }
+
+ge_western_aryan_province_modifier = {
+	local_development_cost = -0.05
+	local_build_cost = -0.075
+}
+
+ge_bread_basket_province_modifier = {
+	local_development_cost = -0.15
+}
+
+ge_western_indian_frontier_guards_province_modifier = {
+	local_manpower_modifier = 0.15
+	local_regiment_cost = -0.15
+	regiment_recruit_speed = -0.15
+	local_fort_maintenance_modifier = -0.15
+	local_defensiveness = 0.15
+}
+
+ge_desert_construction_province_modifier = {
+	local_build_cost = -0.15
+}

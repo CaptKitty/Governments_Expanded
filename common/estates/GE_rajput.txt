@@ -1,0 +1,5 @@
+estate_rajput = {
+	privileges = {
+		estate_rajput_increased_rajput_volunteers
+	}
+}

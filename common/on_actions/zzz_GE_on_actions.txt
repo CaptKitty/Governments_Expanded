@@ -314,6 +314,10 @@ on_province_owner_change = {
 	ge_inland_trade_update = yes
 	ge_coastal_trade_update = yes
 	ge_uidapur_state_update = yes
+	ge_western_aryan_province_update = yes
+	ge_bread_basket_province_update = yes
+	ge_western_indian_frontier_guards_province_update = yes
+	ge_desert_construction_province_update = yes
 }
 
 on_trade_good_changed = {
@@ -349,6 +353,7 @@ on_province_culture_changed = {
 	ge_huaca_cults_province_update = yes
 	ge_bridge_between_worlds_update = yes
 	ge_clan_system_province_update = yes
+	ge_western_aryan_province_update = yes
 }
 
 on_culture_promoted = {
@@ -398,12 +403,21 @@ on_province_religion_converted = {
 on_province_religion_changed = {
 	every_neighbor_province = { ge_morisca_band_province_update = yes }
 	ge_qadi_authority_province_update = yes
-	ge_religious_adherence_province_update = yes	
+	ge_religious_adherence_province_update = yes
+	ge_western_aryan_province_update = yes
 }
 
 on_religion_change = {
 	every_owned_province = { every_neighbor_province = { ge_morisca_band_province_update = yes } }
 	ge_country_religious_domination_update = yes
+	if = {
+		limit = {
+			has_government_attribute = enables_western_aryan_province
+		}
+		every_owned_province = {
+			ge_western_aryan_province_update = yes
+		}
+	}
 }
 
 on_parliament_seat_lost = {
@@ -422,7 +436,7 @@ on_yearly_pulse_2 = {
 	every_owned_province = { ge_fortified_settlements_province_update = yes }
 	every_owned_province = { ge_administrative_forts_province_update = yes }
 	every_owned_province = { ge_Satrapy_province_update = yes }
-	every_owned_province = { ge_voc_mentality_province_update = yes }	
+	every_owned_province = { ge_voc_mentality_province_update = yes }
 	ge_country_unrestricted_diplomats_add = yes
 	ge_country_arabian_horses_update = yes
 }
@@ -458,7 +472,7 @@ on_dependency_lost = {
 	ge_country_trade_princes_update = yes
 	ge_country_swiss_guard_update = yes
 	ge_country_hansa_ties_update = yes
-	ge_country_Varangian_Guard_update =yes 
+	ge_country_Varangian_Guard_update =yes
 	ge_country_imperial_circle_update = yes
 	ge_country_unified_drills_update = yes
 }
@@ -537,7 +551,7 @@ on_alliance_broken ={
 
 on_mercenary_recruited = {
 	FROM = {
-		country_event = { 
+		country_event = {
 			id = reform_me_events.229
 			days = 1
 		}
@@ -583,7 +597,7 @@ on_annexed = {
 			}
 			NOT = { exists = yes }
 		}
-		country_event = { 
+		country_event = {
 			id = reform_me_events.236
 			days = 1
 		}

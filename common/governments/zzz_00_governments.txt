@@ -114,7 +114,7 @@ monarchy = {
 				#Turkomen
 				turkoman_ottoman_institutions
 				pronoiar_monarchy_reform #custom nation
-				#Egypt 
+				#Egypt
 				egyptian_government_reform
 				#1.37
 				ayyubid_dynasty
@@ -194,6 +194,7 @@ monarchy = {
 				coral_kingdom_reform
 				#1.21
 				uidapur_state_reform
+				pratihara_reform
 				#####BeginMEReforms#####
 				crusader_kingdom
 				khaganate
@@ -353,6 +354,8 @@ monarchy = {
 				sajtaj_u_yajawil_k_oxelil_u_k_iche_reform
 				#1.20
 				patronage_jain_temples_reform
+				#1.21
+				divine_rajputana_splendor_reform
 				# ME Reforms:
 				incan_society_reform
 				aztec_society_reform
@@ -463,6 +466,8 @@ monarchy = {
 				nimajay_pa_winaq_reform
 				#1.20
 				krsi_trivate_reform
+				#1.21
+				the_bread_basket_reform
 				# ME Reforms:
 				tur_reform_beylerbeys
 				tur_reform_eyalets
@@ -560,7 +565,7 @@ monarchy = {
 				condottieri_contracts_reform
 				compagnie_dordonnance_reform
 				musketeers_reform
-				gendarmes_reform 
+				gendarmes_reform
 				general_war_commissariat_reform
 				swiss_mercenary_reform
 				allotment_system
@@ -589,7 +594,7 @@ monarchy = {
 				cuman_lancers_reform
 				#1.37 Bohemia
 				vozove_hradby_reform
-				russian_mercenary_guard_reform 
+				russian_mercenary_guard_reform
 				### GE ###
 				feudal_levies_reform
 				national_guard_reform
@@ -657,6 +662,8 @@ monarchy = {
 				fonderie_ferraresi_reform
 				fanti_da_mar_reform
 				xolon_maj_reform
+				#1.21
+				frontier_guards_reform
 			}
 		}
 		deliberative_assembly = {
@@ -859,6 +866,8 @@ monarchy = {
 				#1.20
 				lyand_rutargalalli_vyapara_reform
 				sagarottara_vyapara_reform
+				#1.21
+				desert_construction_reform
 			}
 		}
 		legitimation_of_power = {
@@ -1394,7 +1403,7 @@ republic = {
 				cuman_lancers_reform
 				#1.37 Bohemia
 				vozove_hradby_reform
-				russian_mercenary_guard_reform 
+				russian_mercenary_guard_reform
 				### GE ###
 				compagnies_dordonnance_reform_GE
 				feudal_levies_reform
@@ -1867,7 +1876,7 @@ tribal = {
 				cuman_lancers_reform
 				#1.37 Bohemia
 				vozove_hradby_reform
-				russian_mercenary_guard_reform 
+				russian_mercenary_guard_reform
 				### GE ###
 				gunpowder_weapons_reform
 				gunpowder_weapons_african_reform
@@ -2169,7 +2178,7 @@ theocracy = {
 				cuman_lancers_reform
 				#1.37 Bohemia
 				vozove_hradby_reform
-				russian_mercenary_guard_reform 
+				russian_mercenary_guard_reform
 				### GE ###
 				compagnies_dordonnance_reform_GE
 				holy_war_reform

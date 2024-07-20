@@ -24,3 +24,19 @@ GE_maritime_republic_triggered_modifier_global_trade = {
 
 	picture = "monthly_maritime_republic_opposite"
 }
+
+# Pratihara Mechanic
+GE_pratihara_mechanic_guards_of_bharat_triggered_modifier = {
+	potential = {
+		has_government_mechanic = pratihara_mechanic
+		has_country_modifier = pratihara_mechanic_guards_of_bharat_modifier
+	}
+	trigger = {
+		is_at_war = yes
+		any_war_enemy_country = {
+			religion_group = muslim
+		}
+	}
+
+	land_morale = 0.15
+}
