@@ -46,7 +46,27 @@ spriteTypes = {
 			texturefile = "gfx//interface//government_reform_icons//uidapur_state_reform_icon.dds"
 		}
 		spriteType = {
-			name = "government_reform_coral_kingdom_reform_icon"
-			texturefile = "gfx//interface//government_reform_icons//coral_kingdom_reform_icon.dds"
+			name = "government_reform_gfx_pratihara_reform_icon.dds"
+			texturefile = "gfx//interface//government_reform_icons//gfx_pratihara_reform_icon.dds"
+		}
+	# Tier 2
+		spriteType = {
+			name = "government_reform_divine_rajputana_splendor_reform_icon"
+			texturefile = "gfx//interface//government_reform_icons//divine_rajputana_splendor_reform_icon.dds"
+		}
+	# Tier 3
+		spriteType = {
+			name = "government_reform_bread_basket_reform_icon"
+			texturefile = "gfx//interface//government_reform_icons//bread_basket_reform_icon.dds"
+		}
+	# Tier 5
+		spriteType = {
+			name = "government_reform_frontier_guards_reform_icon"
+			texturefile = "gfx//interface//government_reform_icons//frontier_guards_reform_icon.dds"
+		}
+	# Tier 8
+		spriteType = {
+			name = "government_reform_desert_construction_reform_icon"
+			texturefile = "gfx//interface//government_reform_icons//desert_construction_reform_icon.dds"
 		}
 }
