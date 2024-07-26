@@ -58,7 +58,7 @@
 
  mechanic_enables_western_aryan_province_yes: "§YDevine Rajputana Splendor§!: §G-5.0%§! Local Development Cost and §G-7.5%§! Local Construction Cost in §YWestern Aryan§! provinces following the country religion"
  mechanic_enables_bread_basket_province_yes: "§YBread Basket§!: §G-15.0%§! Local Development Cost in provinces with a §YRiver Estuary§!"
- mechanic_enables_western_indian_frontier_guards_province_yes: "§YInvasion Defense§!: §G+15.0%§! Local Manpower Modifier, §G-15.0%§! Local Regiment Cost, §G-15.0%§! Local Recruitment Time, §G-15.0%§! Local Fort Maintenance Modifier and §G+15.0%§! Local Defensiveness in provinces in the §YWestern India§! region that border provinces outside of that region"
+ mechanic_enables_western_indian_frontier_guards_province_yes: "Every owned province in the §YWestern India§! region that borders arother region will gain §YInvasion Defense§!:\n  Local Defensiveness: §G+15.0%§!\n  Local Fort Maintenance Modifier: §G-15.0%§!\n  Local Manpower Modifier: §G+15.0%§!\n  Local Recruitment Time: §G-15.0%§!\n  Local Regiment Cost: §G-15.0%§!"
  mechanic_enables_desert_construction_province_yes: "§YDesert Construction§!: §G-15.0%§! Local Construction Cost and §G-15.0%§! Local Development Cost in §YDesert§! provinces"
 
 # Modifiers
