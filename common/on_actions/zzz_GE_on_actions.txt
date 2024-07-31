@@ -204,12 +204,14 @@ on_five_year_pulse_4 = {
 on_new_term_election = {
 	events = {
 		elections.7001
+		GE_Election_Events.1
 	}
 }
 
 on_death_election = {
 	events = {
 		elections.7002
+		GE_Election_Events.1
 	}
 }
 
