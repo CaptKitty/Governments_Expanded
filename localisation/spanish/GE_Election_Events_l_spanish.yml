@@ -1,0 +1,6 @@
+﻿l_spanish:
+ GE_Election_Events.1.t: "Dawn of a new Era"
+ GE_Election_Events.1.d: "Since the death of our most glorious ruler [Root.Monarch.GetName], our court has fallen in disorder, with the Imperial and Shogunate factions fighting over who gets to claim the Throne for a lifetime."
+ GE_Election_Events.1.a: "The Shogun, he led us to unification, and shall lead us beyond."
+ GE_Election_Events.1.b: "The Emperor, for he has been chosen by heaven."
+ GE_Election_Events.1.c: "A Council, to prevent conflict between the factions."
