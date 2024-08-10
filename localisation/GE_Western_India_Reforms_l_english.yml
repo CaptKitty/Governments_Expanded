@@ -10,48 +10,21 @@
  divine_rajputana_splendor_reform: "Divine Rajputana Splendor"
  divine_rajputana_splendor_reform_desc: "Crafted to impress, this highly elaborate form of architecture was not merely ornamental; it served a profound purpose. It was designed to capture the divine beauty of the gods and the splendor of the world, reflected in temples, fortresses, and palaces. This architectural style extended to every commission of the rulers, integrating both aesthetic grandeur and functional design. The unique shapes and intricate designs not only created visually stunning structures but also served practical functions, such as maintaining cool spaces within palaces. This perfect marriage of luxurious, extravagant beauty and practical utility is evident in every elaborate twist, dome, turn, and bend of these majestic constructions."
 
-# Tier 3
- krsi_trivate_reform: "Krsi Tivrate"
- krsi_trivate_reform_desc: "Since water was scarce in the rocky terrain in the Tungabhadra Valley, it had to be harnessed to its optimum use. Therefore, the state tried to control the irrigation techniques in the Vijayanagara metropolitan region and this was also important for the assertion of power and authority. The kings exploited the hydrological environment to its maximum advantage, irrigating agricultural land inside the city, directing water into urban areas for domestic use, and building an impressive system of baths and channels to service the Royal Centre."
-
 # Tier 5
  frontier_guards_reform: "Frontier Guards"
  frontier_guards_reform_desc: "Before the arrival of the Muslim conquerors, our noble Rajput dynasties ruled over much of northern and western India. As proud warriors from illustrious Hindu families, we Rajputs stood as the guardians of our lands, our culture, and our people. The rising threat from the expansionist empires of the Muslim world, including the Arabs, Turks, Pashtuns, and Mughals, only strengthened our resolve. In 712 A.D., the Umayyad Caliphate seized Sindh and Multan, marking the beginning of a series of fierce battles between us and the Arab invaders. Among our fiercest defenders was the Gurjara-Pratihara dynasty, led by the valiant Nagabhata I, who repeatedly drove the Arabs from our lands. Under the leadership of Bappa Rawal, a united Rajput confederacy successfully repelled an Arab invasion with an army composed of warriors from nearly all the northern dynasties. As the centuries passed, new threats emerged from the Turkic and Turco-Persian states such as the Ghaznavids and Ghorids, who launched fresh raids into our sacred soil. Our Rajput kingdoms, including the mighty realm of Prithviraj Chauhan, fought tirelessly against these invaders. Despite our relentless resistance, the Ghorids eventually captured Delhi and the fertile Gangetic plains, leading to the fragmentation of our territories and the rise of the Delhi Sultanate. Yet, the spirit of the Rajput defenders endures, a testament to our bravery and unwavering dedication to protecting our homeland."
 
 # Tier 8
- lyand_rutargalalli_vyapara_reform: "Lyand Rutargalalli Vyapara"
- lyand_rutargalalli_vyapara_reform_desc: "The Rayas prioritized internal land trade over ocean trade, striving to foster a vibrant commercial life within the empire. Accounts from foreign travelers, inscriptions, and literature illuminate a network of land routes linking vital cities. Seven highways radiated from the capital: the first to Goa via Bankapur, the second to Sri Rangapattanam via Sivasamudram, the third to Cochin and the Malabar regions, the fourth linking it to Dhanushkoti via Chandragiri, Tirupati, Kanchi, Chidambaram, Madurai, and Rameswaram. The fifth connected to Kondavidu via Udayagiri, the sixth to Raichur and other northern towns. Beyond these, cities were linked to key towns in the empire, fostering trade, commerce, and safeguarding merchants along these routes."
- sagarottara_vyapara_reform: "Sagarotta Vyapara"
- sagarottara_vyapara_reform_desc: "The western sea ports were categorized into three groups: Konkan group, Tulunadu group, and Malabar group. The Konkan group included ports like Mirjan, Honovar, Bhatkal, Basrur, Bakanur, Mangalore, and Kumbola. Meanwhile, the Malabar group comprised as many as 25 ports extending between Mount Delhi in the North and Kanniyaakumaari in the South, with key seaports like Cannanore, Dharmapattanam, Calicut, Cochin, and Quilon. On the eastern coast, ports were divided into the Coromandel group and Telingana group. The Coromandel group featured ports such as Nagapatnam, Tirupamalai, Raja Patnam, Tharangambadi, Parangipettai, Devanam Patnam, Mailapur, and Pulicat. In contrast, the Telingana group included only two ports: Motupalli and Masuli Patnam. These ports played a vital role in facilitating trade and commerce during this period, engaging in exchanges with Persian, Arabian, Southeast Asian countries, the Maldives, Ceylon, and Pegu. The import and export activities encompassed a wide array of goods required by the populace."
-
  desert_construction_reform: "Desert Construction"
  desert_construction_reform_desc: "Construction in the desert presents formidable challenges due to the extreme heat during the day, the biting cold at night, and the presence of unfriendly creatures in such a desolate place. However, we have devised an efficient system that allows for swift and effective building. Our builders work in two shifts: one around sunrise and another around sundown. To maintain productivity, we supply the construction sites with imported ice and, occasionally, the frost or snow that forms during the cold desert nights. This ingenious approach enables our men to stay productive and complete large buildings and projects at a relatively fast pace. Our kingdom lies largely within the unforgiving Thar Desert. Despite this, our traders and caravans are among the few brave enough and knowledgeable enough to traverse the sand sea. The trade routes, known only to our people, are kept a closely guarded secret. This is not only for economic purposes but also for military security. If these desert corridors, which run from oasis to oasis, were to become known to our enemies, we would lose the natural protection of the desert. Therefore, we must maintain the necessity of our traders for transporting goods and ensure the security of our nation by keeping the Thar trade routes confidential."
 
-# Events
- GE_Deccan_Reforms_Events.1.T: "Land Revenue"
- GE_Deccan_Reforms_Events.1.D: "In the administrative framework of the Vijayanagara Empire, the territory was intricately divided into six distinct provinces, each under the jurisdiction of local administrators. These officials were tasked with the crucial responsibility of overseeing the collection of land revenue, which served as the lifeblood of the government's finances. To ensure a systematic approach to taxation, the land revenue department meticulously classified the vast expanse of land into three primary categories: wetland, dryland, and woodland. This classification facilitated a more nuanced understanding of the varied agricultural and geographical features across the empire, enabling fair and efficient taxation practices. \nBeyond the land tax, the government implemented a range of supplementary levies to bolster its revenue streams. These included taxes on grazing, marriages, customs duties, and activities such as gardening and manufacturing. Despite the relatively high taxation rates, the administration prided itself on maintaining a fair and equitable system. Taxpayers were afforded the flexibility to discharge their obligations through either monetary payments or in kind, reflecting the diverse economic landscape of the empire. This multifaceted approach to taxation not only sustained the financial stability of the government but also fostered a sense of economic cohesion and cooperation among its subjects."
- GE_Deccan_Reforms_Events.1.OPT1: "Develop the Drylands"
- GE_Deccan_Reforms_Events.1.OPT2: "Improve the Woodlands"
- GE_Deccan_Reforms_Events.1.OPT3: "Acquire new levies from the Wetlands"
-
 # Privileges
- estate_jain_basadis_patronage: "Basadis Patronage"
- estate_jain_basadis_patronage_desc: "In the vibrant tapestry of South Indian commerce, the traders of coastal Karnataka held significant sway, their influence intricately woven with the sanctity of Jaina basadis—a revered sanctuary for followers of Jainism. These basadis, standing as emblems of piety and prosperity, were central to the bustling trade hubs of Barkur, Karkala, and Mudabidri. Inscriptions from the Hoysala and Vijayanagara eras bear witness to a profound symbiosis between trade and the sacred, where the settis and settikara found both spiritual solace and communal unity within these hallowed sanctuaries. The state’s patronage of Jaina basadis, far from mere benevolence, was a strategic alliance aimed at strengthening the fabric of commerce by nurturing the spiritual essence of traders. The basadis, as conduits to the divine, became fulcrums that elevated the trade reach of coastal Karnataka—a legacy where prosperity and spiritual fervor were seamlessly intertwined."
- estate_persian_weaving_industry: "Persian Weaving Industry"
- estate_persian_weaving_industry_desc: "An ancient form of Deccani art, introduced by Persian colonists during the Delhi Sultanate era, revolves around the craftsmanship of tapestries. This art form found particular favor among our nobility, with a penchant for the more extravagant creations. The Deccani carpet, adorned with gold, silver, precious gems, and the exquisite lapis lazuli, epitomized opulence. Unfortunately, this artistic legacy has all but vanished in the wake of the Bahmani Sultanate's fall, exacerbated by the reluctance of traders to venture deep into the unstable regions, raising the costs of goods. Now more than ever, these workshops depend on royal patronage to sustain this ancient and extravagant tradition."
-
  estate_rajput_increased_rajput_volunteers: "Increased Rajput Volunteers"
  estate_rajput_increased_rajput_volunteers_desc: "While family is first the clan comes second. The clan system was created long ago during the dark ages. A time period in ancient Indian folklore that happened after the fall of the divine cities of the Indus and the Ganges a long time ago after the war of the gods and demons. For a period kingdoms and kings were non-existent so families banded together forming tribes. These tribes would survive into the new age of kings and kingdoms evolving into clans. These clans formed the fundamental bedrock of rajput society. A system that is not only meant to sustain the culture but also tries to maintain the survival of every family. These families of the clans are as ancient as the clans themselves. Thanks to the clans we do not only have a near infinity supply of willing soldiers who want to join in the family business of war. They are already trained and experienced due to the martial education thats patronised by the clans itself"
 
 # Mechanics
  mechanic_enables_uidapur_state_yes: "§YUidapur State§!: Our Capital State will be improved."
- mechanic_enables_coral_masons_yes: "§YCoral Mason§!: §G-10.0%§! Build Cost and §G-20.0%§! Development Cost in §MCoastal§! Provinces"
- mechanic_enable_cistern_yes: "§YCisterns§!: §G-15.0%§! Development Cost in Provinces that border your capital's state"
- mechanic_enable_inland_trade_yes: "§YInland Trade§!: §G+5§! Trade Power in §MInland Centers of Trade§!"
- mechanic_enable_coastal_trade_yes: "§YCostal Trade§!: §G+5§! Trade Power in §MCoastal Centers of Trade§!"
-
  mechanic_enables_western_aryan_province_yes: "§YDevine Rajputana Splendor§!: §G-5.0%§! Local Development Cost and §G-7.5%§! Local Construction Cost in §YWestern Aryan§! provinces following the country religion"
- mechanic_enables_bread_basket_province_yes: "§YBread Basket§!: §G-15.0%§! Local Development Cost in provinces with a §YRiver Estuary§!"
  mechanic_enables_western_indian_frontier_guards_province_yes: "Every owned province in the §YWestern India§! region that borders arother region will gain §YInvasion Defense§!:\n  Local Defensiveness: §G+15.0%§!\n  Local Fort Maintenance Modifier: §G-15.0%§!\n  Local Manpower Modifier: §G+15.0%§!\n  Local Recruitment Time: §G-15.0%§!\n  Local Regiment Cost: §G-15.0%§!"
  mechanic_enables_desert_construction_province_yes: "§YDesert Construction§!: §G-15.0%§! Local Construction Cost and §G-15.0%§! Local Development Cost in §YDesert§! provinces"
 
@@ -60,20 +33,6 @@
  desc_ge_mer_city_of_lakes: ""
  ge_maw_blue_city: "Blue City"
  desc_ge_maw_blue_city: ""
-
- ge_basadis_patronage_modifier: "Basadis Patronage"
- desc_ge_basadis_patronage_modifier: ""
-
- ge_cistern_modifier: "Cistern"
- desc_ge_cistern_modifier: ""
-
- ge_coastal_trade_modifier: "Coastal Trade"
- desc_ge_coastal_trade_modifier: ""
- ge_inland_trade_modifier: "Inland Trade"
- desc_ge_inland_trade_modifier: ""
-
- ge_persian_weaving_industry_modifier: "Persian Weaving Industry"
- desc_ge_persian_weaving_industry_modifier: ""
 
  ge_western_aryan_province_modifier: "Devine Rajputana Splendor"
  desc_ge_western_aryan_province_modifier: ""
@@ -85,16 +44,3 @@
  desc_ge_desert_construction_province_modifier: ""
 
 # Tooltips
- GE_VIJ_LAND_REVENUE_DRYLAND_TT: "Every Owned §YArid§! Province, in the §MSame Region§! of our §YCapital§! will gain the following effect:\n"
- GE_VIJ_LAND_REVENUE_WOODLAND_TT: "Every Owned §YWood§! or §YJungle§! Province, in the §MSame Region§! of our §YCapital§! will gain the following effect:\n"
- GE_VIJ_LAND_REVENUE_WETLAND_TT: "Every Owned §YFarmland§! or §YGreassland§! Province, in the §MSame Region§! of our §YCapital§! will gain the following effect:\n"
- ge_land_revenue_until_new: "Until New Land Revenue"
-
-
- unlock_privilege_estate_jain_basadis_patronage_tt: "Unlock the [Root.GetJainsName] estate privilege '§YBasadis Patronage§!'"
- estate_jain_basadis_patronage_gt: "Every owned province in the §YDeccan§! Region that has §MTax§! building gains the following bonus:"
- estate_jain_basadis_patronage_rt: "The modifier '§YBasadis Patronage§!' is removed from all provinces in the §YDeccan§! Region that has §MTax§! building"
-
-
- estate_persian_weaving_industry_gt: "Every owned §YCloth§!, §YSilk§!, §YWool§! or §YCarpet§! province gains the following bonus:"
- estate_persian_weaving_industry_rt: "The modifier '§YPersian Weaving Industry§!' is removed from all eligible provinces."
