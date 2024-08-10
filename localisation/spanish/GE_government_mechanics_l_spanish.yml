@@ -145,11 +145,11 @@
  ## Mechanics:
  ability_venetian_government_mechanic: "Senato Veneziano"
  venetian_government_mechanic_stato_da_mar: "Stato Da Mar"
- venetian_government_mechanic_stato_da_mar_desc: "You can only pick one of the focuses at the same time and the picked focus will last til the death of your ruler. \n--------------\n"
+ venetian_government_mechanic_stato_da_mar_desc: "You can only pick one of the focuses at the same time and the picked focus will last for 10 years. \n--------------\n"
  venetian_government_mechanic_carnevale_venezia: "Carnevale Di Venezia"
- venetian_government_mechanic_carnevale_venezia_desc: "You can only pick one of the focuses at the same time and the picked focus will last til the death of your ruler. \n--------------\n"
+ venetian_government_mechanic_carnevale_venezia_desc: "You can only pick one of the focuses at the same time and the picked focus will last for 10 years. \n--------------\n"
  venetian_government_mechanic_stato_da_tera: "Stato da Tera"
- venetian_government_mechanic_stato_da_tera_desc: "You can only pick one of the focuses at the same time and the picked focus will last til the death of your ruler. \n--------------\n"
+ venetian_government_mechanic_stato_da_tera_desc: "You can only pick one of the focuses at the same time and the picked focus will last for 10 years. \n--------------\n"
 
  ## Modifiers
  venetian_government_stato_mar_modifier: "Stato da Mar"
@@ -228,11 +228,11 @@
  ## Mechanics:
  ability_albergo_nobili_mechanic: "Albergo dei Nobili"
  albergo_nobili_mechanic_uso_di_mare: "Uso di Mare"
- albergo_nobili_mechanic_uso_di_mare_desc: "You can only pick one of the focuses at the same time and the picked focus will last til the death of your ruler. \n--------------\n"
+ albergo_nobili_mechanic_uso_di_mare_desc: "You can only pick one of the focuses at the same time and the picked focus will last for 10 years. \n--------------\n"
  albergo_nobili_mechanic_doria: "I Doria"
- albergo_nobili_mechanic_doria_desc: "You can only pick one of the focuses at the same time and the picked focus will last til the death of your ruler. \n--------------\n"
+ albergo_nobili_mechanic_doria_desc: "You can only pick one of the focuses at the same time and the picked focus will last for 10 years. \n--------------\n"
  albergo_nobili_mechanic_fieschi: "I Fieschi"
- albergo_nobili_mechanic_fieschi_desc: "You can only pick one of the focuses at the same time and the picked focus will last til the death of your ruler. \n--------------\n"
+ albergo_nobili_mechanic_fieschi_desc: "You can only pick one of the focuses at the same time and the picked focus will last for 10 years. \n--------------\n"
 
  ## Modifiers
  albergo_nobili_uso_di_mare_modifier: "Esploratori d'Uso di Mare"
@@ -410,7 +410,7 @@
  ## Modifiers:
  legitimation_through_representation_mechanic_renovate_the_palace_modifier: "Renovation of the Palace"
 
-# Karnataka Samrajya Mechanic:
+# Imperial Control Mechanic:
  ## Mechanics
  ability_imperial_control_mechanic: "Imperial Control"
  imperial_control_mechanic: "Imperial Control"
@@ -423,3 +423,64 @@
 
  ## Tooltip:
  imperial_control_at_100_tt: "At §Y100§! we will gain:\n   - All Estate Influence Modifier: §G-5.0%§! \n   - Max Absolutism: §G+15%§!"
+
+# Rajput Princedom Mechanic:
+ ## Mechanics
+ ability_rajput_princedom_mechanic: "Rajput Princedom"
+ rajput_princedom_mechanic_enlist_the_infantry: "Enlist the Infantry"
+ rajput_princedom_mechanic_enlist_the_infantry_desc: "You can only pick one of the focuses at the same time and the picked focus will last for 10 years. \n--------------\n"
+ rajput_princedom_mechanic_focus_on_cavalry: "Focus on Cavalry"
+ rajput_princedom_mechanic_focus_on_cavalry_desc: "You can only pick one of the focuses at the same time and the picked focus will last for 10 years. \n--------------\n"
+ rajput_princedom_mechanic_supply_of_provisions: "Supply of Provvisions"
+ rajput_princedom_mechanic_supply_of_provisions_desc: "You can only pick one of the focuses at the same time and the picked focus will last for 10 years. \n--------------\n"
+
+ ## Modifiers
+ rajput_princedom_paidalsena_modifier: "Paidalsena"
+ desc_rajput_princedom_paidalsena_modifier: ""
+ rajput_princedom_cavalry_raids_modifier: "Cavalry Raids"
+ desc_rajput_princedom_cavalry_raids_modifier: ""
+ rajput_princedom_road_and_transport_modifier: "Roads and Transport"
+ desc_rajput_princedom_road_and_transport_modifier: ""
+
+
+# Pratihara Mechanic:
+ ## Mechanics:
+ ability_pratihara_mechanic: "Pratihara"
+ pratihara_mechanic_adm_power: "Strengthen Clan System Progress"
+ pratihara_mechanic_adm_power_desc: ""
+ pratihara_mechanic_dip_power: "Strengthen Palacial Authority Progress"
+ pratihara_mechanic_dip_power_desc: ""
+ pratihara_mechanic_mil_power: "Call Guards of Bharat Progress"
+ pratihara_mechanic_mil_power_desc: ""
+
+ pratihara_mechanic_clan_system: "Strengthen Clan System"
+ pratihara_mechanic_clan_system_desc: ""
+ pratihara_mechanic_strengthen_the_palacial_authority: "Strengthen Palacial Authority"
+ pratihara_mechanic_strengthen_the_palacial_authority_desc: ""
+ pratihara_mechanic_guards_of_bharat: "Strengthen Clan System Progress"
+ pratihara_mechanic_guards_of_bharat_desc: "Call Guards of Bharat"
+
+ ## Power Modifiers:
+ monthly_pratihara_mechanic_adm_power: "Monthly Strengthen Clan System Progress"
+ pratihara_mechanic_adm_power_gain_modifier: "Strengthen Clan System Progress Change Modifier"
+ monthly_pratihara_mechanic_dip_power: "Monthly Strengthen Palacial Authority Progress"
+ pratihara_mechanic_dip_power_gain_modifier: "Strengthen Palacial Authority Progress Change Modifier"
+ monthly_pratihara_mechanic_mil_power: "Monthly Call Guards of Bharat Progress"
+ pratihara_mechanic_mil_power_gain_modifier: "Call Guards of Bharat Progress Change Modifier"
+
+ ## Modifiers:
+ pratihara_mechanic_clan_system_modifier: "The Amber Phoenix"
+ desc_pratihara_mechanic_clan_system_modifier: ""
+ pratihara_mechanic_guards_of_bharat_modifier: "Resisting the Invasion"
+ desc_pratihara_mechanic_guards_of_bharat_modifier: "As long as this modifier is active, we gain §G+15.0%§! Army Morale when at war with §YMuslim§! countries."
+ pratihara_mechanic_strengthen_the_palacial_authority_modifier: "Pratihara Renaissance"
+ desc_pratihara_mechanic_strengthen_the_palacial_authority_modifier: ""
+
+ ## Triggered Modifiers:
+ GE_pratihara_mechanic_guards_of_bharat_triggered_modifier: "Resisting the Invasion"
+ desc_GE_pratihara_mechanic_guards_of_bharat_triggered_modifier: ""
+
+ ## Tooltips:
+ pratihara_mechanic_clan_system_tt: "One random owned province with the §YRajasthani§! culture gains §G1§! random development. \nEvery owned province with the §YRajasthani§! culture gets '§YThe Amber Phoenix§!' for §Y15 years§!, giving the following effects: \nLocal Regiment Cost: §G-15.0%§! \nLocal Recruitment Time: §G-15.0%§!"
+ pratihara_mechanic_guards_of_bharat_tt: "[Root.GetName] gets '§YResisting the Invasion§!' for §Y10 years§!, giving the following effects: Army Morale: §G+15.0%§! \n§YThis modifier is only active, if at war with a Muslim country.§!\n"
+ pratihara_mechanic_guards_of_bharat_manpower_tt: "from owned provinces with the §YRajasthani§! culture."
