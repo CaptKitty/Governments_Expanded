@@ -1,10 +1,10 @@
 # T1
-uidapur_state_reform = {
-	icon = uidapur_state_reform_icon
+guhilawat_reform = {
+	icon = guhilawat_reform_icon
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			have_had_reform = uidapur_state_reform
+			have_had_reform = guhilawat_reform
 			OR = {
 				is_or_was_tag = { tag = MER }
 				is_or_was_tag = { tag = MAW }
@@ -13,7 +13,7 @@ uidapur_state_reform = {
 	}
 	trigger = {
 		OR = {
-			have_had_reform = uidapur_state_reform
+			have_had_reform = guhilawat_reform
 			OR = {
 				is_or_was_tag = { tag = MER }
 				is_or_was_tag = { tag = MAW }
