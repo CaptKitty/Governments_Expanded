@@ -2383,10 +2383,7 @@ buddhist_nation_reform = {
 		}
 	}
 	potential = {
-		OR = {
-			religion = buddhism
-			religion = mahayana
-		}
+		emf_religion_is_buddhist = yes
 		OR = {
 			culture_group = burman
 			culture_group = southeastasian_group
@@ -2394,10 +2391,7 @@ buddhist_nation_reform = {
 		}
 	}
 	trigger = {
-		OR = {
-			religion = buddhism
-			religion = mahayana
-		}
+		emf_religion_is_buddhist = yes
 		OR = {
 			culture_group = burman
 			culture_group = southeastasian_group
@@ -3030,16 +3024,10 @@ state_temple_harmonization_reform = {
 		}
 	}
 	potential = {
-		OR = {
-			religion = buddhism
-			religion = mahayana
-		}
+		emf_religion_is_buddhist = yes
 	}
 	trigger = {
-		OR = {
-			religion = buddhism
-			religion = mahayana
-		}
+		emf_religion_is_buddhist = yes
 
 	}
 	modifiers = {
