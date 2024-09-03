@@ -39,6 +39,15 @@ spriteTypes = {
 		}
 # Hindustan
 	# Tier 1
+		spriteType = {
+			name = "government_reform_empire_in_the_sky_reform_icon"
+			texturefile = "gfx//interface//government_reform_icons//empire_in_the_sky_reform_icon.dds"
+		}
+	# Tier 3
+		spriteType = {
+			name = "government_reform_ain_i_akbari_reform_icon"
+			texturefile = "gfx//interface//government_reform_icons//ain_i_akbari_reform_icon.dds"
+		}
 # Western India
 	# Tier 1
 		spriteType = {

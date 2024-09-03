@@ -484,3 +484,30 @@
  pratihara_mechanic_clan_system_tt: "One random owned province with the §YRajasthani§! culture gains §G1§! random development. \nEvery owned province with the §YRajasthani§! culture gets '§YThe Amber Phoenix§!' for §Y15 years§!, giving the following effects: \nLocal Regiment Cost: §G-15.0%§! \nLocal Recruitment Time: §G-15.0%§!"
  pratihara_mechanic_guards_of_bharat_tt: "[Root.GetName] gets '§YResisting the Invasion§!' for §Y10 years§!, giving the following effects: Army Morale: §G+15.0%§! \n§YThis modifier is only active, if at war with a Muslim country.§!\n"
  pratihara_mechanic_guards_of_bharat_manpower_tt: "from owned provinces with the §YRajasthani§! culture."
+
+
+# Lunar Dynasty Mechanic:
+ ## Mechanic
+ ability_lunar_dynasty_mechanic: "Lunar Dynasty"
+ lunar_legitimacy: "Lunar Legitimacy"
+ lunar_legitimacy_desc: "Lunar Legitimacy strongly represents how much our ruling house represents the history of both Hindu faith and Vedic epic."
+ lunar_legitimacy_gain_modifier: "Lunar Legitimacy"
+ monthly_lunar_legitimacy: "Montly Lunar Legitimacy"
+
+ lunar_dynasty_sell_trading_rights: "Sell Trading Rights"
+ lunar_dynasty_sell_trading_rights_desc: ""
+ lunar_dynasty_legitimisation: "Lunar Dynasty Legitimasation"
+ lunar_dynasty_legitimisation_desc: ""
+ lunar_dynasty_mobilize_gurkhas: "Mobilize the Gurkhas"
+ lunar_dynasty_mobilize_gurkhas_desc: ""
+
+ lunar_dynasty_legitimisation: "Lunar Legitimisation"
+ desc_lunar_dynasty_legitimisation: ""
+ lunar_dynasty_mobilize_gurkhas_modifier: "Mobilize the Gurkhas"
+ desc_lunar_dynasty_mobilize_gurkhas_modifier: ""
+
+ ## Tooltips:
+ LUNAR_DYNASTY_SELL_TRADING_RIGHTS_TT: "from provinces with either §YHighlans§!, §YHills§! or §YMountains§! terrain."
+ GE_LUNAR_DYNASTY_MOBILIZE_GURKHAS_CULTURE_TT: "from provinces with either §YNepali§! or §YPahari§! culture."
+ GE_LUNAR_DYNASTY_MOBILIZE_GURKHAS_CULTURE_SUBJECTS_TT: "from subjects with either §YNepali§! or §YPahari§! primary culture."
+ LUNAR_LEGITIMACY_AT_100_TT: "Vassalization Acceptance: §G+10§! \nVassal Manpower Contribution: §G+15%§! \nThe monthly decay is negated until your §YDinastic Power§! falls under §Y100.00§!."

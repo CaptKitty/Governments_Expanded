@@ -256,3 +256,13 @@ pratihara_mechanic_strengthen_the_palacial_authority_modifier = {
 	institution_spread_from_true_faith = 0.33
 	build_cost = -0.05
 }
+
+# Lunar Dinasties
+lunar_dynasty_legitimisation = {
+	diplomatic_reputation = 1
+	relation_with_same_culture = 25
+}
+lunar_dynasty_mobilize_gurkhas_modifier = {
+	manpower_in_culture_group_provinces = 0.10
+	manpower_in_own_culture_provinces = 0.25
+}

@@ -80,6 +80,12 @@ GE_initiate_starting_reforms = {
 	DGL = {
 		add_government_reform = coral_kingdom_reform
 	}
+	DNG = {
+		add_government_reform = empire_in_the_sky_reform
+	}
+	DTI = {
+		add_government_reform = empire_in_the_sky_reform
+	}
 	FER = {
 		add_government_reform = house_of_este_reform
 	}
@@ -100,11 +106,14 @@ GE_initiate_starting_reforms = {
 	GEN = {
 		add_government_reform = genoese_republic
 	}
+	GHR = {
+		add_government_reform = empire_in_the_sky_reform
+	}
 	GRA = {
 		add_government_reform = granadan_iqta_reform
 	}
 	GRK = {
-		add_government_reform = gorkha_kingdom_reform
+		add_government_reform = empire_in_the_sky_reform
 	}
 	GUG = {
 		change_government = theocracy
@@ -120,6 +129,9 @@ GE_initiate_starting_reforms = {
 		change_government = tribal
 		add_government_reform = siberian_tribal_confederation_reform
 	}
+	JML = {
+		add_government_reform = empire_in_the_sky_reform
+	}
 	KAM = {
 		change_government = theocracy
 		add_government_reform = tibetan_dual_government_reform
@@ -127,6 +139,9 @@ GE_initiate_starting_reforms = {
 	KMC = {
 		change_government = tribal
 		add_government_reform = siberian_tribal_confederation_reform
+	}
+	KMN = {
+		add_government_reform = empire_in_the_sky_reform
 	}
 	LAN = {
 		add_government_reform = florentine_republic
@@ -162,6 +177,9 @@ GE_initiate_starting_reforms = {
 	}
 	NAP = {
 		add_government_reform = kingdom_of_sicily_reform
+	}
+	NPL = {
+		add_government_reform = empire_in_the_sky_reform
 	}
 	NVK = {
 		change_government = tribal

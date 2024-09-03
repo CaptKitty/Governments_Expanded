@@ -1,0 +1,127 @@
+lunar_dynasty_mechanic = {
+	alert_icon_gfx = GFX_alerticons_government_mechanics
+	alert_icon_index = 11
+	available = {
+		always = yes
+	}
+
+	powers = {
+		lunar_legitimacy = {
+			max = 100
+			reset_on_new_ruler = yes
+			base_monthly_growth = -0.5
+			development_scaled_monthly_growth = 0
+			scaled_modifier = {
+				modifier = {
+					army_tradition_decay = -0.01
+					ae_impact = -0.05
+					prestige = 0.50
+				}
+			}
+			scaled_modifier = {
+				trigger = {
+					has_government_power = {
+						mechanic_type = lunar_dynasty_mechanic
+						power_type = lunar_legitimacy
+						value = 100
+					}
+				}
+				modifier = {
+					accept_vassalization_reasons = 10
+					vassal_manpower_bonus = 0.15
+					monthly_lunar_legitimacy = 0.5
+				}
+			}
+			on_max_reached = {
+				custom_tooltip = LUNAR_LEGITIMACY_AT_100_TT
+			}
+			is_good = yes
+		}
+	}
+
+	interactions = {
+		lunar_dynasty_sell_trading_rights = {
+			gui = republican_vs_monarchist_mechanic_interaction
+			icon = GFX_lunar_dynasty_sell_trading_rights_button
+			trigger = {
+				adm_power_cost = 50
+			}
+			effect = {
+				adm_power_cost = 50
+				add_owned_provinces_development_ducats = {
+					custom_tooltip = LUNAR_DYNASTY_SELL_TRADING_RIGHTS_TT
+					trigger = {
+						OR = {
+							has_terrain = highlands
+							has_terrain = hills
+							has_terrain = mountain
+						}
+					}
+					multiplier = 1
+					age_multiplier = 0.5
+				}
+			}
+			cooldown_years = 10
+			ai_chance = {
+				factor = 33
+			}
+		}
+		lunar_dynasty_legitimisation = {
+			gui = republican_vs_monarchist_mechanic_interaction
+			icon = GFX_lunar_dynasty_legitimisation_button
+			trigger = {
+				dip_power_cost = 50
+			}
+			effect = {
+				dip_power_cost = 50
+				add_ruler_modifier = {
+					name = lunar_dynasty_legitimisation
+					duration = 3650
+				}
+			}
+			cooldown_years = 10
+			ai_chance = {
+				factor = 33
+			}
+		}
+		lunar_dynasty_mobilize_gurkhas = {
+			gui = republican_vs_monarchist_mechanic_interaction
+			icon = GFX_lunar_dynasty_sell_trading_rights_button
+			trigger = {
+				mil_power_cost = 50
+			}
+			effect = {
+				mil_power_cost = 50
+				add_owned_provinces_development_manpower = {
+					custom_tooltip = GE_LUNAR_DYNASTY_MOBILIZE_GURKHAS_CULTURE_TT
+					trigger = {
+						OR = {
+							culture = nepali
+							culture = pahari
+						}
+					}
+					multiplier = 0.25
+					age_multiplier = 0.5
+				}
+				add_subjects_development_manpower = {
+					custom_tooltip = GE_LUNAR_DYNASTY_MOBILIZE_GURKHAS_CULTURE_SUBJECTS_TT
+					trigger = {
+						OR = {
+							primary_culture = nepali
+							primary_culture = pahari
+						}
+					}
+					multiplier = 4
+				}
+				add_ruler_modifier = {
+					name = lunar_dynasty_mobilize_gurkhas_modifier
+					duration = 3650
+				}
+			}
+			cooldown_years = 10
+			ai_chance = {
+				factor = 33
+			}
+		}
+	}
+}

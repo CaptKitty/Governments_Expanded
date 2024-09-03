@@ -1,0 +1,144 @@
+# T1
+empire_in_the_sky_reform = {
+	icon = empire_in_the_sky_reform_icon
+	allow_normal_conversion = yes
+	valid_for_nation_designer = no
+	potential = {
+		OR = {
+			has_reform = empire_in_the_sky_reform
+			have_had_reform = empire_in_the_sky_reform
+			primary_culture = nepali
+			tag = NPL
+		}
+	}
+	trigger = {
+		OR = {
+			has_reform = empire_in_the_sky_reform
+			have_had_reform = empire_in_the_sky_reform
+			primary_culture = nepali
+			tag = NPL
+		}
+	}
+	modifiers = {
+		diplomatic_upkeep = 1
+		legitimacy = 0.50
+		vassal_forcelimit_bonus = 0.15
+		war_exhaustion = -0.02
+	}
+	custom_attributes = {
+		enables_mountain_towns = yes #-25% Development cost in hills and mountains
+	}
+	government_abilities = {
+		lunar_dynasty_mechanic
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+# T2
+# chhetri_clans_reform = {
+# 	icon = tribal_federation
+# 	allow_normal_conversion = yes
+# 	potential = {
+# 		OR = {
+# 			has_reform = chhetri_clans_reform
+# 			tag = NPL
+# 			primary_culture = nepali
+# 		}
+# 	}
+# 	trigger = {
+# 		OR = {
+# 			has_reform = chhetri_clans_reform
+# 			tag = NPL
+# 			primary_culture = nepali
+# 		}
+# 	}
+# 	modifiers = {
+# 		leader_cost = -0.10
+# 		leader_land_shock = 1
+# 	}
+# 	effect = {
+# 		change_variable = {
+# 			which = Noble_Influence
+# 			value = 1
+# 		}
+# 	}
+# 	removed_effect = {
+# 		change_variable = {
+# 			which = Noble_Influence
+# 			value = -1
+# 		}
+# 	}
+# 	ai = {
+# 		factor = 100
+# 	}
+# }
+
+# T3
+# newar_and_gorkhali_reform = {
+# 	icon = tribal_federation
+# 	allow_normal_conversion = yes
+# 	potential = {
+# 		OR = {
+# 			has_reform = newar_and_gorkhali_reform
+# 			primary_culture = nepali
+# 		}
+# 	}
+# 	trigger = {
+# 		OR = {
+# 			has_reform = newar_and_gorkhali_reform
+# 			primary_culture = nepali
+# 		}
+# 	}
+# 	modifiers = {
+# 		harsh_treatment_cost = -0.33
+# 	}
+# 	custom_attributes = {
+# 		enables_mountain_towns = yes #-25% Development cost in hills and mountains
+# 	}
+# 	effect = {
+# 		change_variable = {
+# 			which = Royal_Influence
+# 			value = 1
+# 		}
+# 	}
+# 	removed_effect = {
+# 		change_variable = {
+# 			which = Royal_Influence
+# 			value = -1
+# 		}
+# 	}
+# 	ai = {
+# 		factor = 100
+# 	}
+# }
+ain_i_akbari_reform = {
+	icon = ain_i_akbari_reform_icon
+	allow_normal_conversion = yes
+	lock_level_when_selected = no
+	potential = {
+		OR = {
+			have_had_reform = ain_i_akbari_reform
+			tag = MUG
+		}
+	}
+	trigger = {
+		OR = {
+			have_had_reform = ain_i_akbari_reform
+			tag = MUG
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+	modifiers = {
+		all_estate_loyalty_equilibrium = -0.05
+		all_estate_influence_modifier = -0.10
+		global_autonomy = -0.025
+		global_unrest = -2
+	}
+}
+
+# T5
+
+# T6

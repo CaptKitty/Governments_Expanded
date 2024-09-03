@@ -14,6 +14,7 @@ ruler_adm = {
 	monthly_republican_vs_monarchist_power = -0.05
 	monthly_imperial_grace_power = 0.034
 	monthly_imperial_control = 0.025
+	monthly_lunar_legitimacy = 0.15
 }
 
 ruler_dip = {
@@ -24,6 +25,7 @@ ruler_dip = {
 	# GE:
 	monthly_political_focus_power = 0.084
 	monthly_imperial_control = 0.025
+	monthly_lunar_legitimacy = 0.25
 }
 
 ruler_mil = {
@@ -35,6 +37,7 @@ ruler_mil = {
 	monthly_political_focus_power = 0.084
 	monthly_republican_vs_monarchist_power = 0.05
 	monthly_imperial_control = 0.025
+	monthly_lunar_legitimacy = 0.50
 }
 
 war = {

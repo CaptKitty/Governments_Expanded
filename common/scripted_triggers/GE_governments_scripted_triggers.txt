@@ -17,7 +17,7 @@ has_strong_noble_reform_2 = {
 		has_reform = crusader_orders_reform
 		has_reform = old_world_privileges_reform
 		has_reform = franconian_salic_law_reform
-		has_reform = chhetri_clans_reform
+		# has_reform = chhetri_clans_reform
 		has_reform = support_samurai_reform
 		has_reform = turkic_qasilbash_heirs_reform
 		has_reform = sayyid_privileges_reform
@@ -87,7 +87,7 @@ has_religious_reform_2 = {
 has_forts_reform_3 = {
 	OR = {
 		has_reform = regional_forts_reform
-		has_reform = newar_and_gorkhali_reform
+		# has_reform = newar_and_gorkhali_reform
 		has_reform = sidhi_recruitment
 		has_reform = mansabdari_reform
 	}
