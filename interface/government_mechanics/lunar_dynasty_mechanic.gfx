@@ -1,0 +1,20 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_lunar_dynasty_sell_trading_rights_button"
+		texturefile = "gfx/interface/government_mechanics/lunar_dynasty_mechanic/lunar_dynasty_sell_trading_rights_button.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_lunar_dynasty_legitimisation_button"
+		texturefile = "gfx/interface/government_mechanics/lunar_dynasty_mechanic/lunar_dynasty_legitimisation_button.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_lunar_dynasty_mobilize_gurkhas_button"
+		texturefile = "gfx/interface/government_mechanics/lunar_dynasty_mechanic/lunar_dynasty_mobilize_gurkhas_button.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+}

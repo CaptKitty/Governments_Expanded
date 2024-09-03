@@ -86,7 +86,7 @@ lunar_dynasty_mechanic = {
 		}
 		lunar_dynasty_mobilize_gurkhas = {
 			gui = republican_vs_monarchist_mechanic_interaction
-			icon = GFX_lunar_dynasty_sell_trading_rights_button
+			icon = GFX_lunar_dynasty_mobilize_gurkhas_button
 			trigger = {
 				mil_power_cost = 50
 			}
