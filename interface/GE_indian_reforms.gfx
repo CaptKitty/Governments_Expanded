@@ -43,6 +43,11 @@ spriteTypes = {
 			name = "government_reform_empire_in_the_sky_reform_icon"
 			texturefile = "gfx//interface//government_reform_icons//empire_in_the_sky_reform_icon.dds"
 		}
+	# Tier 2
+		spriteType = {
+			name = "government_reform_indo_tibetan_union_reform_icon"
+			texturefile = "gfx//interface//government_reform_icons//indo_tibetan_union_reform_icon.dds"
+		}
 	# Tier 3
 		spriteType = {
 			name = "government_reform_ain_i_akbari_reform_icon"

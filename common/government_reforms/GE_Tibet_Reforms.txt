@@ -44,7 +44,7 @@ yak_provvision_reform = {
 	}
 }
 
-#T3
+#T10
 monastic_temples_reform = {
 	icon = "church"
 	allow_normal_conversion = yes

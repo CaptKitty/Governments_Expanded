@@ -356,6 +356,8 @@ monarchy = {
 				patronage_jain_temples_reform
 				#1.21
 				divine_rajputana_splendor_reform
+				#1.22
+				indo_tibetan_union_reform
 				# ME Reforms:
 				incan_society_reform
 				aztec_society_reform
@@ -466,7 +468,7 @@ monarchy = {
 				nimajay_pa_winaq_reform
 				#1.20
 				krsi_trivate_reform
-				#1.21
+				#1.22
 				ain_i_akbari_reform
 				# ME Reforms:
 				tur_reform_beylerbeys
@@ -2056,6 +2058,8 @@ theocracy = {
 				german_other_reform
 				### GE ###
 				yak_provvision_reform
+				#1.22
+				indo_tibetan_union_reform
 				# ME Reforms:
 				sharia_reform
 				SOS_advanced_tactics

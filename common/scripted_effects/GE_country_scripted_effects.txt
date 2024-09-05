@@ -146,6 +146,10 @@ GE_initiate_starting_reforms = {
 	LAN = {
 		add_government_reform = florentine_republic
 	}
+	LDK = {
+		change_government = theocracy
+		add_government_reform = tibetan_dual_government_reform
+	}
 	MAD = {
 		add_government_reform = pandya_dynasty_reform
 	}

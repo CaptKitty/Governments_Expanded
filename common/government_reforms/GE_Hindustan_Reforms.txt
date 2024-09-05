@@ -74,6 +74,72 @@ empire_in_the_sky_reform = {
 # 		factor = 100
 # 	}
 # }
+indo_tibetan_union_reform = {
+	icon = indo_tibetan_union_reform_icon
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = indo_tibetan_union_reform
+			if = {
+				limit = {
+					OR = {
+						primary_culture = tibetan
+						primary_culture = tibetan_new
+					}
+				}
+				OR = {
+					accepted_culture = nepali
+					accepted_culture = pahari
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						primary_culture = nepali
+						primary_culture = pahari
+					}
+				}
+				OR = {
+					accepted_culture = tibetan
+					accepted_culture = tibetan_new
+				}
+			}
+		}
+	}
+	trigger = {
+		OR = {
+			has_reform = indo_tibetan_union_reform
+			if = {
+				limit = {
+					OR = {
+						primary_culture = tibetan
+						primary_culture = tibetan_new
+					}
+				}
+				OR = {
+					accepted_culture = nepali
+					accepted_culture = pahari
+				}
+			}
+			else = {
+				OR = {
+					accepted_culture = tibetan
+					accepted_culture = tibetan_new
+				}
+			}
+		}
+	}
+	modifiers = {
+		leader_cost = -0.10
+		manpower_in_accepted_culture_provinces = 0.10
+		nobles_loyalty_modifier = 0.05
+		num_accepted_cultures = 1
+		tolerance_own = 1
+	}
+	ai = {
+		factor = 100
+	}
+}
 
 # T3
 # newar_and_gorkhali_reform = {
