@@ -80,30 +80,10 @@ indo_tibetan_union_reform = {
 	potential = {
 		OR = {
 			has_reform = indo_tibetan_union_reform
-			if = {
-				limit = {
-					OR = {
-						primary_culture = tibetan
-						primary_culture = tibetan_new
-					}
-				}
-				OR = {
-					accepted_culture = nepali
-					accepted_culture = pahari
-				}
-			}
-			else_if = {
-				limit = {
-					OR = {
-						primary_culture = nepali
-						primary_culture = pahari
-					}
-				}
-				OR = {
-					accepted_culture = tibetan
-					accepted_culture = tibetan_new
-				}
-			}
+			primary_culture = tibetan
+			primary_culture = tibetan_new
+			primary_culture = nepali
+			primary_culture = pahari
 		}
 	}
 	trigger = {
