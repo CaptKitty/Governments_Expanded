@@ -2031,6 +2031,8 @@ theocracy = {
 				#Flavor Universalis Reforms
 				fu_order_of_saint_joan_reform
 				aju_hydraulic_empire
+				# Religions & Cultures Expanded Reforms
+				nestorian_patriarchy_constantinople_reform
 			}
 		}
 		internal_vs_external_mission = {
