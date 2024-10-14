@@ -120,14 +120,14 @@ patronage_jain_temples_reform = {
 		OR = {
 			have_had_reform = patronage_jain_temples_reform
 			religion = hinduism
+			has_estate = estate_jains
 		}
 	}
 	trigger = {
 		OR = {
 			have_had_reform = patronage_jain_temples_reform
-			capital_scope = {
-				region = deccan_region
-			}
+			religion = hinduism
+			has_estate = estate_jains
 		}
 	}
 	valid_for_nation_designer = yes
