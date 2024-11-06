@@ -1814,6 +1814,7 @@ tribal = {
 				tolerance_of_the_church_reform
 				children_of_osanobua_reform
 				one_on_high_reform
+				sanskritization_reform
 			}
 		}
 		tribal_military_doctrines = {

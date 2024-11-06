@@ -66,19 +66,21 @@ sanskritization_reform = {
 	icon = "sanskritization"
 	allow_normal_conversion = yes
 	potential = {
-		religion = hinduism
 		OR = {
-			culture_group = burman
-			culture_group = tibetan_group
-			primary_culture = tibetan_new
+			primary_culture = chin
+			primary_culture = kochi
+			primary_culture = assamese
+			dynasty = "Pala"
+			have_had_reform = sanskritization_reform
 		}
 	}
 	trigger = {
-		religion = hinduism
 		OR = {
-			culture_group = burman
-			culture_group = tibetan_group
-			primary_culture = tibetan_new
+			primary_culture = chin
+			primary_culture = kochi
+			primary_culture = assamese
+			dynasty = "Pala"
+			have_had_reform = sanskritization_reform
 		}
 	}
 	modifiers = {

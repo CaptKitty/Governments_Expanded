@@ -34,6 +34,9 @@ GE_initiate_starting_reforms = {
 	ARA = {
 		add_government_reform = crown_of_aragon
 	}
+	ASS = {
+		add_government_reform = tai_and_ahom_reform
+	}
 	BAD = {
 		if = {
 			limit = {
@@ -205,6 +208,9 @@ GE_initiate_starting_reforms = {
 	SAV = {
 		add_government_reform = savoia_reform
 	}
+	SDY = {
+		add_government_reform = tai_and_ahom_reform
+	}
 	SIC = {
 		add_government_reform = kingdom_of_sicily_reform
 	}
@@ -224,6 +230,9 @@ GE_initiate_starting_reforms = {
 	}
 	TNJ = {
 		add_government_reform = pandya_dynasty_reform
+	}
+	TPR = {
+		add_government_reform = tai_and_ahom_reform
 	}
 	TTS = {
 		add_government_reform = kingdom_of_sicily_reform

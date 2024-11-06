@@ -1,0 +1,19 @@
+﻿l_spanish:
+ # Reforms:
+ tai_and_ahom_reform: "Tai and Ahom"
+ tai_and_ahom_reform_desc: "In the early 13th century, Sukaphaa, a Tai prince from Mong Mao, fled his homeland due to political intrigue and threats to his life, journeying westward with a small but loyal group of followers. They eventually settled in the Brahmaputra Valley, where they established the kingdom of Ahom, later known as Assam. Sukaphaa introduced the region’s disjointed tribes to advanced agricultural techniques, a coin-based economy, and stone construction, creating a centralized feudal kingship that stabilized the area. Although the Tai-Ahom were a minority, their expertise in rice farming and governance earned them a dominant position, revered as "fire-bringers" for their transformative impact. This small Tai group formed the kingdom’s elite, wielding their knowledge as a tool of control while the local Vedic population made up the majority of society. Over the next two centuries, however, the process of Ahomisation began to blend the Tai and Vedic cultures. The Sanskrit script replaced the Tai alphabet, and a cultural fusion took root—Tai customs shaped the court and nobility, while Vedic traditions dominated religious life and festivals. This melding of traditions created Assamese culture, a unique synthesis of Tai martial bureaucracy and Vedic spirituality, marking the Ahom kingdom as a harmonious blend of influences from Tibet and India."
+ sanskritization_reform: "Sanskritization"
+ sanskritization_reform_desc: "As we embraced Sanskritization, our religious identity also evolved. The Hindu faith began to supplant our traditional beliefs, leading to a deep fusion of Vedic culture with our own customs. Festivals, rituals, and practices were reshaped, blending indigenous traditions with the broader Vedic influence. This process of adaptation enriched our cultural heritage, allowing us to preserve our unique identity while absorbing the spiritual and cultural depth of the Vedic world."
+ shakti_the_supreme_deity_reform: "Shakti: The Supreme Deity"
+ shakti_the_supreme_deity_reform_desc: ""
+
+ # Merc Companies:
+ merc_local_jamuldahee_company: "Jamuldahee"
+
+ # Modifiers:
+ legacy_of_sukaphaa_province_modifier: "Legacy of Sukaphaa"
+ desc_legacy_of_sukaphaa_province_modifier: ""
+
+ # Attributes:
+ mechanic_enables_legacy_of_sukaphaa_yes: "§YLegacy of Sukaphaa:§! Every owned provinces following the §YAssamese§! or §YShan§! culture gains §G-15.0%§! local regiment cost and recruitment time."
+ mechanic_enables_jamuldahee_merc_company_yes: "Unlocks the §YJamuldahee§! mercenary company."
