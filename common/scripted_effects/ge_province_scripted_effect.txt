@@ -1007,3 +1007,22 @@ ge_desert_construction_province_update = {
 		remove_province_modifier = ge_desert_construction_province_modifier
 	}
 }
+
+ge_legacy_of_sukaphaa_province_update = {
+	if = {
+		limit = {
+			owner = { has_government_attribute = enables_legacy_of_sukaphaa }
+			OR = {
+				culture = assamese
+				culture = shan
+			}
+		}
+		add_province_modifier = {
+			name = legacy_of_sukaphaa_province_modifier
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = legacy_of_sukaphaa_province_modifier
+	}
+}

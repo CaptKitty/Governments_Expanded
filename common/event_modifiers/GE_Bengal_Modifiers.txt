@@ -1,0 +1,4 @@
+legacy_of_sukaphaa_province_modifier = {
+	local_regiment_cost = -0.15
+	regiment_recruit_speed = -0.15
+}

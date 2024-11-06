@@ -1,6 +1,19 @@
 spriteTypes = {
 # Bengal
 	# Tier 1
+		spriteType = {
+			name = "government_reform_tai_and_ahom"
+			texturefile = "gfx//interface//government_reform_icons//tai_and_ahom.dds"
+		}
+	# Tier 4
+		spriteType = {
+			name = "government_reform_sanskritization"
+			texturefile = "gfx//interface//government_reform_icons//sanskritization.dds"
+		}
+		spriteType = {
+			name = "government_reform_shakti_the_supreme_deity"
+			texturefile = "gfx//interface//government_reform_icons//shakti_the_supreme_deity.dds"
+		}
 # Coromandel
 	# Tier 8
 		spriteType = {

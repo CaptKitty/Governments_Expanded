@@ -319,6 +319,7 @@ on_province_owner_change = {
 	ge_western_aryan_province_update = yes
 	ge_western_indian_frontier_guards_province_update = yes
 	ge_desert_construction_province_update = yes
+	ge_legacy_of_sukaphaa_province_update = yes
 }
 
 on_trade_good_changed = {
@@ -355,6 +356,7 @@ on_province_culture_changed = {
 	ge_bridge_between_worlds_update = yes
 	ge_clan_system_province_update = yes
 	ge_western_aryan_province_update = yes
+	ge_legacy_of_sukaphaa_province_update = yes
 }
 
 on_culture_promoted = {

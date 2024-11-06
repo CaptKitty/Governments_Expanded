@@ -31,3 +31,21 @@ merc_local_qizilbash_company = {
 		reinforce_speed = 0.25
 	}
 }
+
+merc_local_jamuldahee_company = {
+    regiments_per_development = 0.050
+	home_province = 524
+    cavalry_weight = 0.05
+	cavalry_cap = 4
+    artillery_weight = 0.0
+    trigger = {
+		has_government_attribute = enables_jamuldahee_merc_company
+	}
+	cost_modifier = 0.50
+	modifier = {
+		loot_amount = 0.25
+		available_province_loot = 0.25
+		movement_speed = 0.25
+	}
+	sprites = { indiangfx_sprite_pack }
+}

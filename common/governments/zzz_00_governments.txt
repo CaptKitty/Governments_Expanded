@@ -195,6 +195,7 @@ monarchy = {
 				#1.21
 				guhilawat_reform
 				pratihara_reform
+				tai_and_ahom_reform
 				#####BeginMEReforms#####
 				crusader_kingdom
 				khaganate
@@ -521,6 +522,8 @@ monarchy = {
 				state_madrasas_reform
 				# GE Reforms
 				imajtz_ib_aj_k_iche_reform
+				sanskritization_reform
+				shakti_the_supreme_deity_reform
 				#ME Reforms
 				ME_enlist_the_help_of_sufi_orders
 				ME_enlist_the_help_of_sufi_orders_ADU
