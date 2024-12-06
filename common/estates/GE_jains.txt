@@ -3,5 +3,6 @@ estate_jains = {
 		estate_jain_basadis_patronage
 		estate_vaisyas_tamil_guilds
 		estate_persian_weaving_industry
+		estate_burghers_mountain_expansion
 	}
 }
