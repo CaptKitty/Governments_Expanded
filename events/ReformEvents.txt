@@ -3195,7 +3195,7 @@ country_event = {
 			limit = {
 				army_tradition = 50
 				NOT = {	has_country_modifier = Officers_Of_The_Sword }
-            }
+			}
 			add_country_modifier = {
 				name = "Officers_Of_The_Sword"
 				duration = -1
@@ -3205,7 +3205,7 @@ country_event = {
 			limit = {
 				NOT = { army_tradition = 50 }
 				has_country_modifier = Officers_Of_The_Sword
-            }
+			}
 			remove_country_modifier = Officers_Of_The_Sword
 		}
 	}
@@ -3777,7 +3777,7 @@ country_event = {
 			limit = {
 				num_of_mercenaries = 10
 				NOT = {	has_country_modifier = Foreign_Regiments }
-            }
+			}
 			add_country_modifier = {
 				name = "Foreign_Regiments"
 				duration = -1
@@ -3787,7 +3787,7 @@ country_event = {
 			limit = {
 				NOT = { num_of_mercenaries = 10 }
 				has_country_modifier = Foreign_Regiments
-            }
+			}
 			remove_country_modifier = Foreign_Regiments
 		}
 	}
@@ -7639,7 +7639,7 @@ country_event = {
 		if = {
 			limit = {
 				num_of_mercenaries = 1
-            }
+			}
 			add_country_modifier = {
 				name = "GE_Landsknecht_Sergeants"
 				duration = -1

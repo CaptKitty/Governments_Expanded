@@ -1748,7 +1748,7 @@ country_event = {
 }
 
 ########################################
-# Colonial Nations                     #
+# Colonial Nations					 #
 ########################################
 
 # Election!

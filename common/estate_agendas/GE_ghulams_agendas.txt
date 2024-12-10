@@ -68,19 +68,19 @@ estate_ghulams_develop_x = {
 			NOT = { owned_by = root }
 		}
 	}
-    task_requirements = {
+	task_requirements = {
 		event_target:agenda_province = {
 			base_tax = "province_adm_var"
 		}
-    }
-    task_completed_effect = {
+	}
+	task_completed_effect = {
 		add_estate_loyalty = {
 			estate = estate_ghulams
 			loyalty = 10
 		}
 		add_years_of_income = 0.3
-    }
-    failing_effect = {
+	}
+	failing_effect = {
 		event_target:agenda_province = {
 			if = {
 				limit = { owned_by = root }
@@ -90,13 +90,13 @@ estate_ghulams_develop_x = {
 				}
 			}
 		}
-        add_estate_loyalty_modifier = {
-            estate = estate_ghulams
+		add_estate_loyalty_modifier = {
+			estate = estate_ghulams
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
-        }
-    }
+		}
+	}
 }
 
 estate_ghulams_reduce_autonomy = {
@@ -183,7 +183,7 @@ estate_ghulams_reduce_autonomy = {
 			}
 		}
 	}
-    task_completed_effect = {
+	task_completed_effect = {
 		add_estate_loyalty = {
 			estate = estate_ghulams
 			loyalty = 10
@@ -191,8 +191,8 @@ estate_ghulams_reduce_autonomy = {
 		event_target:agenda_province = {
 			add_base_tax = 1
 		}
-    }
-    failing_effect = {
+	}
+	failing_effect = {
 		event_target:agenda_province = {
 			if = {
 				limit = { owned_by = root }
@@ -202,13 +202,13 @@ estate_ghulams_reduce_autonomy = {
 				}
 			}
 		}
-        add_estate_loyalty_modifier = {
-            estate = estate_ghulams
+		add_estate_loyalty_modifier = {
+			estate = estate_ghulams
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
-        }
-    }
+		}
+	}
 }
 
 estate_ghulams_increase_absolutism = {
@@ -233,17 +233,17 @@ estate_ghulams_increase_absolutism = {
 	}
 	fail_if = {
 	}
-    task_requirements = {
+	task_requirements = {
 		absolutism = max_absolutism_var
-    }
-    task_completed_effect = {
+	}
+	task_completed_effect = {
 		add_estate_loyalty = {
 			estate = estate_ghulams
 			loyalty = 10
 		}
 		add_stability_or_adm_power_per_stab = { amount = 1 }
-    }
-    failing_effect = {
+	}
+	failing_effect = {
 		event_target:agenda_province = {
 			if = {
 				limit = { owned_by = root }
@@ -253,13 +253,13 @@ estate_ghulams_increase_absolutism = {
 				}
 			}
 		}
-        add_estate_loyalty_modifier = {
-            estate = estate_ghulams
+		add_estate_loyalty_modifier = {
+			estate = estate_ghulams
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
-        }
-    }
+		}
+	}
 }
 
 estate_ghulams_build_courthouse = {
@@ -292,12 +292,12 @@ estate_ghulams_build_courthouse = {
 			NOT = { owned_by = root }
 		}
 	}
-    task_requirements = {
+	task_requirements = {
 		event_target:agenda_province = {
 			has_building = courthouse
 		}
-    }
-    task_completed_effect = {
+	}
+	task_completed_effect = {
 		add_estate_loyalty = {
 			estate = estate_ghulams
 			loyalty = 10
@@ -316,15 +316,15 @@ estate_ghulams_build_courthouse = {
 				}
 			}
 		}
-    }
-    failing_effect = {
-        add_estate_loyalty_modifier = {
-            estate = estate_ghulams
+	}
+	failing_effect = {
+		add_estate_loyalty_modifier = {
+			estate = estate_ghulams
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
-        }
-    }
+		}
+	}
 }
 
 estate_ghulams_diversify_court = {
@@ -355,7 +355,7 @@ estate_ghulams_diversify_court = {
 	}
 	fail_if = {
 	}
-    task_requirements = {
+	task_requirements = {
 		OR = {
 			employed_advisor = {
 				culture = armenian
@@ -364,8 +364,8 @@ estate_ghulams_diversify_court = {
 				culture = georgian
 			}
 		}
-    }
-    task_completed_effect = {
+	}
+	task_completed_effect = {
 		add_estate_loyalty = {
 			estate = estate_ghulams
 			loyalty = 10
@@ -374,15 +374,15 @@ estate_ghulams_diversify_court = {
 			name = "GE_Ghulams_Estate_Ghulam_Advisors"
 			duration = 3650
 		}
-    }
-    failing_effect = {
-        add_estate_loyalty_modifier = {
-            estate = estate_ghulams
+	}
+	failing_effect = {
+		add_estate_loyalty_modifier = {
+			estate = estate_ghulams
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -10
 			duration = 7300
-        }
-    }
+		}
+	}
 }
 
 estate_ghulams_expand_artillery = {
@@ -480,14 +480,14 @@ estate_ghulams_expand_artillery = {
 			duration = 3650
 		}
 	}
-    failing_effect = {
-        add_estate_loyalty_modifier = {
-            estate = estate_ghulams
+	failing_effect = {
+		add_estate_loyalty_modifier = {
+			estate = estate_ghulams
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
-        }
-    }
+		}
+	}
 }
 
 estate_ghulams_restore_order = {
@@ -523,12 +523,12 @@ estate_ghulams_restore_order = {
 			duration = 3650
 		}
 	}
-    failing_effect = {
-        add_estate_loyalty_modifier = {
-            estate = estate_ghulams
+	failing_effect = {
+		add_estate_loyalty_modifier = {
+			estate = estate_ghulams
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
-        }
-    }
+		}
+	}
 }

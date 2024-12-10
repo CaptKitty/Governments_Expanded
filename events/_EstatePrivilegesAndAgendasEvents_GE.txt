@@ -1100,8 +1100,8 @@ country_event = {
 	#Seize from everyone
 	option = {
 		name = estate_privileges_and_agendas_events.7.a
-        custom_tooltip = ESTATES_SEIZE_LAND_DESC
-        take_estate_land_share_massive = { estate = all }
+		custom_tooltip = ESTATES_SEIZE_LAND_DESC
+		take_estate_land_share_massive = { estate = all }
 		custom_tooltip = SEPERATOR_TOOLTIP
 
 		if = {

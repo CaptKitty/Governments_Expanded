@@ -1562,8 +1562,8 @@ presidential_reform = {
 		}
 		hidden_effect = {
 			country_event = { 
-			    id = reform_me_events.204
-			    days = 1
+				id = reform_me_events.204
+				days = 1
 			}
 		}
 	}

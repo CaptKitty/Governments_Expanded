@@ -70,12 +70,12 @@ estate_peasants_develop_grain = {
 			NOT = { owned_by = root }
 		}
 	}
-    task_requirements = {
+	task_requirements = {
 		event_target:agenda_province = {
 			base_production = "province_dip_var"
 		}
-    }
-    task_completed_effect = {
+	}
+	task_completed_effect = {
 		add_estate_loyalty = {
 			estate = estate_peasants
 			loyalty = 10
@@ -86,8 +86,8 @@ estate_peasants_develop_grain = {
 				duration = 3650
 			}
 		}
-    }
-    failing_effect = {
+	}
+	failing_effect = {
 		event_target:agenda_province = {
 			if = {
 				limit = { owned_by = root }
@@ -97,13 +97,13 @@ estate_peasants_develop_grain = {
 				}
 			}
 		}
-        add_estate_loyalty_modifier = {
-            estate = estate_peasants
+		add_estate_loyalty_modifier = {
+			estate = estate_peasants
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
-        }
-    }
+		}
+	}
 }
 
 estate_peasants_herd_cattle = {
@@ -175,13 +175,13 @@ estate_peasants_herd_cattle = {
 			NOT = { owned_by = root }
 		}
 	}
-    task_requirements = {
+	task_requirements = {
 		event_target:agenda_province = {
 			base_production = "province_dip_var"
 			base_tax = "province_adm_var"
 		}
-    }
-    task_completed_effect = {
+	}
+	task_completed_effect = {
 		add_estate_loyalty = {
 			estate = estate_peasants
 			loyalty = 10
@@ -193,8 +193,8 @@ estate_peasants_herd_cattle = {
 				duration = 3650
 			}
 		}
-    }
-    failing_effect = {
+	}
+	failing_effect = {
 		event_target:agenda_province = {
 			if = {
 				limit = { owned_by = root }
@@ -204,13 +204,13 @@ estate_peasants_herd_cattle = {
 				}
 			}
 		}
-        add_estate_loyalty_modifier = {
-            estate = estate_peasants
+		add_estate_loyalty_modifier = {
+			estate = estate_peasants
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
-        }
-    }
+		}
+	}
 }
 
 estate_peasants_build_wood_workshop = {
@@ -249,19 +249,19 @@ estate_peasants_build_wood_workshop = {
 			NOT = { owned_by = root }
 		}
 	}
-    task_requirements = {
+	task_requirements = {
 		event_target:agenda_province = {
 			has_building = workshop
 		}
-    }
-    task_completed_effect = {
+	}
+	task_completed_effect = {
 		add_estate_loyalty = {
 			estate = estate_peasants
 			loyalty = 10
 		}
 		add_years_of_income = 0.2
-    }
-    failing_effect = {
+	}
+	failing_effect = {
 		event_target:agenda_province = {
 			if = {
 				limit = { owned_by = root }
@@ -271,13 +271,13 @@ estate_peasants_build_wood_workshop = {
 				}
 			}
 		}
-        add_estate_loyalty_modifier = {
-            estate = estate_peasants
+		add_estate_loyalty_modifier = {
+			estate = estate_peasants
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
-        }
-    }
+		}
+	}
 }
 
 estate_peasants_harvest_time = {
@@ -305,13 +305,13 @@ estate_peasants_harvest_time = {
 	}
 	fail_if = {
 	}
-    task_requirements = {
+	task_requirements = {
 		custom_trigger_tooltip = {
 			tooltip = estate_peasants_harvest_time_tooltip
 			NOT = { had_recent_war = 5 }
 		}
-    }
-    task_completed_effect = {
+	}
+	task_completed_effect = {
 		add_estate_loyalty = {
 			estate = estate_peasants
 			loyalty = 5
@@ -320,15 +320,15 @@ estate_peasants_harvest_time = {
 			name = GE_Peasant_Estate_Peace
 			duration = 3650
 		}
-    }
-    failing_effect = {
-        add_estate_loyalty_modifier = {
-            estate = estate_peasants
+	}
+	failing_effect = {
+		add_estate_loyalty_modifier = {
+			estate = estate_peasants
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
-        }
-    }
+		}
+	}
 }
 
 estate_peasants_increase_privileges = {
@@ -346,10 +346,10 @@ estate_peasants_increase_privileges = {
 	}
 	fail_if = {
 	}
-    task_requirements = {
+	task_requirements = {
 		has_estate_privilege = estate_peasants_land_rights
-    }
-    task_completed_effect = {
+	}
+	task_completed_effect = {
 		add_estate_loyalty = {
 			estate = estate_peasants
 			loyalty = 15
@@ -358,15 +358,15 @@ estate_peasants_increase_privileges = {
 			name = GE_Peasant_Estate_Fervor
 			duration = 3650
 		}
-    }
-    failing_effect = {
-        add_estate_loyalty_modifier = {
-            estate = estate_peasants
+	}
+	failing_effect = {
+		add_estate_loyalty_modifier = {
+			estate = estate_peasants
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -10
 			duration = 7300
-        }
-    }
+		}
+	}
 }
 
 estate_peasants_expand_lebensraum = {
@@ -541,13 +541,13 @@ estate_peasants_expand_lebensraum = {
 			add_nationalism = -10
 		}
 	}
-    failing_effect = {
-        add_estate_loyalty_modifier = {
-            estate = estate_peasants
+	failing_effect = {
+		add_estate_loyalty_modifier = {
+			estate = estate_peasants
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
-        }
+		}
 		if = {
 			limit = {
 				event_target:agenda_province = {
@@ -565,7 +565,7 @@ estate_peasants_expand_lebensraum = {
 				}
 			}
 		}
-    }
+	}
 }
 
 estate_peasants_inspire_peasants = {
@@ -721,12 +721,12 @@ estate_peasants_inspire_peasants = {
 			duration = 9125
 		}
 	}
-    failing_effect = {
-        add_estate_loyalty_modifier = {
-            estate = estate_peasants
+	failing_effect = {
+		add_estate_loyalty_modifier = {
+			estate = estate_peasants
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
-        }
-    }
+		}
+	}
 }

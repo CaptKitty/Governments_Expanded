@@ -1189,7 +1189,7 @@ republic = {
 				japanese_divine_empire
 				#Mamluks
 				egyptian_government_reform
-                #1.37
+				#1.37
 				city_alliance_reform
 				### GE ###
 				florentine_republic
@@ -2024,7 +2024,7 @@ theocracy = {
 				sisterhood_of_jeanne_darc_reform
 				#Egypt
 				egyptian_government_reform
-                #1.37
+				#1.37
 				blood_theocracy_reform
 				### GE ###
 				# ajuraan_theocracy_reform

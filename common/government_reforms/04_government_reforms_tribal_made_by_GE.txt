@@ -365,7 +365,7 @@ one_on_high_reform = {
 		NOT = { primary_culture = manchu}
 		OR = {
 			religion = tengri_pagan_reformed
-    		religion = animism
+			religion = animism
 		}
 	}
 	trigger = {
@@ -378,7 +378,7 @@ one_on_high_reform = {
 		NOT = { primary_culture = manchu}
 		OR = {
 			religion = tengri_pagan_reformed
-    		religion = animism
+			religion = animism
 		}
 	}
 	modifiers = {

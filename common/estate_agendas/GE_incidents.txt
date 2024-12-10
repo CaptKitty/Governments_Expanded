@@ -55,14 +55,14 @@ estate_burghers_workshops_investments = {
 	fail_if = {
 		always = no
 	}
-    task_requirements = {
+	task_requirements = {
 		OR = {
 			has_country_flag = GE_incidents_2_invested_big
 			has_country_flag = GE_incidents_2_invested_small
 			has_country_flag = GE_incidents_2_invested_not
 		}
-    }
-    task_completed_effect = {
+	}
+	task_completed_effect = {
 		custom_tooltip = GE_incidents.2.TT
 		if = {
 			limit = {
@@ -92,11 +92,11 @@ estate_burghers_workshops_investments = {
 			}
 			clr_country_flag = GE_incidents_2_invested_not
 		}
-    }
-    failing_effect = {
+	}
+	failing_effect = {
 		add_estate_loyalty = {
 			estate = estate_burghers
 			loyalty = -10
 		}
-    }
+	}
 }

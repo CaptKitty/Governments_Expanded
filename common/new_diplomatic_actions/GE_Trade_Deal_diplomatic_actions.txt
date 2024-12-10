@@ -2,8 +2,8 @@
 	# offer_trade_deal_tunisian_italian = {
 	# 	category = relation
 
-	# 	alert_index = 27 #34             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
-	# 	alert_tooltip = ICON_GE_TD         # The localisation key to display in the alert tooltip. Optional.
+	# 	alert_index = 27 #34			 # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+	# 	alert_tooltip = ICON_GE_TD		 # The localisation key to display in the alert tooltip. Optional.
 
 	# 	require_acceptance = yes
 
@@ -51,14 +51,14 @@
 	# 	ai_acceptance = { # This works similarly to variable_arithmetic_trigger, but does not support triggers generally. Instead, "limit" will be evaluated first and the rest ignored if it isn't passed.
 	# 		ai_value = 1
 	# 		# add_entry = {
-	# 		# 	name = GE_diplomatic_reputation    # The localisation key to display for this factor
+	# 		# 	name = GE_diplomatic_reputation	# The localisation key to display for this factor
 
 	# 		# 	# ai_value MUST always be created within an entry first.
 	# 		# 	export_to_variable = {
 	# 		# 		variable_name = ai_value
-	# 		# 		value = modifier:diplomatic_reputation      # Which exportable value to export
-	# 		# 		who = ROOT                      # Who to export the value from
-	# 		# 		with = FROM                     # Who the ai_value is for
+	# 		# 		value = modifier:diplomatic_reputation	  # Which exportable value to export
+	# 		# 		who = ROOT					  # Who to export the value from
+	# 		# 		with = FROM					 # Who the ai_value is for
 	# 		# 	}
 	# 		# 	multiply_variable = {
 	# 		# 		which = ai_value
@@ -70,18 +70,18 @@
 	# 		# 	name = GE_base_acceptance
 	# 		# 	export_to_variable = {
 	# 		# 		variable_name = ai_value
-	# 		# 		value = 10      # Which exportable value to export
-	# 		# 		who = ROOT                      # Who to export the value from
-	# 		# 		with = FROM                     # Who the ai_value is for
+	# 		# 		value = 10	  # Which exportable value to export
+	# 		# 		who = ROOT					  # Who to export the value from
+	# 		# 		with = FROM					 # Who the ai_value is for
 	# 		# 	}
 	# 		# }
 	# 		add_entry = {
 	# 			name = GE_base_acceptance
 	# 			export_to_variable = {
 	# 				variable_name = ai_value
-	# 				value = 1      # Which exportable value to export
-	# 				who = ROOT                      # Who to export the value from
-	# 				with = FROM                     # Who the ai_value is for
+	# 				value = 1	  # Which exportable value to export
+	# 				who = ROOT					  # Who to export the value from
+	# 				with = FROM					 # Who the ai_value is for
 	# 			}
 	# 			multiply_variable = {
 	# 				which = ai_value
@@ -154,8 +154,8 @@
 offer_trade_deal_rural_exports = {
 	category = trade
 
-    alert_index = 34 #27             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
-	alert_tooltip = ICON_GE_TD         # The localisation key to display in the alert tooltip. Optional.
+	alert_index = 34 #27			 # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+	alert_tooltip = ICON_GE_TD		 # The localisation key to display in the alert tooltip. Optional.
 
 	require_acceptance = yes
 
@@ -265,14 +265,14 @@ offer_trade_deal_rural_exports = {
 	ai_acceptance = { # This works similarly to variable_arithmetic_trigger, but does not support triggers generally. Instead, "limit" will be evaluated first and the rest ignored if it isn't passed.
 		ai_value = 1
 		add_entry = {#+3*DipRep
-			name = GE_diplomatic_reputation    # The localisation key to display for this factor
+			name = GE_diplomatic_reputation	# The localisation key to display for this factor
 
 			# ai_value MUST always be created within an entry first.
 			export_to_variable = {
 				variable_name = ai_value
-				value = modifier:diplomatic_reputation      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = modifier:diplomatic_reputation	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -297,9 +297,9 @@ offer_trade_deal_rural_exports = {
 			name = GE_base_acceptance
 			export_to_variable = {
 				variable_name = ai_value
-				value = -1      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = -1	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -332,9 +332,9 @@ offer_trade_deal_rural_exports = {
 			}
 			export_to_variable = {
 				variable_name = ai_value
-				value = -1      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = -1	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -368,9 +368,9 @@ offer_trade_deal_rural_exports = {
 			}
 			export_to_variable = {
 				variable_name = ai_value
-				value = -1      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = -1	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -389,9 +389,9 @@ offer_trade_deal_rural_exports = {
 			}
 			export_to_variable = {
 				variable_name = ai_value
-				value = -1      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = -1	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -407,9 +407,9 @@ offer_trade_deal_rural_exports = {
 			}
 			export_to_variable = {
 				variable_name = ai_value
-				value = 1      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = 1	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -440,8 +440,8 @@ offer_trade_deal_rural_exports = {
 offer_trade_deal_rural_imports = {
 	category = trade
 
-    alert_index = 34 #27             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
-	alert_tooltip = ICON_GE_TD         # The localisation key to display in the alert tooltip. Optional.
+	alert_index = 34 #27			 # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+	alert_tooltip = ICON_GE_TD		 # The localisation key to display in the alert tooltip. Optional.
 
 	require_acceptance = yes
 
@@ -551,14 +551,14 @@ offer_trade_deal_rural_imports = {
 	ai_acceptance = { # This works similarly to variable_arithmetic_trigger, but does not support triggers generally. Instead, "limit" will be evaluated first and the rest ignored if it isn't passed.
 		ai_value = 1
 		add_entry = {#+3*DipRep
-			name = GE_diplomatic_reputation    # The localisation key to display for this factor
+			name = GE_diplomatic_reputation	# The localisation key to display for this factor
 
 			# ai_value MUST always be created within an entry first.
 			export_to_variable = {
 				variable_name = ai_value
-				value = modifier:diplomatic_reputation      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = modifier:diplomatic_reputation	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -583,9 +583,9 @@ offer_trade_deal_rural_imports = {
 			name = GE_base_acceptance
 			export_to_variable = {
 				variable_name = ai_value
-				value = -1      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = -1	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -619,9 +619,9 @@ offer_trade_deal_rural_imports = {
 			}
 			export_to_variable = {
 				variable_name = ai_value
-				value = -1      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = -1	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -654,9 +654,9 @@ offer_trade_deal_rural_imports = {
 			}
 			export_to_variable = {
 				variable_name = ai_value
-				value = -1      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = -1	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -675,9 +675,9 @@ offer_trade_deal_rural_imports = {
 			}
 			export_to_variable = {
 				variable_name = ai_value
-				value = -1      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = -1	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -693,9 +693,9 @@ offer_trade_deal_rural_imports = {
 			}
 			export_to_variable = {
 				variable_name = ai_value
-				value = -1      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = -1	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -726,8 +726,8 @@ offer_trade_deal_rural_imports = {
 offer_trade_deal_urban_exports = {
 	category = trade
 
-    alert_index = 34 #27             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
-	alert_tooltip = ICON_GE_TD         # The localisation key to display in the alert tooltip. Optional.
+	alert_index = 34 #27			 # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+	alert_tooltip = ICON_GE_TD		 # The localisation key to display in the alert tooltip. Optional.
 
 	require_acceptance = yes
 
@@ -837,14 +837,14 @@ offer_trade_deal_urban_exports = {
 	ai_acceptance = { # This works similarly to variable_arithmetic_trigger, but does not support triggers generally. Instead, "limit" will be evaluated first and the rest ignored if it isn't passed.
 		ai_value = 1
 		add_entry = {#+3*DipRep
-			name = GE_diplomatic_reputation    # The localisation key to display for this factor
+			name = GE_diplomatic_reputation	# The localisation key to display for this factor
 
 			# ai_value MUST always be created within an entry first.
 			export_to_variable = {
 				variable_name = ai_value
-				value = modifier:diplomatic_reputation      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = modifier:diplomatic_reputation	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -869,9 +869,9 @@ offer_trade_deal_urban_exports = {
 			name = GE_base_acceptance
 			export_to_variable = {
 				variable_name = ai_value
-				value = -1      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = -1	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -905,9 +905,9 @@ offer_trade_deal_urban_exports = {
 			}
 			export_to_variable = {
 				variable_name = ai_value
-				value = -1      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = -1	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -940,9 +940,9 @@ offer_trade_deal_urban_exports = {
 			}
 			export_to_variable = {
 				variable_name = ai_value
-				value = -1      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = -1	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -961,9 +961,9 @@ offer_trade_deal_urban_exports = {
 			}
 			export_to_variable = {
 				variable_name = ai_value
-				value = -1      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = -1	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -979,9 +979,9 @@ offer_trade_deal_urban_exports = {
 			}
 			export_to_variable = {
 				variable_name = ai_value
-				value = 1      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = 1	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -1012,8 +1012,8 @@ offer_trade_deal_urban_exports = {
 offer_trade_deal_urban_imports = {
 	category = trade
 
-    alert_index = 34 #27             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
-	alert_tooltip = ICON_GE_TD         # The localisation key to display in the alert tooltip. Optional.
+	alert_index = 34 #27			 # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+	alert_tooltip = ICON_GE_TD		 # The localisation key to display in the alert tooltip. Optional.
 
 	require_acceptance = yes
 
@@ -1123,14 +1123,14 @@ offer_trade_deal_urban_imports = {
 	ai_acceptance = { # This works similarly to variable_arithmetic_trigger, but does not support triggers generally. Instead, "limit" will be evaluated first and the rest ignored if it isn't passed.
 		ai_value = 1
 		add_entry = {#+3*DipRep
-			name = GE_diplomatic_reputation    # The localisation key to display for this factor
+			name = GE_diplomatic_reputation	# The localisation key to display for this factor
 
 			# ai_value MUST always be created within an entry first.
 			export_to_variable = {
 				variable_name = ai_value
-				value = modifier:diplomatic_reputation      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = modifier:diplomatic_reputation	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -1155,9 +1155,9 @@ offer_trade_deal_urban_imports = {
 			name = GE_base_acceptance
 			export_to_variable = {
 				variable_name = ai_value
-				value = -1      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = -1	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -1191,9 +1191,9 @@ offer_trade_deal_urban_imports = {
 			}
 			export_to_variable = {
 				variable_name = ai_value
-				value = -1      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = -1	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -1226,9 +1226,9 @@ offer_trade_deal_urban_imports = {
 			}
 			export_to_variable = {
 				variable_name = ai_value
-				value = -1      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = -1	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -1247,9 +1247,9 @@ offer_trade_deal_urban_imports = {
 			}
 			export_to_variable = {
 				variable_name = ai_value
-				value = -1      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = -1	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -1265,9 +1265,9 @@ offer_trade_deal_urban_imports = {
 			}
 			export_to_variable = {
 				variable_name = ai_value
-				value = -1      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = -1	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -1298,8 +1298,8 @@ offer_trade_deal_urban_imports = {
 offer_trade_deal_mining_exports = {
 	category = trade
 
-    alert_index = 34 #27             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
-	alert_tooltip = ICON_GE_TD         # The localisation key to display in the alert tooltip. Optional.
+	alert_index = 34 #27			 # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+	alert_tooltip = ICON_GE_TD		 # The localisation key to display in the alert tooltip. Optional.
 
 	require_acceptance = yes
 
@@ -1409,14 +1409,14 @@ offer_trade_deal_mining_exports = {
 	ai_acceptance = { # This works similarly to variable_arithmetic_trigger, but does not support triggers generally. Instead, "limit" will be evaluated first and the rest ignored if it isn't passed.
 		ai_value = 1
 		add_entry = {#+3*DipRep
-			name = GE_diplomatic_reputation    # The localisation key to display for this factor
+			name = GE_diplomatic_reputation	# The localisation key to display for this factor
 
 			# ai_value MUST always be created within an entry first.
 			export_to_variable = {
 				variable_name = ai_value
-				value = modifier:diplomatic_reputation      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = modifier:diplomatic_reputation	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -1441,9 +1441,9 @@ offer_trade_deal_mining_exports = {
 			name = GE_base_acceptance
 			export_to_variable = {
 				variable_name = ai_value
-				value = -1      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = -1	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -1477,9 +1477,9 @@ offer_trade_deal_mining_exports = {
 			}
 			export_to_variable = {
 				variable_name = ai_value
-				value = -1      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = -1	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -1512,9 +1512,9 @@ offer_trade_deal_mining_exports = {
 			}
 			export_to_variable = {
 				variable_name = ai_value
-				value = -1      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = -1	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -1533,9 +1533,9 @@ offer_trade_deal_mining_exports = {
 			}
 			export_to_variable = {
 				variable_name = ai_value
-				value = -1      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = -1	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -1551,9 +1551,9 @@ offer_trade_deal_mining_exports = {
 			}
 			export_to_variable = {
 				variable_name = ai_value
-				value = 1      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = 1	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -1584,8 +1584,8 @@ offer_trade_deal_mining_exports = {
 offer_trade_deal_mining_imports = {
 	category = trade
 
-    alert_index = 34 #27             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
-	alert_tooltip = ICON_GE_TD         # The localisation key to display in the alert tooltip. Optional.
+	alert_index = 34 #27			 # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+	alert_tooltip = ICON_GE_TD		 # The localisation key to display in the alert tooltip. Optional.
 
 	require_acceptance = yes
 
@@ -1680,14 +1680,14 @@ offer_trade_deal_mining_imports = {
 	ai_acceptance = { # This works similarly to variable_arithmetic_trigger, but does not support triggers generally. Instead, "limit" will be evaluated first and the rest ignored if it isn't passed.
 		ai_value = 1
 		add_entry = {#+3*DipRep
-			name = GE_diplomatic_reputation    # The localisation key to display for this factor
+			name = GE_diplomatic_reputation	# The localisation key to display for this factor
 
 			# ai_value MUST always be created within an entry first.
 			export_to_variable = {
 				variable_name = ai_value
-				value = modifier:diplomatic_reputation      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = modifier:diplomatic_reputation	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -1712,9 +1712,9 @@ offer_trade_deal_mining_imports = {
 			name = GE_base_acceptance
 			export_to_variable = {
 				variable_name = ai_value
-				value = -1      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = -1	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -1748,9 +1748,9 @@ offer_trade_deal_mining_imports = {
 			}
 			export_to_variable = {
 				variable_name = ai_value
-				value = -1      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = -1	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -1783,9 +1783,9 @@ offer_trade_deal_mining_imports = {
 			}
 			export_to_variable = {
 				variable_name = ai_value
-				value = -1      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = -1	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -1804,9 +1804,9 @@ offer_trade_deal_mining_imports = {
 			}
 			export_to_variable = {
 				variable_name = ai_value
-				value = -1      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = -1	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -1822,9 +1822,9 @@ offer_trade_deal_mining_imports = {
 			}
 			export_to_variable = {
 				variable_name = ai_value
-				value = -1      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = -1	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -1855,8 +1855,8 @@ offer_trade_deal_mining_imports = {
 offer_trade_deal_plantation_exports = {
 	category = trade
 
-    alert_index = 34 #27             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
-	alert_tooltip = ICON_GE_TD         # The localisation key to display in the alert tooltip. Optional.
+	alert_index = 34 #27			 # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+	alert_tooltip = ICON_GE_TD		 # The localisation key to display in the alert tooltip. Optional.
 
 	require_acceptance = yes
 
@@ -1951,14 +1951,14 @@ offer_trade_deal_plantation_exports = {
 	ai_acceptance = { # This works similarly to variable_arithmetic_trigger, but does not support triggers generally. Instead, "limit" will be evaluated first and the rest ignored if it isn't passed.
 		ai_value = 1
 		add_entry = {#+3*DipRep
-			name = GE_diplomatic_reputation    # The localisation key to display for this factor
+			name = GE_diplomatic_reputation	# The localisation key to display for this factor
 
 			# ai_value MUST always be created within an entry first.
 			export_to_variable = {
 				variable_name = ai_value
-				value = modifier:diplomatic_reputation      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = modifier:diplomatic_reputation	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -1983,9 +1983,9 @@ offer_trade_deal_plantation_exports = {
 			name = GE_base_acceptance
 			export_to_variable = {
 				variable_name = ai_value
-				value = -1      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = -1	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -2019,9 +2019,9 @@ offer_trade_deal_plantation_exports = {
 			}
 			export_to_variable = {
 				variable_name = ai_value
-				value = -1      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = -1	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -2054,9 +2054,9 @@ offer_trade_deal_plantation_exports = {
 			}
 			export_to_variable = {
 				variable_name = ai_value
-				value = -1      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = -1	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -2075,9 +2075,9 @@ offer_trade_deal_plantation_exports = {
 			}
 			export_to_variable = {
 				variable_name = ai_value
-				value = -1      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = -1	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -2093,9 +2093,9 @@ offer_trade_deal_plantation_exports = {
 			}
 			export_to_variable = {
 				variable_name = ai_value
-				value = 1      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = 1	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -2126,8 +2126,8 @@ offer_trade_deal_plantation_exports = {
 offer_trade_deal_plantation_imports = {
 	category = trade
 
-    alert_index = 34 #27             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
-	alert_tooltip = ICON_GE_TD         # The localisation key to display in the alert tooltip. Optional.
+	alert_index = 34 #27			 # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+	alert_tooltip = ICON_GE_TD		 # The localisation key to display in the alert tooltip. Optional.
 
 	require_acceptance = yes
 
@@ -2221,14 +2221,14 @@ offer_trade_deal_plantation_imports = {
 	ai_acceptance = { # This works similarly to variable_arithmetic_trigger, but does not support triggers generally. Instead, "limit" will be evaluated first and the rest ignored if it isn't passed.
 		ai_value = 1
 		add_entry = {#+3*DipRep
-			name = GE_diplomatic_reputation    # The localisation key to display for this factor
+			name = GE_diplomatic_reputation	# The localisation key to display for this factor
 
 			# ai_value MUST always be created within an entry first.
 			export_to_variable = {
 				variable_name = ai_value
-				value = modifier:diplomatic_reputation      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = modifier:diplomatic_reputation	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -2253,9 +2253,9 @@ offer_trade_deal_plantation_imports = {
 			name = GE_base_acceptance
 			export_to_variable = {
 				variable_name = ai_value
-				value = -1      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = -1	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -2289,9 +2289,9 @@ offer_trade_deal_plantation_imports = {
 			}
 			export_to_variable = {
 				variable_name = ai_value
-				value = -1      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = -1	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -2325,9 +2325,9 @@ offer_trade_deal_plantation_imports = {
 			}
 			export_to_variable = {
 				variable_name = ai_value
-				value = -1      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = -1	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -2346,9 +2346,9 @@ offer_trade_deal_plantation_imports = {
 			}
 			export_to_variable = {
 				variable_name = ai_value
-				value = -1      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = -1	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -2364,9 +2364,9 @@ offer_trade_deal_plantation_imports = {
 			}
 			export_to_variable = {
 				variable_name = ai_value
-				value = -1      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = -1	  # Which exportable value to export
+				who = ROOT					  # Who to export the value from
+				with = FROM					 # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
@@ -2728,8 +2728,8 @@ cancel_trade_deal_generic = {
 		# variable_arithmetic_trigger = {
 		# 	export_to_variable = {
 		# 		variable_name = GE_Cancel_Trade_Deal_DipRep
-		# 		value = modifier:diplomatic_reputation      # Which exportable value to export
-		# 		who = ROOT                      # Who to export the value from
+		# 		value = modifier:diplomatic_reputation	  # Which exportable value to export
+		# 		who = ROOT					  # Who to export the value from
 		# 	}
 		# 	export_to_variable = {
 		# 		variable_name = GE_Cancel_Trade_Deal_Opinion
