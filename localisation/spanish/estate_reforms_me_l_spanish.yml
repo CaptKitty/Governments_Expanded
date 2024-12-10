@@ -1197,7 +1197,7 @@ constitutio_valdemariana_reform: "Constitutio Valdemariana"
  mechanic_enables_siamese_honor_yes: "Siamese Honor: §G+5%§! Infantry Combat Ability while your legitimacy is over 75, §R+2§! Global Unrest while your legitimacy is under 50."
  mechanic_enables_Religious_Fervor_yes: "Religious Fervor: §G+20%§! Manpower while you have over 90% Religious Unity."
  mechanic_enables_mandala_periphery_yes: "Mandala Periphery: §G+15%§! National Tax Modifier for Subjects."
- mechanic_enables_solar_periphery_yes: "Solar Periphery: §G+15%§! National Tax Modifier and §G+15%§! National Manpower Modifier for Subjects."
+ mechanic_enables_solar_periphery_yes: "Solar Periphery: §G+15%§! National Tax Modifier and §G+15%§! National Manpower Modifier in Subjects."
 
  mechanic_enables_church_policy_yes: "Church Policy: Upon Ascention, pick a policy for your administration."
  mechanic_enables_royal_levies_yes: "Royal Levies: §G+1§! Land Force Limit and §G5%§! Land Force Limit Modifier for each point of military skill of your monarch."
