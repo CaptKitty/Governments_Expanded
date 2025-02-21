@@ -7,17 +7,17 @@ sicilian_kingdom_mechanic = {
 		sicilian_kingdom_adm_power = {
 			max = 150
 			monarch_power = ADM
-			base_monthly_growth = 0.66
+			base_monthly_growth = 0.50
 		}
 		sicilian_kingdom_dip_power = {
 			max = 150
 			monarch_power = DIP
-			base_monthly_growth = 0.66
+			base_monthly_growth = 0.50
 		}
 		sicilian_kingdom_mil_power = {
 			max = 150
 			monarch_power = MIL
-			base_monthly_growth = 0.66
+			base_monthly_growth = 0.50
 		}
 	}
 	
@@ -47,23 +47,10 @@ sicilian_kingdom_mechanic = {
 					}
 					random_area_province = {
 						limit = { owned_by = ROOT }
-						if = {
-							limit = {
-								owner = { ADM = 3 }
-							}
-							add_base_tax = 1
-						}
-						if = {
-							limit = {
-								owner = { DIP = 3 }
-							}
-							add_base_production = 1
-						}
-						if = {
-							limit = {
-								owner = { MIL = 3 }
-							}
-							add_base_manpower = 1
+						random_list = {
+							33 = { add_base_tax = 1 }
+							33 = { add_base_production = 1 }
+							33 = { add_base_manpower = 1 }
 						}
 					}
 				}
@@ -92,6 +79,12 @@ sicilian_kingdom_mechanic = {
 			effect = {
 				add_yearly_manpower = 0.5
 				custom_tooltip = sicilian_kingdom_sicilian_defence_tt
+				tooltip = {
+					add_province_modifier = {
+						name = sicilian_kingdom_sicilian_defence_modifier
+						duration = 1825
+					}
+				}
 				hidden_effect = {
 					every_owned_province = {
 						limit = {

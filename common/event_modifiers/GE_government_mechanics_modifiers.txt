@@ -100,8 +100,8 @@ republican_vs_monarchist_ambizione_imperiale_focus_modifier_province = {
 	local_regiment_cost = -0.20
 }
 republican_vs_monarchist_culla_rinascimento_focus_modifier_province = {
-	local_build_cost = -0.15
-	local_build_time = -0.15
+	local_build_cost = -0.10
+	local_build_time = -0.10
 	local_development_cost_modifier = -0.075
 	local_prosperity_growth = 1
 }
@@ -228,14 +228,13 @@ italian_dinasties_condotte_militari_modifier = {
 
 # Sicilian Kingdom
 sicilian_kingdom_encouraged_city_living_modifier = {
-	local_development_cost_modifier = -0.10
+	local_development_cost_modifier = -0.05
 	local_tax_modifier = 0.25
 }
 sicilian_kingdom_sicilian_defence_modifier = {
-	local_own_coast_naval_combat_bonus = 1
 	local_defender_dice_roll_bonus = 1
 	local_monthly_devastation = -0.10
-	local_prosperity_growth = 0.5
+	hostile_disembark_speed = 0.5
 }
 
 # Legitimation through Representation

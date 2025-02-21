@@ -212,7 +212,7 @@
 
  ## Tooltips:
  republican_vs_monarchist_mechanic_interaction_duration: "until the other focus is selected"
- republican_vs_monarchist_culla_rinascimento_focus_TT: "We will decide whether to invest a proseprity plan in §YNorthern§!, §YCentral§! or §YSouthern Italy§!. \nFor §Y15§! years the selected provinces will receive the following effects: \n  Local Construction Cost: §G-15.0%§!\n  Local Construction Time: §G-15.0%§!\n  Local Prosperity Growth §G+1.00§!\n  Local Development Cost Modifier: §G-7.5%§!"
+ republican_vs_monarchist_culla_rinascimento_focus_TT: "We will decide whether to invest a proseprity plan in §YNorthern§!, §YCentral§! or §YSouthern Italy§!. \nFor §Y15§! years the selected provinces will receive the following effects: \n  Local Construction Cost: §G-10.0%§!\n  Local Construction Time: §G-10.0%§!\n  Local Prosperity Growth §G+1.00§!\n  Local Development Cost Modifier: §G-7.5%§!"
  republican_vs_monarchist_culla_rinascimento_focus_north_TT: "Owns at least §Y12§! provinces in Northern Italy"
  republican_vs_monarchist_culla_rinascimento_focus_center_TT: "Owns at least §Y12§! provinces in Central Italy"
  republican_vs_monarchist_culla_rinascimento_focus_south_TT: "Owns at least §Y12§! provinces in Southern Italy"
@@ -387,7 +387,7 @@
  sicilian_kingdom_sicilian_defence_modifier: "Sicilian Defence"
  desc_sicilian_kingdom_sicilian_defence_modifier: ""
 
- sicilian_kingdom_sicilian_defence_tt: "The owned provinces in the areas of §Y[121.GetAreaName]§!, §Y[124.GetAreaName]§!, §Y[125.GetAreaName]§!, §Y[123.GetAreaName]§!, §Y[122.GetAreaName]§! will:\n   '§YSicilian Defence§!' for §Y5 years§!, giving the following effects:\n      - [local_own_coast_naval_combat_bonus]: §G+1.00§!\n      - [local_defender_dice_roll_bonus]: §G+1.00§!\n      - [local_monthly_devastation]: §G-10.0%§!\n      - [local_prosperity_growth]: §G+0.50§!"
+ sicilian_kingdom_sicilian_defence_tt: "Owned provinces in the areas: §Y[121.GetAreaName]§!, §Y[124.GetAreaName]§!, §Y[125.GetAreaName]§!, §Y[123.GetAreaName]§!, §Y[122.GetAreaName]§! will get the following:\n"
 
 # Legitimation through Represenation Mechanic:
  ## Mechanics:
