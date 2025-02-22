@@ -1,12 +1,13 @@
-has_carpet_trade_goods = {
-	OR = {
-		trade_goods = cloth
-		trade_goods = silk
-		trade_goods = wool
-		#TGESTUFFS
-		trade_goods = carpet
-	}
-}
+# Commented out for now cause no TGE update
+# has_carpet_trade_goods = {
+# 	OR = {
+# 		trade_goods = cloth
+# 		trade_goods = silk
+# 		trade_goods = wool
+# 		#TGESTUFFS
+# 		trade_goods = carpet
+# 	}
+# }
 
 has_metal_goods = {
 	OR = {
