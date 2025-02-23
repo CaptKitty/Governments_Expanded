@@ -1,7 +1,13 @@
 on_startup = {
-	set_global_flag = governments_expanded_mod_active
 	GE_TE_init_country = yes
 	ge_maritime_republic_set = yes
+	if = {
+		limit = {
+			NOT = { has_global_flag = governments_expanded_mod_active }
+		}
+		GE_initiate_starting_reforms = yes
+		set_global_flag = governments_expanded_mod_active
+	}
 }
 
 ##### GE Government Reform Events #####

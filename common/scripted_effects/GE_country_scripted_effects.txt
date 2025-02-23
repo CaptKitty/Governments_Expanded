@@ -1,7 +1,6 @@
 GE_TE_init_country = {
 	set_country_flag = GE_TE_fired
 	GE_calculate_goods_produced_effect = yes
-	GE_initiate_starting_effects = yes
 }
 
 GE_initiate_starting_effects = {
