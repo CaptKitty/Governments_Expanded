@@ -1,13 +1,10 @@
-# Commented out for now cause no TGE update
-# has_carpet_trade_goods = {
-# 	OR = {
-# 		trade_goods = cloth
-# 		trade_goods = silk
-# 		trade_goods = wool
-# 		#TGESTUFFS
-# 		trade_goods = carpet
-# 	}
-# }
+has_carpet_trade_goods = {
+	OR = {
+		trade_goods = cloth
+		trade_goods = silk
+		trade_goods = wool
+	}
+}
 
 has_metal_goods = {
 	OR = {
@@ -24,6 +21,12 @@ has_mining_goods = {
 		trade_goods = gold
 		trade_goods = salt
 		trade_goods = coal
+		trade_goods = gems
+	}
+}
+
+has_gems_goods = {
+	OR = {
 		trade_goods = gems
 	}
 }

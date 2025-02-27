@@ -143,7 +143,13 @@ estate_persian_weaving_industry = {
 	}
 	can_select = {
 		any_owned_province = {
-			has_carpet_trade_goods = yes
+			OR = {
+				trade_goods = cloth
+				trade_goods = silk
+				trade_goods = wool
+				#TGESTUFFS
+				trade_goods = carpet
+			}
 		}
 	}
 	on_invalid = {
@@ -162,7 +168,13 @@ estate_persian_weaving_industry = {
 	on_granted_province = {
 		if = {
 			limit = {
-				has_carpet_trade_goods = yes
+				OR = {
+					trade_goods = cloth
+					trade_goods = silk
+					trade_goods = wool
+					#TGESTUFFS
+					trade_goods = carpet
+				}
 			}
 			add_province_modifier = {
 				name = ge_persian_weaving_industry_modifier
