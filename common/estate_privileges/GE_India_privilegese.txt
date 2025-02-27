@@ -132,6 +132,10 @@ estate_persian_weaving_industry = {
 	icon = privilege_monopoly_of_goods_cloth
 	land_share = 0
 	max_absolutism = -5
+	conditional_modifier = {
+		trigger = { has_country_flag = ge_persian_weaving_industry_no_absolutism }
+		modifier = { max_absolutism = 5 }
+	}
 	loyalty = 0.05
 	influence = 0.05
 	is_valid = {
