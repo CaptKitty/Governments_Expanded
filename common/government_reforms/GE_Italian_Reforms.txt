@@ -6,14 +6,13 @@ duchi_montefeltro_reform = {
 		OR = {
 			have_had_reform = duchi_montefeltro_reform
 			is_or_was_tag = { tag = URB }
-			NOT = { tag = ITA }
 		}
+		NOT = { tag = ITA }
 	}
 	trigger = {
 		OR = {
 			have_had_reform = duchi_montefeltro_reform
 			is_or_was_tag = { tag = URB }
-			NOT = { tag = ITA }
 		}
 	}
 	valid_for_nation_designer = yes
@@ -46,8 +45,8 @@ florentine_republic = {
 			have_had_reform = florentine_republic
 			is_or_was_tag = { tag = LAN }
 			is_or_was_tag = { tag = TUS }
-			NOT = { tag = ITA }
 		}
+		NOT = { tag = ITA }
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 20
@@ -107,9 +106,9 @@ genoese_republic = {
 	nation_designer_cost = 50
 	legacy_equivalent = merchant_republic
 	potential = {
+		NOT = { tag = ITA }
 		OR = {
 			is_or_was_tag = { tag = GEN }
-			NOT = { tag = ITA }
 			have_had_reform = genoese_republic
 		}
 	}
@@ -166,14 +165,13 @@ giudicati_sardi_reform = {
 		OR = {
 			have_had_reform = giudicati_sardi_reform
 			is_or_was_tag = { tag = SAR }
-			NOT = { tag = ITA }
 		}
+		NOT = { tag = ITA }
 	}
 	trigger = {
 		OR = {
 			have_had_reform = giudicati_sardi_reform
 			is_or_was_tag = { tag = SAR }
-			NOT = { tag = ITA }
 		}
 	}
 	valid_for_nation_designer = yes
@@ -190,14 +188,13 @@ house_of_este_reform = {
 		OR = {
 			have_had_reform = house_of_este_reform
 			is_or_was_tag = { tag = FER }
-			NOT = { tag = ITA }
 		}
+		NOT = { tag = ITA }
 	}
 	trigger = {
 		OR = {
 			have_had_reform = house_of_este_reform
 			is_or_was_tag = { tag = FER }
-			NOT = { tag = ITA }
 		}
 	}
 	valid_for_nation_designer = yes
@@ -218,16 +215,15 @@ house_of_gonzaga_reform = {
 	allow_normal_conversion = yes
 	valid_for_nation_designer = no
 	potential = {
+		NOT = { tag = ITA }
 		OR = {
 			is_or_was_tag = { tag = MAN }
-			NOT = { tag = ITA }
 			have_had_reform = house_of_gonzaga_reform
 		}
 	}
 	trigger = {
 		OR = {
 			is_or_was_tag = { tag = MAN }
-			NOT = { tag = ITA }
 			have_had_reform = house_of_gonzaga_reform
 		}
 	}
@@ -293,10 +289,10 @@ kingdom_of_sardinia_reform = {
 			primary_culture = piedmontese
 			have_had_reform = kingdom_of_sardinia_reform
 		}
+		NOT = { tag = ITA }
 	}
 	trigger = {
 		is_or_was_tag = { tag = SPI }
-		NOT = { tag = ITA }
 		OR = {
 			primary_culture = sardinian
 			primary_culture = piedmontese
@@ -350,16 +346,15 @@ palaiologos_montferrat_reform = {
 	allow_normal_conversion = yes
 	valid_for_nation_designer = no
 	potential = {
+		NOT = { tag = ITA }
 		OR = {
 			is_or_was_tag = { tag = MFA }
-			NOT = { tag = ITA }
 			have_had_reform = palaiologos_montferrat_reform
 		}
 	}
 	trigger = {
 		OR = {
 			is_or_was_tag = { tag = MFA }
-			NOT = { tag = ITA }
 			have_had_reform = palaiologos_montferrat_reform
 		}
 	}
@@ -385,9 +380,9 @@ republic_of_saint_blaise = {
 	nation_designer_cost = 50
 	legacy_equivalent = merchant_republic
 	potential = {
+		NOT = { tag = ITA }
 		OR = {
 			is_or_was_tag = { tag = RAG }
-			NOT = { tag = ITA }
 			have_had_reform = republic_of_saint_blaise
 		}
 	}
@@ -440,16 +435,15 @@ savoia_reform = {
 	allow_normal_conversion = yes
 	valid_for_nation_designer = no
 	potential = {
+		NOT = { tag = ITA }
 		OR = {
 			is_or_was_tag = { tag = SAV }
-			NOT = { tag = ITA }
 			have_had_reform = savoia_reform
 		}
 	}
 	trigger = {
 		OR = {
 			is_or_was_tag = { tag = SAV }
-			NOT = { tag = ITA }
 			have_had_reform = savoia_reform
 		}
 	}
@@ -473,14 +467,13 @@ signoria_baglioni_reform = {
 		OR = {
 			have_had_reform = signoria_baglioni_reform
 			is_or_was_tag = { tag = PGA }
-			NOT = { tag = ITA }
 		}
+		NOT = { tag = ITA }
 	}
 	trigger = {
 		OR = {
 			have_had_reform = signoria_baglioni_reform
 			is_or_was_tag = { tag = PGA }
-			NOT = { tag = ITA }
 		}
 	}
 	duration = 12

@@ -78,3 +78,4 @@
 
  estate_persian_weaving_industry_gt: "Every owned §YCloth§!, §YSilk§!, §YWool§! or §YCarpet§! province gains the following bonus:"
  estate_persian_weaving_industry_rt: "The modifier '§YPersian Weaving Industry§!' is removed from all eligible provinces."
+ GE_PERSIAN_WEAVING_INDUSTRY_ABSOLUTISM_TT: "The Estate Privilege '§YPersian Weaving Industry§!' no longer decrease absolutism.\n"
