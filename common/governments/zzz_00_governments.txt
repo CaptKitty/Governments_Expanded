@@ -132,10 +132,10 @@ monarchy = {
 				gothic_monarchy_reform
 				### GE ###
 				arch_monarchy_reform
-				french_feudalism
+				ge_french_feudalism_reform
 				#french_reformed_feudalism
-				ancien_regime_reform
-				french_absolutism
+				ge_ancien_regime_reform
+				ge_french_absolutism_reform
 				lithuania_warlord_duke
 				theocratic_autocracy
 				# beylik
@@ -147,7 +147,7 @@ monarchy = {
 				crown_of_castille
 				hispanic_kingdom
 				iberian_enlightened_despotism_reform
-				margrave_reform
+				ge_margrave_reform
 				consulate_of_the_sea_GE
 				office_of_lord_regent_reform
 				arch_duchy_reform
@@ -310,9 +310,9 @@ monarchy = {
 				muscovite_manorialism_reform
 				order_of_the_swan_reform
 				junker_class_reform
-				blood_tax_reform
-				noblesse_d_epee_reform
-				noble_court_attendance_reform
+				ge_blood_tax_reform_reform
+				ge_noblesse_d_epee_reform
+				ge_noble_court_attendance_reform
 				house_of_knights_reform
 				constitutio_valdemariana_reform
 				riksradet_norway_reform
@@ -423,10 +423,10 @@ monarchy = {
 				millet_reform
 				kaza_system_reform
 				great_law_of_peace_reform
-				#ancien_regime_reform #FRA
-				independent_vassals_reform
-				generalites_reform
-				abolish_local_parliaments_reform
+				#ge_ancien_regime_reform #FRA
+				ge_independent_vassals_reform
+				ge_generalites_reform
+				ge_abolish_local_parliaments_reform
 				the_red_book_reform
 				commoner_officials_reform
 				imperial_inquisition_reform
@@ -616,9 +616,9 @@ monarchy = {
 				south_east_asian_elephants_reform
 				portugese_marines_reform
 				#les_vieux_corps_reform
-				compagnies_dordonnance_reform_GE
-				abolish_the_patronage_system_reform
-				royal_training_reform
+				ge_compagnies_dordonnance_reform
+				ge_abolish_the_patronage_system_reform
+				ge_royal_training_reform
 				abolish_manrent_reform
 				foreign_formation_regiments_reform
 				general_war_commissariat_reform_GE
@@ -703,9 +703,9 @@ monarchy = {
 				foreign_recruitment_reform
 				reform_the_sejm_reform
 				abolish_the_sejm_reform
-				weak_burghers_reform
-				society_of_agriculture_reform
-				bourgeoisie_aristocracy_reform
+				ge_weak_burghers_reform
+				ge_society_of_agriculture_reform
+				ge_bourgeoisie_aristocracy_reform
 				union_of_crowns_reform
 				declaration_of_breda_reform
 				royal_society_reform
@@ -773,8 +773,8 @@ monarchy = {
 				koprulu_dynasty_reform
 				kreditwerk_reform
 				#conseil_du_roi_reform #FRA
-				parisian_court_reform
-				corps_diplomatique_reform
+				ge_parisian_court_reform
+				ge_corps_diplomatique_reform
 				the_judicature_ordinance_reform
 				christian_four_merchantile_reform
 				declario_ferdinandei_reform
@@ -849,8 +849,8 @@ monarchy = {
 				strenghten_industry_reform
 				mercantilism_reform
 				noble_taxes_reform
-				conseil_souverain_reform
-				continental_system_reform
+				ge_conseil_souverain_reform
+				ge_continental_system_reform
 				empowered_aristocratic_estates_reform
 				empowered_free_trade_reform
 				empowered_monastic_centres_reform
@@ -906,7 +906,7 @@ monarchy = {
 				revoke_reichsfreiheit_reform
 				constitution_third_may_reform
 				bill_of_rights_reform
-				droit_divine_reform
+				ge_droit_divine_reform
 				principle_of_fiqh_reform
 				absolutist_administration_reform
 				permanent_regency_reform
@@ -1410,7 +1410,7 @@ republic = {
 				vozove_hradby_reform
 				russian_mercenary_guard_reform
 				### GE ###
-				compagnies_dordonnance_reform_GE
+				ge_compagnies_dordonnance_reform
 				feudal_levies_reform
 				national_guard_reform
 				milizia_nationale_reform
@@ -2190,7 +2190,7 @@ theocracy = {
 				vozove_hradby_reform
 				russian_mercenary_guard_reform
 				### GE ###
-				compagnies_dordonnance_reform_GE
+				ge_compagnies_dordonnance_reform
 				holy_war_reform
 				militarized_monasteries_reform
 				brothers_in_arms_reform

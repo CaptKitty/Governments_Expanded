@@ -1,17 +1,17 @@
-french_feudalism = {
+ge_french_feudalism_reform = {
 	icon = feudalism
 	allow_normal_conversion = yes
 	potential = {
 		NOT = { has_dlc = "Domination"}
 		OR = {
 			culture_group = french
-			has_reform = french_absolutism
+			has_reform = ge_french_absolutism_reform
 		}
 	}
 	trigger = {
 		OR = {
 			culture_group = french
-			has_reform = french_absolutism
+			has_reform = ge_french_absolutism_reform
 		}
 	}
 	lock_level_when_selected = no
@@ -22,7 +22,7 @@ french_feudalism = {
 	}
 }
 
-ancien_regime_reform = {
+ge_ancien_regime_reform = {
 	icon = French_Reformed #ancien_regime
 	allow_normal_conversion = yes
 	lock_level_when_selected = no
@@ -32,11 +32,11 @@ ancien_regime_reform = {
 		NOT = { has_dlc = "Domination"}
 		OR = {
 			culture_group = french
-			has_reform = french_absolutism
+			has_reform = ge_french_absolutism_reform
 		}
 	}
 	trigger = {
-		has_reform = ancien_regime_reform
+		has_reform = ge_ancien_regime_reform
 	}
 
 	modifiers = {
@@ -48,7 +48,7 @@ ancien_regime_reform = {
 	}
 }
 
-french_absolutism = {
+ge_french_absolutism_reform = {
 	icon = French_Absolutism
 	allow_normal_conversion = yes
 	lock_level_when_selected = no
@@ -58,11 +58,11 @@ french_absolutism = {
 		NOT = { has_dlc = "Domination"}
 		OR = {
 			culture_group = french
-			has_reform = french_absolutism
+			has_reform = ge_french_absolutism_reform
 		}
 	}
 	trigger = {
-		has_reform = french_absolutism
+		has_reform = ge_french_absolutism_reform
 	}
 	custom_attributes = {
 		enables_royal_council = yes
@@ -93,7 +93,7 @@ french_absolutism = {
 
 #T2
 
-blood_tax_reform = {
+ge_blood_tax_reform_reform = {
 	icon = blood_tax
 	allow_normal_conversion = yes
 	effect = {
@@ -111,13 +111,13 @@ blood_tax_reform = {
 	potential = {
 		OR = {
 			culture_group = french
-			has_reform = blood_tax_reform
+			has_reform = ge_blood_tax_reform_reform
 		}
 	}
 	trigger = {
 		government_rank = 2
-		NOT = { has_reform = ancien_regime_reform }
-		NOT = { has_reform = french_absolutism }
+		NOT = { has_reform = ge_ancien_regime_reform }
+		NOT = { has_reform = ge_french_absolutism_reform }
 		NOT = { has_reform = absolutist_france_reform }
 	}
 	modifiers = {
@@ -131,7 +131,7 @@ blood_tax_reform = {
 	}
 }
 
-noblesse_d_epee_reform = {
+ge_noblesse_d_epee_reform = {
 	icon = soldiers
 	allow_normal_conversion = yes
 	effect = {
@@ -158,12 +158,12 @@ noblesse_d_epee_reform = {
 	potential = {
 		OR = {
 			culture_group = french
-			has_reform = noblesse_d_epee_reform
+			has_reform = ge_noblesse_d_epee_reform
 		}
 	}
 	trigger = {
 		OR = {
-			has_reform = ancien_regime_reform
+			has_reform = ge_ancien_regime_reform
 			has_reform = absolutist_france_reform
 		}
 	}
@@ -179,7 +179,7 @@ noblesse_d_epee_reform = {
 	}
 }
 
-noble_court_attendance_reform = {
+ge_noble_court_attendance_reform = {
 	icon = french_court
 	allow_normal_conversion = yes
 	effect = {
@@ -197,12 +197,12 @@ noble_court_attendance_reform = {
 	potential = {
 		OR = {
 			culture_group = french
-			has_reform = noble_court_attendance_reform
+			has_reform = ge_noble_court_attendance_reform
 		}
 	}
 	trigger = {
 		OR = {
-			has_reform = french_absolutism
+			has_reform = ge_french_absolutism_reform
 			has_reform = absolutist_france_reform
 		}
 	}
@@ -220,7 +220,7 @@ noble_court_attendance_reform = {
 }
 
 #T3
-independent_vassals_reform = {
+ge_independent_vassals_reform = {
 	icon = ancien_regime
 	allow_normal_conversion = no
 	effect = {
@@ -248,12 +248,12 @@ independent_vassals_reform = {
 	potential = {
 		OR = {
 			culture_group = french
-			has_reform = independent_vassals_reform
+			has_reform = ge_independent_vassals_reform
 		}
 	}
 	trigger = {
 		OR = {
-			has_reform = french_feudalism
+			has_reform = ge_french_feudalism_reform
 			has_reform = feudal_france_reform
 		}
 	}
@@ -269,7 +269,7 @@ independent_vassals_reform = {
 	}
 }
 
-generalites_reform = {
+ge_generalites_reform = {
 	icon = french_provinces
 	allow_normal_conversion = no
 	effect = {
@@ -287,12 +287,12 @@ generalites_reform = {
 	potential = {
 		OR = {
 			culture_group = french
-			has_reform = generalites_reform
+			has_reform = ge_generalites_reform
 		}
 	}
 	trigger = {
 		OR = {
-			has_reform = ancien_regime_reform
+			has_reform = ge_ancien_regime_reform
 			has_reform = absolutist_france_reform
 		}
 	}
@@ -306,7 +306,7 @@ generalites_reform = {
 	#-5% Noble Loyalty
 }
 
-abolish_local_parliaments_reform = {
+ge_abolish_local_parliaments_reform = {
 	icon = french_court_2
 	allow_normal_conversion = no
 	effect = {
@@ -324,12 +324,12 @@ abolish_local_parliaments_reform = {
 	potential = {
 		OR = {
 			culture_group = french
-			has_reform = abolish_local_parliaments_reform
+			has_reform = ge_abolish_local_parliaments_reform
 		}
 	}
 	trigger = {
 		OR = {
-			has_reform = french_absolutism
+			has_reform = ge_french_absolutism_reform
 			has_reform = absolutist_france_reform
 		}
 	}
@@ -344,7 +344,7 @@ abolish_local_parliaments_reform = {
 
 #T3.5
 
-compagnies_dordonnance_reform_GE = {
+ge_compagnies_dordonnance_reform = {
 	icon = france_compagnies
 	allow_normal_conversion = yes
 	effect = {
@@ -373,7 +373,7 @@ compagnies_dordonnance_reform_GE = {
 		tag = FRA
 		OR = {
 			culture_group = french
-			has_reform = compagnies_dordonnance_reform_GE
+			has_reform = ge_compagnies_dordonnance_reform
 		}
 	}
 	trigger = {
@@ -390,7 +390,7 @@ compagnies_dordonnance_reform_GE = {
 	}
 }
 
-abolish_the_patronage_system_reform = {
+ge_abolish_the_patronage_system_reform = {
 	icon = soldiers_5
 	allow_normal_conversion = yes
 	effect = {
@@ -417,12 +417,12 @@ abolish_the_patronage_system_reform = {
 	potential = {
 		OR = {
 			culture_group = french
-			has_reform = abolish_the_patronage_system_reform
+			has_reform = ge_abolish_the_patronage_system_reform
 		}
 	}
 	trigger = {
 		OR = {
-			has_reform = ancien_regime_reform
+			has_reform = ge_ancien_regime_reform
 			has_reform = absolutist_france_reform
 		}
 	}
@@ -439,7 +439,7 @@ abolish_the_patronage_system_reform = {
 	#-5% Noble Influence
 }
 
-royal_training_reform = {
+ge_royal_training_reform = {
 	icon = soldiers_6
 	allow_normal_conversion = yes
 	effect = {
@@ -463,12 +463,12 @@ royal_training_reform = {
 	potential = {
 		OR = {
 			culture_group = french
-			has_reform = royal_training_reform
+			has_reform = ge_royal_training_reform
 		}
 	}
 	trigger = {
 		OR = {
-			has_reform = french_absolutism
+			has_reform = ge_french_absolutism_reform
 			has_reform = absolutist_france_reform
 		}
 	}
@@ -489,7 +489,7 @@ royal_training_reform = {
 
 #T4
 
-parisian_court_reform = {
+ge_parisian_court_reform = {
 	icon = conseil_du_roi
 	allow_normal_conversion = yes
 	effect = {
@@ -513,13 +513,13 @@ parisian_court_reform = {
 	potential = {
 		OR = {
 			culture_group = french
-			has_reform = parisian_court_reform
+			has_reform = ge_parisian_court_reform
 		}
 	}
 	trigger = {
 		OR = {
-			has_reform = ancien_regime_reform
-			has_reform = french_absolutism
+			has_reform = ge_ancien_regime_reform
+			has_reform = ge_french_absolutism_reform
 			has_reform = absolutist_france_reform
 		}
 	}
@@ -535,7 +535,7 @@ parisian_court_reform = {
 	}
 }
 
-corps_diplomatique_reform = {
+ge_corps_diplomatique_reform = {
 	icon = france_corps_diplomatique
 	allow_normal_conversion = yes
 	effect = {
@@ -566,13 +566,13 @@ corps_diplomatique_reform = {
 	potential = {
 		OR = {
 			culture_group = french
-			has_reform = corps_diplomatique_reform
+			has_reform = ge_corps_diplomatique_reform
 		}
 	}
 	trigger = {
 		OR = {
-			has_reform = ancien_regime_reform
-			has_reform = french_absolutism
+			has_reform = ge_ancien_regime_reform
+			has_reform = ge_french_absolutism_reform
 			has_reform = absolutist_france_reform
 		}
 	}
@@ -590,18 +590,18 @@ corps_diplomatique_reform = {
 
 #T5
 
-weak_burghers_reform = {
+ge_weak_burghers_reform = {
 	icon = france_weak_burghers
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
 			culture_group = french
-			has_reform = weak_burghers_reform
+			has_reform = ge_weak_burghers_reform
 		}
 	}
 	trigger = {
 		OR = {
-			has_reform = french_feudalism
+			has_reform = ge_french_feudalism_reform
 			has_reform = feudal_france_reform
 		}
 	}
@@ -614,18 +614,18 @@ weak_burghers_reform = {
 	}
 }
 
-bourgeoisie_aristocracy_reform = {
+ge_bourgeoisie_aristocracy_reform = {
 	icon = regents
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
 			culture_group = french
-			has_reform = bourgeoisie_aristocracy_reform
+			has_reform = ge_bourgeoisie_aristocracy_reform
 		}
 	}
 	trigger = {
 		OR = {
-			has_reform = ancien_regime_reform
+			has_reform = ge_ancien_regime_reform
 			has_reform = absolutist_france_reform
 		}
 	}
@@ -639,18 +639,18 @@ bourgeoisie_aristocracy_reform = {
 	#+10% Noble and Burgher Loyalty
 }
 
-society_of_agriculture_reform = {
+ge_society_of_agriculture_reform = {
 	icon = french_grain
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
 			culture_group = french
-			has_reform = society_of_agriculture_reform
+			has_reform = ge_society_of_agriculture_reform
 		}
 	}
 	trigger = {
 		OR = {
-			has_reform = french_absolutism
+			has_reform = ge_french_absolutism_reform
 			has_reform = absolutist_france_reform
 		}
 	}
@@ -681,13 +681,13 @@ society_of_agriculture_reform = {
 
 #T5.5
 
-conseil_souverain_reform = {
+ge_conseil_souverain_reform = {
  	icon = france_colonial
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
 			culture_group = french
-			has_reform = conseil_souverain_reform
+			has_reform = ge_conseil_souverain_reform
 		}
 	}
 	modifiers = {
@@ -702,13 +702,13 @@ conseil_souverain_reform = {
 	}
 }
 
-continental_system_reform = {
+ge_continental_system_reform = {
  	icon = france_continental_system
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
 			culture_group = french
-			has_reform = continental_system_reform
+			has_reform = ge_continental_system_reform
 		}
 	}
 	modifiers = {
@@ -748,13 +748,13 @@ continental_system_reform = {
 
 #T6
 
-droit_divine_reform = {
+ge_droit_divine_reform = {
 	icon = french_louis
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
 			culture_group = french
-			has_reform = droit_divine_reform
+			has_reform = ge_droit_divine_reform
 		}
 	}
 	modifiers = {

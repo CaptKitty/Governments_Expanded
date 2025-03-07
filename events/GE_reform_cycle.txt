@@ -482,7 +482,7 @@ country_event = {
 		remove_government_reform = portuguese_cortes_reform
 		remove_government_reform = riksradet_norway_reform
 		remove_government_reform = every_man_a_noble_reform
-		remove_government_reform = noble_court_attendance_reform
+		remove_government_reform = ge_noble_court_attendance_reform
 		remove_government_reform = arch_marshal_reform
 		remove_government_reform = curia_regis_reform
 		reduce_reform_progress_small_effect = yes
@@ -1254,7 +1254,7 @@ country_event = {
 		}
 		else_if = {
 			limit = {
-				has_reform = blood_tax_reform
+				has_reform = ge_blood_tax_reform_reform
 			}
 		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_BLOOD_TAX_REFORM
 		}
@@ -3165,7 +3165,7 @@ country_event = {
 		}
 		else_if = {
 			limit = {
-				has_reform = blood_tax_reform
+				has_reform = ge_blood_tax_reform_reform
 			}
 		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_BLOOD_TAX_REFORM
 		}

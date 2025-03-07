@@ -3,18 +3,18 @@ country_decisions = {
 		major = yes
 		potential = {
 			OR = {
-				has_reform = french_feudalism
+				has_reform = ge_french_feudalism_reform
 				AND = {
 					tag = FRA
-					NOT = { has_reform = french_absolutism }
-					NOT = { has_reform = ancien_regime_reform }
+					NOT = { has_reform = ge_french_absolutism_reform }
+					NOT = { has_reform = ge_ancien_regime_reform }
 					NOT = { has_dlc = "Domination"}
 				}
 			}
 		}
 		allow = {
 			OR = {
-				has_reform = weak_burghers_reform
+				has_reform = ge_weak_burghers_reform
 				AND = {
 					monthly_income = 40
 					land_forcelimit = 60
@@ -33,24 +33,24 @@ country_decisions = {
 		}
 		effect = {
 			add_stability = -1
-			add_government_reform = ancien_regime_reform
+			add_government_reform = ge_ancien_regime_reform
 		}
 		ai_will_do = {
 			factor = 100
 		}
 	}
 
-	reforms_me_french_absolutism = {
+	reforms_me_ge_french_absolutism_reform = {
 		major = yes
 		potential = {
-			has_reform = ancien_regime_reform
+			has_reform = ge_ancien_regime_reform
 		}
 		allow = {
-			has_reform = droit_divine_reform
+			has_reform = ge_droit_divine_reform
 			current_age = age_of_absolutism
 		}
 		effect = {
-			add_government_reform = french_absolutism
+			add_government_reform = ge_french_absolutism_reform
 		}
 		ai_will_do = {
 			factor = 100
@@ -522,7 +522,6 @@ country_decisions = {
 	}
 
 	check_empowered_requirements_again = {
-		major = no
 		potential = {
 			always = yes
 		}
@@ -536,7 +535,6 @@ country_decisions = {
 		}
 	}
 	GE_time_to_pray = {
-		major = no
 		potential = {
 			government = monarchy
 			uses_devotion = yes
@@ -553,7 +551,6 @@ country_decisions = {
 		}
 	}
 	GE_emergency_powers = {
-		major = no
 		potential = {
 			has_government_attribute = enables_emergency_power
 		}
@@ -576,7 +573,6 @@ country_decisions = {
 		}
 	}
 #	GE_Test = {
-#		major = no
 #		potential = {
 #			always = no
 #		}

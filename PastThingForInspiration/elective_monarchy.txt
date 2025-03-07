@@ -37,9 +37,9 @@ elective_monarchy = {
 		# 		foreign_recruitment_reform
 		# 		reform_the_sejm_reform
 		# 		abolish_the_sejm_reform
-		# 		weak_burghers_reform
-		# 		society_of_agriculture_reform
-		# 		bourgeoisie_aristocracy_reform
+		# 		ge_weak_burghers_reform
+		# 		ge_society_of_agriculture_reform
+		# 		ge_bourgeoisie_aristocracy_reform
 		# 		noble_electors_reform
 		# 		royal_electors_reform
 		# 		parliamental_electors_reform

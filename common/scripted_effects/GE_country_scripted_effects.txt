@@ -19,15 +19,9 @@ GE_initiate_starting_reforms = {
 	ANS = {
 		if = {
 			limit = {
-				has_dlc = "Domination"
-			}
-			add_government_reform = margraviate_reform
-		}
-		if = {
-			limit = {
 				NOT = { has_dlc = "Domination" }
 			}
-			add_government_reform = margrave_reform
+			add_government_reform = ge_margrave_reform
 		}
 	}
 	ARA = {
@@ -39,29 +33,17 @@ GE_initiate_starting_reforms = {
 	BAD = {
 		if = {
 			limit = {
-				has_dlc = "Domination"
-			}
-			add_government_reform = margraviate_reform
-		}
-		if = {
-			limit = {
 				NOT = { has_dlc = "Domination" }
 			}
-			add_government_reform = margrave_reform
+			add_government_reform = ge_margrave_reform
 		}
 	}
 	BRA = {
 		if = {
 			limit = {
-				has_dlc = "Domination"
-			}
-			add_government_reform = margraviate_reform
-		}
-		if = {
-			limit = {
 				NOT = { has_dlc = "Domination" }
 			}
-			add_government_reform = margrave_reform
+			add_government_reform = ge_margrave_reform
 		}
 	}
 	BRT = {
@@ -94,15 +76,9 @@ GE_initiate_starting_reforms = {
 	FRA = {
 		if = {
 			limit = {
-				has_dlc = "Domination"
-			}
-			add_government_reform = feudal_france_reform
-		}
-		if = {
-			limit = {
 				NOT = { has_dlc = "Domination" }
 			}
-			add_government_reform = french_feudalism
+			add_government_reform = ge_french_feudalism_reform
 		}
 	}
 	GEN = {
@@ -170,15 +146,9 @@ GE_initiate_starting_reforms = {
 	MVA = {
 		if = {
 			limit = {
-				has_dlc = "Domination"
-			}
-			add_government_reform = margraviate_reform
-		}
-		if = {
-			limit = {
 				NOT = { has_dlc = "Domination" }
 			}
-			add_government_reform = margrave_reform
+			add_government_reform = ge_margrave_reform
 		}
 	}
 	NAP = {

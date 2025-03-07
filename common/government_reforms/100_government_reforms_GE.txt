@@ -43,7 +43,7 @@ lithuania_warlord_duke = {
 
 
 
-margrave_reform = {
+ge_margrave_reform = {
 	icon = march
 	allow_normal_conversion = yes
 	potential = {

@@ -1157,7 +1157,7 @@ country_event = {
 		}
 		else_if = {
 			limit = {
-				has_reform = blood_tax_reform
+				has_reform = ge_blood_tax_reform_reform
 			}
 		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_BLOOD_TAX_REFORM
 		}
@@ -1235,7 +1235,7 @@ country_event = {
 		}
 		else_if = {
 			limit = {
-				has_reform = blood_tax_reform
+				has_reform = ge_blood_tax_reform_reform
 			}
 		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_BLOOD_TAX_REFORM
 		}
