@@ -15,5 +15,5 @@ tags={
 }
 picture="GE_thumbnail_1_2.png"
 supported_version="1.37.*"
-path="C:/Users/Gebruiker/Documents/Paradox Interactive/Europa Universalis IV/mod/Governments Expanded"
+path="od/Governments Expanded"
 remote_file_id="1596815683"
