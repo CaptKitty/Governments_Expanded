@@ -86,7 +86,8 @@ sanskritization_reform = {
 	modifiers = {
 		reform_progress_growth = 0.075
 		technology_cost = -0.05
-		tolerance_own = 1
+		tolerance_own = 0.50
+		tolerance_heathen = 0.50
 	}
 	ai = {
 		factor = 1
