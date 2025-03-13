@@ -4135,7 +4135,7 @@ country_event = {
 	
 	trigger = {
 		OR = {
-			has_reform = the_holy_office_reform
+			# has_reform = the_holy_office_reform
 			has_reform = combat_heresy_reform
 		}
 	}
@@ -4186,7 +4186,7 @@ country_event = {
 	
 	trigger = {
 		OR = {
-			has_reform = the_holy_office_reform
+			# has_reform = the_holy_office_reform
 			has_reform = combat_heresy_reform
 		}
 	}

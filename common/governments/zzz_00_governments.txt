@@ -196,42 +196,6 @@ monarchy = {
 				guhilawat_reform
 				pratihara_reform
 				tai_and_ahom_reform
-				#####BeginMEReforms#####
-				crusader_kingdom
-				khaganate
-				athenian_monarchy
-				german_kaiserreich
-				ME_caliphate_reform_sunni
-				ME_caliphate_reform_sunni_andalusia
-				ME_caliphate_reform_sunni_arabian
-				ME_caliphate_reform_shia_ibadi
-				west_slavic_monarchy
-				austria_hungary_reform
-				enlightened_despotism_reform
-				me_baroque_monarchy_reform
-				me_nordmark
-				ME_tribal_federation_monarchy
-				ME_ibadi_community
-				ME_ottoman_government
-				#FU Reforms
-				fu_janissary_autocracy
-				fu_ottoman_government
-				fu_sultanate_of_rum_and_cairo
-				fu_indian_sultanate_reform
-				ada_adalan_empire
-				# end FU reforms
-				timurid_empire
-				timurid_governor
-				timurid_prince
-				me_mughal_empire
-				timurid_semi_horde
-				timurid_empire_upgraded
-				timurid_governor_upgraded
-				EE_synthetic_monarchy
-				EE_synthetic_monarchy_militarized
-				byzantine_autocracy
-				byzantine_late_autocracy
-				#####EndOfMEReforms#####
 			}
 		}
 		hereditary_vs_nobility = {
@@ -359,17 +323,6 @@ monarchy = {
 				divine_rajputana_splendor_reform
 				#1.22
 				indo_tibetan_union_reform
-				# ME Reforms:
-				incan_society_reform
-				aztec_society_reform
-				maya_society_reform
-				sharia_reform
-				mil_secret_council
-				mughal_government_me_modifier_buff
-				mughal_government_me
-				ME_caliphate_feudal_theocracy
-				ME_caliphate_iqta
-				SOS_advanced_tactics
 			}
 		}
 		bureaucracy = {
@@ -471,13 +424,6 @@ monarchy = {
 				krsi_trivate_reform
 				#1.22
 				ain_i_akbari_reform
-				# ME Reforms:
-				tur_reform_beylerbeys
-				tur_reform_eyalets
-				#FU Reforms
-				tur_organized_pashas_reform
-				ara_consell_de_cent
-				mil_sforza_administration
 			}
 		}
 		state_and_religion = {
@@ -524,9 +470,6 @@ monarchy = {
 				imajtz_ib_aj_k_iche_reform
 				sanskritization_reform
 				shakti_the_supreme_deity_reform
-				#ME Reforms
-				ME_enlist_the_help_of_sufi_orders
-				ME_enlist_the_help_of_sufi_orders_ADU
 			}
 		}
 		military_doctrines = {
@@ -734,10 +677,6 @@ monarchy = {
 				diamond_of_the_earth_reform
 				secure_the_succession_reform
 				gbara_reform
-				#GE Reforms:
-				nexik_xoloj_reform
-				#ME Reforms:
-				me_hindu_administration
 			}
 		}
 		growth_of_administration = {
@@ -809,13 +748,6 @@ monarchy = {
 				italian_merchants_reform
 				graduates_from_timbuktu_reform
 				via_media_reform
-				# ME Reforms:
-				incan_administration_reform
-				me_hofkammer_reform
-				ME_reform_chaghatai_literature
-				#FU Reforms
-				tur_custodian_holy_city_reform
-				ara_consulate_of_the_sea
 			}
 		}
 		economical_matters = {
@@ -912,8 +844,6 @@ monarchy = {
 				permanent_regency_reform
 				tanzimat_reforms_reform
 				constitution_of_melfi_reform
-				#EE Reform I assume
-				tur_absolute_sultanic_power
 			}
 		}
 		separation_of_power = {
@@ -962,13 +892,6 @@ monarchy = {
 		solomonic_empire_legacy
 		musa_rule_legacy
 		mossi_federal_kingdom_legacy
-		# ME Legacy Governments:
-		crusader_kingdom_legacy
-		khaganate_legacy
-		athenian_monarchy_legacy
-		german_kaiserreich_legacy
-		#caliphate_sunni_legacy ##doesnt exist
-		west_slavic_legacy
 	}
 
 	# Each group of exclusive reforms are mutually exclusive to each other
@@ -991,12 +914,6 @@ monarchy = {
 		courts_of_navarra
 		elective_monarchy_reform
 		elective_monarchy
-		# ME Reforms:
-		ME_tribal_federation_monarchy
-		ME_ibadi_community
-		ME_caliphate_feudal_theocracy
-		ME_caliphate_iqta
-		khaganate
 	}
 
 	# Parliamentary reforms cannot stack
@@ -1046,17 +963,14 @@ monarchy = {
 		elective_monarchy
 		kalmar_union
 		celestial_empire
-		crown_of_saint_wenceslaus
+		# crown_of_saint_wenceslaus
 		elective_monarchy_reform
 		polish_constitutionalism_reform
 		empire_of_japan_reform
 	}
 
 	exclusive_reforms = {
-		ME_enlist_the_help_of_sufi_orders
-		ME_ottoman_government
 		ottoman_government
-		ME_enlist_the_help_of_sufi_orders_ADU
 	}
 
 	#Flavor
@@ -1068,7 +982,7 @@ monarchy = {
 		states_general_reform
 		parliamentary_reform
 		courts_of_navarra
-		crown_of_saint_wenceslaus
+		# crown_of_saint_wenceslaus
 		polish_constitutionalism_reform
 		autocracy_reform
 	}
@@ -1140,9 +1054,6 @@ republic = {
 		protectorate_parliament_legacy
 		prussian_republic
 		united_cantons_legacy
-		# ME Legacy Governments:
-		greek_league
-		athenian_republic_legacy
 	}
 	reform_levels = {
 		oligarchy_merchant_class_noble_elite = {
@@ -1204,14 +1115,6 @@ republic = {
 				italian_republic_reform
 				republic_of_saint_blaise
 				signoria_baglioni_reform
-				# ME Reforms:
-				greek_league_reform
-				athenian_republic
-				constitutional_republic_reform
-				timurid_stratocracy
-				fu_fleet_with_a_state_reform
-				nov_commercial_law
-				SOS_advanced_tactics
 			}
 		}
 		republican_virtues = {
@@ -1267,8 +1170,6 @@ republic = {
 				archdiocese_of_pisa_reform
 				genoa_merchants_reform
 				republican_virtues_reform
-				# ME Reforms:
-				sharia_reform
 			}
 		}
 		frequent_elections_vs_consolidation_of_power = {
@@ -1465,9 +1366,6 @@ republic = {
 				alpini_reform
 				fonderie_ferraresi_reform
 				fanti_da_mar_reform
-				# ME Reforms:
-				federalism_reform
-				supremacy_constitution_reform
 			}
 		}
 		parliamentary_vs_presidential = {
@@ -1525,12 +1423,6 @@ republic = {
 				island_republic_reform
 				federalism_reform
 				supremacy_constitution_reform
-				#EE Reforms
-				citizen_soldiers_reform
-				institutionalized_repbulican_army_reform
-				#FU Reforms
-				fu_canton_administration
-				mil_sforza_administration
 			}
 		}
 		economical_matters_republic = {
@@ -1610,10 +1502,6 @@ republic = {
 				empowered_principle_of_profit_reform
 				empowered_principle_of_power_reform
 				amendable_constitution_reform
-				#EE REFORMS
-				federal_governorship_reform
-				#FU Reforms
-				mil_secret_council
 			}
 		}
 		electorate = {
@@ -1647,11 +1535,6 @@ republic = {
 				hansa_universities_reform
 				vice_presidential_system_reform
 				legislative_office_selection_reform
-				#EE reforms
-				electoral_college_reform
-				direct_majority_rule_reform
-				#FU Reforms
-				nov_republican_guard_reform
 			}
 		}
 		question_of_dictatorship = {
@@ -1667,12 +1550,6 @@ republic = {
 				scourge_of_the_seven_sea_reform
 				#1.35
 				peters_government_reform
-				#EE Reforms
-				become_rev_empire_reform
-				vice_presidential_system_reform
-				legislative_office_selection_reform
-				#FU Reforms
-				fu_declare_pirate_empire_reform
 			}
 		}
 	}
@@ -1778,11 +1655,6 @@ tribal = {
 				# GE Reforms:
 				eghaevbo_administration_reform
 				siberian_tribal_confederation_reform
-				# ME Reforms:
-				incan_society_reform
-				aztec_society_reform
-				maya_society_reform
-				ME_tribal_federation_steppe_horde
 			}
 		}
 		tribal_cultural_values = {
@@ -1797,8 +1669,6 @@ tribal = {
 				legacy_of_pax_mongolia
 				three_jurchen_tribes_reform
 				snow_life_reform
-				# ME Reforms:
-				sharia_reform
 			}
 		}
 		tribal_religion = {
@@ -2029,12 +1899,6 @@ theocracy = {
 				### GE ###
 				# ajuraan_theocracy_reform
 				dynastic_theocracy_reform
-				#Missions Expanded Reforms
-				ME_sufi_order_reform
-				ME_bektashi_order_reform
-				#Flavor Universalis Reforms
-				fu_order_of_saint_joan_reform
-				aju_hydraulic_empire
 				# Religions & Cultures Expanded Reforms
 				nestorian_patriarchy_constantinople_reform
 			}
@@ -2066,9 +1930,6 @@ theocracy = {
 				yak_provvision_reform
 				#1.22
 				indo_tibetan_union_reform
-				# ME Reforms:
-				sharia_reform
-				SOS_advanced_tactics
 			}
 		}
 		education_of_the_state = {
@@ -2281,7 +2142,7 @@ theocracy = {
 				#1.37
 				seven_provinces_reform
 				### GE ###
-				the_holy_office_reform
+				# the_holy_office_reform
 				fighting_for_israel_reform
 				monastic_temples_reform
 				mission_to_crusade_reform

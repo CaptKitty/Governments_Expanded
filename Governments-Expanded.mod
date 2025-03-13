@@ -1,7 +1,5 @@
 name="Governments Expanded"
 dependencies={
-	"Missions Expanded"
-	"Europa Expanded"
 	"Beyond Typus 11.5"
 }
 tags={
