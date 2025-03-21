@@ -109,7 +109,7 @@ lunar_dynasty_mechanic = {
 							primary_culture = pahari
 						}
 					}
-					multiplier = 2
+					multiplier = 0.125
 				}
 				add_ruler_modifier = {
 					name = lunar_dynasty_mobilize_gurkhas_modifier
