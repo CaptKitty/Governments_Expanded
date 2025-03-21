@@ -57,8 +57,7 @@ lunar_dynasty_mechanic = {
 							has_terrain = mountain
 						}
 					}
-					multiplier = 1
-					age_multiplier = 0.5
+					multiplier = 0.5
 				}
 			}
 			cooldown_years = 10
@@ -101,7 +100,6 @@ lunar_dynasty_mechanic = {
 						}
 					}
 					multiplier = 0.25
-					age_multiplier = 0.5
 				}
 				add_subjects_development_manpower = {
 					custom_tooltip = GE_LUNAR_DYNASTY_MOBILIZE_GURKHAS_CULTURE_SUBJECTS_TT
@@ -111,7 +109,7 @@ lunar_dynasty_mechanic = {
 							primary_culture = pahari
 						}
 					}
-					multiplier = 4
+					multiplier = 2
 				}
 				add_ruler_modifier = {
 					name = lunar_dynasty_mobilize_gurkhas_modifier
