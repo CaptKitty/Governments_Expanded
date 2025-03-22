@@ -206,9 +206,6 @@ estate_ghulams_military_corps = {
 	max_absolutism = -5
 	loyalty = 0.00
 	influence = 0.05
-	can_select = {
-
-	}
 	is_valid = {
 		has_government_attribute = enables_fire_ghulams
 	}
@@ -862,20 +859,16 @@ estate_nobles_blood_tax = {
 		trigger = {
 			calc_true_if = {
 				all_subject_country = {
-					NOT = {
-						is_colonial_nation = yes
-						is_subject_of_type = tributary_state
-					}
+					NOT = { is_colonial_nation = yes }
+					NOT = { is_subject_of_type = tributary_state }
 				}
 				amount = 1
 			}
 			NOT = {
 				calc_true_if = {
 					all_subject_country = {
-						NOT = {
-							is_colonial_nation = yes
-							is_subject_of_type = tributary_state
-						}
+						NOT = { is_colonial_nation = yes }
+						NOT = { is_subject_of_type = tributary_state }
 					}
 					amount = 2
 				}
@@ -889,20 +882,16 @@ estate_nobles_blood_tax = {
 		trigger = {
 			calc_true_if = {
 				all_subject_country = {
-					NOT = {
-						is_colonial_nation = yes
-						is_subject_of_type = tributary_state
-					}
+					NOT = { is_colonial_nation = yes }
+					NOT = { is_subject_of_type = tributary_state }
 				}
 				amount = 2
 			}
 			NOT = {
 				calc_true_if = {
 					all_subject_country = {
-						NOT = {
-							is_colonial_nation = yes
-							is_subject_of_type = tributary_state
-						}
+						NOT = { is_colonial_nation = yes }
+						NOT = { is_subject_of_type = tributary_state }
 					}
 					amount = 3
 				}
@@ -916,20 +905,16 @@ estate_nobles_blood_tax = {
 		trigger = {
 			calc_true_if = {
 				all_subject_country = {
-					NOT = {
-						is_colonial_nation = yes
-						is_subject_of_type = tributary_state
-					}
+					NOT = { is_colonial_nation = yes }
+					NOT = { is_subject_of_type = tributary_state }
 				}
 				amount = 3
 			}
 			NOT = {
 				calc_true_if = {
 					all_subject_country = {
-						NOT = {
-							is_colonial_nation = yes
-							is_subject_of_type = tributary_state
-						}
+						NOT = { is_colonial_nation = yes }
+						NOT = { is_subject_of_type = tributary_state }
 					}
 					amount = 4
 				}
@@ -943,20 +928,16 @@ estate_nobles_blood_tax = {
 		trigger = {
 			calc_true_if = {
 				all_subject_country = {
-					NOT = {
-						is_colonial_nation = yes
-						is_subject_of_type = tributary_state
-					}
+					NOT = { is_colonial_nation = yes }
+					NOT = { is_subject_of_type = tributary_state }
 				}
 				amount = 4
 			}
 			NOT = {
 				calc_true_if = {
 					all_subject_country = {
-						NOT = {
-							is_colonial_nation = yes
-							is_subject_of_type = tributary_state
-						}
+						NOT = { is_colonial_nation = yes }
+						NOT = { is_subject_of_type = tributary_state }
 					}
 					amount = 5
 				}
@@ -970,10 +951,8 @@ estate_nobles_blood_tax = {
 		trigger = {
 			calc_true_if = {
 				all_subject_country = {
-					NOT = {
-						is_colonial_nation = yes
-						is_subject_of_type = tributary_state
-					}
+					NOT = { is_colonial_nation = yes }
+					NOT = { is_subject_of_type = tributary_state }
 				}
 				amount = 5
 			}
@@ -1075,9 +1054,6 @@ estate_nobles_elite_guards = {
 	max_absolutism = -5
 	loyalty = 0.00
 	influence = 0.05
-	can_select = {
-
-	}
 	is_valid = {
 		has_government_attribute = enables_elite_regiments
 	}
