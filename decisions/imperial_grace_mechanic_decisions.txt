@@ -1,6 +1,7 @@
 country_decisions = {
 	imperial_grace_mechanic_decision_ease_up_on_taxation = {
-		color = { 150 0 0 }
+		major = yes
+		color = { 3 130 100 }
 		potential = {
 			has_government_mechanic = imperial_grace_mechanic
 			NOT = { has_country_modifier = imperial_grace_mechanic_decision_ease_up_on_taxation_modifier }
