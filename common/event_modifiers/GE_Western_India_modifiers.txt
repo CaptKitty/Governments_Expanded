@@ -16,8 +16,8 @@ rajput_princedom_road_and_transport_modifier = {
 }
 
 ge_western_aryan_province_modifier = {
-	local_development_cost = -0.05
-	local_build_cost = -0.075
+	local_build_cost = -0.05
+	local_build_time = -0.05
 }
 
 ge_western_indian_frontier_guards_province_modifier = {

@@ -249,7 +249,8 @@ pratihara_mechanic_clan_system_modifier = {
 	regiment_recruit_speed = -0.15
 }
 pratihara_mechanic_guards_of_bharat_modifier = {
-	picture = "land_morale"
+	morale_damage_received = -0.05
+	manpower_recovery_speed = 0.10
 }
 pratihara_mechanic_strengthen_the_palacial_authority_modifier = {
 	institution_spread_from_true_faith = 0.33

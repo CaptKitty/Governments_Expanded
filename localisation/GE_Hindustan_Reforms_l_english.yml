@@ -29,7 +29,7 @@
 
 # Mechanics
  mechanic_enables_uidapur_state_yes: "§YUidapur State§!: Our Capital State will be improved."
- mechanic_enables_western_aryan_province_yes: "§YDevine Rajputana Splendor§!: §G-5.0%§! Local Development Cost and §G-7.5%§! Local Construction Cost in §YWestern Aryan§! provinces following the country religion"
+ mechanic_enables_western_aryan_province_yes: "§YDivine Rajputana Splendor§!: §G-5.0%§! Local Development Cost and §G-7.5%§! Local Construction Cost in §YWestern Aryan§! provinces following the country religion"
  mechanic_enables_western_indian_frontier_guards_province_yes: "Every owned province in the §YWestern India§! region that borders arother region will gain §YInvasion Defense§!:\n  Local Defensiveness: §G+15.0%§!\n  Local Fort Maintenance Modifier: §G-15.0%§!\n  Local Manpower Modifier: §G+15.0%§!\n  Local Recruitment Time: §G-15.0%§!\n  Local Regiment Cost: §G-15.0%§!"
  mechanic_enables_desert_construction_province_yes: "§YDesert Construction§!: §G-15.0%§! Local Construction Cost and §G-15.0%§! Local Development Cost in §YDesert§! provinces"
 
@@ -39,7 +39,7 @@
  ge_maw_blue_city: "Blue City"
  desc_ge_maw_blue_city: ""
 
- ge_western_aryan_province_modifier: "Devine Rajputana Splendor"
+ ge_western_aryan_province_modifier: "Divine Rajputana Splendor"
  desc_ge_western_aryan_province_modifier: ""
 
  ge_western_indian_frontier_guards_province_modifier: "Invasion Defense"

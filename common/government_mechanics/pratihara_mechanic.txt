@@ -9,17 +9,17 @@ pratihara_mechanic = {
 		pratihara_mechanic_adm_power = {
 			max = 150
 			monarch_power = ADM
-			base_monthly_growth = 3
+			base_monthly_growth = 0.50
 		}
 		pratihara_mechanic_dip_power = {
 			max = 150
 			monarch_power = DIP
-			base_monthly_growth = 3
+			base_monthly_growth = 0.50
 		}
 		pratihara_mechanic_mil_power = {
 			max = 150
 			monarch_power = MIL
-			base_monthly_growth = 3
+			base_monthly_growth = 0.50
 		}
 	}
 
@@ -102,26 +102,15 @@ pratihara_mechanic = {
 				}
 			}
 			effect = {
-				custom_tooltip = " "
-				custom_tooltip = pratihara_mechanic_guards_of_bharat_tt
-				add_years_of_owned_provinces_manpower = {
-					years = 3
-					trigger = {
-						culture = rajput
+				if = {
+					limit = {
+						has_country_modifier = pratihara_mechanic_guards_of_bharat_modifier
 					}
-					custom_tooltip = pratihara_mechanic_guards_of_bharat_manpower_tt
+					remove_country_modifier = pratihara_mechanic_guards_of_bharat_modifier
 				}
-				hidden_effect = {
-					if = {
-						limit = {
-							has_country_modifier = pratihara_mechanic_guards_of_bharat_modifier
-						}
-						remove_country_modifier = pratihara_mechanic_guards_of_bharat_modifier
-					}
-					add_country_modifier = {
-						name = pratihara_mechanic_guards_of_bharat_modifier
-						duration = 3650
-					}
+				add_country_modifier = {
+					name = pratihara_mechanic_guards_of_bharat_modifier
+					duration = 3650
 				}
 			}
 			ai_chance = {
