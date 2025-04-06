@@ -224,6 +224,30 @@ ge_on_force_conversion_effect = {
 			}
 		}
 	}
+	if = {
+		limit = {
+			FROM = {
+				has_government_attribute = enables_gods_will_power_gain_on_force_conversion
+			}
+		}
+		FROM = {
+			export_to_variable = {
+				which = gods_will_power_gain_on_force_conversion
+				value = trigger_value:total_development
+				who = ROOT
+			}
+			while = {
+				limit = {
+					check_variable = { which = gods_will_power_gain_on_force_conversion value = 1 }
+				}
+				add_adm_power = 1
+				add_dip_power = 1
+				add_mil_power = 1
+				change_variable = { which = gods_will_power_gain_on_force_conversion value = -1 }
+			}
+			set_variable = { which = gods_will_power_gain_on_force_conversion value = 0 }
+		}
+	}
 }
 
 ge_on_adm_development_effect = {

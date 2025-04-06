@@ -1,0 +1,20 @@
+﻿l_english:
+ # Reforms:
+ ## Tier 1:
+ the_kat: "The Kat"
+ the_kat_desc: "Comprised of venerable elders, the esteemed Khan, sagacious vizier, and noble family patriarchs, the Kat stands as our supreme council, guiding our Khanate. Established with noble intent, it ensures all voices are heard, perspectives considered, and society's branches represented in power's halls. No longer do decisions occur unilaterally; instead, they emerge from collective wisdom. At the Kat's helm sits the Khan, sovereign ruler whose authority, though unquestioned, is tempered by council. His word is law, his will our nation's guiding force. Yet, even he recognizes the wisdom of consulting the council, for in its diversity lies strength. Before major decisions shaping our people's fate, the Khan seeks the Kat's counsel, insights, and wisdom. He knows that ignoring their counsel risks dissent, rebellion, and fracturing unity. With humility and respect, he listens, weighing their advice with deserving gravity."
+ bagrationi_dynasty: "Bagrationi Dynasty"
+ bagrationi_dynasty_desc: "The reign of the Bagrationi dynasty over the Kingdom of Georgia, stretching from the 9th to the 18th century, stands as a monumental saga of resilience and eventual ruin. For nearly a millennium, they wielded a carefully constructed vassal system to bind their scattered territories, appointing loyal lords over regions in exchange for land, privilege, and the solemn promise of allegiance. These vassals were entrusted with law, order, and the collection of taxes, while also holding the grave responsibility of defending Georgia's borders—a lone Christian bastion within a storm of shifting powers in the Caucasus."
+ rah_e_registan: "Rah-e Registan"
+ rah_e_registan_desc: "In the relentless expanse of the desert, the Baloch people embody a spirit of freedom and resilience, living in harmony with the land that shapes their identity. Rejecting the sedentary life as a surrender to weakness, they roam as nomads, guided by ancestral wisdom and the rhythms of nature. Masters of the harsh terrain, their warriors—stealthy "Ghosts of the Desert" and swift, Parthian-inspired cavalry—excel in battle, adapting through time while preserving their traditions. United not by statehood but by shared values, the Baloch exist as fiercely independent tribes, coming together only to defend their homeland. Central to their survival are hidden oases, life-giving sanctuaries where they find respite, sustain livestock, and nurture crops during the scorching summers. These sacred havens and their enduring connection to the land define the Baloch, a people unyielding in the face of time and nature."
+ sword_of_islam: "Sword of Islam"
+ sword_of_islam_desc: "With urgency burning in our hearts and divine mandate guiding our hands, we have taken up the sacred mission of spreading the Musha'sha'iya across the land. No city too grand, no village too remote; our preachers go forth, their voices carrying the prophecy to all who will listen. The end times approach, and only the chosen shall stand among the faithful. Through unwavering conviction and tireless zeal, we awaken the hearts of the people, forging a path of righteousness through faith and steel. The call has been given; let none ignore the will of Allah."
+ ## Tier 3:
+ latin_ties: "Latin Ties"
+ latin_ties_desc: ""
+
+ # Tooltips:
+ latin_ties_trigger_tt: "At least §Y1§! coastal province in the §Y[This.GetTradeNodeName]§! trade node is owned by §Y[Root.GetName]§!"
+
+ # Mechanics:
+ mechanic_enables_gods_will_power_gain_on_force_conversion_yes: "§YGod's Will§!: Gain §G1§! £adm£, £dip£ and £mil£ power equivalent to the target country's total development on force converting a country"
