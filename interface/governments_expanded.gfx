@@ -792,24 +792,4 @@ spriteTypes = {
 		name = "government_reform_legitimation_through_representation"
 		texturefile = "gfx//interface//government_reform_icons//legitimation_through_representation.dds"
 	}
-	spriteType = {
-		name = "government_reform_the_kat"
-		texturefile = "gfx//interface//government_reform_icons//the_kat.dds"
-	}
-	spriteType = {
-		name = "government_reform_bagrationi_dynasty"
-		texturefile = "gfx//interface//government_reform_icons//bagrationi_dynasty.dds"
-	}
-	spriteType = {
-		name = "government_reform_rah_e_registan"
-		texturefile = "gfx//interface//government_reform_icons//rah_e_registan.dds"
-	}
-	spriteType = {
-		name = "government_reform_sword_of_islam"
-		texturefile = "gfx//interface//government_reform_icons//sword_of_islam.dds"
-	}
-	spriteType = {
-		name = "government_reform_latin_ties"
-		texturefile = "gfx//interface//government_reform_icons//latin_ties.dds"
-	}
 }

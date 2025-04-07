@@ -196,8 +196,8 @@ monarchy = {
 				guhilawat_reform
 				pratihara_reform
 				tai_and_ahom_reform
-				bagrationi_dynasty
-				rah_e_registan
+				ge_bagrationi_dynasty
+				ge_rah_e_registan
 			}
 		}
 		hereditary_vs_nobility = {
@@ -426,7 +426,7 @@ monarchy = {
 				krsi_trivate_reform
 				#1.22
 				ain_i_akbari_reform
-				latin_ties
+				ge_latin_ties
 			}
 		}
 		state_and_religion = {
@@ -1658,8 +1658,8 @@ tribal = {
 				# GE Reforms:
 				eghaevbo_administration_reform
 				siberian_tribal_confederation_reform
-				the_kat
-				rah_e_registan
+				ge_the_kat
+				ge_rah_e_registan
 			}
 		}
 		tribal_cultural_values = {
@@ -1690,7 +1690,7 @@ tribal = {
 				children_of_osanobua_reform
 				one_on_high_reform
 				sanskritization_reform
-				latin_ties
+				ge_latin_ties
 			}
 		}
 		tribal_military_doctrines = {
@@ -1905,7 +1905,7 @@ theocracy = {
 				### GE ###
 				# ajuraan_theocracy_reform
 				dynastic_theocracy_reform
-				sword_of_islam
+				ge_sword_of_islam
 				# Religions & Cultures Expanded Reforms
 				nestorian_patriarchy_constantinople_reform
 			}

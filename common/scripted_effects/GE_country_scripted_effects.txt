@@ -38,6 +38,9 @@ GE_initiate_starting_reforms = {
 			add_government_reform = ge_margrave_reform
 		}
 	}
+	BAL = {
+		add_government_reform = ge_rah_e_registan
+	}
 	BRA = {
 		if = {
 			limit = {
@@ -81,8 +84,15 @@ GE_initiate_starting_reforms = {
 			add_government_reform = ge_french_feudalism_reform
 		}
 	}
+	GAZ = {
+		change_government = tribal
+		add_government_reform = ge_the_kat
+	}
 	GEN = {
 		add_government_reform = genoese_republic
+	}
+	GEO = {
+		add_government_reform = ge_bagrationi_dynasty
 	}
 	GHR = {
 		add_government_reform = empire_in_the_sky_reform
@@ -106,6 +116,9 @@ GE_initiate_starting_reforms = {
 	HOD = {
 		change_government = tribal
 		add_government_reform = siberian_tribal_confederation_reform
+	}
+	IME = {
+		add_government_reform = ge_bagrationi_dynasty
 	}
 	JML = {
 		add_government_reform = empire_in_the_sky_reform
@@ -142,6 +155,10 @@ GE_initiate_starting_reforms = {
 	}
 	MFA = {
 		add_government_reform = palaiologos_montferrat_reform
+	}
+	MSY = {
+		change_government = theocracy
+		add_government_reform = ge_sword_of_islam
 	}
 	MVA = {
 		if = {

@@ -1,0 +1,24 @@
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_ge_bagrationi_dynasty"
+		texturefile = "gfx//interface//government_reform_icons//ge_bagrationi_dynasty.dds"
+	}
+	spriteType = {
+		name = "government_reform_ge_rah_e_registan"
+		texturefile = "gfx//interface//government_reform_icons//ge_rah_e_registan.dds"
+	}
+	spriteType = {
+		name = "government_reform_ge_sword_of_islam"
+		texturefile = "gfx//interface//government_reform_icons//ge_sword_of_islam.dds"
+	}
+	spriteType = {
+		name = "government_reform_ge_the_kat"
+		texturefile = "gfx//interface//government_reform_icons//ge_the_kat.dds"
+	}
+
+	# Tier 3
+	spriteType = {
+		name = "government_reform_ge_latin_ties"
+		texturefile = "gfx//interface//government_reform_icons//ge_latin_ties.dds"
+	}
+}
