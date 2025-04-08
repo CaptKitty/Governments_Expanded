@@ -93,6 +93,9 @@ ge_sword_of_islam = {
 	}
 	valid_for_nation_designer = no
 
+	maintain_dynasty = yes
+	heir = yes
+
 	modifiers = {
 		loot_amount = 0.25
 		available_province_loot = 0.15
