@@ -486,6 +486,20 @@ on_dependency_lost = {
 	ge_country_unified_drills_update = yes
 }
 
+# country
+on_heir_death = {
+	if = {
+		limit = { has_reform = ge_sword_of_islam }
+		define_heir = {
+			dynasty = "Musha'sha'iya"
+			age = 4
+			culture = ROOT
+			claim = 70
+			religion = shiite
+		}
+	}
+}
+
 on_new_monarch = {
 	events = {
 		reform_me_events.52

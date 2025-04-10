@@ -158,6 +158,7 @@ GE_initiate_starting_reforms = {
 	}
 	MSY = {
 		change_government = theocracy
+		add_devotion = 100
 		add_government_reform = ge_sword_of_islam
 		define_heir = {
 			dynasty = "Musha'sha'iya"
