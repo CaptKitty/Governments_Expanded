@@ -1,0 +1,127 @@
+statuta_sabaudiae_mechanic = {
+	alert_icon_gfx = GFX_alerticons_government_mechanics
+	alert_icon_index = 6
+	available = { always = yes }
+	
+	powers = {
+		statuta_sabaudiae_adm_power = {
+			max = 100
+			monarch_power = ADM
+			base_monthly_growth = 0.50
+		}
+		statuta_sabaudiae_dip_power = {
+			max = 100
+			monarch_power = DIP
+			base_monthly_growth = 0.50
+		}
+	}
+	
+	interactions = {
+		statuta_sabaudiae_promulgate_religious_guidances = {
+			icon = GFX_statuta_sabaudiae_promulgate_religious_guidances
+			cost_type = statuta_sabaudiae_adm_power
+			cost = 100
+			cooldown_years = 10
+			trigger = { }
+			effect = {
+				change_religious_influence_equivalent_fee = { amount = 10 }
+				define_advisor = {
+					type = theologian
+					skill = 2
+					religion = ROOT
+					cost_multiplier = 0.50
+				}
+				hidden_effect = {
+					set_government_power = {
+						mechanic_type = statuta_sabaudiae_mechanic
+						power_type = statuta_sabaudiae_adm_power
+						value = 0
+					}
+				}
+			}
+			ai_chance = {
+				factor = 50
+			}
+		}
+		statuta_sabaudiae_reform_the_administration = {
+			icon = GFX_statuta_sabaudiae_reform_the_administration
+			cost_type = statuta_sabaudiae_adm_power
+			cost = 100
+			cooldown_years = 10
+			trigger = { }
+			effect = {
+				custom_tooltip = statuta_sabaudiae_reform_the_administration_tt
+				hidden_effect = {
+					every_owned_province = {
+						add_local_autonomy = -0.10
+						add_reform_progress_medium_effect = yes
+					}
+					set_government_power = {
+						mechanic_type = statuta_sabaudiae_mechanic
+						power_type = statuta_sabaudiae_adm_power
+						value = 0
+					}
+				}
+			}
+			ai_chance = {
+				factor = 50
+			}
+		}
+		hidden_button_dummy = {
+			icon = GFX_hidden_button_dummy
+			cost = 100
+			cooldown_years = 10
+			potential = { always = no }
+			trigger = { }
+			effect = { }
+			ai_chance = { }
+		}
+		statuta_sabaudiae_promote_social_order = {
+			icon = GFX_statuta_sabaudiae_promote_social_order
+			cost_type = statuta_sabaudiae_dip_power
+			cost = 100
+			cooldown_years = 10
+			trigger = { }
+			effect = {
+				add_estate_loyalty_by_class_adm = { loyalty = 10 }
+				add_estate_loyalty_by_class_dip = { loyalty = 10 }
+				add_estate_loyalty_by_class_mil = { loyalty = 10 }
+				add_rebel_progress = { value = -20 }
+				hidden_effect = {
+					set_government_power = {
+						mechanic_type = statuta_sabaudiae_mechanic
+						power_type = statuta_sabaudiae_dip_power
+						value = 0
+					}
+				}
+			}
+			ai_chance = {
+				factor = 50
+			}
+		}
+		statuta_sabaudiae_adjust_trade_regulations = {
+			icon = GFX_statuta_sabaudiae_adjust_trade_regulations
+			cost_type = statuta_sabaudiae_dip_power
+			cost = 100
+			cooldown_years = 10
+			trigger = { }
+			effect = {
+				add_mercantilism_or_monarch_power = { amount = 1 }
+				add_country_modifier = {
+					name = ge_statuta_sabaudiae_trade_statutes_of_savoy
+					duration = 3650
+				}
+				hidden_effect = {
+					set_government_power = {
+						mechanic_type = statuta_sabaudiae_mechanic
+						power_type = statuta_sabaudiae_dip_power
+						value = 0
+					}
+				}
+			}
+			ai_chance = {
+				factor = 50
+			}
+		}
+	}
+}

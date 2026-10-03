@@ -216,7 +216,7 @@ GE_initiate_starting_reforms = {
 		add_government_reform = kingdom_of_gao_reform
 	}
 	SPI = {
-		add_government_reform = kingdom_of_sardinia_reform
+		add_government_reform = statuta_sabaudiae_reform
 	}
 	TIB = {
 		change_government = theocracy

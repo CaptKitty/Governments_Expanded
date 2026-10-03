@@ -266,3 +266,9 @@ lunar_dynasty_mobilize_gurkhas_modifier = {
 	manpower_in_culture_group_provinces = 0.10
 	manpower_in_own_culture_provinces = 0.25
 }
+
+# Statuta Sabaudiae Mechanic
+ge_statuta_sabaudiae_trade_statutes_of_savoy = {
+	trade_efficiency = 0.10
+	placed_merchant_power = 10
+}

@@ -279,35 +279,6 @@ italian_republic_reform = {
 		has_candidate_bonus = yes
 	}
 }
-kingdom_of_sardinia_reform = {
-	icon = kingdom_of_sardinia
-	allow_normal_conversion = yes
-	valid_for_nation_designer = no
-	potential = {
-		OR = {
-			primary_culture = sardinian
-			primary_culture = piedmontese
-			have_had_reform = kingdom_of_sardinia_reform
-		}
-		NOT = { tag = ITA }
-	}
-	trigger = {
-		is_or_was_tag = { tag = SPI }
-		OR = {
-			primary_culture = sardinian
-			primary_culture = piedmontese
-			have_had_reform = kingdom_of_sardinia_reform
-		}
-	}
-	modifiers = {
-		max_absolutism = 5
-		state_maintenance_modifier = -0.10
-		development_cost_in_primary_culture = -0.10
-	}
-	ai = {
-		factor = 100
-	}
-}
 kingdom_of_sicily_reform = {
 	icon = sicily_kingdom_of_sicily
 	allow_normal_conversion = yes
@@ -501,6 +472,36 @@ signoria_baglioni_reform = {
 	# 		italian_condottieri_mechanic
 	# 	}
 	# }
+}
+statuta_sabaudiae_reform = {
+	icon = kingdom_of_sardinia
+	allow_normal_conversion = yes
+	valid_for_nation_designer = no
+	potential = {
+		OR = {
+			primary_culture = sardinian
+			primary_culture = piedmontese
+			have_had_reform = statuta_sabaudiae_reform
+		}
+		NOT = { tag = ITA }
+	}
+	trigger = {
+		is_or_was_tag = { tag = SPI }
+		OR = {
+			primary_culture = sardinian
+			primary_culture = piedmontese
+			have_had_reform = statuta_sabaudiae_reform
+		}
+	}
+	modifiers = {
+		num_accepted_cultures = 1
+	}
+	government_abilities = {
+		statuta_sabaudiae_mechanic
+	}
+	ai = {
+		factor = 100
+	}
 }
 
 #Tier 2

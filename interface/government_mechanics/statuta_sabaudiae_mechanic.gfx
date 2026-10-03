@@ -1,0 +1,18 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_statuta_sabaudiae_promulgate_religious_guidances"
+		textureFile = "gfx/interface/government_mechanics/statuta_sabaudiae_mechanic/statuta_sabaudiae_promulgate_religious_guidances.dds"
+	}
+	spriteType = {
+		name = "GFX_statuta_sabaudiae_reform_the_administration"
+		textureFile = "gfx/interface/government_mechanics/statuta_sabaudiae_mechanic/statuta_sabaudiae_reform_the_administration.dds"
+	}
+	spriteType = {
+		name = "GFX_statuta_sabaudiae_promote_social_order"
+		textureFile = "gfx/interface/government_mechanics/statuta_sabaudiae_mechanic/statuta_sabaudiae_promote_social_order.dds"
+	}
+	spriteType = {
+		name = "GFX_statuta_sabaudiae_adjust_trade_regulations"
+		textureFile = "gfx/interface/government_mechanics/statuta_sabaudiae_mechanic/statuta_sabaudiae_adjust_trade_regulations.dds"
+	}
+}

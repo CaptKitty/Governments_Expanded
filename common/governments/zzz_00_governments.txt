@@ -177,7 +177,7 @@ monarchy = {
 				emirate_of_andalusia_reform
 				house_of_gonzaga_reform
 				kingdom_of_gao_reform
-				kingdom_of_sardinia_reform
+				statuta_sabaudiae_reform
 				klever_union_reform
 				#1.19
 				duchi_montefeltro_reform

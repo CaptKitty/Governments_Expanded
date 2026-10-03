@@ -511,3 +511,32 @@
  GE_LUNAR_DYNASTY_MOBILIZE_GURKHAS_CULTURE_TT: "from provinces with either §YNepali§! or §YPahari§! culture."
  GE_LUNAR_DYNASTY_MOBILIZE_GURKHAS_CULTURE_SUBJECTS_TT: "from subjects with either §YNepali§! or §YPahari§! primary culture."
  LUNAR_LEGITIMACY_AT_100_TT: "Vassalization Acceptance: §G+10§! \nVassal Manpower Contribution: §G+15%§! \nThe monthly decay is negated until your §YDinastic Power§! falls under §Y100.00§!."
+
+# Statuta Sabaudiae Mechanic
+ ## Mechanic
+ ability_statuta_sabaudiae_mechanic: "Statuta Sabaudiae"
+ statuta_sabaudiae_adm_power: "Administrative Power"
+ statuta_sabaudiae_adm_power_gain_modifier: "Administrative Power Gain Modifier"
+ monthly_statuta_sabaudiae_adm_power: "Monthly Administrative Power"
+ statuta_sabaudiae_dip_power: "Diplomatic Power"
+ statuta_sabaudiae_dip_power_gain_modifier: "Diplomatic Power Gain Modifier"
+ monthly_statuta_sabaudiae_dip_power: "Monthly Diplomatic Power"
+
+ statuta_sabaudiae_promulgate_religious_guidances: "Promulgate Religious Guidances"
+ statuta_sabaudiae_promulgate_religious_guidances_desc: "This is mutually §Rexclusive§! with §YReform the Administration§!.\n\n"
+ statuta_sabaudiae_reform_the_administration: "Reform the Administration"
+ statuta_sabaudiae_reform_the_administration_desc: "This is mutually §Rexclusive§! with §YPromulgate Religious Guidances§!.\n\n"
+ statuta_sabaudiae_reform_the_administration_tt: "Every §MOwned§! Province will lose §G10%§! §YLocal Autonomy.§!"
+ statuta_sabaudiae_promote_social_order: "Promote Social Order"
+ statuta_sabaudiae_promote_social_order_desc: "This is mutually §Rexclusive§! with §YAdjust Trade Regulations§!.\n\n"
+ statuta_sabaudiae_adjust_trade_regulations: "Adjust Trade Regulations"
+ statuta_sabaudiae_adjust_trade_regulations_desc: "This is mutually §Rexclusive§! with §YPromote Social Order§!.\n\n"
+
+ ## Modifiers
+ ge_statuta_sabaudiae_trade_statutes_of_savoy: "Trade Statutes of Savoy"
+ desc_ge_statuta_sabaudiae_trade_statutes_of_savoy: "A series of trade regulations established in Savoy, promoting economic growth and commercial interests."
+
+
+# Dummies
+ hidden_button_dummy: "Hidden Button Dummy"
+ hidden_button_dummy_desc: "This is a dummy button that is hidden from the player. It is used for internal mechanics and should not be interacted with directly."
