@@ -1,0 +1,101 @@
+dukes_of_brittany_mechanic = {
+	available = {
+		always = yes
+	}
+
+	powers = {
+		breton_tradition = {
+			gui = dukes_of_brittany_mechanic_power
+			min = 0
+			max = 100
+			default = 0
+			reset_on_new_ruler = yes
+			scaled_modifier = {
+				modifier = {
+					prestige = 0.5
+					legitimacy = 0.5
+				}
+			}
+			range_modifier = {
+				start_value = 100
+				end_value = 100
+				modifier = {
+					all_estate_influence_modifier = -0.10
+				}
+			}
+		}
+	}
+
+	interactions = {
+		dukes_of_brittany_hold_accolades = {
+			icon = GFX_dukes_of_brittany_hold_accolades
+			trigger = {
+				NOT = { has_country_modifier = ge_dukes_of_brittany_mastering_waves }
+				capital_scope = {
+					area_for_scope_province = {
+						owned_by = ROOT
+						controlled_by = ROOT
+					}
+				}
+			}
+			effect = {
+				GE_dukes_of_brittany_hold_accolades_scaled_general = yes
+				add_country_modifier = {
+					name = ge_dukes_of_brittany_black_riders
+					duration = 3650
+				}
+				random_owned_province = {
+					limit = {
+						is_in_capital_area = yes
+						controlled_by = ROOT
+					}
+					add_unit_construction = {
+						amount = 3
+						type = cavalry
+						cost = 0
+						speed = 1.25
+					}
+				}
+			}
+			cooldown_years = 15
+			ai_chance = {
+				factor = 33
+			}
+		}
+		dukes_of_brittany_overseas_adventures = {
+			icon = GFX_dukes_of_brittany_overseas_adventures
+			trigger = {
+				NOT = { has_country_modifier = ge_dukes_of_brittany_black_riders }
+				any_owned_province = {
+					same_continent = capital
+					has_port = yes
+					controlled_by = ROOT
+				}
+			}
+			effect = {
+				GE_dukes_of_brittany_overseas_adventures_scaled_admiral = yes
+				add_country_modifier = {
+					name = ge_dukes_of_brittany_mastering_waves
+					duration = 3650
+				}
+				random_owned_province = {
+					limit = {
+						same_continent = capital
+						has_port = yes
+						controlled_by = ROOT
+					}
+					add_unit_construction = {
+						amount = 3
+						type = light_ship
+						cost = 0
+						speed = 1.25
+					}
+				}
+			}
+			cooldown_years = 15
+			ai_chance = {
+				factor = 33
+			}
+		}
+	}
+}

@@ -91,6 +91,41 @@ ge_french_absolutism_reform = {
 	}
 }
 
+ge_dukes_of_brittany_reform = {
+	icon = feudalism
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			is_or_was_tag = { tag = BRI }
+			have_had_reform = ge_dukes_of_brittany_reform
+		}
+	}
+	trigger = {
+		OR = {
+			is_or_was_tag = { tag = BRI }
+			have_had_reform = ge_dukes_of_brittany_reform
+		}
+	}
+	lock_level_when_selected = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	modifiers = {
+		prestige_decay = -0.005
+		global_regiment_cost = -0.05
+		all_estate_loyalty_equilibrium = 0.05
+	}
+	government_abilities = {
+		dukes_of_brittany_mechanic
+	}
+	effect = {
+		hidden_effect = { country_event = { id = reform_me_events.250 days = 1 } }
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+
 #T2
 
 ge_blood_tax_reform_reform = {

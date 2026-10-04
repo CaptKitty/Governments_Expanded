@@ -1,10 +1,6 @@
 ﻿l_english:
- ge_french_feudalism_reform: "French Feudalism"
- ge_french_feudalism_reform_desc: "Since the days of Charlemagne, our nation has practiced a loose form of feudalism, a system where nobles reign over vast swathes of land, in return for service as heavy cavalry during times of war."
  french_reformed_feudalism: "French Reformed Feudalism"
  french_reformed_feudalism_desc: "Having crushed the french nobility, we are ready to take over all of the french lands!."
- ge_french_absolutism_reform: "Royaume du Soleil"
- ge_french_absolutism_reform_desc: "God's mandate dictates that we cannot be constrained by the needs of the estates and no one but God may judge us. By the Grace of God we must bring France to new heights and step forward."
  florentine_republic: "The Florentine Republic"
  florentine_republic_desc: "We normally think of a Republic as a government where everyone votes for representatives who will represent their interests to the government (think of the United States pledge of allegiance: \"and to the republic for which it stands...\"). However, Florence was a Republic in the sense that there was a constitution which limited the power of the nobility (as well as laborers) and ensured that no one person or group could have complete political control (so it was far from our ideal of everyone voting, in fact a very small percentage of the population had the vote). Political power resided in the hands of middle-class merchants, a few wealthy families (such as the Medici, important art patrons who would later rule Florence) and the powerful guilds."
  demedici_dynasty_reform: "De Medici Dynasty"
@@ -28,8 +24,6 @@
  lithuania_law_reform_desc: "By codifying Lithuanian law we will curb the abuse our subjects suffer from robber barons imposing corrupted and local laws to extort money from them."
  portuguese_cortes_reform: "Portuguese Cortes"
  portuguese_cortes_reform_desc: "The Cortes was an assembly of representatives of the estates of the realm - the nobility, clergy and bourgeoisie. It was called and dismissed by the King of Portugal at will, at a place of his choosing."
- ge_ancien_regime_reform: "Ancien Regime"
- ge_ancien_regime_reform_desc: "The administration of France has become increasingly corrupt under the current Ancien Régime. It is in the states interest to implement an intendancy system to centralize our realm and to root out the influence of those who are not loyal to the crown."
  guild_dominance_reform: "Dutch Guilds"
  guild_dominance_reform_desc: "The Dutch guilds always had a lot of power, by granting them access to the government through official channels we will be able to let our guilds expand their trade networks into the Hansa or embark on voyages to the orient"
  guild_dominance_reform_upgrade: "United Dutch Guilds"
@@ -145,8 +139,6 @@
  millet_reform_desc: "By establishing the Millet System we can organize our subjects into communities tied together by faith. These communities are granted judgement by their own laws and their own tax collectors, allowing for a much more stable region in both local peace and taxation."
  koprulu_dynasty_reform: "Koprülü Dynasty"
  koprulu_dynasty_reform_desc: "The Koprülü dynasty has provided us with several Grand Viziers and generals, by making some of these titles inheritable to their line, we don't have to spend as much time and effort in finding capable leaders, instead we can pass this responsibility off to their lineage."
- ge_blood_tax_reform_reform: "Blood Tax"
- ge_blood_tax_reform_reform_desc: "The Nobility is a special class, with special privileges and special responsibilities. Chief among these is the blood tax, where the nobility pays their taxes not in money or goods, but in the form of soldiers, knights and generals. No gold for the treasury or grain for the granary, but blood ready to be spilled."
  conseil_du_roi_reform: "Conseil du Roi"
  conseil_du_roi_reform_desc: "One of the key parts of the french monarchy is the king's royal council, and their approval is a requirement to provide additional legitimacy to the king's decrees. By maintaining and reviving this principle we will have extra control over our country as well as a proper justification for why we should have this additional control."
  fredrickan_reforms_reform: "Frederick's Reforms"
@@ -568,39 +560,6 @@
  ottonian_handfeste_reform: "Ottonian Handfeste"
  ottonian_handfeste_reform_desc: "In the Ottonian Handfeste of June 5, 1311 granted Duke Otto III. from Lower Bavaria the Lower Bavarian estates privileges and rights. Against the performance of a one-off tax, Duke Otto confessed to the Lower Bavarian estates ( nobility , clergy , cities ) the lower justice for their possessions. The tax privileges of the estates , which were also guaranteed in the Ottonian Handfeste , together with the Schnaitbacher deed of 1302 marked the beginning of parliamentarianism in Bavaria."
 
- #France
- ge_independent_vassals_reform: "Independent Vassals"
- ge_independent_vassals_reform_desc: "Our initial attempts at levying taxes in our vassals has been twarted by local lords and their privileges. By letting the local lords levy our taxes themselves and then passing it along to us we guarentee their rights and loyalty, in addition to recieving the taxes we so desperately need."
- ge_compagnies_dordonnance_reform: "Compagnies D'Ordonnance"
- ge_compagnies_dordonnance_reform_desc: "By ordering the creation of a new army based around a modern system of organization, a 'compagnie d'ordonnance', a company of the order. These compagnies were created around the bravest and strongest members of the french temporary armies. The 15 compagnies were composed of approximately 100 'spears', with each 'spear' containing 1 cavalryman, 3 light infantry, 1 heavy infantry and 1 page. Unlike the feudal armies these compagnies guarenteed the royal army to have at least 7500 trained and skilled soldiers at its disposal."
- ge_parisian_court_reform: "Parisian Court"
- ge_parisian_court_reform_desc: "Let us fill our court with the best france has to offer. proper Parisians, and let the rural farmers and backwards lords stay home in their dwellings. Its a matter of prestige to have everyone at court observe the proper manners and speak in a flawless accent."
- ge_weak_burghers_reform: "Subservient Bourgeois"
- ge_weak_burghers_reform_desc: "The constant state of warfare in the kingdom during its earlier days led to many a city, caravan or field being plundered and ravaged. We can use the threat of reduced security to convince the burghers additional taxes are neccesary."
-
- ge_noblesse_d_epee_reform: "Noblesse d'epee"
- ge_noblesse_d_epee_reform_desc: "As with officer of the sword, the expression "noble of the sword" derives from the right of such noblemen to bear a sword, which reflected their duty of knightly service to their feudal overlord. In later centuries, a nobleman of the sword was not recognized as such unless his family had held this status for at least four generations. The Nobles of the Sword also provided non-military services to the king, holding positions in all branches of government."
- ge_generalites_reform: "Generalites"
- ge_generalites_reform_desc: "New divisions were created in an attempt to reform the old feudal system. The general recettes , commonly known as généralités ("generalities"), and supervised at the beginning by receveurs royaux (" royal collectors "), were initially fiscal districts. The first sixteen were created in 1542 by an edict of Henry II . Their functions increased, until in the middle of the 17th century the general committees were under the authority of a regional governor."
- ge_abolish_the_patronage_system_reform: "Abolish the Patronage System"
- ge_abolish_the_patronage_system_reform_desc: "By abolishing the Patronage System we are no longer bound to the nobility for the recruitment of our heavy knights, and we no longer have to pay the noble pensions that are sucking us dry. Now we can look to the truly talented to serve in the role of mounted skirmishers and shock cavalry."
- ge_corps_diplomatique_reform: "Corps Diplomatique"
- ge_corps_diplomatique_reform_desc: "There is no language for more noble and cultured than French. This is why ambassadors, heralds, and diplomats all around Europe don’t use their own language to communicate, but ours instead. Let us establish a Diplomatic Corps that can capitalize on the lingua franca , and send skilled diplomats to every court that seeks our attention."
- ge_bourgeoisie_aristocracy_reform: "Bourgeoisie Aristocracy"
- ge_bourgeoisie_aristocracy_reform_desc: "In the wake of the Hundred Years War and the great plague that followed, many noble estates fell into decline or died out, many others were pawned or sold to the rising bourgeoisie aristocracy, who are eager to expand their influence with noble titles rather then just with personal fortunes."
-
- ge_noble_court_attendance_reform: "Noble Court Attendance"
- ge_noble_court_attendance_reform_desc: "By forcing the nobility to attent our flamboyant court they have to choose between losing face and failing to meet the extravagant lifestyle expected by our royal society or face bankruptcy and lower personal funds to start plots and rebellions."
- ge_abolish_local_parliaments_reform: "Abolish Local Parliaments"
- ge_abolish_local_parliaments_reform_desc: "Some of the local parliaments refuse our new taxes and levies. They claim that taxes are only legal if they are made by the agreement of the monarch and the people.  Do they not know that the king represents the people? let us abolish the parliaments for being obsolete as the people already are represented."
- ge_royal_training_reform: "Royal Training"
- ge_royal_training_reform_desc: "The Captains of the army have long controlled the recruitment, equipment and training of our armed forced. Let us do this directly so our forces will never lack in training equipment, manpower or adequate weaponry."
- ge_society_of_agriculture_reform: "Society of Agriculture and an Agricultural Committee"
- ge_society_of_agriculture_reform_desc: "Louis's controller of finances, Henri Bertin, created a new Society of Agriculture and an Agricultural Committee within the government, comparable to those existing to support commerce. In May 1763, Bertin issued a decree permitting the tax-free circulation of grain without taxes. In August 1764, Bertin permitted the export of grain from twenty-seven French ports, later expanded to thirty-six. At the same time he established a large zone around Paris, where grain was reserved exclusively for feeding the Parisians, and established a cap on the grain price, which, if it was passed, would cause the exports to cease. The policy of freeing grain prices was effective in good years, and resulted in increased trade and lower prices."
- ge_droit_divine_reform: "Droit Divin"
- ge_droit_divine_reform_desc: "We have had our right to rule determined through salic law and justified through the clerical declarations, this will no longer do, our right to rule comes not from the church, but from God Himself."
-
-
  #Newtier
  strenghten_industry_reform: "Strengthen the Industrial Sector"
  strenghten_industry_reform_desc: "With state subsidies and employing the right people, we can efficiently industrialise our state to unheard levels."
@@ -608,10 +567,6 @@
  mercantilism_reform_desc: "There's nothing in the world more lucrative than trade, and we intend to capitalize on it. Let us grant plenty of rights to the burghers, and place tariffs to maximize profit."
  noble_taxes_reform: "Efficient Taxation"
  noble_taxes_reform_desc: "We understand that the backbone of any economy is having your subjects pay their due. Let us focus on harvesting the tax with the utmost efficiency."
- ge_conseil_souverain_reform: "Conseil Souverain"
- ge_conseil_souverain_reform_desc: "Let us focus on trading and supplying the natives in the regions, why bother setting up expensive plantations with the immorality of slavery while we can just trade with the natives in order to aquire all the exotic goods we need."
- ge_continental_system_reform: "Continental System"
- ge_continental_system_reform_desc: "In order to centralize the economic power of the continent, we need to unite and stop our rival's hold on his trade and through a continent wide system of embargos bleed it dry."
 
 
 
@@ -625,7 +580,7 @@
  edo_empire_reform: "Edo Empire"
  edo_empire_reform_desc: "The modernization of our country has shaken up the political landscape of the Empire, we must modernize the Eghaevbo into a nobility that cannot oppose the Oba and ensure the separation of the royal authority from the Uzama."
  maharajadhiraja_reform: "Mugarajadiraja"
- maharajadhiraja_reform_desc: "Meaning "great king of kings" it is a symbol of our superiority over the other states around us and our desire to be the ruler of all who oppose us."
+ maharajadhiraja_reform_desc: "Meaning \"great king of kings\" it is a symbol of our superiority over the other states around us and our desire to be the ruler of all who oppose us."
 
  #1.9
  empowered_free_trade_reform: "Empowered Free Trade"
@@ -1071,7 +1026,7 @@
  mechanic_enables_mercenary_markets_yes: "Mercenary Markets: §G-1%§! Infantry Cost and §G+2%§! Manpower Recovery per merchant. Up to a maximum of §G-10%§! Infantry Cost and §G20%§! Manpower Recovery Speed."
  mechanic_enables_national_strenghtening_project_yes: "National Strenghtening Project: §G+15%§! Manpower, §G-0.05%§! monthly devastation and §G-10%§! Hostile Movement Speed in provinces with accepted culture."
  mechanic_enables_rallied_for_war_yes: "Rallied for War: §G+5%§! Morale of Armies and §G+10%§! Morale Recovery for five years upon raising additional levies."
- mechanic_enables_patriotism_yes: "Patriotism: 	§G+25%§! Manpower in provinces of your primary culture."
+ mechanic_enables_patriotism_yes: "Patriotism: §G+25%§! Manpower in provinces of your primary culture."
  mechanic_enables_administrative_forts_yes: "Administrative Forts: §G-25%§! State Maintenance in each state with a fort."
  mechanic_enables_abolish_noble_customs_yes: "Abolish Noble Customs: Halve the Production Efficiency and Trade Power penalty in Noble Estate provinces."
  mechanic_enables_holy_tithe_yes: "Holy Tithe: §G+5%§! National Tax Modifier for each Tolerance of the True Faith over 4. Up to a maximum of §G25%§! National Tax Modifier."

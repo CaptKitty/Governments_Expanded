@@ -47,7 +47,407 @@ GE_calculate_dinastic_power = {
 					value = 1
 				}
 			}
+			else_if = {
+				limit = { has_government_mechanic = dukes_of_brittany_mechanic }
+				add_government_power = {
+					mechanic_type = dukes_of_brittany_mechanic
+					power_type = breton_tradition
+					value = 1
+				}
+			}
 			change_variable = { which = adm_value value = -1 }
 		}
+	}
+}
+
+GE_dukes_of_brittany_hold_accolades_scaled_general = {
+	if = {
+		limit = {
+			has_government_power = {
+				mechanic_type = dukes_of_brittany_mechanic
+				power_type = breton_tradition
+				value = 100
+			}
+		}
+		create_general = { tradition = 100 }
+	}
+	else_if = {
+		limit = {
+			has_government_power = {
+				mechanic_type = dukes_of_brittany_mechanic
+				power_type = breton_tradition
+				value = 95
+			}
+		}
+		create_general = { tradition = 95 }
+	}
+	else_if = {
+		limit = {
+			has_government_power = {
+				mechanic_type = dukes_of_brittany_mechanic
+				power_type = breton_tradition
+				value = 90
+			}
+		}
+		create_general = { tradition = 90 }
+	}
+	else_if = {
+		limit = {
+			has_government_power = {
+				mechanic_type = dukes_of_brittany_mechanic
+				power_type = breton_tradition
+				value = 85
+			}
+		}
+		create_general = { tradition = 85 }
+	}
+	else_if = {
+		limit = {
+			has_government_power = {
+				mechanic_type = dukes_of_brittany_mechanic
+				power_type = breton_tradition
+				value = 80
+			}
+		}
+		create_general = { tradition = 80 }
+	}
+	else_if = {
+		limit = {
+			has_government_power = {
+				mechanic_type = dukes_of_brittany_mechanic
+				power_type = breton_tradition
+				value = 75
+			}
+		}
+		create_general = { tradition = 75 }
+	}
+	else_if = {
+		limit = {
+			has_government_power = {
+				mechanic_type = dukes_of_brittany_mechanic
+				power_type = breton_tradition
+				value = 70
+			}
+		}
+		create_general = { tradition = 70 }
+	}
+	else_if = {
+		limit = {
+			has_government_power = {
+				mechanic_type = dukes_of_brittany_mechanic
+				power_type = breton_tradition
+				value = 65
+			}
+		}
+		create_general = { tradition = 65 }
+	}
+	else_if = {
+		limit = {
+			has_government_power = {
+				mechanic_type = dukes_of_brittany_mechanic
+				power_type = breton_tradition
+				value = 60
+			}
+		}
+		create_general = { tradition = 60 }
+	}
+	else_if = {
+		limit = {
+			has_government_power = {
+				mechanic_type = dukes_of_brittany_mechanic
+				power_type = breton_tradition
+				value = 55
+			}
+		}
+		create_general = { tradition = 55 }
+	}
+	else_if = {
+		limit = {
+			has_government_power = {
+				mechanic_type = dukes_of_brittany_mechanic
+				power_type = breton_tradition
+				value = 50
+			}
+		}
+		create_general = { tradition = 50 }
+	}
+	else_if = {
+		limit = {
+			has_government_power = {
+				mechanic_type = dukes_of_brittany_mechanic
+				power_type = breton_tradition
+				value = 45
+			}
+		}
+		create_general = { tradition = 45 }
+	}
+	else_if = {
+		limit = {
+			has_government_power = {
+				mechanic_type = dukes_of_brittany_mechanic
+				power_type = breton_tradition
+				value = 40
+			}
+		}
+		create_general = { tradition = 40 }
+	}
+	else_if = {
+		limit = {
+			has_government_power = {
+				mechanic_type = dukes_of_brittany_mechanic
+				power_type = breton_tradition
+				value = 35
+			}
+		}
+		create_general = { tradition = 35 }
+	}
+	else_if = {
+		limit = {
+			has_government_power = {
+				mechanic_type = dukes_of_brittany_mechanic
+				power_type = breton_tradition
+				value = 30
+			}
+		}
+		create_general = { tradition = 30 }
+	}
+	else_if = {
+		limit = {
+			has_government_power = {
+				mechanic_type = dukes_of_brittany_mechanic
+				power_type = breton_tradition
+				value = 25
+			}
+		}
+		create_general = { tradition = 25 }
+	}
+	else_if = {
+		limit = {
+			has_government_power = {
+				mechanic_type = dukes_of_brittany_mechanic
+				power_type = breton_tradition
+				value = 20
+			}
+		}
+		create_general = { tradition = 20 }
+	}
+	else_if = {
+		limit = {
+			has_government_power = {
+				mechanic_type = dukes_of_brittany_mechanic
+				power_type = breton_tradition
+				value = 15
+			}
+		}
+		create_general = { tradition = 15 }
+	}
+	else_if = {
+		limit = {
+			has_government_power = {
+				mechanic_type = dukes_of_brittany_mechanic
+				power_type = breton_tradition
+				value = 10
+			}
+		}
+		create_general = { tradition = 10 }
+	}
+	else = {
+		create_general = { tradition = 5 }
+	}
+}
+
+GE_dukes_of_brittany_overseas_adventures_scaled_admiral = {
+	if = {
+		limit = {
+			has_government_power = {
+				mechanic_type = dukes_of_brittany_mechanic
+				power_type = breton_tradition
+				value = 100
+			}
+		}
+		create_admiral = { tradition = 100 }
+	}
+	else_if = {
+		limit = {
+			has_government_power = {
+				mechanic_type = dukes_of_brittany_mechanic
+				power_type = breton_tradition
+				value = 95
+			}
+		}
+		create_admiral = { tradition = 95 }
+	}
+	else_if = {
+		limit = {
+			has_government_power = {
+				mechanic_type = dukes_of_brittany_mechanic
+				power_type = breton_tradition
+				value = 90
+			}
+		}
+		create_admiral = { tradition = 90 }
+	}
+	else_if = {
+		limit = {
+			has_government_power = {
+				mechanic_type = dukes_of_brittany_mechanic
+				power_type = breton_tradition
+				value = 85
+			}
+		}
+		create_admiral = { tradition = 85 }
+	}
+	else_if = {
+		limit = {
+			has_government_power = {
+				mechanic_type = dukes_of_brittany_mechanic
+				power_type = breton_tradition
+				value = 80
+			}
+		}
+		create_admiral = { tradition = 80 }
+	}
+	else_if = {
+		limit = {
+			has_government_power = {
+				mechanic_type = dukes_of_brittany_mechanic
+				power_type = breton_tradition
+				value = 75
+			}
+		}
+		create_admiral = { tradition = 75 }
+	}
+	else_if = {
+		limit = {
+			has_government_power = {
+				mechanic_type = dukes_of_brittany_mechanic
+				power_type = breton_tradition
+				value = 70
+			}
+		}
+		create_admiral = { tradition = 70 }
+	}
+	else_if = {
+		limit = {
+			has_government_power = {
+				mechanic_type = dukes_of_brittany_mechanic
+				power_type = breton_tradition
+				value = 65
+			}
+		}
+		create_admiral = { tradition = 65 }
+	}
+	else_if = {
+		limit = {
+			has_government_power = {
+				mechanic_type = dukes_of_brittany_mechanic
+				power_type = breton_tradition
+				value = 60
+			}
+		}
+		create_admiral = { tradition = 60 }
+	}
+	else_if = {
+		limit = {
+			has_government_power = {
+				mechanic_type = dukes_of_brittany_mechanic
+				power_type = breton_tradition
+				value = 55
+			}
+		}
+		create_admiral = { tradition = 55 }
+	}
+	else_if = {
+		limit = {
+			has_government_power = {
+				mechanic_type = dukes_of_brittany_mechanic
+				power_type = breton_tradition
+				value = 50
+			}
+		}
+		create_admiral = { tradition = 50 }
+	}
+	else_if = {
+		limit = {
+			has_government_power = {
+				mechanic_type = dukes_of_brittany_mechanic
+				power_type = breton_tradition
+				value = 45
+			}
+		}
+		create_admiral = { tradition = 45 }
+	}
+	else_if = {
+		limit = {
+			has_government_power = {
+				mechanic_type = dukes_of_brittany_mechanic
+				power_type = breton_tradition
+				value = 40
+			}
+		}
+		create_admiral = { tradition = 40 }
+	}
+	else_if = {
+		limit = {
+			has_government_power = {
+				mechanic_type = dukes_of_brittany_mechanic
+				power_type = breton_tradition
+				value = 35
+			}
+		}
+		create_admiral = { tradition = 35 }
+	}
+	else_if = {
+		limit = {
+			has_government_power = {
+				mechanic_type = dukes_of_brittany_mechanic
+				power_type = breton_tradition
+				value = 30
+			}
+		}
+		create_admiral = { tradition = 30 }
+	}
+	else_if = {
+		limit = {
+			has_government_power = {
+				mechanic_type = dukes_of_brittany_mechanic
+				power_type = breton_tradition
+				value = 25
+			}
+		}
+		create_admiral = { tradition = 25 }
+	}
+	else_if = {
+		limit = {
+			has_government_power = {
+				mechanic_type = dukes_of_brittany_mechanic
+				power_type = breton_tradition
+				value = 20
+			}
+		}
+		create_admiral = { tradition = 20 }
+	}
+	else_if = {
+		limit = {
+			has_government_power = {
+				mechanic_type = dukes_of_brittany_mechanic
+				power_type = breton_tradition
+				value = 15
+			}
+		}
+		create_admiral = { tradition = 15 }
+	}
+	else_if = {
+		limit = {
+			has_government_power = {
+				mechanic_type = dukes_of_brittany_mechanic
+				power_type = breton_tradition
+				value = 10
+			}
+		}
+		create_admiral = { tradition = 10 }
+	}
+	else = {
+		create_admiral = { tradition = 5 }
 	}
 }

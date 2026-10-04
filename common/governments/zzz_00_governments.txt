@@ -198,6 +198,8 @@ monarchy = {
 				tai_and_ahom_reform
 				ge_bagrationi_dynasty
 				ge_rah_e_registan
+				# 1.22
+				ge_dukes_of_brittany_reform
 			}
 		}
 		hereditary_vs_nobility = {

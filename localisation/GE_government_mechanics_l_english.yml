@@ -540,3 +540,19 @@
 # Dummies
  hidden_button_dummy: "Hidden Button Dummy"
  hidden_button_dummy_desc: "This is a dummy button that is hidden from the player. It is used for internal mechanics and should not be interacted with directly."
+
+# Dukes of Brittany
+ ability_dukes_of_brittany_mechanic: "Dukes of Brittany"
+ breton_tradition: "Breton Tradition"
+ breton_tradition_gain_modifier: "Breton Tradition Modifier"
+ monthly_breton_tradition: "Monthly Breton Tradition"
+ dukes_of_brittany_hold_accolades: "Holds Accolades."
+ dukes_of_brittany_hold_accolades_desc: "Rise now and defend the honor of our house, for we are the Dukes of Brittany and we shall not be forgotten!"
+ dukes_of_brittany_overseas_adventures: "Overseas Adventures"
+ dukes_of_brittany_overseas_adventures_desc: "Embark on daring expeditions to distant lands and expand the influence of Brittany."
+
+ ## Modifiers
+ ge_dukes_of_brittany_black_riders: "Black Riders"
+ desc_ge_dukes_of_brittany_black_riders: ""
+ ge_dukes_of_brittany_mastering_waves: "Mastering the Waves"
+ desc_ge_dukes_of_brittany_mastering_waves: ""

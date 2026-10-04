@@ -41,7 +41,6 @@
  support_guelphs_reform: "Support Guelphs"
  support_guelphs_reform_desc: "There are those who believe that the Emperor has a higher authority than the pope. This is bordering on heresy, and they must realize the folly of their ways. The Guelph faction seeks to drive out the German \"Emperor\" from our wonderful Italy, and we will rally our merchants and clergymen in their support."
 
- # Specific
  angevin_nobles_reform: "Confirm Angevin Nobles"
  angevin_nobles_reform_desc: "The French Kings on Anjou decided to grant privileges to the noblemen of the Kingdom, and greatly increase their influence over the judicial system to secure their loyalties after their conquest of the Kingdom over the Hohenstaufer Germans."
  archdiocese_of_pisa_reform: "Arch-Diocese of Pisa"
@@ -65,7 +64,6 @@
  milizia_nationale_reform: "Milizia Nationale"
  milizia_nationale_reform_desc: "Who fights better?, a soldier fighting for his pockets, or a soldier fighting for his prince, land and family!. Let us rely on the strenght of our own arms, our own sons and our own banners instead!."
 
- # Specific
  almogavars_reform: "Almogavars"
  almogavars_reform_desc: "The heirs of the bloody reconquista are ready to pick up their arms to join yet another bloody struggle against the heretics, heathens or the enemies of any that pay them. Following the end of the peninsular reconquista they spread out over the Mediterranean in search of loot and stable employment, let us hire these ruthless veterans and fortune seekers for our wars."
  alpini_reform: "Alpini"
@@ -89,7 +87,6 @@
  union_of_italian_states_reform: "Union of Cities"
  union_of_italian_states_reform_desc: "The Italian Politics are dominated by city states and puppet regimes, by granting them some more autonomy we can ensure their loyalty and cooperation. And prevent them from opening the gates to the first rival nation that comes along."
 
- # Specific
  advanced_bookkeeping_reform_republic_venice: "Expand the Colleganti"
  advanced_bookkeeping_reform_republic_venice_desc: "A more generous variant of the Commenda system, where the burden of profit was laid upon the captain. the Colleganti instead offered a much more spread out responsibility, which allowed skilled traders and captains to more easily recover from piracy, storms or price fluctuations."
  communal_territories_reform: "Communal Territories"
@@ -107,7 +104,6 @@
  the_consigliere_reform: "The Consigliere"
  the_consigliere_reform_desc: "A four-man council elected for a three-month term, headed by the 'Duke of the Republic'. thanks to this government form, the head of the state will be more competent, and its direction clearer for our citizens."
 
- # Specific
  andrea_doria_constitution_reform: "Andrea Doria's Constitution"
  andrea_doria_constitution_reform_desc: "To stop the endless factional infighting, Andrea Doria created 28 new public Alberghi, these political organisations were comprised of multiple, sometimes rival, families. By uniting them under a single banner Andrea forced them to align behind their shared political goals. Thus putting an end to the cycle of major coups and blood feuds that had dominated the Genoan Republic and were driving it to the brink of non-existance."
  theatines_reform: "Theatines"
@@ -117,14 +113,12 @@
  maritime_republic_reform: "Maritime Republic"
  maritime_republic_reform_desc: "The economic recovery that took place in Europe starting from the ninth century, combined with the insecurity of land communication routes, meant that the main trade routes developed along the coasts of the Mediterranean Sea: in this context, and given the crisis of power central, some port cities were able to acquire ever greater autonomy, to the point of playing a leading role in the European scenario."
 
- # Specific
  banco_dei_medici_reform: "Banco dei Medici"
  banco_dei_medici_reform_desc: "The bank of the Medici family was the largest and most respected bank of its time, making the family one of the wealthiest in Europe. With this monetary wealth, the family acquired political power initially in Florence, and later in the wider spheres of Italy and Europe - also by using their money to pay bribes."
 
 # Tier 9
 
 # Tier 10
- # Specific
  constitution_of_melfi_reform: "Constitution of Melfi"
  constitution_of_melfi_reform_desc: "The Ancient constitution of Melfi has kept our Kingdom prosperous and our monarchs powerfull throughout the ages. Originally based on the customs and laws of the norman kings and later formalized by the german emperors before being the bedrock of spanish rule. these documents have stood the test of time and will continue to form the bedrock of our future!"
 

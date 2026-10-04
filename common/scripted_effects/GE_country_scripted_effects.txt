@@ -49,6 +49,9 @@ GE_initiate_starting_reforms = {
 			add_government_reform = ge_margrave_reform
 		}
 	}
+	BRI = {
+		add_government_reform = ge_dukes_of_brittany_reform
+	}
 	BRT = {
 		change_government = tribal
 		add_government_reform = siberian_tribal_confederation_reform

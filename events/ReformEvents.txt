@@ -8662,6 +8662,7 @@ country_event = {
 		OR = {
 			has_government_mechanic = italian_dinasties_mechanic
 			has_government_mechanic = sicilian_kingdom_mechanic
+			has_government_mechanic = dukes_of_brittany_mechanic
 		}
 	}
 
