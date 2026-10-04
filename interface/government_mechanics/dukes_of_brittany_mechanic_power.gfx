@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_dukes_of_brittany_hold_accolades"
+		textureFile = "gfx/interface/government_mechanics/dukes_of_brittany/dukes_of_brittany_hold_accolades.dds"
+	}
+	spriteType = {
+		name = "GFX_dukes_of_brittany_overseas_adventures"
+		textureFile = "gfx/interface/government_mechanics/dukes_of_brittany/dukes_of_brittany_overseas_adventures.dds"
+	}
+}
