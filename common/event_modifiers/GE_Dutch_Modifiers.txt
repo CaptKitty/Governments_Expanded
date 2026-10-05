@@ -1,0 +1,5 @@
+
+Regent_Investments = {
+	allowed_num_of_buildings = 1
+	local_development_cost = -0.10
+}

@@ -198,7 +198,7 @@ monarchy = {
 				tai_and_ahom_reform
 				ge_bagrationi_dynasty
 				ge_rah_e_registan
-				# 1.22
+				#1.23
 				ge_dukes_of_brittany_reform
 			}
 		}
@@ -327,6 +327,9 @@ monarchy = {
 				divine_rajputana_splendor_reform
 				#1.22
 				indo_tibetan_union_reform
+				#1.23
+				belforten_en_hoeven_reform
+				stadskeure_reform
 			}
 		}
 		bureaucracy = {
@@ -1120,6 +1123,8 @@ republic = {
 				italian_republic_reform
 				republic_of_saint_blaise
 				signoria_baglioni_reform
+				#1.23
+				upstalsboom_league_reform
 			}
 		}
 		republican_virtues = {
@@ -1175,6 +1180,9 @@ republic = {
 				archdiocese_of_pisa_reform
 				genoa_merchants_reform
 				republican_virtues_reform
+				#1.23
+				belforten_en_hoeven_reform
+				stadskeure_reform
 			}
 		}
 		frequent_elections_vs_consolidation_of_power = {
@@ -1662,6 +1670,8 @@ tribal = {
 				siberian_tribal_confederation_reform
 				ge_the_kat
 				ge_rah_e_registan
+				#1.23
+				upstalsboom_league_reform
 			}
 		}
 		tribal_cultural_values = {

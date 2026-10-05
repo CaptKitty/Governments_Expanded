@@ -1,0 +1,61 @@
+﻿l_english:
+# Tier 1
+ upstalsboom_league_reform: ""
+ upstalsboom_league_reform_desc: ""
+
+# Tier 2
+ belforten_en_hoeven_reform: ""
+ belforten_en_hoeven_reform_desc: ""
+ moedernegotie_reform: "De Moedernegotie"
+ moedernegotie_reform_desc: "The \"Moedernegotie\", also known as the 'Mother of all Trade', was the massive flow of basic goods from the baltic to the Dutch shores, from where it would feed the Dutch markets and citizenry, Polish grain, Livonian wood and Swedish steel would be traded as far as France or the Portuguese cities. This Trade fed the early republic and major parts of western europe and youngsters sailing on these reliable voyages was the cradle of many a sailor or merchant."
+ stadskeure_reform: ""
+ stadskeure_reform_desc: ""
+
+# Tier 3
+ vroedschappen_reform: "Vroedschappen"
+ vroedschappen_reform_desc: "After the Burgundian aquisition of the dutch counties, in order to govern them, the cities organized \"Vroedschappen\", councils of the urban elite and wise, to represent them on a provincial level. These men were chosen as they were believed to be able to resist the allure of wealth and corruption due to their own wisdom, prestige and current wealth. As representatives of the provinces, they were the ones that elected the Stadtholders."
+
+# Tier 4
+
+# Tier 5
+ reforms_of_william_3_reform: "Reforms of William III"
+ reforms_of_william_3_reform_desc: "To avoid the desertion of individual mercenaries as well as the captains that are supposed to keep them in line, The State will pay for each soldier that falls in battle. Thus there is no longer any benefit for mercenaries to break and retreat the second the battle gets tough."
+
+# Tier 6
+ ware_vrijheid_reform: "Ware Vrijheid"
+ ware_vrijheid_reform_desc: "'De Ware Vrijheid', or the True Freedom, was the political stance during the Stadtholderless period held by the De Witt's, and was the belief that princes and magnates were detrimental to the public good, as their personal quests for power and glory would time and again waste money and life on destructive campaigns."
+
+# Tier 7
+ united_indian_companies_reform: "Verenigde Indische Companies"
+ united_indian_companies_reform_desc: "De Verenigde Indische Companies, or the United Indian Companies, Were the VOC, for india, and later the WIC, for the americas. By uniting the indian trade companies we will reduce internal merchant conflicts and can focus on out-competing our rivals instead of our friends. Eventually being able to supplant our rivals completely from the faraway markets."
+
+# Tier 8
+
+# Tier 9
+ confederation_of_states_reform: "Confederation of States"
+ confederation_of_states_reform_desc: "As our nation was born out of several independent states that rebelled against foreign oppression and religious persecution, it is foreign threats that kept us united in these first years, before formally uniting as a confederacy of states. Let us open our hands to invite additional states and nations into our union!"
+
+# Tier 10
+ tolerant_principle_reform: "Tolerance Principle"
+ tolerant_principle_reform_desc: "Our nation was born in the fight for religious freedom and to stop the bloody and harsh foreign abuses against our people. Because of this, Tolerance is a virtue at the heart of both our people and our nation. Portuguese Jews, French Hugenots and German refugees, we welcome them all."
+
+# Tier 11
+ regents_reform: "The Regents"
+ regents_reform_desc: "The Regents were a aristocratic class of merchants who had, through their fortune first bought their way into the countries elite, and then attempted to reduce social mobility to stop anyone from breaching their class. Their investments into the Dutch agriculture made it the most advanced and most productive in all of Europe and beyond. To signify their wealth and status, they ordered construction of palaces in the imperial French style."
+
+# Tier 12
+ raadspensionaris_reform: "Raadspensionaris"
+ raadspensionaris_reform_desc: "De Raadspensionaris, or \"the Grand pensionary\" was the premier civil power of the Netherlands, as representative of the county of holland he was the most powerful of the dutch representatives, and was considered the major representative of the Dutch Republic in absence of the Stadtholder.  As the premier civil vervant of the Republic, it fell upon him to execute the laws and manage the domestic and foreign policies."
+
+# Tier 13
+
+# Mechanics
+ mechanic_enables_regent_investments_yes: "Enables Regent Investments in Dutch provinces over 20 Development, giving §G1§! Additional building slot and §G-10%§! local Development Cost."
+
+# Tooltips
+
+# Modifiers
+ Regent_Investments: "Regent Investments"
+ desc_Regent_Investments: ""
+
+# Triggered Modifiers
