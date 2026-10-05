@@ -20,7 +20,8 @@ dukes_of_brittany_mechanic = {
 				start_value = 100
 				end_value = 100
 				modifier = {
-					all_estate_influence_modifier = -0.10
+					all_estate_influence_modifier = -0.05
+					prestige_decay = -0.005
 				}
 			}
 		}

@@ -110,8 +110,8 @@ ge_dukes_of_brittany_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	modifiers = {
-		prestige_decay = -0.005
-		global_regiment_cost = -0.05
+		cav_to_inf_ratio = 0.10
+		liberty_desire = 10
 		all_estate_loyalty_equilibrium = 0.05
 	}
 	government_abilities = {
