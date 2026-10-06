@@ -1,6 +1,6 @@
 #T1
 upstalsboom_league_reform = {
-	icon = hansa_trade
+	icon = peasant_republic
 	allow_normal_conversion = yes
 	lock_level_when_selected = yes
 	potential = {
@@ -32,7 +32,7 @@ upstalsboom_league_reform = {
 
 #T2
 belforten_en_hoeven_reform = {
-	icon = hansa_trade
+	icon = vroedschap
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -92,7 +92,7 @@ moedernegotie_reform = {
 	}
 }
 stadskeure_reform = {
-	icon = hansa_trade
+	icon = free_city
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -111,14 +111,9 @@ stadskeure_reform = {
 		burghers_influence_modifier = 0.10
 		merchants = 1
 	}
-	conditional = {
-		allow = { government = monarchy }
-		custom_attributes = {
-			enables_plutocratic_idea_group = yes
-		}
-	}
 	custom_attributes = {
 		is_merchant_republic = yes
+		enables_plutocratic_idea_group = yes
 	}
 	ai = {
 		factor = 100
