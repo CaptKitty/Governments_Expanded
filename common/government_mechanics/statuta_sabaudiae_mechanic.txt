@@ -24,7 +24,7 @@ statuta_sabaudiae_mechanic = {
 			cooldown_years = 10
 			trigger = { }
 			effect = {
-				change_religious_influence_equivalent_fee = { amount = 10 }
+				change_religious_influence_equivalent_fee = { add = 10 }
 				define_advisor = {
 					type = theologian
 					skill = 2

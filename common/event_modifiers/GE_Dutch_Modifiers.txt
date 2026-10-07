@@ -3,3 +3,7 @@ Regent_Investments = {
 	allowed_num_of_buildings = 1
 	local_development_cost = -0.10
 }
+
+ge_anti_heresy_zeal_modifier = {
+	local_manpower_modifier = 0.25
+}

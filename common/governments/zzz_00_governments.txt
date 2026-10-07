@@ -620,6 +620,8 @@ monarchy = {
 				xolon_maj_reform
 				#1.21
 				frontier_guards_reform
+				#1.23
+				walloon_guard_reform
 			}
 		}
 		deliberative_assembly = {
@@ -1379,6 +1381,8 @@ republic = {
 				alpini_reform
 				fonderie_ferraresi_reform
 				fanti_da_mar_reform
+				#1.23
+				walloon_guard_reform
 			}
 		}
 		parliamentary_vs_presidential = {
@@ -2081,6 +2085,8 @@ theocracy = {
 				mongol_ties_reform
 				general_war_commissariat_reform_GE
 				# subotai_lessons_reform
+				#1.23
+				walloon_guard_reform
 			}
 		}
 		religious_enforcement = {

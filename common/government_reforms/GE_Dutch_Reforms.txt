@@ -183,6 +183,57 @@ reforms_of_william_3_reform = {
 		factor = 100
 	}
 }
+walloon_guard_reform = {
+	icon = bishops_army
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			AND = {
+				religion = catholic
+				OR = {
+					primary_culture = wallonian
+					AND = {
+						tag = SPA
+						any_province = {
+							area = wallonia_area
+							area_for_scope_province = {
+								type = all
+								owned_by = ROOT
+							}
+							
+						}
+					}
+				}
+			}
+			has_reform = walloon_guard_reform
+		}
+	}
+	trigger = {
+		OR = {
+			full_idea_group = religious_ideas
+			full_idea_group = theocracy_gov_ideas
+		}
+	}
+	modifiers = {
+		global_religious_conversion_resistance = 1
+		morale_damage_received = -0.10
+		shock_damage = 0.10
+	}
+	custom_attributes = {
+		free_expansionist_zealotry = yes
+		enables_anti_heresy_zeal = yes
+	}
+	effect = {
+		every_owned_province = { ge_anti_heresy_zeal_update = yes }
+	}
+	removed_effect = {
+		every_owned_province = { ge_anti_heresy_zeal_update = yes }
+	}
+	ai = {
+		factor = 100
+	}
+}
+
 
 #T6
 ware_vrijheid_reform = {

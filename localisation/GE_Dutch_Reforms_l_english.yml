@@ -20,6 +20,8 @@
 # Tier 5
  reforms_of_william_3_reform: "Reforms of William III"
  reforms_of_william_3_reform_desc: "To avoid the desertion of individual mercenaries as well as the captains that are supposed to keep them in line, The State will pay for each soldier that falls in battle. Thus there is no longer any benefit for mercenaries to break and retreat the second the battle gets tough."
+ walloon_guard_reform: "Walloon Guard"
+ walloon_guard_reform_desc: "Founded during the religious turmoil that engulfed the Low Countries in the 16th century, the Walloon Guard was made up of fanatically loyal Catholics who were indoctrinated from a young age with a desire to purge heresy wherever they were told it existed. They became widely acknowledged as shock troops for the Catholic cause, throwing themselves at the enemy with reckless abandon and proving some of the most tenacious soldiers in all Christendon. Whether their designated target was actually a heretic or not mattered little…"
 
 # Tier 6
  ware_vrijheid_reform: "Ware Vrijheid"
@@ -51,11 +53,15 @@
 
 # Mechanics
  mechanic_enables_regent_investments_yes: "Enables Regent Investments in Dutch provinces over 20 Development, giving §G1§! Additional building slot and §G-10%§! local Development Cost."
+ mechanic_enables_anti_heresy_zeal_yes: "Enables Anti-Heresy Zeal in §MWalloon Catholic§! provinces granting §G+25.0%§! §YLocal Manpower Modifier.§!"
 
 # Tooltips
 
 # Modifiers
  Regent_Investments: "Regent Investments"
  desc_Regent_Investments: ""
+
+ ge_anti_heresy_zeal_modifier: "Anti-Heresy Zeal"
+ desc_ge_anti_heresy_zeal_modifier: ""
 
 # Triggered Modifiers

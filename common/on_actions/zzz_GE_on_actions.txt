@@ -326,6 +326,8 @@ on_province_owner_change = {
 	ge_western_indian_frontier_guards_province_update = yes
 	ge_desert_construction_province_update = yes
 	ge_legacy_of_sukaphaa_province_update = yes
+
+	ge_anti_heresy_zeal_update = yes
 }
 
 on_trade_good_changed = {
@@ -347,6 +349,8 @@ on_province_culture_converted = {
 	ge_millet_system_province_update = yes
 	ge_devshirme_province_update = yes
 	ge_huaca_cults_province_update = yes
+
+	ge_anti_heresy_zeal_update = yes
 }
 
 on_province_culture_changed = {

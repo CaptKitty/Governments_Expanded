@@ -1026,3 +1026,19 @@ ge_legacy_of_sukaphaa_province_update = {
 		remove_province_modifier = legacy_of_sukaphaa_province_modifier
 	}
 }
+
+
+ge_anti_heresy_zeal_update = {
+	if = {
+		limit = {
+			owner = { has_government_attribute = ge_anti_heresy_zeal }
+			culture = wallonian
+			religion = catholic
+		}
+		add_province_modifier = {
+			name = ge_anti_heresy_zeal_modifier
+			duration = -1
+		}
+	}
+	else = { remove_province_modifier = ge_anti_heresy_zeal_modifier }
+}
