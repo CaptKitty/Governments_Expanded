@@ -1,0 +1,179 @@
+ge_enables_ianuensis_ergo_mercator_update = {
+	if = {
+		limit = { has_government_attribute = ge_enables_ianuensis_ergo_mercator }
+		if = {
+			limit = { trade_efficiency = 0.70 }
+			add_country_modifier = {
+				name = GE_Genoese_Merchants_Explorers_5
+				duration = -1
+			}
+			remove_country_modifier = GE_Genoese_Merchants_Explorers_1
+			remove_country_modifier = GE_Genoese_Merchants_Explorers_2
+			remove_country_modifier = GE_Genoese_Merchants_Explorers_3
+			remove_country_modifier = GE_Genoese_Merchants_Explorers_4
+		}
+		else_if = {
+			limit = { trade_efficiency = 0.60 }
+			add_country_modifier = {
+				name = GE_Genoese_Merchants_Explorers_4
+				duration = -1
+			}
+			remove_country_modifier = GE_Genoese_Merchants_Explorers_1
+			remove_country_modifier = GE_Genoese_Merchants_Explorers_2
+			remove_country_modifier = GE_Genoese_Merchants_Explorers_3
+			remove_country_modifier = GE_Genoese_Merchants_Explorers_5
+		}
+		else_if = {
+			limit = { trade_efficiency = 0.50 }
+			add_country_modifier = {
+				name = GE_Genoese_Merchants_Explorers_3
+				duration = -1
+			}
+			remove_country_modifier = GE_Genoese_Merchants_Explorers_1
+			remove_country_modifier = GE_Genoese_Merchants_Explorers_2
+			remove_country_modifier = GE_Genoese_Merchants_Explorers_4
+			remove_country_modifier = GE_Genoese_Merchants_Explorers_5
+		}
+		else_if = {
+			limit = { trade_efficiency = 0.40 }
+			add_country_modifier = {
+				name = GE_Genoese_Merchants_Explorers_2
+				duration = -1
+			}
+			remove_country_modifier = GE_Genoese_Merchants_Explorers_1
+			remove_country_modifier = GE_Genoese_Merchants_Explorers_3
+			remove_country_modifier = GE_Genoese_Merchants_Explorers_4
+			remove_country_modifier = GE_Genoese_Merchants_Explorers_5
+		}
+		else = {
+			add_country_modifier = {
+				name = GE_Genoese_Merchants_Explorers_1
+				duration = -1
+			}
+			remove_country_modifier = GE_Genoese_Merchants_Explorers_2
+			remove_country_modifier = GE_Genoese_Merchants_Explorers_3
+			remove_country_modifier = GE_Genoese_Merchants_Explorers_4
+			remove_country_modifier = GE_Genoese_Merchants_Explorers_5
+		}
+
+	}
+	else = {
+		remove_country_modifier = GE_Genoese_Merchants_Explorers_1
+		remove_country_modifier = GE_Genoese_Merchants_Explorers_2
+		remove_country_modifier = GE_Genoese_Merchants_Explorers_3
+		remove_country_modifier = GE_Genoese_Merchants_Explorers_4
+		remove_country_modifier = GE_Genoese_Merchants_Explorers_5
+	}
+}
+
+ge_enables_mary_of_the_purity_update = {
+	if = {
+		limit = {
+			has_government_attribute = enables_mary_of_the_purity
+			has_global_modifier_value = { which = tolerance_own value = 6 }
+		}
+		if = {
+			limit = { has_global_modifier_value = { which = tolerance_own value = 9 } }
+			add_country_modifier = {
+				name = GE_Mary_Of_The_Purity_4
+				duration = -1
+				hidden = yes
+			}
+			remove_country_modifier = GE_Mary_Of_The_Purity_1
+			remove_country_modifier = GE_Mary_Of_The_Purity_2
+			remove_country_modifier = GE_Mary_Of_The_Purity_3
+		}
+		else_if = {
+			limit = { has_global_modifier_value = { which = tolerance_own value = 8 } }
+			add_country_modifier = {
+				name = GE_Mary_Of_The_Purity_3
+				duration = -1
+				hidden = yes
+			}
+			remove_country_modifier = GE_Mary_Of_The_Purity_1
+			remove_country_modifier = GE_Mary_Of_The_Purity_2
+			remove_country_modifier = GE_Mary_Of_The_Purity_4
+		}
+		else_if = {
+			limit = { has_global_modifier_value = { which = tolerance_own value = 7 } }
+			add_country_modifier = {
+				name = GE_Mary_Of_The_Purity_2
+				duration = -1
+				hidden = yes
+			}
+			remove_country_modifier = GE_Mary_Of_The_Purity_1
+			remove_country_modifier = GE_Mary_Of_The_Purity_3
+			remove_country_modifier = GE_Mary_Of_The_Purity_4
+		}
+		else= {
+			add_country_modifier = {
+				name = GE_Mary_Of_The_Purity_1
+				duration = -1
+				hidden = yes
+			}
+			remove_country_modifier = GE_Mary_Of_The_Purity_2
+			remove_country_modifier = GE_Mary_Of_The_Purity_3
+			remove_country_modifier = GE_Mary_Of_The_Purity_4
+		}
+	}
+	else = {
+		remove_country_modifier = GE_Mary_Of_The_Purity_1
+		remove_country_modifier = GE_Mary_Of_The_Purity_2
+		remove_country_modifier = GE_Mary_Of_The_Purity_3
+		remove_country_modifier = GE_Mary_Of_The_Purity_4
+	}
+}
+
+ge_enables_ordine_cordone_giallo_update = {
+	if = {
+		limit = {
+			has_government_attribute = enables_ordine_cordone_giallo
+			has_global_modifier_value = { which = tolerance_own value = 4 }
+		}
+		if = {
+			limit = { has_global_modifier_value = { which = tolerance_own value = 10 } }
+			add_country_modifier = {
+				name = GE_Mantua_Knightly_Orders_4
+				duration = -1
+			}
+			remove_country_modifier = GE_Mantua_Knightly_Orders_1
+			remove_country_modifier = GE_Mantua_Knightly_Orders_2
+			remove_country_modifier = GE_Mantua_Knightly_Orders_3
+		}
+		else_if = {
+			limit = { has_global_modifier_value = { which = tolerance_own value = 8 } }
+			add_country_modifier = {
+				name = GE_Mantua_Knightly_Orders_3
+				duration = -1
+			}
+			remove_country_modifier = GE_Mantua_Knightly_Orders_1
+			remove_country_modifier = GE_Mantua_Knightly_Orders_2
+			remove_country_modifier = GE_Mantua_Knightly_Orders_4
+		}
+		else_if = {
+			limit = { has_global_modifier_value = { which = tolerance_own value = 6 } }
+			add_country_modifier = {
+				name = GE_Mantua_Knightly_Orders_2
+				duration = -1
+			}
+			remove_country_modifier = GE_Mantua_Knightly_Orders_1
+			remove_country_modifier = GE_Mantua_Knightly_Orders_3
+			remove_country_modifier = GE_Mantua_Knightly_Orders_4
+		}
+		else = {
+			add_country_modifier = {
+				name = GE_Mantua_Knightly_Orders_1
+				duration = -1
+			}
+			remove_country_modifier = GE_Mantua_Knightly_Orders_2
+			remove_country_modifier = GE_Mantua_Knightly_Orders_3
+			remove_country_modifier = GE_Mantua_Knightly_Orders_4
+		}
+	}
+	else = {
+		remove_country_modifier = GE_Mantua_Knightly_Orders_1
+		remove_country_modifier = GE_Mantua_Knightly_Orders_2
+		remove_country_modifier = GE_Mantua_Knightly_Orders_3
+		remove_country_modifier = GE_Mantua_Knightly_Orders_4
+	}
+}

@@ -148,7 +148,7 @@ ge_dukes_of_brittany_reform = {
 		dukes_of_brittany_mechanic
 	}
 	effect = {
-		hidden_effect = { country_event = { id = reform_me_events.250 days = 1 } }
+		hidden_effect = { GE_calculate_dinastic_power = yes }
 	}
 	ai = {
 		factor = 100

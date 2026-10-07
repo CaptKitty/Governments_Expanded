@@ -207,7 +207,7 @@ house_of_este_reform = {
 		italian_dinasties_mechanic
 	}
 	effect = {
-		hidden_effect = { country_event = { id = reform_me_events.250 days = 1 } }
+		hidden_effect = { GE_calculate_dinastic_power = yes }
 	}
 }
 house_of_gonzaga_reform = {
@@ -238,7 +238,7 @@ house_of_gonzaga_reform = {
 		italian_dinasties_mechanic
 	}
 	effect = {
-		hidden_effect = { country_event = { id = reform_me_events.250 days = 1 } }
+		hidden_effect = { GE_calculate_dinastic_power = yes }
 	}
 }
 italian_monarchy_reform = {
@@ -307,7 +307,7 @@ kingdom_of_sicily_reform = {
 		sicilian_kingdom_mechanic
 	}
 	effect = {
-		hidden_effect = { country_event = { id = reform_me_events.250 days = 1 } }
+		hidden_effect = { GE_calculate_dinastic_power = yes }
 	}
 	ai = {
 		factor = 100
@@ -1107,12 +1107,7 @@ genoa_merchants_reform = {
 		enables_ianuensis_ergo_mercator = yes #10 global settler per every 30% Trade Efficiency
 	}
 	effect = {
-		hidden_effect = {
-			country_event = {
-				id = GE_Italian_Reforms_Events.2
-				days = 1
-			}
-		}
+		hidden_effect = { ge_enables_ianuensis_ergo_mercator_update = yes }
 	}
 	removed_effect = {
 		hidden_effect = {
@@ -1508,12 +1503,7 @@ berberi_mantovani_reform = {
 		enables_ordine_cordone_giallo = yes #+5% CCA and 1 PI for each 2 ToTf over 4
 	}
 	effect = {
-		hidden_effect = {
-			country_event = {
-				id = GE_Italian_Reforms_Events.1
-				days = 1
-			}
-		}
+		hidden_effect = { ge_enables_ordine_cordone_giallo_update = yes }
 	}
 	removed_effect = {
 		hidden_effect = {
@@ -2080,11 +2070,7 @@ theatines_reform = {
 		enables_mary_of_the_purity = yes # -0.025 corruption per year per tolerance of the true faith over 4
 	}
 	effect = {
-		hidden_effect = {
-			country_event = {
-				id = GE_Italian_Reforms_Events.3
-			}
-		}
+		hidden_effect = { ge_enables_mary_of_the_purity_update = yes }
 	}
 	removed_effect = {
 		hidden_effect = {
