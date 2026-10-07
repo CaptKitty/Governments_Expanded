@@ -1,6 +1,6 @@
 ge_enables_ianuensis_ergo_mercator_update = {
 	if = {
-		limit = { has_government_attribute = ge_enables_ianuensis_ergo_mercator }
+		limit = { has_government_attribute = enables_ianuensis_ergo_mercator }
 		if = {
 			limit = { trade_efficiency = 0.70 }
 			add_country_modifier = {
