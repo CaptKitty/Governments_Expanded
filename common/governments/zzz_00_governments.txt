@@ -199,6 +199,7 @@ monarchy = {
 				ge_bagrationi_dynasty
 				ge_rah_e_registan
 				#1.23
+				ge_ducal_normandy_reform
 				ge_dukes_of_brittany_reform
 			}
 		}

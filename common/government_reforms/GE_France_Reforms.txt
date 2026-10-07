@@ -91,6 +91,36 @@ ge_french_absolutism_reform = {
 	}
 }
 
+ge_ducal_normandy_reform = {
+	icon = feudalism
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture = normand
+			have_had_reform = ge_ducal_normandy_reform
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = normand
+			have_had_reform = ge_ducal_normandy_reform
+		}
+	}
+	lock_level_when_selected = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	modifiers = {
+		liberty_desire = 25
+		land_forcelimit_modifier = 0.25
+		morale_damage_received = -0.15
+		fort_maintenance_modifier = -0.25
+	}
+	fixed_rank = 1
+	ai = {
+		factor = 100
+	}
+}
+
 ge_dukes_of_brittany_reform = {
 	icon = feudalism
 	allow_normal_conversion = yes
