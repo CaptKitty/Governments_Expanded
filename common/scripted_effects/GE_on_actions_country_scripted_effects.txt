@@ -177,3 +177,10 @@ ge_enables_ordine_cordone_giallo_update = {
 		remove_country_modifier = GE_Mantua_Knightly_Orders_4
 	}
 }
+
+enables_parliament_win_update = {
+	if = {
+		limit = { has_government_attribute = enables_parliament_win }
+		add_republican_tradition = 5
+	}
+}

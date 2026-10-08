@@ -1,59 +1,62 @@
 ﻿l_english:
 # Tier 1
- upstalsboom_league_reform: "Upstalsboom League"
- upstalsboom_league_reform_desc: "Our exemption from feudal hierarchy makes us one of the few places on earth where true rule by the people is enforced. Neither a monarchy nor a traditional republic, we instead govern ourselves as a league of equal freemen who will fight to the death to defend said freedom."
+ ge_upstalsboom_league_reform: "Upstalsboom League"
+ ge_upstalsboom_league_reform_desc: "Our exemption from feudal hierarchy makes us one of the few places on earth where true rule by the people is enforced. Neither a monarchy nor a traditional republic, we instead govern ourselves as a league of equal freemen who will fight to the death to defend said freedom."
 
 # Tier 2
- belforten_en_hoeven_reform: "Belforten en Hoeven"
- belforten_en_hoeven_reform_desc: "The exceptional levels of urbanization that grew up in Flanders and the surrounding regions, and the wealth from trade and industry that fueled it, gave these cities exceptionally strong bargaining power in obtaining rights and other concessions from feudal lords. The charters of rights were jealously guarded by the cities they were granted to, with the wealthiest of them often building fortified towers (belforten) in their center specifically to house the charters behind lock and key as well as protect the city governments. In smaller towns and rural areas (hoeven), protective measures were less elaborate for their rights, but no less important to the people."
- moedernegotie_reform: "De Moedernegotie"
- moedernegotie_reform_desc: "The \"Moedernegotie\", also known as the 'Mother of all Trade', was the massive flow of basic goods from the baltic to the Dutch shores, from where it would feed the Dutch markets and citizenry, Polish grain, Livonian wood and Swedish steel would be traded as far as France or the Portuguese cities. This Trade fed the early republic and major parts of western europe and youngsters sailing on these reliable voyages was the cradle of many a sailor or merchant."
- stadskeure_reform: "Stadskeure"
- stadskeure_reform_desc: "The Stadskeure referred to the charters of city rights, including self-governance in matters of law and justice, economic liberties, and other freedoms. The document was treated as close to sacred in towns fortunate enough to obtain them, as it for all intents and purposes meant a town that obtained one had graduated to the level of a city. Trade then became a central part of society in the southern Low Countries, as the pursuit of wealth through trade and the rights that came with being a wealthy city went hand-in-hand."
+ ge_belforten_en_hoeven_reform: "Belforten en Hoeven"
+ ge_belforten_en_hoeven_reform_desc: "The exceptional levels of urbanization that grew up in Flanders and the surrounding regions, and the wealth from trade and industry that fueled it, gave these cities exceptionally strong bargaining power in obtaining rights and other concessions from feudal lords. The charters of rights were jealously guarded by the cities they were granted to, with the wealthiest of them often building fortified towers (belforten) in their center specifically to house the charters behind lock and key as well as protect the city governments. In smaller towns and rural areas (hoeven), protective measures were less elaborate for their rights, but no less important to the people."
+ ge_moedernegotie_reform: "De Moedernegotie"
+ ge_moedernegotie_reform_desc: "The \"Moedernegotie\", also known as the 'Mother of all Trade', was the massive flow of basic goods from the baltic to the Dutch shores, from where it would feed the Dutch markets and citizenry, Polish grain, Livonian wood and Swedish steel would be traded as far as France or the Portuguese cities. This Trade fed the early republic and major parts of western europe and youngsters sailing on these reliable voyages was the cradle of many a sailor or merchant."
+ ge_stadskeure_reform: "Stadskeure"
+ ge_stadskeure_reform_desc: "The Stadskeure referred to the charters of city rights, including self-governance in matters of law and justice, economic liberties, and other freedoms. The document was treated as close to sacred in towns fortunate enough to obtain them, as it for all intents and purposes meant a town that obtained one had graduated to the level of a city. Trade then became a central part of society in the southern Low Countries, as the pursuit of wealth through trade and the rights that came with being a wealthy city went hand-in-hand."
 
 # Tier 3
- vroedschappen_reform: "Vroedschappen"
- vroedschappen_reform_desc: "After the Burgundian aquisition of the dutch counties, in order to govern them, the cities organized \"Vroedschappen\", councils of the urban elite and wise, to represent them on a provincial level. These men were chosen as they were believed to be able to resist the allure of wealth and corruption due to their own wisdom, prestige and current wealth. As representatives of the provinces, they were the ones that elected the Stadtholders."
+ ge_reintroduction_literary_latin: "Reintroduction of Literary Latin"
+ ge_reintroduction_literary_latin_desc: "Starting in the 15th century, in large part fueled by the perceived exclusivity of the Latin language used in Holy Liturgy, governments in Walloon-speaking territories sought to re-introduce Latin as the second language of the administration, and start teaching it in churches to all who are willing to learn, bringing education to the masses and making Latin a language in common for all Christians as it was always meant to be, rather than simply a language of the elite."
+ ge_vroedschappen_reform: "Vroedschappen"
+ ge_vroedschappen_reform_desc: "After the Burgundian aquisition of the dutch counties, in order to govern them, the cities organized \"Vroedschappen\", councils of the urban elite and wise, to represent them on a provincial level. These men were chosen as they were believed to be able to resist the allure of wealth and corruption due to their own wisdom, prestige and current wealth. As representatives of the provinces, they were the ones that elected the Stadtholders."
 
 # Tier 4
 
 # Tier 5
- reforms_of_william_3_reform: "Reforms of William III"
- reforms_of_william_3_reform_desc: "To avoid the desertion of individual mercenaries as well as the captains that are supposed to keep them in line, The State will pay for each soldier that falls in battle. Thus there is no longer any benefit for mercenaries to break and retreat the second the battle gets tough."
- walloon_guard_reform: "Walloon Guard"
- walloon_guard_reform_desc: "Founded during the religious turmoil that engulfed the Low Countries in the 16th century, the Walloon Guard was made up of fanatically loyal Catholics who were indoctrinated from a young age with a desire to purge heresy wherever they were told it existed. They became widely acknowledged as shock troops for the Catholic cause, throwing themselves at the enemy with reckless abandon and proving some of the most tenacious soldiers in all Christendon. Whether their designated target was actually a heretic or not mattered little…"
+ ge_reforms_of_william_3_reform: "Reforms of William III"
+ ge_reforms_of_william_3_reform_desc: "To avoid the desertion of individual mercenaries as well as the captains that are supposed to keep them in line, The State will pay for each soldier that falls in battle. Thus there is no longer any benefit for mercenaries to break and retreat the second the battle gets tough."
+ ge_walloon_guard_reform: "Walloon Guard"
+ ge_walloon_guard_reform_desc: "Founded during the religious turmoil that engulfed the Low Countries in the 16th century, the Walloon Guard was made up of fanatically loyal Catholics who were indoctrinated from a young age with a desire to purge heresy wherever they were told it existed. They became widely acknowledged as shock troops for the Catholic cause, throwing themselves at the enemy with reckless abandon and proving some of the most tenacious soldiers in all Christendon. Whether their designated target was actually a heretic or not mattered little…"
 
 # Tier 6
- ware_vrijheid_reform: "Ware Vrijheid"
- ware_vrijheid_reform_desc: "'De Ware Vrijheid', or the True Freedom, was the political stance during the Stadtholderless period held by the De Witt's, and was the belief that princes and magnates were detrimental to the public good, as their personal quests for power and glory would time and again waste money and life on destructive campaigns."
+ ge_ware_vrijheid_reform: "Ware Vrijheid"
+ ge_ware_vrijheid_reform_desc: "'De Ware Vrijheid', or the True Freedom, was the political stance during the Stadtholderless period held by the De Witt's, and was the belief that princes and magnates were detrimental to the public good, as their personal quests for power and glory would time and again waste money and life on destructive campaigns."
 
 # Tier 7
- united_indian_companies_reform: "Verenigde Indische Companies"
- united_indian_companies_reform_desc: "De Verenigde Indische Companies, or the United Indian Companies, Were the VOC, for india, and later the WIC, for the americas. By uniting the indian trade companies we will reduce internal merchant conflicts and can focus on out-competing our rivals instead of our friends. Eventually being able to supplant our rivals completely from the faraway markets."
+ ge_united_indian_companies_reform: "Verenigde Indische Companies"
+ ge_united_indian_companies_reform_desc: "De Verenigde Indische Companies, or the United Indian Companies, Were the VOC, for india, and later the WIC, for the americas. By uniting the indian trade companies we will reduce internal merchant conflicts and can focus on out-competing our rivals instead of our friends. Eventually being able to supplant our rivals completely from the faraway markets."
 
 # Tier 8
 
 # Tier 9
- confederation_of_states_reform: "Confederation of States"
- confederation_of_states_reform_desc: "As our nation was born out of several independent states that rebelled against foreign oppression and religious persecution, it is foreign threats that kept us united in these first years, before formally uniting as a confederacy of states. Let us open our hands to invite additional states and nations into our union!"
+ ge_confederation_of_states_reform: "Confederation of States"
+ ge_confederation_of_states_reform_desc: "As our nation was born out of several independent states that rebelled against foreign oppression and religious persecution, it is foreign threats that kept us united in these first years, before formally uniting as a confederacy of states. Let us open our hands to invite additional states and nations into our union!"
 
 # Tier 10
- tolerant_principle_reform: "Tolerance Principle"
- tolerant_principle_reform_desc: "Our nation was born in the fight for religious freedom and to stop the bloody and harsh foreign abuses against our people. Because of this, Tolerance is a virtue at the heart of both our people and our nation. Portuguese Jews, French Hugenots and German refugees, we welcome them all."
+ ge_tolerant_principle_reform: "Tolerance Principle"
+ ge_tolerant_principle_reform_desc: "Our nation was born in the fight for religious freedom and to stop the bloody and harsh foreign abuses against our people. Because of this, Tolerance is a virtue at the heart of both our people and our nation. Portuguese Jews, French Hugenots and German refugees, we welcome them all."
 
 # Tier 11
- regents_reform: "The Regents"
- regents_reform_desc: "The Regents were a aristocratic class of merchants who had, through their fortune first bought their way into the countries elite, and then attempted to reduce social mobility to stop anyone from breaching their class. Their investments into the Dutch agriculture made it the most advanced and most productive in all of Europe and beyond. To signify their wealth and status, they ordered construction of palaces in the imperial French style."
+ ge_regents_reform: "The Regents"
+ ge_regents_reform_desc: "The Regents were a aristocratic class of merchants who had, through their fortune first bought their way into the countries elite, and then attempted to reduce social mobility to stop anyone from breaching their class. Their investments into the Dutch agriculture made it the most advanced and most productive in all of Europe and beyond. To signify their wealth and status, they ordered construction of palaces in the imperial French style."
 
 # Tier 12
- raadspensionaris_reform: "Raadspensionaris"
- raadspensionaris_reform_desc: "De Raadspensionaris, or \"the Grand pensionary\" was the premier civil power of the Netherlands, as representative of the county of holland he was the most powerful of the dutch representatives, and was considered the major representative of the Dutch Republic in absence of the Stadtholder.  As the premier civil vervant of the Republic, it fell upon him to execute the laws and manage the domestic and foreign policies."
+ ge_raadspensionaris_reform: "Raadspensionaris"
+ ge_raadspensionaris_reform_desc: "De Raadspensionaris, or \"the Grand pensionary\" was the premier civil power of the Netherlands, as representative of the county of holland he was the most powerful of the dutch representatives, and was considered the major representative of the Dutch Republic in absence of the Stadtholder.  As the premier civil vervant of the Republic, it fell upon him to execute the laws and manage the domestic and foreign policies."
 
 # Tier 13
 
 # Mechanics
  mechanic_enables_regent_investments_yes: "Enables Regent Investments in Dutch provinces over 20 Development, giving §G1§! Additional building slot and §G-10%§! local Development Cost."
  mechanic_enables_anti_heresy_zeal_yes: "Enables Anti-Heresy Zeal in §MWalloon Catholic§! provinces granting §G+25.0%§! §YLocal Manpower Modifier.§!"
+ mechanic_enables_clerical_education_tech_yes: "The Estate §YPrivilege Clerical Education§! will grant an additional §G-5%§! Technology Cost"
 
 # Tooltips
 

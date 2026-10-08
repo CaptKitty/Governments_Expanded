@@ -498,7 +498,7 @@ country_event = {
 	trigger = {
 		OR = {
 			has_reform = guild_dominance_reform
-			has_reform = moedernegotie_reform
+			has_reform = ge_moedernegotie_reform
 		}
 	}
 
@@ -589,7 +589,7 @@ country_event = {
 	trigger = {
 		OR = {
 			has_reform = guild_dominance_reform
-			has_reform = moedernegotie_reform
+			has_reform = ge_moedernegotie_reform
 		}
 	}
 

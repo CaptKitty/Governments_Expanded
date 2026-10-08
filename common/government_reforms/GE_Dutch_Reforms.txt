@@ -1,12 +1,12 @@
 #T1
-upstalsboom_league_reform = {
+ge_upstalsboom_league_reform = {
 	icon = peasant_republic
 	allow_normal_conversion = yes
 	lock_level_when_selected = yes
 	potential = {
 		OR = {
 			primary_culture = flemish
-			has_reform = upstalsboom_league_reform
+			has_reform = ge_upstalsboom_league_reform
 		}
 	}
 	custom_attributes = {
@@ -31,7 +31,7 @@ upstalsboom_league_reform = {
 
 
 #T2
-belforten_en_hoeven_reform = {
+ge_belforten_en_hoeven_reform = {
 	icon = vroedschap
 	allow_normal_conversion = yes
 	potential = {
@@ -43,7 +43,7 @@ belforten_en_hoeven_reform = {
 			tag = PIC
 			tag = LIE
 			tag = LUX
-			has_reform = belforten_en_hoeven_reform
+			has_reform = ge_belforten_en_hoeven_reform
 		}
 	}
 	modifiers = {
@@ -59,14 +59,14 @@ belforten_en_hoeven_reform = {
 		factor = 100
 	}
 }
-moedernegotie_reform = {
+ge_moedernegotie_reform = {
 	icon = hansa_trade
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
 			primary_culture = dutch
 			primary_culture = flemish
-			has_reform = moedernegotie_reform
+			has_reform = ge_moedernegotie_reform
 		}
 	}
 	effect = {
@@ -91,7 +91,7 @@ moedernegotie_reform = {
 		factor = 100
 	}
 }
-stadskeure_reform = {
+ge_stadskeure_reform = {
 	icon = free_city
 	allow_normal_conversion = yes
 	potential = {
@@ -103,7 +103,7 @@ stadskeure_reform = {
 			tag = PIC
 			tag = LIE
 			tag = LUX
-			has_reform = stadskeure_reform
+			has_reform = ge_stadskeure_reform
 		}
 	}
 	modifiers = {
@@ -121,14 +121,33 @@ stadskeure_reform = {
 }
 
 #T3
-vroedschappen_reform = {
+ge_reintroduction_literary_latin = {
+	icon = arabic_scripture
+	allow_normal_conversion = yes
+	potential = {
+		primary_culture = wallonian
+		religion = catholic
+	}
+	modifiers = {
+		institution_spread_from_true_faith = 0.33
+		global_missionary_strength = 0.02
+	}
+	custom_attributes = {
+		enables_clerical_education_tech = yes
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+ge_vroedschappen_reform = {
 	icon = vroedschap
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
 			primary_culture = dutch
 			primary_culture = flemish
-			has_reform = vroedschappen_reform
+			has_reform = ge_vroedschappen_reform
 		}
 	}
 	effect = {
@@ -153,14 +172,14 @@ vroedschappen_reform = {
 }
 
 #T5
-reforms_of_william_3_reform = {
+ge_reforms_of_william_3_reform = {
 	icon = william_3
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
 			primary_culture = dutch
 			primary_culture = flemish
-			has_reform = reforms_of_william_3_reform
+			has_reform = ge_reforms_of_william_3_reform
 		}
 	}
 	effect = {
@@ -183,7 +202,7 @@ reforms_of_william_3_reform = {
 		factor = 100
 	}
 }
-walloon_guard_reform = {
+ge_walloon_guard_reform = {
 	icon = bishops_army
 	allow_normal_conversion = yes
 	potential = {
@@ -205,7 +224,7 @@ walloon_guard_reform = {
 					}
 				}
 			}
-			has_reform = walloon_guard_reform
+			has_reform = ge_walloon_guard_reform
 		}
 	}
 	trigger = {
@@ -236,14 +255,14 @@ walloon_guard_reform = {
 
 
 #T6
-ware_vrijheid_reform = {
+ge_ware_vrijheid_reform = {
 	icon = dutch_tulip_field
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
 			primary_culture  = dutch
 			primary_culture  = flemish
-			has_reform = ware_vrijheid_reform
+			has_reform = ge_ware_vrijheid_reform
 		}
 		NOT = {
 			has_reform = pirate_republic_reform
@@ -271,14 +290,14 @@ ware_vrijheid_reform = {
 }
 
 #T7
-united_indian_companies_reform = {
+ge_united_indian_companies_reform = {
 	icon = voc_ship
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
 			primary_culture = dutch
 			primary_culture = flemish
-			has_reform = united_indian_companies_reform
+			has_reform = ge_united_indian_companies_reform
 		}
 	}
 	effect = {
@@ -303,14 +322,14 @@ united_indian_companies_reform = {
 }
 
 #T9
-confederation_of_states_reform = {
+ge_confederation_of_states_reform = {
 	icon = confederation_of_states
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
 			primary_culture  = dutch
 			primary_culture  = flemish
-			has_reform = confederation_of_states_reform
+			has_reform = ge_confederation_of_states_reform
 		}
 	}
 	modifiers = {
@@ -328,14 +347,14 @@ confederation_of_states_reform = {
 }
 
 #T10
-tolerant_principle_reform = {
+ge_tolerant_principle_reform = {
 	icon = dutch_tolerance
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
 			primary_culture  = dutch
 			primary_culture  = flemish
-			has_reform = tolerant_principle_reform
+			has_reform = ge_tolerant_principle_reform
 		}
 	}
 	modifiers = {
@@ -349,14 +368,14 @@ tolerant_principle_reform = {
 }
 
 #T11
-regents_reform = {
+ge_regents_reform = {
 	icon = regents
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
 			primary_culture = dutch
 			primary_culture = flemish
-			has_reform = regents_reform
+			has_reform = ge_regents_reform
 		}
 	}
 	modifiers = {
@@ -385,14 +404,14 @@ regents_reform = {
 }
 
 #T12
-raadspensionaris_reform = {
+ge_raadspensionaris_reform = {
 	icon = raadspensionaris
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
 			primary_culture = dutch
 			primary_culture = flemish
-			has_reform = raadspensionaris_reform
+			has_reform = ge_raadspensionaris_reform
 		}
 	}
 	modifiers = {

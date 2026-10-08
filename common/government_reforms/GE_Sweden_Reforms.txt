@@ -193,3 +193,44 @@ gustavan_artillery_reform = {
 		factor = 100
 	}
 }
+
+ge_icelandic_commonwealth = {
+	icon = parliament
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture = icelandic
+			has_reform = ge_icelandic_commonwealth 
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = icelandic
+			has_reform = gustavan_artillery_reform 
+		}
+	}
+	modifiers = {
+		max_absolutism = -10
+		global_unrest = -3
+		stability_cost_modifier = -0.10
+	}
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+		}
+		has_parliament = yes
+	}
+	custom_attributes = {
+		lottery_election = yes
+		election_on_death = yes
+		has_candidate_bonus = yes
+		bonus_stats_for_elected_ruler = yes
+		enables_parliament_win = yes # +5 Republican Tradition when winning a parliament issue
+	}	
+	ai = {
+		factor = 100
+	}
+}

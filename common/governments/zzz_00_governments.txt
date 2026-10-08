@@ -329,8 +329,8 @@ monarchy = {
 				#1.22
 				indo_tibetan_union_reform
 				#1.23
-				belforten_en_hoeven_reform
-				stadskeure_reform
+				ge_belforten_en_hoeven_reform
+				ge_stadskeure_reform
 			}
 		}
 		bureaucracy = {
@@ -479,6 +479,8 @@ monarchy = {
 				imajtz_ib_aj_k_iche_reform
 				sanskritization_reform
 				shakti_the_supreme_deity_reform
+				#1.23
+				ge_reintroduction_literary_latin
 			}
 		}
 		military_doctrines = {
@@ -622,7 +624,7 @@ monarchy = {
 				#1.21
 				frontier_guards_reform
 				#1.23
-				walloon_guard_reform
+				ge_walloon_guard_reform
 			}
 		}
 		deliberative_assembly = {
@@ -1127,7 +1129,8 @@ republic = {
 				republic_of_saint_blaise
 				signoria_baglioni_reform
 				#1.23
-				upstalsboom_league_reform
+				ge_upstalsboom_league_reform
+				ge_icelandic_commonwealth
 			}
 		}
 		republican_virtues = {
@@ -1172,7 +1175,7 @@ republic = {
 				support_borghese_reform
 				#guild_dominance_reform
 				rule_by_consent_reform
-				moedernegotie_reform
+				ge_moedernegotie_reform
 				mixed_republic_reform
 				independence_reform
 				sovereignity_reform
@@ -1184,8 +1187,8 @@ republic = {
 				genoa_merchants_reform
 				republican_virtues_reform
 				#1.23
-				belforten_en_hoeven_reform
-				stadskeure_reform
+				ge_belforten_en_hoeven_reform
+				ge_stadskeure_reform
 			}
 		}
 		frequent_elections_vs_consolidation_of_power = {
@@ -1206,7 +1209,7 @@ republic = {
 				ven_promissione_ducale_reform
 				### GE ###
 				factional_elections_reform
-				vroedschappen_reform
+				ge_vroedschappen_reform
 				peasant_council_reform
 				captain_and_defender_reform
 				princes_of_novogorod_reform
@@ -1254,6 +1257,8 @@ republic = {
 				#1.36
 				legacy_of_the_safavid_reform
 				state_madrasas_reform
+				#1.23
+				ge_reintroduction_literary_latin
 			}
 		}
 		military_doctrines = {
@@ -1367,7 +1372,7 @@ republic = {
 				five_military_force_reform
 				honor_of_thai_kingdoms_reform
 				form_the_vojstatic_reform
-				reforms_of_william_3_reform
+				ge_reforms_of_william_3_reform
 				reform_the_condotierri_reform
 				turkoman_gunners_reform
 				mongol_ties_reform
@@ -1383,7 +1388,7 @@ republic = {
 				fonderie_ferraresi_reform
 				fanti_da_mar_reform
 				#1.23
-				walloon_guard_reform
+				ge_walloon_guard_reform
 			}
 		}
 		parliamentary_vs_presidential = {
@@ -1410,7 +1415,7 @@ republic = {
 				### GE ###
 				stadholder_reform
 				andrea_doria_constitution_reform
-				ware_vrijheid_reform
+				ge_ware_vrijheid_reform
 				the_consigliere_reform
 				council_of_petitions_reform
 				hansa_representatives_reform
@@ -1433,7 +1438,7 @@ republic = {
 				advanced_bookkeeping_reform
 				advanced_bookkeeping_reform_republic_venice
 				communal_territories_reform
-				united_indian_companies_reform
+				ge_united_indian_companies_reform
 				confederation_of_cantons_reform
 				clergical_administration_reform
 				union_of_italian_states_reform
@@ -1491,7 +1496,7 @@ republic = {
 				orangist_stadholders_reform
 				### GE ###
 				supreme_court_reform
-				confederation_of_states_reform
+				ge_confederation_of_states_reform
 				hansa_domination_reform
 				empowered_aristocratic_courts_reform
 				empowered_sovereign_trade_companies_reform
@@ -1514,7 +1519,7 @@ republic = {
 				### GE ###
 				national_principle_reform
 				liberal_principle_reform
-				tolerant_principle_reform
+				ge_tolerant_principle_reform
 				independent_principle_reform
 				empowered_principle_of_heritage_reform
 				empowered_principle_of_profit_reform
@@ -1535,7 +1540,7 @@ republic = {
 				military_rulership_reform
 				### GE ###
 				one_man_one_vote_reform
-				regents_reform
+				ge_regents_reform
 				peasantry_reform
 				electoral_college_reform
 				direct_majority_rule_reform
@@ -1549,7 +1554,7 @@ republic = {
 				pirate_representation_reform
 				### GE ###
 				cultural_judges_reform
-				raadspensionaris_reform
+				ge_raadspensionaris_reform
 				hansa_universities_reform
 				vice_presidential_system_reform
 				legislative_office_selection_reform
@@ -1676,7 +1681,7 @@ tribal = {
 				ge_the_kat
 				ge_rah_e_registan
 				#1.23
-				upstalsboom_league_reform
+				ge_upstalsboom_league_reform
 			}
 		}
 		tribal_cultural_values = {
@@ -1967,6 +1972,8 @@ theocracy = {
 				diwan_al_khass_reform
 				state_madrasas_reform
 				integrated_ottoman_officials
+				#1.23
+				ge_reintroduction_literary_latin
 			}
 		}
 		religoius_doctrine = {
@@ -2087,7 +2094,7 @@ theocracy = {
 				general_war_commissariat_reform_GE
 				# subotai_lessons_reform
 				#1.23
-				walloon_guard_reform
+				ge_walloon_guard_reform
 			}
 		}
 		religious_enforcement = {

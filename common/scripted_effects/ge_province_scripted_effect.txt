@@ -64,7 +64,7 @@ ge_Regent_Investments_province_update = {
 	if = {
 		limit = {
 			owner = {
-				has_reform = regents_reform
+				has_reform = ge_regents_reform
 			}
 			development = 20
 			OR = {

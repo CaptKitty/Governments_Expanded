@@ -152,6 +152,8 @@
  parliamentary_order_reform_desc: "The Parliamentary Order set up the Parliament of Sweden, where the four represented estates, the nobles, clergy, burghers and peasants, could work together to propose new laws to increase the prosperity of the nation."
  gustavan_artillery_reform: "Gustavan Artillery"
  gustavan_artillery_reform_desc: "Field artillery has long been a static emplacement for firing before the battle starts. Let us use lighter pieces on the battlefield itself for additional firepower and mobility, let us shred the Imperial Tercios to pieces!"
+ ge_icelandic_commonwealth: "Icelandic Commonwealth"
+ ge_icelandic_commonwealth_desc: "Ruled by its democratic assembly, the Althingi, Iceland is a representative democracy with an elected lawspeaker and collective problem-solving, leading to a much more harmonious and peaceful society."
  constitutio_valdemariana_reform: "Constitutio Valdemariana"
  constitutio_valdemariana_reform_desc: "The Constitutio Valdemariana was a compromise between the nobles of Schleswig and Denmark that they would not be allowed to unite under one person. By co-ruling the powerful duchy of Schleswig together with our heir we both guarentee a powerful and loyal vassal, as well as a strong diplomatic corps from our experience in negotiating with our nobility."
  riksradet_norway_reform: "Riksradet of Norway"
@@ -1189,6 +1191,9 @@
  #GE Don't Know
  mechanic_enables_siberian_tribe_yes: "Siberian Tribe: §G-25%§! Development Cost in §YGlacial§! or §YArctic§! owned provinces"
  mechanic_enables_capitalism_yes: "Laissez Faire Capitalism: Adds §G+25.0%§! Goods Produced to the §YLiberalism§! Ability"
+
+#
+ mechanic_enables_parliament_win_yes: "Winning §YParliament Debates§! provides an additional §G5§! Republican Tradition."
 
  #Edicts
  edict_expanded_theme_system: "Expanded Theme System"
