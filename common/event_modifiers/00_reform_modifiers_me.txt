@@ -240,12 +240,6 @@ Foreign_Artists_9 = {
 Foreign_Artists_10 = {
 	prestige = 1
 }
-Kingdom_Of_Brazil = {
-	land_forcelimit_modifier = 1
-}
-Trade_Princes = {
-	merchants = 1
-}
 Militant_Orders = {
 	manpower_recovery_speed = 0.25
 	army_tradition = 1
@@ -283,21 +277,6 @@ Crusader_Order_10 = {
 Satrapy = {
 	local_manpower = 0.10
 	local_tax_modifier = 0.10
-}
-Crown_Of_Aragon = {
-	min_local_autonomy = 25
-}
-Kingdom_of_Aragon = {
-	local_manpower_modifier = 0.25
-}
-Principality_Of_Catalonia = {
-	province_trade_power_modifier = 0.25
-}
-City_Of_Valencia = {
-	trade_goods_size_modifier = 0.15
-}
-Kingdom_Of_Sicily = {
-	local_tax_modifier = 0.20
 }
 Peasant_Council = {
 	candidate_random_bonus = 2

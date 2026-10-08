@@ -270,7 +270,7 @@ country_decisions = {
 				primary_culture = catalan
 				culture_group = latin
 			}
-			NOT = { has_reform = consulate_of_the_sea_GE }
+			NOT = { has_reform = ge_consulate_of_the_sea }
 			OR = {
 				owns = 220
 				owns = 213
@@ -307,7 +307,7 @@ country_decisions = {
 			}
 		}
 		effect = {
-			add_government_reform = consulate_of_the_sea_GE
+			add_government_reform = ge_consulate_of_the_sea
 		}
 		major = yes
 		color = { 3 130 100 }

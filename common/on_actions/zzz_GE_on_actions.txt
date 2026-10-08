@@ -299,7 +299,7 @@ on_province_owner_change = {
 	ge_nations_of_the_republic_province_update = yes
 	ge_siberian_tribe_province_update = yes
 	ge_hwangog_province_update = yes
-	ge_Crown_Of_Aragon_province_update = yes
+	ge_enables_crown_of_aragon_update = yes
 	ge_Church_Poorhouses_province_update = yes
 	ge_Satrapy_province_update = yes
 	ge_Berber_Herders_province_update = yes
@@ -458,13 +458,13 @@ on_dependency_gained = {
 	FROM = { ge_country_religious_domination_update = yes }
 	FROM = { ge_country_such_waste_of_life_update = yes }
 	FROM = { ge_country_legacy_of_independence_update = yes }
-	FROM = { ge_country_kingdom_of_brazil_update = yes }
+	FROM = { ge_enables_kingdom_of_brazil_update = yes }
 	FROM = { ge_feudal_receipts_update = yes }
 	FROM = { ge_country_marcher_lords_update = yes }
 	FROM = { ge_country_mandala_peripher_update = yes }
 	FROM = { ge_country_solar_periphery_update = yes }
 	ge_country_arabian_horses_update = yes
-	ge_country_trade_princes_update = yes
+	ge_enables_trade_princes_update = yes
 	ge_country_swiss_guard_update = yes
 	ge_country_hansa_ties_update = yes
 	ge_country_Varangian_Guard_update = yes
@@ -476,13 +476,13 @@ on_dependency_lost = {
 	FROM = { ge_country_religious_domination_update = yes }
 	FROM = { ge_country_such_waste_of_life_update = yes }
 	FROM = { ge_country_legacy_of_independence_update = yes }
-	FROM = { ge_country_kingdom_of_brazil_update = yes }
+	FROM = { ge_enables_kingdom_of_brazil_update = yes }
 	FROM = { ge_feudal_receipts_update = yes }
 	FROM = { ge_country_marcher_lords_update = yes }
 	FROM = { ge_country_mandala_peripher_update = yes }
 	FROM = { ge_country_solar_periphery_update = yes }
 	ge_country_arabian_horses_update = yes
-	ge_country_trade_princes_update = yes
+	ge_enables_trade_princes_update = yes
 	ge_country_swiss_guard_update = yes
 	ge_country_hansa_ties_update = yes
 	ge_country_Varangian_Guard_update =yes

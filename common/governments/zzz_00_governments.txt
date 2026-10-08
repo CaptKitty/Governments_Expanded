@@ -139,16 +139,16 @@ monarchy = {
 				lithuania_warlord_duke
 				theocratic_autocracy
 				# beylik
-				kingdom_of_portugal
-				kingdom_of_portugal_and_azures
-				portuguese_empire_reform
-				crown_of_aragon
-				kingdom_of_castille_and_leon
-				crown_of_castille
-				hispanic_kingdom
-				iberian_enlightened_despotism_reform
+				ge_kingdom_of_portugal
+				ge_kingdom_of_portugal_and_azures
+				ge_portuguese_empire_reform
+				ge_crown_of_aragon
+				ge_kingdom_of_castille_and_leon
+				ge_crown_of_castille
+				ge_hispanic_kingdom
+				ge_iberian_enlightened_despotism_reform
 				ge_margrave_reform
-				consulate_of_the_sea_GE
+				ge_consulate_of_the_sea
 				office_of_lord_regent_reform
 				arch_duchy_reform
 				habsburg_monarchy_reform
@@ -269,11 +269,11 @@ monarchy = {
 				guild_dominance_reform
 				growth_signoria_reform
 				akritai_privileges_reform
-				portuguese_cortes_reform
+				ge_portuguese_cortes_reform
 				crusader_orders_reform
 				old_world_privileges_reform
-				#respect_union_reform
-				trade_princes_reform
+				#ge_respect_union_reform
+				ge_trade_princes_reform
 				dhimmi_nobles_reform
 				council_of_sheikhs_reform
 				muscovite_manorialism_reform
@@ -377,8 +377,8 @@ monarchy = {
 				faith_in_ancestors_spirits_reform
 				diocletian_reforms_reform
 				kyoho_reforms_reform
-				casa_de_contraction_reform
-				casa_de_india_reform
+				ge_casa_de_contraction_reform
+				ge_casa_de_india_reform
 				# oprichnina_reform_GE
 				constitutio_joachimica_reform
 				millet_reform
@@ -566,7 +566,7 @@ monarchy = {
 				expanded_devshirme_reform
 				tatar_mercenaries_reform
 				south_east_asian_elephants_reform
-				portugese_marines_reform
+				ge_portugese_marines_reform
 				#les_vieux_corps_reform
 				ge_compagnies_dordonnance_reform
 				ge_abolish_the_patronage_system_reform
@@ -584,9 +584,9 @@ monarchy = {
 				berber_cavalry_reform
 				mongol_ties_reform
 				subotai_lessons_reform
-				jinetes_reform
-				miquelet_militia_reform
-				royal_ordinances_reform
+				ge_jinetes_reform
+				ge_miquelet_militia_reform
+				ge_royal_ordinances_reform
 				#expand_the_immortals_reform
 				hessian_elite_jaegers_reform
 				warrior_kings_reform
@@ -1338,7 +1338,7 @@ republic = {
 				expanded_devshirme_reform
 				tatar_mercenaries_reform
 				south_east_asian_elephants_reform
-				portugese_marines_reform
+				ge_portugese_marines_reform
 				foreign_formation_regiments_reform
 				general_war_commissariat_reform_GE
 				gustavan_artillery_reform
@@ -1349,9 +1349,9 @@ republic = {
 				polish_national_guard_reform
 				henry_reforms_reform
 				berber_cavalry_reform
-				jinetes_reform
-				miquelet_militia_reform
-				royal_ordinances_reform
+				ge_jinetes_reform
+				ge_miquelet_militia_reform
+				ge_royal_ordinances_reform
 				#expand_the_immortals_reform
 				hessian_elite_jaegers_reform
 				warrior_kings_reform

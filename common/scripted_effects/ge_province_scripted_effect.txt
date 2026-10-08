@@ -262,7 +262,7 @@ ge_Church_Poorhouses_province_update = {
 	}
 }
 
-ge_Crown_Of_Aragon_province_update = {
+ge_enables_crown_of_aragon_update = {
 	if = {
 		limit = {
 			owner = {
@@ -271,12 +271,12 @@ ge_Crown_Of_Aragon_province_update = {
 			is_core = ARA
 		}
 		add_province_modifier = {
-			name = Crown_Of_Aragon
+			name = ge_crown_aragon
 			duration = -1
 		}
 	}
 	else = {
-		remove_province_modifier = Crown_Of_Aragon
+		remove_province_modifier = ge_crown_aragon
 	}
 }
 
@@ -718,7 +718,7 @@ ge_huaca_cults_province_update = {
 	}
 }
 
-ge_aragon_crown_union_province_update = {
+ge_enables_aragon_crown_union_update = {
 	if = {
 		limit = {
 			owner = {
@@ -730,7 +730,7 @@ ge_aragon_crown_union_province_update = {
 				area = aragon_area
 			}
 			add_province_modifier = {
-				name = Kingdom_of_Aragon
+				name = ge_enables_aragon_crown_union_kingdom_aragon
 				duration = -1
 			}
 		}
@@ -739,7 +739,7 @@ ge_aragon_crown_union_province_update = {
 				area = catalonia_area
 			}
 			add_province_modifier = {
-				name = Principality_Of_Catalonia
+				name = ge_enables_aragon_crown_union_principality_catalonia
 				duration = -1
 			}
 		}
@@ -748,7 +748,7 @@ ge_aragon_crown_union_province_update = {
 				area = valencia_area
 			}
 			add_province_modifier = {
-				name = City_Of_Valencia
+				name = ge_enables_aragon_crown_union_city_valencia
 				duration = -1
 			}
 		}
@@ -760,16 +760,16 @@ ge_aragon_crown_union_province_update = {
 				}
 			}
 			add_province_modifier = {
-				name = Kingdom_Of_Sicily
+				name = ge_enables_aragon_crown_union_kingdom_sicily
 				duration = -1
 			}
 		}
 	}
 	else = {
-		remove_province_modifier = Kingdom_of_Aragon
-		remove_province_modifier = Principality_Of_Catalonia
-		remove_province_modifier = City_Of_Valencia
-		remove_province_modifier = Kingdom_Of_Sicily
+		remove_province_modifier = ge_enables_aragon_crown_union_kingdom_aragon
+		remove_province_modifier = ge_enables_aragon_crown_union_principality_catalonia
+		remove_province_modifier = ge_enables_aragon_crown_union_city_valencia
+		remove_province_modifier = ge_enables_aragon_crown_union_kingdom_sicily
 	}
 }
 

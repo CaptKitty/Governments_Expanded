@@ -1,0 +1,85 @@
+﻿l_english:
+# Tier 1
+ ge_crown_of_aragon: "Crown of Aragon"
+ ge_crown_of_aragon_desc: "The Crown of Aragon was a composite monarchy of nearly a dozen kingdoms; The Kingdom of Aragon, The Principality of Catalonia, The City of Valencia, The Kingdom of Majorca, The Kingdom of Sardinia, the Kingdom of Sicily, The Kingdom of Naples, the Duchy of Athens, the Duchy of Neopatria, the County of Gevaudan, the County of Provence and the principality of Andorra. This extreme fragmentary state of feudalism is both hard to manage for a ruler, leaving its many subject states relatively free and prosperous, as well as rather happy about the lack of noble or royal control."
+ ge_crown_of_castille: "Crown of Castille"
+ ge_crown_of_castille_desc: "The Crown of Castille is the union of the Castillian, Aragonese and Grenadan Crowns upon a single monarch's head. The dream of the Iberian nobles of both the major Crowns and that of the Reconquista have been achieved."
+ ge_al_dawlah_al_thalathiyah_reform: "Al-Dawlah al-Thalāthīyah Reform"
+ ge_al_dawlah_al_thalathiyah_reform_desc: "The foundation of the Umayyad or Al-Andalus Caliphate's success lay in its societal and governmental structure, which was effectively divided into three main groups: Muslims, Jews, and Christians. While these groups were further divided by ethnicity and language, they formed the primary estates of the caliphate. Technically, there were four estates, as the royal house and court were considered a faction of their own, overseeing and holding authority over the three main groups. At the core of this structure, the Muslims, both the true believers and the converts or Muladies, formed the largest block, with their leaders being the imams. The second group, the Jews, were referred to as \"Magi\", a term the Umayyads used to describe the priesthood of Zoroastrianism. The Jews were considered the wise men of the West and held a significant place in the societal hierarchy. Lastly, the Christians, known as Mozarabs, were the Dhimmi, a protected group that existed under Islamic rule. These three groups made up the political powerhouses of Al-Andalus. The Islamic block, led by the imams, was the most influential. The Jews, or Magi, were led by the rabbis and house fathers, while the Christian nobility led the Dhimmi community, as the priesthood's survival depended on their protection. The court, however, was a separate faction representing the nobility at large, regardless of religious affiliation. Within the court, loyalty and service to the caliph were the highest currencies, and individuals vied for favor through demonstrated loyalty and acts of service. It was within this court that the true political power resided, where loyalty to the caliph was paramount above all else."
+ ge_hispanic_kingdom: "Hispanic Kingdom"
+ ge_hispanic_kingdom_desc: "The Spanish Empire, historically known as the Hispanic Monarchy  was one of the largest empires in history. From the late 15th century to the early 19th, Spain controlled a huge overseas territory in the New World and the Asian archipelago of the Philippines, what they called \"The Indies\" . It also included territories in Europe, Africa and Oceania. The Spanish Empire has been described as the first global empire in history, a description also given to the Portuguese Empire. It was the world's most powerful empire during the 16th and first half of the 17th centuries, reaching its maximum extension in the 18th century. The Spanish Empire was the first empire to be called 'the empire on which the sun never sets'."
+ ge_iberian_enlightened_despotism_reform: "Enlightened Despotism"
+ ge_iberian_enlightened_despotism_reform_desc: "The ideas of the Age of Enlightenment came to Spain in the eighteenth century with the new Bourbon dynasty, following the death of the last Habsburg monarch, Charles II, in 1700. This period in Spanish history is often referred to as Bourbon Spain. \"Like the Spanish Enlightenment, the Spanish Bourbon monarchs were imbued with Spain's Catholic identity.\" The period of reform and 'enlightened despotism' under the Bourbons focused on centralizing and modernizing the Spanish government, and improvement of infrastructure, beginning with the rule of King Charles III and the work of his minister, José Moñino, count of Floridablanca. In the political and economic sphere, the crown implemented a series of changes, collectively known as the Bourbon reforms, which were aimed at making the overseas empire more prosperous to the benefit of Spain."
+ ge_kingdom_of_castille_and_leon: "Kingdom of Castille and Leon"
+ ge_kingdom_of_castille_and_leon_desc: "The Kingdom of Castille and Leon was a union of the Castillian and Leonese realms, fused into a united realm. however, the kings of Castille and Leon struggled to reign in the powerful lords and militant holy orders, even failing at times."
+ ge_kingdom_of_portugal: "Kingdom of Portugal"
+ ge_kingdom_of_portugal_desc: "From the chaos of the Re-Conquista our great leader Afonso the Conqueror emerged, after a war to claim his inheritance he became a pious servant of the holy see, and spend much of his life reclaiming the western lands of Iberia in the name of the Lord."
+ ge_kingdom_of_portugal_and_azures: "Portuguese Thassalocracy"
+ ge_kingdom_of_portugal_and_azures_desc: "John 2 'The Perfect' restored the policies of Atlantic exploration, reviving the work of his great-uncle, Henry the Navigator. The Portuguese explorations were his main priority in government, pushing south the known coast of Africa with the purpose of discovering the maritime route to India and breaking into the spice trade."
+ ge_portuguese_empire_reform: "Portuguese Empire"
+ ge_portuguese_empire_reform_desc: "A strong monarch rules this Empire with the support of it's subjects. The nobility,clergy and the commoners all bend their knee to the King. In return the King chooses what is best for our nation and it's people.  We are situated in every continet of the world. All the way from Rio de Janeiro to Macau. Every corner of the Empire is considered an integral part of our borders and territory and it's citizens are all Portuguese, wether they speak another language or have different customs, we are all Portuguese under this banner. We shall lead the civilizing mission in our territory and encompass pro-miscegenation towards our subject unlike certain Empires that rely on racial segragation to properly function. Such has been noted in Brazil with our rapid expansion in the South American colony and it's rapid Development making it our most important colony, we must tread carefully for it's loss can cause a devastating blow on our national integrity and economy. Our colonies provide the raw materials needed to further develop our trade and economy. As such we shall expand our hold in Africa and expand into the deepest lands of Brazil. These characteristics are the bases of the Portugues Empire which shall show the world our glory and pride."
+
+
+# Tier 2
+
+
+# Tier 3
+
+
+# Tier 4
+
+
+# Tier 5
+
+
+# Tier 6
+
+
+# Tier 7
+
+
+# Tier 8
+
+
+# Tier 9
+
+
+# Tier 10
+
+
+# Mechanics
+ mechanic_enables_aragon_crown_union_yes: "Aragonese Crown Union: §G+15%§! Goods Size in §MValencia Area§!, §G+25%§! Manpower in §MAragon Area§!, §G+25%§! Trade Power in §MCatalonia Area§! and §G+20%§! Tax in §MSicily Area§!"
+
+ mechanic_enables_cortes_yes: "Enable The Cortes Privilege for the Noble Estate, Giving influence and resources depending on who to support."
+
+ mechanic_enables_ge_crown_of_aragon_yes: "Crown of Aragon: §R+25%§! Min Autonomy in Aragonese provinces."
+
+ mechanic_enables_kingdom_of_brazil_yes: "Kingdom of Brazil: Brazil gets §G+100%§! Force Limit Modifier."
+
+ mechanic_enables_trade_princes_yes: "Trade Princes: §G+1§! Merchant if you control an Aragonese or Catalonian subject."
+
+
+# Tooltips
+
+
+# Modifiers
+ ge_crown_aragon: "Mechanic §YCrown of Aragon§!"
+ desc_ge_crown_aragon: ""
+
+ ge_enables_aragon_crown_union_kingdom_aragon: "Mechanic §YKingdom of Aragon§!"
+ desc_ge_enables_aragon_crown_union_kingdom_aragon: ""
+ ge_enables_aragon_crown_union_principality_catalonia: "Mechanic §YPrincipality of Catalonia§!"
+ desc_ge_enables_aragon_crown_union_principality_catalonia: ""
+ ge_enables_aragon_crown_union_kingdom_sicily: "Mechanic §YKingdom of Sicily§!"
+ desc_ge_enables_aragon_crown_union_kingdom_sicily: ""
+ ge_enables_aragon_crown_union_city_valencia: "Mechanic §YCity of Valencia§!"
+ desc_ge_enables_aragon_crown_union_city_valencia: ""
+
+ ge_kingdom_brazil: "Kingdom of Brazil"
+ desc_ge_kingdom_brazil: ""
+
+ ge_trade_princes: "Trade Princes"
+ desc_ge_trade_princes: ""
+
+# Triggered Modifiers
+
