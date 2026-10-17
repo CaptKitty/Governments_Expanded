@@ -463,3 +463,125 @@ GE_dukes_of_brittany_overseas_adventures_scaled_admiral = {
 		create_admiral = { tradition = 5 }
 	}
 }
+
+GE_clear_flag = {
+	clr_country_flag = GE_integrating_$culture$
+}
+GE_clear_integration_flag = {
+	GE_execute_effect_for_every_culture = {
+		effect = GE_clear_flag
+	}
+}
+GE_execute_effect_for_every_culture = {
+	$effect$ = { culture = flemish }
+	$effect$ = { culture = wallonian }
+	$effect$ = { culture = dutch }
+	$effect$ = { culture = hessian }
+}
+
+GE_cultural_unity_integrated = {
+	GE_execute_effect_for_every_culture = {
+		effect = GE_cultural_unity_integrated_specific
+	}
+
+	hidden_effect = {
+		GE_clear_integration_flag = yes
+		regenerate_government_mechanics = yes
+
+		set_government_power = {
+			mechanic_type = cultural_disunity_mechanic
+			power_type = cultural_disunity
+			value = 0
+		}
+	}
+}
+
+GE_cultural_unity_integrated_specific = {
+	if = {
+		limit = {
+			has_country_flag = GE_integrating_$culture$
+		}
+		set_country_flag = GE_integrated_$culture$
+		GE_integrated_culture = { culture = $culture$ }
+	}
+}
+
+GE_integrated_culture = {
+	if = {
+		limit = {
+			accepted_culture = $culture$
+		}
+		add_country_modifier = {
+			name = GE_$culture$_modifier
+			duration = -1
+			desc = GE_until_demotion
+		}
+	}
+	else = {
+		add_country_modifier = {
+			name = GE_$culture$_modifier
+			duration = -1
+			desc = GE_until_demotion
+		}
+		add_accepted_culture = $culture$
+	}
+}
+
+
+GE_on_culture_promoted = {
+	GE_execute_effect_for_every_culture = {
+		effect = GE_on_specific_culture_promoted
+	}
+}
+
+GE_on_specific_culture_promoted = {
+	if = {
+		limit = {
+			accepted_culture = $culture$
+			has_country_flag = GE_integrated_$culture$
+			NOT = { has_country_modifier = GE_$culture$_modifier }
+		}
+		add_country_modifier = {
+			name = GE_$culture$_modifier
+			duration = -1
+			desc = GE_until_demotion
+		}
+	}
+}
+
+GE_on_culture_demoted = {
+	GE_execute_effect_for_every_culture = {
+		effect = GE_on_specific_culture_demoted
+	}
+}
+
+GE_on_specific_culture_demoted = {
+	if = {
+		limit = {
+			OR = {
+				NOT = { has_country_flag = GE_integrated_$culture$ }
+				NOT = { accepted_culture = $culture$ }
+			}
+			has_country_modifier = GE_$culture$_modifier
+		}
+		remove_country_modifier = GE_$culture$_modifier
+	}
+}
+
+GE_start_integrating = {
+	hidden_effect = {
+		GE_clear_integration_flag = yes
+	}
+
+	custom_tooltip = GE_begin_integrating
+
+	set_country_flag = GE_integrating_$culture$
+
+	hidden_effect = {
+		regenerate_government_mechanics = yes
+		unfreeze_government_power = {
+			mechanic_type = cultural_disunity_mechanic
+			power_type = cultural_disunity
+		}
+	}
+}

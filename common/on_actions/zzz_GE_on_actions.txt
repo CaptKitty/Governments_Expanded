@@ -380,6 +380,7 @@ on_culture_promoted = {
 		reform_me_events.212
 		reform_me_events.238
 	}
+	GE_on_culture_promoted = yes
 }
 
 on_culture_demoted = {
@@ -389,6 +390,7 @@ on_culture_demoted = {
 	every_owned_province = { ge_huaca_cults_province_update = yes }
 	every_owned_province = { ge_bridge_between_worlds_update = yes }
 	ge_country_unite_the_malay_update = yes
+	GE_on_culture_demoted = yes
 	events = {
 		reform_me_events.212
 		reform_me_events.238

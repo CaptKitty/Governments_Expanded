@@ -16,8 +16,10 @@ ge_al_dawlah_al_thalathiyah_reform = {
 		meritocracy = 1
 		republican_tradition = 0.30
 	}
-	government_abilities = {
-		convivencia_factions_mechanic
+	factions = {
+		GE_magi
+		GE_ibad_al_nur
+		GE_mozarabs
 	}
 }
 

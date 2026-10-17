@@ -1,4 +1,46 @@
 #T1
+ge_neo_burgundian_state_reform = {
+	icon = peasant_republic
+	allow_normal_conversion = yes
+	lock_level_when_selected = yes
+	potential = {
+		OR = {
+			primary_culture = burgundian
+			primary_culture = dutch
+			primary_culture = flemish
+			primary_culture = wallonian
+			has_reform = ge_neo_burgundian_state_reform
+		}
+	}
+	trigger = {
+		NOT = {
+			has_reform = burgundian_state_reform
+		}
+	}
+	modifiers = {
+		max_absolutism = -40
+		parliament_backing_chance = -0.35
+		reform_progress_growth = -0.15
+		diplomatic_upkeep = 2
+		global_autonomy = -0.025
+	}
+	government_abilities = {
+		cabinet_mechanic
+	}
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+		}
+		has_parliament = yes
+	}
+	ai = {
+		factor = 100
+	}
+
+}
 ge_upstalsboom_league_reform = {
 	icon = peasant_republic
 	allow_normal_conversion = yes
@@ -54,6 +96,57 @@ ge_belforten_en_hoeven_reform = {
 	}
 	custom_attributes = {
 		no_mercantilism_loss_from_privilege = yes
+	}
+	ai = {
+		factor = 100
+	}
+}
+ge_communities_regions_reform = {
+	icon = german_cultural_disunity_reform
+	allow_normal_conversion = yes
+	lock_level_when_selected = yes
+	potential = {
+		GE_num_of_cultures_accepted = { amount = 4 }
+	}
+	trigger = {
+		GE_num_of_cultures_accepted = { amount = 4 }
+	}
+	modifiers = {
+		manpower_in_accepted_culture_provinces = 0.20
+		promote_culture_cost = -0.25
+	}
+	factions = {
+		GE_flemish
+		GE_german
+		GE_walloon
+	}
+	ai = {
+		factor = 100
+	}
+}
+ge_language_question_reform = {
+	icon = german_cultural_disunity_reform
+	allow_normal_conversion = yes
+	lock_level_when_selected = yes
+	potential = {
+		has_country_flag = hie_blg_ideas_unlocked
+	}
+	trigger = { }
+	modifiers = {
+		num_accepted_cultures = -2
+		promote_culture_cost = 0.50
+	}
+	removed_effect = {
+		hidden_effect = {
+			clr_country_flag = hie_blg_ideas_unlocked
+			remove_country_modifier = GE_flemish_modifier
+			remove_country_modifier = GE_wallonian_modifier
+			remove_country_modifier = GE_dutch_modifier
+			remove_country_modifier = GE_hessian_modifier
+		}
+	}
+	government_abilities = {
+		cultural_disunity_mechanic
 	}
 	ai = {
 		factor = 100
@@ -391,7 +484,7 @@ ge_regents_reform = {
 	removed_effect = {
 		hidden_effect = {
 			every_owned_province = {
-				remove_province_modifier = Regent_Investments
+				remove_province_modifier = ge_regent_investments
 			}
 		}
 	}

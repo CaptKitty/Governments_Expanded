@@ -1,0 +1,129 @@
+cabinet_mechanic = {
+	alert_icon_gfx = GFX_cabinet_mechanic_alert_icon
+	alert_icon_index = 1
+	available = {
+		always = yes
+	}
+
+	powers = {
+		cabinet_consensus = {
+			min = 0
+			max = 100
+			default = 0
+			scaled_modifier = {
+				modifier = {
+					global_unrest = -4
+					stability_cost_modifier = -0.33
+				}
+			}
+			scaled_modifier = {
+				trigger = {
+					has_dlc = "Mandate of Heaven"
+				}
+				modifier = {
+					monthly_splendor = 4
+				}
+			}
+			on_max_reached = {
+				custom_tooltip = halves_parliament_bribe_costs_tt
+				set_country_flag = halved_parliament_bribe_costs
+			}
+		}
+	}
+
+	interactions = {
+		cabinet_mechanic_consult_cabinet_interior = {
+			gui = cabinet_mechanic
+			center = no
+			cost_type = cabinet_consensus
+			cooldown_years = 10
+			trigger = {
+				has_government_power = {
+					mechanic_type = cabinet_mechanic
+					power_type = cabinet_consensus
+					value = 50
+				}
+			}
+			effect = {
+				add_government_power = {
+					mechanic_type = cabinet_mechanic
+					power_type = cabinet_consensus
+					value = -50
+				}
+				add_country_modifier = {
+					name = cabinet_mecanic_interior_help
+					duration = 3650
+				}
+				country_event = {
+					id = GE_Mechanic_Events.1
+				}
+				hidden_effect = { clr_country_flag = halved_parliament_bribe_costs }
+			}
+			ai_chance = {
+				factor = 33
+			}
+		}
+		cabinet_mechanic_consult_cabinet_exterior = {
+			gui = cabinet_mechanic
+			center = no
+			cost_type = cabinet_consensus
+			cooldown_years = 10
+			trigger = {
+				has_government_power = {
+					mechanic_type = cabinet_mechanic
+					power_type = cabinet_consensus
+					value = 50
+				}
+			}
+			effect = {
+				add_government_power = {
+					mechanic_type = cabinet_mechanic
+					power_type = cabinet_consensus
+					value = -50
+				}
+				add_country_modifier = {
+					name = cabinet_mecanic_exterior_help
+					duration = 3650
+				}
+				country_event = {
+					id = GE_Mechanic_Events.2
+				}
+				hidden_effect = { clr_country_flag = halved_parliament_bribe_costs }
+			}
+			ai_chance = {
+				factor = 33
+			}
+		}
+		cabinet_mechanic_consult_cabinet_defense = {
+			gui = cabinet_mechanic
+			center = no
+			cost_type = cabinet_consensus
+			cooldown_years = 10
+			trigger = {
+				has_government_power = {
+					mechanic_type = cabinet_mechanic
+					power_type = cabinet_consensus
+					value = 50
+				}
+			}
+			effect = {
+				add_government_power = {
+					mechanic_type = cabinet_mechanic
+					power_type = cabinet_consensus
+					value = -50
+				}
+				add_country_modifier = {
+					name = cabinet_mecanic_defense_help
+					duration = 3650
+				}
+				country_event = {
+					id = GE_Mechanic_Events.3
+				}
+				hidden_effect = { clr_country_flag = halved_parliament_bribe_costs }
+			}
+			ai_chance = {
+				factor = 33
+			}
+		}
+	}
+}

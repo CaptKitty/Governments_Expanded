@@ -556,3 +556,103 @@
  desc_ge_dukes_of_brittany_black_riders: ""
  ge_dukes_of_brittany_mastering_waves: "Mastering the Waves"
  desc_ge_dukes_of_brittany_mastering_waves: ""
+
+# Cabinet Mechanic
+ ability_cabinet_mechanic: "Cabinet"
+ cabinet_consensus: "Cabinet Consensus"
+ cabinet_consensus_gain_modifier: "Cabinet Consensus Modifier"
+ monthly_cabinet_consensus: "Monthly Cabinet ConsensusModifier"
+
+ cabinet_mechanic_consult_cabinet_interior: "Consult Cabinet of the Interior"
+ cabinet_mechanic_consult_cabinet_interior_desc: ""
+ cabinet_mechanic_consult_cabinet_exterior: "Consult Cabinet of the Exterior"
+ cabinet_mechanic_consult_cabinet_exterior_desc: ""
+ cabinet_mechanic_consult_cabinet_defense: "Consult Cabinet of the Defense"
+ cabinet_mechanic_consult_cabinet_defense_desc: ""
+
+ ## Events
+ GE_Mechanic_Events.1.T: "Internal Agenda"
+ GE_Mechanic_Events.1.D: "The din of debating MPs swirled around [Root.Monarch.GetName], the Prime Minister attempting in vain to quell the hubbub, his cries of “Ordnung!” going unheeded by the predominantly French-speaking gathering and simply adding to the chaos. Finally, the [Root.Monarch.GetTitle] had enough. “Silence! Stilte! Stille!” The rarity of this behavior quickly awed the gathering into quiet. “With the indulgence given that we are still yet a new country, gentlemen, if we are to succeed as one we must conduct our affairs with respect and order. Now, shall we begin again?” The MPs nodded in acquiescence. In order to efficiently manage a country in a rapidly changing world, it was imperative that a specified council be appointed to handle specific issues facing the nation, rather than leaving the management to… whatever this motley gathering could be called. Which council would best suit the needs of the state?"
+ GE_Mechanic_Events.1.OPT1: "We must check our books"
+ GE_Mechanic_Events.1.OPT2: "New workers for the country"
+ GE_Mechanic_Events.1.OPT3: "Let us build more!"
+
+ GE_Mechanic_Events.2.T: "Foreign Policy Discussions"
+ GE_Mechanic_Events.2.D: "The quiet clinks of porcelain and silverware contrasted greatly with the organized chaos of the Parliament chambers. For today, separated from the game of politics, the leaders of the realm, the monarch and the Prime Minister, would decide the nation's diplomatic situation. Chosen from the monarch's favored party in Parliament, yet vested with authority counterbalancing royal power, the Prime Minister was keenly aware of the importance of both their positions. Despite being a political ally of the ruler, he himself felt the slight tension in the room as both positions routinely jockeyed for influence in the government, each balancing and containing the other in a delicate dance. Over hot chocolate and refreshments, the opulence of the palace parlor belied the seriousness of today's conversation. It was clear that, in order to avoid personal tension and still run things efficiently, the [Root.Monarch.GetTitle] and the Prime Minister would have to agree on which ministry to emphasize. Which should it be?"
+ GE_Mechanic_Events.2.OPT1: "Entrust new Diplomats"
+ GE_Mechanic_Events.2.OPT2: "Trade must flow!"
+ GE_Mechanic_Events.2.OPT3: "Invest in the colonial territories"
+
+ GE_Mechanic_Events.3.T: "Council of War"
+ GE_Mechanic_Events.3.D: "One after another, the lords and high ministers of the realm pulled up to Coudenberg Palace. Some young and more gallant nobles rode in on their own horses, decorative swords at their side, to be surrendered prior to being in the same room as the king, of course. Other more experienced wise members of the parliament or general staff arrived in carriages. One by one, the lords and ministers of war gathered. The lords, still with great landholdings and martial experience, honored their ancient duties to the realm in assisting the king in matters of war. The ministers, heralding a new age of national armies and centralized reform, complemented the nobles by creating a more efficient and effective system. On the agenda today? A new council is to be convened of the gathered dignitaries. This council, though temporary, would be vital for the near future of the state, as its focus will determine what the military's strengths and weaknesses are in the coming conflicts."
+ GE_Mechanic_Events.3.OPT1: "Enlist new engineers!"
+ GE_Mechanic_Events.3.OPT2: "Assemble the army"
+ GE_Mechanic_Events.3.OPT3: "Hoist the colours!"
+
+ ## Modifiers
+ cabinet_mecanic_interior_help: "Help from the Cabinet of Interior"
+ desc_cabinet_mecanic_interior_help: ""
+ cabinet_mecanic_exterior_help: "Help from the Cabinet of Exterior"
+ desc_cabinet_mecanic_exterior_help: ""
+ cabinet_mecanic_defense_help: "Help from the Cabinet of Defense"
+ desc_cabinet_mecanic_defense_help: ""
+
+ ge_cabinet_mechanic_ministry_finance: "Ministry of Finance"
+ desc_ge_cabinet_mechanic_ministry_finance: ""
+ ge_cabinet_mechanic_ministry_labor: "Ministry of Labor"
+ desc_ge_cabinet_mechanic_ministry_labor: ""
+ ge_cabinet_mechanic_ministry_infrastructure: "Ministry of Infrastructure"
+ desc_ge_cabinet_mechanic_ministry_infrastructure: ""
+
+ ge_cabinet_mechanic_ministry_diplomacy: "Mnistry of Diplomacy"
+ desc_ge_cabinet_mechanic_ministry_diplomacy: ""
+ ge_cabinet_mechanic_ministry_foreign_trade: "Ministry of Foreign Trade"
+ desc_ge_cabinet_mechanic_ministry_foreign_trade: ""
+ ge_cabinet_mechanic_ministry_colonial_affairs: "Ministry of Colonial Affairs"
+ desc_ge_cabinet_mechanic_ministry_colonial_affairs: ""
+
+ ge_cabinet_mechanic_ministry_military_engineering: "Ministry of Military Engineering"
+ desc_ge_cabinet_mechanic_ministry_military_engineering: ""
+ ge_cabinet_mechanic_ministry_army: "Ministry of Army"
+ desc_ge_cabinet_mechanic_ministry_army: ""
+ ge_cabinet_mechanic_ministry_navy: "Ministry of Navy"
+ desc_ge_cabinet_mechanic_ministry_navy: ""
+
+# Belgian Cultural Disunity
+ ability_cultural_disunity_mechanic: "Belgian Cultural Disunity Mechanic"
+ cultural_disunity: "Belgian Cultural Disunity"
+ monthly_cultural_disunity: "Monthly Belgian Cultural Disunity"
+ cultural_disunity_gain_modifier: "Belgian Cultural Disunity Modifier"
+
+ GE_Mechanic_Events.9.T: "Bringing Belgium Together"
+ GE_Mechanic_Events.9.D: "Centuries of fragmentation and decentralization have brought upon many stark regional differences within Belgium. Local rivalries prevail and a man from Flanders hardly agrees with a man from Wallonia. It's time to standardize the Belgian Tongue and reconcile the feuding folk. It's time to bring the age of disunity to an end."
+ GE_Mechanic_Events.9.flemish: "Let us integrate the §YFlemish§!"
+ GE_Mechanic_Events.9.wallonian: "Let us integrate the §YWallonian§!"
+ GE_Mechanic_Events.9.dutch: "Let us integrate the §YDutch§!"
+ GE_Mechanic_Events.9.hessian: "Let us integrate the §YRhenish§!"
+
+ GE_Mechanic_Events.10.T: "Culture Integrated"
+ GE_Mechanic_Events.10.D: "It is said that each day there is a German family that resolves their disputes. It is said that under our rule, a German started to trust their neighbor. Today we can proudly say that another family, an entire culture even, has finally been integrated into the greater family."
+ GE_Mechanic_Events.10.OPT1: "Great News."
+
+ # Modifiers
+ GE_can_integrate_a_culture: "There is a §YGermanic§! Culture that can be §YIntegrated§!."
+ GE_not_integrating_a_culture: "Is not currently §YIntegrating§! a culture."
+ GE_until_demotion: "until this §YCulture§! is demoted"
+
+ GE_flemish_modifier: "Integrated Culture §YFlemish§!"
+ GE_flemish_modifier_desc: ""
+ GE_wallonian_modifier: "Integrated Culture §YWallonian§!"
+ GE_wallonian_modifier_desc: ""
+ GE_dutch_modifier: "Integrated Culture §YDutch§!"
+ GE_dutch_modifier_desc: ""
+ GE_hessian_modifier: "Integrated Culture §YRhenish§!"
+ GE_hessian_modifier_desc: ""
+
+ # Tooltips
+ GE_begin_integrating: "We will begin integrating the chosen culture. The process will be completed when §YCultural Disunity§! reaches §Y100.0§!."
+ GE_accepted_cultures: "\nNumber of Cultures Integrated with §YCultural Disunity§!"
+
+ #Decision
+ GE_pick_culture_to_integrate_title: "Choose Culture to Integrate"
+ GE_pick_culture_to_integrate_desc: "We are currently not integrating any culture. It's best we changed that."

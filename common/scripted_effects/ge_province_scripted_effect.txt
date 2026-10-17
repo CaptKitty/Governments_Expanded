@@ -73,12 +73,12 @@ ge_Regent_Investments_province_update = {
 			}
 		}
 		add_province_modifier = {
-			name = Regent_Investments
+			name = ge_regent_investments
 			duration = -1
 		}
 	}
 	else = {
-		remove_province_modifier = Regent_Investments
+		remove_province_modifier = ge_regent_investments
 	}
 }
 

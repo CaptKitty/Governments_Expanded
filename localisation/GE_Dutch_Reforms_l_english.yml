@@ -1,11 +1,17 @@
 ﻿l_english:
 # Tier 1
+ ge_neo_burgundian_state_reform: "Neo-Burgundian State"
+ ge_neo_burgundian_state_reform_desc: ""
  ge_upstalsboom_league_reform: "Upstalsboom League"
  ge_upstalsboom_league_reform_desc: "Our exemption from feudal hierarchy makes us one of the few places on earth where true rule by the people is enforced. Neither a monarchy nor a traditional republic, we instead govern ourselves as a league of equal freemen who will fight to the death to defend said freedom."
 
 # Tier 2
  ge_belforten_en_hoeven_reform: "Belforten en Hoeven"
  ge_belforten_en_hoeven_reform_desc: "The exceptional levels of urbanization that grew up in Flanders and the surrounding regions, and the wealth from trade and industry that fueled it, gave these cities exceptionally strong bargaining power in obtaining rights and other concessions from feudal lords. The charters of rights were jealously guarded by the cities they were granted to, with the wealthiest of them often building fortified towers (belforten) in their center specifically to house the charters behind lock and key as well as protect the city governments. In smaller towns and rural areas (hoeven), protective measures were less elaborate for their rights, but no less important to the people."
+ ge_communities_regions_reform: "Communities and Regions"
+ ge_communities_regions_reform_desc: "We are a federal state, composed of communities and regions"
+ ge_language_question_reform: "The Language Question"
+ ge_language_question_reform_desc: ""
  ge_moedernegotie_reform: "De Moedernegotie"
  ge_moedernegotie_reform_desc: "The \"Moedernegotie\", also known as the 'Mother of all Trade', was the massive flow of basic goods from the baltic to the Dutch shores, from where it would feed the Dutch markets and citizenry, Polish grain, Livonian wood and Swedish steel would be traded as far as France or the Portuguese cities. This Trade fed the early republic and major parts of western europe and youngsters sailing on these reliable voyages was the cradle of many a sailor or merchant."
  ge_stadskeure_reform: "Stadskeure"
@@ -61,10 +67,24 @@
 # Tooltips
 
 # Modifiers
- Regent_Investments: "Regent Investments"
- desc_Regent_Investments: ""
+ ge_regent_investments: "Regent Investments"
+ desc_ge_regent_investments: ""
 
  ge_anti_heresy_zeal_modifier: "Anti-Heresy Zeal"
  desc_ge_anti_heresy_zeal_modifier: ""
 
 # Triggered Modifiers
+
+# Factions
+ GE_flemish: "Flemish Faction"
+ GE_flemish_influence: "Flemish Influence"
+ GE_flemish_MECHANIC_TOOLTIP: "Flemish"
+ GE_flemish_FACTION_DESC: "The oldest Institution of th Roman Empire, the diplomats and the Flemish represent the people and is concerned with the economic well-being of the country."
+ GE_german: "Germany Faction"
+ GE_german_influence: "Germanic Influence"
+ GE_german_MECHANIC_TOOPTIP: "Germany"
+ GE_german_FACTION_DESC: "The Germany, with the Ecumenial Patriarch at its head deals with stability and administering the empire with a Christian vision."
+ GE_walloon: "Wallonian Faction"
+ GE_walloon_influence: "Wallonian Influence"
+ GE_walloon_MECHANIC_TOOLTIP: "Wallonian"
+ GE_walloon_FACTION_DESC: "The Wallonian has always been an important aspect of the empire, not just militarily, but also politically. The Wallonian firmly believes that might makes right, and that the empire needs to be the mightiest."

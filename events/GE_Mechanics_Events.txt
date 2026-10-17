@@ -1,0 +1,201 @@
+namespace = GE_Mechanic_Events
+
+# Internal Agenda
+country_event = {
+	id = GE_Mechanic_Events.1
+	title = GE_Mechanic_Events.1.T
+	desc = GE_Mechanic_Events.1.D
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = GE_Mechanic_Events.1.OPT1
+		ai_chance = { factor = 33 }
+
+		add_country_modifier = {
+			name = ge_cabinet_mechanic_ministry_finance
+			duration = 3650
+		}
+	}
+
+	option = {
+		name = GE_Mechanic_Events.1.OPT2
+		ai_chance = { factor = 33 }
+
+		add_country_modifier = {
+			name = ge_cabinet_mechanic_ministry_labor
+			duration = 3650
+		}
+	}
+
+	option = {
+		name = GE_Mechanic_Events.1.OPT3
+		ai_chance = { factor = 33 }
+
+		add_country_modifier = {
+			name = ge_cabinet_mechanic_ministry_infrastructure
+			duration = 3650
+		}
+	}
+}
+
+# The Kingdom of God on Earth
+country_event = {
+	id = GE_Mechanic_Events.2
+	title = GE_Mechanic_Events.2.T
+	desc = GE_Mechanic_Events.2.D
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = GE_Mechanic_Events.2.OPT1
+		ai_chance = { factor = 33 }
+
+		add_country_modifier = {
+			name = ge_cabinet_mechanic_ministry_diplomacy
+			duration = 3650
+		}
+	}
+
+	option = {
+		name = GE_Mechanic_Events.2.OPT2
+		ai_chance = { factor = 33 }
+
+		add_country_modifier = {
+			name = ge_cabinet_mechanic_ministry_foreign_trade
+			duration = 3650
+		}
+	}
+
+	option = {
+		name = GE_Mechanic_Events.2.OPT3
+		ai_chance = { factor = 33 }
+
+		add_country_modifier = {
+			name = ge_cabinet_mechanic_ministry_colonial_affairs
+			duration = 3650
+		}
+	}
+}
+
+# Accepting Christianity
+country_event = {
+	id = GE_Mechanic_Events.3
+	title = GE_Mechanic_Events.3.T
+	desc = GE_Mechanic_Events.3.D
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = GE_Mechanic_Events.3.OPT1
+		ai_chance = { factor = 33 }
+
+		add_country_modifier = {
+			name = ge_cabinet_mechanic_ministry_military_engineering
+			duration = 3650
+		}
+	}
+
+	option = {
+		name = GE_Mechanic_Events.3.OPT2
+		ai_chance = { factor = 33 }
+
+		add_country_modifier = {
+			name = ge_cabinet_mechanic_ministry_army
+			duration = 3650
+		}
+	}
+
+	option = {
+		name = GE_Mechanic_Events.3.OPT3
+		ai_chance = { factor = 33 }
+
+		add_country_modifier = {
+			name = ge_cabinet_mechanic_ministry_navy
+			duration = 3650
+		}
+	}
+}
+
+country_event = {
+	id = GE_Mechanic_Events.9
+	title = GE_Mechanic_Events.9.T
+	desc = GE_Mechanic_Events.9.D
+	picture = ARTWORK_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = GE_Mechanic_Events.9.flemish
+		ai_chance = { factor = 1 }
+		trigger = {
+			GE_can_integrate_culture = { culture = flemish }
+		}
+
+		GE_start_integrating = { culture = flemish }
+	}
+
+	option = {
+		name = GE_Mechanic_Events.9.wallonian
+		ai_chance = { factor = 1 }
+		trigger = {
+			GE_can_integrate_culture = { culture = wallonian }
+		}
+
+		GE_start_integrating = { culture = wallonian }
+	}
+
+	option = {
+		name = GE_Mechanic_Events.9.dutch
+		ai_chance = { factor = 1 }
+		trigger = {
+			GE_can_integrate_culture = { culture = dutch }
+		}
+
+		GE_start_integrating = { culture = dutch }
+	}
+
+	option = {
+		name = GE_Mechanic_Events.9.hessian
+		ai_chance = { factor = 1 }
+		trigger = {
+			GE_can_integrate_culture = { culture = hessian }
+		}
+
+		GE_start_integrating = { culture = hessian }
+	}
+}
+
+# Culture Integrated
+country_event = {
+	id = GE_Mechanic_Events.10
+	title = GE_Mechanic_Events.10.T
+	desc = GE_Mechanic_Events.10.D
+	picture = CULTURE_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = GE_Mechanic_Events.10.OPT1
+		ai_chance = { factor = 1 }
+
+		GE_cultural_unity_integrated = yes
+
+		if = {
+			limit = {
+				GE_num_of_cultures_accepted = { amount = 4 }
+			}
+			change_government_reform = ge_communities_regions_reform
+		}
+	}
+
+	after = {
+		freeze_government_power = {
+			mechanic_type = cultural_disunity_mechanic
+			power_type = cultural_disunity
+		}
+	}
+}

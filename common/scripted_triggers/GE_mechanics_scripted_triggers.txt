@@ -1,0 +1,89 @@
+
+
+GE_is_accepting_culture_being_integrated = {
+	OR = {
+		AND = {
+			accepted_culture = flemish
+			has_country_flag = GE_integrating_flemish
+		}
+		AND = {
+			accepted_culture = wallonian
+			has_country_flag = GE_integrating_wallonian
+		}
+		AND = {
+			accepted_culture = dutch
+			has_country_flag = GE_integrating_dutch
+		}
+		AND = {
+			accepted_culture = hessian
+			has_country_flag = GE_integrating_hessian
+		}
+	}
+}
+
+
+
+GE_integrated_all_cultures = {
+	has_country_flag = GE_integrated_flemish
+	has_country_flag = GE_integrated_wallonian
+	has_country_flag = GE_integrated_dutch
+	has_country_flag = GE_integrated_hessian
+}
+
+GE_can_integrate_culture = {
+	NOT = { has_country_flag = GE_integrated_$culture$ }
+	NOT = { has_country_flag = GE_integrating_$culture$ }
+	any_owned_province = {
+		culture = $culture$ 
+	}
+	NOT = { primary_culture = $culture$ }
+}
+
+GE_can_integrate_a_culture = {
+	OR = {
+		GE_can_integrate_culture = { culture = flemish }
+		GE_can_integrate_culture = { culture = wallonian }
+		GE_can_integrate_culture = { culture = dutch }
+		GE_can_integrate_culture = { culture = hessian }
+	}
+}
+
+GE_integrating_a_culture = {
+	OR = {
+		has_country_flag = GE_integrated_flemish
+		has_country_flag = GE_integrated_wallonian
+		has_country_flag = GE_integrated_dutch
+		has_country_flag = GE_integrated_hessian
+	}
+}
+
+GE_num_of_cultures_accepted = {
+	calc_true_if = {
+		amount = $amount$
+		desc = GER_accepted_cultures
+		AND = {
+			OR = {
+				primary_culture = flemish
+				has_country_flag = GE_integrated_flemish
+			}
+		}
+		AND = {
+			OR = {
+				primary_culture = wallonian
+				has_country_flag = GE_integrated_wallonian
+			}
+		}
+		AND = {
+			OR = {
+				primary_culture = dutch
+				has_country_flag = GE_integrated_dutch
+			}
+		}
+		AND = {
+			OR = {
+				primary_culture = hessian
+				has_country_flag = GE_integrated_hessian
+			}
+		}
+	}
+}
