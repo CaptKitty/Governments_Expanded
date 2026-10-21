@@ -1,7 +1,7 @@
 ﻿l_english:
 # Tier 1
  ge_neo_burgundian_state_reform: "Neo-Burgundian State"
- ge_neo_burgundian_state_reform_desc: ""
+ ge_neo_burgundian_state_reform_desc: "The fall of Burgundy struck the Southern Low Countries like a thunderclap, a wound that time could not heal. Suddenly, the pillars of our power, the patrons of our prosperity, the architects of our refinement, were gone. The dukes who had once presided over the Burgundian Age, so fondly remembered in Brabant, Wallonia, Luxembourg, and Flanders, were undone by dynastic intrigue and their own faltering steel. And yet, their legacy endures, casting a golden hue upon our collective memory. That age marked by pageantry, courtly magnificence, flourishing cities, and a roaring economy became more than a historical period. It became the soul of a people. The Burgundians did not merely govern; they elevated. At the twilight of our original golden age, they swept in with ambition and vision, catching our sails with fresh winds and setting us on a new course toward grandeur. To this day, the ideals of the Burgundian court, its pursuit of nobility, honor, artistry, and revelry, form the cultural backbone of the southern Low Countries. They forged an identity rooted not only in prosperity, but in dignity. From this legacy, we have raised a new standard, Belgica, a neo-Burgundian state born from three veins of noble nostalgia. First, the classical heritage of Roman Belgica, whose memory lends us ancient gravitas and imperial echoes. Second, the mighty past of the Merovingian Franks, when Clovis ruled from our lands and declared them the center of Europe, a heart from which kingdoms would pulse. And third, the eternal allure of the Burgundian dream: a society balanced between industrious trade and radiant chivalry, between personal liberty and the high ideals of the noble spirit. Belgica is a synthesis, a reclamation of identity that blends Roman structure, Frankish ambition, and Burgundian soul. In its streets, the artisan and the knight, the trader and the scholar, walk side by side. Its halls ring not only with policy, but with poetry. We do not live in the shadow of past greatness, we are its rebirth. We are the last heirs of Burgundy. But more than that, we are its continuation."
  ge_upstalsboom_league_reform: "Upstalsboom League"
  ge_upstalsboom_league_reform_desc: "Our exemption from feudal hierarchy makes us one of the few places on earth where true rule by the people is enforced. Neither a monarchy nor a traditional republic, we instead govern ourselves as a league of equal freemen who will fight to the death to defend said freedom."
 
@@ -11,7 +11,7 @@
  ge_communities_regions_reform: "Communities and Regions"
  ge_communities_regions_reform_desc: "We are a federal state, composed of communities and regions"
  ge_language_question_reform: "The Language Question"
- ge_language_question_reform_desc: ""
+ ge_language_question_reform_desc: "Centuries of cultural divisions run right through the heart of our state. Flemish, Walloon, and German have all largely been in their own spheres, with their own languages and linguistic pride, and creating their own laws, customs, and even religious distinctives over generations. Now they are being forced to co-habit a new small nation without the old dynastic ties to bind them together in an uneasy peace. It will take extraordinary adroitness to navigate these divisions."
  ge_moedernegotie_reform: "De Moedernegotie"
  ge_moedernegotie_reform_desc: "The \"Moedernegotie\", also known as the 'Mother of all Trade', was the massive flow of basic goods from the baltic to the Dutch shores, from where it would feed the Dutch markets and citizenry, Polish grain, Livonian wood and Swedish steel would be traded as far as France or the Portuguese cities. This Trade fed the early republic and major parts of western europe and youngsters sailing on these reliable voyages was the cradle of many a sailor or merchant."
  ge_stadskeure_reform: "Stadskeure"
@@ -79,12 +79,13 @@
  GE_flemish: "Flemish Faction"
  GE_flemish_influence: "Flemish Influence"
  GE_flemish_MECHANIC_TOOLTIP: "Flemish"
- GE_flemish_FACTION_DESC: "The oldest Institution of th Roman Empire, the diplomats and the Flemish represent the people and is concerned with the economic well-being of the country."
+ GE_flemish_FACTION_DESC: "Representing the coastal mercantile cities, the Flemish are the lifeblood of the nation’s trade. Their main concern is maintaining their distinct way of life and the maintenance of trading cities."
  GE_german: "Germany Faction"
  GE_german_influence: "Germanic Influence"
  GE_german_MECHANIC_TOOPTIP: "Germany"
- GE_german_FACTION_DESC: "The Germany, with the Ecumenial Patriarch at its head deals with stability and administering the empire with a Christian vision."
+ GE_german_FACTION_DESC: "Representing the far interior, the Germans are largely economically peripheral to the state but disproportionately participate in the military. Their main concern is winning status and recognition through military victories."
  GE_walloon: "Wallonian Faction"
  GE_walloon_influence: "Wallonian Influence"
  GE_walloon_MECHANIC_TOOLTIP: "Wallonian"
- GE_walloon_FACTION_DESC: "The Wallonian has always been an important aspect of the empire, not just militarily, but also politically. The Wallonian firmly believes that might makes right, and that the empire needs to be the mightiest."
+ GE_walloon_FACTION_DESC: "Representing the aristocratic Francophones who dominate the capital, the Walloons with their coal and iron-rich hills are also the backbone of the industrial economy. Their main concern is the development of industry and avoiding war as it is bad for business.
+"

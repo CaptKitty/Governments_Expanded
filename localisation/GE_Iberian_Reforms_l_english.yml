@@ -86,15 +86,15 @@
  GE_magi: "Magi Faction"
  GE_magi_influence: "Magi Influence"
  GE_magi_MECHANIC_TOOLTIP: "Magi"
- GE_magi_FACTION_DESC: ""
+ GE_magi_FACTION_DESC: "Representing the educated elites of the land, the Magi make up much of the bureaucracy and diplomatic corps. They seek to increase knowledge in the realm and are generally opposed to wars of conquest."
  GE_ibad_al_nur: "Ibad al-Nur Faction"
  GE_ibad_al_nur_influence: "Ibad al-Nur Influence"
  GE_ibad_al_nur_MECHANIC_TOOPTIP: "Ibad al-Nur"
- GE_ibad_al_nur_FACTION_DESC: ""
+ GE_ibad_al_nur_FACTION_DESC: "Representing the faithful Umma, the Muslim citizenry seek to establish conformity within the realm and bring the nonbelievers to Allah. They greatly empower the Ulema and oppose policies of tolerance in the realm."
  GE_mozarabs: "Mozarabs Faction"
  GE_mozarabs_influence: "Mozarabs Influence"
  GE_mozarabs_MECHANIC_TOOLTIP: "Mozarabs"
- GE_mozarabs_FACTION_DESC: ""
+ GE_mozarabs_FACTION_DESC: "Representing the protected Dhimmi, or “People of the Book,” the Christian and Jewish citizens of the realm make up a disproportionate amount of the military and seek to retain political influence through opposing conversion attempts towards them."
 
 # Triggered Modifiers
 
