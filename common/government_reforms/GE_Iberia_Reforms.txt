@@ -146,7 +146,7 @@ ge_hispanic_kingdom = {
 	effect = {
 		hidden_effect = {
 			every_owned_province = {
-				ge_enables_ge_crown_of_aragon_update = yes
+				ge_enables_crown_of_aragon_update = yes
 			}
 		}
 	}
