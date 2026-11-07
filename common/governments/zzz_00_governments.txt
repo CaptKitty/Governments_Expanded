@@ -1528,6 +1528,7 @@ republic = {
 				empowered_principle_of_profit_reform
 				empowered_principle_of_power_reform
 				amendable_constitution_reform
+				ge_belgian_constitution_reform
 			}
 		}
 		electorate = {

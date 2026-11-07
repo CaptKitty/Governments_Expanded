@@ -440,6 +440,30 @@ ge_confederation_of_states_reform = {
 }
 
 #T10
+ge_belgian_constitution_reform = {
+	icon = parliament
+	allow_normal_conversion = yes
+	potential = {
+		has_country_flag = ge_belgian_constitution_reform_enabled
+	}
+	modifiers = {
+		governing_capacity = 200
+		global_unrest = -3
+		yearly_corruption = -0.1
+	}
+	custom_attributes = {
+		enables_parliament_win_mana = yes
+	}
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+		}
+		has_parliament = yes
+	}
+}
 ge_tolerant_principle_reform = {
 	icon = dutch_tolerance
 	allow_normal_conversion = yes

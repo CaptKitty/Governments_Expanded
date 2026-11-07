@@ -25,7 +25,7 @@ GE_initiate_starting_reforms = {
 		}
 	}
 	ARA = {
-		add_government_reform = crown_of_aragon
+		add_government_reform = ge_crown_of_aragon
 	}
 	ASS = {
 		add_government_reform = tai_and_ahom_reform
@@ -57,7 +57,7 @@ GE_initiate_starting_reforms = {
 		add_government_reform = siberian_tribal_confederation_reform
 	}
 	CAS = {
-		add_government_reform = kingdom_of_castille_and_leon
+		add_government_reform = ge_kingdom_of_castille_and_leon
 	}
 	CHU = {
 		change_government = tribal

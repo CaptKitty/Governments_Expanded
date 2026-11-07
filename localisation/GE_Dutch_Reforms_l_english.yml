@@ -46,6 +46,8 @@
  ge_confederation_of_states_reform_desc: "As our nation was born out of several independent states that rebelled against foreign oppression and religious persecution, it is foreign threats that kept us united in these first years, before formally uniting as a confederacy of states. Let us open our hands to invite additional states and nations into our union!"
 
 # Tier 10
+ ge_belgian_constitution_reform: "Belgian Constitution"
+ ge_belgian_constitution_reform_desc: ""
  ge_tolerant_principle_reform: "Tolerance Principle"
  ge_tolerant_principle_reform_desc: "Our nation was born in the fight for religious freedom and to stop the bloody and harsh foreign abuses against our people. Because of this, Tolerance is a virtue at the heart of both our people and our nation. Portuguese Jews, French Hugenots and German refugees, we welcome them all."
 
@@ -63,6 +65,7 @@
  mechanic_enables_regent_investments_yes: "Enables Regent Investments in Dutch provinces over 20 Development, giving §G1§! Additional building slot and §G-10%§! local Development Cost."
  mechanic_enables_anti_heresy_zeal_yes: "Enables Anti-Heresy Zeal in §MWalloon Catholic§! provinces granting §G+25.0%§! §YLocal Manpower Modifier.§!"
  mechanic_enables_clerical_education_tech_yes: "The Estate §YPrivilege Clerical Education§! will grant an additional §G-5%§! Technology Cost"
+ mechanic_enables_parliament_win_mana_yes: "Every passed parliament issue will grant 100 of each monarch power."
 
 # Tooltips
 

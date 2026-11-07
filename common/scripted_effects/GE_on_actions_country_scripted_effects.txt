@@ -184,3 +184,11 @@ enables_parliament_win_update = {
 		add_republican_tradition = 5
 	}
 }
+enables_parliament_win_mana_update = {
+	if = {
+		limit = { has_government_attribute = enables_parliament_win_mana }
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+	}
+}
