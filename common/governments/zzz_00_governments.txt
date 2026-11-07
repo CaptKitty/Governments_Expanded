@@ -858,6 +858,7 @@ monarchy = {
 				permanent_regency_reform
 				tanzimat_reforms_reform
 				constitution_of_melfi_reform
+				ge_belgian_constitution_reform
 			}
 		}
 		separation_of_power = {
